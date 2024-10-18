@@ -1,0 +1,49 @@
+.main-section {
+    position: relative;
+    padding-top: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section .main-heading {
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "sequel_sans_bold_disp" !important;
+    font-size: 220px;
+    font-style: normal;
+    line-height: 176px; 
+    font-weight: 425;
+    letter-spacing: 1px;
+}
+
+.MuiAccordionSummary-content{
+    justify-content: space-between;
+    width: 100%;
+}
+.main-section .main-heading {
+    background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-section .main-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pageBreadcrumbs ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .pageBreadcrumbs ul li {
+    list-style: none;
+    padding: 0 17px;
+    color: var(--Gray-500, #667085);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 310;
+    line-height: 20px;
+  }

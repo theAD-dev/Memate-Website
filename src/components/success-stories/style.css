@@ -1,0 +1,213 @@
+.slider-section {
+  width: 100%;
+  overflow: hidden;
+}
+.slider-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.success-stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.slick-slide.slick-active.slick-center.slick-current .customerstoriesitem{
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  background: #fff;
+}
+/* #slider-container .slick-active.slick-center.slick-current {
+  width: 429px !important;
+} */
+/* .slider-container .slick-slide {
+  max-width: 363px !important;
+  margin: 0 auto;
+} */
+.customerstoriesitem .category {
+  color: #888E9E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%;
+  letter-spacing: -0.16px;
+}
+.customerstoriesitem a {
+  color: var(--ios-status-bar-status-bar-text-color, #000);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-decoration: none;
+}
+.success-stories1 .slick-track {
+  display: flex;
+  align-items: center;
+  margin: 37px 0;
+}
+.success-stories1 {
+  text-align: center;
+}
+.success-stories1 p {
+  text-align: center;
+  margin: 0 auto;
+}
+.customerstoriesitem {
+  padding: var(--spacing-3xl, 24px);
+  border-radius: 0px 0px 30px 30px;
+  background: #F7F8FA;
+  text-align: left;
+  min-height: 149px;
+}
+.slider-item a img {
+  height: 196px;
+  object-fit: cover;
+}
+.slick-slide.slick-active.slick-center.slick-current img {
+  height: 251px;
+  object-fit: cover;
+}
+.slider-item img {
+  width: 100%;
+  height: 196px;
+  object-fit: cover;
+  border-radius: 30px 30px 0px 0px ;
+
+}
+.slider-item {
+  padding: 0 24px;
+  opacity: .6;
+  pointer-events: none;
+}
+#slider-container .slick-active.slick-center.slick-current .slider-item{
+  opacity: 1;
+  pointer-events: visible ;
+}
+.bottom-management {
+  margin-top: 100px;
+}
+
+.bottom-management h2 {
+  color: #29292b;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 420;
+  line-height: 49.56px;
+  letter-spacing: -1px;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+}
+
+.bottom-management p {
+  color: #757b8a;
+  text-align: center;
+  font-family: "sequel_sans_roman_head" !important;
+  font-size: 20px;
+  font-weight: 360;
+  line-height: 140%;
+  max-width: 663px;
+  margin-top: 10px;
+}
+
+.client-profs {
+  margin: -10px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  border-radius: 33.77px;
+  overflow: hidden;
+  position: relative; /* Add this */
+  display: flex;
+}
+.description-box-data {
+  height: 48px;
+  width: 369px;
+  position: absolute;
+  bottom: 13px;
+  left: 23px;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.client-profs img {
+  width: 100%;
+}
+
+.card-bottom-data {
+  font-family: "sequel_sans_roman_head" !important;
+  font-weight: 360;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -1;
+  color: #888e9e;
+}
+
+.image-container-profile {
+  height: 100%;
+  width: 100%;
+}
+
+p.owners-disp {
+  color: #fff;
+  font-family: "Inter", sans-serif !important;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  margin: 0px;
+  position: absolute;
+  bottom: 13px;
+  left: 23px;
+  text-align: left;
+}
+.bottom-management button {
+  cursor: pointer;
+  border-radius: 60px;
+  width: 168px;
+  height: 52px;
+  border: 1px solid #29292B;
+  padding: 7px 36px;
+  background: transparent;
+  color: #101828;
+  font-size: 18px;
+  font-weight: 415;
+
+  margin-top: 38px;
+  font-family: "sequel_sans" !important;
+}
+
+.menu-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu-item {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.menu-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for webkit browsers */
+}
+
+.menu-container {
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}

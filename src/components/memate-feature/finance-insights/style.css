@@ -1,0 +1,9 @@
+.efficiency-section-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.efficiency-section{
+    width: 1200px;
+}

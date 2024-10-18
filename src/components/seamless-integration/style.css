@@ -1,0 +1,147 @@
+.integration-section {
+  margin-top: 110px;
+}
+
+.integation-title h3 {
+  color: #29292b;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: normal;
+  letter-spacing: -1px;
+  margin: 0px;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+}
+
+.integation-title h1 {
+  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+  text-align: center;
+  font-size: 118px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: -1px;
+  font-family: "Inter", sans-serif !important;
+  max-width: 596px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.integration-brand {
+    border-radius: 30px;
+    background: linear-gradient(146deg, #2B2B2D 5.4%, #777 108.55%);
+    padding: 100px 60px;
+    margin-bottom: 60px;
+    width: 1080px;
+}
+.integration-brand-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side-braond {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin-left: 25px;
+}
+
+
+.google-brand {
+    display: flex;
+    gap: 25px;
+}
+
+.righted-side-braond{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin-right: 8px;
+}
+
+.google-mg:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 1px;
+    height: 27px;
+    bottom: -26px;
+    left: 50%;
+}
+
+.google-mg {
+    position: relative;
+}
+
+.paypol-mg{
+    position: relative;
+}
+
+.paypol-mg:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 1px;
+    height: 27px;
+    bottom: -26px;
+    left: 50%;
+}
+
+
+.meta-brand-logo {
+    position: relative;
+}
+.meta-brand-logo:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 309px;
+    height: 1px;
+    top: 50%;
+    left: 289px;
+}
+
+.meta-brand-logo:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 311px;
+    height: 1px;
+    top: 50%;
+    left: -308px;
+}
+
+.integration-disp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.integration-disp p {
+    color: #29292B;
+    text-align: center;
+    font-size: 24.5px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 140%;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    max-width: 949px;
+    margin: auto;
+}

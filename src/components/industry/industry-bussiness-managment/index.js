@@ -1,0 +1,34 @@
+import React from 'react'
+import './style.css'
+import IndustryPowerfulStreamline from './industry-powerful-streamline'
+import IndustryWorkFlowSolution from './industry-workflow-solution'
+import TailoredMarketing from './industry-tailored-marketing'
+import FinanicalManagement from './industry-financial-management'
+import ClientCollaboration from './industry-client-colaboration'
+import ScalableCustomizable from './indusry-scalable-customizable'
+import IndustryDifference from './industry-difference'
+const IndustryBussinessManagement = () => {
+  return (
+    <div className='industry-bussiness-management-wrapper'>
+      <p className="industry-bussiness-management-heading">Business Management</p>
+      <p className='industry-bussinees-content'>Software for creatives</p>
+      <div className='industry-bussiness-sub-content'>
+        <p className='industry-bussiness-sub-content-heading'>Why MeMate works exceptionally well for creative agencies</p>
+        <p className='industry-bussiness-sub-content-description'>Are you looking for the perfect project management <br></br>software for your creative agency?</p>
+      </div>
+      <div className='industry-bussinees-content-2'>Look no further than MeMate.</div>
+      <p className='industry-bussinees-content-2-description'>Our comprehensive solution is designed specifically for agencies, including marketing agencies, advertising agencies, design agencies, and digital agencies.</p>
+      <div className='industry-bussiness-category-wrapper'>
+            <IndustryPowerfulStreamline/>
+            <IndustryWorkFlowSolution/>
+            <TailoredMarketing/>
+            <FinanicalManagement/>
+            <ClientCollaboration/>
+            <ScalableCustomizable/>
+            <IndustryDifference/>
+      </div>
+    </div>
+  )
+}
+
+export default IndustryBussinessManagement

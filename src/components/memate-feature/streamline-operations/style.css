@@ -1,0 +1,152 @@
+.feature-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 106px;
+}
+
+.features-section {
+    width: 1200px;
+}
+
+.memate h2 {
+    color: #29292B;
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: normal;
+    letter-spacing: -1px;
+    margin: 0px;
+    font-family: "sequel_sans_semi_bold_disp" !important;
+}
+
+.memate h1 {
+    background: linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+    text-align: center;
+    font-size: 118px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110px;
+    letter-spacing: -6px;
+    font-family: "Inter", sans-serif !important;
+}
+
+
+.stream-line {
+    border-radius: 30px;
+    background: #F7F8FA;
+}
+
+.heading-margin {
+    margin-bottom: 70px;
+}
+
+.main-operation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+    padding-right: 49px;
+}
+.operation-left {
+    padding: 50px;
+    text-align: left;
+}
+
+.operation-left h1 {
+    color: #29292B;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: normal;
+    letter-spacing: -1px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+.operation-left h2 {
+    color: #29292B;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: normal;
+    letter-spacing: -1px;
+    font-family: 'sequel_sans' !important;
+    margin: 0px;
+    line-height: 25px;
+}
+
+p.all-text {
+    color: #242122;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 410;
+    line-height: 100%;
+    letter-spacing: -0.21px;
+    font-family: 'sequel_sans_roman_disp' !important;
+    margin-bottom: 11px;
+}
+
+.operation-desp p {
+    color: #888E9E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 28px;
+    max-width: 450px;
+    text-align: left;
+    margin-bottom: 48px;
+    font-family: "sequel_sans_roman_head" !important;
+}
+
+button.get-started-btn {
+    margin-top: 0px;
+    border-radius: 60px;
+    border: 1px solid var(--Gray-900, #101828);
+    outline: none;
+    padding: 13px 10px;
+    background: transparent;
+    color: var(--Gray-900, #101828);
+    text-align: center;
+    -webkit-text-stroke-color: var(--Gray-900, #101828);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: normal;
+    font-family: 'sequel_sans' !important;
+    display: flex;
+    contain: content;
+    justify-content: center;
+    width: 168px;
+    min-height: 52px;
+    text-decoration: none;
+    /* margin: 0 auto; */
+}
+.large-image-container a{
+    text-decoration: none;
+}
+.operation-right h1 {
+    background: linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+    text-align: center;
+    font-size: 158.83px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    font-family: "Inter", sans-serif !important;
+}
+
+.max-image {
+    position: absolute;
+    top: 36px;
+    right:56px;
+}

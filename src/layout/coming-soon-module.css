@@ -1,0 +1,32 @@
+.ComingSonnBg{
+    padding-top: 64px;
+    text-align: center;
+   
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.ComingSonnBg h1{
+   
+        text-align: center;
+        font-size: 220px;
+        font-weight: 425;
+        line-height: 184px;
+        letter-spacing: 1px;
+        font-family: "sequel_sans_bold_disp" !important;
+        font-weight: 700;
+        background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .ComingSonnBg p {
+        color: #29292B;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 405;
+        line-height: 130%;
+        width: 751px;
+        margin: 32px auto 32px;
+    }

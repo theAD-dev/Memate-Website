@@ -1,0 +1,296 @@
+.one-application-sec {
+  margin-top: 70px;
+}
+
+.application-heading h3 {
+  color: #29292b;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: normal;
+  letter-spacing: -1px;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+}
+
+.tab-sale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-img-mac-1 {
+  position: relative;
+}
+
+.bottom-managements {
+  margin-top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-managements h2 {
+  color: #29292b;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 420;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+  line-height: 140%;
+}
+
+.bottom-managements p {
+  color: #757b8a;
+  margin-top: 33px;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 25.52px;
+  max-width: 663px;
+  font-family: "sequel_sans_roman_head" !important;
+}
+
+.bottom-managements button {
+  cursor: pointer;
+  border-radius: 60px;
+  border: 1px solid  #101828;
+  outline: none;
+  padding: 7px 36px;
+  width: 168px;
+  background: transparent;
+  color:  #101828;
+  text-align: center;
+  -webkit-text-stroke-color:  #101828;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: normal;
+  margin-top: 30px;
+  height: 52px;
+  font-family: "sequel_sans" !important;
+}
+
+.active-tab:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  background: linear-gradient(to top, #ffb258 14%, #24b3f8 109%);
+  z-index: -1;
+  border-radius: 25px;
+}
+
+h1.replace-text {
+  background: linear-gradient(to right, #1ab2ff 39.15%, #ffb258 62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+  text-align: center;
+  font-size: 118px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: -1px;
+  font-family: "Inter", sans-serif !important;
+}
+
+.tab-section {
+  display: flex;
+  flex-direction: column;
+}
+ul.tab-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 55px 0 85px;
+  gap: 5px;
+}
+
+ul.tab-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 0px;
+}
+
+ul.tab-list li {
+  padding: 12px 18px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  min-width: 114px;
+  height: 90px;
+}
+ul.tab-list li p {
+  color: #757b8a;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 20px;
+  font-family: "sequel_sans" !important;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.tab-list .active-tab {
+  position: relative;
+  border: 3px solid transparent;
+  background: #fff;
+  background-clip: padding-box;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 25px !important;
+  border-color: linear-gradient(to top, #ffb258 14%, #24b3f8 109%);
+  /* border-radius: 25px; */
+}
+
+.active-tab .tab-sale p {
+  color: black;
+  font-weight: 415;
+  font-size: 16px;
+  line-height: 18.88px;
+  font-family: "sequel_sans" !important;
+}
+
+.modal-popup {
+  top: 84px;
+}
+
+.task-details {
+  position: absolute;
+  right: -107px;
+  bottom: 87px;
+}
+
+.progress-rep {
+  bottom: 42px;
+}
+
+.create-text-image {
+  position: absolute;
+  bottom: -56px;
+  left: -107px;
+}
+
+.tab-content-section-data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.large-image-container .businesses-mode {
+  width: 679px;
+  margin: 7px auto 28px;
+}
+.large-image-container .how-to-use {
+  margin-top: 15px;
+}
+.sliderTabWrapper .tab-item {
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.sliderTabWrapperApp button.get-started-btn {
+  margin: 0 auto;
+}
+.sliderTabWrapper .slick-slide img {
+  display: block;
+  width: 32px;
+  margin: 0 auto;
+}
+.sliderTabWrapper .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+
+}
+.boxCenterMode span {
+  margin-top: 7px;
+  display: inline-block;
+  color: #757b8a;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 20px;
+  font-family: "sequel_sans" !important;
+  margin: 0;
+  margin-top: 8px;
+}
+.large-image-container {
+  text-align: center;
+}
+.sliderTabWrapper .slick-slide {
+  margin: 12px 18px 60px;
+}
+.sliderTabWrapper .slick-slide.slick-active.slick-center.slick-current{
+  position: relative;
+    border: 3px solid transparent;
+    background: #fff;
+    background-clip: padding-box;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 25px !important;
+    border-color: linear-gradient(to top, #ffb258 14%, #24b3f8 109%);
+    padding: 12px 18px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    min-width: 132px;
+    height: 90px;
+   
+}
+.sliderTabWrapper .slick-list {
+  padding: 21px 40px !important;
+}
+.slider-container.sliderTabWrapper {
+  width: 1200px;
+  margin: 25px auto 0;
+}
+.sliderTabWrapper .slick-slide.slick-active.slick-center.slick-current img {
+  height: auto;
+  object-fit: cover;
+}
+.sliderTabWrapper .slick-slide.slick-active.slick-center.slick-current:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  background: linear-gradient(to top, #ffb258 14%, #24b3f8 109%);
+  z-index: -1;
+  border-radius: 25px;
+}
+
+.large-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.large-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease-in-out; /* Add transition for opacity */
+  opacity: 0;
+}
+
+.large-image.fade-in {
+  opacity: 1;
+}

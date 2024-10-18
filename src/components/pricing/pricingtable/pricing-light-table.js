@@ -1,0 +1,216 @@
+import React from "react";
+import "./pricing-light-table.scss";
+import pricingboll from '../../../assests/images/pricingboll.png';
+import checkIcon from '../../../assests/icons/checkIcon.svg';
+import pricingTah from '../../../assests/icons/pricingTah.svg';
+const PricingLightTable = () => {
+  return (
+    <div className="pricing-table-container">
+      <table className="pricingtableWrapper">
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              <div className="plan-header">
+              <div className="flexbox">
+              <div className="iconbox"><img src={pricingboll} alt={pricingboll} /></div>
+            
+              </div>
+                <h3>Business</h3>
+                <h2>$99.85 <span>/monthly</span></h2>
+                <p>Essentials you need to run your company</p>
+                <a href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a>
+              </div>
+            </th>
+            <th className="imp-plan">
+              <div className="plan-header">
+              <div className="flexbox">
+              <div className="iconbox"><img src={pricingboll} alt={pricingboll} /></div>
+              {/* <div className="badge">Popular</div> */}
+              </div>
+                <h3>Business + Work</h3>
+                <h2><strong>$162.17 </strong><span>/monthly</span></h2>
+                <p>Everything in Business + Employee and Contractor Management</p>
+                <a className="getstartedBtnPricing"  href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a>
+              </div>
+            </th>
+            <th>
+              <div className="plan-header">
+              <div className="flexbox">
+              <div className="iconbox"><img src={pricingboll} alt={pricingboll} /></div>
+            
+              </div>
+                <h3>Enterprise</h3>
+                <h2>Contact us</h2>
+                <p>Unlimited Customization to Your Needs</p>
+                <a href="/contact-us" target="_blank">Contact us</a>
+             
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sales Management<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Quotation<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Quote Calculation<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Supplier Database<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Project Management<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Cost Management<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Real Time Profitability<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Executive Statistic <sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Monthly Targets <sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>SMS<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Emails<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Invoicing<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Expenses<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mobile Application<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Employee Management  <sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Contractor database <sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Job Scheduling <sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Shift Management<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Chat<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Contractor Payment Management</td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Your own local server set up  <sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Customisations for your industry<sup><img src={pricingTah} alt="pricingTah" /></sup> </td>
+            <td>-</td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td>Custom workflow <sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+          <tr>
+            <td> Unique integrations <sup><img src={pricingTah} alt="pricingTah" /></sup></td>
+            <td>-</td>
+            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default PricingLightTable;

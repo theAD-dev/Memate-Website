@@ -1,0 +1,30 @@
+.simple-box {
+    margin-top: 110px;
+}
+
+.section-heading h2 {
+    color: #242122;
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: normal;
+    font-family: "sequel_sans_semi_bold_disp" !important;
+    margin: 0px;
+}
+
+.powerful-client-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.powerful-client {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}

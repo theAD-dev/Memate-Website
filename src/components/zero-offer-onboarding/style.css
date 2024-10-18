@@ -1,0 +1,98 @@
+.onboarding-section {
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.onboarding-section-content {
+  max-width: 1200px;
+}
+
+.offer-opt {
+  background: linear-gradient(to right bottom, #1ab2ff -9.85%, #ffb258 95%);
+  border-radius: 30px;
+  padding: 0px;
+}
+
+.sab-heading h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+  font-family: "sequel_sans_bold_disp" !important;
+  margin-bottom: 0px;
+}
+
+.sab-heading {
+  padding-top: 80px;
+}
+
+.sab-heading h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110px;
+  font-family: "sequel_sans_black_disp" !important;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+.sab-heading p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 25.2px;
+  font-family: "sequel_sans_roman_head" !important;
+  max-width: 471px;
+  margin: auto !important;
+  padding-top: 35px !important;
+}
+
+button.book-a-demo {
+  cursor: pointer;
+  border-radius: 60px;
+  border: 1px solid var(--Gray-900, #fff);
+  outline: none;
+  padding: 7px 36px;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  -webkit-text-stroke-color:  #101828;
+  font-size: 18px;
+  height: 53px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: normal;
+  margin-top: 30px;
+  font-family: "sequel_sans" !important;
+}
+
+.button-container {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-screen-shot {
+  padding: 0;
+  margin: 0;
+}
+
+.offer-screen-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+}

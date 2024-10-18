@@ -1,0 +1,91 @@
+.next-step {
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.next-step h3 {
+  color: #29292b;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: normal;
+  letter-spacing: -1px;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+  margin: 0px;
+}
+
+.next-step button {
+  border-radius: 60px;
+  background: #29292b;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: normal;
+  padding: 9px 26px;
+  height: 52px;
+  border: navajowhite;
+  outline: none;
+  font-family: "sequel_sans" !important;
+}
+
+.next-title h1 {
+  margin-top: -35px;
+  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  text-align: center;
+  font-size: 297px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -16px;
+  font-family: "Inter", sans-serif !important;
+  overflow-wrap: break-word;
+}
+
+.next-step {
+  overflow: hidden;
+}
+
+.next-step-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.next-step-page-description {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.next-step-data {
+  color: #29292b;
+  text-align: center;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.next-step-data-description {
+  color: #757b8a;
+  text-align: center;
+  font-family: "sequel_sans_roman_head" !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 25.2px;
+  max-width: 750px;
+}

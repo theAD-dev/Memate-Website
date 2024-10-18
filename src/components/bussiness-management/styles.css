@@ -1,0 +1,124 @@
+.home-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-platform h2 {
+  color: #29292b;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 49.56px;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+  max-width: 741px;
+  margin: auto;
+}
+
+.heding-text-top {
+  padding: 0px 0px 23px 0px;
+}
+.heding-text-top h1 {
+  text-align: center;
+  font-size: 220px;
+  font-weight: 425;
+  line-height: 184px;
+  letter-spacing: 1px;
+  font-family: "sequel_sans_bold_disp" !important;
+  font-weight: 700;
+}
+
+h1.text {
+  background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+}
+
+.big-img-mac {
+  position: relative;
+}
+
+.iphone-image {
+  position: absolute;
+  right: 123px;
+  bottom: 28px;
+}
+
+.create-new-text {
+  position: absolute;
+  bottom: 67px;
+  left: -27px;
+}
+
+.metric-item {
+  position: absolute;
+  bottom: 5px;
+  left: -90px;
+}
+
+.macBook-image {
+  width: 1060px;
+  margin-left: 10svw;
+}
+.image-wrapper {
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.to-replace-bold-text{
+  margin-top: 10px;
+}
+.how-to-use p {
+  color: #29292b;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 35px;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+  margin: 0px;
+}
+
+.how-to-use {
+  margin-top: 48px;
+}
+
+.businesses-mode span {
+  color: #757b8a;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 360;
+  line-height:25.2px;
+  font-family: "sequel_sans_roman_head" !important;
+}
+
+.businesses-mode {
+  margin-top: 26px;
+}
+
+.request-btn {
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.request-btn button {
+  border-radius: 60px;
+  background: #29292b;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 21.24px;
+  padding: 12px 24px;
+  border: navajowhite;
+  cursor: pointer;
+  outline: none;
+  font-family: "sequel_sans" !important;
+}

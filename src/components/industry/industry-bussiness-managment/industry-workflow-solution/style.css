@@ -1,0 +1,57 @@
+.industry-workflow-wrapper {
+  width: 1200px;
+  background-image: url("../../../../assests/industry-images/industry-category-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 72px 0px 69px 46px;
+  height: auto;
+  margin-top: -24px;
+}
+
+.industry-category-two-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.industry-workflow-two-heading {
+  color: #fff;
+  font-family: "sequel_sans_roman_disp" !important;
+  font-style: normal;
+  font-weight: 410;
+  letter-spacing: -0.21px;
+}
+
+.industry-workflow-two-sub-heading {
+  color: #fff;
+  font-family: "sequel_sans" !important;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: normal;
+  letter-spacing: -1px;
+  margin-top: 50px;
+}
+
+.industry-workflow-description-heading-data {
+  color: #fff;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: normal;
+  letter-spacing: -1px;
+  margin-top: 20px;
+}
+
+.industry-categoy-2-description {
+  margin-top: 48px;
+  max-width: 449px;
+  width: 100%;
+  color: #fff;
+  font-family: "sequel_sans_roman_head" !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%;
+}

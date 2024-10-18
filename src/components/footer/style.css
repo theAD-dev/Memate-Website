@@ -1,0 +1,128 @@
+/* .footer-section {
+  border-radius: 80px 80px 0px 0px;
+  background: #f7f8fa;
+  padding: 80px 120px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  text-align: left;
+  display: flex;
+  justify-content: start;
+}
+
+p.management-footer {
+  color: #888e9e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%;
+  font-family: "sequel_sans_roman_head" !important;
+}
+
+p.management-footer {
+  color: #888e9e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%;
+  max-width: 167px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.connect {
+  margin-top: 70px;
+}
+
+.connect h3 {
+  color: #29292b;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 140%;
+  letter-spacing: -0.17px;
+  text-align: left;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+}
+
+.media-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: start;
+  margin-top: 15px;
+}
+
+.download h3 {
+  color: #0f152e;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 140%;
+  letter-spacing: -0.17px;
+  text-align: left;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+}
+
+.download {
+  margin-top: 60px;
+}
+
+.store {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 11px;
+}
+
+.bottom-text p {
+  color: #888e9e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%;
+  text-align: left;
+  font-family: "sequel_sans_roman_head" !important;
+}
+
+.bottom-text {
+  margin-top: 253px;
+}
+
+.company-link h3 {
+  color: #29292b;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 140%;
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+}
+
+.page-links {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.page-links p {
+  color: #888e9e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%;
+  max-width: 167px;
+  text-align: left;
+  font-family: "sequel_sans_roman_head";
+}
+
+.top-space {
+  margin-top: 30px;
+} */

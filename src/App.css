@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "sequel_sansbook_head";
+  src: url("./font/sequel_sans_book_head-webfont.eot");
+  src: url("./font/sequel_sans_book_head-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./font/sequel_sans_book_head-webfont.woff2") format("woff2"),
+    url("./font/sequel_sans_book_head-webfont.woff") format("woff"),
+    url("./font/sequel_sans_book_head-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans";
+  src:url("./font/Sequel_Sans_Medium_Disp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_heavy_body";
+  src:url("./font/Sequel_Sans_Medium_Disp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_bold_disp";
+  src:url("./font/Sequel_Sans_Bold_Disp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_bold_body";
+  src:url("./font/Sequel_Sans_Bold_Body.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_black_disp";
+  src:url("./font/Sequel_Sans_Black_Disp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_bold_disp";
+  src:url("./font/Sequel_Sans_Bold_Disp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "sequel_sans_roman_head";
+  src:url("./font/Sequel_Sans_Roman_Head.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_light_disp";
+  src:url("./font/Sequel_Sans_Light_Disp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_bold_head";
+  src:url("./font/Sequel_Sans_Bold_Head.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_medium_head";
+  src:url("./font/Sequel_Sans_Medium_Head.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_roman_disp";
+  src:url("./font/Sequel_Sans_Roman_Disp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_semi_bold_disp";
+  src:url("./font/Sequel_Sans_Semi_Bold_Disp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sequel_sans_heavy_disp";
+  src:url("./font/Sequel_Sans_Heavy_Disp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box !important;
+}
+
+.button,button,a{
+  cursor: pointer !important
+}

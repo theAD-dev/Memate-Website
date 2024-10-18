@@ -1,0 +1,134 @@
+.parent {
+  max-width: 1000px;
+}
+.accounting-text-A {
+  color: #29292b;
+  font-family: "sequel_sans" !important;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 100%; /* 21px */
+  letter-spacing: -0.21px;
+}
+.parent.parentSingle {
+  padding-top: 7px;
+}
+.parent.parentSingle .pageBreadcrumbs {
+  padding-left: 0;
+  margin-bottom: 37px;
+}
+.parent.parentSingle .pageBreadcrumbs li:first-child {
+  padding-left: 0;
+}
+.parent.parentSingle .pageBreadcrumbs li:last-child a {
+  color: #106B99;
+  text-decoration: none;
+}
+.parent.parentSingle .pageBreadcrumbs .backButStories {
+  margin-left: 0;
+}
+.heading-1-A {
+  color: #1d2939;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-size: 55px;
+  font-style: normal;
+  margin-top: 16px;
+  font-weight: 415;
+  line-height: 62px;
+  letter-spacing: -1px;
+  max-width: 800px;
+}
+.fusion-fullwidth {
+  border: 0 !important;
+}
+.heading-date-A {
+  color: #888e9e;
+  margin-top: 12px;
+  font-family: "sequel_sans" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%; /* 23.8px */
+  letter-spacing: -0.17px;
+}
+
+.img-1-container-A {
+  margin-top: 40px;
+}
+.img-2-container-A {
+  margin: 56px 0px;
+}
+
+.single-page-heading {
+  margin-top: 60px;
+  color: #29292b;
+  font-family: "sequel_sans" !important;
+  align-self: stretch;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 48px; /* 133.333% */
+  letter-spacing: 0.2px;
+}
+
+.single-page-heading-text {
+  color: #3f3f3f;
+  font-family: "sequel_sans_roman_head" !important;
+  margin-top: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 24px */
+}
+
+.sub-heading {
+  margin-top: 60px;
+  color: #29292b;
+  font-family: "sequel_sans" !important;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.2px;
+}
+
+.comment-container-A {
+  border-radius: 30px;
+  background: #f7f8fa;
+  display: flex;
+  margin-top: 72px;
+  margin-bottom: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 75px;
+  flex-direction: column;
+}
+
+.comment-name-A {
+  color: #29292b;
+  text-align: center;
+  font-family: "sequel_sans" !important;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 420;
+  margin-top: 30px;
+  line-height: 30px; /* 133.333% */
+  letter-spacing: 0.2px;
+}
+
+.comment-text-A {
+  color: #29292b;
+  text-align: center;
+  font-family: "sequel_sans" !important;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 410;
+  line-height: 32px; /* 145.455% */
+  letter-spacing: 0.2px;
+  max-width: 753px;
+}
+
+.heading-6-text-2-A {
+  margin-top: 24px;
+}

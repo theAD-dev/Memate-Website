@@ -1,0 +1,199 @@
+.main-section {
+    position: relative;
+    padding-top: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section .main-heading {
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "sequel_sans_bold_disp" !important;
+    font-size: 220px;
+    font-style: normal;
+    line-height: 176px; /* 74.545% */
+    font-weight: 425;
+    letter-spacing: 1px;
+}
+
+
+.main-section .main-heading {
+    background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-section .main-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-section .mid-heading {
+    padding-top: 440px;
+    color: #29292B;
+    text-align: center;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: var(--ios-status-bar-status-bar-text-color, #000);
+    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+
+.main-section .small-heading {
+    padding-top: 26px;
+    color: #757B8A;
+    text-align: center;
+    font-family: "sequel_sans_roman_head" !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: -0.18px;
+}
+
+.main-section-button {
+    border-radius: 60px;
+    background: #29292B;
+    width: 168px;
+    height: 52px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.main-section-button {
+    color: #FFF;
+    text-align: center;
+    font-family: "sequel_sans" !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: normal;
+}
+
+.query-section {
+    padding-top: 75px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.query-section .query-cards {
+    display: flex;
+    gap: 19.1px;
+}
+
+.query-section .query-cards .query-card {
+    width: 386.966px;
+    height: 485.393px;
+    flex-shrink: 0;
+    padding: 38px 45px 40px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.query-section .query-cards .query-1 {
+    border-radius: 28.571px;
+    background: radial-gradient(2055.52% 134.78% at 0% 15.21%, #1AB2FF 0%, #FFB258 100%);
+}
+
+.query-section .query-cards .query-2 {
+    border-radius: 30px;
+    background: linear-gradient(146deg, #2B2B2D 5.4%, #777 108.55%);
+}
+
+.query-section .query-cards .query-3 {
+    border-radius: 30px;
+    background: #F7F8FA;
+}
+
+.query-section .small-heading {
+    padding-top: 39px;
+    color: #757B8A;
+    text-align: center;
+    font-family: "sequel_sans_roman_head" !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: -0.18px;
+}
+
+.query-cards .query-card .query-main {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+.query-cards .query-card .query-main .query-main-heading p {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "sequel_sans_semi_bold_disp";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 48px; /* 100% */
+}
+
+.query-cards .query-card .query-main .query-small-heading p {
+    color: #FFF;
+    font-family: "sequel_sans_roman_head";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: -0.18px;
+}
+
+.query-cards .query-card .query-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.query-cards .query-card .query-button div {
+    display: flex;
+    width: 170px;
+    height: 49px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    border: 1px solid #FFF;
+}
+
+.query-cards .query-card .query-button div p{
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 0.2907530963420868;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "sequel_sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: normal;
+}
+
+.query-cards .query-card .query-main .query-color p {
+    color: #29292B;
+}
+
+.query-cards .query-card .query-button-color div {
+    border: 1px solid #29292B;
+}
+.query-cards .query-card .query-button-color div p{
+    color: #29292B;
+}
