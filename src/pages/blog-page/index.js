@@ -8,4 +8,5 @@ const BlogPage = ({ posts, postsLatest, totalPosts, loading, handleNext }) => {
     </Layout>
   );
 };
+
 export default BlogPage;
