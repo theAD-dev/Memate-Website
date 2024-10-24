@@ -13,22 +13,20 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const data = [
-  { 
-    label: "EnergyAustralia", 
-    logo:LogoFilter, 
-    ABN: "226365507", 
+  {
+    label: "EnergyAustralia",
+    logo: LogoFilter,
+    ABN: "226365507",
     icon: GlobIcon,
     map: googlemap,
   },
-  { 
+  {
     label: "Camerafix",
-    logo: LogoFilter, 
-    ABN: "226365507", 
+    logo: LogoFilter,
+    ABN: "226365507",
     icon: GlobIcon,
     map: googlemap,
   },
-
-
 ];
 
 
@@ -43,9 +41,9 @@ const DataBase = () => {
   const handleAccordionChange = (panel) => (event, isExpanded) => {
     setExpandedPanel(isExpanded ? panel : false);
   };
-  const handleSearch = (event) => {
- 
 
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
   };
 
   return (
@@ -69,9 +67,8 @@ const DataBase = () => {
           <button>#</button>
         </div>
         {alphabet.map((letter) => (
-          <button 
-            key={letter} 
-            
+          <button
+            key={letter}
             style={{
               marginRight: "5px",
               backgroundColor: activeLetter === letter ? "lightblue" : "white"
@@ -86,9 +83,8 @@ const DataBase = () => {
         {filteredData.length > 0 ? (
           filteredData.map((item, index) => (
             <li key={index}>
-              
               <Accordion className={style.alphabetlist}
-                expanded={expandedPanel === index} 
+                expanded={expandedPanel === index}
                 onChange={handleAccordionChange(index)}
               >
                 <AccordionSummary
@@ -97,35 +93,34 @@ const DataBase = () => {
                   id={`panel${index}-header`}
                 >
                   <Typography className={style.itemDatalist}>
-                <div className={style.left}>
-                {item.logo && <img src={item.logo} alt={`${item.label} logo`} />}
-                {item.label}
-                </div>
-                <div className={style.right}>
-              {item.ABN && <div className={style.roundBx}>ABN: {item.ABN}</div>}
-              {item.icon && <div className={style.roundimg}><img src={item.icon} alt={`${item.label} icon`} /></div>}
-              {item.map && <div className={style.roundimg}><img src={item.map} alt={`${item.label} icon`} /></div>}
-              </div>
+                    <div className={style.left}>
+                      {item.logo && <img src={item.logo} alt={`${item.label} logo`} />}
+                      {item.label}
+                    </div>
+                    <div className={style.right}>
+                      {item.ABN && <div className={style.roundBx}>ABN: {item.ABN}</div>}
+                      {item.icon && <div className={style.roundimg}><img src={item.icon} alt={`${item.label} icon`} /></div>}
+                      {item.map && <div className={style.roundimg}><img src={item.map} alt={`${item.label} icon`} /></div>}
+                    </div>
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails className={style.accInnercontent}>
-              <div className={style.accInnerhead}>
-            <p>Supplied Services</p>
-            <ul>
-              <li>Content Creation</li>
-              <li>Social Media Management</li>
-              <li>Graphic Design</li>
-            </ul>
-              </div>
-              <div className={style.accInneradd}>
-              <ul>
-              <li>  45CW+9P Ultimo, New South Wales, Australia	</li>
-              <li>	info@camerafix.com.au</li>
-              <li>	https://www.camerafix.com.au/</li>
-            </ul>
-            <Link to='/data-single' className={style.detailsSupplyersbut}>View Details</Link>
-              </div>
-                  
+                  <div className={style.accInnerhead}>
+                    <p>Supplied Services</p>
+                    <ul>
+                      <li>Content Creation</li>
+                      <li>Social Media Management</li>
+                      <li>Graphic Design</li>
+                    </ul>
+                  </div>
+                  <div className={style.accInneradd}>
+                    <ul>
+                      <li>  45CW+9P Ultimo, New South Wales, Australia	</li>
+                      <li>	info@camerafix.com.au</li>
+                      <li>	https://www.camerafix.com.au/</li>
+                    </ul>
+                    <Link to='/data-single' className={style.detailsSupplyersbut}>View Details</Link>
+                  </div>
                 </AccordionDetails>
               </Accordion>
             </li>

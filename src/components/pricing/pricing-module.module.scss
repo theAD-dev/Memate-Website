@@ -31,6 +31,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
+
    .midheading {
     padding-top: 84px;
         color: #29292B;
@@ -486,3 +487,59 @@ line-height: 20px; /* 111.111% */
     line-height: 150%; /* 30px */
   }
 }
+@media screen and (max-width: 767px) {
+  .mainSection{
+    padding:15px !important;
+  }
+  .mainheading{
+    font-size:104px !important;
+    line-height: 110px !important;
+  }
+  .mainimage {
+    position: inherit !important;
+    transform: translateX(0) !important;
+    left: 0 !important;
+}
+.midheading{
+  padding-top:0px !important;
+}
+.midheading p{
+  font-size: 28px;
+  line-height: 34px;
+}
+.smallheading{
+  padding-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.switch{
+  width: 100% !important;
+}
+.pricingcard {
+  padding: 20px !important;
+  width: 100% !important;
+}
+.price {
+  font-size: 40px !important;
+  line-height: 50px !important;
+  margin: 5px 0 !important;
+}
+.pricingcard ul {
+  min-height: auto !important;
+  padding-bottom: 120px !important;
+}
+.questionText{
+  width: 100% !important;
+  margin: 0px auto !important;
+  padding: 0 15px !important;
+}
+.questionText h2{
+  font-size: 30px !important;
+  line-height: 36px !important;
+  margin-bottom: 5px !important;
+}
+.questionText p{
+  font-size: 16px !important;
+  line-height: 22px !important;
+}
+  }

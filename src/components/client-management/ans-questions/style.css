@@ -79,3 +79,33 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 767px) {
+  .question-answer-content {
+    width: 100%;
+    padding: 20px;
+
+}
+.question-answer-heading {
+  font-size: 26px;
+  line-height: 32px;
+}
+.questions-wrapper {
+  margin-top: 0;
+}
+.question-answer-ques-info {
+  font-size: 17px;
+  line-height: 24px;
+  padding-right: 15px;
+}
+.each-ques-wrapper {
+  padding: 10px 0px;
+}
+.question-answer-ans-info {
+  margin-top: 5px;
+  font-size: 15px;
+}
+.question-answer-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+}

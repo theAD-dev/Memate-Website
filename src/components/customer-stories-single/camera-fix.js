@@ -9,12 +9,20 @@ import imagescustomersories03 from "../../assests/images/imagescustomersories03.
 import imagescustomersories04 from "../../assests/images/imagescustomersories04.png";
 import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
 import SuccessStories from "../success-stories";
+import { Helmet } from "react-helmet";
 
 
 
 function CameraFix() {
   return (
 <>
+<Helmet>
+    <title>Camera Fix Case Study | Optimising Business with MeMate this is good</title>
+    <meta property="og:title" content="Camera Fix Case Study | Optimising Business with MeMate this is good" />
+      <meta property="og:description" content="Explore how Camera Fix, an Australian electronics repair shop, optimised its
+business operations and project management using MeMate’s powerful tools and features.
+    " />
+</Helmet>
 <div className="parent-blog-page customerstoriespage">
 
       <div className="parent-blog">

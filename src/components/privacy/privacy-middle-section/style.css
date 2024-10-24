@@ -173,3 +173,35 @@
 .kb-searchbar-wrapper input:focus {
   outline: none;
 }
+@media screen and (max-width: 767px) {
+  .kb-wrapper {
+      max-width: 100% !important;
+      display: block !important;
+  }
+  .kb-tos-wrapper {
+      background: #fff !important;
+  }
+  .kb-list {
+    width: 100%;
+}
+.kb-left-wrapper {
+  position: relative;
+  top:0px;
+  direction: revert;
+}
+.kb-right-wrapper {
+  display: block;
+  padding: 0 15px;
+}
+.kb-section-heading {
+  font-size: 26px;
+  margin-bottom: 0px;
+  line-height: 32px;
+}
+.kb-right-section br {
+  display: none;
+}
+.kb-right-section {
+  margin-top: 15px;
+}
+  }

@@ -237,3 +237,91 @@
         margin-top: 0;
     }
 }
+@media screen and (max-width: 767px) {
+    
+    .aboutBanner, .centerHeadPages{
+        padding:15px;
+    }
+    .aboutBanner h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .aboutBanner h1{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    .aboutBanner p{
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .mainContaner, .aboutBanner p, .fullflexWrap, .gridTextGrid, .imageGrid  {
+        width: 100% !important;
+    }
+    .centerHeadPages h2 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .centerHeadPages{
+        margin: 0px;
+    }
+    .fullflexWrap, .gridTextGrid{
+        display: block;
+    }
+    .gridflexWrap, .gradientGrid, .gridflexGrid, .teamflexWrap{
+        width:100% !important;
+        display: block !important;
+    }
+    .gradientGrid h2, .gradientGrid h2 span, .gridflexGrid h2, .gridflexGrid h2 span, .gridTextGrid h2 , .gridTextGrid h2 span  {
+        font-size: 32px !important;
+        display: inline-block !important;
+    }
+    .gradientGrid h2 span, .gridflexGrid h2 span, .gridTextGrid h2 span{
+        margin-right: 5px ;
+    }
+    .gradientGrid, .gridflexGrid{
+        margin-bottom: 15px;
+    }
+    .centerHeadMiddlePara {
+        width: 100%;
+        margin: 0 auto 0px;
+        padding: 15px;
+    }
+    .gridTextGrid {
+        padding:0px !important;
+        width: 100% !important;
+    }
+    .gridflexWrap .gridflexGrid {
+        padding: 15px;
+    }
+    .centerHeadPages h3 {
+        font-size: 30px;
+    }
+    .centerHeadPages p {
+        font-size: 16px;
+    }
+    .marginTopGap {
+        margin-top: 0 !important;
+    }
+    div#aboutPage {
+        padding: 0 15px !important;
+    }
+    .fullflexWrap {
+        height: 750px !important;
+    }
+    .gridflexGrid.mob_img {
+        padding: 150px !important;
+    }
+    .Deecran, .fullflexWrap {
+        padding: 15px !important;
+    }
+    .gridflexGrid.mob_img {
+            height: 400px;
+    }
+    .gridSecondWrap .gridflexGrid{
+            height: auto !important;
+    }
+    .centerHeadMiddlePara p{
+        text-align: center;
+    }
+}

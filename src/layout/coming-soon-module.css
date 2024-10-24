@@ -30,3 +30,23 @@
         width: 751px;
         margin: 32px auto 32px;
     }
+
+    @media screen and (max-width:767px){
+        .ComingSonnBg p {
+            width: 100%;
+            margin: 15px auto 32px;
+        }
+        .ComingSonnBg {
+            padding: 15px;
+        }
+        .ComingSonnBg h1 {
+            font-size: 50px;
+            line-height: 56px;
+        }
+        .ComingSonnBg h1 br {
+            display: none;
+        }
+        .ComingSonnBg img {
+            width: 100%;
+        }
+    }

@@ -163,6 +163,9 @@
     align-items: flex-start;
     gap: 26px;
 }
+.section3 .copyright a{
+    text-decoration: none;
+}
 
 .copyright p{
     color: #888E9E;
@@ -172,4 +175,87 @@
     font-weight: 360;
     /* line-height: 140%; 22.4px */
     letter-spacing: -0.16px;
+}
+@media screen and (max-width: 767px) {
+    .main-footer, .section2 .footer-links {
+        width: 100%;
+        max-width: 100%;
+    }
+    .main-footer {
+        padding:20px;
+
+    }
+    .footer-section, .main-footer .section1, .section2 .footer-links, .section1 .download-section, .links .page-links {
+        display: block;
+        width: 100%;
+    }
+    .main-footer .section1 {
+        height: auto;
+    }
+    .footer-links .links {
+        display: block;
+        gap: 15px;
+    }
+    .footer-links .links, .main-footer .section1, .application-section{
+        margin-bottom: 15px;
+    }
+    .footer-links .links .link-heading {
+        margin-bottom: 8px;
+    }
+    .links .page-links a {
+        display: block;
+        margin-bottom: 8px;
+    }
+    .download-section .download-heading {
+        margin-bottom: 5px;
+    }
+    .section1 .footer-heading {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .main-footer {
+        border-radius: 15px;
+    }
+    .footer-heading .trade-mark {
+        position: relative;
+        top: -8px;
+        right: -4px;
+    }
+    .download-section {
+        margin-top: 20px;
+    }
+    .section3 .copyright {
+        display: block;
+        gap: 20px;
+    }
+    .copyright p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .page-links, .section3 .copyright {
+        width: 100% !important;
+    }
+    .footer-section {
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .main-footer {
+        width: 100%;
+        max-width: 100%;
+        padding:30px;
+
+    }
+    .section2 .footer-links {
+        display: block;
+        width: 100%;
+}
+.footer-links .links {
+    display: inline-block;
+    gap: 20px;
+    width: 33%;
+}
+.section1 .download-section{
+    width:100%;
+}
 }

@@ -1,3 +1,6 @@
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BussinessManagement from "../../components/bussiness-management"
 import CommonChallenges from "../../components/common-challenges"
 import FeaturedOn from "../../components/featured-on"
@@ -16,9 +19,50 @@ import SuccessStories from "../../components/success-stories"
 import ZeroOfferOnboarding from "../../components/zero-offer-onboarding"
 import Layout from "../../layout"
 import { Helmet } from 'react-helmet';
+gsap.registerPlugin(ScrollTrigger);
 
-const LandingPage = ({postsLatest,updates}) => {
- 
+const LandingPage = ({postsLatest, updates}) => {
+  const stickySectionRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+
+    if (stickySectionRef.current) {
+      gsap.to(stickySectionRef.current, {
+        scrollTrigger: {
+          trigger: stickySectionRef.current,
+          scrub: 1,
+          start: "top 45%",
+          end: "top 30%",
+          markers: false, 
+        },
+        opacity: 1,
+        duration: 1, 
+      });
+    }
+
+    const tl = gsap.timeline({
+      repeat: -1,
+      repeatDelay: 5,
+      scrollTrigger: {
+        trigger: buttonRef.current,
+        scrub: false,
+        markers: false,
+        toggleActions: "play none none none",
+        start: "top center",
+      },
+    });
+
+    tl.to(buttonRef.current, {
+      scale: 1.1,
+      duration: 0.9,
+      yoyo: true,
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((instance) => instance.kill());
+    };
+  }, []);
 
 
   return (
@@ -35,7 +79,12 @@ const LandingPage = ({postsLatest,updates}) => {
       <FindOneApplication/>
       <CommonChallenges/>
       <ZeroOfferOnboarding/>
+      
+
+      
+        
       <MeMateFeatureStreamline/>
+      <div className="apply-container">
       <MemateFeatureBoastEfficiency/>
       <MeMateFinanceInsights/>
       <MeMateFeatureMotivateTeam/>
@@ -45,7 +94,24 @@ const LandingPage = ({postsLatest,updates}) => {
       <SimpleVersatilePowerful/>
       <SuccessStories/>
       <NewsAndUpdate postsLatest={postsLatest}/>
-      <NextStep text="Request a Demo"/>
+      </div>
+      <div
+          ref={stickySectionRef}
+          className="sticky-section-switch"
+          style={{ opacity: 0 }}>
+      <div className="apply-content">
+      <div className="get-started-wrapper">
+      <div className="intro-sticky">
+        <NextStep text="Request a Demo"/>
+      </div>
+      </div>
+      </div>
+      </div>
+   
+    
+      {/* <div className="btn-tron-big" ref={buttonRef}>
+          <span>Get Started</span>
+        </div> */}
     </Layout>
    </>
   )

@@ -150,3 +150,122 @@ button.get-started-btn {
     top: 36px;
     right:56px;
 }
+@media screen and (max-width: 767px) {
+    .memate h2 {
+        font-size: 42px;
+        line-height:48px;
+    }
+    .memate h1, .operation-right h1 {
+        font-size: 70px;
+        line-height:76px;
+    }
+    .heading-margin {
+        margin-bottom: 15px;
+    }
+    .feature-section-container {
+        margin-top: 30px;
+    }
+    .operation-desp p {
+        max-width: 100%;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .operation-left h2 {
+        font-size: 26px;
+        line-height:32px;
+    }
+    .operation-left {
+        padding: 0;
+    }
+    .main-operation, .boost-profits {
+        display: block;
+        padding:30px 20px;
+    }
+    .max-image, .mac-with-iphone img {
+        position: inherit;
+        margin-top: 30px;
+    }
+    .max-image img, .mac-with-iphone img, .motivate-image img {
+        width: 100%;
+    }
+    .operation-left h1 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    .all-in-one {
+        padding: 0 15px;
+    }
+    .operation-right {
+        margin-top: 20px;
+    }
+    .efficiency-section {
+        max-width: 100%;
+    }
+    .main-operation {
+        margin-top: 20px;
+
+    }
+    p.all-text, .operation-left h2, .operation-desp p, .operation-left h1 {
+        text-align: center;
+    }
+    button.get-started-btn {
+        margin: 0 auto !important;
+    }
+    .brand-names img {
+        width: 70px;
+    }
+    .slider-container.sliderTabWrapper.sliderTabWrapperApp .slick-slide.slick-active.slick-current {
+        position: relative;
+        border: 3px solid transparent;
+        background: #fff;
+        background-clip: padding-box;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 25px !important;
+        border-color: linear-gradient(to top, #ffb258 14%, #24b3f8 109%);
+        padding: 12px 18px;
+        border-radius: 20px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        min-width: 132px;
+        height: 90px;
+    }
+    .slider-container.sliderTabWrapper.sliderTabWrapperApp .slick-slide.slick-active.slick-current:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        bottom: -3px;
+        left: -3px;
+        right: -3px;
+        background: linear-gradient(to top, #ffb258 14%, #24b3f8 109%);
+        z-index: -1;
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .features-section, .operation-desp p {
+        width: 100%;
+        max-width: 100%;
+    }
+    .main-operation {
+        display: block;
+        margin-top: 30px;
+        padding-right: 0;
+    }
+    .operation-left {
+        padding-bottom: 0px;
+    }
+    .all-in-one {
+        padding: 0 15px;
+    }
+    .max-image {
+        position: inherit;
+        text-align: center;
+    }
+    .feature-section-container {
+        margin-top: 30px;
+    }
+    .heading-margin {
+        margin-bottom: 30px;
+    }
+}

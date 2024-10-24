@@ -76,3 +76,23 @@
   line-height: normal;
   width: 170px;
 }
+@media screen and (max-width: 767px) {
+  .industry-page-parent {
+    width: 100%;
+    padding: 0 15px;
+}
+.industry-header-wrapper {
+  padding: 15px;
+}
+.industry-middle-heading {
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0;
+}
+p.industry-middle-heading br {
+  display: none;
+}
+.industry-bussiness-management-wrapper {
+  padding-top: 15px;
+}
+}

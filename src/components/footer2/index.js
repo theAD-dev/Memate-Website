@@ -93,8 +93,8 @@ const Footer = () => {
                 <Link to="/customer-stories">Customer Stories</Link>
                 <Link to="/supplier-database">Supplier Database</Link>
                 <Link to="/sitemap">Sitemap</Link>
-                <Link to="/https://dev.memate.com.au/requestdemo" target="_blank">Book a Demo</Link>
-                <Link to="/https://dev.memate.com.au/requestdemo" target="_blank">My Account</Link>
+                <Link to="https://dev.memate.com.au/requestdemo" target="_blank">Request a Demo</Link>
+                <Link to="https://dev.memate.com.au/requestdemo" target="_blank">My Account</Link>
               </div>
             </div>
 
@@ -156,7 +156,7 @@ const Footer = () => {
         <div className="section3">
           <div className="copyright">
             <p>© MeMate 2024 </p>
-            <p>theAd | Web Design Company in Sydney</p>
+            <Link to="https://www.thead.com.au/" target="_blank"><p>theAd | Web Design Company in Sydney</p></Link>
           </div>
         </div>
         {/* <div className="socail-media-sec">

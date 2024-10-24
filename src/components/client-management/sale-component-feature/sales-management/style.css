@@ -52,3 +52,12 @@
   font-weight: 420;
   line-height: 50px;
 }
+@media screen and (max-width: 767px) {
+  .sales-heading-sales {
+      font-size: 26px !important;
+  }
+  .sales-description-sales {
+    font-size: 16px;
+    line-height: 22px;
+}
+}

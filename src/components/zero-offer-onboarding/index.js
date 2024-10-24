@@ -13,7 +13,7 @@ const ZeroOfferOnboarding = () => {
             Plus, we provide a 14-day free trial because we believe our software will become indispensable to your business.
             </p>
             <div className="button-container">
-              <button className="book-a-demo"> Book a demo</button>
+              <button className="book-a-demo">Request a Demo</button>
             </div>
           </div>
           <div className="offer-screen-shot">

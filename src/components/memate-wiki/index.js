@@ -3,6 +3,7 @@
 import "./style.css";
 import { useState } from 'react';
  import style from './wiki.module.scss';
+import { Helmet } from "react-helmet";
 
 
 const MemateWikiComponent = () => {
@@ -22,6 +23,13 @@ const MemateWikiComponent = () => {
 
   return (
     <>
+     <Helmet>
+    <title>MeMate Wiki | Business Management Practices, Tools, and Information</title>
+    <meta property="og:title" content="MeMate Wiki | Business Management Practices, Tools, and Information" />
+      <meta property="og:description" content="Discover business management insights on MeMate Wiki, covering job
+scheduling, invoicing, quote calculations, and essential tools for success.
+    " />
+</Helmet>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
     <div className={style.mainHeadTitle}>
       <h1>meMate <br></br>wiki</h1>

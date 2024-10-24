@@ -36,3 +36,13 @@
     line-height: 150%; 
 }
 }
+@media screen and (max-width: 767px) {
+.mainHeadinstyle{
+    padding: 0 15px !important;
+    margin-bottom: 15px !important;
+}
+.mainHeadinstyle h2 {
+    font-size: 70px !important;
+    line-height: 76px !important;
+}
+}

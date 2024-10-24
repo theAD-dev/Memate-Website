@@ -111,3 +111,20 @@ button.get-started-btn {
     bottom: 22px;
     right: 10px;
 }
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .efficiency-section, .operation-left {
+        width: 100%;
+    }
+    .mac-with-iphone img {
+        width: 100%;
+    }
+    .motivate-team-wrapper, .boost-profits {
+        display: block;
+    }
+    .operation-right, .mac-with-iphone {
+        margin-top: 30px;
+    }
+    .mac-with-iphone img {
+        position: inherit;
+    }
+}

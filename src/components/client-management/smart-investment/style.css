@@ -119,5 +119,18 @@
   justify-content: space-between;
   width: 1264px;
 }
-
+@media screen and (max-width: 767px) {
+  .smart-investment-heading {
+    font-size: 26px;
+}
+h1.smart-investment-banner {
+  font-size: 50px !important;
+  line-height: 56px !important;
+  margin: 0 !important;
+}
+.smart-investment-section-description {
+  font-size: 16px;
+  line-height: 22px;
+}
+}
 

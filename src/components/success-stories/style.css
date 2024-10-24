@@ -211,3 +211,42 @@ p.owners-disp {
   -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
+@media screen and (max-width: 767px) {
+  .bottom-management h2 {
+    font-size:26px;
+    line-height:32px;
+}
+.bottom-management {
+  margin-top: 15px;
+}
+.bottom-management p br {
+  display: none;
+}
+.slider-item {
+  padding: 0 10px;
+}
+.customerstoriesitem {
+  padding: 15px;
+}
+.customerstoriesitem a {
+  font-size: 13px;
+  line-height: 18px;
+}
+.slider-section1 {
+  padding:0 15px;
+}
+.slider-container {
+  max-width: 320px;
+}
+.slider-item a img {
+  height: 93px;
+  object-fit: cover;
+}
+.slick-slide.slick-active.slick-center.slick-current img {
+  height: 134px;
+  object-fit: cover;
+}
+.customerstoriesitem {
+  min-height: 104px;
+}
+}

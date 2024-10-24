@@ -318,3 +318,123 @@ img.graph-business {
 }
 
 
+@media screen and (max-width: 767px) {
+  .common-box-wrapper {
+    margin-top: 30px;
+}
+.common-box {
+  width: 100%;
+  height: auto;
+}
+.challenges-text h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  line-height: 28px;
+}
+.gain-time p, .gain-time p span {
+  font-size: 22px;
+}
+.max-cont-width, .overcome-pro-content {
+  width: 100%;
+  max-width: 100%;
+}
+.predict-side {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+p.card-text {
+  font-size: 22px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+.control-text p , .control-text p strong, .inner-text p, .inner-text p strong{
+  font-size: 22px;
+  line-height: 28px;
+}
+.icons {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.project-profitability {
+  margin-top: 20px;
+}
+.inner-text p {
+  text-align: center;
+}
+.me-meta-card, .real-time {
+  display: block;
+}
+.gain-time, .overcome-pro {
+  width: 100%;
+  max-width:100%;
+  min-height: auto;
+}
+.overcome-pro p, .overcome-pro p span {
+  font-size: 22px;
+  line-height: 28px;
+}
+.overcome-pro {
+  margin-top: 20px;
+  padding: 30px 15px;
+}
+.real-time {
+  margin-top: 20px;
+}
+.common-box-wrapper {
+  padding: 0 15px;
+}
+.me-meta-image img {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.internal-control {
+  padding:30px 12px;
+}
+.activities-text p span, .activities-text p {
+  font-size: 22px;
+}
+}
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .me-meta-card,.real-time {
+    display: block;
+    gap: 10px;
+}
+.max-cont-width, .predict-side, .overcome-pro {
+  width: 100%;
+  max-width: 100%;
+}
+.gain-time {
+  width: 100%;
+  min-height: auto;
+}
+.internal-control {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.predict-side {
+  margin-bottom: 30px;
+}
+.common-box {
+  width: 100%;
+  height: auto;
+}
+.common-box-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  padding: 0 15px;
+}
+.me-meta-image img {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.inner-text p {
+  text-align: center;
+}
+.overcome-pro {
+  margin-top: 15px;
+}
+}

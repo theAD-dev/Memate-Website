@@ -89,3 +89,22 @@
   line-height: 25.2px;
   max-width: 750px;
 }
+@media screen and (max-width: 767px) {
+  .next-step {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+.next-step h3, .next-step-data {
+  font-size: 26px;
+}
+.next-title h1 {
+  margin-top: 0px;
+  font-size: 50px;
+  letter-spacing: 0px;
+}
+.next-step-page-description {
+  margin-top:0px;
+  gap: 15px;
+}
+}

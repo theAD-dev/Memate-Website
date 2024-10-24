@@ -10,9 +10,9 @@ import {
 } from "./pages";
 import "./App.css";
 import ContactUsPage from "./pages/contact-us";
-import ScrollToTop from "./layout/ScrollToTop"; 
+import ScrollToTop from "./layout/ScrollToTop";
 import KnowledgeBasePage from "./pages/knowledge-base";
-import { blogList,blogLatest } from './api/blogAPI';
+import { blogList, blogLatest } from './api/blogAPI';
 import SupplierDatabasePage from "./pages/supplier-database";
 import TOSPage from "./pages/tos-page";
 import PricingPage from "./pages/pricing";
@@ -58,139 +58,142 @@ import SitemapPage from "./pages/sitemap";
 import ClientPage from "./pages/client-management";
 import FeaturesNewsPage from "./pages/features-news";
 import ResourcesPage from "./pages/resources";
+import ErrorPage from "./pages/error-page";
+import ThankYouPage from "./pages/thankyou-page";
 
 
 function App() {
-  const [posts, setPosts] = useState([]);
-  const [postsLatest, setPostsLatest] = useState([]);
-  console.log('postsLatestdfffffffffffffffffffffff: ', postsLatest);
+  let savedlatestPostData = [];
+try {
+  savedlatestPostData = JSON.parse(sessionStorage.getItem('latestPostData') || "[]");
+} catch (error) {
+  console.error('Error parsing latestPostData from sessionStorage:', error);
+  savedlatestPostData = [];
+}
+  const [postsLatest, setPostsLatest] = useState(savedlatestPostData || []);
 
-  const [totalPosts, setTotalPosts] = useState(0);
+  const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [error, setError] = useState(null); 
-  const postsPerPage = 9;
+  const [totalPosts, setTotalPosts] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const limit = 9;
 
   useEffect(() => {
     const fetchDataLatest = async () => {
-    
       try {
         const dataLatest = await blogLatest();
+        sessionStorage.setItem('latestPostData', JSON.stringify(dataLatest));
         setPostsLatest(dataLatest);
-         console.log("fetchDataLatest dataLatest:", dataLatest);
-      } catch {
-        
-      } 
+      } catch (err) {
+        console.log('Error during getting the latest post:', err);
+      }
     };
 
-    fetchDataLatest();
+    if (!postsLatest?.length) fetchDataLatest();
   }, []);
-
-
 
   useEffect(() => {
     const fetchPosts = async () => {
+      setLoading(true);
       try {
-        const data = await blogList();
+        const response = await blogList(currentPage, limit);
+        const { data, total } = response;
+        setTotalPosts(total);
 
-        if (!Array.isArray(data)) {
-          throw new Error("Fetched data is not an array");
-        }
-  
-        setTotalPosts(data.length);
-        const startIndex = (currentPage - 1) * postsPerPage;
-        const paginatedPosts = data.slice(startIndex, startIndex + postsPerPage);
-        setPosts(paginatedPosts);
+        setPosts((prevPosts) => {
+          const uniquePosts = data?.filter(
+            (newPost) => !prevPosts.some((post) => post.id === newPost.id)
+          );
+          return [...prevPosts, ...uniquePosts];
+        });
       } catch (error) {
         setError(error);
         console.error("Error fetching blog posts:", error);
+      } finally {
+        setLoading(false);
       }
     };
-  
+
     fetchPosts();
   }, [currentPage]);
-  
+
 
   const handleNext = () => {
-    if (currentPage * postsPerPage < totalPosts) {
-      setCurrentPage(currentPage + 1);
-    }
+    setCurrentPage((prevPage) => prevPage + 1);
   };
-
-  const handlePrevious = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
-  if (error) return <div>Error: {error.message}</div>; 
 
   return (
     <div className="App">
-        <ScrollToTop /> 
-        <Routes>
-          <Route path="/" exact element={<LandingPage posts={posts} postsLatest={postsLatest} />} />
-          <Route path="/feature-page-sales" exact element={<FeaturePage />} />
-          <Route 
-          path="/news" 
-          exact 
-          element={<BlogPage posts={posts} postsLatest={postsLatest} handlePrevious={handlePrevious} handleNext={handleNext} />} />
-        <Route 
-          path="/news/:slug" 
-          element={<SinglePage postsSingle={posts} postsLatest={postsLatest}/>} />
-          <Route path="/software-update" exact element={<SoftwareUpdatePage />} />
-          <Route path="/creative-agencies" exact element={<IndustryPage />} />
-          <Route path="/contact-us" exact element={<ContactUsPage />} />
-          <Route path="/supplier-database" exact element={<SupplierDatabasePage />} />
-          <Route path="/knowledge-base" exact element={<KnowledgeBasePage />} />
-          <Route path="/terms-of-use" exact element={<TOSPage />} />
-          <Route path="/pricing" exact element={<PricingPage />} />
-          <Route path="/privacy" exact element={<PrivacyPage />} />
-          <Route path="/customer-stories" exact element={<CustomerStoriesPage />} />
-          <Route path="/camera-fix" exact element={<CustomerStoriesPageSingle />} />
-          <Route path="/pro-vinyl" exact element={<CustomerStoriesPageSingle />} />
-          <Route path="/elite-life" exact element={<CustomerStoriesPageSingle />} />
-          <Route path="/boat-wizard" exact element={<CustomerStoriesPageSingle />} />
-          <Route path="/sorted-media" exact element={<CustomerStoriesPageSingle />} />
-          <Route path="/data-single" exact element={<DatabasePageSingle />} />
-          <Route path="/client-management" exact element={<ClientPage />} />
-          <Route path="/supplier-management" exact element={<SupplierManagementPage />} />
-          <Route path="/employee-management" exact element={<EmployeeManagementPage />} />
-          <Route path="/project-management" exact element={<ProjectManagementPage />} />
-          <Route path="/reports" exact element={<ReportsPage />} />
-          <Route path="/profitability-and-budgeting" exact element={<ProfitabilityAndBudgetingPage />} />
-          <Route path="/contractor" exact element={<ContractorPage />} />
-          <Route path="/internal-chat" exact element={<InternalChatPage />} />
-          <Route path="/time-sheet" exact element={<TimeSheetPage />} />
-          <Route path="/task-management" exact element={<TaskManagementPage />} />
-          <Route path="/communication" exact element={<CommunicationPage />} />
-          <Route path="/scheduling" exact element={<SchedulingPage />} />
-          <Route path="/invoicing" exact element={<InvoicingPage />} />
-          <Route path="/statistic" exact element={<StatisticPage />} />
-          <Route path="/schedule-jobs" exact element={<ScheduleJobsPage />} />
-          <Route path="/time-tracker" exact element={<TimeTrackerPage />} />
-          <Route path="/job-approval" exact element={<JobApprovalPage />} />    
-          <Route path="/multi-location" exact element={<MultiLocationPage />} />
-          <Route path="/calendar" exact element={<CalendarPage />} />
-          <Route path="/calculators" exact element={<CalculatorsPage />} />
-          <Route path="/electronic-repair-specialists" exact element={<ElectronicPage />} />
-          <Route path="/photo-video-agency" exact element={<PhotoPage />} />
-          <Route path="/automotive" exact element={<AutomotivePage />} />
-          <Route path="/startups" exact element={<StartupsPage />} />
-          <Route path="/construction" exact element={<ConstructionPage />} />
-          <Route path="/features-news" exact element={<FeaturesNewsPage />} />
-          <Route path="/about" exact element={<AboutMematePage />} />
-          <Route path="/delete-request" exact element={<DeleteRequestPage />} />
-          <Route path="/memate-wiki" exact element={<MemateWikiPage />} />
-          <Route path="/security" exact element={<SecurityPage />} />
-          <Route path="/legal" exact element={<LegalPage />} />
-          <Route path="/contact-sales" exact element={<ContactSalesPage />} />
-          <Route path="/watch-demo" exact element={<WatchDemoPage/>} />
-          <Route path="/features" exact element={<FeaturesPage/>} />
-          <Route path="/industries" exact element={<IndustriesPage/>} />
-          <Route path="/news-stories" exact element={<NewsStoriesPage/>} />
-          <Route path="/sitemap" exact element={<SitemapPage/>} />
-          <Route path="/resources" exact element={<ResourcesPage/>} />
-        </Routes>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" exact element={<LandingPage posts={posts} postsLatest={postsLatest} />} />
+        <Route path="/feature-page-sales" exact element={<FeaturePage />} />
+        <Route
+          path="/news"
+          exact
+          element={<BlogPage posts={posts} postsLatest={postsLatest} totalPosts={totalPosts} loading={loading} handleNext={handleNext} />} />
+        <Route
+          path="/news/:slug"
+          element={<SinglePage postsSingle={posts} postsLatest={postsLatest} />} />
+        <Route path="/software-update" exact element={<SoftwareUpdatePage />} />
+        <Route path="/creative-agencies" exact element={<IndustryPage />} />
+        <Route path="/contact-us" exact element={<ContactUsPage />} />
+        <Route path="/supplier-database" exact element={<SupplierDatabasePage />} />
+        <Route path="/knowledge-base" exact element={<KnowledgeBasePage />} />
+        <Route path="/terms-of-use" exact element={<TOSPage />} />
+        <Route path="/pricing" exact element={<PricingPage />} />
+        <Route path="/privacy" exact element={<PrivacyPage />} />
+        <Route path="/customer-stories" exact element={<CustomerStoriesPage />} />
+        <Route path="/camera-fix" exact element={<CustomerStoriesPageSingle />} />
+        <Route path="/pro-vinyl" exact element={<CustomerStoriesPageSingle />} />
+        <Route path="/elite-life" exact element={<CustomerStoriesPageSingle />} />
+        <Route path="/boat-wizard" exact element={<CustomerStoriesPageSingle />} />
+        <Route path="/sorted-media" exact element={<CustomerStoriesPageSingle />} />
+        <Route path="/data-single" exact element={<DatabasePageSingle />} />
+        <Route path="/client-management" exact element={<ClientPage />} />
+        <Route path="/supplier-management" exact element={<SupplierManagementPage />} />
+        <Route path="/employee-management" exact element={<EmployeeManagementPage />} />
+        <Route path="/project-management" exact element={<ProjectManagementPage />} />
+        <Route path="/reports" exact element={<ReportsPage />} />
+        <Route path="/profitability-and-budgeting" exact element={<ProfitabilityAndBudgetingPage />} />
+        <Route path="/contractor" exact element={<ContractorPage />} />
+        <Route path="/internal-chat" exact element={<InternalChatPage />} />
+        <Route path="/time-sheet" exact element={<TimeSheetPage />} />
+        <Route path="/task-management" exact element={<TaskManagementPage />} />
+        <Route path="/communication" exact element={<CommunicationPage />} />
+        <Route path="/scheduling" exact element={<SchedulingPage />} />
+        <Route path="/invoicing" exact element={<InvoicingPage />} />
+        <Route path="/statistic" exact element={<StatisticPage />} />
+        <Route path="/schedule-jobs" exact element={<ScheduleJobsPage />} />
+        <Route path="/time-tracker" exact element={<TimeTrackerPage />} />
+        <Route path="/job-approval" exact element={<JobApprovalPage />} />
+        <Route path="/multi-location" exact element={<MultiLocationPage />} />
+        <Route path="/calendar" exact element={<CalendarPage />} />
+        <Route path="/calculators" exact element={<CalculatorsPage />} />
+        <Route path="/electronic-repair-specialists" exact element={<ElectronicPage />} />
+        <Route path="/photo-video-agency" exact element={<PhotoPage />} />
+        <Route path="/automotive" exact element={<AutomotivePage />} />
+        <Route path="/startups" exact element={<StartupsPage />} />
+        <Route path="/construction" exact element={<ConstructionPage />} />
+        <Route path="/features-news" exact element={<FeaturesNewsPage />} />
+        <Route path="/about" exact element={<AboutMematePage />} />
+        <Route path="/delete-request" exact element={<DeleteRequestPage />} />
+        <Route path="/memate-wiki" exact element={<MemateWikiPage />} />
+        <Route path="/security" exact element={<SecurityPage />} />
+        <Route path="/legal" exact element={<LegalPage />} />
+        <Route path="/contact-sales" exact element={<ContactSalesPage />} />
+        <Route path="/watch-demo" exact element={<WatchDemoPage />} />
+        <Route path="/features" exact element={<FeaturesPage />} />
+        <Route path="/industries" exact element={<IndustriesPage />} />
+        <Route path="/news-stories" exact element={<NewsStoriesPage />} />
+        <Route path="/sitemap" exact element={<SitemapPage />} />
+        <Route path="/resources" exact element={<ResourcesPage />} />
+        <Route path="*" exact element={<ErrorPage />} />
+        <Route path="/thank-you" exact element={<ThankYouPage />} />
+
+
+      </Routes>
     </div>
   );
 }

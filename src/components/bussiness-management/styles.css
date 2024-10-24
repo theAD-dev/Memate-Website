@@ -122,3 +122,57 @@ h1.text {
   outline: none;
   font-family: "sequel_sans" !important;
 }
+
+@media screen and (max-width: 767px) {
+  .home-platform h2 {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.home-page-content {
+  padding: 0px 15px;
+}
+  .home-platform h2 br{
+    display: none;
+  }
+  .heding-text-top h1 {
+    font-size: 60px;
+    line-height: 60px;
+}
+.heding-text-top {
+  margin-top:0px;
+}
+.heding-text-top {
+  padding: 0;
+}
+.how-to-use p {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+.to-replace-bold-text {
+  margin-bottom: 5px;
+}
+.sliderTabWrapper .slick-slide {
+  margin: 20px 15px !important;
+}
+.businesses-mode {
+  margin-top: 0px;
+  text-align: center;
+}
+.image-wrapper svg {
+  height: auto;
+  margin-top: 30px;
+}
+.how-to-use {
+  margin-top: 25px;
+}
+
+}
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .heding-text-top h1 {
+    font-size: 130px;
+    line-height: 134px;
+}
+
+}

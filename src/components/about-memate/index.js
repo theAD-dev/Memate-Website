@@ -1,12 +1,22 @@
 
 
 import style from './about.module.scss';
+import './about.style.css';
 import Images from "../../assests/images";
+import { Helmet } from 'react-helmet';
 const AboutMemateComponent = () => {
 
 
   return (
     <>
+    <Helmet>
+    <title>What is Memate? Australia’s Project Management Software</title>
+    <meta property="og:title" content="What is Memate? Australia’s Project Management Software" />
+      <meta property="og:description" content="Discover Memate: Streamline your workflow, boost productivity, and ensure
+timely project delivery with advanced project management software.
+    " />
+</Helmet>
+    <div id="aboutPage">
     
       <div className={`${style.aboutBanner} ${style.mainContaner}`}>
       <h2>Helping Australian</h2>
@@ -24,11 +34,11 @@ const AboutMemateComponent = () => {
          <p>We began developing what would become meMate long before it was named. Initially, we operated in a completely different industry, unrelated to SaaS or any software systems. However, from its earliest stages, we recognised a clear need for a robust system that would allow our managers to provide quotes based on the precise use of labor and materials rather than their own perceptions, which could be influenced by experience, mood, or personal relationships with customers. Existing tools like Excel and accounting software were too complex and inflexible for this essential function. </p>
          <p>More complicated solutions from Oracle or SAP were extremely expensive for the small businesses we were part of at that time.</p>
       </div>
-      <div className={`${style.gridflexGrid}`} style={{ backgroundImage: `url(${Images.aboutBgGrid})`, width: '590px',    borderRadius: '30px' }}>       
+      <div className={`${style.gridflexGrid} ${style.mob_img} `} style={{ backgroundImage: `url(${Images.aboutBgGrid})`, width: '590px',    borderRadius: '30px' }}>       
       </div>
       </div>
       <div className={`${style.gridflexWrap} ${style.gridSecondWrap} ${style.marginTopGap}`}>
-      <div className={`${style.gridflexGrid}`} style={{ backgroundImage: `url(${Images.aboutBgGrid1})`, width: '502px',    borderRadius: '30px' }}>
+      <div className={`${style.gridflexGrid} ${style.mob_img}`} style={{ backgroundImage: `url(${Images.aboutBgGrid1})`, width: '502px',    borderRadius: '30px' }}>
       </div>
       <div className={`${style.gridflexGrid} ${style.gradientDGrid}`} style={{ width: '682px'}}>
         <h2><span>Perpetually</span>refining our tool</h2>
@@ -117,6 +127,7 @@ const AboutMemateComponent = () => {
 
 
 
+    </div>
     </>
   );
 };

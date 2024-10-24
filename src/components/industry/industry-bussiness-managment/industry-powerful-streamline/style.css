@@ -56,3 +56,19 @@
   font-weight: 360;
   line-height: 140%; /* 28px */
 }
+@media screen and (max-width: 767px) {
+  .industry-bussiness-category-wrapper {
+    margin-top: 15px;
+}
+.industry-powerful-streamline-wrapper {
+  padding: 15px;
+}
+.industry-powerful-streamline-content-wrapper {
+  max-width: 100%;
+}
+.industry-workflow-wrapper {
+  width: 100%;
+  padding: 15px;
+  margin-top: 0;
+}
+}

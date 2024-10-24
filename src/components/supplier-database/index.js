@@ -8,14 +8,14 @@ const SupplierDatabase = () => {
 
   return (
     <>
-     <Helmet>
-    <title>Supplier Database: Connect with Quality Providers</title>
-    <meta property="og:title" content="Supplier Database: Connect with Quality Providers" />
-      <meta property="og:description" content="Explore our extensive Supplier Database! Discover reliable suppliers that meet your requirements, ensuring quality and efficiency for your projects." />
-</Helmet>
+      <Helmet>
+        <title>Supplier Database: Connect with Quality Providers</title>
+        <meta property="og:title" content="Supplier Database: Connect with Quality Providers" />
+        <meta property="og:description" content="Explore our extensive Supplier Database! Discover reliable suppliers that meet your requirements, ensuring quality and efficiency for your projects." />
+      </Helmet>
       <div className={`main-section ${style.mainSection}`}>
         <div className="main-heading">Supplier<br></br> Database</div>
-       
+
         <div className={style.midheading}>
           <p>Database of Companies Presented in meMate</p>
         </div>
@@ -27,11 +27,11 @@ const SupplierDatabase = () => {
         </div>
       </div>
       <div className={style.filtersection}>
-      <div className={style.midheading}>
+        <div className={style.midheading}>
           <p>Find the business you need</p>
-        </div>  
+        </div>
         <div className={style.databaseWrapper}>
-        <DataBase/>
+          <DataBase />
         </div>
       </div>
     </>

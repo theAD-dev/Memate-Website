@@ -16,7 +16,14 @@
     font-weight: 425;
     letter-spacing: 1px;
 }
-
+.p-dialog .p-dialog-header {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.p-dialog .p-dialog-footer {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
 
 .main-section .main-heading {
     background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
@@ -196,4 +203,58 @@
 }
 .query-cards .query-card .query-button-color div p{
     color: #29292B;
+}
+
+@media screen and (max-width: 767px) {
+    #contactUsPage .main-image img {
+        width: 100%;
+        height: auto;
+    }
+    #contactUsPage .main-heading {
+        font-size: 60px;
+        line-height: 51px;
+    }
+    #contactUsPage .main-section .mid-heading {
+        padding-top:80px;
+        font-size: 22px;
+    }
+    #contactUsPage .query-section .query-cards {
+        display: block;
+
+    }
+    #contactUsPage .query-section {
+        padding-top: 0;
+        padding-bottom:0px;
+    }
+    #contactUsPage .query-section .query-cards .query-card {
+        width: 100%;
+        height: auto;
+        padding:30px;
+        margin-bottom: 15px;
+    }
+    .main-section .small-heading {
+        padding-top: 10px;
+    }
+    .query-cards .query-card .query-main {
+        gap: 15px;
+    }
+    .query-cards .query-card .query-button {
+        margin-top: 20px;
+    }
+    #contactUsPage .query-cards .query-card .query-main .query-main-heading p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .query-main-heading, .query-small-heading {
+        text-align: center;
+    }
+    #contactUsPage .main-section-button {
+        margin-bottom: 25px;
+    }
+    #contactUsPage .query-section .small-heading {
+        padding: 15px;
+    }
+    #contactUsPage .main-section {
+        padding-top: 76px;
+    }
 }

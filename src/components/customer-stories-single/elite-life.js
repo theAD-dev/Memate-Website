@@ -9,12 +9,20 @@ import EliteLife04 from "../../assests/images/EliteLife04.jpg";
 import EliteLife05 from "../../assests/images/EliteLife05.jpg";
 import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
 import SuccessStories from "../success-stories";
+import { Helmet } from "react-helmet";
 
 
 
 function EliteLife() {
   return (
     <>
+     <Helmet>
+    <title>Elite Life Case Study | Optimising Business with MeMate</title>
+    <meta property="og:title" content="Elite Life Case Study | Optimising Business with MeMate" />
+      <meta property="og:description" content="See how Elite Life streamlined business operations and improved project
+management using MeMate, enhancing productivity and driving growth effectively.
+    " />
+</Helmet>
       <div className="parent-blog-page customerstoriespage">
 
         <div className="parent-blog">

@@ -9,12 +9,21 @@ import BoatWizard04 from "../../assests/images/BoatWizard04.jpg";
 import BoatWizard05 from "../../assests/images/BoatWizard05.jpg";
 import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
 import SuccessStories from "../success-stories";
+import { Helmet } from "react-helmet";
 
 
 
 function BoatWizard() {
   return (
     <>
+    <Helmet>
+    <title>Boat Wizard Case Study | Streamlining Operations with MeMate</title>
+    <meta property="og:title" content="Boat Wizard Case Study | Streamlining Operations with MeMate" />
+      <meta property="og:description" content="Learn how Boat Wizard improved business management and optimised
+operations with MeMate’s tools, enhancing efficiency and ensuring smooth project
+execution.
+    " />
+</Helmet>
       <div className="parent-blog-page customerstoriespage">
 
         <div className="parent-blog">

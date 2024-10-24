@@ -2,10 +2,18 @@
 
 import "./style.css";
  import style from './resources.module.scss';
+import { Helmet } from "react-helmet";
 
 const ResourcesComponent = () => {
   return (
     <> 
+     <Helmet>
+    <title>Resources | MeMate - Business &amp; Project Management Insights</title>
+    <meta property="og:title" content="Resources | MeMate - Business &amp; Project Management Insights" />
+      <meta property="og:description" content="Explore MeMate&#39;s Resources &amp; Tools, including the MeMate Manual and
+Business Support, designed to empower efficient project management and business growth.
+    " />
+</Helmet>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
     <div className={style.mainHeadTitle}>
       <h1>resources</h1>

@@ -86,3 +86,84 @@
   outline: none;
   font-family: "sequel_sans" !important;
 }
+@media screen and (max-width: 767px) {
+  .sales-heading {
+    font-size: 30px;
+    line-height: 38px;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+.sales-heading br, p.sales-type br{
+  display: none;
+}
+.sales-component-content {
+  margin-top: 0;
+  max-width: 100%;
+}
+.sales-management-wrapper-data img, .modal-contact img, .pipeline-image-wrapper img, .sales-process-optimization-image img, .aglie-pipeline-management-wrapper img, .sales-process-optimization-image {
+  width: 100%;
+}
+.sales-process-optimization-image {
+  margin-right: 0px;
+  width: 100%;
+}
+.sales-component-feature h1 {
+  font-size: 72px !important;
+  line-height: 78px !important;
+  text-align: center;
+}
+.sales-component-feature-wrapper {
+  margin-top: 30px;
+}
+.sales-component-feature h1 {
+  margin-top: 0px !important;
+}
+.sales-component-feature-wrapper, .content-wrapper, .aglie-pipeline-management-wrapper{
+  margin-top: 20px !important;
+}
+p.sales-description-sales br, span.smart-investment-section-description br {
+  display: none;
+}
+.sales-type {
+  font-size: 28px !important;
+  line-height: 36px !important;
+}
+p.sales-description-sales {
+  margin-top: 10px;
+}
+.content-wrapper, .smart-investment-banner {
+  text-align: center;
+}
+.sales-feature-wrapper {
+  padding: 0 15px;
+}
+.sales-feature-wrapper {
+  margin-top: 10px;
+}
+.smart-investment-wrapper {
+  padding-top: 15px;
+}
+.smart-investment-description {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.sales-component-feature-wrapper, .sales-management-wrapper-data, .pipeline-tool-wrapper, .crmtool-manager-wrapper, .sales-process-optimization-wrapper, .aglie-pipeline-management-wrapper {
+  display: block !important;
+}
+.question-answer-wrapper {
+  margin: 0;
+  padding: 0 15px;
+}
+.question-answer-content {
+  width: 100%;
+  padding: 15px;
+}
+.sales-feature-wrapper {
+  margin-top:0px !important;
+  max-width: 100% !important;
+}
+.smart-investment-wrapper {
+  padding: 15px !important;
+}
+}

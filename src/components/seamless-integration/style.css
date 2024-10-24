@@ -145,3 +145,60 @@
     max-width: 949px;
     margin: auto;
 }
+
+@media screen and (max-width: 767px) {
+    .integation-title h1 {
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 100%;
+        padding-bottom: 0px;
+        letter-spacing: 1px;
+    }
+    .integation-title h3 {
+        font-size: 34px;
+    }
+    .integration-section {
+        margin-top: 0;
+        padding: 15px;
+    }
+    .integration-brand-container {
+        display: block;
+        margin: 15px 0;
+    }
+    .integration-brand-container svg {
+        width: 100%;
+        height: auto;
+    }
+    .integration-disp p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .simple-box, .bottom-management {
+        margin-top: 15px;
+    }
+    .section-heading h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .powerful-client {
+        grid-template-columns: 1fr;
+    }
+    .simple-box {
+        margin-top: 0px;
+    }
+    .powerful-client-wrapper {
+        padding: 0 15px;
+    }
+    .powerful-client {
+        grid-template-columns: 1fr;
+    }
+    .powerful-client {
+        margin-top: 20px;
+    }
+    .section-heading h2, .bottom-management h2 {
+        font-size: 26px;
+    }
+    p.ownwers-disp {
+        left: 0;
+    }
+}

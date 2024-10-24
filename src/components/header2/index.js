@@ -16,6 +16,9 @@ import { MenuAbout, MenuFeature, MenuIndustry, MenuLegal, MenuNews, MenuRessourc
 import "./style.css";
 import style from './header-menu.module.scss';
 import { useLocation } from "react-router-dom"; 
+import MenuData from "../../layout/mobile-menu/menu-data";
+
+import GradientBorderButton from "../../layout/hover-button";
 
 const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -94,6 +97,7 @@ const Header = () => {
 
   return (
     <div>
+ <MenuData />
       <div className="navbar">
         <div className="navbar-container" >
 
@@ -121,8 +125,10 @@ const Header = () => {
                 <Link to="/contact-us" className="navbar-link"><p>Contact us</p></Link>
             </div>
           </div>
+          
           <div className={`navbar-log-in`}>
-            <div> <Link to="https://dev.memate.com.au/"  target="_blank" className="navbar-link"><p>Log in</p></Link></div>
+         
+            <div> <Link to="https://dev.memate.com.au/"  target="_blank" className="navbar-link">Log in</Link></div>
           </div>
 
           {showDropDown && (

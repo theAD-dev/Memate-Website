@@ -13,3 +13,15 @@
 .filter-pipelineimage {
   margin-bottom: auto;
 }
+@media screen and (max-width: 767px) {
+  .pipeline-image-wrapper {
+    display: block !important;
+}
+.pipeline-tool-wrapper {
+  margin-top: 0px !important;
+  margin-bottom: 15px !important;
+}
+.pipeline-image-wrapper img {
+  margin-bottom: 15px !important;
+}
+}

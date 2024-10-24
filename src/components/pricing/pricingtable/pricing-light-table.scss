@@ -258,4 +258,22 @@
     }
   }
   
-
+  @media screen and (max-width: 767px) {
+    .pricing-table-container {
+      width: 100% !important;
+      overflow-x: auto !important;
+      padding: 0 15px;
+      max-width: 100%;
+  }
+  .plan-header h2{
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
+ .plan-header a {
+    font-size: 16px !important;
+    padding: 14px 20px !important;
+}
+.pricingtableWrapper thead tr th {
+  padding: 5px !important;
+}
+  }

@@ -11,12 +11,20 @@ import ProVinyl05 from "../../assests/images/ProVinyl05.jpg";
 import ProVinyl06 from "../../assests/images/ProVinyl06.jpg";
 import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
 import SuccessStories from "../success-stories";
+import { Helmet } from "react-helmet";
 
 
 
 function ProVinyl() {
   return (
     <>
+    <Helmet>
+    <title>Pro Vinyl Case Study | Optimising Business with MeMate</title>
+    <meta property="og:title" content="Pro Vinyl Case Study | Optimising Business with MeMate" />
+      <meta property="og:description" content="Discover how Pro Vinyl enhanced its business operations and project
+management with MeMate, streamlining workflows and driving efficiency across projects.
+    " />
+</Helmet>
       <div className="parent-blog-page customerstoriespage">
 
         <div className="parent-blog">

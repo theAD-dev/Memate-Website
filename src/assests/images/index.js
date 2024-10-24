@@ -1,6 +1,8 @@
 const Images = {
   landingHero: require("./Web.svg"),
   logo: require("./logo.svg").default,
+  BurgerIcon: require("./burger-menu-svgrepo-com.svg").default,
+  burgerCloseIcon: require("./burger-close-icon.svg").default,
   macLeptop:require('./mackook-image.svg').default,
   iphone:require('./iphone-image.svg').default,
   rightImage:require('./task-image-create.svg').default,
@@ -84,6 +86,8 @@ const Images = {
   captureDeecran:require('./capture_d_écran.png'),
   backgroundPattern:require('./background-pattern.png'),
   comingsoonPic:require('./comingsoonPic.png'),
+  PngwingPic:require('./pngwing.png'),
+  koalaTransparent:require('./koala-transparent.png'),
   historyDate:require('./history-date.png'),
   datePicker:require('./date-picker-menu.png'),
   dashboard:require('./dashboard.png'),

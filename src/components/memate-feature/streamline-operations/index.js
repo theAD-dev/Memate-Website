@@ -22,7 +22,7 @@ const MeMateFeatureStreamline = () => {
                 <p>
                 Our software provides robust workflows, ensuring managers follow firm guidelines. It guarantees every project is transparent and accountable, and all business activities are accurately reflected in the system, keeping everything secure.</p>
               </div>
-              <button className="get-started-btn">Book a Demo</button>
+              <button className="get-started-btn">Request a Demo</button>
             </div>
 
             <div className="operation-right">

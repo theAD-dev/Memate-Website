@@ -132,3 +132,28 @@
 .heading-6-text-2-A {
   margin-top: 24px;
 }
+@media screen and (max-width: 767px) {
+  .parent {
+    max-width: 100% !important;
+    padding: 15px;
+}
+.img-1-container-A {
+  margin-top: 15px !important;
+}
+.heading-1-A, .single-page-heading {
+  font-size: 26px !important;
+  line-height: 32px !important;
+}
+.single-page-heading {
+  margin-top: 10px !important;
+}
+.parent.parentSingle .pageBreadcrumbs {
+  margin-bottom: 15px !important;
+}
+.pageBreadcrumbs ul, .pageBreadcrumbs ul li {
+  display: inline-block !important;
+}
+.pageBreadcrumbs ul li {
+  padding: 0 10px;
+}
+}

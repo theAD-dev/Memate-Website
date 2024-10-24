@@ -58,7 +58,7 @@ const ContactUsComponent = () => {
 
 
   return (
-    <>
+    <div id="contactUsPage">
     <Helmet>
     <title>MeMate: Contact Us for Support and Inquiries</title>
     <meta property="og:title" content="MeMate: Contact Us for Support and Inquiries" />
@@ -95,9 +95,9 @@ const ContactUsComponent = () => {
               </div>
             </div>
 
-            <div className='query-button'>
+            <div className='query-button' onClick={() => setVisible(true)}>
               <div>
-                <p onClick={() => setVisible(true)}>Call now</p>
+                <p>Call now</p>
               </div>
             </div>
           </div>
@@ -137,9 +137,9 @@ const ContactUsComponent = () => {
               </div>
             </div>
 
-            <div className='query-button query-button-color'>
+            <div className='query-button query-button-color' onClick={() => setVisibleEmail(true)}>
               <div>
-                <p onClick={() => setVisibleEmail(true)}>Email now</p>
+                <p>Email now</p>
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@ const ContactUsComponent = () => {
 
 
 
-      <Dialog visible={visibleEmail} style={{ width: '514px' }} className={style.requestsendModel} onHide={() => {if (!visibleEmail) return; setVisible(false); }} footer={footerContentEmail} header={HeaderContentEmail}>
+      <Dialog visible={visibleEmail} style={{ width: '514px' }} className={style.requestsendModel} onHide={() => {if (!visibleEmail) return; setVisibleEmail(false); }} footer={footerContentEmail} header={HeaderContentEmail}>
       <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
           <div className={style.marginbotton}>
             <label htmlFor="username">Name</label>
@@ -229,7 +229,7 @@ const ContactUsComponent = () => {
     
         </form>
             </Dialog>
-    </>
+    </div>
   )
 }
 

@@ -9,12 +9,20 @@ import SortedMedia04 from "../../assests/images/SortedMedia04.jpg";
 import SortedMedia05 from "../../assests/images/SortedMedia05.jpg";
 import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
 import SuccessStories from "../success-stories";
+import { Helmet } from "react-helmet";
 
 
 
 function SortedMedia() {
   return (
     <>
+    <Helmet>
+    <title>Sorted Media Case Study | Enhancing Business Management with MeMate</title>
+    <meta property="og:title" content="Sorted Media Case Study | Enhancing Business Management with MeMate" />
+      <meta property="og:description" content="Discover how Sorted Media leverages MeMate’s tools to streamline business
+operations, manage projects efficiently, and drive sustainable growth.
+    " />
+</Helmet>
       <div className="parent-blog-page customerstoriespage">
 
         <div className="parent-blog">

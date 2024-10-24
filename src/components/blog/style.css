@@ -293,3 +293,53 @@
   font-family: "Inter", sans-serif !important;
   overflow-wrap: break-word;
 } 
+@media screen and (max-width: 767px) {
+  .parent-blog {
+    padding: 0 15px !important;
+    width: 100% !important;
+}
+.heading-blog {
+  font-size: 75px !important;
+}
+.nextbtn-container-A {
+  padding: 15px 0 !important;
+}
+#blogGrid .img-container-1-div-text-2, .img-container-1-div-text-2 a {
+  font-size: 24px !important;
+  line-height: 30px !important;
+  margin-top: 15px !important;
+}
+#blogGrid .blog-img-container-2 {
+  display: block;
+  width: 100%;
+}
+#blogGrid .blog-img-container-2-img2-div, #blogGrid .blog-img-container-2-img1-div {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+#blogGrid  .blog-image-container-1.parent-blog-pageWrap {
+  height: 290px !important;
+  margin-top: -100px !important;
+}
+#blogGrid  .heading-text-blog {
+  font-size: 30px;
+}
+#blogGrid .heading-blog-description {
+  margin-top: 20px;
+}
+#blogGrid  .img-container-3 {
+  grid-template-columns: 1fr;
+}
+#blogGrid .dog-img-container1 {
+  top: 0px !important;
+  left: 0px!important;
+}
+.img-container-3-img-1 {
+  margin-top: 0 !important;
+}
+#blogGrid .latest-article-heading {
+  font-size: 28px;
+  margin-top: 30px;
+}
+}

@@ -1,4 +1,4 @@
-export const blogList = async () => {
+export const blogList = async (page, limit) => {
   const myHeaders = new Headers();
   myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
 
@@ -9,11 +9,11 @@ export const blogList = async () => {
   };
 
   try {
-    const response = await fetch("https://admin.memate.au/api/news", requestOptions);
+    const response = await fetch(`https://admin.memate.au/api/news?page=${page}&limit=${limit}`, requestOptions);
     const result = await response.json(); 
     console.log("API response:", result);
 
-    return Array.isArray(result.data) ? result.data : [];
+    return result;
 
   } catch (error) {
     console.error("Error fetching blog posts:", error);

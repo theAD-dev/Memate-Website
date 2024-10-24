@@ -1,14 +1,10 @@
 import Layout from "../../layout";
 import React from "react";
 import Blog from "../../components/blog";
-const BlogPage = ({posts,postsLatest,handleNext,handlePrevious}) => {
-
-
+const BlogPage = ({ posts, postsLatest, totalPosts, loading, handleNext }) => {
   return (
     <Layout>
-     
-  <Blog posts={posts}postsLatest={postsLatest} handleNext={handleNext} handlePrevious={handlePrevious} />
-
+      <Blog posts={posts} postsLatest={postsLatest} totalPosts={totalPosts} loading={loading} handleNext={handleNext} />
     </Layout>
   );
 };

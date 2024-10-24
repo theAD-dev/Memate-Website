@@ -1,106 +1,81 @@
+import style from './industries.module.scss';
+import './style.css'; 
+import Iconsdata from "../../assests/icons";
 
 
-
-import ClientManagement from "../../assests//icons/client-management.svg";
-import SupplierManagement from "../../assests//icons/supplier-management.svg";
-import SalePipline from "../../assests//icons/sale-pipline.svg";
-import ManagementDashboard from "../../assests//icons/management-dashboard.svg";
-
-
-
-import ClientManagementHover from "../../assests//icons/client-management-hover.svg";
-import "./style.css";
- import style from './industries.module.scss';
 
 const IndustriesComponent = () => {
-
-
+   const featuresData = [
+      {
+        category: 'Industries',
+        items: [
+          {
+            icon: Iconsdata.indusCreative,
+            title: 'Creative Agencies ',
+            description: 'Keep all your client details in one place with complete order history, discounts, and contacts.',
+          },
+          {
+            icon: Iconsdata.indusElectronic,
+            title: 'Electronic Repair Specialists',
+            description: 'Maintain a supplier list for your company, accessible to management, with a complete expense history.',
+          },
+          {
+            icon: Iconsdata.indusPhoto,
+            title: 'Photo & Video  Agency  ',
+            description: 'Manage quotes with custom calculators, follow-ups, approvals, and a sales pipeline.',
+          },
+          {
+            icon: Iconsdata.indusAutomotive,
+            title: 'Automotive',
+            description: 'View all your jobs on one screen with a timeline, complete project information, history, expenses, time spent, and more.',
+          },
+          {
+            icon: Iconsdata.indusStartups,
+            title: 'Startups ',
+            description: 'View all your jobs on one screen with a timeline, complete project information, history, expenses, time spent, and more.',
+          },
+          {
+            icon: Iconsdata.indusConstruction,
+            title: 'Construction ',
+            description: 'View all your jobs on one screen with a timeline, complete project information, history, expenses, time spent, and more.',
+          },
+        ],
+      },
+  
+      
+    ];
+    
   return (
     <>
+      <div className={style.mainMenuPages}>
+        <div className={style.mainHeadTitle}>
+          <h1>industries</h1>
+          <p>Here are meMate’s main features to help you quickly understand if it will be suitable for your<br></br> business.</p>
+        </div>
 
-       
-<div className={style.mainMenuPages}>
-    <div className={style.mainHeadTitle}>
-      <h1>industries</h1>
-     <p>Here are meMate’s main features to help you quickly understand if it will be suitable for your<br></br> business.</p>
-    </div>
-
-
-    <div className={style.mainGridWrap}>
-      <h2>Industries</h2>
-      <div className={style.mainGridwtapFlex}>
-      <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
-      <div className={style.itemicon}>
-          <img className={`withoutHover ${style.withoutHover}`} src={ClientManagement} alt='ClientManagement' />
-          <img className={`withHover ${style.withHover}`} src={ClientManagementHover} alt='ClientManagementHover' />
-       </div>
-       <div className={style.itemText}>
-          <h3>Creative Agencies </h3>
-          <p>Keep all your client details in one place with complete order history, discounts, and contacts.</p>
-       </div>
-       </div>{/* Item Box */}
-      <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
-      <div className={style.itemicon}>
-          <img className={`withoutHover ${style.withoutHover}`} src={SupplierManagement} alt='ClientManagement' />
-          <img className={`withHover ${style.withHover}`} src={ClientManagementHover} alt='ClientManagementHover' />
-       </div>
-       <div className={style.itemText}>
-          <h3>Electronic Repair Specialists</h3>
-          <p>Maintain a supplier list for your company, accessible to management, with a complete expense history.</p>
-       </div>
-       </div>{/* Item Box */}
-      <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
-      <div className={style.itemicon}>
-          <img className={`withoutHover ${style.withoutHover}`} src={SalePipline} alt='ClientManagement' />
-          <img className={`withHover ${style.withHover}`} src={ClientManagementHover} alt='ClientManagementHover' />
-       </div>
-       <div className={style.itemText}>
-          <h3>Photo & Video  Agency  </h3>
-          <p>Manage quotes with custom calculators, follow-ups, approvals, and a sales pipeline.</p>
-       </div>
-       </div>{/* Item Box */}
-      <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
-      <div className={style.itemicon}>
-          <img className={`withoutHover ${style.withoutHover}`} src={ManagementDashboard} alt='ClientManagement' />
-          <img className={`withHover ${style.withHover}`} src={ClientManagementHover} alt='ClientManagementHover' />
-       </div>
-       <div className={style.itemText}>
-          <h3>Automotive</h3>
-          <p>View all your jobs on one screen with a timeline, complete project information, history, expenses, time spent, and more.</p>
-       </div>
-       </div>{/* Item Box */}
-      <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
-      <div className={style.itemicon}>
-          <img className={`withoutHover ${style.withoutHover}`} src={ManagementDashboard} alt='ClientManagement' />
-          <img className={`withHover ${style.withHover}`} src={ClientManagementHover} alt='ClientManagementHover' />
-       </div>
-       <div className={style.itemText}>
-          <h3>Startups </h3>
-          <p>View all your jobs on one screen with a timeline, complete project information, history, expenses, time spent, and more.</p>
-       </div>
-       </div>{/* Item Box */}
-      <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
-      <div className={style.itemicon}>
-          <img className={`withoutHover ${style.withoutHover}`} src={ManagementDashboard} alt='ClientManagement' />
-          <img className={`withHover ${style.withHover}`} src={ClientManagementHover} alt='ClientManagementHover' />
-       </div>
-       <div className={style.itemText}>
-          <h3>Construction </h3>
-          <p>View all your jobs on one screen with a timeline, complete project information, history, expenses, time spent, and more.</p>
-       </div>
-       </div>{/* Item Box */}
-      
-
-       </div>
-    </div>
-  
-
-
-
-
-    </div>
-    
-    
+        {featuresData.map((featureCategory, categoryIndex) => (
+          <div key={categoryIndex} className={style.mainGridWrap}>
+            <h2>{featureCategory.category}</h2>
+            <div className={style.mainGridwtapFlex}>
+              {featureCategory.items.map((item, itemIndex) => (
+                <div key={itemIndex} className={`itemFlex ${style.itemFlex}`}>
+                  <div className={style.itemicon}>
+                    <img
+                      className={`withoutHover ${style.withoutHover}`}
+                      src={item.icon}
+                      alt={item.title}
+                    />
+                  </div>
+                  <div className={style.itemText}>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 };

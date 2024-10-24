@@ -1,9 +1,9 @@
 .itemFlex .withHover{
-opacity: 0;
-}
-.itemFlex:hover .withHover{
-opacity: 1;
-}
-.itemFlex:hover .withoutHover{
-opacity: 0;
-}
+    opacity: 0;
+    }
+    .itemFlex:hover .withHover{
+    opacity: 0;
+    }
+    .itemFlex:hover .withoutHover{
+    opacity: 1;
+    }

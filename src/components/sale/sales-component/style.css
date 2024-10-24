@@ -81,3 +81,21 @@
   outline: none;
   font-family: "sequel_sans" !important;
 }
+@media screen and (max-width: 767px) {
+  .sales-componet-content-wrapper {
+    margin-top:0px !important;
+    padding: 0 !important;
+}
+.sales-component-wrapper{
+  padding: 0 15px !important;
+}
+.sales-componet-content-wrapper p, .sales-component-feature h2 {
+  font-size: 26px !important;
+}
+.sales-componet-content-wrapper span {
+  font-size: 16px;
+}
+.sales-componet-content-wrapper span br{
+  display: none;
+}
+}
