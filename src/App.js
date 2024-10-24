@@ -122,6 +122,7 @@ try {
   const handleNext = () => {
     setCurrentPage((prevPage) => prevPage + 1);
   };
+
   return (
     <div className="App">
       <ScrollToTop />
