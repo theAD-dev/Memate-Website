@@ -56,3 +56,41 @@
     margin-top: 12px;
     margin-bottom: 43.8px;
     }
+    @media screen and (max-width: 767px) {
+      .more-specific-upper-card-wrapper {
+        display: block;
+    }
+    .more-specific-wrapper, .industry-crousel-wrapper {
+      padding: 15px;
+      margin: 15px 0;
+  }
+  .industry-more-specific-heading {
+    margin-top: 15px;
+    font-size: 30px;
+    letter-spacing: 0;
+}
+.industry-more-specific-description {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+.industry-crousel-heading, .more-specific-card-heading {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+.more-specific-lower-card-wrapper {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.more-specific-card {
+  margin-top: 15px;
+}
+  .more-specific-card-heading, .more-specific-card-description {
+    width: 100% !important;
+    margin-top: 15px !important;
+}
+
+    }

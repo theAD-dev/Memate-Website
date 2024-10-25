@@ -69,7 +69,7 @@ const SliderTab = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 9,
+          slidesToShow: 5,
         },
       },
       {

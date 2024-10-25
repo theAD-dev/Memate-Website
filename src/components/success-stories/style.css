@@ -250,3 +250,24 @@ p.owners-disp {
   min-height: 104px;
 }
 }
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .bottom-management {
+    margin-top: 30px;
+}
+.slider-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.success-stories1 {
+  padding: 0 15px;
+}
+}
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+  .bottom-management {
+    margin-top: 30px;
+}
+.slider-container {
+  max-width: 100%;
+  padding: 0 15px;
+}
+}

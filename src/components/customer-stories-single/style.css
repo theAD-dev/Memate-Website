@@ -272,3 +272,25 @@ linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 100%);
 .ccStories .bottom-management {
   margin-top: 0;
 }
+@media screen and (max-width: 767px) {
+  .pageBreadcrumbs {
+    padding:0px;
+  }
+  .wrapperText, .wrapperTextcenter {
+    width: 100%;
+    margin: 0 auto 15px;
+}
+  .gadientText h2, .imageOverlyText .customerstoriesDetails .date-heading-title a {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .gadientText {
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.wrapperTextcenter h3 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+}

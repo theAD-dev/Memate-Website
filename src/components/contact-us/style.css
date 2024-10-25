@@ -258,3 +258,32 @@
         padding-top: 76px;
     }
 }
+@media screen and (max-width: 1180px) and (min-width: 768px){
+    .query-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+        padding: 30px 15px;
+    }
+    .main-section .mid-heading {
+        font-size: 30px;
+        letter-spacing: 0;
+    }
+    .query-section .query-cards .query-card {
+        width: 33%;
+        height: auto;
+        flex-shrink: 0;
+        padding:15px;
+    }
+    .query-cards .query-card .query-main {
+        gap: 20px;
+    }
+    .query-cards .query-card .query-main .query-main-heading p {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .query-small-heading {
+        margin-bottom: 20px;
+    }
+}
+

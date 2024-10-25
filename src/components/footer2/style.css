@@ -237,14 +237,15 @@
     }
     .footer-section {
         padding: 0 15px;
+        margin-top: 30px !important;
     }
 }
 @media screen and (max-width: 992px) and (min-width: 768px){
     .main-footer {
         width: 100%;
         max-width: 100%;
-        padding:30px;
-
+        padding: 30px;
+        border-radius: 15px;
     }
     .section2 .footer-links {
         display: block;
@@ -252,10 +253,31 @@
 }
 .footer-links .links {
     display: inline-block;
-    gap: 20px;
     width: 33%;
+    margin-bottom: 15px;
 }
 .section1 .download-section{
     width:100%;
 }
+.section3 .copyright {
+    width: 100%;
+    align-items: center;
+}
+.footer-section {
+    width: 100%;
+    padding: 0 15px;
+}
+}
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+    .main-footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px;
+    }
+    .section2 .footer-links {
+        width: 100%;
+    }
+    .footer-links .links .link-heading {
+        font-size: 14px;
+    }
 }

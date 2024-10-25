@@ -91,3 +91,29 @@
     display: flex;
     flex-direction: column;
 }
+@media screen and (max-width: 767px) {
+  .read-more-card-wrapper {
+    margin-top: 15px;
+    display: block;
+}
+.read-more-card-1-date {
+  margin-top: 0;
+  letter-spacing: 0;
+}
+.read-more-heading {
+  font-size: 26px;
+  letter-spacing: 0;
+}
+.read-more-card-1-desc {
+  margin-top: 0px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 26px;
+}
+.read-more-card-2, .read-more-card-3, .read-more-card-1 {
+  width: 100%;
+}
+.industry-read-more-wrapper {
+  padding-top: 15px;
+}
+}

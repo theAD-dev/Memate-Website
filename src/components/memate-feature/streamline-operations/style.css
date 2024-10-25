@@ -152,12 +152,13 @@ button.get-started-btn {
 }
 @media screen and (max-width: 767px) {
     .memate h2 {
-        font-size: 42px;
-        line-height:48px;
+        font-size: 28px;
+        line-height: 28px;
     }
     .memate h1, .operation-right h1 {
-        font-size: 70px;
-        line-height:76px;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0;
     }
     .heading-margin {
         margin-bottom: 15px;
@@ -190,8 +191,9 @@ button.get-started-btn {
         width: 100%;
     }
     .operation-left h1 {
-        font-size: 34px;
+        font-size: 28px;
         margin-bottom: 10px;
+        letter-spacing: 0;
     }
     .all-in-one {
         padding: 0 15px;
@@ -267,5 +269,28 @@ button.get-started-btn {
     }
     .heading-margin {
         margin-bottom: 30px;
+    }
+    .operation-left {
+        padding: 30px;
+    }
+    .memate h1 {
+        font-size: 70px;
+        line-height: 80px;
+        letter-spacing: 0px;
+
+    }
+}
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+    .feature-section-container {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+    .heading-margin {
+        margin-bottom: 30px;
+    }
+    .memate h1 {
+        font-size: 100px;
+        line-height: 110px;
+        letter-spacing: 0px;
     }
 }

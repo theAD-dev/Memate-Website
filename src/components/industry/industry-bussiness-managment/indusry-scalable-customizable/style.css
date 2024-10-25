@@ -9,3 +9,10 @@
     background-size: contain;   
     margin-top: 32px;
 }
+@media screen and (max-width: 767px) {
+    /* .scalable-customizable-wrppaer {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    } */
+}

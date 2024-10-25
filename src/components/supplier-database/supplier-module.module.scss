@@ -355,3 +355,67 @@ h2{
     white-space: nowrap;
     text-decoration: none;
 }
+@media screen and (max-width: 767px) {
+    .mainSection{
+        padding: 0 15px;
+    }
+    .midheading {
+        padding-top:0px;
+        font-size:26px;
+        letter-spacing: 0;
+    }
+    .midheading  p{
+        margin: 15px 0px;
+        padding: 0px;
+        font-size: 24px;
+    }
+    .smallheading {
+        width: 100%;
+    }
+    .smallheading p {
+        font-size: 16px;
+        margin: 5px 0 0;
+    }
+    .darkButtonstyle button{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .databaseWrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .databaseWrapper .alphabetbox{
+        display: inline-block;
+        padding:10px 0px;
+  }
+  .itemDatalist .left, .itemDatalist .right{
+    display: block;
+    width:100%;
+    margin-bottom: 10px;
+  }
+  .databaseWrapper .alphabetFilter .alphabetlist{
+    margin-bottom: 15px !important;
+  } 
+  .itemDatawrap .itemDatalist {
+    display: inline;
+    width: 100%;
+} 
+.alphabetFilter .alphabetlist .itemDatawrap {
+    padding: 15px !important;
+}
+.databaseWrapper .alphabetbox .allButFilter {
+    display: inline;
+}
+.databaseWrapper .searchfilterBox input[type=text] {
+    padding: 16px;
+    font-size: 22px;
+}
+.itemDatawrap {
+    margin:0;
+}
+.alphabetFilter .accInnercontent .accInneradd {
+    padding: 16px 24px;
+    display: block;
+}
+}

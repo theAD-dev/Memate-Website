@@ -526,3 +526,8 @@ background-clip: text;
     padding: 15px 30px;
 }
   }
+  @media screen and (max-width: 1180px) and (min-width: 1024px){
+    .navbar-container {
+      width: 100%;
+  }
+  }

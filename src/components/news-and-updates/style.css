@@ -183,4 +183,12 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
+  .NewsflexWrap .Newsitem .imgBox {
+    width: 100%;
+}
+}
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+  .newsandUpdateNew {
+    padding: 0 15px;
+  }
 }

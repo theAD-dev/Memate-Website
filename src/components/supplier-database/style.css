@@ -47,3 +47,22 @@
     font-weight: 310;
     line-height: 20px;
   }
+  @media screen and (max-width: 767px) {
+    .main-section .main-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .main-section .main-heading br {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 992px) and (min-width: 768px){
+    .main-section .main-heading {
+        font-size: 150px;
+    }
+  }
+  
+  @media screen and (max-width: 1180px) and (min-width: 1024px){
+  
+  }

@@ -251,3 +251,35 @@
   font-weight: 360;
   line-height: 140%;
 }
+@media screen and (max-width: 767px) {
+  .latest-update-text {
+    font-size: 32px;
+    line-height:38px;
+}
+.content1 {
+ padding: 0px !important;
+  display: block;
+}
+.date {
+  font-size: 22px;
+  width: 100%;
+  margin-top: 0;
+}
+.contextText {
+  margin-top: 5px;
+  padding: 0;
+}
+.contentText1 {
+  font-size: 22px;
+}
+.latestUpdates {
+  margin-bottom: 30px;
+}
+.uldateListWrap:nth-child(even) {
+  margin-top: 20px;
+  background: #f7f8fa;
+  padding: 15px !important;
+  display: block;
+  margin-bottom: 15px;
+}
+}
