@@ -108,9 +108,10 @@
   width: 100%;
 }
 .sales-component-feature h1 {
-  font-size: 72px !important;
-  line-height: 78px !important;
+  font-size: 50px !important;
+  line-height: 58px !important;
   text-align: center;
+  letter-spacing: 0 !important;
 }
 .sales-component-feature-wrapper {
   margin-top: 30px;

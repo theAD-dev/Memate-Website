@@ -9,3 +9,12 @@
   background-size: contain;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 767px) {
+  /* .tailder-marketing-agecines-wrapper {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  } */
+}

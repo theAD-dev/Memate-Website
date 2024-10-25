@@ -83,10 +83,13 @@
 }
 .industry-header-wrapper {
   padding: 15px;
+  max-width: 100%;
+  margin-top: 0;
+  text-align: center;
 }
 .industry-middle-heading {
-  font-size: 40px;
-  line-height: 46px;
+  font-size: 20px;
+  line-height: 26px;
   letter-spacing: 0;
 }
 p.industry-middle-heading br {
@@ -94,5 +97,20 @@ p.industry-middle-heading br {
 }
 .industry-bussiness-management-wrapper {
   padding-top: 15px;
+}
+.industry-heading-content {
+  margin-top: 0;
+}
+.industry-header-wrapper::before {
+  position: inherit;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+}
+.industry-heading-button {
+  margin-top: 15px;
+}
+.industry-bussiness-management-heading {
+  font-size: 28px;
 }
 }

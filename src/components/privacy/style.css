@@ -31,3 +31,15 @@
     left: 50%;
     transform: translateX(-65%);
 }
+@media screen and (max-width: 767px) {
+    .kb-main-section .kb-main-heading {
+        font-size:32px;
+        line-height: 40px;
+    }
+    .kb-main-heading br {
+        display: none;
+    }
+    .kb-main-section {
+        padding: 0 15px;
+      }
+}

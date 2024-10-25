@@ -17,9 +17,7 @@ const KnowledgeBaseComponent = () => {
 </Helmet>
       <div className="kb-main-section">
         <div className="kb-main-heading">
-          knowledge
-          <br />
-          base
+          knowledge <br /> base
         </div>
         <div className="kb-main-image">
           <img src={KnowledgeBaseMain} alt="contact us main image" width={595} height={789} />

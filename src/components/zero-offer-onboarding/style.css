@@ -137,4 +137,13 @@ button.book-a-demo {
   font-size: 80px;
   line-height: 90px;
 }
+.sab-heading {
+  padding-top: 30px;
+}
+}
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+  .onboarding-section {
+    margin-top: 0px;
+    padding: 0 15px;
+  }
 }

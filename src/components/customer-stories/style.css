@@ -366,3 +366,81 @@ img.img-container-stories {
   color: #000;
   text-decoration: none;
 }
+@media screen and (max-width: 767px) {
+  .customerstoriesGrid {
+    width: 100%;
+    margin: 15px auto 15px;
+  }
+  .customerstoriesDetails {
+    padding: 15px;
+}
+.customerstoriesDetails .date-heading-title a, .customerstoriesDetails .date-heading-title {
+  font-size: 20px;
+  line-height: 30px;
+}
+.customerstoriesDetails a.readMoreBut {
+  margin-top: 15px;
+}
+.heading-blog-description{
+  margin-top: 0px;
+}
+.customerstoriespage .small-heading {
+  padding-top: 0;
+}
+.heading-text-blog {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+.customerstoriesDetails .category {
+  font-size: 24px;
+  line-height: 30px;
+}
+.customerstoriesGrid .innerGrid {
+  margin-bottom: 20px;
+}
+
+}
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .heading-blog {
+    font-size: 100px;
+  }
+  .parent-blog {
+    padding: 138px 15px 30px;
+}
+.latest-article-heading {
+  margin-top: 40px;
+}
+.img-container-3 {
+  grid-template-columns: 1fr 1fr;
+}
+.img-container-1-div-text-2, .img-container-1-div-text-2 a {
+  font-size: 42px;
+  line-height: 54px;
+}
+.dog-img-container1 {
+  left: 300px!important;
+}
+.heading-text-blog {
+  font-size: 35px;
+}
+}
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+  .heading-blog {
+    font-size: 165px;
+  }
+  .parent-blog {
+    padding: 0px 15px;
+}
+.latest-article-heading {
+  margin-top: 40px;
+}
+.img-container-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.img-container-1-div-text-2, .img-container-1-div-text-2 a {
+  font-size: 42px;
+  line-height: 54px;
+}
+}
+

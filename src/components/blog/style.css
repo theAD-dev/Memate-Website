@@ -342,4 +342,22 @@
   font-size: 28px;
   margin-top: 30px;
 }
+.heading-blog {
+  font-size: 40px !important;
+  line-height: 48px !important;
+}
+.heading-blog br {
+  display: none;
+}
+}
+@media screen and (max-width: 992px) and (min-width: 768px){
+
+.heading-blog {
+  font-size: 130px;
+}
+
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+
 }
