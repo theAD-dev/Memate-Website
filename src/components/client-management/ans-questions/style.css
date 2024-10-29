@@ -109,3 +109,26 @@
   margin-bottom: 15px;
 }
 }
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .question-answer-wrapper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.question-answer-content {
+  width: 100%;
+  padding: 15px;
+}
+.questions-wrapper {
+  margin-top: 0px;
+}
+.each-ques-wrapper {
+  padding: 15px 0px;
+}
+.selected .question-answer-ques-info {
+  padding-right: 20px;
+}
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+
+}
