@@ -140,4 +140,42 @@
         width: 100% !important;
     }
     }
+    @media screen and (max-width: 992px) and (min-width: 768px){
+        .mainMenuPages .mainHeadTitle h1 {
+            font-size: 160px;
+            line-height: 170px;
+        }
+        .mainMenuPages .mainHeadTitle {
+            padding: 30px 0;
+        }
+        .mainMenuPages .mainGridWrap {
+            width: 100%;
+            margin: 0 auto 15px;
+            padding: 0 15px;
+        }
+        .mainMenuPages .mainGridWrap .mainGridwtapFlex .itemFlex {
+            width: 100%;
+        }
+        .mainMenuPages .mainGridWrap .mainGridwtapFlex{
+            column-gap:20px;
+            grid-template-columns: 48% 48%;
+        }
+    }
     
+    @media screen and (max-width: 1180px) and (min-width: 1024px){
+        .mainMenuPages .mainHeadTitle {
+            padding: 30px 0;
+        }
+        .mainMenuPages .mainGridWrap {
+            width: 100%;
+            margin: 0 auto 15px;
+            padding: 0 15px;
+        }
+        .mainMenuPages .mainGridWrap .mainGridwtapFlex .itemFlex {
+            width: 100%;
+        }
+        .mainMenuPages .mainGridWrap .mainGridwtapFlex{
+            column-gap:20px;
+            grid-template-columns: 32% 32% 32%;
+        }
+    }
