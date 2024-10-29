@@ -43,10 +43,8 @@
 }
 
 .sales-type {
-  font-size: 58px;
   font-family: "sequel_sans_semi_bold_disp" !important;
   color: #29292b;
-  /* margin-top: 12px; */
   font-size: 58px;
   font-style: normal;
   font-weight: 420;
@@ -61,3 +59,42 @@
     line-height: 22px;
 }
 }
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .sales-management-wrapper-data {
+    width: 100%;
+  }
+  .sales-description-sales br, .sales-type br, .sales-heading-sales br {
+    display: none;
+}
+.sales-management-wrapper-data {
+  display: block;
+}
+.content-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sales-type, .sales-heading-sales {
+  font-size: 34px !important;
+  line-height: 40px !important;
+}
+.sales-description-sales {
+  margin-top: 15px;
+}
+.sales-management-wrapper-data img {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+  .sales-type {
+    font-size: 40px;
+    line-height: 50px;
+}
+.sales-description-sales br, .sales-type br, .sales-heading-sales br {
+  display: none;
+}
+.sales-management-wrapper-data {
+  gap: 50px;
+}
+}
+
