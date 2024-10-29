@@ -277,3 +277,28 @@
   padding: 5px !important;
 }
   }
+  @media screen and (max-width: 992px) and (min-width: 768px){
+    .pricing-table-container {
+      width: 100% !important;
+      overflow-x: auto !important;
+      padding: 0 15px;
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 1180px) and (min-width: 1024px){
+    .pricing-table-container {
+      width: 100% !important;
+      overflow-x: auto !important;
+      padding: 0 15px;
+      max-width: 100%;
+    }
+    .pricingtableWrapper thead tr th .plan-header h2 {
+      font-size: 34px !important;
+      line-height: 40px !important;
+  }
+  .pricingtableWrapper thead tr th .plan-header a {
+    padding: 14px 40px !important;
+    margin-top:20px !important;
+}
+  }
