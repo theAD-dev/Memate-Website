@@ -419,3 +419,38 @@ h2{
     display: block;
 }
 }
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .databaseWrapper {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .databaseWrapper .alphabetbox button {
+        font-size: 13px;
+        padding: 5px;
+    }
+    .midheading {
+        padding-top: 15px;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+   .databaseWrapper {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .midheading {
+        padding-top:50px;
+        font-size: 36px;
+    }
+    .mainSection {
+        padding-top: 0;
+    }
+    .main-section .main-heading {
+        font-size: 160px;
+        line-height: 176px;
+    }
+    .midheading {
+        padding-top:30px;
+    }
+}

@@ -43,3 +43,24 @@
         padding: 0 15px;
       }
 }
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .kb-main-section .kb-main-heading {
+        font-size: 140px;
+        line-height: 146px;
+        padding-bottom: 50px;
+    }
+    .kb-main-section .kb-main-image {
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+    .kb-main-section .kb-main-heading {
+        font-size: 170px;
+        line-height: 176px;
+        padding-bottom: 50px;
+    }
+    .kb-main-section .kb-main-image {
+        transform: translateX(-50%);
+    }
+}

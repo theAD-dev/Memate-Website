@@ -58,6 +58,10 @@
     font-size: 16px;
     line-height: 22px;
 }
+.sales-componet-content-wrapper span {
+  line-height: 24px;
+  font-size: 16px;
+}
 }
 @media screen and (max-width: 992px) and (min-width: 768px){
   .sales-management-wrapper-data {
@@ -95,6 +99,10 @@
 }
 .sales-management-wrapper-data {
   gap: 50px;
+}
+.sales-componet-content-wrapper {
+  margin-top: 0;
+  padding: 0;
 }
 }
 
