@@ -155,4 +155,8 @@ h1.smart-investment-banner {
   .smart-investment-wrapper {
     padding-top: 15px;
 }
+.smart-investment-description {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 }

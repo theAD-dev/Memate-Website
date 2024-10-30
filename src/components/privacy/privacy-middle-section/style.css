@@ -245,3 +245,17 @@
   font-size: 20px;
 }
   }
+  @media screen and (max-width: 1180px) and (min-width: 768px){
+    .kb-wrapper {
+      max-width: 100%;
+      gap: 40px;
+      padding: 0 15px;
+  }
+  .kb-section-heading {
+    font-size: 28px;
+}
+.kb-children-section div {
+  margin-bottom: 10px;
+}
+  }
+  

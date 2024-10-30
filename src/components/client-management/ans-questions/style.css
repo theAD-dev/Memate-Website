@@ -130,5 +130,13 @@
 }
 
 @media screen and (max-width: 1180px) and (min-width: 1024px){
-
+  .question-answer-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.smart-investment-banner {
+  font-size: 80px;
+  letter-spacing: 0px;
+  padding-right:0px;
+}
 }
