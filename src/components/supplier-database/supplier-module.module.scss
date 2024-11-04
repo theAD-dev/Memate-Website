@@ -4,9 +4,9 @@
     p{
         color: #757B8A;
         text-align: center;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        -webkit-text-stroke-width: 1;
-        -webkit-text-stroke-color: var(--ios-status-bar-status-bar-text-color, #000);
+        // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        // -webkit-text-stroke-width: 1;
+        // -webkit-text-stroke-color: var(--ios-status-bar-status-bar-text-color, #000);
         font-size: 18px;
         font-style: normal;
         font-weight: 360;
@@ -33,7 +33,7 @@
     
 }
 .darkButtonstyle{
-    button{
+    a{
         border-radius: 60px;
     background: #29292B;
     height: 52px;
@@ -50,6 +50,7 @@
     font-weight: 415;
     line-height: normal;
     padding: 0 39px;
+    text-decoration: none;
     }
 }
 .databaseWrapper{
@@ -182,12 +183,16 @@
             justify-content: space-between;
             ul{
                 li{
+                    padding: 10px 0;
+                   a{
                     color: var(--Gray-600, #475467);
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: 24px; 
-                    padding: 10px 0;
+                   
+                    text-decoration: none;
+                   }
                 }
             }
         }
@@ -207,7 +212,8 @@
         display: flex;
         align-items: center;
         .roundBx{
-            border-radius: var(--radius-sm, 6px);
+            a{
+                border-radius: var(--radius-sm, 6px);
             border: 1px solid var(--Gray-300, #D0D5DD);
             background: var(--Base-White, #FFF);
             padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px) var(--spacing-xxs, 2px) var(--spacing-sm, 6px);
@@ -217,9 +223,11 @@
             font-style: normal;
             font-weight: 500;
             line-height: 20px; 
+            }
 
         }
         .roundimg{
+            a{
             border-radius: var(--radius-sm, 6px);
             border: 1px solid var(--Gray-100, #F2F4F7);
             background: var(--Base-White, #FFF);
@@ -230,6 +238,7 @@
             width: 36px;
             height: 36px;
             margin: 0 8px;
+            }
 
         }
 
@@ -248,7 +257,7 @@
             margin-right: 8px;
             width: 28px;
             height: 28px;
-            padding: 4px;
+            // padding: 4px;
  
         }
     }
@@ -258,7 +267,7 @@
 .databasesinglehead{
     text-align: center;
 .databasesLogo{
-    border-radius: 40000px;
+    border-radius: 100%;
     border: 2px solid #10182821;
     padding: 3px;
     width: 112px;
@@ -267,6 +276,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin: 0 auto 10px;
+img{
+    width: 100%;
+    width: 112px;
+    height: 112px;
+    border-radius: 100%;
+}
    
 
 }
@@ -355,6 +370,84 @@ h2{
     white-space: nowrap;
     text-decoration: none;
 }
+
+.linkstyleDisable{
+    color: var(--Gray-500, #667085);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 310;
+    line-height: 20px; 
+    text-decoration: none;
+}
+
+
+
+.supplierAddCompany{
+
+
+h2{
+    color: #29292B;
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: normal;
+    margin: 40px 0;
+}
+
+
+.supplierAddform{
+    width: 768px;
+    margin: 0 auto;
+    .flexWrapGrid{
+        display: flex;
+        justify-content:space-between;
+        .marginbotton{
+            display: block;
+            margin-bottom: 22px;
+            width: 100%;
+            margin-left: 8px;
+    margin-right: 8px;
+            label{
+                display: block;
+                width: 100%;
+                color: var(--Gray-600, #475467);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 315;
+                line-height: 22px; 
+                letter-spacing: 0.14px;
+            }
+            input {
+                background: #fff;
+                border: 1px solid #d0d5dd;
+                border: 1px solid var(--Border,#d0d5dd);
+                border-radius: 4px;
+                border-radius: var(--radius-xs,4px);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 310;
+                letter-spacing: -.08px;
+                line-height: 24px;
+                padding: 10px 14px;
+                width: 100%;
+            }
+        }
+    }
+    .darkbuttonStyle{
+        margin-top: 20px;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 767px) {
     .mainSection{
         padding: 0 15px;
@@ -376,7 +469,7 @@ h2{
         font-size: 16px;
         margin: 5px 0 0;
     }
-    .darkButtonstyle button{
+    .darkButtonstyle a{
         margin-top: 15px;
         margin-bottom: 15px;
     }

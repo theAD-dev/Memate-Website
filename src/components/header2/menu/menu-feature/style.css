@@ -16,6 +16,14 @@
 .menu-client-management a {
   text-decoration: none;
 }
+.iconManageSize {
+  position: relative;
+  top: 0px;
+  left: -3px;
+}
+.iconManageSize img {
+  width: 24px;
+}
 .menu-feature-text {
   cursor: pointer;
   color: #29292b;

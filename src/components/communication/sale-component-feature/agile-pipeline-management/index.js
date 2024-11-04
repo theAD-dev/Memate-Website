@@ -1,0 +1,22 @@
+import React from "react";
+import Images from "../../../../assests/images";
+import "./style.css";
+const AgilePipeLineManagement = () => {
+  return (
+    <div className="aglie-pipeline-management-wrapper marginSpaceTop">
+      <img src={Images.commOrganised} />
+      <div className="content-wrapper">
+        <p className="sale-title">Organised</p>
+        <p className="sales-heading-sales">Internal</p>
+        <p className="sales-type">To-Do list </p>
+        <p className="sales-description-sales">
+        meMate includes an internal to-do list for you and<br></br> your team. You can add 
+        project segments and<br></br> assign them to different contractors, improving <br></br>
+        communication and reducing mistakes.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default AgilePipeLineManagement;

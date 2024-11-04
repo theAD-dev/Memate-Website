@@ -106,7 +106,7 @@ const MenuFeature = () => {
      <div className="menu-feature-management">
             <p className="menu-feature-text">TECHNOLOGY</p>
               <div className="menu-management-features">
-                <div className="menu-client-management">
+                <div className="menu-client-management iconManageSize">
                   <img src={menuImages.communication}/>
                   <Link to="/communication"><p className="clinet-management-text">Communication</p></Link>
                 </div>
@@ -127,7 +127,7 @@ const MenuFeature = () => {
               </div>
 
               <div className="menu-management-feature">
-                <div className="menu-client-management">
+                <div className="menu-client-management iconManageSize">
                   <img src={menuImages.statistics}/>
                   <Link to="/statistic"><p className="clinet-management-text">Statistic</p></Link>
                 </div>
@@ -167,13 +167,13 @@ const MenuFeature = () => {
           <div className="menu-feature-management" style={{marginRight:"4px"}}>
             <p className="menu-feature-text">VALUE</p>
               <div className="menu-management-features">
-                <div className="menu-client-management">
+                <div className="menu-client-management ">
                   <img src={menuImages.calendar}/>
                   <Link to="/calendar"><p className="clinet-management-text">Calendar</p></Link>
                 </div>
               </div>
               <div className="menu-management-feature">
-                <div className="menu-client-management">
+                <div className="menu-client-management iconManageSize">
                   <img src={menuImages.Calculators}/>
                   <Link to="/calculators"><p className="clinet-management-text">Calculators</p></Link>
                 </div>

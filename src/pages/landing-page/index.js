@@ -19,7 +19,9 @@ import SuccessStories from "../../components/success-stories"
 import ZeroOfferOnboarding from "../../components/zero-offer-onboarding"
 import Layout from "../../layout"
 import { Helmet } from 'react-helmet';
+
 gsap.registerPlugin(ScrollTrigger);
+
 
 const LandingPage = ({postsLatest, updates}) => {
   const stickySectionRef = useRef(null);
@@ -65,6 +67,16 @@ const LandingPage = ({postsLatest, updates}) => {
   }, []);
 
 
+
+
+
+
+
+
+
+
+
+
   return (
    <>
     <Helmet>
@@ -79,10 +91,6 @@ const LandingPage = ({postsLatest, updates}) => {
       <FindOneApplication/>
       <CommonChallenges/>
       <ZeroOfferOnboarding/>
-      
-
-      
-        
       <MeMateFeatureStreamline/>
       <div className="apply-container">
       <MemateFeatureBoastEfficiency/>

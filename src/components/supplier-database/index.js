@@ -1,11 +1,63 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style.css";
 import style from './supplier-module.module.scss';
 import DataBase from './database-filter';
 import { Helmet } from 'react-helmet';
+import { supplierListApi } from '../../api/supplierApi';
+import { Link } from 'react-router-dom';
+import { useDebounce } from 'primereact/hooks';
 
 const SupplierDatabase = () => {
+  const [supplier, setSupplier] = useState([]);
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalSupplier, setTotalSupplier] = useState(0);
+  const [searchTerm, debouncedValue, setSearchTerm] = useDebounce('', 600);
+  const [activeLetter, debouncedLetterValue, setActiveLetter] = useDebounce('', 600);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const limit = 9;
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [debouncedValue, debouncedLetterValue]);
+
+  // Fetch supplier data with pagination
+  useEffect(() => {
+    const fetchSupplier = async () => {
+      setLoading(true);
+      try {
+        const response = await supplierListApi(currentPage, limit, debouncedValue, debouncedLetterValue);
+        const { data, total } = response;
+
+        setTotalSupplier(total);
+        if (currentPage === 1) {
+          setSupplier(data);
+        } else {
+          setSupplier((prevSupp) => {
+            const uniqueSupplier = data.filter(
+              (newSupp) => !prevSupp.some((supp) => supp.id === newSupp.id)
+            ) || [];
+            return [...prevSupp, ...uniqueSupplier];
+          });
+        }
+      } catch (err) {
+        setError(err);
+        console.error('Error fetching supplier Supplier:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchSupplier();
+  }, [currentPage, debouncedValue, debouncedLetterValue]);
+
+  // Pagination handler
+  const handleNext = () => {
+    if (supplier.length < totalSupplier) {
+      setCurrentPage((prevPage) => prevPage + 1);
+    }
+  };
   return (
     <>
       <Helmet>
@@ -23,7 +75,7 @@ const SupplierDatabase = () => {
           <p>By listing your company, businesses using meMate can quickly add your company as a client or supplier with just one click. This makes it easier to connect with other businesses and provides you with greater exposure</p>
         </div>
         <div className={style.darkButtonstyle}>
-          <button>Add Your Company</button>
+          <Link to='/add-your-company'>Add Your Company</Link>
         </div>
       </div>
       <div className={style.filtersection}>
@@ -31,7 +83,17 @@ const SupplierDatabase = () => {
           <p>Find the business you need</p>
         </div>
         <div className={style.databaseWrapper}>
-          <DataBase />
+          <DataBase
+            supplier={supplier}
+            loading={loading}
+            totalSupplier={totalSupplier}
+            error={error}
+            onNext={handleNext}
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            activeLetter={activeLetter}
+            setActiveLetter={setActiveLetter}
+          />
         </div>
       </div>
     </>

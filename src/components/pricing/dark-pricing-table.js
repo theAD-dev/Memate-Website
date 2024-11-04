@@ -3,8 +3,23 @@ import style from './pricing-module.module.scss';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import pricingboll from '../../assests/images/pricingboll.png';
 import { Link } from 'react-router-dom';
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from "react";
+
 
 const PricingTable = () => {
+
+  useEffect(() => {
+    const slideUpConfig = {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+    };
+    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
+    ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
+
+  }, []);
   // State to toggle between monthly and yearly prices
   const [isYearly, setIsYearly] = useState(false);
 
@@ -77,7 +92,7 @@ const PricingTable = () => {
 
       <div className={style.pricingcards}>
         {plans.map((plan, index) => (
-          <div key={index} className={style.pricingcard}>
+          <div key={index} className={`section1 ${style.pricingcard}`}>
             <div className={style.tophead}>
             <div className={style.head}>
             <div className={style.left1}>

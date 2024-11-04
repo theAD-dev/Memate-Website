@@ -105,19 +105,40 @@ h1.text {
 .request-btn {
   margin-top: 30px;
   cursor: pointer;
+  position: relative;
+}
+.request-btn .btn-base--black {
+  background: #353535;
+}
+.request-btn .btn-base--black .text-btn--nav {
+  color: #fff;
+}
+.request-btn .btn-base--tron-hover {
+  width: 11.8125rem;
 }
 
-.request-btn button {
-  border-radius: 60px;
-  background: #29292b;
+.request-btn .tron-hover-rotate.small {
+  background: linear-gradient(#ffc940, #569cff);
+  width: 15rem;
+  height: 13rem;
+  inset: auto;
+}
+
+.request-btn .btn-base--black {
+  white-space: nowrap;
+  width: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.request-btn .text-btn--nav {
   color: #fff;
   text-align: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 415;
   line-height: 21.24px;
-  padding: 12px 24px;
-  border: navajowhite;
   cursor: pointer;
   outline: none;
   font-family: "sequel_sans" !important;

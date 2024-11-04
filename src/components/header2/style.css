@@ -43,8 +43,8 @@
 .navbar-log-in {
   cursor: pointer;
     position: relative;
-    width: 138px;
-    height: 40px;
+    width: 6.5625rem;
+    height: 2.5rem;
     flex-shrink: 0;
     border-radius: 60px;
     background-color: white; /* Adjust as needed */

@@ -60,6 +60,8 @@ import FeaturesNewsPage from "./pages/features-news";
 import ResourcesPage from "./pages/resources";
 import ErrorPage from "./pages/error-page";
 import ThankYouPage from "./pages/thankyou-page";
+import AddYourCompanyPage from "./pages/add-your-company";
+import TronButton from "./layout/hover-button/tourn-but";
 
 
 function App() {
@@ -71,7 +73,6 @@ try {
   savedlatestPostData = [];
 }
   const [postsLatest, setPostsLatest] = useState(savedlatestPostData || []);
-
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPosts, setTotalPosts] = useState(0);
@@ -122,7 +123,6 @@ try {
   const handleNext = () => {
     setCurrentPage((prevPage) => prevPage + 1);
   };
-
   return (
     <div className="App">
       <ScrollToTop />
@@ -150,7 +150,8 @@ try {
         <Route path="/elite-life" exact element={<CustomerStoriesPageSingle />} />
         <Route path="/boat-wizard" exact element={<CustomerStoriesPageSingle />} />
         <Route path="/sorted-media" exact element={<CustomerStoriesPageSingle />} />
-        <Route path="/data-single" exact element={<DatabasePageSingle />} />
+        <Route path="/data-single/:slug" exact element={<DatabasePageSingle />} />
+        <Route path="/add-your-company" exact element={<AddYourCompanyPage />} />
         <Route path="/client-management" exact element={<ClientPage />} />
         <Route path="/supplier-management" exact element={<SupplierManagementPage />} />
         <Route path="/employee-management" exact element={<EmployeeManagementPage />} />
@@ -191,8 +192,8 @@ try {
         <Route path="/resources" exact element={<ResourcesPage />} />
         <Route path="*" exact element={<ErrorPage />} />
         <Route path="/thank-you" exact element={<ThankYouPage />} />
-
-
+        <Route path="/tron-btton" exact element={<TronButton />} />
+        
       </Routes>
     </div>
   );

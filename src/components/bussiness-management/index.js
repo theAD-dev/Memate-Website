@@ -3,6 +3,7 @@ import Images from "../../assests/images";
 import {ReactComponent as LandingHeroImage} from "../../assests/images/Web.svg"
 import "./styles.css";
 import { Link } from "react-router-dom";
+import TronButton from "../../layout/hover-button/tourn-but";
 const BussinessManagement = () => {
   return (
     <div className="home-page-content">
@@ -51,7 +52,7 @@ const BussinessManagement = () => {
       </div>
 
       <div className="request-btn">
-        <Link to='https://dev.memate.com.au/requestdemo'><button>Request a Demo</button></Link>
+        <Link to='https://dev.memate.com.au/requestdemo' className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css';
 import FeatureCard from '../card';
 import Images from '../../../assests/images';
+
 const MemateFeatureBoastEfficiency = () => {
   return (
     <div className="efficiency-section-container">

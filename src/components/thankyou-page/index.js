@@ -15,7 +15,7 @@ const ThankYouComponents  = () => {
         <h2>Thank You for Being Awesome!</h2>
         <p>Your support means the world to us. We’re excited to continue this journey together!</p>
         <div className={`${style.button}`}>
-        <Link to="/" ><img src={arrowIconBack} alt="Arrow" /> <span>Back</span></Link>
+        <Link to="/contact-us" ><img src={arrowIconBack} alt="Arrow" /> <span>Back</span></Link>
         <Link to="/" >Home</Link>
       </div>
       </div>

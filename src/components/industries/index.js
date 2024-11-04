@@ -1,6 +1,7 @@
 import style from './industries.module.scss';
 import './style.css'; 
 import Iconsdata from "../../assests/icons";
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,31 +13,37 @@ const IndustriesComponent = () => {
           {
             icon: Iconsdata.indusCreative,
             title: 'Creative Agencies ',
+            link:'/creative-agencies',
             description: 'Keep all your client details in one place with complete order history, discounts, and contacts.',
           },
           {
             icon: Iconsdata.indusElectronic,
             title: 'Electronic Repair Specialists',
+            link:'/electronic-repair-specialists',
             description: 'Maintain a supplier list for your company, accessible to management, with a complete expense history.',
           },
           {
             icon: Iconsdata.indusPhoto,
             title: 'Photo & Video  Agency  ',
+            link:'/photo-video-agency',
             description: 'Manage quotes with custom calculators, follow-ups, approvals, and a sales pipeline.',
           },
           {
             icon: Iconsdata.indusAutomotive,
             title: 'Automotive',
+            link:'/automotive',
             description: 'View all your jobs on one screen with a timeline, complete project information, history, expenses, time spent, and more.',
           },
           {
             icon: Iconsdata.indusStartups,
             title: 'Startups ',
+            link:'/startups',
             description: 'View all your jobs on one screen with a timeline, complete project information, history, expenses, time spent, and more.',
           },
           {
             icon: Iconsdata.indusConstruction,
             title: 'Construction ',
+            link:'/construction',
             description: 'View all your jobs on one screen with a timeline, complete project information, history, expenses, time spent, and more.',
           },
         ],
@@ -58,6 +65,7 @@ const IndustriesComponent = () => {
             <h2>{featureCategory.category}</h2>
             <div className={style.mainGridwtapFlex}>
               {featureCategory.items.map((item, itemIndex) => (
+                 <Link to={item.link}>
                 <div key={itemIndex} className={`itemFlex ${style.itemFlex}`}>
                   <div className={style.itemicon}>
                     <img
@@ -71,6 +79,7 @@ const IndustriesComponent = () => {
                     <p>{item.description}</p>
                   </div>
                 </div>
+                </Link>
               ))}
             </div>
           </div>

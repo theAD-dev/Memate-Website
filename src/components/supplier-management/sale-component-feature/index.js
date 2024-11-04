@@ -6,6 +6,7 @@ import SalesProcessOptimiation from './sales-process-optimization';
 import './style.css';
 import SuitableTender from './suitable-tender';
 const SalesComponentFeature = () => {
+  
   return (
     <div className='sales-component-feature-wrapper'>
       <div className='sales-component-feature'>

@@ -3,19 +3,28 @@ import ContactUsMainImage from "../../assests/images/contactUsMain.png"
 import "./style.css";
 import { Helmet } from 'react-helmet';
 import style from './contactus.module.scss';
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { Dialog } from 'primereact/dialog';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
+import ReCAPTCHA from 'react-google-recaptcha';
+import { useNavigate } from 'react-router-dom';
+import { RequestCallBackAPI } from '../../api/contactAPI';
+import ScrollReveal from 'scrollreveal';
+
+  
 
 
 const ContactUsComponent = () => {
 
   const [visible, setVisible] = useState(false);
   const [visibleEmail, setVisibleEmail] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
   // Define your validation schema
   const schema = yup.object().shape({
     username: yup.string().required('Username is required'),
@@ -28,10 +37,44 @@ const ContactUsComponent = () => {
   });
 
   const onSubmit = (data) => {
+    const result =  fetch (RequestCallBackAPI(data));
+    console.log('Form submitted successfully:', result);
     console.log(data); 
     setVisible(false); 
     setVisibleEmail(false); 
+    navigate('/thank-you');
+    if (!captchaValue) {
+      setError('Please complete the CAPTCHA.');
+      return;
+    }
   };
+
+
+  
+  const handleCaptchaChange = (value) => {
+    console.log('Captcha value:', value);
+    setCaptchaValue(value);
+  };
+
+
+
+  
+  
+    useEffect(() => {
+      const slideUpConfig = {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        easing: 'ease-in-out',
+      };
+      ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
+      ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
+      ScrollReveal().reveal('.section3', { ...slideUpConfig, delay: 600 });
+   
+  
+    }, []);
+
+
 
   const footerContent = (
       <div className="flexWrapBoxE">
@@ -81,8 +124,8 @@ const ContactUsComponent = () => {
       </div>
       <div className='query-section'>
         <div className='query-cards'>
-          <div className='query-card query-1'>
-            <div className='query-main'>
+          <div className='query-card query-1 section1'>
+            <div className='query-main '>
               <div className='query-main-heading'>
                 <p>Contact</p>
                 <p>by phone</p>
@@ -102,7 +145,7 @@ const ContactUsComponent = () => {
             </div>
           </div>
 
-          <div className='query-card query-2'>
+          <div className='query-card query-2 section2'>
             <div className='query-main'>
               <div className='query-main-heading'>
                 <p>Chat with</p>
@@ -124,7 +167,7 @@ const ContactUsComponent = () => {
             </div>
           </div>
 
-          <div className='query-card query-3'>
+          <div className='query-card query-3 section3'>
             <div className='query-main'>
               <div className='query-main-heading query-color'>
                 <p>Email</p>
@@ -184,16 +227,26 @@ const ContactUsComponent = () => {
 
 
 
-          <div>
+                    <div className={style.marginbotton}>
             <label htmlFor="email">Email</label>
             <Controller
               name="email"
               control={control}
-              placeholder="company@email.com"
-              render={({ field }) => <input id="email" {...field} />}
-            />
+              render={({ field }) => <input placeholder="company@email.com" id="email" {...field} />}/>
+           
             {errors.email && <p className="error-message">{errors.email.message}</p>}
           </div>
+
+          <div className={style.marginbotton}>
+          
+            <ReCAPTCHA
+        sitekey="6LdajWoqAAAAABL-mFA9wqzKrY77pE6cxhq3PSQM"
+        onChange={handleCaptchaChange}
+      />
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+            {errors.email && <p className="error-message">{errors.email.message}</p>}
+          </div>
+         
     
         </form>
             </Dialog>
@@ -227,6 +280,15 @@ const ContactUsComponent = () => {
             {errors.email && <p className="error-message">{errors.email.message}</p>}
           </div>
     
+          <div className={style.marginbotton}>
+          
+            <ReCAPTCHA
+        sitekey="6LdajWoqAAAAABL-mFA9wqzKrY77pE6cxhq3PSQM"
+        onChange={handleCaptchaChange}
+      />
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+            {errors.email && <p className="error-message">{errors.email.message}</p>}
+          </div>
         </form>
             </Dialog>
     </div>

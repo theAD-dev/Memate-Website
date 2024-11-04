@@ -1,10 +1,25 @@
 import React from "react";
 import "./style.css";
 import Images from "../../../../assests/images";
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from "react";
 const SuitableTender = () => {
+ 
+
+  useEffect(() => {
+    const slideUpConfig = {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+    };
+    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
+    ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
+
+  }, []);
   return (
     <div className="suitable-tender-wrapper marginSpaceTop">
-      <div className="content-wrapper">
+      <div className="content-wrapper section1">
         <p className="sale-title">Convenient</p>
         <p className="sales-heading-sales">Supplier</p>
         <p className="sales-type">reports</p>
@@ -13,7 +28,7 @@ const SuitableTender = () => {
         allowing you to make <br></br>informed executive decisions based on spending <br></br>patterns.
         </p>
       </div>
-      <div className="suitable-table-image-wrapper">
+      <div className="suitable-table-image-wrapper section2">
       <img src={Images.SupplierReport} />
      
       </div>
