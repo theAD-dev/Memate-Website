@@ -1,10 +1,22 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from "react";
 const FeatureCard = (props) => {
+  useEffect(() => {
+    const slideUpConfig = {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+    };
+    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
+   
+  }, []);
   return (
     <>
-      <div className="all-in-one allinonefeatueWrap">
+      <div className="all-in-one allinonefeatueWrap section1">
         <div className="strean-line">
           <div className="main-operation">
             <div className="operation-left">

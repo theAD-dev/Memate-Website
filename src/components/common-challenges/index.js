@@ -1,7 +1,28 @@
 import Images from "../../assests/images";
 import "./style.css";
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from "react";
 
 const CommonChallenges = () => {
+  useEffect(() => {
+    const slideUpConfig = {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+    };
+    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
+    ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
+    ScrollReveal().reveal('.section3', { ...slideUpConfig, delay: 600 });
+    ScrollReveal().reveal('.section4', { ...slideUpConfig, delay: 400 });
+    ScrollReveal().reveal('.section5', { ...slideUpConfig, delay: 800 });
+    ScrollReveal().reveal('.section6', { ...slideUpConfig, delay: 200 });
+  }, []);
+
+
+
+
+
   return (
     <div className="common-box-wrapper">
       <div className="common-box">
@@ -11,7 +32,7 @@ const CommonChallenges = () => {
         <div className="control-main-sec">
           <div className="me-meta-card">
             <div className="max-cont-width">
-              <div className="met-points">
+              <div className="met-points section1">
                 <img className="main-bg-img" src={Images.cardBg} />
                 <div className="me-meta-image">
                   <img src={Images.metalogo} />
@@ -21,7 +42,7 @@ const CommonChallenges = () => {
                   </p>
                 </div>
               </div>
-              <div className="internal-control">
+              <div className="internal-control section2">
                 <div className="internal-control-content">
                   <div className="control-text">
                  
@@ -77,7 +98,7 @@ const CommonChallenges = () => {
               </div>
             </div>
 
-            <div className="predict-side">
+            <div className="predict-side section3">
               <div className="activities-text">
                 <p>
                 see <span> and predict unprofitable </span>{" "}
@@ -92,7 +113,7 @@ const CommonChallenges = () => {
               </div>
             </div>
           </div>
-          <div className="project-profitability">
+          <div className="project-profitability section4">
             <div className="inner-text">
               <div className="inner-text-container">
               <p><strong>Track Every Expense</strong> and Time Allocated to Your Projects</p>
@@ -102,14 +123,14 @@ const CommonChallenges = () => {
           </div>
 
           <div className="real-time">
-            <div className="gain-time">
+            <div className="gain-time section5">
               <p>
                 Gain <span>real-time visibility</span> into all areas of your
                 business.
               </p>
               <img className="graph-number" src={Images.graphAndNum} />
             </div>
-            <div className="overcome-pro">
+            <div className="overcome-pro section6">
               <div className="overcome-pro-content">
               <p>
                 {" "}

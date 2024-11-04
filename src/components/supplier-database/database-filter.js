@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './supplier-module.module.scss';
 import "./style.css";
 import { Link } from "react-router-dom";
@@ -12,28 +12,10 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const data = [
-  {
-    label: "EnergyAustralia",
-    logo: LogoFilter,
-    ABN: "226365507",
-    icon: GlobIcon,
-    map: googlemap,
-  },
-  {
-    label: "Camerafix",
-    logo: LogoFilter,
-    ABN: "226365507",
-    icon: GlobIcon,
-    map: googlemap,
-  },
-];
 
 
-const DataBase = () => {
-  const [filteredData, setFilteredData] = useState(data);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [activeLetter, setActiveLetter] = useState("");
+
+const DataBase = ({ supplier = [], search, loading, totalSupplier, handleNext, searchTerm, setSearchTerm, activeLetter, setActiveLetter }) => {
   const [expandedPanel, setExpandedPanel] = useState(false);
 
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -56,6 +38,7 @@ const DataBase = () => {
             value={searchTerm}
             onChange={handleSearch}
             placeholder="Search"
+            aria-label="Search suppliers"
           />
         </div>
       </div>
@@ -63,11 +46,12 @@ const DataBase = () => {
       <div className={style.alphabetbox} style={{ marginBottom: "10px" }}>
         <span className={style.spanDisplay}>Display</span>
         <div className={style.allButFilter}>
-          <button className={style.active}>All</button>
-          <button>#</button>
+          <button className={style.active} onClick={()=> setActiveLetter("")}>All</button>
+          <button disabled>#</button>
         </div>
         {alphabet.map((letter) => (
           <button
+            onClick={() => setActiveLetter(letter)}
             key={letter}
             style={{
               marginRight: "5px",
@@ -80,8 +64,8 @@ const DataBase = () => {
       </div>
 
       <ul className={style.alphabetFilter}>
-        {filteredData.length > 0 ? (
-          filteredData.map((item, index) => (
+        {supplier.length > 0 ? (
+          supplier.map((item, index) => (
             <li key={index}>
               <Accordion className={style.alphabetlist}
                 expanded={expandedPanel === index}
@@ -94,42 +78,48 @@ const DataBase = () => {
                 >
                   <Typography className={style.itemDatalist}>
                     <div className={style.left}>
-                      {item.logo && <img src={item.logo} alt={`${item.label} logo`} />}
-                      {item.label}
+                      {item.upload_file && <img src={`${item.upload_url}`} alt={`${item.label} logo`} />}
+                      {item.legal_name}
                     </div>
                     <div className={style.right}>
-                      {item.ABN && <div className={style.roundBx}>ABN: {item.ABN}</div>}
-                      {item.icon && <div className={style.roundimg}><img src={item.icon} alt={`${item.label} icon`} /></div>}
-                      {item.map && <div className={style.roundimg}><img src={item.map} alt={`${item.label} icon`} /></div>}
+                      {item.abn && <div className={style.roundBx}>ABN: {item.abn}</div>}
+                      <div className={style.roundimg}> <Link to={item.website} target='_blank'><img src={GlobIcon} alt={`${GlobIcon} icon`} /></Link></div>
+                      <div className={style.roundimg}><Link to={`http://maps.google.com/?q=${item.business_location}`} target='_blank'><img src={googlemap} alt={`${googlemap} icon`} /></Link></div>
                     </div>
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails className={style.accInnercontent}>
                   <div className={style.accInnerhead}>
-                    <p>Supplied Services</p>
+
+                    <p>{item.industry}</p>
                     <ul>
-                      <li>Content Creation</li>
-                      <li>Social Media Management</li>
-                      <li>Graphic Design</li>
+                      {item.supplied_services?.split(',').map((service, idx) => (
+                        <li key={idx}>{service.trim()}</li>
+                      ))}
                     </ul>
                   </div>
                   <div className={style.accInneradd}>
                     <ul>
-                      <li>  45CW+9P Ultimo, New South Wales, Australia	</li>
-                      <li>	info@camerafix.com.au</li>
-                      <li>	https://www.camerafix.com.au/</li>
+                      <li><Link to={`http://maps.google.com/?q=${item.business_location}`} target="_blank">{item.business_location}</Link></li>
+                      <li><Link to={`mailto:${item.email}`}>{item.email}</Link></li>
+                      <li><Link to={item.website} target="_blank">{item.website}</Link></li>
                     </ul>
-                    <Link to='/data-single' className={style.detailsSupplyersbut}>View Details</Link>
+                    <Link to={`/data-single/${item.slug}`} className={style.detailsSupplyersbut}>View Details</Link>
                   </div>
                 </AccordionDetails>
               </Accordion>
             </li>
           ))
         ) : (
-          <li>No results found.</li>
+          <p>No suppliers found</p>
         )}
       </ul>
-      <button className={style.loadmoreSupplyersbut}>Load More</button>
+
+      {totalSupplier > supplier?.length && (
+        <button onClick={handleNext} className={style.loadmoreSupplyersbut}>
+          {loading ? 'Loading...' : 'Load More'}
+        </button>
+      )}
     </div>
   );
 };

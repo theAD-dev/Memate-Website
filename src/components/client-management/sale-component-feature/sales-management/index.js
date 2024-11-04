@@ -1,11 +1,26 @@
 import React from "react";
 import "./style.css";
 import Images from "../../../../assests/images";
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from "react";
+
+
 const SalesManagement = () => {
+  useEffect(() => {
+    const slideUpConfig = {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+    };
+    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
+    ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
+
+  }, []);
   return (
     <div className="sales-management-wrapper-data">
-      <img src={Images.ClientTable} />
-      <div className="content-wrapper">
+      <img className="section1" src={Images.ClientTable} />
+      <div className="content-wrapper section2">
         <p className="sale-title">Intelligent </p>
         <p className="sales-heading-sales">Clients</p>
         <p className="sales-type">management</p>

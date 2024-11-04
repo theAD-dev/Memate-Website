@@ -1,7 +1,19 @@
 import React from "react";
 import "./style.css";
 import Images from "../../assests/images";
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from "react";
 const ZeroOfferOnboarding = () => {
+  useEffect(() => {
+    const slideUpConfig = {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+    };
+    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
+   
+  }, []);
   return (
     <div className="onboarding-section">
       <div className="onboarding-section-content">
@@ -16,7 +28,7 @@ const ZeroOfferOnboarding = () => {
               <button className="book-a-demo">Request a Demo</button>
             </div>
           </div>
-          <div className="offer-screen-shot">
+          <div className="offer-screen-shot section1">
             <img src={Images.zeroScreenShot} />
           </div>
         </div>

@@ -19,6 +19,7 @@ import { useLocation } from "react-router-dom";
 import MenuData from "../../layout/mobile-menu/menu-data";
 
 import GradientBorderButton from "../../layout/hover-button";
+import TronButton from "../../layout/hover-button/tourn-but";
 
 const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -127,8 +128,7 @@ const Header = () => {
           </div>
           
           <div className={`navbar-log-in`}>
-         
-            <div> <Link to="https://dev.memate.com.au/"  target="_blank" className="navbar-link">Log in</Link></div>
+          <Link to="https://dev.memate.com.au/"  target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Log In" /></Link>
           </div>
 
           {showDropDown && (

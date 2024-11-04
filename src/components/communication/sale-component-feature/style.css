@@ -1,0 +1,38 @@
+.sales-component-feature-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+.sales-component-feature h2 {
+  color: #29292b;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: normal;
+  margin: 0px;
+  font-family: "sequel_sans" !important;
+}
+
+.sales-component-feature h1 {
+  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 25px;
+  font-size: 118px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: -6px;
+  padding-right: 10px; 
+  font-family: "Inter", sans-serif !important;
+}
+
+.sales-feature-wrapper{
+  margin-top: 84px;
+  max-width: 1200px;
+}

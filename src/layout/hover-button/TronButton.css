@@ -1,0 +1,222 @@
+@keyframes infiniteRotate {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  @keyframes drawStroke {
+    0% {
+      stroke-dasharray: 0, 284.533;
+      stroke-dashoffset: 284.533;
+    }
+    100% {
+      stroke-dasharray: 284.533, 0;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  /* Main Button Styles */
+  /* .nav-btn--get-started {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: border 0.3s ease-in-out;
+} */
+.navbar-log-in1 .nav-btn--get-started {
+    position: relative;
+}
+.tron-hover-rotate.small {
+    background: linear-gradient(#ffc940, #569cff);
+    width: 10rem;
+    height: 10rem;
+    inset: auto;
+}
+  
+  /* .nav-btn--get-started:hover {
+    border-image: linear-gradient(45deg, #EB88B1, #B965E4, #61A6F9) 1;
+  } */
+  
+  /* Rotating Background Element */
+  /* .tron-hover-rotate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, #ffc940, #ff7bad 50%, #569cff);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: infiniteRotate 4s linear infinite;
+    transform-style: preserve-3d;
+    transition: opacity 0.3s ease-in-out;
+  }
+   */
+   .tron-hover-rotate {
+    background-image: linear-gradient(#ffc940, #ff7bad 50%, #569cff);
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    inset: auto;
+}
+   .tron-hover-rotate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, #ffc940, #ff7bad 50%, #569cff);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: infiniteRotate 4s linear infinite;
+    transform-style: preserve-3d;
+    transition: opacity 0.3s ease-in-out;
+}
+
+  .nav-btn--get-started:hover .tron-hover-rotate {
+    opacity: 1;
+  }
+  
+  /* SVG Container and Stroke Animation */
+  .radial-embed-nav svg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .tron-icon_nav {
+    fill: none;
+    stroke: url(#linear-gradient-tronnav);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3px;
+    stroke-dasharray: 284.533, 284.533;
+    stroke-dashoffset: 284.533;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .nav-btn--get-started:hover .tron-icon_nav {
+    animation: drawStroke 2s ease forwards;
+    
+  }
+  .nav-btn--get-started:hover .text-btn--nav {
+   color: #fff;
+    
+  }
+  
+  /* Text and Button Background */
+  .btn-base--black {
+    z-index: 10;
+    background-color: transparent;
+    color: #0000;
+    border-radius: 2rem;
+    flex: none;
+    align-items: stretch;
+    width: 6.5625rem;
+    height: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem 1rem;
+    display: block;
+    position: static;
+    inset: auto 0%;
+    position: relative;
+    text-align: center;
+}
+  
+.text-btn--nav {
+    color: #29292B;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: normal;
+}
+  .btn-base--tron-radial {
+    opacity: 1;
+    border-radius: 48px;
+    align-items: flex-start;
+    width: 6.8125rem;
+    height: 2.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    inset: -2px 0% 0 -2px;
+}
+.btn-base--tron-hover {
+    z-index: auto;
+    border-radius: 48px;
+    justify-content: center;
+    align-items: center;
+    width: 6.8125rem;
+    height: 2.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: absolute;
+    inset: -2px 0% 0% -2px;
+    overflow: hidden;
+}
+
+
+/* 
+.nav-btn--get-started {
+    perspective: 2000px;
+    white-space: nowrap;
+    background-color: #0000;
+    border-radius: 48px;
+    flex-direction: column;
+    flex: none;
+    justify-content: center;
+    align-self: stretch;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+} */
+
+/* .nav-btn--get-started:hover {
+    background-color: #272729;
+    text-decoration: none
+} */
+
+
+
+
+.btn-base--black:hover {
+    background-color: #353535
+}
+
+.btn-base--tron-hover {
+    z-index: auto;
+    border-radius: 48px;
+    justify-content: center;
+    align-items: center;
+    width: 6.8125rem;
+    height: 2.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: absolute;
+    inset: -2px 0% 0% -2px;
+    overflow: hidden
+}
+
+.btn-base--tron-radial {
+    opacity: 1;
+    border-radius: 48px;
+    align-items: flex-start;
+    width: 6.8125rem;
+    height: 2.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    inset: -2px 0% 0 -2px
+}

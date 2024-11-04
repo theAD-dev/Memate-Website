@@ -4,10 +4,27 @@ import Images from "../../assests/blog-images";
 import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from "react";
 
 
 
 function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
+  
+
+  useEffect(() => {
+    const slideUpConfig = {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+    };
+    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
+    ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
+    ScrollReveal().reveal('.section3', { ...slideUpConfig, delay: 600 });
+    ScrollReveal().reveal('.section4', { ...slideUpConfig, delay: 800 });
+
+  }, []);
   return (
     < div id="blogGrid">
       <Helmet>
@@ -29,16 +46,17 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
               <img className="dog-img" src={Images.blogImgDog}></img>
             </div>
           </div>
-
+          
+          <Link to={`/news/${postsLatest[0]?.slug}`}>
           <div
-            className="blog-image-container-1 parent-blog-pageWrap"
+            className="blog-image-container-1 parent-blog-pageWrap section1"
             style={{
               backgroundImage: `url(${postsLatest[0]?.featured_img_url || Images.blogImgempty})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               position: 'relative',
               padding: '20px',
-              width: '100%',
+              minWidth: '1201px',
               height: '625px',
               marginTop: '-329px',
               borderRadius: '30px',
@@ -46,9 +64,10 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
 
             }}
           >
+            
 
 
-            <div className="img-container-1-div ">
+            <div className="img-container-1-div section2">
               <div>
                 <div className="blog-image-container-div">
                   {/* <img src={blogs[0].featured_img_url} /> */}
@@ -58,12 +77,13 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
                   <Link to={`/news/${postsLatest[0]?.slug}`}>{postsLatest[0]?.title}</Link>
                 </div>
               </div>
-
-
             </div>
-          </div>
-          <div className="blog-img-container-2 parent-blog-pageWrap">
-            <div className="blog-img-container-2-img1-div">
+           
+            </div>
+            </Link>
+         
+          <div className="blog-img-container-2 parent-blog-pageWrap parent-blog-pageWrap1">
+            <div className="blog-img-container-2-img1-div section3">
               {postsLatest.length > 2 && (
                 <Link to={`/news/${postsLatest[1].slug}`}><img
                   className="img-container-2-img-1"
@@ -72,12 +92,12 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
                 /></Link>
               )}
 
-              <div className="img-heading-container">
+              <div className="img-heading-container ">
                 <div className="date-A"> {new Date(postsLatest[1]?.publish_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} </div>
                 <div className="date-heading-A"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
               </div>
             </div>
-            <div className="blog-img-container-2-img2-div">
+            <div className="blog-img-container-2-img2-div section4">
               {postsLatest.length > 2 && (
                 <Link to={`/news/${postsLatest[2]?.slug}`}><img
                   className="img-container-2-img-2"
@@ -95,7 +115,7 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
           </div>
 
           <span className="latest-article-heading">Latest Articles</span>
-          <div className="img-container-3 parent-blog-pageWrap">
+          <div className="img-container-3 parent-blog-pageWrap section1">
             {posts?.map((post) => (
               <div key={post.id} className="img-container-3-div">
                 <div className="img-container-3-img1-div">

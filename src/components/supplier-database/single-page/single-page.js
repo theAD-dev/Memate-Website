@@ -9,22 +9,24 @@ import arrowIconBack from "../../../assests/icons/arrowIconBack.svg";
 import cameraFixLogo from "../../../assests/images/cameraFixLogo.svg";
 
 
-function DataSingle() {
+function DataSingle({slug,supplierData}) {
+  console.log('supplierData: ', supplierData);
+
   return (
 <>
 <div className="parent-blog-page customerstoriespage">
 
       <div className="parent-blog">
       <div className="pageBreadcrumbs">
-        <ul>
-          <li>Home</li>/<li>Supplier database</li>/<li> <Link>Camerafix</Link></li>
+        <ul className={style.linkstyleDisable}>
+          <li><Link to='/' className={style.linkstyleDisable}>Home</Link></li>/<li><Link to='/supplier-database' className={style.linkstyleDisable}>Supplier database</Link></li>/<li> <Link>{slug}</Link></li>
         </ul>
-        <Link className="backButStories"><img src={arrowIconBack} alt="Arrow"/> Back</Link>
+        <Link to='/supplier-database' className="backButStories"><img src={arrowIconBack} alt="Arrow"/> Back</Link>
         </div> 
 <div className={`databasesinglePage ${style.alphabetFilter}`}>
 <div className={style.databasesinglehead}>
-<div className={style.databasesLogo}><img src={cameraFixLogo}  alt={cameraFixLogo}/></div>
-<h2>Camerafix</h2>
+<div className={style.databasesLogo}><img src={supplierData.upload_url} alt={`${supplierData.legal_name} logo`} /></div>
+<h2>{supplierData.legal_name}</h2>
 </div>
 
 
@@ -33,30 +35,32 @@ function DataSingle() {
 <div className={`${style.itemDatawrap} `}>
                 <div className={style.itemDatalist}>
                 <div className={style.left}>
-                <img src={cameraFixLogo} alt={`${cameraFixLogo} logo`} />
-                Camerafix
+                <img src={supplierData.upload_url} alt={`${supplierData.legal_name} logo`} />
+                {supplierData.legal_name}
                 </div>
                 <div className={style.right}>
-                <div className={style.roundBx}>ABN: 226365507	</div>
-                <div className={style.roundimg}><img src={googlemap} alt={`${googlemap} icon`} /></div>
-                <div className={style.roundimg}><img src={GlobIcon} alt={`${GlobIcon} icon`} /></div>
+                <div className={style.roundBx}>ABN: {supplierData.abn}	</div>
+                <div className={style.roundimg}><Link to={`http://maps.google.com/?q=${supplierData.business_location}`} target="_blank"><img src={googlemap} alt={`${googlemap} icon`} /></Link></div>
+                <div className={style.roundimg}><Link to={supplierData.website} target="_blank"><img src={GlobIcon} alt={`${GlobIcon} icon`} /></Link></div>
               </div>
               </div>
                   </div>
                   <div className={style.accInnercontent}>
               <div className={style.accInnerhead}>
-            <p>Supplied Services</p>
+            <p>{supplierData.industry}</p>
             <ul>
-              <li>Content Creation</li>
-              <li>Social Media Management</li>
-              <li>Graphic Design</li>
+             
+              {supplierData.supplied_services?.split(',').map((service, idx) => (
+        <li key={idx}>{service.trim()}</li>
+      ))}
+             
             </ul>
               </div>
               <div className={style.accInneradd}>
               <ul>
-              <li>  45CW+9P Ultimo, New South Wales, Australia	</li>
-              <li>	info@camerafix.com.au</li>
-              <li>	https://www.camerafix.com.au/</li>
+              <li><Link to={`http://maps.google.com/?q=${supplierData.business_location}`} target="_blank">{supplierData.business_location}</Link></li>
+              <li><Link to={`mailto:${supplierData.email}`}>{supplierData.email}</Link></li>
+              <li><Link to={supplierData.website} target="_blank">{supplierData.website}</Link></li>
             </ul>
               </div>
                   
@@ -64,7 +68,14 @@ function DataSingle() {
 </div>
 <div className={style.detailsCol}>
 <h3>About</h3>
-<p>Camera Fix is a fully licensed camera repair service based in Sydney, Australia. They specialize in repairing both digital and film cameras, offering services for all major brands like Canon, Nikon, Sony, Leica, and Hasselblad. With over 35 years of experience, Camera Fix is dedicated to providing high-quality, professional maintenance and repairs. Their services include everything from lens cleaning and calibration to fixing shutter speeds and performing firmware upgrades. They pride themselves on using advanced repair equipment and software to ensure that each camera meets the manufacturer’s specifications. </p>
+
+{supplierData.about ? (
+                    <>
+                     <p>{supplierData.about}</p> 
+                    </>
+                  ) : (
+                    <p>No Data</p>
+                  )} 
 </div>
 
 </div>
