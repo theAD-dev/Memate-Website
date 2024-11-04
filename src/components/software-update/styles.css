@@ -283,3 +283,14 @@
   margin-bottom: 15px;
 }
 }
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .parent {
+    padding: 15px;
+}
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1024px){
+  .parent {
+    padding: 15px;
+}
+}

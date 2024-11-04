@@ -34,7 +34,7 @@ const CRMSalesTool = () => {
       <div className="">
         <div className="modal-contact section2">
           <img src={Images.ClientRelationship} />
-          
+
         </div>
       </div>
     </div>

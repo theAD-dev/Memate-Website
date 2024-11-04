@@ -133,6 +133,23 @@ h1.smart-investment-banner {
   line-height: 22px;
 }
 }
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .smart-investment-wrapper {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .smart-investment-banner {
+    font-size: 70px;
+    letter-spacing: 0;
+    padding-right: 0;
+    margin-top: 0;
+}
+.smart-investment-description {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+}
 
 @media screen and (max-width: 1180px) and (min-width: 1024px){
   .smart-investment-wrapper {
