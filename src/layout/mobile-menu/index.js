@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./style.css";
 import Images from "../../assests/images";
 import { Link } from "react-router-dom";
-import { MenuAbout } from '../../components/header2/menu';
+
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ const HamburgerMenu = () => {
         <span></span>
       </div>
       <nav className={`nav-menu ${isOpen ? 'visible' : ''}`}>
-        <MenuAbout />
+      
       </nav>
     </div>
  </div>
