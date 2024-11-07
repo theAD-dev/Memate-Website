@@ -17,7 +17,7 @@
       stroke-dashoffset: 0;
     }
   }
-  
+
   /* Main Button Styles */
   /* .nav-btn--get-started {
     display: inline-block;
@@ -100,14 +100,22 @@
   }
   
   .nav-btn--get-started:hover .tron-icon_nav {
-    animation: drawStroke 2s ease forwards;
-    
+    animation: drawStroke 2s ease infinite; 
   }
+  /* .nav-btn--get-started .tron-icon_nav {
+    animation: drawStroke 2s ease infinite; 
+  } */
   .nav-btn--get-started:hover .text-btn--nav {
    color: #fff;
     
   }
-  
+  .radial-embed-nav svg {
+    width: 100%;
+    height: auto;
+    margin: -2px 0;
+    position: relative;
+    z-index: -9;
+}
   /* Text and Button Background */
   .btn-base--black {
     z-index: 10;
