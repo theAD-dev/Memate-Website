@@ -2,15 +2,15 @@ import React from "react";
 import "./style.css";
 import NextStep from "../next-step";
 import { Link } from "react-router-dom";
-import BoatWizard01 from "../../assests/images/BoatWizard01.jpg";
-import BoatWizard02 from "../../assests/images/BoatWizard02.jpg";
-import BoatWizard03 from "../../assests/images/BoatWizard03.jpg";
-import BoatWizard04 from "../../assests/images/BoatWizard04.jpg";
-import BoatWizard05 from "../../assests/images/BoatWizard05.jpg";
-import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
-import SuccessStories from "../success-stories";
 import { Helmet } from "react-helmet";
+import SuccessStories from "../success-stories";
 
+const BoatWizard02 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/BoatWizard02.jpg";
+const BoatWizard01 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/BoatWizard01.jpg";
+const BoatWizard03 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/BoatWizard03.jpg";
+const BoatWizard04 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/BoatWizard04.jpg";
+const BoatWizard05 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/BoatWizard05.jpg";
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 
 function BoatWizard() {

@@ -27,9 +27,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 100px;
-  letter-spacing: -6px;
   padding-right: 10px; 
-  font-family: "Inter", sans-serif !important;
+  font-family: "sequel_sans_roman_head" !important;
 }
 
 .sales-feature-wrapper{

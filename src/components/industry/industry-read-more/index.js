@@ -2,7 +2,13 @@ import React from "react";
 import "./style.css";
 const ReadMore = () => {
   return (
-    <div className="industry-read-more-wrapper">
+    <div className="industry-read-more-wrapper" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="3000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <div className="industry-read-more-content">
         <p className="read-more-heading">Read More MeMate</p>
         <div className="read-more-card-wrapper">

@@ -3,7 +3,13 @@ import "./style.css";
 import IndustryImages from "../../../assests/industry-images";
 const IndustryCrousel = () => {
   return (
-    <div className="industry-crousel-wrapper">
+    <div className="industry-crousel-wrapper" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <div className="industry-crousel-content">
         <span className="industry-crousel-heading">
           MeMate has been a game-changer for our private membership<br/>club.

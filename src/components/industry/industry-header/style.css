@@ -13,7 +13,7 @@
   position: relative;
 }
 .industry-header-wrapper::before {
-  background: url(../../../assests//industry-images/industry-png.png);
+  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-png.png);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;

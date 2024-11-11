@@ -65,24 +65,48 @@ const SupplierDatabase = () => {
         <meta property="og:title" content="Supplier Database: Connect with Quality Providers" />
         <meta property="og:description" content="Explore our extensive Supplier Database! Discover reliable suppliers that meet your requirements, ensuring quality and efficiency for your projects." />
       </Helmet>
-      <div className={`main-section ${style.mainSection}`}>
+      <div className={`main-section ${style.mainSection}`} data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <div className="main-heading">Supplier<br></br> Database</div>
 
-        <div className={style.midheading}>
+        <div className={style.midheading} data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="600"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
           <p>Database of Companies Presented in meMate</p>
         </div>
-        <div className={style.smallheading}>
+        <div className={style.smallheading} data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
           <p>By listing your company, businesses using meMate can quickly add your company as a client or supplier with just one click. This makes it easier to connect with other businesses and provides you with greater exposure</p>
         </div>
-        <div className={style.darkButtonstyle}>
+        <div className="darkButtonstyle">
           <Link to='/add-your-company'>Add Your Company</Link>
         </div>
       </div>
-      <div className={style.filtersection}>
+      <div className={style.filtersection} data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <div className={style.midheading}>
           <p>Find the business you need</p>
         </div>
-        <div className={style.databaseWrapper}>
+        <div className={style.databaseWrapper} >
           <DataBase
             supplier={supplier}
             loading={loading}

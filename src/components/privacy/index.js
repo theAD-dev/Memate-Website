@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';  
-import KnowledgeBaseMain from "../../assests/images/knowledgeBaseMain.png";
 import NextStep from "../next-step";
 import "./style.css";
 import MiddleSection from "./privacy-middle-section";
 import style from './privacy-module.module.scss';
 import { Helmet } from 'react-helmet';
+const KnowledgeBaseMain = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/knowledgeBaseMain.png";
 
 const PrivacyComponent = () => {
 

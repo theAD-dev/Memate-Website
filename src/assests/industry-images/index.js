@@ -1,14 +1,14 @@
 const IndustryImages={
-    industryImage:require('./industry-head-image.png'),
-    circleBackground:require('./industry-crosuel-circel.png'),
-    starIcon:require("./Star_icon.svg").default,
-    moreSpeicificOne:require("./more-specific-1.svg").default,
-    moreSpecificTwo:require("./more-specific-2.svg").default,
-    moreSpecificThree:require("./more-specific-3.svg").default,
-    moreSpecificFour:require("./more-specific-4.svg").default,
-    moreSpecificFive:require("./more-specific-5.svg").default,
-    moreSpecificSix:require("./more-specific-6.svg").default,
-    PlusIcon:require("./plus-icon.svg").default
+    industryImage:'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-head-image.png',
+    circleBackground:'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-crosuel-circel.png',
+    starIcon:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Star_icon.svg",
+    moreSpeicificOne:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/more-specific-1.svg",
+    moreSpecificTwo:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/more-specific-2.svg",
+    moreSpecificThree:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/more-specific-3.svg",
+    moreSpecificFour:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/more-specific-4.svg",
+    moreSpecificFive:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/more-specific-5.svg",
+    moreSpecificSix:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/more-specific-6.svg",
+    PlusIcon:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/plus-icon.svg"
 }
 
 export default IndustryImages;

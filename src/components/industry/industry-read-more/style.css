@@ -36,7 +36,7 @@
   height: 315px;
   flex-shrink: 0;
   border-radius: 30px;
-  background-image: url("../../../assests/industry-images/read-more-1.png");
+  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/read-more-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -47,7 +47,7 @@
     height: 315px;
     flex-shrink: 0;
     border-radius: 30px;
-    background-image: url("../../../assests/industry-images/read-more-2.png");
+    background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/read-more-2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -58,7 +58,7 @@
     height: 315px;
     flex-shrink: 0;
     border-radius: 30px;
-    background-image: url("../../../assests/industry-images/read-more-3.png");
+    background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/read-more-3.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

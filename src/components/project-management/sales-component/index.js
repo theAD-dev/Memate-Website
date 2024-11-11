@@ -10,7 +10,13 @@ const SalesComponent = () => {
       <meta property="og:description" content="Explore innovative features that transform your workflow. MeMate provides the tools you need to manage projects efficiently and effectively.
     " />
 </Helmet>
-    <div className="sales-component-wrapper">
+    <div className="sales-component-wrapper" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       
        <div className="sales-heading client-heading">project<br></br>management </div>
       <div className="sales-componet-content-wrapper client-component-para">

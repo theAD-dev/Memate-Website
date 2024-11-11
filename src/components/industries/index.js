@@ -62,10 +62,22 @@ const IndustriesComponent = () => {
 
         {featuresData.map((featureCategory, categoryIndex) => (
           <div key={categoryIndex} className={style.mainGridWrap}>
-            <h2>{featureCategory.category}</h2>
+            <h2 data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">{featureCategory.category}</h2>
             <div className={style.mainGridwtapFlex}>
               {featureCategory.items.map((item, itemIndex) => (
-                 <Link to={item.link}>
+                 <Link data-aos="fade-up"
+                 data-aos-offset="50"
+                 data-aos-delay="50"
+                 data-aos-duration="1000"
+                 data-aos-mirror="true"
+                 data-aos-once="false"
+                 data-aos-anchor-placement="top-bottom" to={item.link}>
                 <div key={itemIndex} className={`itemFlex ${style.itemFlex}`}>
                   <div className={style.itemicon}>
                     <img

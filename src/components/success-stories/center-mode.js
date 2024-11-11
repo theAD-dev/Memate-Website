@@ -61,7 +61,13 @@ const SliderStories = () => {
       
 
   return (
-    <div className="slider-container" id="slider-container">
+    <div className="slider-container" id="slider-container" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="3000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <Slider {...settings}>
         <div className="slider-item">
           <Link to='/camera-fix'><img src={CustomerStoriesImage} alt="Blog featured image"/></Link> 

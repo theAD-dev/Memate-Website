@@ -2,7 +2,7 @@ import React from 'react'
 import style from './404Page.module.scss';
 import Images from "../../assests/images";
 import { Link } from "react-router-dom";
-import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 const PageNotFound  = () => {
   return (

@@ -1,19 +1,10 @@
 import React from "react";
 import "./style.css";
 import  Images  from "../../../assests/images";
-import ScrollReveal from 'scrollreveal';
-import  { useEffect } from "react";
+
+
 const MeMateFeatureStreamline = () => {
-  useEffect(() => {
-    const slideUpConfig = {
-      origin: 'bottom',
-      distance: '50px',
-      duration: 1000,
-      easing: 'ease-in-out',
-    };
-    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
-   
-  }, []);
+
   return (
     <div className="feature-section-container">
       <div className="features-section">
@@ -21,8 +12,13 @@ const MeMateFeatureStreamline = () => {
         <h2>Memate</h2>
         <h1>features</h1>
       </div>
-
-      <div className="all-in-one section1">
+      <div className="all-in-one"  data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1200"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <div className="stream-line">
           <div className="main-operation">
             <div className="operation-left">

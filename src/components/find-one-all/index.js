@@ -7,7 +7,13 @@ const FindOneApplication = () => {
 
   return (
     <>
-      <div className="one-application-sec">
+      <div className="one-application-sec" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1100"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <div className="application-heading">
           <h3>One application</h3>
         </div>

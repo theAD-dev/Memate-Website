@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./style.css";
 import { Link, useParams } from 'react-router-dom';
 import { blogSingle } from '../../api/blogAPI';
-import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
-import ScrollReveal from 'scrollreveal';
-
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 
 
@@ -13,20 +11,6 @@ const Single = ({ postsSingle, postsLatest }) => {
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  
-
-  useEffect(() => {
-    const slideUpConfig = {
-      origin: 'bottom',
-      distance: '50px',
-      duration: 1000,
-      easing: 'ease-in-out',
-    };
-    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
-    ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
- 
-
-  }, []);
 
   useEffect(() => {
     // Function to search for post in both arrays by slug
@@ -84,11 +68,11 @@ const Single = ({ postsSingle, postsLatest }) => {
         <div className="accounting-text-A">{post.category?.title}</div>
         <div className="heading-1-A">{post.title}</div>
         <div className="heading-date-A">{post.publish_date}</div>
-        <div className="img-1-container-A section1">
+        <div className="img-1-container-A ">
           <img className="img-1" src={post.featured_img_url} alt={post.title}></img>
         </div>
         <div className="heading-2-A single-page-heading"></div>
-        <div className="heading-2-text-A single-page-heading-text section2">
+        <div className="heading-2-text-A single-page-heading-text ">
           <div dangerouslySetInnerHTML={{ __html: post.description }} />
         </div>
       </div>

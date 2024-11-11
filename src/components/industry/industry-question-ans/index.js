@@ -71,7 +71,13 @@ const IndustyQuesitonAndAns = () => {
     },
   ];
   return (
-    <div className="industry-question-ans-wrapper">
+    <div className="industry-question-ans-wrapper" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="4000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <div className="industry-ques-container">
         <p className="industry-question-heading">We answer your questions</p>
         <div className="industry-question-wrapper">

@@ -159,7 +159,7 @@ p.card-text {
 }
 
 .business-profile {
-  background-image: url("../../assests/images/circle.svg");
+  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/circle.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -211,7 +211,7 @@ img.graph-business {
   font-family: "sequel_sans" !important;
 }
 .inner-text {
-  background-image: url("../../assests/images/content-block.png");
+  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/content-block.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

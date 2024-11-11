@@ -2,16 +2,15 @@ import React from "react";
 import "./style.css";
 import NextStep from "../next-step";
 import { Link } from "react-router-dom";
-import SortedMedia01 from "../../assests/images/SortedMedia01.jpg";
-import SortedMedia02 from "../../assests/images/SortedMedia02.jpg";
-import SortedMedia03 from "../../assests/images/SortedMedia03.jpg";
-import SortedMedia04 from "../../assests/images/SortedMedia04.jpg";
-import SortedMedia05 from "../../assests/images/SortedMedia05.jpg";
-import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
 import SuccessStories from "../success-stories";
 import { Helmet } from "react-helmet";
 
-
+const SortedMedia01 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/SortedMedia01.jpg";
+const SortedMedia02 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/SortedMedia02.jpg";
+const SortedMedia03 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/SortedMedia03.jpg";
+const SortedMedia04 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/SortedMedia04.jpg";
+const SortedMedia05 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/SortedMedia05.jpg";
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 function SortedMedia() {
   return (

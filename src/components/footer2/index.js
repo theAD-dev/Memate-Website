@@ -1,27 +1,33 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-import {ReactComponent as FacebookIcon} from "../../assests/icons/footer-facebook.svg";
-import {ReactComponent as LinkdinIcon} from "../../assests/icons/footer-linkdin.svg";
-import {ReactComponent as InstagramIcon} from "../../assests/icons/footer-instagram.svg";
-import {ReactComponent as AppStoreIcon} from "../../assests/icons/app-store-icon.svg";
-import {ReactComponent as PlayStoreIcon} from "../../assests/icons/play-store-icon.svg";
-import {ReactComponent as MacAppStoreIcon} from "../../assests/icons/mac-app-store.svg";
-import {ReactComponent as MicrosoftAppStoreIcon} from "../../assests/icons/microsoft-app-store.svg"
+const FacebookIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/footer-facebook.svg";
+const LinkdinIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/footer-linkdin.svg";
+const InstagramIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/footer-instagram.svg";
+const AppStoreIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/app-store-icon.svg";
+const PlayStoreIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/play-store-icon.svg";
+const MacAppStoreIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/mac-app-store.svg";
+const MicrosoftAppStoreIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/microsoft-app-store.svg"
 
 const Footer = () => {
   return (
     <div className="footer-section">
       <div className="main-footer">
-        <div className="section1">
+        <div className="section1" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="5200"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
           <div className="heading-section">
             <div>
               <p className="footer-heading">Down to Business &nbsp;<span className="trade-mark">TM</span></p>
             </div>
             <div className="footer-icons">
-              <div><Link to="https://www.facebook.com/mematesoftware/"><FacebookIcon/></Link></div>
-              <div><Link to="https://www.instagram.com/memateapp/"><InstagramIcon/></Link></div>
-              <div><Link to="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530"><LinkdinIcon/></Link></div>
+              <div><Link to="https://www.facebook.com/mematesoftware/"><img src={FacebookIcon} alt="FacebookIcon"/></Link></div>
+              <div><Link to="https://www.instagram.com/memateapp/"><img src={InstagramIcon} alt="InstagramIcon" /></Link></div>
+              <div><Link to="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530"><img src={LinkdinIcon} alt="LinkdinIcon" /></Link></div>
             </div>
           </div>
           <div className="download-section">
@@ -30,16 +36,16 @@ const Footer = () => {
             <div className="application-section">
               <p>Mobile Application for Employees and Contractors</p>
               <div className="application-icons">
-                <div><Link to="https://play.google.com/store/apps/details?id=com.memate&pli=1"><AppStoreIcon/></Link></div>
-                <div><Link to="https://apps.apple.com/in/app/memate/id1563935364"><PlayStoreIcon/></Link></div>
+                <div><Link to="https://play.google.com/store/apps/details?id=com.memate&pli=1"><img src={AppStoreIcon} alt="AppStoreIcon" /></Link></div>
+                <div><Link to="https://apps.apple.com/in/app/memate/id1563935364"><img src={PlayStoreIcon} alt="PlayStoreIcon" /></Link></div>
               </div>
             </div>
 
             <div className="application-section">
               <p>Desktop Application for Business Management</p>
               <div className="application-icons">
-                <div><MacAppStoreIcon/></div>
-                <div><MicrosoftAppStoreIcon/></div>
+                <div><img src={MacAppStoreIcon} alt="MacAppStoreIcon" /></div>
+                <div><img src={MicrosoftAppStoreIcon} alt="MicrosoftAppStoreIcon" /></div>
               </div>
             </div>
 
@@ -49,7 +55,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="section2">
+        <div className="section2" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="5500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
           <div className="footer-links">
 
             <div className="links">

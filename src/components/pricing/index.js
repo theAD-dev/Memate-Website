@@ -1,5 +1,4 @@
 import React from 'react';
-import pricingMainImg from "../../assests/images/pricingMainImg.png"
 import style from './pricing-module.module.scss';
 import NextStep from "../next-step"
 
@@ -7,6 +6,7 @@ import PricingLightTable from './pricingtable/pricing-light-table';
 import { Helmet } from 'react-helmet';
 import PricingTable from './dark-pricing-table';
 
+const pricingMainImg = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingMainImg.png"
 
 const PricingComponent = () => {
   return (

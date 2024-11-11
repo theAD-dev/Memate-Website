@@ -5,7 +5,13 @@ import Images from '../../../assests/images';
 
 const MemateFeatureBoastEfficiency = () => {
   return (
-    <div className="efficiency-section-container">
+    <div className="efficiency-section-container" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1300"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <div className="efficiency-section">
             <FeatureCard
                 subHeading="Dashboard"

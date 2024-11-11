@@ -1,25 +1,19 @@
 import React from "react";
 import "./style.css";
 import Images from "../../../../assests/images";
-import ScrollReveal from 'scrollreveal';
-import  { useEffect } from "react";
+
 const SuitableTender = () => {
  
 
-  useEffect(() => {
-    const slideUpConfig = {
-      origin: 'bottom',
-      distance: '50px',
-      duration: 1000,
-      easing: 'ease-in-out',
-    };
-    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
-    ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
-
-  }, []);
   return (
-    <div className="suitable-tender-wrapper marginSpaceTop">
-      <div className="content-wrapper section1">
+    <div className="suitable-tender-wrapper marginSpaceTop" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="3300"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+      <div className="content-wrapper ">
         <p className="sale-title">Convenient</p>
         <p className="sales-heading-sales">Supplier</p>
         <p className="sales-type">reports</p>

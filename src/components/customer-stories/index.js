@@ -2,13 +2,13 @@ import React from "react";
 import "./style.css";
 import NextStep from "../next-step";
 import { Link } from "react-router-dom";
-import CustomerStoriesImage from "../../assests/blog-images/customersoriesCamera.png";
-import customersoriesProImage from "../../assests/blog-images/customersoriesPro.png";
-import customersoriesEliteImage from "../../assests/blog-images/customersoriesElite.png";
-import customersoriesBoatImage from "../../assests/blog-images/customersoriesBoat.png";
-import customersoriesSortedImage from "../../assests/blog-images/customersoriesSorted.jpg";
 import { Helmet } from 'react-helmet';
 
+const CustomerStoriesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesCamera.png";
+const customersoriesProImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesPro.png";
+const customersoriesEliteImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesElite.png";
+const customersoriesBoatImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesBoat.png";
+const customersoriesSortedImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesSorted.jpg";
 
 function CustomerStories() {
   return (

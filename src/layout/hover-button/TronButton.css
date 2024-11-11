@@ -17,7 +17,7 @@
       stroke-dashoffset: 0;
     }
   }
-  
+
   /* Main Button Styles */
   /* .nav-btn--get-started {
     display: inline-block;
@@ -32,12 +32,14 @@
     position: relative;
 }
 .tron-hover-rotate.small {
-    background: linear-gradient(#ffc940, #569cff);
-    width: 10rem;
-    height: 10rem;
+  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+    width: 20rem;
+    height: 20rem;
     inset: auto;
 }
-  
+.request-btn a {
+  position: relative;
+}
   /* .nav-btn--get-started:hover {
     border-image: linear-gradient(45deg, #EB88B1, #B965E4, #61A6F9) 1;
   } */
@@ -57,12 +59,14 @@
     transition: opacity 0.3s ease-in-out;
   }
    */
+   
    .tron-hover-rotate {
-    background-image: linear-gradient(#ffc940, #ff7bad 50%, #569cff);
+
     width: 15rem;
     height: 15rem;
     position: absolute;
     inset: auto;
+    background-image: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
 }
    .tron-hover-rotate {
     position: absolute;
@@ -70,18 +74,24 @@
     left: 50%;
     width: 200px;
     height: 200px;
-    background-image: linear-gradient(to bottom, #ffc940, #ff7bad 50%, #569cff);
+    background-image: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
     opacity: 0;
     transform: translate(-50%, -50%);
     animation: infiniteRotate 4s linear infinite;
     transform-style: preserve-3d;
     transition: opacity 0.3s ease-in-out;
 }
-
+.request-btn .btn-base--tron-hover {
+  width: 11.8125rem;
+}
   .nav-btn--get-started:hover .tron-hover-rotate {
     opacity: 1;
   }
-  
+  .request-btn .btn-base--tron-radial {
+    width: 3.8125rem;
+    height: 40px;
+    inset: -1px 0% 0 116px;
+}
   /* SVG Container and Stroke Animation */
   .radial-embed-nav svg {
     width: 100%;
@@ -93,26 +103,38 @@
     stroke: url(#linear-gradient-tronnav);
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 3px;
+    stroke-width: 2px;
     stroke-dasharray: 284.533, 284.533;
     stroke-dashoffset: 284.533;
     transition: opacity 0.3s ease-in-out;
   }
   
   .nav-btn--get-started:hover .tron-icon_nav {
-    animation: drawStroke 2s ease forwards;
-    
+    animation: drawStroke 2s ease infinite; 
   }
+  .nav-btn--get-started:hover  .radial-embed-nav svg  {
+    margin: -2px 0;
+  }
+   .nav-btn--get-started .tron-icon_nav {
+    animation: drawStroke 2s ease infinite; 
+  } 
   .nav-btn--get-started:hover .text-btn--nav {
    color: #fff;
+   opacity: .9;
     
   }
-  
+  .radial-embed-nav svg {
+    width: 100%;
+    height: auto;
+    margin: -1px 0;
+    position: relative;
+    z-index: -9;
+}
   /* Text and Button Background */
   .btn-base--black {
     z-index: 10;
-    background-color: transparent;
-    color: #0000;
+    background-color: #1d1d1f;
+    color: #fff;
     border-radius: 2rem;
     flex: none;
     align-items: stretch;
@@ -127,9 +149,11 @@
     position: relative;
     text-align: center;
 }
-  
+.request-btn .btn-base--black {
+  width: 11.5625rem;
+}
 .text-btn--nav {
-    color: #29292B;
+    color: #fff;
     text-align: center;
     font-size: 18px;
     font-style: normal;

@@ -3,7 +3,13 @@ import "./style.css";
 import Images from "../../../../assests/images";
 const SalesProcessOptimiation = () => {
   return (
-    <div className="sales-process-optimization-wrapper ">
+    <div className="sales-process-optimization-wrapper " data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="3000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <div className="content-wrapper">
         <p className="sale-title">Modern</p>
         <p className="sales-heading-sales">Ways of  </p>

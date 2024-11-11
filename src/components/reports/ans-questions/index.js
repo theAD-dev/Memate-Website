@@ -72,10 +72,22 @@ const QuestionAnswer = () => {
   return (
     <div className="question-answer-wrapper">
       <div className="question-answer-content">
-        <div className="question-answer-heading-wrapper">
+        <div className="question-answer-heading-wrapper" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="6000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
           <p className="question-answer-heading">We answer your questions</p>
         </div>
-        <div className="questions-wrapper">
+        <div className="questions-wrapper" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="6500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
           {questions.map((ques, index) => (
             <div className="each-ques-wrapper">
               <div

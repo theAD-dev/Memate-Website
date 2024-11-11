@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';  
-import KnowledgeBaseMain from "../../assests/images/knowledgeBaseMain.png";
 import NextStep from "../next-step";
 import "./style.css";
 import MiddleSection from "./knowledge-base-middle-section";
 import { Helmet } from 'react-helmet';
+const KnowledgeBaseMain = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/knowledgeBaseMain.png";
 
 const KnowledgeBaseComponent = () => {
 
