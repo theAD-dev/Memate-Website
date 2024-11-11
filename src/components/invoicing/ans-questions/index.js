@@ -93,7 +93,7 @@ const QuestionAnswer = () => {
               <div
                 key={index}
                 className={`question-answer-ques ${selectedQuestion === ques.key ? "selected" : ""}`}
-                onClick={() => setSelectedQuestion(ques.key)}
+                onClick={() => setSelectedQuestion(selectedQuestion === ques.key ? null : ques.key)}
               >
                 <p className="question-answer-ques-info">{ques.question}</p>
                 <Box
