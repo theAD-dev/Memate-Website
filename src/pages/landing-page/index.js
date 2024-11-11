@@ -23,7 +23,7 @@ import { Helmet } from 'react-helmet';
 gsap.registerPlugin(ScrollTrigger);
 
 
-const LandingPage = ({postsLatest, updates}) => {
+const LandingPage = ({ postsLatest, updates }) => {
   const stickySectionRef = useRef(null);
   const buttonRef = useRef(null);
 
@@ -33,13 +33,15 @@ const LandingPage = ({postsLatest, updates}) => {
       gsap.to(stickySectionRef.current, {
         scrollTrigger: {
           trigger: stickySectionRef.current,
-          scrub: 1,
-          start: "top 45%",
-          end: "top 30%",
-          markers: false, 
+          scrub: .00002,
+          start: "top -60%",
+          end: "top 10%",
+          markers: false,
+          onUpdate: (self) => {
+            // Update the opacity based on the progress of the ScrollTrigger
+            stickySectionRef.current.style.opacity = self?.progress + 0.005;
+          }
         },
-        opacity: 1,
-        duration: 1, 
       });
     }
 
@@ -78,50 +80,47 @@ const LandingPage = ({postsLatest, updates}) => {
 
 
   return (
-   <>
-    <Helmet>
-    <title>Memate: Efficient Project & Business Management Software</title>
-    <meta property="og:title" content="Memate: Efficient Project & Business Management Software" />
-      <meta property="og:description" content="Meta Description- Streamline your business operations with our all in one project and business management software. Track tasks, collaborate, and manage projects efficiently.
+    <>
+      <Helmet>
+        <title>Memate: Efficient Project & Business Management Software</title>
+        <meta property="og:title" content="Memate: Efficient Project & Business Management Software" />
+        <meta property="og:description" content="Meta Description- Streamline your business operations with our all in one project and business management software. Track tasks, collaborate, and manage projects efficiently.
     " />
-  </Helmet>
-    <Layout>
-      <BussinessManagement/>
-      <FeaturedOn/>
-      <FindOneApplication/>
-      <CommonChallenges/>
-      <ZeroOfferOnboarding/>
-      <MeMateFeatureStreamline/>
-      <div className="apply-container">
-      <MemateFeatureBoastEfficiency/>
-      <MeMateFinanceInsights/>
-      <MeMateFeatureMotivateTeam/>
-      <MeMateFeatureAgile/>
-      <MeMateWorkForce/>
-      <SeamlessInegration/>
-      <SimpleVersatilePowerful/>
-      <SuccessStories/>
-      <NewsAndUpdate postsLatest={postsLatest}/>
-      </div>
-      <div
-          ref={stickySectionRef}
-          className="sticky-section-switch"
-          style={{ opacity: 0 }}>
-      <div className="apply-content">
-      <div className="get-started-wrapper">
-      <div className="intro-sticky">
-        <NextStep text="Request a Demo"/>
-      </div>
-      </div>
-      </div>
-      </div>
-   
-    
-      {/* <div className="btn-tron-big" ref={buttonRef}>
+      </Helmet>
+      <Layout>
+        <BussinessManagement />
+        <FeaturedOn />
+        <FindOneApplication />
+        <CommonChallenges />
+        <ZeroOfferOnboarding />
+        <MeMateFeatureStreamline />
+        <div className="apply-container">
+          <MemateFeatureBoastEfficiency />
+          <MeMateFinanceInsights />
+          <MeMateFeatureMotivateTeam />
+          <MeMateFeatureAgile />
+          <MeMateWorkForce />
+          <SeamlessInegration />
+          <SimpleVersatilePowerful />
+          <SuccessStories />
+          <NewsAndUpdate postsLatest={postsLatest} />
+        </div>
+        <div ref={stickySectionRef} className="sticky-section-switch" style={{ opacity: 0 }}>
+          <div className="apply-content">
+            <div className="get-started-wrapper">
+              <div className="intro-sticky">
+                <NextStep text="Request a Demo" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        {/* <div className="btn-tron-big" ref={buttonRef}>
           <span>Get Started</span>
         </div> */}
-    </Layout>
-   </>
+      </Layout>
+    </>
   )
 }
 
