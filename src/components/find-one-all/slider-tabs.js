@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 import Images from "../../assests/images";
 import { Link } from "react-router-dom";
+import TronButton from "../../layout/hover-button/tourn-but";
 
 // Import images
 const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Sales-image.svg";
@@ -136,8 +137,17 @@ const SliderTab = () => {
         </span>
       </div>
 
-        <Link to={tabs[selectedTab].link}><button className="get-started-btn">Find more</button></Link>
+        
     
+      </div>
+      <div className="request-btn" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+        <Link to={tabs[selectedTab].link} className="nav-btn--get-started navbar-link"><TronButton text="Find more" /></Link>
       </div>
       
     </div>

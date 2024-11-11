@@ -1,8 +1,3 @@
-
-
-
-
-
 import React from 'react';
 import './TronButton.css';
 
@@ -10,7 +5,7 @@ const TronButton = (props) => {
   return (
   <>
       <div className="btn-base--tron-radial">
-        <div className="radial-embed-nav">
+        <div className="radial-embed-nav w-embed">
           <svg
             id="btn-tron_nav"
             data-name="Layer-svg-tron_nav"
@@ -60,5 +55,4 @@ const TronButton = (props) => {
 };
 
 export default TronButton;
-
 

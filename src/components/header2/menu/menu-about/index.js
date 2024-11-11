@@ -21,7 +21,7 @@ const MenuAbout = () => {
         </NavLink>
 
         <NavLink 
-          to="/our-careers" 
+          to="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530" 
           className={({ isActive }) => 
             (isActive ? "menuActive" : "link") + " news first-News"
           }
