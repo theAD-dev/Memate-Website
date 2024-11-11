@@ -112,12 +112,9 @@
   .nav-btn--get-started:hover .tron-icon_nav {
     animation: drawStroke 2s ease infinite; 
   }
-  .nav-btn--get-started:hover  .radial-embed-nav svg  {
-    margin: -2px 0;
-  }
-   .nav-btn--get-started .tron-icon_nav {
+  /* .nav-btn--get-started .tron-icon_nav {
     animation: drawStroke 2s ease infinite; 
-  } 
+  } */
   .nav-btn--get-started:hover .text-btn--nav {
    color: #fff;
    opacity: .9;
@@ -126,7 +123,7 @@
   .radial-embed-nav svg {
     width: 100%;
     height: auto;
-    margin: -1px 0;
+    margin: -2px 0;
     position: relative;
     z-index: -9;
 }
