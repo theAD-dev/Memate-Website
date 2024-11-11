@@ -49,6 +49,7 @@
 .question-answer-ques {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .each-ques-wrapper {

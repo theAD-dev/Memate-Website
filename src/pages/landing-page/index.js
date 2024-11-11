@@ -33,15 +33,17 @@ const LandingPage = ({postsLatest, updates}) => {
       gsap.to(stickySectionRef.current, {
         scrollTrigger: {
           trigger: stickySectionRef.current,
-          scrub: 1,
-          start: "top 45%",
-          end: "top 30%",
-          markers: false, 
+          scrub: .00002,
+          start: "top -60%",
+          end: "top 10%",
+          markers: false,
+          onUpdate: (self) => {
+            // Update the opacity based on the progress of the ScrollTrigger
+            stickySectionRef.current.style.opacity = self?.progress + 0.005;
+          }
         },
-        opacity: 1,
-        duration: 1, 
-      });
-    }
+});
+}
 
     const tl = gsap.timeline({
       repeat: -1,

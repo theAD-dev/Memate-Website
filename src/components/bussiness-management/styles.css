@@ -14,7 +14,12 @@
   max-width: 741px;
   margin: auto;
 }
-
+.image-wrapper img {
+  width: 100%;
+}
+.integration-brand-container img {
+  width: 100%;
+}
 .heding-text-top {
   padding: 0px 0px 23px 0px;
 }

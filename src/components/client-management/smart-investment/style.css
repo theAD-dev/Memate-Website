@@ -19,17 +19,16 @@
 }
 
 .smart-investment-banner {
-  background: linear-gradient(to right, #1ab2ff -25.85%, #ffb258 102%);
+  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 25px;
   font-size: 118px;
   font-style: normal;
-  font-weight: 425;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  padding-right: 10px;
-  font-family: "sequel_sans_bold_disp" !important;
+  font-weight: 700;
+  line-height: 100px;
+  padding-bottom: 31px;
+  font-family: "sequel_sans_roman_head" !important;
 }
 
 .smart-investment-description {

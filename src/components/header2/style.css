@@ -93,13 +93,12 @@
     cursor: pointer;
     margin-right: 40px;
 }
-
 .navbar-item-active {
-  background: radial-gradient(1940.26% 124.88% at 0% 15.21%, #1AB2FF 0%, #FFB258 100%);
-  background-clip: text;
+  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .navbar-item p{
     color: #29292B;
     text-align: center;
@@ -310,10 +309,9 @@
     text-align: top;
     width: 120px;
 
-    background: radial-gradient(1940.26% 124.88% at 0% 15.21%, #1AB2FF 0%, #FFB258 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .navbar-log-in a {
     color: #29292B;
@@ -332,8 +330,7 @@ background-clip: text;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .menu-feature-management a:hover {
-  background: radial-gradient(at left top, #1AB2FF 0%, #FFB258 100%);
-  background-clip: text;
+  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -437,7 +434,7 @@ background-clip: text;
     font-family: "sequel_sans_roman_head" !important;
     font-size: 17px;
     font-style: normal;
-    background: linear-gradient(to bottom, #1ab2ff 39.15%, #ffb258 62%);
+    background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 360;

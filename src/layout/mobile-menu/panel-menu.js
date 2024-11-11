@@ -1,6 +1,6 @@
 import React,{useState} from 'react'; 
 import { Link } from 'react-router-dom';
-const menuImages = "../../assests/menu-images"
+import menuImages from '../../assests/menu-images';
 const RightBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg"
 const RightColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-color-arrow.svg"
  
@@ -105,7 +105,7 @@ const PanelMenu = () => {
               className={`accordion-header ${activeIndex === index ? 'active' : ''}`}
               onClick={() => handleClick(index)}
             >
-                        <span><img src={item.imgtitle} alt={item.title} />{item.title}</span>    {activeIndex === index ? <RightColorArrow className={activeIndex === index ? 'rotate' : ''}/> : <img src={RightBlackArrow} alt='RightBlackArrow' style={{ transform: "rotate(-90deg)" }} />}
+                        <span><img src={item.imgtitle} alt={item.title} />{item.title}</span>    {activeIndex === index ? <img src={RightColorArrow} alt="RightColorArrow" className={activeIndex === index ? 'rotate' : ''}/> : <img src={RightBlackArrow} alt='RightBlackArrow' style={{ transform: "rotate(-90deg)" }} />}
                     </div>
                     {activeIndex === index && (
                         <div className={`accordion-content ${item.title}`}>

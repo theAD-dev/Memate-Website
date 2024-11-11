@@ -9,6 +9,7 @@ const NextStep = (props) => {
         duration: 1200, // Customize animation duration as needed
     });
 }, []);
+
   return (
     <div className="next-step"  data-aos="AnimaT"
     data-aos-offset="50"
