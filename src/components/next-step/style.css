@@ -43,11 +43,23 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -16px;
-  font-family: "Inter", sans-serif !important;
+  letter-spacing: 2px;
+  font-family: "sequel_sans_bold_disp" !important;
   overflow-wrap: break-word;
 }
 
+[data-aos="AnimaT"] {
+      opacity: .2;
+      filter: blur(1px);
+      transform: translateY(10%);
+      transition: opacity 20s, filter 20s, transform 20s;
+
+      &.aos-animate {
+          opacity: 1;
+          filter: blur(0);
+          transform: translateY(0);
+      }
+}
 .next-step {
   overflow: hidden;
 }

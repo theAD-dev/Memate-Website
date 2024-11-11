@@ -4,27 +4,10 @@ import Images from "../../assests/blog-images";
 import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
-import ScrollReveal from 'scrollreveal';
-import  { useEffect } from "react";
-
 
 
 function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
   
-
-  useEffect(() => {
-    const slideUpConfig = {
-      origin: 'bottom',
-      distance: '50px',
-      duration: 1000,
-      easing: 'ease-in-out',
-    };
-    ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
-    ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
-    ScrollReveal().reveal('.section3', { ...slideUpConfig, delay: 600 });
-    ScrollReveal().reveal('.section4', { ...slideUpConfig, delay: 800 });
-
-  }, []);
   return (
     < div id="blogGrid">
       <Helmet>
@@ -35,7 +18,13 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
       </Helmet>
       <div className="parent-blog-page ">
         <div className="parent-blog">
-          <div className="heading-container">
+          <div className="heading-container" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
             <h1 className="heading-blog">
               latest <br></br>articles
             </h1>
@@ -49,7 +38,7 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
           
           <Link to={`/news/${postsLatest[0]?.slug}`}>
           <div
-            className="blog-image-container-1 parent-blog-pageWrap section1"
+            className="blog-image-container-1 parent-blog-pageWrap "
             style={{
               backgroundImage: `url(${postsLatest[0]?.featured_img_url || Images.blogImgempty})`,
               backgroundSize: 'cover',
@@ -63,11 +52,23 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
               marginBottom: '29px',
 
             }}
-          >
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom">
             
 
 
-            <div className="img-container-1-div section2">
+            <div className="img-container-1-div " data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
               <div>
                 <div className="blog-image-container-div">
                   {/* <img src={blogs[0].featured_img_url} /> */}
@@ -82,8 +83,14 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
             </div>
             </Link>
          
-          <div className="blog-img-container-2 parent-blog-pageWrap parent-blog-pageWrap1">
-            <div className="blog-img-container-2-img1-div section3">
+          <div className="blog-img-container-2 parent-blog-pageWrap parent-blog-pageWrap1" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+            <div className="blog-img-container-2-img1-div ">
               {postsLatest.length > 2 && (
                 <Link to={`/news/${postsLatest[1].slug}`}><img
                   className="img-container-2-img-1"
@@ -97,7 +104,7 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
                 <div className="date-heading-A"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
               </div>
             </div>
-            <div className="blog-img-container-2-img2-div section4">
+            <div className="blog-img-container-2-img2-div ">
               {postsLatest.length > 2 && (
                 <Link to={`/news/${postsLatest[2]?.slug}`}><img
                   className="img-container-2-img-2"
@@ -114,8 +121,20 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
             <div className="latest-article-parent"></div>
           </div>
 
-          <span className="latest-article-heading">Latest Articles</span>
-          <div className="img-container-3 parent-blog-pageWrap section1">
+          <span className="latest-article-heading" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">Latest Articles</span>
+          <div className="img-container-3 parent-blog-pageWrap " data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="2500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
             {posts?.map((post) => (
               <div key={post.id} className="img-container-3-div">
                 <div className="img-container-3-img1-div">

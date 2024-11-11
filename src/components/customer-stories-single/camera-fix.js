@@ -2,15 +2,15 @@ import React from "react";
 import "./style.css";
 import NextStep from "../next-step";
 import { Link } from "react-router-dom";
-import CustomerStoriesImage from "../../assests/blog-images/customersoriesCamera.png";
-import customersories01 from "../../assests/images/customersories01.png";
-import imagescustomersories02 from "../../assests/images/imagescustomersories02.png";
-import imagescustomersories03 from "../../assests/images/imagescustomersories03.png";
-import imagescustomersories04 from "../../assests/images/imagescustomersories04.png";
-import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
-import SuccessStories from "../success-stories";
 import { Helmet } from "react-helmet";
+import SuccessStories from "../success-stories";
 
+const CustomerStoriesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesCamera.png";
+const customersories01 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersories01.png";
+const imagescustomersories02 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/imagescustomersories02.png";
+const imagescustomersories03 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/imagescustomersories03.png";
+const imagescustomersories04 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/imagescustomersories04.png";
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 
 function CameraFix() {

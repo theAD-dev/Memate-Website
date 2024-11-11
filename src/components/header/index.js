@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import menuImages from "../../assests/menu-images";
 import Images from "../../assests/images";
-import {ReactComponent as DownBlackArrow} from "../../assests/icons/down-black-arrow.svg";
-import {ReactComponent as DownWhiteArrow} from "../../assests/icons/down-white-arrow.svg"
-
-import {ReactComponent as RightWhiteArrow} from "../../assests/icons/right-white-arrow.svg"
-import {ReactComponent as RightBlackArrow} from "../../assests/icons/right-black-arrow.svg"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -13,6 +8,11 @@ import KeyboardControlKeyIcon from "@mui/icons-material/KeyboardControlKey";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { MenuAbout, MenuFeature, MenuIndustry, MenuLegal, MenuNews, MenuRessources } from "./menu";
 import "./style.css";
+
+const DownBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
+const DownWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-white-arrow.svg";
+const RightWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-white-arrow.svg";
+const RightBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg"
 
 
 const Header = () => {
@@ -89,7 +89,7 @@ const Header = () => {
 
               <div className="about-drop">
                 <p>About</p>
-                <span>{showDropDown ? <span style={{marginBottom:"1px"}}><DownWhiteArrow/></span> : <DownBlackArrow/> }</span>
+                <span>{showDropDown ? <span style={{marginBottom:"1px"}}><img src={DownWhiteArrow} alt="DownWhiteArrow" /></span> : <img src={DownBlackArrow} alt="DownBlackArrow" /> }</span>
               </div>
 
             </div>
@@ -155,7 +155,7 @@ const Header = () => {
                               : "menu-next-icon-wrapper-unselected"
                           }
                         >
-                          {selectedMenuItem === menu.id ? <RightWhiteArrow/> : <RightBlackArrow/> }
+                          {selectedMenuItem === menu.id ? <img src={RightWhiteArrow} alt="RightWhiteArrow" /> : <img src={RightBlackArrow} alt="RightBlackArrow" style={{ transform: "rotate(-90deg)" }}/> }
                           {/* <NavigateNextIcon
                             htmlColor={
                               selectedMenuItem === menu.id ? "#ffffff" : ""

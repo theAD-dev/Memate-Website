@@ -2,17 +2,16 @@ import React, { useState, useEffect } from 'react';
 import style from './supplier-module.module.scss';
 import "./style.css";
 import { Link } from "react-router-dom";
-import FilterIcon from "../../assests/icons/search-filter.svg";
-import LogoFilter from "../../assests/icons/logo-filter.svg";
-import googlemap from "../../assests/icons/googlemap.svg";
-import GlobIcon from "../../assests/icons/glob-icon.svg";
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-
+const FilterIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/search-filter.svg";
+const LogoFilter = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo-filter.svg";
+const googlemap = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/googlemap.svg";
+const GlobIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/glob-icon.svg";
 
 
 const DataBase = ({ supplier = [], search, loading, totalSupplier, handleNext, searchTerm, setSearchTerm, activeLetter, setActiveLetter }) => {
@@ -30,7 +29,13 @@ const DataBase = ({ supplier = [], search, loading, totalSupplier, handleNext, s
 
   return (
     <div>
-      <div className={style.searchfilterBox}>
+      <div className={style.searchfilterBox} data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <div className={style.searchIcon}>
           <img src={FilterIcon} alt='filter Icon' />
           <input
@@ -43,7 +48,13 @@ const DataBase = ({ supplier = [], search, loading, totalSupplier, handleNext, s
         </div>
       </div>
 
-      <div className={style.alphabetbox} style={{ marginBottom: "10px" }}>
+      <div className={style.alphabetbox} style={{ marginBottom: "10px" }} data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <span className={style.spanDisplay}>Display</span>
         <div className={style.allButFilter}>
           <button className={style.active} onClick={()=> setActiveLetter("")}>All</button>
@@ -66,7 +77,13 @@ const DataBase = ({ supplier = [], search, loading, totalSupplier, handleNext, s
       <ul className={style.alphabetFilter}>
         {supplier.length > 0 ? (
           supplier.map((item, index) => (
-            <li key={index}>
+            <li key={index} data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="2500"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom">
               <Accordion className={style.alphabetlist}
                 expanded={expandedPanel === index}
                 onChange={handleAccordionChange(index)}

@@ -1,18 +1,18 @@
 
 import DataSingle from "../../components/supplier-database/single-page/single-page";
 import Layout from "../../layout";
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import { singlePostSupplier } from '../../api/supplierApi';
 
 const DatabasePageSingle = () => {
-  const { slug =slug.slug } = useParams();
+  const { slug = slug.slug } = useParams();
   const [supplierData, setSupplierData] = useState(null);
- 
- 
+
+
   const [loadingsingle, setLoadingSinge] = useState(true);
   const [error, setError] = useState(null);
- 
+
 
   useEffect(() => {
     const fetchSupplierData = async () => {
@@ -33,12 +33,12 @@ const DatabasePageSingle = () => {
   if (error) return <p>{error}</p>;
 
   return (
-<>
+    <>
 
-<Layout>
-<DataSingle slug={slug} supplierData ={supplierData}/>
-</Layout>
-</>
+      <Layout>
+        <DataSingle slug={slug} supplierData={supplierData} />
+      </Layout>
+    </>
   );
 };
 export default DatabasePageSingle;

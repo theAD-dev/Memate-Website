@@ -31,7 +31,13 @@ try {
 
   return (
     <>
-      <div className="slider-section1">
+      <div className="slider-section1" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="4000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <div className="success-stories1">
           <div className="bottom-management">
             <h2>News and Updates</h2>

@@ -32,27 +32,7 @@
         letter-spacing: -1px;
     
 }
-.darkButtonstyle{
-    a{
-        border-radius: 60px;
-    background: #29292B;
-    height: 52px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    margin-bottom: 40px;
-    color: #FFF;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 415;
-    line-height: normal;
-    padding: 0 39px;
-    text-decoration: none;
-    }
-}
+
 .databaseWrapper{
     width: 869px;
     margin: 0 auto;
@@ -436,6 +416,24 @@ h2{
     }
     .darkbuttonStyle{
         margin-top: 20px;
+    border-radius: 60px;
+    background: #29292B;
+    height: 52px;
+    // width: 168px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: normal;
+    padding: 0 39px;
+    text-decoration: none;
     }
 }
 }

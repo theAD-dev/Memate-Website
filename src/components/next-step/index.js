@@ -1,9 +1,22 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const NextStep = (props) => {
+  useEffect(() => {
+    AOS.init({
+        duration: 1200, // Customize animation duration as needed
+    });
+}, []);
   return (
-    <div className="next-step">
+    <div className="next-step"  data-aos="AnimaT"
+    data-aos-offset="50"
+    data-aos-delay="1000"
+    data-aos-duration="5000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <h3>Take the</h3>
       <div className="next-title">
         <h1>next step</h1>

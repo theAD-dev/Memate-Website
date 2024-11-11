@@ -1,8 +1,8 @@
 import React from "react";
 import "./pricing-light-table.scss";
-import pricingboll from '../../../assests/images/pricingboll.png';
-import checkIcon from '../../../assests/icons/checkIcon.svg';
-import pricingTah from '../../../assests/icons/pricingTah.svg';
+const pricingboll = 'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingboll.png';
+const checkIcon = 'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/checkIcon.svg';
+const pricingTah = 'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingTah.svg';
 const PricingLightTable = () => {
   return (
     <div className="pricing-table-container">

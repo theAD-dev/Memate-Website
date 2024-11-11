@@ -9,7 +9,13 @@ import ScalableCustomizable from './indusry-scalable-customizable'
 import IndustryDifference from './industry-difference'
 const IndustryBussinessManagement = () => {
   return (
-    <div className='industry-bussiness-management-wrapper'>
+    <div className='industry-bussiness-management-wrapper' data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <p className="industry-bussiness-management-heading">Business Management</p>
       <p className='industry-bussinees-content'>Software for creatives</p>
       <div className='industry-bussiness-sub-content'>

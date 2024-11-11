@@ -4,7 +4,13 @@ import Images from "../../../assests/images";
 import './style.css';
 const MeMateFeatureAgile = () => {
   return (
-    <div className="agile-container-section">
+    <div className="agile-container-section"  data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1600"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <div className="efficiency-section">
         <FeatureCard
           subHeading="Agile"

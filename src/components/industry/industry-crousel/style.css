@@ -37,7 +37,7 @@
   width: 70px;
   height: 70px;
   flex-shrink: 0;
-  background-image: url("../../../assests/industry-images/industry-crosuel-circel.png");
+  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-crosuel-circel.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -91,7 +91,7 @@
 .crousel-selected-page {
   height: 10px;
   width: 10px;
-  background-image: url("../../../assests/industry-images/industry-crosuel-circel.png");
+  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-crosuel-circel.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;

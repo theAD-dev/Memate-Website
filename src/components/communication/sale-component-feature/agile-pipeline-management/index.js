@@ -3,7 +3,13 @@ import Images from "../../../../assests/images";
 import "./style.css";
 const AgilePipeLineManagement = () => {
   return (
-    <div className="aglie-pipeline-management-wrapper marginSpaceTop">
+    <div className="aglie-pipeline-management-wrapper marginSpaceTop" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="3500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <img src={Images.commOrganised} />
       <div className="content-wrapper">
         <p className="sale-title">Organised</p>

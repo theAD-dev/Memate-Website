@@ -11,9 +11,27 @@ const SmartInvestment = () => {
   const { selectPlan, setSelectPlan } = useState(0);
   return (
     <div className="smart-investment-wrapper">
-      <p className="smart-investment-heading">Smart investment</p>
-      <h1 className="smart-investment-banner">pricing</h1>
-      <div className="smart-investment-description">
+      <p className="smart-investment-heading" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="4000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">Smart investment</p>
+      <h1 className="smart-investment-banner" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="4500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">pricing</h1>
+      <div className="smart-investment-description" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="5000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <span className="smart-investment-section-description">
           Plus, we provide a 14-day free trial because we believe our<br></br>
           software will become indispensable to your business.

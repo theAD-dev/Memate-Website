@@ -7,15 +7,15 @@ import Images from "../../assests/images";
 import { Link } from "react-router-dom";
 
 // Import images
-import SalesImage from "../../assests/images/Sales-image.svg";
-import CalculationImage from "../../assests/images/calculation-image.svg";
-import EmployeesImage from "../../assests/images/employees-image.svg";
-import SchedulingImage from "../../assests/images/sheduling-image.svg";
-import CommunicationImage from "../../assests/images/communication-image.svg";
-import ReportingImage from "../../assests/images/reporting-image.svg";
-import InvoicingImage from "../../assests/images/invoicing-image.svg";
-import ProfitabilityImage from "../../assests/images/profitablity-image.svg";
-import ManagementImage from "../../assests/images/managment-image.svg";
+const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Sales-image.svg";
+const CalculationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/calculation-image.svg";
+const EmployeesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/employees-image.svg";
+const SchedulingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/sheduling-image.svg";
+const CommunicationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/communication-image.svg";
+const ReportingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/reporting-image.svg";
+const InvoicingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/invoicing-image.svg";
+const ProfitabilityImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/profitablity-image.svg";
+const ManagementImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/managment-image.svg";
 
 
 
@@ -83,11 +83,17 @@ const SliderTab = () => {
   };
 
   return (
-    <div className="slider-container sliderTabWrapper sliderTabWrapperApp">
+    <div className="slider-container sliderTabWrapper sliderTabWrapperApp" >
       
 
       {/* Tab List Slider */}
-      <Slider {...tabSliderSettings} className="tab-slider">
+      <Slider {...tabSliderSettings} className="tab-slider" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1300"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         {tabs.map((tab, index) => (
           <div
             key={index}
@@ -108,7 +114,13 @@ const SliderTab = () => {
         ))}
       </Slider>
       {/* Large Image Display */}
-      <div className="large-image-container">
+      <div className="large-image-container" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1400"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <img
           src={tabs[selectedTab].image}
           alt={tabs[selectedTab].label}

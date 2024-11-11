@@ -1,9 +1,8 @@
 
-import ContactUsMainImage from "../../assests/images/contactUsMain.png"
 import "./style.css";
 import { Helmet } from 'react-helmet';
 import style from './contactus.module.scss';
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -13,11 +12,9 @@ import 'react-phone-number-input/style.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useNavigate } from 'react-router-dom';
 import { RequestCallBackAPI } from '../../api/contactAPI';
-import ScrollReveal from 'scrollreveal';
-
-  
 
 
+const ContactUsMainImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/contactUsMain.png"
 const ContactUsComponent = () => {
 
   const [visible, setVisible] = useState(false);
@@ -58,24 +55,6 @@ const ContactUsComponent = () => {
 
 
 
-  
-  
-    useEffect(() => {
-      const slideUpConfig = {
-        origin: 'bottom',
-        distance: '50px',
-        duration: 1000,
-        easing: 'ease-in-out',
-      };
-      ScrollReveal().reveal('.section1', { ...slideUpConfig, delay: 200 });
-      ScrollReveal().reveal('.section2', { ...slideUpConfig, delay: 400 });
-      ScrollReveal().reveal('.section3', { ...slideUpConfig, delay: 600 });
-   
-  
-    }, []);
-
-
-
   const footerContent = (
       <div className="flexWrapBoxE">
        <button className="borderbuttonStyle firstBut" onClick={() => setVisible(false)} >Cancel</button>
@@ -83,7 +62,13 @@ const ContactUsComponent = () => {
       </div>
   );
   const HeaderContent = (
-      <div className="flexWrapBoxc">
+      <div className="flexWrapBoxc" data-aos="fade-up"
+      data-aos-offset="50"
+      data-aos-delay="50"
+      data-aos-duration="500"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-bottom">
        <h1>Request a callback</h1>
       </div>
   );
@@ -108,8 +93,14 @@ const ContactUsComponent = () => {
       <meta property="og:description" content="We're here to help! Contact us for inquiries, support, or feedback. Your questions are important, and our team is ready to assist you.
     " />
 </Helmet>
-      <div className="main-section">
-        <div className="main-heading">contact us</div>
+      <div className="main-section" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="600"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+        <div className="main-heading" >contact us</div>
         <div className="main-image"><img src={ContactUsMainImage} alt="contact us main image" width={767} height={767}/></div>
         <div className="mid-heading">
           <p>Whether you'd like to chat, email or receive a callback</p>
@@ -122,9 +113,15 @@ const ContactUsComponent = () => {
           <p>Get started</p>
         </div>
       </div>
-      <div className='query-section'>
+      <div className='query-section' data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <div className='query-cards'>
-          <div className='query-card query-1 section1'>
+          <div className='query-card query-1 '>
             <div className='query-main '>
               <div className='query-main-heading'>
                 <p>Contact</p>
@@ -145,7 +142,7 @@ const ContactUsComponent = () => {
             </div>
           </div>
 
-          <div className='query-card query-2 section2'>
+          <div className='query-card query-2 '>
             <div className='query-main'>
               <div className='query-main-heading'>
                 <p>Chat with</p>
@@ -167,7 +164,7 @@ const ContactUsComponent = () => {
             </div>
           </div>
 
-          <div className='query-card query-3 section3'>
+          <div className='query-card query-3 '>
             <div className='query-main'>
               <div className='query-main-heading query-color'>
                 <p>Email</p>

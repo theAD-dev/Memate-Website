@@ -2,15 +2,15 @@ import React from "react";
 import "./style.css";
 import NextStep from "../next-step";
 import { Link } from "react-router-dom";
-import EliteLife01 from "../../assests/images/EliteLife01.jpg";
-import EliteLife02 from "../../assests/images/EliteLife02.jpg";
-import EliteLife03 from "../../assests/images/EliteLife03.jpg";
-import EliteLife04 from "../../assests/images/EliteLife04.jpg";
-import EliteLife05 from "../../assests/images/EliteLife05.jpg";
-import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
-import SuccessStories from "../success-stories";
 import { Helmet } from "react-helmet";
+import SuccessStories from "../success-stories";
 
+const EliteLife01 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/EliteLife01.jpg";
+const EliteLife02 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/EliteLife02.jpg";
+const EliteLife03 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/EliteLife03.jpg";
+const EliteLife04 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/EliteLife04.jpg";
+const EliteLife05 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/EliteLife05.jpg";
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 
 function EliteLife() {

@@ -1,12 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import menuImages from "../../assests/menu-images";
 import Images from "../../assests/images";
-import {ReactComponent as DownBlackArrow} from "../../assests/icons/down-black-arrow.svg";
-import {ReactComponent as DownWhiteArrow} from "../../assests/icons/down-white-arrow.svg"
-import {ReactComponent as DownColorArrow} from "../../assests/icons/down-color-arrow.svg"
-import {ReactComponent as RightColorArrow} from "../../assests/icons/right-color-arrow.svg"
-import {ReactComponent as RightWhiteArrow} from "../../assests/icons/right-white-arrow.svg"
-import {ReactComponent as RightBlackArrow} from "../../assests/icons/right-black-arrow.svg"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -20,6 +14,13 @@ import MenuData from "../../layout/mobile-menu/menu-data";
 
 import GradientBorderButton from "../../layout/hover-button";
 import TronButton from "../../layout/hover-button/tourn-but";
+
+const DownBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
+const DownWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-white-arrow.svg"
+const DownColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-color-arrow.svg"
+const RightColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-color-arrow.svg"
+const RightWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-white-arrow.svg"
+const RightBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg"
 
 const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -108,13 +109,13 @@ const Header = () => {
           <div className="header-navbar-container">
 
             <div
-              className={`navbar-item navbar-item-flex-item  ${
+              className={`navbar-item navbar-item-flex-item rightAboutArrow  ${
                 location.pathname === "/about", showDropDown ? "navbar-item-active "  : ""
               }`}
               onClick={() => setShowDropDown(!showDropDown)} 
             >
                  <p>About</p>
-                {showDropDown ? <DownColorArrow/> : <DownBlackArrow/> }
+                {showDropDown ? <img src={DownColorArrow} alt="DownColorArrow" /> : <img src={DownBlackArrow} alt="DownBlackArrow" /> }
             </div>
             <div className={`navbar-item ${location.pathname === "/pricing" ? "navbar-item-active" : ""}`}>
             <Link to="/pricing" className="navbar-link"><p>Pricing</p></Link>
@@ -182,7 +183,7 @@ const Header = () => {
                               : "menu-next-icon-wrapper-unselected"
                           }
                         >
-                          {selectedMenuItem === menu.id ? <RightColorArrow/> : <RightBlackArrow/> }
+                          {selectedMenuItem === menu.id ? <img src={RightColorArrow} alt="RightColorArrow"/> : <img src={RightBlackArrow} alt="RightBlackArrow" style={{ transform: "rotate(-90deg)" }} /> }
                         </div>
                       </div>
                     );

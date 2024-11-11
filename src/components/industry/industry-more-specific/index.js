@@ -4,7 +4,13 @@ import MoreSpecificCard from "./card";
 import IndustryImages from "../../../assests/industry-images";
 const IndustryMoreSpecific = () => {
   return (
-    <div className="industry-more-specific-wrapper">
+    <div className="industry-more-specific-wrapper" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="2500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <p className="industry-more-specific-heading">More Specific</p>
       <p className="industry-more-specific-description">
         At MeMate, we are dedicated to enhancing businesses throughout Australia

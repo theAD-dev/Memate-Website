@@ -3,7 +3,13 @@ import "./style.css";
 import Images from "../../../../assests/images";
 const SuitableTender = () => {
   return (
-    <div className="suitable-tender-wrapper marginSpaceTop">
+    <div className="suitable-tender-wrapper marginSpaceTop" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="4000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <div className="content-wrapper">
         <p className="sale-title">Convenient</p>
         <p className="sales-heading-sales">Classic</p>

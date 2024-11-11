@@ -3,7 +3,13 @@ import Images from "../../../assests/images";
 import "./style.css";
 const MeMateFeatureMotivateTeam = () => {
   return (
-    <div className="motivate-team-wrapper">
+    <div className="motivate-team-wrapper" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
       <div className="efficiency-section">
         <div className="all-in-one">
           <div className="strean-line">

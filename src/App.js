@@ -63,8 +63,12 @@ import ThankYouPage from "./pages/thankyou-page";
 import AddYourCompanyPage from "./pages/add-your-company";
 import TronButton from "./layout/hover-button/tourn-but";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
+  AOS.init();
   let savedlatestPostData = [];
 try {
   savedlatestPostData = JSON.parse(sessionStorage.getItem('latestPostData') || "[]");

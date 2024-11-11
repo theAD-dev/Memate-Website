@@ -2,16 +2,18 @@ import React from "react";
 import "./style.css";
 import NextStep from "../next-step";
 import { Link } from "react-router-dom";
-import customersoriesProImage from "../../assests/blog-images/customersoriesPro.png";
-import ProVinyl01 from "../../assests/images/ProVinyl01.jpg";
-import ProVinyl02 from "../../assests/images/ProVinyl02.jpg";
-import ProVinyl03 from "../../assests/images/ProVinyl03.jpg";
-import ProVinyl04 from "../../assests/images/ProVinyl04.jpg";
-import ProVinyl05 from "../../assests/images/ProVinyl05.jpg";
-import ProVinyl06 from "../../assests/images/ProVinyl06.jpg";
-import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
 import SuccessStories from "../success-stories";
 import { Helmet } from "react-helmet";
+
+const customersoriesProImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesPro.png";
+const ProVinyl01 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/ProVinyl01.jpg";
+const ProVinyl02 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/ProVinyl02.jpg";
+const ProVinyl03 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/ProVinyl03.jpg";
+const ProVinyl04 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/ProVinyl04.jpg";
+const ProVinyl05 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/ProVinyl05.jpg";
+const ProVinyl06 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/ProVinyl06.jpg";
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
+
 
 
 

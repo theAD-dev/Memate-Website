@@ -24,7 +24,9 @@ body {
  {
   width: 10px;
 }
-
+.question-answer-ques.selected .plus-icon-image-wrapper img {
+  transform: rotate(45deg);
+}
 body::-webkit-scrollbar-track ,
 .kb-left-wrapper::-webkit-scrollbar-track 
 {

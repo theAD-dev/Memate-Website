@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,useRef } from "react";
 import "./style.css";
 import style from './supplier-module.module.scss';
 import NextStep from "../next-step";
@@ -10,7 +10,11 @@ import * as yup from 'yup';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useNavigate } from 'react-router-dom';
 import { RequestCallBackAPI } from '../../api/contactAPI';
-import arrowIconBack from "../../assests/icons/arrowIconBack.svg";
+import CustomUpload from "./custom-upload";
+
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
+
+
 
 // Define your validation schema
 const schema = yup.object().shape({
@@ -39,6 +43,7 @@ function AddYourCompany() {
       services: ""
      })
   }
+ 
 
   useEffect(()=> {
     formReset();
@@ -86,11 +91,20 @@ function AddYourCompany() {
           </div>
 
 
-          <div className={style.supplierAddCompany}>
+          <div className={style.supplierAddCompany} data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
             <h2>Add Your Company to the Database</h2>
             <div className={style.supplierAddform}>
               <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
 
+                <div className={style.flexWrapGrid}>
+         <CustomUpload />
+                  </div>
                 <div className={style.flexWrapGrid}>
                   <div className={style.marginbotton}>
                     <label htmlFor="legal_name">Legal Name</label>
@@ -186,7 +200,7 @@ function AddYourCompany() {
                   {error && <p style={{ color: 'red' }}>{error}</p>}
                 </div>
 
-                <button className="darkbuttonStyle" onClick={handleSubmit(onSubmit)}>Send</button>
+                <button className={style.darkbuttonStyle} onClick={handleSubmit(onSubmit)}>Send</button>
               </form>
             </div>
 

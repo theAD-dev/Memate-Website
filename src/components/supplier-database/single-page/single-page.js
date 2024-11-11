@@ -3,10 +3,10 @@ import "../style.css";
 import style from '../supplier-module.module.scss';
 import NextStep from "../../next-step";
 import { Link } from "react-router-dom";
-import googlemap from "../../../assests/icons/googlemap.svg";
-import GlobIcon from "../../../assests/icons/glob-icon.svg";
-import arrowIconBack from "../../../assests/icons/arrowIconBack.svg";
-import cameraFixLogo from "../../../assests/images/cameraFixLogo.svg";
+const googlemap = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/icons/googlemap.svg";
+const GlobIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/icons/glob-icon.svg";
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/icons/arrowIconBack.svg";
+const cameraFixLogo = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/images/cameraFixLogo.svg";
 
 
 function DataSingle({slug,supplierData}) {
@@ -83,7 +83,9 @@ function DataSingle({slug,supplierData}) {
        
 
        
-
+<div className="darkButtonstyle">
+          <Link to=''>Request to Edit</Link>
+        </div>
       
       </div>
       <NextStep text="Request a Demo" />

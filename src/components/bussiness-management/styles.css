@@ -112,25 +112,9 @@ h1.text {
 }
 .request-btn .btn-base--black .text-btn--nav {
   color: #fff;
-}
-.request-btn .btn-base--tron-hover {
-  width: 11.8125rem;
-}
-
-.request-btn .tron-hover-rotate.small {
-  background: linear-gradient(#ffc940, #569cff);
-  width: 15rem;
-  height: 13rem;
-  inset: auto;
-}
-
-.request-btn .btn-base--black {
   white-space: nowrap;
-  width: 185px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
 
 .request-btn .text-btn--nav {
   color: #fff;

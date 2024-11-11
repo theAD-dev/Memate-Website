@@ -71,7 +71,13 @@ const SoftwareUpdate = () => {
 
         {update.map((item, index) => (
        <>
-        <div key={index} className="content1 uldateListWrap">
+        <div key={index} className="content1 uldateListWrap" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
         <div className="date">
           {new Date(item.publish_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
           {/* {item.publish_date} */}
@@ -91,8 +97,8 @@ const SoftwareUpdate = () => {
        </>
             ))}
             <div className="updateButton">
-          <button className="btn">See more Updates</button>
-        </div>
+              <button className="btn">See more Updates</button>
+            </div>
         {/* <div className="takeThe">Take the</div>
         <div className="nextStep">next step</div>
         <div className="getStarted-btn-container-A">
