@@ -39,7 +39,7 @@ const LandingPage = ({postsLatest, updates}) => {
           markers: false,
           onUpdate: (self) => {
             // Update the opacity based on the progress of the ScrollTrigger
-            stickySectionRef.current.style.opacity = self?.progress + 0.005;
+            stickySectionRef.current.style.opacity = self?.progress + 0.5;
           }
         },
 });
@@ -67,16 +67,6 @@ const LandingPage = ({postsLatest, updates}) => {
       ScrollTrigger.getAll().forEach((instance) => instance.kill());
     };
   }, []);
-
-
-
-
-
-
-
-
-
-
 
 
   return (

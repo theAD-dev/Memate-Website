@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 import  Images  from "../../../assests/images";
+import { Link } from "react-router-dom";
+import TronButton from "../../../layout/hover-button/tourn-but";
 
 
 const MeMateFeatureStreamline = () => {
@@ -30,7 +32,16 @@ const MeMateFeatureStreamline = () => {
                 <p>
                 Our software provides robust workflows, ensuring managers follow firm guidelines. It guarantees every project is transparent and accountable, and all business activities are accurately reflected in the system, keeping everything secure.</p>
               </div>
-              <button className="get-started-btn">Request a Demo</button>
+              {/* <button className="get-started-btn">Request a Demo</button> */}
+              <div className="request-btn request-btn-bg" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+        <Link to='' className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
+      </div>
             </div>
 
             <div className="operation-right">

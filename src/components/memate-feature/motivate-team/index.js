@@ -1,6 +1,8 @@
 import React from "react";
 import Images from "../../../assests/images";
 import "./style.css";
+import { Link } from "react-router-dom";
+import TronButton from "../../../layout/hover-button/tourn-but";
 const MeMateFeatureMotivateTeam = () => {
   return (
     <div className="motivate-team-wrapper" data-aos="fade-up"
@@ -24,7 +26,16 @@ const MeMateFeatureMotivateTeam = () => {
                   Motivate your team by showing real-time results and potential rewards for achieving targets. Encourage your employees and contractors to perform at their best.
                   </p>
                 </div>
-                <button className="get-started-btn">See All Features </button>
+                <div className="request-btn request-btn-bg" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+        <Link to='' className="nav-btn--get-started navbar-link"><TronButton text="See All Features " /></Link>
+      </div>
+                {/* <button className="get-started-btn">See All Features </button> */}
               </div>
 
               <div className="operation-right">
