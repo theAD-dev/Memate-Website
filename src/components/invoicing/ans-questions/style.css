@@ -19,6 +19,24 @@
   width: 24px;
 }
 
+.question-answer-ans-info {
+  display: block; 
+  overflow: hidden;
+  max-height: 0; 
+  padding: 0 20px;
+  transition: max-height 0.5s ease, padding 0.5s ease; 
+}
+
+.question-answer-ans-info.expanded {
+  max-height: 200px;
+  padding: 10px 20px; 
+}
+
+.add-icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+
 .question-answer-content {
   width: 1199px;
   background-color: #f7f8fa;
