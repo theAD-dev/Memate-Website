@@ -2,7 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    font-family: 'Arial', sans-serif;
+    font-family: "sequel_sans_roman_head" !important;
   }
   
   .pricingtableWrapper {
@@ -190,7 +190,9 @@
           border: 0px solid #ddd;
           font-size: 1rem;
           sup{
-            margin: 0 10px;
+            margin: 0px 3px;
+            position: relative;
+            top: 10px;
           }
   
           &:first-child {
