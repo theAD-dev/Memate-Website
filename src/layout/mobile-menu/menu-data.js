@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import './style.css'; 
 import PanelMenu from './panel-menu';
 import menuImages from "../../assests/menu-images";
-
+import { useLocation } from "react-router-dom";
 
 
 const MenuData = () => {
@@ -75,7 +75,7 @@ const MenuData = () => {
    
     ];
   
- 
+    const location = useLocation();
   return (
     <div className={`burger-menu-wrapper active ${show && 'hidden'}`}>
       <Menu 
@@ -97,8 +97,8 @@ const MenuData = () => {
           className={index === activeTab ? 'currentTab' : ''}
           onClick={() => handleTabClick(index)}><span><img src={tab.imgTab} />{tab.title}</span></li>
         ))}
-        <li><Link to='/watch-demo'><img src={menuImages.unselectedSales} />Contact Sales</Link></li>
-        <li><Link to='/watch-demo'><img src={menuImages.unselectedWatchDemo} />Watch demo</Link></li>
+        <li><Link to='/watch-demo' className={` ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedSales} />Contact Sales</Link></li>
+        <li><Link to='/watch-demo' className={` ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedWatchDemo} />Watch demo</Link></li>
          </ul>
       </div>
       </div>
@@ -111,7 +111,7 @@ const MenuData = () => {
           <ul>
             {tabs[activeTab].contents[sectionKey].map((contentItem, i) => (
               <li key={i}>
-                <Link to={contentItem.link} target="_blank" rel="noopener noreferrer">
+                <Link to={contentItem.link} className={` ${location.pathname === contentItem.link ? "navbar-item-active" : ""}`}  rel="noopener noreferrer">
                   {contentItem.content}
                 </Link>
               </li>

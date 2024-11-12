@@ -81,7 +81,7 @@ const BussinessManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to='https://dev.memate.com.au/requestdemo' className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
+        <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
       </div>
     </div>
   );

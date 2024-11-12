@@ -4,7 +4,7 @@ const Images = {
   landingHero: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Web.svg",
   logo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
   BurgerIcon: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/burger-menu-svgrepo-com.svg",
-  burgerCloseIcon: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/burger-close-icon.svg",
+  burgerCloseIcon: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/burger-close-icon-w.svg",
   macLeptop: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/mackook-image.svg",
   iphone: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/iphone-image.svg",
   rightImage: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/task-image-create.svg",

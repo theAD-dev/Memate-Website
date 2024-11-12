@@ -34,7 +34,7 @@ const NextStep = (props) => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to='https://dev.memate.com.au/requestdemo' className="nav-btn--get-started navbar-link"><TronButton text={props.text} /></Link>
+        <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronButton text={props.text} /></Link>
       </div>
         {/* <Link to='https://dev.memate.com.au/requestdemo'><button>{props.text}</button></Link> */}
       </div>

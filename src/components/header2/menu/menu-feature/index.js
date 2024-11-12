@@ -108,7 +108,7 @@ const MenuFeature = () => {
             <p className="menu-feature-text">TECHNOLOGY</p>
               <div className="menu-management-features">
                 <div className="menu-client-management iconManageSize">
-                  <img src={menuImages.communication}/>
+                  <img src={menuImages.communicationIcon}/>
                   <Link to="/communication" className={` ${location.pathname === "/communication" ? "navbar-item-active" : ""}`}><p className="clinet-management-text">Communication</p></Link>
                 </div>
               </div>

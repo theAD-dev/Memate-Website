@@ -1,9 +1,11 @@
 import React,{useState} from 'react'; 
+import { useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import menuImages from '../../assests/menu-images';
 const RightBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg"
 const RightColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-color-arrow.svg"
- 
+
+
 const items = [
     { 
         title: "Features", 
@@ -29,7 +31,7 @@ const items = [
               { content: "Task Management", link: "/task-management", img: `${menuImages.taskManagement}` }
             ],
             Technology: [
-                { content: "Communication", link: "/communication", img: `${menuImages.communication}` },
+                { content: "Communication", link: "/communication", img: `${menuImages.communicationIcon}` },
                 { content: "Scheduling", link: "/scheduling", img: `${menuImages.schduling}` },
                 { content: "Invoicing", link: "/invoicing", img: `${menuImages.invoicing}` },
                 { content: "Statistic", link: "/statistic", img: `${menuImages.statistics}` }
@@ -75,7 +77,7 @@ const items = [
     },
     { 
         title: "About", 
-        imgtitle: `${menuImages.newsIconMobile}`,  
+        imgtitle: `${menuImages.aboutMobileIcon}`,  
         contents: {
             News: [
               { contentNews: "About", boldText:"Memate",  button: 'Read more', link: "/news" },
@@ -90,7 +92,7 @@ const items = [
   ];
 const PanelMenu = () => {
      // Render the Accordion component
- 
+     const location = useLocation();
     const [activeIndex, setActiveIndex] = useState(null);
 
   const handleClick = (index) => {
@@ -116,7 +118,11 @@ const PanelMenu = () => {
                                         <ul className='orderList'>
                                             {item.contents[sectionKey].map((contentItem, i) => (
                                                 <li key={i}>
-                                                    <Link to={contentItem.link}  rel="noopener noreferrer">
+                                                    <Link 
+                                                to={contentItem.link} 
+                                                className={location.pathname === contentItem.link ? "navbar-item-active" : ""} 
+                                                rel="noopener noreferrer"
+                                              >  
                                                         {contentItem.img ? (
                                                             <img src={contentItem.img} alt={contentItem.content} />
                                                         ) : (

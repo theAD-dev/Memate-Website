@@ -25,7 +25,7 @@ const FeatureCard = (props) => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to='https://dev.memate.com.au/onboarding' className="nav-btn--get-started navbar-link"><TronButton text={props.cardButton} /></Link>
+        <Link to='/features' className="nav-btn--get-started navbar-link"><TronButton text={props.cardButton} /></Link>
       </div>
               {/* <Link to="https://dev.memate.com.au/onboarding"><button className="get-started-btn">{props.cardButton}</button></Link> */}
             </div>
