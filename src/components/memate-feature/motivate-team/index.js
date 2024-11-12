@@ -33,7 +33,7 @@ const MeMateFeatureMotivateTeam = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to='' className="nav-btn--get-started navbar-link"><TronButton text="See All Features " /></Link>
+        <Link to='/features' className="nav-btn--get-started navbar-link"><TronButton text="See All Features " /></Link>
       </div>
                 {/* <button className="get-started-btn">See All Features </button> */}
               </div>

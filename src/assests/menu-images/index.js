@@ -29,6 +29,7 @@ const menuImages={
     emplyManage:'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/empma.svg',
     contractor:'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/contractor.svg',
     communication:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/communication.svg",
+    communicationIcon:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/communication-icon.svg",
     schduling:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/schduleing.svg",
     invoicing:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/invoiving.svg",
     statistics:'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/statistics.svg',
