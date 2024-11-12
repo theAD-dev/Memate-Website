@@ -3,6 +3,7 @@ import "./style.css";
 
 import SliderStories from "./center-mode";
 import { Link } from "react-router-dom";
+import TronButton from "../../layout/hover-button/tourn-but";
 
 const SuccessStories = () => {
   
@@ -25,7 +26,17 @@ const SuccessStories = () => {
             <br />
             and how it has worked for them.
           </p>
-          <Link to="/customer-stories"><button>All Stories</button></Link>
+          <div className="request-btn request-btn-center" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+        <Link to='/customer-stories' className="nav-btn--get-started navbar-link"><TronButton text="All Stories" /></Link>
+      </div>
+          
+          {/* <Link to="/customer-stories"><button>All Stories</button></Link> */}
         </div>
         <SliderStories />
         
