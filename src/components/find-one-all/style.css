@@ -2,6 +2,20 @@
   margin-top: 70px;
 }
 
+
+
+
+
+.gradientAnimenate {
+  background-color: #000000;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg,#000000,#000000);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+
 .application-heading h3 {
   color: #29292b;
   text-align: center;
