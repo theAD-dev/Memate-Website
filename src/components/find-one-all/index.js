@@ -16,15 +16,18 @@ const FindOneApplication = () => {
     // Apply GSAP animation to each element
     gtAnimate.forEach((element) => {
       gsap.to(element, {
-        backgroundImage: "linear-gradient(90deg, #FFB258 0%, #1AB2FF 50%, #FFB258 100%, #FFB258 200%)",
+        // backgroundImage: "linear-gradient(175deg, #1AB2FF 33.15%, #FFB258 62%)",
+        backgroundImage:"linear-gradient(90deg, #1ab2ff 0%, #65b2c9 50%, #FFB258 100%, #FFB258 200%)", 
+        
+        // background: "linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%)",
         duration: 1,
         scrollTrigger: {
           trigger: element,
           markers: false,
           scrub: false,
           toggleActions: "play reset play reset",
-          start: "top center",  
-          end: "center top"     
+          start: "top bottom",  
+          end: "bottom top"     
         }
       });
     });
@@ -33,21 +36,17 @@ const FindOneApplication = () => {
 
   return (
     <>
-      <div className="one-application-sec" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1100"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+      <div className="one-application-sec" >
         <div className="application-heading">
           <h3>One application</h3>
         </div>
         <div className="to-replace-bold-text">
-          <h1 className="replace-text gradientAnimenate">
-            to replace <br />
+          <span className="replace-text gradientAnimenate">
+            to replace
+          </span><br></br>
+          <span className="replace-text gradientAnimenate">
             them all
-          </h1>
+          </span>
         </div>
       </div>
       <SliderTab />
