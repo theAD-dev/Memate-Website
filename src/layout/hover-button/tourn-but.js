@@ -23,9 +23,9 @@ const TronButton = (props) => {
                 gradientTransform="translate(0 36.72) scale(1 -1)"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stopColor="#EB88B1"></stop>
-                <stop offset=".5" stopColor="#B965E4"></stop>
-                <stop offset="1" stopColor="#61A6F9"></stop>
+                <stop offset="0" stopColor="#1ab2ff"></stop>
+                <stop offset=".5" stopColor="#1ab2ff"></stop>
+                <stop offset="1" stopColor="#ffb258"></stop>
               </linearGradient>
             </defs>
             <g id="icon_tron_nav" data-name="Layer-icon-tron_nav">

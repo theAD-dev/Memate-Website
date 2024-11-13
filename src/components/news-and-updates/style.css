@@ -107,11 +107,16 @@
 }
 .NewsflexWrap .textBox h2, .NewsflexWrap .textBox a {
   color: #29292B;
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
   
 .NewsflexWrap .textBox a {
@@ -119,10 +124,10 @@
   text-align: center;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   text-decoration: none;
-  margin-top: 11px;
+  margin-top: 3px;
   display: inline-block;
 }
 .softwareWrp li {
@@ -134,7 +139,7 @@
   color: #29292B;
   font-size: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 }
 .softwareWrp li span {

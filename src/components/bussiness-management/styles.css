@@ -73,9 +73,9 @@ h1.text {
   align-items: center;
   justify-content: center;
 }
-
-.to-replace-bold-text{
+.to-replace-bold-text {
   margin-top: 10px;
+  text-align: center;
 }
 .how-to-use p {
   color: #29292b;
