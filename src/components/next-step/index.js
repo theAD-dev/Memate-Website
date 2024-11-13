@@ -15,7 +15,7 @@ const NextStep = (props) => {
     <div className="next-step">
       <h3>Take the</h3>
       <div className="next-title">
-        <h1>next step</h1>
+        <h1 className="gradientAnimenate">next step</h1>
       </div>
       <div className="next-step-page-description">
         <p className="next-step-data">

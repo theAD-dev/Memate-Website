@@ -31,7 +31,7 @@ const FeatureCard = (props) => {
             </div>
 
             <div className="operation-right">
-              <h1> {props.titleImage} </h1>
+              <h1 > {props.titleImage} </h1>
               <div className="boost-image">{props.maxImage}</div>
             </div>
           </div>

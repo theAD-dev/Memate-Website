@@ -12,7 +12,7 @@ const MeMateFeatureStreamline = () => {
       <div className="features-section">
       <div className="memate heading-margin">
         <h2>Memate</h2>
-        <h1>features</h1>
+        <h1 className="gradientAnimenate">features</h1>
       </div>
       <div className="all-in-one"  data-aos="fade-up"
     data-aos-offset="50"
@@ -45,7 +45,7 @@ const MeMateFeatureStreamline = () => {
             </div>
 
             <div className="operation-right">
-              <h1> memate </h1>
+              <h1 className="gradientAnimenate"> memate </h1>
               <div className="max-image">
                 <img src={Images.maxImage} />
               </div>

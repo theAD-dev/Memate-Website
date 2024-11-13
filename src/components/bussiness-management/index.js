@@ -21,7 +21,7 @@ const BussinessManagement = () => {
         </div>
 
         <div className="heding-text-top">
-          <h1 className="text">
+          <h1 className="text gradientAnimenate">
             to run your <br /> business
           </h1>
         </div>
