@@ -326,6 +326,6 @@
   margin-right: auto;
   display: block;
   position: absolute;
-  inset: -4px 0% 0 0px;
+  inset: -3px 0% 0 0px;
   animation: fadeInOut 4s linear infinite;
 }

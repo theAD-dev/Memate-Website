@@ -6,8 +6,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
+      <div className="apply-container">
         <div className="children-wrapper">
           <div className="children">{children}</div>
+        </div>
         </div>
       <Footer />
     </>
