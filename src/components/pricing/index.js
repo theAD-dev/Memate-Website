@@ -6,7 +6,7 @@ import PricingLightTable from './pricingtable/pricing-light-table';
 import { Helmet } from 'react-helmet';
 import PricingTable from './dark-pricing-table';
 
-const pricingMainImg = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingMainImg.png"
+const pricingMainImg = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingbg-banner.png"
 
 const PricingComponent = () => {
   return (
@@ -17,7 +17,7 @@ const PricingComponent = () => {
       <meta property="og:description" content="Simple, transparent pricing of project management software. Find a plan that suits your workflow and helps streamline your operations.
     " />
 </Helmet>
-    <div className={`main-section ${style.mainSection}`}>
+    <div className={`main-section ${style.mainsectionspace} ${style.mainSection}`}>
         <div className={style.mainheading}>Pricing</div>
         <div className={style.mainimage}><img src={pricingMainImg} alt="Pricing main image" width={767} height={767}/></div>
         <div className={style.midheading}>

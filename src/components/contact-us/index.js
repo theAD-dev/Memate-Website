@@ -10,11 +10,12 @@ import { Dialog } from 'primereact/dialog';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { RequestCallBackAPI } from '../../api/contactAPI';
+import TronButton from "../../layout/hover-button/tourn-but";
 
 
-const ContactUsMainImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/contactUsMain.png"
+const ContactUsMainImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/max.n.max_An_Office_Girl.png"
 const ContactUsComponent = () => {
 
   const [visible, setVisible] = useState(false);
@@ -101,7 +102,7 @@ const ContactUsComponent = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
         <div className="main-heading" >contact us</div>
-        <div className="main-image"><img src={ContactUsMainImage} alt="contact us main image" width={767} height={767}/></div>
+        <div className="main-image"><img src={ContactUsMainImage} alt="contact us main image" width={545} height={545}/></div>
         <div className="mid-heading">
           <p>Whether you'd like to chat, email or receive a callback</p>
           <p>a friendly memate specialist is ready to help.</p>
@@ -109,9 +110,15 @@ const ContactUsComponent = () => {
         <div className="small-heading">
           <p>Made for Small to Medium Businesses for Simplicity and Order</p>
         </div>
-        <div className='main-section-button'>
-          <p>Get started</p>
-        </div>
+        <div className="request-btn" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+        <Link to='' target="_blank" className="nav-btn--get-started  navbar-link"><TronButton text="Get started" /></Link>
+      </div>
       </div>
       <div className='query-section' data-aos="fade-up"
     data-aos-offset="50"

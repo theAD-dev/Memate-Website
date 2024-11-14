@@ -45,7 +45,7 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
               backgroundPosition: 'center',
               position: 'relative',
               padding: '20px',
-              minWidth: '1201px',
+              minWidth: '1063px',
               height: '625px',
               marginTop: '-329px',
               borderRadius: '30px',
