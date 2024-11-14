@@ -140,14 +140,14 @@ const SliderTab = () => {
         
     
       </div>
-      <div className="request-btn" data-aos="fade-up"
+      <div className="request-btn request-btnApp" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to={tabs[selectedTab].link} className="nav-btn--get-started navbar-link"><TronButton text="Find more" /></Link>
+        <Link to={tabs[selectedTab].link} className="nav-btn--get-started get-started-border-box navbar-link"><TronButton text="Find more" /></Link>
       </div>
       
     </div>

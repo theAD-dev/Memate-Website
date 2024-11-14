@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: center;
 }
+.marginBottomSpace {
+  margin-bottom: 21px;
+}
 .home-platform h2 {
   color: #29292b;
   text-align: center;
@@ -203,5 +206,15 @@ h1.text {
   .heding-text-top h1 {
     font-size: 100px;
     line-height: 110px;
+}
+}
+@media screen and (max-width: 1366px) and (min-width: 1180px){
+  .heding-text-top h1 {
+    font-size: 155px;
+    line-height: 130px;
+}
+.home-platform h2 {
+  font-size: 35px;
+  line-height: 40px;
 }
 }

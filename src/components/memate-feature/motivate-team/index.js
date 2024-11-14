@@ -26,14 +26,8 @@ const MeMateFeatureMotivateTeam = () => {
                   Motivate your team by showing real-time results and potential rewards for achieving targets. Encourage your employees and contractors to perform at their best.
                   </p>
                 </div>
-                <div className="request-btn request-btn-bg" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
-        <Link to='/features' className="nav-btn--get-started navbar-link"><TronButton text="See All Features " /></Link>
+                <div className="request-btn request-btn-bg">
+        <Link to='/features' className="nav-btn--get-started get-started-border-box navbar-link"><TronButton text="See All Features " /></Link>
       </div>
                 {/* <button className="get-started-btn">See All Features </button> */}
               </div>

@@ -22,9 +22,11 @@
   font-weight: 420;
   line-height: normal;
   font-family: "sequel_sans_semi_bold_disp" !important;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
-
+.project-profitability-space {
+  margin: 72px 0 !important;
+}
 .me-meta-card {
   display: flex;
   justify-content: space-between;

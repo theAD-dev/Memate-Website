@@ -329,10 +329,10 @@ ul.tab-list li p {
 .one-application-sec {
   margin-top: 30px;
 }
-h1.replace-text br {
+.replace-text br {
   display: none;
 }
-h1.replace-text {
+.replace-text {
   font-size: 32px;
   line-height: 32px;
   letter-spacing: 0px;
@@ -362,9 +362,10 @@ h1.replace-text {
   .slider-container.sliderTabWrapper {
     width: 100%;
 }
+
 .replace-text {
-  font-size:70px;
-  line-height:80px;
+  font-size:70px !important;
+  line-height:80px !important;
 }
 h1.replace-text br{
   display: none;

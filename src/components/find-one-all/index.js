@@ -17,7 +17,7 @@ const FindOneApplication = () => {
     gtAnimate.forEach((element) => {
       gsap.to(element, {
         // backgroundImage: "linear-gradient(175deg, #1AB2FF 33.15%, #FFB258 62%)",
-        backgroundImage:"linear-gradient(90deg, #1ab2ff 0%, #65b2c9 50%, #FFB258 100%, #FFB258 200%)", 
+        backgroundImage:"linear-gradient(90deg, #1ab2ff 0%, #65b2c9 45%, #FFB258 65%, #FFB258 100%)", 
         
         // background: "linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%)",
         duration: 1,
@@ -26,7 +26,7 @@ const FindOneApplication = () => {
           markers: false,
           scrub: false,
           toggleActions: "play reset play reset",
-          start: "top bottom",  
+          start: "center bottom",  
           end: "bottom top"     
         }
       });

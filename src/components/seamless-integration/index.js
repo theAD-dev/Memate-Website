@@ -8,7 +8,8 @@ const SeamlessInegration = () => {
     <div className="integration-section" >
       <div className="integation-title">
         <h3>Memate</h3>
-        <h1 className="gradientAnimenate">seamless integration</h1>
+        <span className="gradientAnimenate">seamless</span>
+        <span className="gradientAnimenate">integration</span>
       </div>
       <div className="integration-brand-container" data-aos="fade-up"
     data-aos-offset="50"

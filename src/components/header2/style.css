@@ -16,6 +16,12 @@
   right: 0;
   margin: 0 auto;
 }
+.navbar-log-in .btn-base--tron-hover {
+  height: 44px;
+}
+.navbar-log-in .btn-base--black {
+  height: 40px;
+}
 /* .header-menu-header-div-menu-component a:hover ,.navbar .navbar-item  a:hover p ,.navbar .navbar-item  p:hover{
   background: radial-gradient(1940.26% 124.88% at 0% 15.21%, #1AB2FF 0%, #FFB258 100%);
   background-clip: text;

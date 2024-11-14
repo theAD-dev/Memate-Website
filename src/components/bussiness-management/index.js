@@ -20,7 +20,7 @@ const BussinessManagement = () => {
           </h2>
         </div>
 
-        <div className="heding-text-top">
+        <div className="heding-text-top marginBottomSpace">
           <h1 className="text">
             to run your <br /> business
           </h1>
@@ -81,7 +81,7 @@ const BussinessManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
+        <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started  navbar-link"><TronButton text="Request a Demo" /></Link>
       </div>
     </div>
   );

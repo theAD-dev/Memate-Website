@@ -105,7 +105,7 @@ const CommonChallenges = () => {
               </div>
             </div>
           </div>
-          <div className="project-profitability " data-aos="fade-up"
+          <div className="project-profitability project-profitability-space" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1030"

@@ -18,14 +18,9 @@ const FeatureCard = (props) => {
               <div className="operation-desp">
                 <p>{props.description}</p>
               </div>
-              <div className="request-btn request-btn-bg" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
-        <Link to='/features' className="nav-btn--get-started navbar-link"><TronButton text={props.cardButton} /></Link>
+              <div className="request-btn request-btn-bg" 
+   >
+        <Link to='/features' className="nav-btn--get-started get-started-border-box navbar-link"><TronButton text={props.cardButton} /></Link>
       </div>
               {/* <Link to="https://dev.memate.com.au/onboarding"><button className="get-started-btn">{props.cardButton}</button></Link> */}
             </div>

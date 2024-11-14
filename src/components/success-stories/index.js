@@ -33,7 +33,7 @@ const SuccessStories = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to='/customer-stories' className="nav-btn--get-started navbar-link"><TronButton text="All Stories" /></Link>
+        <Link to='/customer-stories' className="nav-btn--get-started get-started-border-box navbar-link"><TronButton text="All Stories" /></Link>
       </div>
           
           {/* <Link to="/customer-stories"><button>All Stories</button></Link> */}
