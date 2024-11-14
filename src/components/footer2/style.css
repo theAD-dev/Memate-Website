@@ -2,8 +2,10 @@
     display: flex;
     justify-content: center;
     width: 100vw;
+    margin-top: 50px;
 }
 
+  
 .main-footer {
     display: flex;
     flex-direction: column;

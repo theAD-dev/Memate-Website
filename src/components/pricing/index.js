@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './pricing-module.module.scss';
-import NextStep from "../next-step"
+
 
 import PricingLightTable from './pricingtable/pricing-light-table';
 import { Helmet } from 'react-helmet';
@@ -38,7 +38,7 @@ const PricingComponent = () => {
        <br></br> <p>This unique application sets a new standard for Australian companies.
         When you try it, you will clearly see the benefits, and it will become a fundamental tool for you.</p>
       </div>
-     <NextStep text="Request a Demo"/>
+     
     </>
   )
 }
