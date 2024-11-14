@@ -20,7 +20,7 @@ const TronButton = (props) => {
                 y1="26"
                 x2="122"
                 y2="26"
-                gradientTransform="translate(0 36.72) scale(1 -1)"
+                gradientTransform="translate(0 36.72) "
                 gradientUnits="userSpaceOnUse"
               >
                 <stop offset="0" stopColor="#1ab2ff"></stop>

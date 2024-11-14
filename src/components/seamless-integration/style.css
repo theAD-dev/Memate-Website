@@ -14,10 +14,7 @@
   font-family: "sequel_sans_semi_bold_disp" !important;
 }
 
-.integation-title h1 {
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.integation-title span {
   margin: 0px;
   text-align: center;
   font-size: 118px;
@@ -28,7 +25,12 @@
   font-family: "Inter", sans-serif !important;
   max-width: 596px;
   margin: auto;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
+  display: block;
+  width: 100%;
+}
+.integation-title span:last-child{
+    padding-bottom: 60px;
 }
 
 .integration-brand {
@@ -147,7 +149,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .integation-title h1 {
+    .integation-title span {
         font-size: 30px;
         line-height: 40px;
         max-width: 100%;

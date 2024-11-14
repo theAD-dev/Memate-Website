@@ -12,7 +12,7 @@ const MeMateFeatureStreamline = () => {
       <div className="features-section">
       <div className="memate heading-margin">
         <h2>Memate</h2>
-        <h1 className="gradientAnimenate">features</h1>
+        <span className="gradientAnimenate">features</span>
       </div>
       <div className="all-in-one"  data-aos="fade-up"
     data-aos-offset="50"
@@ -33,19 +33,13 @@ const MeMateFeatureStreamline = () => {
                 Our software provides robust workflows, ensuring managers follow firm guidelines. It guarantees every project is transparent and accountable, and all business activities are accurately reflected in the system, keeping everything secure.</p>
               </div>
               {/* <button className="get-started-btn">Request a Demo</button> */}
-              <div className="request-btn request-btn-bg" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
-        <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
+              <div className="request-btn request-btn-bg">
+        <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton text="Request a Demo" /></Link>
       </div>
             </div>
 
             <div className="operation-right">
-              <h1 className="gradientAnimenate"> memate </h1>
+              <span className="gradientAnimenate"> memate </span>
               <div className="max-image">
                 <img src={Images.maxImage} />
               </div>
