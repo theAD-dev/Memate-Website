@@ -32,6 +32,7 @@
             justify-content: center;
             align-items: center;
             gap: var(--spacing-md, 8px);
+            opacity: 0;
         }
           .plan-header {
             position: relative;
@@ -157,11 +158,7 @@
             // background-color: #e6f7ff;
             h2{
               strong{
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background: radial-gradient(2006.76% 120.68% at -6.2% 4.87%, #1AB2FF 0.15%, #FFB258 100%);
-                background-clip: text;
+                background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -201,7 +198,7 @@
     font-weight: 500;
     white-space: nowrap;
     color: var(--Gray-900, #101828);
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 310;
     line-height: 20px;

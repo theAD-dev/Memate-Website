@@ -1,5 +1,7 @@
 
-
+.mainsectionspace{
+  padding-top: 141px !important;
+}
 
 .mainSection {
     padding-top: 154px;
@@ -10,13 +12,14 @@
     align-items: center;
     .mainimage {
       position: absolute;
-    top: -11px;
-    transform: translateX(50%);
+      top: 11px;
+      transform: translateX(50%);
+      margin-left: 385px;
     
       img {
         width: 100%;
         height: auto;
-        margin: -81px 46px;
+        
     }
     }
     .mainheading{
