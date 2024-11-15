@@ -42,7 +42,9 @@ body::-webkit-scrollbar-thumb ,
   border-radius: 10px;
 }
 
-
+.page-pricing .pricingHeadWrap {
+  display: none;
+}
 .pricingCardsWrap:nth-child(2):hover #request-btn-pricing .btn-base--black {
   background: #1d1d1f;
 }

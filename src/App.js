@@ -62,7 +62,7 @@ import ErrorPage from "./pages/error-page";
 import ThankYouPage from "./pages/thankyou-page";
 import AddYourCompanyPage from "./pages/add-your-company";
 import TronButton from "./layout/hover-button/tourn-but";
-
+import { useLocation } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import gsap from 'gsap';
@@ -136,16 +136,11 @@ try {
 
 
   useEffect(() => {
-    // Select all elements with the class 'gradient-text-animate'
     const gtAnimate = gsap.utils.toArray('.gradientAnimenate');
-
-    // Apply GSAP animation to each element
     gtAnimate.forEach((element) => {
       gsap.to(element, {
-        // backgroundImage: "linear-gradient(175deg, #1AB2FF 33.15%, #FFB258 62%)",
         backgroundImage:"linear-gradient(90deg, #1ab2ff 0%, #65b2c9 45%, #FFB258 65%, #FFB258 100%)", 
         
-        // background: "linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%)",
         duration: 1,
         scrollTrigger: {
           trigger: element,
@@ -163,7 +158,16 @@ try {
 
 
 
-
+  const location = useLocation();
+  useEffect(() => {
+    const pathClass = location.pathname === "/" 
+      ? "home" 
+      : location.pathname.replace(/\//g, "-").replace(/^-|-$/g, "");
+    document.body.classList.add(`page-${pathClass}`);
+    return () => {
+      document.body.classList.remove(`page-${pathClass}`);
+    };
+  }, [location.pathname]);
 
 
   return (

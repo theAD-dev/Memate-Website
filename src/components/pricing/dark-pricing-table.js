@@ -65,13 +65,14 @@ const PricingTable = () => {
     <div className='pricingHeadWrap'>
     <p className="smart-investment-heading">Smart investment</p>
     <span className="smart-investment-banner gradientAnimenate" >pricing</span>
-    </div>
-      <div className="smart-investment-description">
+    <div className="smart-investment-description">
         <span className="smart-investment-section-description">
           Plus, we provide a 14-day free trial because we believe our<br></br>
           software will become indispensable to your business.
         </span>
       </div>
+    </div>
+      
     <div className={style.PricingTableWrap} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
