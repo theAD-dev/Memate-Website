@@ -5,7 +5,7 @@ import {
   SalesComponentFeature,
   SmartInvestment
 } from "../../components/sale";
-import NextStep from "../../components/next-step";
+
 const FeaturePage = () => {
   return (
     <Layout>
@@ -13,7 +13,7 @@ const FeaturePage = () => {
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
-      <NextStep text="Request a Demo"/>
+ 
     </Layout>
   );
 };

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';  
-import NextStep from "../next-step";
 import "./style.css";
 import MiddleSection from "./privacy-middle-section";
 import style from './privacy-module.module.scss';
@@ -22,7 +21,7 @@ const PrivacyComponent = () => {
       </div>
       <MiddleSection />
       <div>
-        <NextStep text="Request a Demo" />
+
       </div>
     </>
   );

@@ -5,7 +5,6 @@ import IndustryBussinessManagement from './industry-bussiness-managment';
 import IndustryCrousel from './industry-crousel';
 import IndustryMoreSpecific from './industry-more-specific';
 import ReadMore from './industry-read-more';
-import NextStep from '../next-step';
 import IndustyQuesitonAndAns from './industry-question-ans';
 import { Helmet } from 'react-helmet';
 
@@ -26,7 +25,6 @@ const IndustryPageContent = () => {
         <ReadMore/>
         <IndustyQuesitonAndAns/>
       </div>
-        <NextStep text="Request a Demo"/>
     </div>
     </>
   )

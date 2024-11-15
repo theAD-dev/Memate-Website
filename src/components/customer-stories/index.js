@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
@@ -97,7 +96,6 @@ function CustomerStories() {
 
        </div>
       </div>
-      <NextStep text="Request a Demo" />
     </div>
     </>
 

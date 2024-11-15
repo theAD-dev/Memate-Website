@@ -173,14 +173,6 @@ timely project delivery with advanced project management software.
       <p>This is our greater goal: we believe that business owners are the ones who make Australia special—people who aren’t afraid to take responsibility, who create new services and products that help our country prosper. Our ultimate goal is to make a difference by creating a system that significantly improves and simplifies business management, reducing losses and unprofitable activities.</p>
       
       </div>
-
-
-
-
-
-
-
-
     </div>
     </>
   );

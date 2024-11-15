@@ -192,9 +192,9 @@ border: 0;
 }
 
 .sticky-section-switch {
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.5s ease-in-out; /* Smooth transition */
-  position: relative; /* Optional: Adjust based on your layout */
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out; 
+  position: relative;
 }
 
 .btn-tron-big {

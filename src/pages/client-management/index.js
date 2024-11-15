@@ -5,7 +5,6 @@ import {
   SalesComponentFeature,
   SmartInvestment
 } from "../../components/client-management";
-import NextStep from "../../components/next-step";
 import { Helmet } from "react-helmet";
 const ClientPage = () => {
   return (
@@ -22,7 +21,6 @@ insights to streamline workflows, enhance client relations, and boost productivi
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
-      <NextStep text="Request a Demo"/>
     </Layout>
     </>
   );

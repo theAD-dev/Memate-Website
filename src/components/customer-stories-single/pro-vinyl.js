@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import SuccessStories from "../success-stories";
 import { Helmet } from "react-helmet";
@@ -167,18 +166,11 @@ management with MeMate, streamlining workflows and driving efficiency across pro
             <div className="wrapperTextcenter">
               <h3>Overall, meMate has proven to be an exceptional tool for ProVinyl, especially given its cost-effectiveness. As one of the first adopters of meMate, ProVinyl has seen firsthand how the software can transform business operations. While the initial implementation came with a few bugs, these were quickly resolved, and the team was prepared for such challenges. ProVinyl has been actively involved in providing valuable feedback to the meMate team, contributing to the software’s ongoing development. Today, they are proud to be part of the meMate community and continue to benefit from its powerful features that support their growth and success.</h3>
             </div>
-
           </div>
           <div className="ccStories">
             <SuccessStories />
-
-
           </div>
-
-
-
         </div>
-        <NextStep text="Request a Demo" />
       </div>
     </>
 

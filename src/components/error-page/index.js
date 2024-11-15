@@ -20,9 +20,6 @@ const PageNotFound  = () => {
       </div>
       </div>
       </div>
-    
-    
-    
   )
 }
 

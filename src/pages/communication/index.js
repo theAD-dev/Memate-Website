@@ -5,7 +5,6 @@ import {
   SalesComponentFeature,
   SmartInvestment
 } from "../../components/communication";
-import NextStep from "../../components/next-step";
 import { Helmet } from "react-helmet";
 
 const CommunicationPage = () => {
@@ -23,7 +22,6 @@ supplier relations, optimise procurement, and provide transparent pricing insigh
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
-      <NextStep text="Request a Demo"/>
     </Layout>
     </>
   );

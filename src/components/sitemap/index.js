@@ -9,9 +9,6 @@ const SitemapComponent = () => {
   return (
     <>
       <ComingSoon />
-     
-    
-    
     </>
   );
 };
