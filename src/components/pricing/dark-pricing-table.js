@@ -62,8 +62,10 @@ const PricingTable = () => {
 
   return (
     <>
+    <div className='pricingHeadWrap'>
     <p className="smart-investment-heading">Smart investment</p>
-      <span className="smart-investment-banner gradientAnimenate" >pricing</span>
+    <span className="smart-investment-banner gradientAnimenate" >pricing</span>
+    </div>
       <div className="smart-investment-description">
         <span className="smart-investment-section-description">
           Plus, we provide a 14-day free trial because we believe our<br></br>

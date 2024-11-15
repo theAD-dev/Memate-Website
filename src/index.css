@@ -14,7 +14,9 @@ html {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
-
+.pricingHeadWrap {
+  text-align: center;
+}
 /* body::-webkit-scrollbar {
   display: none;
 } */
