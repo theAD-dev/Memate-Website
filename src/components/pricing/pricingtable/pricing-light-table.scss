@@ -4,6 +4,13 @@
     padding: 20px;
     font-family: "sequel_sans_roman_head" !important;
   }
+  #request-btn-pricing .btn-base--black {
+    background: #fff;
+}
+#request-btn-pricing {
+  justify-content: center;
+}
+
   
   .pricingtableWrapper {
     width: 100%;
@@ -121,23 +128,23 @@
               min-height: 48px;
             }
           
-            a {
-              border-radius: 60px;
-              background: #29292B;
-              color: #FFF;
-              text-align: center;
-              leading-trim: both;
-              text-edge: cap;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 415;
-              line-height: normal;
-              text-decoration: none;
-              padding: 14px 58px;
-              margin-top: 21px;
-              display: inline-block;
-              width: 100%;
-            }
+            // a {
+            //   border-radius: 60px;
+            //   background: #29292B;
+            //   color: #FFF;
+            //   text-align: center;
+            //   leading-trim: both;
+            //   text-edge: cap;
+            //   font-size: 18px;
+            //   font-style: normal;
+            //   font-weight: 415;
+            //   line-height: normal;
+            //   text-decoration: none;
+            //   padding: 14px 58px;
+            //   margin-top: 21px;
+            //   display: inline-block;
+            //   width: 100%;
+            // }
            
             .badge {
               border-radius: 9.678px;

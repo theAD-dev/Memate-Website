@@ -18,10 +18,7 @@
   font-family: "sequel_sans" !important;
 }
 
-.sales-component-feature h1 {
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.sales-component-feature span {
   margin-top: 25px;
   font-size: 118px;
   font-style: normal;

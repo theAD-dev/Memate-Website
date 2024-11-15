@@ -30,11 +30,7 @@
   font-size: 118px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100px; /* 93.22% */
-  background: linear-gradient(to right, #1ab2ff 18.85%, #ffb258 71%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  line-height: 100px; 
 }
 
 .industry-bussiness-sub-content {
@@ -78,12 +74,8 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 80px; /* 275% */
+  line-height: 80px; 
   letter-spacing: -1px;
-  background: linear-gradient(to right, #1ab2ff 18.85%, #ffb258 71%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .industry-bussinees-content-2-description {

@@ -113,14 +113,10 @@ meMate’s websites include an electronic shopping cart. In the event that you c
 const TOS = () => {
   const [knowledge, setKnowledge] = useState([]);
   const [activeItem, setActiveItem] = useState(knowledgeData[0]?.id);
-
-
-
  
   useEffect(() => {
     setKnowledge(knowledgeData);
   }, []);
-
 
   const handleClick = (id) => {
     setActiveItem(id);
@@ -148,17 +144,18 @@ const TOS = () => {
             <li
               className={`kb-list-item ${activeItem === item.id ? 'kb-list-item-active' : ''}`}
             >
-              <Link
+             <Link
                 activeClass="kb-list-item-active"
                 to={`section-${item.id}`}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
-                onClick={() => handleClick(item.id)} // Handle click event
+                onClick={() => handleClick(item.id)}
               >
                 {item.name}
               </Link>
+
               
               {item.children && (
                 <ul className="kb-nested-list">

@@ -38,7 +38,7 @@ timely project delivery with advanced project management software.
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
          <h3>Discover</h3>
-         <h2>our story</h2>
+         <span className='gradientAnimenate'>our story</span>
       </div>
       <div className={`${style.gridflexWrap}`} data-aos="fade-up"
     data-aos-offset="50"
