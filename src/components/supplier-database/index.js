@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 import { supplierListApi } from '../../api/supplierApi';
 import { Link } from 'react-router-dom';
 import { useDebounce } from 'primereact/hooks';
+import TronButton from '../../layout/hover-button/tourn-but';
 
 const SupplierDatabase = () => {
   const [supplier, setSupplier] = useState([]);
@@ -92,9 +93,12 @@ const SupplierDatabase = () => {
     data-aos-anchor-placement="top-bottom">
           <p>By listing your company, businesses using meMate can quickly add your company as a client or supplier with just one click. This makes it easier to connect with other businesses and provides you with greater exposure</p>
         </div>
-        <div className="darkButtonstyle">
-          <Link to='/add-your-company'>Add Your Company</Link>
-        </div>
+    
+        <div  className="request-btn request-btn-bg">
+                <Link to="/add-your-company" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Add Your Company" /></Link>
+              </div>
+          {/* <Link to='/add-your-company'>Add Your Company</Link> */}
+     
       </div>
       <div className={style.filtersection} data-aos="fade-up"
     data-aos-offset="50"

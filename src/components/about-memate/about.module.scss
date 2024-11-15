@@ -64,7 +64,7 @@
         line-height: normal;
         letter-spacing: -1px;
     }
-    h2{
+    span{
         margin-top: 5px;
         text-align: center;
         width: 100%;
@@ -75,10 +75,6 @@
         font-style: normal;
         font-weight: 700;
         line-height: 141px;
-        background: linear-gradient(to right, #1ab2ff 18.85%, #ffb258 71%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         margin: 0 auto;
     }
 }

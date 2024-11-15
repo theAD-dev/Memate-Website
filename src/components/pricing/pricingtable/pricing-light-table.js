@@ -1,5 +1,7 @@
 import React from "react";
 import "./pricing-light-table.scss";
+import TronButton from "../../../layout/hover-button/tourn-but";
+import { Link } from "react-router-dom";
 const pricingboll = 'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingboll.png';
 const checkIcon = 'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/checkIcon.svg';
 const pricingTah = 'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingTah.svg';
@@ -19,7 +21,10 @@ const PricingLightTable = () => {
                 <h3>Business</h3>
                 <h2>$99.85 <span>/monthly</span></h2>
                 <p>Essentials you need to run your company</p>
-                <a href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a>
+                <div  className="request-btn request-btn-bg">
+                <Link to="https://dev.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Get started" /></Link>
+              </div>
+                {/* <a href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a> */}
               </div>
             </th>
             <th className="imp-plan">
@@ -29,9 +34,12 @@ const PricingLightTable = () => {
               {/* <div className="badge">Popular</div> */}
               </div>
                 <h3>Business + Work</h3>
-                <h2><strong>$162.17 </strong><span>/monthly</span></h2>
+                <h2><strong className="gradientAnimenate">$162.17 </strong><span>/monthly</span></h2>
                 <p>Everything in Business + Employee and Contractor Management</p>
-                <a className="getstartedBtnPricing"  href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a>
+                <div id='request-btn-pricing' className="request-btn request-btn-bg">
+            <Link to="https://dev.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton text="Get started" /></Link>
+          </div>
+                {/* <a className="getstartedBtnPricing"  href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a> */}
               </div>
             </th>
             <th>
@@ -43,8 +51,10 @@ const PricingLightTable = () => {
                 <h3>Enterprise</h3>
                 <h2>Contact us</h2>
                 <p>Unlimited Customization to Your Needs</p>
-                <a href="/contact-us" target="_blank">Contact us</a>
-             
+                {/* <a href="/contact-us" target="_blank">Contact us</a> */}
+                <div  className="request-btn request-btn-bg">
+                <Link to="/contact-us" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Contact us" /></Link>
+              </div>
               </div>
             </th>
           </tr>

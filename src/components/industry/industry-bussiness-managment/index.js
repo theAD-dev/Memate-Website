@@ -17,12 +17,12 @@ const IndustryBussinessManagement = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <p className="industry-bussiness-management-heading">Business Management</p>
-      <p className='industry-bussinees-content'>Software for creatives</p>
+      <span className='industry-bussinees-content gradientAnimenate'>Software for creatives</span>
       <div className='industry-bussiness-sub-content'>
         <p className='industry-bussiness-sub-content-heading'>Why MeMate works exceptionally well for creative agencies</p>
         <p className='industry-bussiness-sub-content-description'>Are you looking for the perfect project management <br></br>software for your creative agency?</p>
       </div>
-      <div className='industry-bussinees-content-2'>Look no further than MeMate.</div>
+      <span className='industry-bussinees-content-2 gradientAnimenate'>Look no further than MeMate.</span>
       <p className='industry-bussinees-content-2-description'>Our comprehensive solution is designed specifically for agencies, including marketing agencies, advertising agencies, design agencies, and digital agencies.</p>
       <div className='industry-bussiness-category-wrapper'>
             <IndustryPowerfulStreamline/>

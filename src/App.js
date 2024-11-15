@@ -65,7 +65,11 @@ import TronButton from "./layout/hover-button/tourn-but";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+// Register ScrollTrigger plugin with GSAP
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   AOS.init();
@@ -127,6 +131,41 @@ try {
   const handleNext = () => {
     setCurrentPage((prevPage) => prevPage + 1);
   };
+
+
+
+
+  useEffect(() => {
+    // Select all elements with the class 'gradient-text-animate'
+    const gtAnimate = gsap.utils.toArray('.gradientAnimenate');
+
+    // Apply GSAP animation to each element
+    gtAnimate.forEach((element) => {
+      gsap.to(element, {
+        // backgroundImage: "linear-gradient(175deg, #1AB2FF 33.15%, #FFB258 62%)",
+        backgroundImage:"linear-gradient(90deg, #1ab2ff 0%, #65b2c9 45%, #FFB258 65%, #FFB258 100%)", 
+        
+        // background: "linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%)",
+        duration: 1,
+        scrollTrigger: {
+          trigger: element,
+          markers: false,
+          scrub: false,
+          toggleActions: "play reset play reset",
+          start: "center bottom",  
+          end: "bottom top"     
+        }
+      });
+    });
+
+  }, []);
+
+
+
+
+
+
+
   return (
     <div className="App">
       <ScrollToTop />

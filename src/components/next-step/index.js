@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import TronButton from "../../layout/hover-button/tourn-but";
 
 const NextStep = (props) => {
 
@@ -20,7 +21,10 @@ const NextStep = (props) => {
         </span>
       </div>
       <div className="next-step-btn-container">
-        <Link to='https://dev.memate.com.au/requestdemo'><button>{props.text}</button></Link>
+      <div  className="request-btn request-btn-bg">
+                <Link to="https://dev.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text={props.text} /></Link>
+              </div>
+        {/* <Link to='https://dev.memate.com.au/requestdemo'><button>{props.text}</button></Link> */}
       </div>
     </div>
   );

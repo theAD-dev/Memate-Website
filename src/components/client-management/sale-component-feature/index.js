@@ -16,7 +16,7 @@ const SalesComponentFeature = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
         <h2>Memate</h2>
-        <h1>features</h1>
+        <span className='gradientAnimenate'>features</span>
        
       </div>
       <div className="sales-feature-wrapper">

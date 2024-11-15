@@ -2,7 +2,9 @@ body {
   margin: 0;
   font-family: "sequel_sans_roman_head" !important;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .reveal {
   opacity: 0;
   transform: translate3d(0, 100px, 0);
@@ -38,6 +40,13 @@ body::-webkit-scrollbar-thumb ,
   border-radius: 10px;
 }
 
+
+.pricingCardsWrap:nth-child(2):hover #request-btn-pricing .btn-base--black {
+  background: #1d1d1f;
+}
+.pricingCardsWrap:nth-child(2):hover #request-btn-pricing .btn-base--black .text-btn--nav{
+  color: #fff;
+}
 .sales-heading {
   padding-bottom: 50px;
   color: transparent;
@@ -229,8 +238,7 @@ border: 0;
 }
 .apply-container {
   z-index: 1;
-  /* margin-top: -100vh; */
   position: relative;
   background: #fff;
+  padding-bottom: 54px;
 }
-

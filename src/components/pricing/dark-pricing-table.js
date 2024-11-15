@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import style from './pricing-module.module.scss';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { Link } from 'react-router-dom';
+import TronButton from '../../layout/hover-button/tourn-but';
 const pricingboll = 'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingboll.png';
 
 
@@ -22,7 +23,7 @@ const PricingTable = () => {
       individuals:'For individuals',
       whatsInclude:'What’s included',
       YourSavings: `Your Savings: <span>-$179.73</span>`,
-      link:'https://dev.memate.com.au/onboarding',
+      link:'https://dev.memate.com.au/requestdemo',
       action: 'Get started',
       features: ["Client Management", "Supplier Management", "Sales Pipeline","Project Management","Internal Chat","Invoicing","Statistic Reports","Profitability and Budgeting","Expenses"]
     },
@@ -36,7 +37,7 @@ const PricingTable = () => {
       companypara: 'Everything in Business + Employee and Contractor Management.',
       whatsInclude:'What’s included',
       individuals:'For individuals',
-      link:'https://dev.memate.com.au/onboarding',
+      link:'https://dev.memate.com.au/requestdemo',
       action: 'Get started',
       features: ["Employee Management", "Time Sheets & Tracker", "Contractor Management","Job Scheduling","Company News","Task Management","Company Calendar"]
     },
@@ -60,6 +61,15 @@ const PricingTable = () => {
   ];
 
   return (
+    <>
+    <p className="smart-investment-heading">Smart investment</p>
+      <span className="smart-investment-banner gradientAnimenate" >pricing</span>
+      <div className="smart-investment-description">
+        <span className="smart-investment-section-description">
+          Plus, we provide a 14-day free trial because we believe our<br></br>
+          software will become indispensable to your business.
+        </span>
+      </div>
     <div className={style.PricingTableWrap} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -84,9 +94,9 @@ const PricingTable = () => {
 </div>
 
 
-      <div className={style.pricingcards}>
+      <div className={` ${style.pricingcards}`}>
         {plans.map((plan, index) => (
-          <div key={index} className={` ${style.pricingcard}`}>
+          <div key={index} className={`pricingCardsWrap ${style.pricingcard}`}>
             <div className={style.tophead}>
             <div className={style.head}>
             <div className={style.left1}>
@@ -122,12 +132,16 @@ const PricingTable = () => {
                 <li key={i}><div className={style.checkcircleicon}><CheckCircleIcon htmlColor="#29292B" sx={{width:"25.162px"}}/></div>{feature}</li>
               ))}
             </ul>
-            <Link to={plan.link} target='_blank'><button>{plan.action}</button></Link>
+            <div id='request-btn-pricing' className="request-btn request-btn-bg">
+            <Link to={plan.link} target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton text={plan.action} /></Link>
+          </div>
+            {/* <Link to={plan.link} target='_blank'><button>{plan.action}</button></Link> */}
           </div>
         ))}
       </div>
     </div>
     </div>
+    </>
   );
 };
 

@@ -19,17 +19,14 @@
 }
 
 .smart-investment-banner {
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: 25px;
+  margin-top: 0;
   font-size: 118px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100px;
-  padding-bottom: 31px;
+  line-height: 146px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
-
 .smart-investment-description {
   display: flex;
   justify-content: center;
