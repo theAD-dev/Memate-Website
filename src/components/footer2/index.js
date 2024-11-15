@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-import NextStep from "../../components/next-step"
 const FacebookIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/footer-facebook.svg";
 const LinkdinIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/footer-linkdin.svg";
 const InstagramIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/footer-instagram.svg";
@@ -13,7 +12,7 @@ const MicrosoftAppStoreIcon = "https://memate-website.s3.ap-southeast-2.amazonaw
 const Footer = () => {
   return (
     <>
-    <NextStep text="Request a Demo"/>
+  
     <div className="footer-section">
       <div className="main-footer">
         <div className="section1" data-aos="fade-up"

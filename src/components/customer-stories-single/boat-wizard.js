@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import SuccessStories from "../success-stories";
@@ -112,24 +111,16 @@ execution.
                 src={BoatWizard05}
                 alt="Blog featured image"
               /></Link>
-
             </div>
             <div className="wrapperText">
               <h3>The team at meMate has done a fantastic job in developing this software. </h3>
               <p>We are thrilled with the results and are happy to provide continuous feedback for improvements. Your commitment to listening to our needs and refining the software has made a significant difference in how we operate, and we look forward to continuing this partnership.</p>
              </div>
-
           </div>
           <div className="ccStories">
             <SuccessStories />
-
-
           </div>
-
-
-
         </div>
-        <NextStep text="Request a Demo" />
       </div>
     </>
 

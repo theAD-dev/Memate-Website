@@ -5,7 +5,6 @@ import {
   SalesComponentFeature,
   SmartInvestment
 } from "../../components/project-management";
-import NextStep from "../../components/next-step";
 import { Helmet } from "react-helmet";
 
 const ProjectManagementPage = () => {
@@ -23,7 +22,6 @@ supplier relations, optimise procurement, and provide transparent pricing insigh
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
-      <NextStep text="Request a Demo"/>
     </Layout>
     </>
   );

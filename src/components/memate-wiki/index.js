@@ -47,10 +47,7 @@ scheduling, invoicing, quote calculations, and essential tools for success.
       />
       </div>
     </div>
-    
-
     <div>
-   
       {resources.map((resource, index) => (
         <div key={index} className={style.mainGridWrap}>
           <h2>{resource.category}</h2>
@@ -69,14 +66,7 @@ scheduling, invoicing, quote calculations, and essential tools for success.
         </div>
       ))}
     </div>
-  
-
-
-
-
     </div>
-    
-    
     </>
   );
 };

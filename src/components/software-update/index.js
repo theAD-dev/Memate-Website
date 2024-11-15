@@ -1,7 +1,6 @@
 import "./styles.css";
 import { useState, useEffect } from 'react';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import NextStep from "../next-step"
 import { updateList } from "../../api/software-update";
 import { Helmet } from 'react-helmet';
 
@@ -106,7 +105,6 @@ const SoftwareUpdate = () => {
         </div> */}
         
       </div>
-      <NextStep text="Request a Demo"/>
     </div>
     </>
   

@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import SuccessStories from "../success-stories";
@@ -163,7 +162,6 @@ business operations and project management using MeMate’s powerful tools and f
 
       
       </div>
-      <NextStep text="Request a Demo" />
     </div>
     </>
 

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';  
-import NextStep from "../next-step";
 import "./style.css";
 import MiddleSection from "./knowledge-base-middle-section";
 import { Helmet } from 'react-helmet';
@@ -25,7 +24,6 @@ const KnowledgeBaseComponent = () => {
       </div>
       <MiddleSection />
       <div>
-        <NextStep text="Request a Demo" />
       </div>
     </>
   );

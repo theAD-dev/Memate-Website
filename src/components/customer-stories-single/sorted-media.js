@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import SuccessStories from "../success-stories";
 import { Helmet } from "react-helmet";
@@ -110,24 +109,16 @@ operations, manage projects efficiently, and drive sustainable growth.
                 src={SortedMedia05}
                 alt="Blog featured image"
               /></Link>
-
             </div>
             <div className="wrapperText">
               <p>Looking ahead, we believe that meMate will be key in helping us maintain our competitive edge in the photography and videography industry. By streamlining processes, reducing human error, and improving overall efficiency, meMate allows us to focus on what we do best—creating unforgettable visual content for our clients. We are excited to see how meMate can support our future growth and success.</p>
               <p>www.sortedmedia.com.au</p>
              </div>
-
           </div>
           <div className="ccStories">
             <SuccessStories />
-
-
           </div>
-
-
-
         </div>
-        <NextStep text="Request a Demo" />
       </div>
     </>
 

@@ -19,10 +19,7 @@ const ThankYouComponents  = () => {
         <Link to="/" >Home</Link>
       </div>
       </div>
-      </div>
-    
-    
-    
+      </div>  
   )
 }
 

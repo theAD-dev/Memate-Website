@@ -1,7 +1,6 @@
 import React from "react";
 import "../style.css";
 import style from '../supplier-module.module.scss';
-import NextStep from "../../next-step";
 import { Link } from "react-router-dom";
 const googlemap = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/icons/googlemap.svg";
 const GlobIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/icons/glob-icon.svg";
@@ -77,18 +76,12 @@ function DataSingle({slug,supplierData}) {
                     <p>No Data</p>
                   )} 
 </div>
-
 </div>
-</div>
-       
-
-       
+</div>  
 <div className="darkButtonstyle">
           <Link to=''>Request to Edit</Link>
         </div>
-      
       </div>
-      <NextStep text="Request a Demo" />
     </div>
     </>
 

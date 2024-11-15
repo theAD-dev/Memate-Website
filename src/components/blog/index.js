@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import Images from "../../assests/blog-images";
-import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
@@ -158,7 +157,7 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
             {totalPosts > posts?.length && <button onClick={handleNext} className="next-page-btn-A">{ loading ? "Loading..." : "Next page" }</button>}
           </div>
         </div>
-        <NextStep text="Request a Demo" />
+      
       </div>
     </div>
 

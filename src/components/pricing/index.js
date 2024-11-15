@@ -1,7 +1,5 @@
 import React from 'react';
 import style from './pricing-module.module.scss';
-
-
 import PricingLightTable from './pricingtable/pricing-light-table';
 import { Helmet } from 'react-helmet';
 import PricingTable from './dark-pricing-table';

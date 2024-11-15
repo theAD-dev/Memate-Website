@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import SuccessStories from "../success-stories";
@@ -114,31 +113,18 @@ management using MeMate, enhancing productivity and driving growth effectively.
               </p>
               <p>Your innovation and support have been instrumental in our success, and we look forward to continuing to grow with meMate by our side.</p>
             </div>
-
-
             <div className="innerGrid">
               <Link ><img
                 className="img-container-stories"
                 src={EliteLife05}
                 alt="Blog featured image"
               /></Link>
-
             </div>
-         
-       
-
-
           </div>
           <div className="ccStories">
             <SuccessStories />
-
-
           </div>
-
-
-
         </div>
-        <NextStep text="Request a Demo" />
       </div>
     </>
 

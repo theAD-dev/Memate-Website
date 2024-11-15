@@ -1,7 +1,6 @@
 import React, { useEffect, useState ,useRef } from "react";
 import "./style.css";
 import style from './supplier-module.module.scss';
-import NextStep from "../next-step";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 import { useForm, Controller } from 'react-hook-form';
@@ -203,11 +202,8 @@ function AddYourCompany() {
                 <button className={style.darkbuttonStyle} onClick={handleSubmit(onSubmit)}>Send</button>
               </form>
             </div>
-
-
           </div>
         </div>
-        <NextStep text="Request a Demo" />
       </div>
 
     </>
