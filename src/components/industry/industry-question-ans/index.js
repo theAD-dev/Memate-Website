@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./style.css";
-import IndustryImages from "../../../assests/industry-images";
+import AddIcon from "@mui/icons-material/Add";
+import { Box } from "@mui/material";
+import Images from "../../../assests/images";
 const IndustyQuesitonAndAns = () => {
-  const [selectedQuestion, setSelectedQuestion] = useState(2);
+  const [selectedQuestion, setSelectedQuestion] = useState(3);
+
   const questions = [
     {
       question: "Is MeMate specifically designed for creative agencies?",
@@ -70,31 +73,63 @@ const IndustyQuesitonAndAns = () => {
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
   ];
+
+
+  const toggleQuestion = (key) => {
+    setSelectedQuestion(selectedQuestion === key ? null : key); 
+  };
+
   return (
-    <div className="industry-question-ans-wrapper" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="4000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
-      <div className="industry-ques-container">
-        <p className="industry-question-heading">We answer your questions</p>
-        <div className="industry-question-wrapper">
-          {questions?.map((ques) => {
-            return (
-              <div className="question-industry-ans-wrapper" onClick={()=>{setSelectedQuestion(ques.key)}} style={{cursor:"pointer"}}>
-                <div className="question-wrapper">
-                  <p className={selectedQuestion ===ques.key ? "question-detial-selected":"question-detail"}>{ques.question}</p>
-                  <img src={IndustryImages.PlusIcon} style={{height:"17.5px",marginTop:"8px"}}/>
+    <div className="question-answer-wrapper">
+    <div className="question-answer-content">
+      <div className="question-answer-heading-wrapper">
+        <p className="question-answer-heading">We answer your questions</p>
+      </div>
+      <div className="questions-wrapper">
+        {questions.map((ques) => (
+          <div key={ques.key} className="each-ques-wrapper">
+            <div
+              className={`question-answer-ques ${
+                selectedQuestion === ques.key ? "selected" : ""
+              }`}
+              onClick={() => toggleQuestion(ques.key)}
+            >
+              <p className="question-answer-ques-info">{ques.question}</p>
+              <Box
+                className="add-icon-wrapper"
+                sx={{
+                  height: "24px",
+                  width: "24px",
+                  transform: selectedQuestion === ques.key ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease", 
+                }}
+              >
+                <div className="plus-icon-image-wrapper">
+                  {selectedQuestion === ques.key ? (
+                    <img
+                      src={Images.selectedQuestion}
+                      className="icon"
+                      alt="Selected Question"
+                      style={{ height: "24px" }} 
+                    />
+                  ) : (
+                    <AddIcon className="icon" htmlColor="#000000" />
+                  )}
                 </div>
-               {selectedQuestion ===ques.key &&  <p className="question-answer-industry">{ques.answer}</p>}
-              </div>
-            );
-          })}
-        </div>
+              </Box>
+            </div>
+            <div
+              className={`question-answer-ans-info ${
+                selectedQuestion === ques.key ? "expanded" : ""
+              }`}
+            >
+              {selectedQuestion === ques.key && <p>{ques.answer}</p>}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
+  </div>
   );
 };
 

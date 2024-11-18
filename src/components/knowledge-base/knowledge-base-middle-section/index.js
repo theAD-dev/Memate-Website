@@ -140,10 +140,10 @@ const MiddleSection = () => {
                     <h2 className="kb-child-heading" id={`subsection-${child.id}`}>
                       {child.name}
                     </h2>
-                    <p className="kb-child-date">
+                    <p className="kb-section-date">
                       {new Date(child.updated_at).toLocaleDateString()}
                     </p>
-                    <p className="kb-child-description">
+                    <p className="kb-section-description">
                       {child.knowledge && (
                         <>
                           {child.knowledge.map((knowledgeitem, knowledgeIndex) => (
