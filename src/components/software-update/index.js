@@ -65,24 +65,30 @@ const SoftwareUpdate = () => {
           <div className="Memate">Memate</div>
         </div>
         <div className="latestUpdates">
-          <h1 className="latest-update-text">Latest Updates</h1>
+          <h1 className="latest-update-text latest-update-head">Latest Updates</h1>
         </div>
 
         {update.map((item, index) => (
        <>
-        <div key={index} className="content1 uldateListWrap" data-aos="fade-up"
+        <div key={index} className="content1 uldateListWrap" >
+        <div className="date" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="700"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <div className="date">
           {new Date(item.publish_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
           {/* {item.publish_date} */}
           </div>
 
-          <div className="contextText">
+          <div className="contextText" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1200"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
             <div className="contentText1">
             {item.title}
             </div>
@@ -95,7 +101,13 @@ const SoftwareUpdate = () => {
         
        </>
             ))}
-            <div className="updateButton">
+            <div className="updateButton" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
               <button className="btn">See more Updates</button>
             </div>
         {/* <div className="takeThe">Take the</div>

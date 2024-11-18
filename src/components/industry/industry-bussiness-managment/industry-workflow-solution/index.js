@@ -1,24 +1,23 @@
 import React from "react";
-import "./style.css";
+import style from './workflow.module.scss';
 const IndustryWorkFlowSolution = () => {
   return (
-    <div className="industry-workflow-wrapper">
-      <div className="industry-category-two-content-wrapper">
-        <p className="industry-workflow-two-heading">Unique</p>
-        <span className="industry-workflow-two-sub-heading">Creative</span>
-        <span className="industry-workflow-description-heading-data">
-          Workflow Solutions
-        </span>
-        <div className="industry-categoy-2-description">
-          With MeMate, you can optimise your agency’s creative workflow. Our
-          software provides customisable templates and processes that align with
-          the unique requirements of creative projects. From brainstorming to
-          execution, MeMate empowers your team to collaborate seamlessly and
-          bring their creative vision to life.
-        </div>
-      </div>
-    </div>
+<>
+<div className={`${style.flexboxWrap} ${style.bgContentWrap} ${style.sectionTopSpace}`}>
+<div className={`${style.spacingLeft} ${style.flexContentWrap}`}>
+<h4>Unique</h4>
+<h3>Creative</h3>
+<h2>Workflow Solutions</h2>
+    <p>Create simple workflows and custom calculators based on different hourly rates, equipment costs, and more. Easily build complete packages with 
+      customizable options, ensuring a clean workflow while avoiding undercharging or missing important service elements.</p>
+</div>
+<div className={style.flexImageBox}>
+  <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/unique-main.png" alt="unique-main"/>
+</div>
+</div>
+</> 
   );
 };
 
 export default IndustryWorkFlowSolution;
+

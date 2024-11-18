@@ -1,0 +1,64 @@
+.bgContentWrap{
+    border-radius: 30px;
+    background: linear-gradient(107deg, #2B2B2D 0%, #777 100%);
+    &.flexboxWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .flexImageBox{
+        
+       width: 50%;
+       text-align: right;
+       img{
+        padding-right: 20px;
+        width: 100%;
+    
+       }
+    }
+    .flexContentWrap{
+        &.spacingRight{
+            width: 42%;
+            padding-right: 20px;
+        }
+        &.spacingLeft{
+            width: 42%;
+            padding-left: 20px;
+        }
+       
+        h4{
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 410;
+            line-height: 100%; 
+        }
+        h3{
+            color: #FFF;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 415;
+            line-height: normal;
+        }
+        h2{
+            color: #FFF;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 48px;
+            margin-bottom: 40px;
+        }
+        p{
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 140%;
+        }
+    }
+    
+}
+
+.sectionTopSpace{
+    margin-top: 32px;
+}

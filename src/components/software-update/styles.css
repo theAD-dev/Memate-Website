@@ -18,6 +18,19 @@
 .brandName {
   text-align: center;
 }
+.latest-update-head {
+  font-family: "sequel_sans_bold_disp" !important;
+  font-weight: 425;
+  font-size: 120px;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 114px;
+  font-style: normal;
+  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .latest-update-text {
   font-family: "sequel_sans_bold_disp" !important;
   font-weight: 425;
