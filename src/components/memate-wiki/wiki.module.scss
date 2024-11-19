@@ -28,6 +28,22 @@
     .mainGridWrap{
         width: 1200px;
         margin: 0 auto 92px;
+        .inHead{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                color: var(--Primary-600, #158ECC);
+                text-align: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 415;
+                line-height: normal;
+                border: 0;
+                padding: 0;
+                background: transparent;
+            }
+        }
         h2{
             color: #29292B;
             font-size: 32px;

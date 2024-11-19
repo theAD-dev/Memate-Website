@@ -40,13 +40,15 @@ const MemateWiki = () => {
     <div>
     {wikiData && wikiData.map((item, index) => (
        <div key={index} className={style.mainGridWrap}>
+       <div className={style.inHead}>
        <h2>{item.category.name}</h2>
+       
        <button 
                                 className={style.viewAllLink} 
                                 onClick={() => handleViewAllClick(item.category.id)}
                             >
                                 View All
-                            </button>
+                            </button></div>
        {item.subcategories.data && item.subcategories.data.length > 0 && (
          <div className={style.mainGridwtapFlex}>
            {item.subcategories.data.map((subcategory) => {
