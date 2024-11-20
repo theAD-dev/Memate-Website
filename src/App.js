@@ -67,7 +67,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import WikiSinglePage from "./components/memate-wiki/wiki-single-page";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+const queryClient = new QueryClient();
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
@@ -173,6 +175,7 @@ try {
   return (
     <div className="App">
       <ScrollToTop />
+      <QueryClientProvider client={queryClient}>
       <Routes>
         <Route path="/" exact element={<LandingPage posts={posts} postsLatest={postsLatest} />} />
         <Route path="/feature-page-sales" exact element={<FeaturePage />} />
@@ -228,6 +231,8 @@ try {
         <Route path="/about" exact element={<AboutMematePage />} />
         <Route path="/delete-request" exact element={<DeleteRequestPage />} />
         <Route path="/memate-wiki" exact element={<MemateWikiPage />} />
+        <Route path="/wiki/:categoryId" exact element={<WikiSinglePage />} />
+      
         <Route path="/security" exact element={<SecurityPage />} />
         <Route path="/legal" exact element={<LegalPage />} />
         <Route path="/contact-sales" exact element={<ContactSalesPage />} />
@@ -242,6 +247,7 @@ try {
         <Route path="/tron-btton" exact element={<TronButton />} />
         
       </Routes>
+      </QueryClientProvider>
     </div>
   );
 }

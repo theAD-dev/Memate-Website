@@ -2,8 +2,7 @@
     .mainHeadTitle{
         text-align: center;
         padding: 30px 0 120px;
-        h1{
-           
+        span{
             background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -14,6 +13,7 @@
             font-style: normal;
             font-weight: 700;
             line-height: 230px; 
+            display: block;
             
         }
         p{
@@ -102,6 +102,15 @@
                     //     position: absolute;
                     // }
                    
+                }
+                h3{
+                    p{
+                        color: #29292B;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 420;
+                        line-height: 150%;
+                    }
                 }
                 p{
                     color: #888E9E;

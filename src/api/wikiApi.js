@@ -19,7 +19,7 @@ export const wikiBase = async () => {
       return [];
     }
   };
-export const wikiBaseId = async (selectedId ) => {
+export const wikiBaseId = async (categoryId ) => {
     const myHeaders = new Headers();
     myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
   
@@ -30,7 +30,7 @@ export const wikiBaseId = async (selectedId ) => {
     };
   
     try {
-      const response = await fetch(`https://admin.memate.au/api/get-wiki-by-id/${selectedId }`, requestOptions);
+      const response = await fetch(`https://admin.memate.au/api/get-wiki-by-id/${categoryId }`, requestOptions);
       const result = await response.json(); 
   
       return Array.isArray(result.data) ? result.data : [];

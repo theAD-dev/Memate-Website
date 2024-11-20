@@ -3,11 +3,12 @@ import {useQuery } from "@tanstack/react-query";
 import { wikiBase } from "../../api/wikiApi"; 
 import "./style.css";
 import style from './wiki.module.scss';
-
+import { useNavigate } from "react-router-dom";
 
 const MemateWiki = () => {
   const [selectedCategoryId, setSelectedCategoryId] = useState(null)
-  console.log('selectedCategoryId: ', selectedCategoryId);
+  const navigate = useNavigate()
+
     const { data: wikiData } = useQuery({
         queryKey: ['wikiBase'],
         queryFn: wikiBase,
@@ -16,13 +17,14 @@ const MemateWiki = () => {
 
    const handleViewAllClick = (categoryId) => {
         setSelectedCategoryId(categoryId);
+        navigate(`/wiki/${categoryId}`);
     };
     
     return (
         <div>
              <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
     <div className={style.mainHeadTitle}>
-      <h1>meMate <br></br>wiki</h1>
+      <span>meMate <br></br>wiki</span>
      <p><strong>Here, we gather valuable knowledge about general business<br></br> management practices and tools, from job scheduling to <br></br>invoicing and quote calculations.</strong></p>
      {/* <div className={style.searchFilterList}>
      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
@@ -52,17 +54,12 @@ const MemateWiki = () => {
        {item.subcategories.data && item.subcategories.data.length > 0 && (
          <div className={style.mainGridwtapFlex}>
            {item.subcategories.data.map((subcategory) => {
-            console.log('subcategory: ', subcategory);
-             // Clean the description
            
-             const cleanDescription = subcategory.description
-               ? subcategory.description.replace('<p>', '').replace('</p>', '')
-               : '';
      
              return (
                <div key={subcategory.id} className={`itemFlex ${style.itemFlex}`}>
                  <div className={style.itemText}>
-                   <h3>{cleanDescription}</h3>
+                 <h3 dangerouslySetInnerHTML={{ __html: subcategory.description }}></h3>
                  </div>
                </div>
              );
