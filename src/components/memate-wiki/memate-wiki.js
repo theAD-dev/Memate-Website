@@ -43,6 +43,7 @@ const MemateWiki = () => {
        <div className={style.inHead}>
        <h2>{item.category.name}</h2>
        
+       
        <button 
                                 className={style.viewAllLink} 
                                 onClick={() => handleViewAllClick(item.category.id)}
