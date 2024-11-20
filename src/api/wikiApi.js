@@ -19,7 +19,8 @@ export const wikiBase = async () => {
       return [];
     }
   };
-export const wikiBaseId = async (categoryId ) => {
+export const wikiBaseId = async (idData ) => {
+
     const myHeaders = new Headers();
     myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
   
@@ -30,7 +31,7 @@ export const wikiBaseId = async (categoryId ) => {
     };
   
     try {
-      const response = await fetch(`https://admin.memate.au/api/get-wiki-by-id/${categoryId }`, requestOptions);
+      const response = await fetch(`https://admin.memate.au/api/get-wiki-by-id/${idData }`, requestOptions);
       const result = await response.json(); 
   
       return Array.isArray(result.data) ? result.data : [];
@@ -42,8 +43,7 @@ export const wikiBaseId = async (categoryId ) => {
   };
 
 
-export const wikiBaseBSearch = async (searchTerm) => {
-  console.log('searchTermsdddddddddddddddddddddddddddd: ', searchTerm);
+export const wikiBaseBSearch = async (searchQuery) => {
     const myHeaders = new Headers();
     myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
     const requestOptions = {
@@ -51,11 +51,9 @@ export const wikiBaseBSearch = async (searchTerm) => {
       headers: myHeaders,
       redirect: "follow"
     };
-    
-    fetch(`https://admin.memate.au/api/knowledge?searchTerm=${searchTerm}`, requestOptions)
+   
+    fetch(`https://admin.memate.au/api/wiki-search/${searchQuery}`, requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.error(error));
-
-
   };

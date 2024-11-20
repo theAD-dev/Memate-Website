@@ -69,6 +69,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import WikiSinglePage from "./components/memate-wiki/wiki-single-page";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import MemateWikiSinglePage from "./pages/wiki-single-page";
 const queryClient = new QueryClient();
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -231,7 +232,8 @@ try {
         <Route path="/about" exact element={<AboutMematePage />} />
         <Route path="/delete-request" exact element={<DeleteRequestPage />} />
         <Route path="/memate-wiki" exact element={<MemateWikiPage />} />
-        <Route path="/wiki/:categoryId" exact element={<WikiSinglePage />} />
+        <Route path="/wiki/:categoryId" exact element={<MemateWikiSinglePage />} />
+     
       
         <Route path="/security" exact element={<SecurityPage />} />
         <Route path="/legal" exact element={<LegalPage />} />

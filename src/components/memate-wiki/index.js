@@ -3,6 +3,7 @@ const MemateWikiComponent = () => {
 
   return (
      <MemateWiki />
+     
   );
 };
 
