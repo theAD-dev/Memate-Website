@@ -1,28 +1,38 @@
+
+
+.linkstyleDisable{
+    color: var(--Gray-500, #667085);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 310;
+    line-height: 20px; 
+    text-decoration: none;
+}
 .mainMenuPages{
     .mainHeadTitle{
         text-align: center;
         padding: 30px 0 120px;
-        h1{
-           
+        span{
+            font-size: 180px;
+            font-weight: 425;
+            text-align: center;
             background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-family: "sequel_sans_bold_disp" !important;
-            margin: 0px;
-            text-align: center;
-            font-size: 220px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 230px; 
+            line-height: 0.88;
+            letter-spacing: 1px;
+            position: relative;
             
         }
         p{
-            color: #757B8A;
-            text-align: center;
-            font-size: 18px;
+          strong{
+            color: #29292B;
+            font-size: 42px;
             font-style: normal;
-            font-weight: 360;
-            line-height: 140%; 
+            font-weight: 420;
+            line-height: normal;
+          }
         }
     }
     .mainGridWrap{
@@ -103,6 +113,15 @@
                     // }
                    
                 }
+                h3{
+                    p{
+                        color: #29292B;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 420;
+                        line-height: 150%;
+                    }
+                }
                 p{
                     color: #888E9E;
                     font-size: 16px;
@@ -168,4 +187,58 @@
         width: 100%;
         border: 0;
        }
+  }
+
+
+  .wikimainwrap{
+    .wikimainhead{
+        text-align: center;
+        padding: 92px 0 75px;
+        h1{
+            color: #29292B;
+            text-align: center;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 420;
+            line-height: normal;
+            padding-bottom: 15px;
+        }
+        p{
+            color: #757B8A;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 360;
+            line-height: 140%;
+        }
+    }
+    .mainGridwtapFlex{
+        column-gap: 15px;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        row-gap: 15px;
+        .itemFlex{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border-radius: 30px;
+            background: #F7F8FA;
+            width: 383px;
+            padding: var(--spacing-3xl, 24px);
+            justify-content: center;
+            align-items: flex-start;
+            gap: var(--spacing-md, 16px);
+            cursor: pointer;
+            position: relative;
+            h3{
+                p{
+                    color: #29292B;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 420;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
   }

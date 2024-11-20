@@ -2,10 +2,9 @@ import React from "react";
 import "../style.css";
 import style from '../supplier-module.module.scss';
 import { Link } from "react-router-dom";
-const googlemap = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/icons/googlemap.svg";
-const GlobIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/icons/glob-icon.svg";
-const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/icons/arrowIconBack.svg";
-const cameraFixLogo = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/images/cameraFixLogo.svg";
+const googlemap = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/googlemap.svg";
+const GlobIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/glob-icon.svg";
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 
 function DataSingle({slug,supplierData}) {
