@@ -39,47 +39,7 @@ useEffect(() => {
   };
 
   return (
-    <div>
-
-    {wikiData && wikiData.map((item, index) => (
-       <div key={index} className={style.mainGridWrap}>
-       <div className={style.inHead}>
-       <h2>{item.category.name}</h2>
-       
-       
-       <button 
-                                className={style.viewAllLink} 
-                                onClick={() => handleViewAllClick(item.category.id)}
-                            >
-                                View All
-                            </button></div>
-       {item.subcategories.data && item.subcategories.data.length > 0 && (
-         <div className={style.mainGridwtapFlex}>
-           {item.subcategories.data.map((subcategory) => {
-            console.log('subcategory: ', subcategory);
-             // Clean the description
-           
-             const cleanDescription = subcategory.description
-               ? subcategory.description.replace('<p>', '').replace('</p>', '')
-               : '';
-     
-             return (
-               <div key={subcategory.id} className={`itemFlex ${style.itemFlex}`}>
-                 <div className={style.itemText}>
-                   <h3>{cleanDescription}</h3>
-                 </div>
-               </div>
-             );
-           })}
-         </div>
-       )}
-     </div>
-     
-      ))}
-    </div>
-    </div>
-            
-
+    <>
       <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
         <div className={style.mainHeadTitle}>
           <span>meMate <br></br>wiki</span>
@@ -125,7 +85,8 @@ useEffect(() => {
           ))}
         </div>
       </div>
-    </div>
+    
+    </>
   );
 };
 
