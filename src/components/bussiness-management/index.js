@@ -26,29 +26,50 @@ const BussinessManagement = () => {
           </h1>
         </div>
       </div>
-      <div className="image-wrapper" data-aos="fade-up"
+      <div className="image-wrapper" >
+           {/* <img src={Images.landingHero} /> */}
+        <div className="macBook-image">
+          <div className="big-img-mac">
+          <img src={Images.landingHero}  />
+            <div className="iphone-image">
+              <img src={Images.iphone} data-aos="aos-fade"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="200"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="aos-fade"/>
+            </div>
+            <div className="create-new-text">
+              <img src={Images.landingHeroitem} data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="300"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="aos-fade" />
+            </div>
+            <div className="create-new-model">
+              <img src={Images.landingHeromodel} data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="aos-fade" />
+            </div>
+
+            <div className="metric-item">
+              <img src={Images.landingHerotask} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="700"
     data-aos-mirror="true"
     data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
-           <img src={Images.landingHero} />
-        {/* <div className="macBook-image">
-          <div className="big-img-mac">
-            <img src={Images.macLeptop} />
-            <div className="iphone-image">
-              <img src={Images.iphone} />
-            </div>
-            <div className="create-new-text">
-              <img src={Images.rightImage} />
-            </div>
-
-            <div className="metric-item">
-              <img src={Images.metricItem} />
+    data-aos-anchor-placement="aos-fade" />
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
 
       <div className="how-to-use">

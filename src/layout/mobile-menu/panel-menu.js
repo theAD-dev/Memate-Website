@@ -117,7 +117,7 @@ const PanelMenu = () => {
                                         <strong>{sectionKey}</strong>
                                         <ul className='orderList'>
                                             {item.contents[sectionKey].map((contentItem, i) => (
-                                                <li key={i}>
+                                                <li key={i} className={`list${i}`}>
                                                     <Link 
                                                 to={contentItem.link} 
                                                 className={location.pathname === contentItem.link ? "navbar-item-active" : ""} 

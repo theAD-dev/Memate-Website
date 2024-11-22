@@ -11,18 +11,18 @@ const MenuRessources = () => {
         <p className="menu-feature-text"><Link to="/resources" className={` ${location.pathname === "/resources" ? "navbar-item-active" : ""}`}>Resources & tools</Link></p>
           <div className="menu-management-features">
             <div className="menu-client-management">
-              <Link to="/supplier-database" className={` ${location.pathname === "/supplier-database" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text">Supplier Database</p></Link>
+              <Link to="/supplier-database" className={` ${location.pathname === "/supplier-database" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Supplier Database</p></Link>
             </div>
           </div>
         
           <div className="menu-management-feature">
             <div className="menu-client-management">
-            <Link to="/knowledge-base" className={` ${location.pathname === "/knowledge-base" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text">Knowledge Base</p></Link>
+            <Link to="/knowledge-base" className={` ${location.pathname === "/knowledge-base" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Knowledge Base</p></Link>
             </div>
           </div>
           <div className="menu-management-feature">
             <div className="menu-client-management">
-              <Link to="/delete-request" className={` ${location.pathname === "/delete-request" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text">Delete Request</p></Link>
+              <Link to="/delete-request" className={` ${location.pathname === "/delete-request" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Delete Request</p></Link>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ const MenuRessources = () => {
           <p className="menu-feature-text">Memate wiki</p>
           <div className="menu-management-features">
             <div className="menu-client-management">
-              <Link to="/memate-wiki" className={` ${location.pathname === "/memate-wiki" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text">Memate Wiki</p></Link>
+              <Link to="/memate-wiki" className={` ${location.pathname === "/memate-wiki" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Memate Wiki</p></Link>
             </div>
           </div>
         </div>

@@ -28,7 +28,154 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
+.menu-feature-management {
+  position: relative;
+}
+.menu-feature-management a p.icon01:before {
+  margin: -10px 0;
+}
+.menu-feature-management a p.icon02:before {
+  margin: 0 0;
+  background-position: 0 16%;
+}
+.menu-feature-management a p.icon03:before {
+  margin: 0 0;
+  background-position: 0px 30%;
+}
+.menu-feature-management a p.icon04:before {
+  margin: 0 0;
+  background-position: 0px 44%;
+}
+.menu-feature-management a p.icon05:before {
+  margin: 0 0;
+  background-position: -52px 4%;
+}
+.menu-feature-management a p.icon06:before {
+  margin: 0 0;
+  background-position: -52px 16%;
+}
+.menu-feature-management a p.icon07:before {
+  margin: 0 0;
+  background-position: -52px 30%;
+}
+.menu-feature-management a p.icon08:before {
+  margin: 0 0;
+  background-position: -52px 44%;
+}
+.menu-feature-management a p.icon09:before {
+  margin: 0 0;
+  background-position: -94px 5%;
+}
+.menu-feature-management a p.icon001:before {
+  margin: 0 0;
+  background-position: -94px 18%;
+}
+.menu-feature-management a p.icon002:before {
+  margin: 0 0;
+  background-position: -90px 32%;
+}
+.menu-feature-management a p.icon003:before {
+  margin: 0 0;
+  background-position: -94px 45%;
+}
 
+.menu-feature-management a p.icon004:before {
+  margin: 0 0;
+  background-position: -132px 4%;
+}
+.menu-feature-management a p.icon005:before {
+  margin: 0 0;
+  background-position: -137px 17%;
+}
+.menu-feature-management a p.icon006:before {
+  margin: 0 0;
+  background-position: -137px 30%;
+}
+.menu-feature-management a p.icon007:before {
+  margin: 0 0;
+  background-position: -132px 160%;
+}
+.menu-feature-management a p.icon008:before {
+  margin: 0 0;
+  background-position: -176px 4%;
+}
+.menu-feature-management a p.icon008:before {
+  margin: 0 0;
+  background-position: -176px 4%;
+}
+.menu-feature-management a p.icon009:before {
+  margin: 0 0;
+  background-position: -176px 17%;
+}
+.menu-feature-management a p.icon011:before {
+  margin: 0 0;
+  background-position: -176px 31%;
+}
+.menu-feature-management a p.icon012:before {
+  margin: 0 0;
+  background-position: -176px 45%;
+}
+.menu-feature-management a p.icon013:before {
+  margin: 0 0;
+  background-position: -212px 5%;
+}
+.menu-feature-management a p.icon014:before {
+  margin: 0 0;
+  background-position: -209px 18%;
+}
+.menu-feature-management a p.icon021:before {
+  margin: 0 0;
+  background-position: -214px 31%;
+}
+.menu-feature-management a p.icon022:before {
+  margin: 0 0;
+  background-position: -214px 159%;
+}
+.menu-feature-management a p.icon023:before {
+  margin: 0 0;
+  background-position: -249px 234%;
+}
+.menu-feature-management a p.icon024:before {
+  margin: 0 0;
+  background-position: -249px 133%;
+}
+.menu-feature-management a p.icon025:before {
+  margin: 0 0;
+  background-position: -249px 147%;
+}
+.menu-feature-management a p.icon026:before {
+  margin: 0 0;
+  background-position: -245px 162%;
+}
+.menu-feature-management a p.icon-hide {
+  margin-left: 0;
+}
+.menu-feature-management a p.icon-hide:before {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bgicons:before {
+  position: absolute;
+  content: "";
+  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/combo-img-main.png);
+  width: 32px;
+  height: 38px;
+  background-position: top left;
+  cursor: pointer;
+  left: 0;
+}
 .navbar-container {
     display: flex;
     width: 1200px;

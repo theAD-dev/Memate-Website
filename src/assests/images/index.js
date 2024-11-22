@@ -1,7 +1,11 @@
 
 
 const Images = {
-  landingHero: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Web.svg",
+  landingHero: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-banner.png",
+  landingHeromodel: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-modal.png",
+  landingHerotask: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-create-new-task.png",
+  landingHeroitem: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-metric-item.png",
+  landingHeroiPhone: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-iPhone-mockup.png",
   logo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
   BurgerIcon: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/burger-menu-svgrepo-com.svg",
   burgerCloseIcon: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/burger-close-icon-w.svg",

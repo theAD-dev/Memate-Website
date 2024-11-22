@@ -184,6 +184,7 @@ const Header = () => {
                           }
                         >
                           {selectedMenuItem === menu.id ? <img src={RightColorArrow} alt="RightColorArrow"/> : <img src={RightBlackArrow} alt="RightBlackArrow" style={{ transform: "rotate(-90deg)" }} /> }
+
                         </div>
                       </div>
                     );
