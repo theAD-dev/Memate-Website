@@ -38,8 +38,11 @@ useEffect(() => {
     navigate(`/wiki/${categoryId}`, { state: { name: categoryName } });
   };
 
+
+  
   return (
     <>
+
       <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
         <div className={style.mainHeadTitle}>
           <span>meMate <br></br>wiki</span>
@@ -62,7 +65,9 @@ useEffect(() => {
           {(filteredData || []).map((item, index) => (
             <div key={index} className={style.mainGridWrap}>
               <div className={style.inHead}>
-                <h2>{item.category.name}</h2>
+            
+              {console.log('filteredDataitem: ', item)}
+              <h2>{item?.category?.name || "Unknown Category"}</h2>
                 <button 
                   className={style.viewAllLink} 
                   onClick={() => handleViewAllClick(item.category.id, item.category.name)}

@@ -97,12 +97,12 @@ const MenuData = () => {
           className={index === activeTab ? 'currentTab' : ''}
           onClick={() => handleTabClick(index)}><span><img src={tab.imgTab} />{tab.title}</span></li>
         ))}
-        <li><Link to='/watch-demo' className={` ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedSales} />Contact Sales</Link></li>
-        <li><Link to='/watch-demo' className={` ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedWatchDemo} />Watch demo</Link></li>
+        <li><Link to='/watch-demo' className={`watch-demo ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedSales} />Contact Sales</Link></li>
+        <li><Link to='/watch-demo' className={`watch-demo ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedWatchDemo} />Watch demo</Link></li>
          </ul>
       </div>
       </div>
-      <div className="tab-content">
+      <div className="tab-content resourceMobileIcon">
   {tabs[activeTab].contents ? (
     <ul>
       {Object.keys(tabs[activeTab].contents).map((sectionKey) => (
@@ -111,7 +111,7 @@ const MenuData = () => {
           <ul>
             {tabs[activeTab].contents[sectionKey].map((contentItem, i) => (
               <li key={i}>
-                <Link to={contentItem.link} className={` ${location.pathname === contentItem.link ? "navbar-item-active" : ""}`}  rel="noopener noreferrer">
+                <Link to={contentItem.link} className={`resource${i} ${location.pathname === contentItem.link ? "navbar-item-active" : ""}`}  rel="noopener noreferrer">
                   {contentItem.content}
                 </Link>
               </li>

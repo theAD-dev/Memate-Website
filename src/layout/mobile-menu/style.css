@@ -36,6 +36,191 @@
   opacity: 0;
 }
 
+
+
+
+
+
+.bm-menu li a {
+  position: relative;
+  text-align: left;
+  padding-left: 29px;
+}
+.bm-menu li a img {
+  opacity: 0;
+  width: 0;
+}
+
+.bm-menu li a:before {
+  position: absolute;
+  content: "";
+  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/combo-img-main.png);
+  width: 32px;
+  height: 38px;
+  background-position: top left;
+  cursor: pointer;
+  left: -6px;
+}
+
+
+.bm-menu .Management ul .list0 a:before {
+  margin: 0 0;
+  background-position: 0 115%;
+}
+.bm-menu .Management ul .list1 a:before {
+  margin: 0 0;
+  background-position: 0px 128%;
+}
+.bm-menu .Management ul .list2 a:before {
+  margin: 0 0;
+  background-position: 0px 142%;
+}
+.bm-menu .Management ul .list2 a:before {
+  margin: 0 0;
+  background-position: 2px 142%;
+}
+.bm-menu .Management ul .list3 a:before {
+  margin: 0 0;
+  background-position: 2px 156%;
+}
+.bm-menu .Productivity ul .list0 a:before {
+  margin: 0 0;
+  background-position: -50px 116%;
+}
+.bm-menu .Productivity ul .list1 a:before {
+  margin: 0 0;
+  background-position: -50px 128%;
+}
+.bm-menu .Productivity ul .list2 a:before {
+  margin: 0 0;
+  background-position: -50px 142%;
+}
+.bm-menu .Productivity ul .list3 a:before {
+  margin: 0 0;
+  background-position: -50px 155%;
+}
+.bm-menu .Functionality ul .list0 a:before {
+  margin: 0 0;
+  background-position: -94px 116%;
+}
+.bm-menu .Functionality ul .list1 a:before {
+  margin: 0 0;
+  background-position: -94px 130%;
+}
+.bm-menu .Functionality ul .list2 a:before {
+  margin: 0 0;
+  background-position: -92px 143%;
+}
+.bm-menu .Functionality ul .list3 a:before {
+  margin: 0 0;
+  background-position: -92px 157%;
+}
+.bm-menu .Technology ul .list0 a:before {
+  margin: 0 0;
+  background-position: -133px 115%;
+}
+.bm-menu .Technology ul .list0 a:before {
+  margin: 0 0;
+  background-position: -133px 115%;
+}
+.bm-menu .Technology ul .list1 a:before {
+  margin: 0 0;
+  background-position: -133px 129%;
+}
+.bm-menu .Technology ul .list2 a:before {
+  margin: 0 0;
+  background-position: -133px 142%;
+}
+.bm-menu .Technology ul .list3 a:before {
+  margin: 0 0;
+  background-position: -130px 157%;
+}
+.bm-menu .Collaboration ul .list0 a:before {
+  margin: 0 0;
+  background-position: -173px 116%;
+}
+.bm-menu .Collaboration ul .list1 a:before {
+  margin: 0 0;
+  background-position: -171px 128%;
+}
+.bm-menu .Collaboration ul .list2 a:before {
+  margin: 0 0;
+  background-position: -171px 142%;
+}
+.bm-menu .Collaboration ul .list3 a:before {
+  margin: 0 0;
+  background-position: -171px 156%;
+}
+.bm-menu .Value ul .list0 a:before {
+  margin: 0 0;
+  background-position: -210px 117%;
+}
+.bm-menu .Value ul .list1 a:before {
+  margin: 0 0;
+  background-position: -210px 130%;
+}
+.bm-menu .Industries ul .list0 a:before {
+  margin: 0 0;
+  background-position: -210px 143%;
+}
+.bm-menu .Industries ul .list1 a:before {
+  margin: 0 0;
+  background-position: -210px 156%;
+}
+.bm-menu .Industries ul .list2 a:before {
+  margin: 0 0;
+  background-position: -248px 117%;
+}
+.bm-menu .Industries ul .list3 a:before {
+  margin: 0 0;
+  background-position: -251px 130%;
+}
+.bm-menu .Industries ul .list4 a:before {
+  margin: 0 0;
+  background-position: -251px 145%;
+}
+.bm-menu .Industries ul .list5 a:before {
+  margin: 0 0;
+  background-position: -247px 159%;
+}
+.bm-menu .News ul a:before {
+ opacity: 0;
+ width: 0;
+}
+.bm-menu .News ul a {
+  padding-left: 0px;
+}
+.listMobileTab a.watch-demo:before {
+  display: none;
+}
+.listMobileTab a.watch-demo img  {
+  opacity: 1;
+  width: auto;
+}
+.listMobileTab a.watch-demo   {
+  padding-left: 0;
+}
+.bm-menu .Legal ul a:before,
+.bm-menu .li.resource0 ul a:before
+ {
+  opacity: 0;
+  width: 0;
+ }
+.bm-menu .Legal ul a ,
+.bm-menu .li.resource0 ul a 
+{
+  padding-left: 0;
+ }
+ .resourceMobileIcon ul li a:before {
+  display: none;
+}
+.resourceMobileIcon ul li a {
+  padding-left: 0;
+}
+
+
+
+
 .hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
@@ -320,10 +505,7 @@ margin-right: 14px;
   height: 40px;
   
 }
-.bm-item-list  .accordion-content ul li a img {
- margin-right: 14px;
-  
-}
+
 
 
 
