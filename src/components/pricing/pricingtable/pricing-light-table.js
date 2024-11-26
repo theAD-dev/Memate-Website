@@ -59,7 +59,7 @@ const PricingLightTable = () => {
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="tdPaddingStyle">
           <tr>
             <td>Sales Management<sup><img src={pricingTah} alt="pricingTah" /></sup></td>
             <td><img src={checkIcon} alt="checkIcon" /></td>

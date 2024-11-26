@@ -6,108 +6,169 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const knowledgeData = [
   {
     "id": 1,
-    "name": "Website Terms of Use",
+    "name": "meMate Terms of Use",
     "description": `
-      <p>Use of this website is subject to the terms of this Website Terms of Use, as amended from time to time. If you do not agree to these terms, you should immediately cease using this website. The terms of this Website Terms of Use do not exclude, restrict, or modify:</p>
-    <ul>
-    <li>the application of any provision of the Australian Consumer Law (whether applied as a law of the Commonwealth or any State or Territory of Australia) (ACL); </li>
-    <li>the exercise of any right or remedy conferred by the ACL; or </li>
-    <li>the liability of meMate for a failure to comply with any applicable consumer guarantees where to do so would:</li>
-    <li>contravene the ACL; or</li>
-    <li>cause any part of this Website Terms of Use to be void.</li>
-    
-    </ul>
-   
-    <p>
-Notice regarding representations, documents, and other website content
-Subject to the above and to the extent permitted by law:
-    </p>
-   
-
-     <ul>
-    <li>meMate makes no representations, conditions, or warranties of any kind, express or implied, as to the operation or results of this website, or the accuracy, correctness, or reliability of the information, content, or documentation available on this website; and </li>
-    <li>meMate  shall not be liable for any direct, indirect, or consequential damages whatsoever, including loss of use, data, or profits, whether arising in contract, negligence, equity, or under statute as a result of or in connection with the use of this website or documentation, or information available on this website.</li>
-    
-    </ul>
-     <p>
-Some jurisdictions do not allow the exclusion or limitation of implied warranties or of liability for incidental or consequential damages, so the above limitations or exclusions may not apply to you. In the event that any of the above limitations or exclusions are held to be unenforceable, meMate’s total liability shall not exceed the amount of the fee you have paid.
-    </p>
-     <p>
-The documents published on this website could include technical inaccuracies or typographical errors. The information presented on this website is changed periodically, and meMate may make improvements and/or changes in the product(s), program(s), and/or documentation described at any time, without notice. </p>
-   
+      <p>Our terms of use outline the agreement between you and meMate. They detail our commitment as your service provider and your responsibilities as our valued customer.</p>
     `,
     "children": []
   },
   {
     "id": 2,
-    "name": "Notice specific to software available on this website",
+    "name": "Introduction",
 
     "description": `
     <p>
-    Any software downloaded from this website is governed by the terms of the end-user license agreement (EULA), which accompanies or is included with the software. Any reproduction or redistribution of the software not in accordance with the EULA is prohibited by law.
-    </p>
-    <p>
-   Without limiting the foregoing, reproduction or copying of the software to any other server, site, or location for subsequent reproduction or redistribution is expressly prohibited.</p>
+    Welcome to meMate! We’re thrilled to have you join us. Before you begin using meMate, we ask that you review and accept these terms. We’ve aimed to make everything clear and jargon-free, so you’ll know exactly what we expect from you and what you can expect from us.</p>
 
+    <p>
+  To make this process easier, we’ve included summary paragraphs at the start of each section to give you a quick overview.
+  </p>
+    <p>
+These terms cover your legal rights and obligations, so please read them carefully. If you find that you can’t agree to our terms, unfortunately, you won’t be able to use our services.
+  </p>
+    <p>
+Should you have any questions or comments after reading, please reach out to us via meMate Central. We’re here to help and look forward to assisting you.
+</p>
+    <p>
+Last updated on 31 July 2024. We’ve updated these terms to ensure greater clarity and transparency and to better align with our business practices. The updates also include specific requirements for subscribers in our partner program, designed to ensure their clients have appropriate subscription access rights.
+</p>
     `,
     "children": []
   },
   {
     "id": 3,
-    "name": "MeMate does not provide Tax Advice",
+    "name": "Joining and Using meMate",
     "description": `
-    <p>meMate is not a registered entity pursuant to the Tax Agent Services Act 2009 (TASA) and therefore cannot provide taxation advice to clients. If you have a query concerning taxation, including filing your BAS return or annual tax statements, you should consult with your accountant or other registered tax adviser.</p>
+    <p>In this section we explain how to subscribe to meMate and use our services. When you see a word in bold, it will have the same corresponding meaning every time it’s used within these terms.
+    </p>
+    <ul>
+    
+      <li>
+      <strong>1. You and meMate</strong>
+      <p>
+      When we say you or your, we mean both you and any entity or firm you’re authorised to represent. When we say meMate, we, our or us, 
+      we’re talking about the meMate entity you contract with and pay fees to based on the edition of the meMate product you’re using.
+      </p>
+      </li>
+      <li>
+      <strong>2. Our Services</strong>
+      <p>
+      Our services consist of all the services we provide now or in the future, including our online and mobile accounting and project managing and financial products.
+      </p>
+      </li>
+      <li>
+      <strong>3. Creating a Subscription</strong>
+      <p>
+     When you create a subscription to use our services and accept these terms, you become a subscriber. 
+     If you’re the subscriber, you’re the one responsible for paying for your subscription.
+      </p>
+      </li>
+      <li>
+      <strong>4. People Invited to Use meMate</strong>
+      <p>
+ An invited user is a person other than the subscriber who has been invited to use our services through a subscription. 
+ If you’re an invited user, you must also accept these terms to use our services.
+      </p>
+      </li>
+      <li>
+      <strong>5. User Roles and Access:</strong>
+      <p>
+As a subscriber inviting others into a subscription, you should understand the permissions you’re granting to invited users. 
+Check out information about user roles and levels of access on meMate.
+      </p>
+      </li>
+      <li>
+      <strong>6. Partner Program</strong>
+      <p>
+If you participate in our partner program, read our additional partner terms.
+      </p>
+      </li>
+      <li>
+      <strong>7. Online Payments</strong>
+      <p>
+If you are located in one of the regions set out in the additional online payments terms and you choose to connect 
+Stripe to your subscription (so you can accept online payments from 
+customers through your meMate invoices), read our additional online payments terms.
+      </p>
+      </li>
+      <li>
+      <strong>8. The Right to Use Our Services</strong>
+      <p>
+Whether you’re a subscriber or an invited user, we grant you the right to use our services (based on your subscription type, your user role and the 
+level of access you’ve been granted) for as long as the subscriber continues to pay for the subscription, until the subscription is terminated, 
+or – if you’re an invited user – until your access is revoked.
+      </p>
+      </li>
+      <li>
+      <strong>9. Subscriber Role</strong>
+      <p>
+     As a subscriber, you take responsibility for fully controlling how your subscription is managed and who can access it. It’s quite a big deal! For example:
+     <ul>
+      <li>You can transfer a subscription.</li>
+      <li>You control access to a subscription. You decide who’s invited to use our services you’ve subscribed to and what kind of access the invited user has. You can change or stop that access at any time.</li>
+      <li>You’re responsible for resolving any disputes with any invited users over access to your subscription. You can find out more about disputes over access on meMate Central. If you participate in our partner program and act as the subscriber on behalf of your client, we may reasonably direct you to provide your client with read-only access to the subscription in accordance with the additional partner terms.</li>
+      <li>You’re responsible for all your invited users’ activity.</li>
+     </ul>
+      </p>
+      </li>
+      <li>
+      <strong>10. Rules</strong>
+      <p>
+     Whatever your role, when you use meMate you agree to follow the rules in section 46. Please read them and make sure you understand what you should and shouldn’t do.
+      </p>
+      </li>
+      <li>
+      <strong>11. Your Responsibilities</strong>
+      <p>You promise that you’ll keep your information (including a current email address) up to date. You’re responsible for providing true, accurate and complete information and for verifying the accuracy of any information that you use from our services for your legal, tax and compliance obligations. You’re also responsible for protecting your username and password from getting stolen or misused. </p>
+      <p>Our service has minimum password standards but you will ensure that passwords are very strong and not easily guessable. The stronger the password the better! For more on security generally, check out the security section below.</p>
+      </li>
+      <li>
+      <strong>12. When We Introduce New or Revised Services</strong>
+      <p> Since we’re always thinking about how to make meMate the best it can be – seriously, we’ve got teams dedicated to it – we regularly expand our services. For new or updated services, there might be additional terms. We’ll let you know what those terms are before you start using those services.</p>
+      </li>
+      <li>
+      <strong>13. What We Own</strong>
+      <p>We own everything we’ve put into our services unless otherwise stated and excluding content owned by others. This includes rights in the design, compilation, and look and feel of our services. It also includes rights in all copyrighted works, trademarks, designs, inventions, and other intellectual property. You agree not to copy, distribute, modify or make derivative works of any of our content or use any of our intellectual property rights in any way not expressly permitted by us.</p>
+      </li>
+      
+    </ul>
    `   
     ,
     "children": []
   },
   {
     "id": 4,
-    "name": "Links to third-party sites",
+    "name": "Pricing",
 
     "description": `
-    <p>Some links on this website will let you leave this site. The linked sites are not under the control of meMate, and meMate is not responsible for their operation or contents. These links are provided as a convenience and do not imply an endorsement of the site by meMate.</p>
+    <p>Unless you’re in a free trial or other offer period, you’ll need to pay for a subscription based on the pricing of your selected plan. The pricing details and other terms of your subscription are explained when you select your plan. This section is for the subscriber, not an invited user.</p>
+    <ul>
+      <li>
+      <strong>14. Trial Subscriptions</strong>
+      <p>When you first sign up, you can opt for a free trial, based on the terms specified at the time. If you choose to continue 
+      using our services after the trial, you’ll be billed when you add your billing details into our services, 
+      explained in more detail in the pricing plan and on meMate.</p>
+      <p>If you choose not to continue using our services following a trial, you may delete your organisation.</p>
+      </li>
+    </ul>
+    
+    
+    
+    
     `,
     "children": []
   },
   {
     "id": 5,
-    "name": "Applicable law",
+    "name": "Termination",
 
     "description": `
     <p>This website is operated and provided from Australia. Your use of this website is governed by the laws of Victoria, Australia.</p>
     <p>This website may be accessed throughout Australia and overseas. meMate makes no representations that the content of this website complies with the laws (including intellectual property laws) of any country outside Australia. If you access this website from outside Australia, you do so at your own risk and are responsible for complying with the laws in the place where you access this website.</p>
     `,
     "children": []
-  },
-  {
-    "id": 6,
-    "name": "Intellectual property rights",
-
-    "description": `
-    <p>
-    meMate and the meMate logo are registered trademarks of meMate Enterprise Pty  Limited. Other product and company names mentioned on this website might be the trademarks of their respective owners.
-    </p>
-    <p>
-   Copyright in this website is owned by meMate Enterprise Pty  Limited. </p>
-    `,
-    "children": []
-  },
-  {
-    "id": 7,
-    "name": "Shopping cart",
-
-    "description": `
-    <p>
-meMate’s websites include an electronic shopping cart. In the event that you commence but do not complete a transaction, meMate or its agents may use the information you have entered to contact you by email to either:
-    </p>
-    <p>
-(a) remind you that the transaction remains incomplete; or</p>
-(b) understand why the transaction did not complete (‘Follow-Up Email’).</p>
-    <p>By using meMate’s websites, you consent to receiving such Follow-Up Emails. If you do receive a Follow-Up Email, you can request that meMate not make further contact regarding the incomplete transaction.</p>
-    `,
-    "children": []
   }
+  
 ];
 
 const TOS = () => {

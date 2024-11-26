@@ -6,7 +6,33 @@ import { Helmet } from 'react-helmet';
 
 
 function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
+  console.log('postsLatest: ', postsLatest);
+  const formatDateWithOrdinal = (dateString) => {
+    try {
+      const date = new Date(dateString.replace(/(\d+)(st|nd|rd|th)/, '$1')); // Remove suffix for parsing
   
+      // Get day, month, and year
+      const day = date.getDate();
+      const month = date.toLocaleString('en-US', { month: 'long' });
+      const year = date.getFullYear();
+  
+      // Add ordinal suffix to the day
+      const ordinalSuffix = (n) => {
+        if (n > 3 && n < 21) return 'th'; // Handles 11th–13th
+        switch (n % 10) {
+          case 1: return 'st';
+          case 2: return 'nd';
+          case 3: return 'rd';
+          default: return 'th';
+        }
+      };
+  
+      return `${day}${ordinalSuffix(day)} ${month}, ${year}`;
+    } catch (error) {
+      console.error("Error formatting date:", error);
+      return dateString; // Return original string if conversion fails
+    }
+  };
   return (
     < div id="blogGrid">
       <Helmet>
@@ -58,9 +84,6 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom">
-            
-
-
             <div className="img-container-1-div " data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -71,14 +94,18 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
               <div>
                 <div className="blog-image-container-div">
                   {/* <img src={blogs[0].featured_img_url} /> */}
-                  <div className="img-container-1-div-text-1"> {new Date(postsLatest[0]?.publish_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+                  <div className="img-container-1-div-text-1">
+                  {formatDateWithOrdinal(postsLatest[0]?.publish_date)} | {postsLatest[0]?.publish_date.author}
+                     </div>
                 </div>
                 <div className="img-container-1-div-text-2">
                   <Link to={`/news/${postsLatest[0]?.slug}`}>{postsLatest[0]?.title}</Link>
                 </div>
+                <div className='postCategory'>
+                {postsLatest[0]?.category.title}
+              </div>
               </div>
             </div>
-           
             </div>
             </Link>
          
@@ -99,8 +126,13 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
               )}
 
               <div className="img-heading-container ">
-                <div className="date-A"> {new Date(postsLatest[1]?.publish_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} </div>
+                <div className="date-A"> 
+                {formatDateWithOrdinal(postsLatest[1]?.publish_date)} | {postsLatest[1]?.publish_date.author}
+                </div>
                 <div className="date-heading-A"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
+                <div className='postCategory'>
+                {postsLatest[1]?.category.title}
+              </div>
               </div>
             </div>
             <div className="blog-img-container-2-img2-div ">
@@ -113,13 +145,18 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
               )}
 
               <div className="img-heading-container">
-                <div className="date-A"> {new Date(postsLatest[2]?.publish_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+                <div className="date-A"> 
+
+                {formatDateWithOrdinal(postsLatest[2]?.publish_date)} | {postsLatest[2]?.publish_date.author}
+                </div>
                 <div className="date-heading-A"><Link to={`/news/${postsLatest[2]?.slug}`}>{postsLatest[2]?.title}</Link></div>
+                <div className='postCategory'>
+                {postsLatest[2]?.category.title}
+              </div>
               </div>
             </div>
             <div className="latest-article-parent"></div>
           </div>
-
           <span className="latest-article-heading" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -145,14 +182,16 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
                     />
                   </Link>
                   <div className="img-heading-container">
-                    <div className="date-A"> {new Date(post?.publish_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+                    <div className="date-A">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
                     <div className="date-heading-A"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
                   </div>
+                  <div className='postCategory'>
+                {post.category.title}
+              </div>
                 </div>
               </div>
             ))}
           </div>
-
           <div className="nextbtn-container-A">
             {totalPosts > posts?.length && <button onClick={handleNext} className="next-page-btn-A">{ loading ? "Loading..." : "Next page" }</button>}
           </div>
