@@ -134,28 +134,24 @@ const ContactUsComponent = () => {
                 <p>Contact</p>
                 <p>by phone</p>
               </div>
-
               <div className='query-small-heading'>
                 <p>Call us anytime on 1300 630 00</p>
              
                 <p>to request a callback.</p>
               </div>
             </div>
-
             <div className='query-button' onClick={() => setVisible(true)}>
               <div>
                 <p>Call now</p>
               </div>
             </div>
           </div>
-
           <div className='query-card query-2 '>
             <div className='query-main'>
               <div className='query-main-heading'>
                 <p>Chat with</p>
                 <p>our experts</p>
               </div>
-
               <div className='query-small-heading'>
                 <p>Chat to us live anytime between:</p>
                 <p>8am-6pm (AEST), Monday to Friday</p>
@@ -163,27 +159,23 @@ const ContactUsComponent = () => {
                 <p>& Sunday</p>
               </div>
             </div>
-
             <div className='query-button'>
               <div>
                 <p>Chat now</p>
               </div>
             </div>
           </div>
-
           <div className='query-card query-3 '>
             <div className='query-main'>
               <div className='query-main-heading query-color'>
                 <p>Email</p>
                 <p>our experts</p>
               </div>
-
               <div className='query-small-heading query-color'>
                 <p>Message us anytime</p>
                 <p>at hello@memate.com.au</p>
               </div>
             </div>
-
             <div className='query-button query-button-color' onClick={() => setVisibleEmail(true)}>
               <div>
                 <p>Email now</p>
@@ -191,15 +183,11 @@ const ContactUsComponent = () => {
             </div>
           </div>
         </div>
-
         <div className="small-heading">
           <p>Please send any media or PR enquiries directly to pr@memate.com.au.</p>
           <p>If we have let you down in any way, we want to hear it at complaints@memate.com.au</p>
         </div>
       </div>
-
-
-
       <Dialog visible={visible} style={{ width: '514px' }} className={style.requestsendModel} onHide={() => {if (!visible) return; setVisible(false); }} footer={footerContent} header={HeaderContent}>
       <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
           <div className={style.marginbotton}>
@@ -217,10 +205,10 @@ const ContactUsComponent = () => {
                             control={control}
                             render={({ field }) => (
                               <PhoneInput
-                                defaultCountry="AU" // Correct country code for Australia
+                                defaultCountry="AU" 
                                 value={field.value}
                                 className="phoneInput"
-                                placeholder="+61 2 0168 9943" // Example Australian number placeholder
+                                placeholder="+61 2 0168 9943" 
                                 containerClass={style.countrySelector}
                                 onChange={field.onChange}
                               />
@@ -228,21 +216,15 @@ const ContactUsComponent = () => {
                           />
                         {errors.phone && <p className="error-message">{errors.phone.message}</p>}
                     </div>
-
-
-
                     <div className={style.marginbotton}>
             <label htmlFor="email">Email</label>
             <Controller
               name="email"
               control={control}
               render={({ field }) => <input placeholder="company@email.com" id="email" {...field} />}/>
-           
             {errors.email && <p className="error-message">{errors.email.message}</p>}
           </div>
-
-          <div className={style.marginbotton}>
-          
+          <div className={style.marginbotton}> 
             <ReCAPTCHA
         sitekey="6LdajWoqAAAAABL-mFA9wqzKrY77pE6cxhq3PSQM"
         onChange={handleCaptchaChange}
@@ -250,14 +232,8 @@ const ContactUsComponent = () => {
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {errors.email && <p className="error-message">{errors.email.message}</p>}
           </div>
-         
-    
         </form>
             </Dialog>
-
-
-
-
       <Dialog visible={visibleEmail} style={{ width: '514px' }} className={style.requestsendModel} onHide={() => {if (!visibleEmail) return; setVisibleEmail(false); }} footer={footerContentEmail} header={HeaderContentEmail}>
       <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
           <div className={style.marginbotton}>
@@ -283,13 +259,10 @@ const ContactUsComponent = () => {
            <textarea rows="5"></textarea>
             {errors.email && <p className="error-message">{errors.email.message}</p>}
           </div>
-    
           <div className={style.marginbotton}>
-          
             <ReCAPTCHA
         sitekey="6LdajWoqAAAAABL-mFA9wqzKrY77pE6cxhq3PSQM"
-        onChange={handleCaptchaChange}
-      />
+        onChange={handleCaptchaChange}/>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {errors.email && <p className="error-message">{errors.email.message}</p>}
           </div>

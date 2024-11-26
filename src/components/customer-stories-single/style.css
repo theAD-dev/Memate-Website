@@ -15,13 +15,14 @@
   align-items: center;  
   justify-content: flex-start;
 }
-.MainPageLink{
+.MainPageLink {
   color: #667085;
-font-size: 14px;
-font-style: normal;
-font-weight: 310;
-line-height: 20px; 
-text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 310;
+  line-height: 20px;
+  text-decoration: none;
+  white-space: nowrap;
 }
 .pageBreadcrumbs ul li {
   list-style: none;

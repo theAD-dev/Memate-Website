@@ -17,6 +17,126 @@
   padding-left: 0;
   margin-bottom: 37px;
 }
+.stickySocialWrap.scrolled.hide {
+  opacity: 0;
+}
+.blogMetstags {
+  margin: 56px 0;
+  display: flex;
+}
+.blogSinglePageMightLike .parent-blog-pageWrap img {
+  height: 256px;
+  object-fit: cover;
+}
+.postCategory {
+  color: #888E9E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%;
+  letter-spacing: -0.16px;
+}
+.blogMetstags strong {
+  color: var(--Gray-700, #344054);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: normal;
+  margin-right: 14px;
+  margin-top: 10px;
+}
+.blogSinglePageMightLike h2 {
+  color: #29292B;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.blogMetstags .tag {
+  border-radius: 12px;
+  border: 1px solid var(--Gray-300, #D0D5DD);
+  background: var(--Gray-50, #F9FAFB);
+  height: 36px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  color: var(--Gray-700, #344054);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: normal;
+  margin: 4px 4px;
+  display: inline-block;
+  line-height: 13px;
+}
+.stickySocialWrap {
+  position: fixed;
+  margin-left: -97px;
+  margin-top: 44px;
+  transition: top 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.stickySocialWrap.scrolled {
+  top: 54px;
+  
+}
+.stickySocial:before {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #1AB2FF -4.23%, #FFB258 64.39%);
+  height: 4px;
+  align-self: stretch;
+  width: 62px;
+  left: -7px;
+  right: 0;
+  margin: 0 auto;
+}
+
+.stickySocial {
+  position: relative;
+}
+.stickySocial ul{
+margin: 0;
+padding: 0;
+}
+.stickySocial p {
+  color: var(--Gray-700, #344054);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: normal;
+  padding-top: 17px;
+}
+.stickySocial ul li {
+  list-style: none;
+  margin: 7px 0;
+}
+.stickySocial ul li a {
+  border-radius: 133.333px;
+  background: var(--Gray-100, #F2F4F7);
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in-out;
+}
+.stickySocial ul li a:hover img {
+  transform: scale(1.1);
+}
+
+/* .stickySocial {
+  position: sticky;
+  top: 100px; 
+  background-color: #f9f9f9;
+  padding: 10px;
+  z-index: 100; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+} */
 .parent.parentSingle .pageBreadcrumbs li:first-child {
   padding-left: 0;
 }
