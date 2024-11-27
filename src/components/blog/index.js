@@ -95,7 +95,7 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
                 <div className="blog-image-container-div">
                   {/* <img src={blogs[0].featured_img_url} /> */}
                   <div className="img-container-1-div-text-1">
-                  {formatDateWithOrdinal(postsLatest[0]?.publish_date)} | {postsLatest[0]?.publish_date.author}
+                  {formatDateWithOrdinal(postsLatest[0]?.publish_date)} | {postsLatest[0]?.author}
                      </div>
                 </div>
                 <div className="img-container-1-div-text-2">
@@ -127,7 +127,7 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
 
               <div className="img-heading-container ">
                 <div className="date-A"> 
-                {formatDateWithOrdinal(postsLatest[1]?.publish_date)} | {postsLatest[1]?.publish_date.author}
+                {formatDateWithOrdinal(postsLatest[1]?.publish_date)} | {postsLatest[1]?.author}
                 </div>
                 <div className="date-heading-A"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
                 <div className='postCategory'>
@@ -147,7 +147,7 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
               <div className="img-heading-container">
                 <div className="date-A"> 
 
-                {formatDateWithOrdinal(postsLatest[2]?.publish_date)} | {postsLatest[2]?.publish_date.author}
+                {formatDateWithOrdinal(postsLatest[2]?.publish_date)} | {postsLatest[2]?.author}
                 </div>
                 <div className="date-heading-A"><Link to={`/news/${postsLatest[2]?.slug}`}>{postsLatest[2]?.title}</Link></div>
                 <div className='postCategory'>

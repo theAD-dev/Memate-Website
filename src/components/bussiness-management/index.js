@@ -30,9 +30,9 @@ const BussinessManagement = () => {
            {/* <img src={Images.landingHero} /> */}
         <div className="macBook-image">
           <div className="big-img-mac">
-          <img src={Images.landingHero}  />
+          <img src={Images.landingHero} style={{ width: "898.34px" }} alt="Landing Hero" />
             <div className="iphone-image">
-              <img src={Images.iphone} data-aos="aos-fade"
+              <img src={Images.landingHeroiPhone} data-aos="aos-fade"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="200"
@@ -41,7 +41,7 @@ const BussinessManagement = () => {
     data-aos-anchor-placement="aos-fade"/>
             </div>
             <div className="create-new-text">
-              <img src={Images.landingHeroitem} data-aos="fade-up"
+              <img src={Images.landingHerotask} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="300"
@@ -60,7 +60,7 @@ const BussinessManagement = () => {
             </div>
 
             <div className="metric-item">
-              <img src={Images.landingHerotask} data-aos="fade-up"
+              <img src={Images.landingHeroitem} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="700"

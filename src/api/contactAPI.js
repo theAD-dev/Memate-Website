@@ -22,3 +22,21 @@ export const RequestCallBackAPI = async (formData) => {
     }
   };
   
+
+
+  export const SubscribeEmail = async (data) => {
+    try {
+      const response = await fetch('https://admin.memate.au/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      return response.json();
+    } catch (error) {
+      console.error('Error in SubscribeEmail:', error);
+      throw error;
+    }
+  };
+  

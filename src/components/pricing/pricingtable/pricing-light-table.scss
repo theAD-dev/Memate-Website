@@ -15,7 +15,7 @@
   .pricingtableWrapper {
     width: 100%;
     border-collapse: collapse;
-    text-align: left;
+    text-align: center;
     margin-top: 40px;
    
     thead {
@@ -185,13 +185,7 @@
     }
   
     tbody {
-      &.tdPaddingStyle{
-        tr{
-          td{
-            padding-left: 117px !important;
-          }
-        }
-      }
+   
       tr {
         &:nth-child(odd) {
           background: var(--Gray-50, #F9FAFB);

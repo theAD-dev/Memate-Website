@@ -5,12 +5,37 @@
   flex-wrap: wrap;
   gap: 90px;
 }
-
+.termsOfUse-section .kb-section-description ul li strong {
+  color: #3F3F3F;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
 .tos-list {
   list-style: none;
   width: 220px;
 }
-
+.termsOfUse-section {
+  gap: 0px !important;
+}
+.termsOfUse-section .kb-section-description ul li {
+  list-style: none;
+}
+.termsOfUse-section .kb-section-description ul li ul li {
+  list-style: disc;
+  margin-left: 29px;
+}
+.termsOfUse-section .kb-section-description {
+  margin-bottom: 0;
+}
+.termsOfUse-section .kb-section-heading {
+  color: #29292B;
+  font-size: 33px !important;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 150%;
+}
 .tos-list-item-active {
   font-family: "sequel_sans_bold_disp" !important;
   font-size: 18px;
