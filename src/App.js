@@ -70,6 +70,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import WikiSinglePage from "./components/memate-wiki/wiki-single-page";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import MemateWikiSinglePage from "./pages/wiki-single-page";
+import CategoryPage from "./pages/single-page/category-page";
 const queryClient = new QueryClient();
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -187,6 +188,7 @@ try {
         <Route
           path="/news/:slug"
           element={<SinglePage postsSingle={posts} postsLatest={postsLatest} />} />
+        <Route path="/news/category/:id" element={<CategoryPage postsSingle={posts} postsLatest={postsLatest} />} />
         <Route path="/software-update" exact element={<SoftwareUpdatePage />} />
         <Route path="/creative-agencies" exact element={<IndustryPage />} />
         <Route path="/contact-us" exact element={<ContactUsPage />} />

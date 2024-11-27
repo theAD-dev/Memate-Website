@@ -11,6 +11,7 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
 const Single = ({posts, postsSingle, postsLatest }) => {
   const { slug } = useParams(); 
   const [post, setPost] = useState(null);
+  console.log('post: ', post);
   const [loading, setLoading] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNearBottom, setIsNearBottom] = useState(false);
@@ -108,6 +109,7 @@ const Single = ({posts, postsSingle, postsLatest }) => {
     }
   };
 
+  console.log(' post.category?.id: ',  post.category?.id);
   return (
     <div>
       
@@ -119,7 +121,7 @@ const Single = ({posts, postsSingle, postsLatest }) => {
             <Link to="/news" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>
        
-        <div className="accounting-text-A">{post.category?.title}</div>
+        <div className="accounting-text-A categoryLinkTitle "><Link to={`/news/category/${post.category?.id}`}>{post.category?.title}</Link></div>
         <div className="heading-1-A">{post.title}</div>
         <div className="heading-date-A">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
         <div className={`stickySocialWrap ${isScrolled ? 'scrolled' : ''} ${

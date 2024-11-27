@@ -124,6 +124,16 @@ padding: 0;
   align-items: center;
   transition: all .2s ease-in-out;
 }
+.categoryLinkTitle a{
+  color: #29292b;
+    font-family: "sequel_sans" !important;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 100%;
+    letter-spacing: -0.21px;
+    text-decoration: none;
+}
 .stickySocial ul li a:hover img {
   transform: scale(1.1);
 }
@@ -143,6 +153,11 @@ padding: 0;
 .parent.parentSingle .pageBreadcrumbs li:last-child a {
   color: #106B99;
   text-decoration: none;
+  overflow: hidden;
+  width: 400px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .parent.parentSingle .pageBreadcrumbs .backButStories {
   margin-left: 0;

@@ -45,32 +45,40 @@ h1.text {
 .big-img-mac {
   position: relative;
 }
-
 .iphone-image {
   position: absolute;
-  right: 81px;
+  right: 69px;
   bottom: 28px;
 }
-
 .create-new-text {
   position: absolute;
-  bottom: 67px;
-  left: 64px;
+  bottom: 80px;
+  left: 84px;
 }
-.macBook-image img {
-  width: auto;
+.iphone-image img{
+  width: 215px;
+}
+
+.metric-item img ,.create-new-text img{
+  width: 255px;
+}
+.create-new-model img {
+  width: 215px;
+}
+.create-new-model img {
+  width: 151px;
 }
 .create-new-model {
   position: absolute;
-  top: 39%;
-  left: -14%;
+  top: 41%;
+  left: -11%;
   right: 0;
   margin: 0 auto;
 }
 .metric-item {
   position: absolute;
-  bottom: 5px;
-  left: -8px;
+  bottom: 22px;
+  left: 24px;
 }
 .macBook-image {
   width: 1060px;
