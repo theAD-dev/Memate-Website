@@ -15,6 +15,7 @@ const Single = ({posts, postsSingle, postsLatest }) => {
   const [loading, setLoading] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNearBottom, setIsNearBottom] = useState(false);
+  
 
   useEffect(() => {
     const handleScroll = () => {

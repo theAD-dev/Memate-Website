@@ -117,7 +117,7 @@ const ContactUsComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to='' target="_blank" className="nav-btn--get-started  navbar-link"><TronButton text="Get started" /></Link>
+        <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started  navbar-link"><TronButton text="Get started" /></Link>
       </div>
       </div>
       <div className='query-section' data-aos="fade-up"
@@ -188,14 +188,14 @@ const ContactUsComponent = () => {
           <p>If we have let you down in any way, we want to hear it at complaints@memate.com.au</p>
         </div>
       </div>
-      <Dialog visible={visible} style={{ width: '514px' }} className={style.requestsendModel} onHide={() => {if (!visible) return; setVisible(false); }} footer={footerContent} header={HeaderContent}>
+      <Dialog visible={visible} style={{ width: '566px' }} className={style.requestsendModel} onHide={() => {if (!visible) return; setVisible(false); }} footer={footerContent} header={HeaderContent}>
       <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
           <div className={style.marginbotton}>
             <label htmlFor="username">Name</label>
             <Controller
               name="username"
               control={control}
-              render={({ field }) => <input placeholder="Enter name" id="username" {...field} />}/>
+              render={({ field }) => <input placeholder="Enter your name" id="username" {...field} />}/>
             {errors.username && <p className="error-message">{errors.username.message}</p>}
           </div>
           <div className={style.marginbotton}>
@@ -234,14 +234,14 @@ const ContactUsComponent = () => {
           </div>
         </form>
             </Dialog>
-      <Dialog visible={visibleEmail} style={{ width: '514px' }} className={style.requestsendModel} onHide={() => {if (!visibleEmail) return; setVisibleEmail(false); }} footer={footerContentEmail} header={HeaderContentEmail}>
+      <Dialog visible={visibleEmail} style={{ width: '566px' }} className={style.requestsendModel} onHide={() => {if (!visibleEmail) return; setVisibleEmail(false); }} footer={footerContentEmail} header={HeaderContentEmail}>
       <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
           <div className={style.marginbotton}>
             <label htmlFor="username">Name</label>
             <Controller
               name="username"
               control={control}
-              render={({ field }) => <input placeholder="Enter name" id="username" {...field} />}/>
+              render={({ field }) => <input placeholder="Enter your name" id="username" {...field} />}/>
             {errors.username && <p className="error-message">{errors.username.message}</p>}
           </div>
           <div className={style.marginbotton}>

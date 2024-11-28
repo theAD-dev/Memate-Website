@@ -12,7 +12,7 @@ import "./App.css";
 import ContactUsPage from "./pages/contact-us";
 import ScrollToTop from "./layout/ScrollToTop";
 import KnowledgeBasePage from "./pages/knowledge-base";
-import { blogList, blogLatest } from './api/blogAPI';
+import { blogList, blogLatest ,getCategories} from './api/blogAPI';
 import SupplierDatabasePage from "./pages/supplier-database";
 import TOSPage from "./pages/tos-page";
 import PricingPage from "./pages/pricing";
@@ -85,6 +85,7 @@ try {
   savedlatestPostData = [];
 }
   const [postsLatest, setPostsLatest] = useState(savedlatestPostData || []);
+  const [PostsCategories, setPostsCategories] = useState();
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPosts, setTotalPosts] = useState(0);
@@ -105,6 +106,22 @@ try {
 
     if (!postsLatest?.length) fetchDataLatest();
   }, []);
+
+  useEffect(() => {
+    const fetchCateLatest = async () => {
+      try {
+        const dataCat = await getCategories();
+        sessionStorage.setItem('latestCat', JSON.stringify(dataCat));
+        setPostsCategories(dataCat);
+      } catch (err) {
+        console.log('Error during getting the latest post:', err);
+      }
+    };
+
+    if (!PostsCategories?.length) fetchCateLatest();
+  }, []);
+  
+
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -184,7 +201,7 @@ try {
         <Route
           path="/news"
           exact
-          element={<BlogPage posts={posts} postsLatest={postsLatest} totalPosts={totalPosts} loading={loading} handleNext={handleNext} />} />
+          element={<BlogPage posts={posts} postsLatest={postsLatest} PostsCategories={PostsCategories} totalPosts={totalPosts} loading={loading} handleNext={handleNext} />} />
         <Route
           path="/news/:slug"
           element={<SinglePage postsSingle={posts} postsLatest={postsLatest} />} />

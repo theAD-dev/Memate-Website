@@ -12,12 +12,13 @@ export const wikiBase = async () => {
       const response = await fetch("https://admin.memate.au/api/get-wiki", requestOptions);
       const result = await response.json(); 
   
-      return Array.isArray(result.data) ? result.data : [];
+      return result;
   
     } catch (error) {
       console.error("Error fetching blog posts:", error);
       return [];
     }
+
   };
 export const wikiBaseId = async (idData ) => {
 
@@ -44,6 +45,7 @@ export const wikiBaseId = async (idData ) => {
 
 
   export const wikiBaseBSearch = async (searchQuery) => {
+    console.log('searchQuery: ', searchQuery);
     const myHeaders = new Headers();
     myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
   
@@ -54,23 +56,13 @@ export const wikiBaseId = async (idData ) => {
     };
   
     try {
-      const response = await fetch(`https://admin.memate.au/api/wiki-search/${searchQuery}`, requestOptions);
+      const response = await fetch(`https://admin.memate.au/api/get-wiki?search=${searchQuery}`, requestOptions);
+      const result = await response.json(); 
   
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+      return result;
   
-      const result = await response.json();
-  
-      if (result.status === 200 && result.data) {
-        // Assuming you need to work only with the `data` key
-        return result.data;
-      } else {
-        console.error("Unexpected API response format", result);
-        return [];
-      }
     } catch (error) {
-      console.error("Error fetching filtered data:", error);
+      console.error("Error fetching blog posts:", error);
       return [];
     }
   };

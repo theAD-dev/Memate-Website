@@ -3,9 +3,10 @@ import "./style.css";
 import Images from "../../assests/blog-images";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
+import CategoriesTabbing from "./categories-tabbing";
 
 
-function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
+function Blog({ posts, totalPosts,PostsCategories, loading, postsLatest, handleNext }) {
   console.log('postsLatest: ', postsLatest);
   const formatDateWithOrdinal = (dateString) => {
     try {
@@ -43,13 +44,7 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
       </Helmet>
       <div className="parent-blog-page ">
         <div className="parent-blog">
-          <div className="heading-container" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="500"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+          <div className="heading-container heading-container-categories" >
             <h1 className="heading-blog">
               latest <br></br>articles
             </h1>
@@ -59,9 +54,11 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
             <div className="dog-img-container1 dog-img-container">
               <img className="dog-img" src={Images.blogImgDog}></img>
             </div>
+           
           </div>
-          
-          <Link to={`/news/${postsLatest[0]?.slug}`}>
+            <CategoriesTabbing PostsCategories={PostsCategories} />
+       <div className="cateLatesWrap">
+       <Link to={`/news/${postsLatest[0]?.slug}`}>
           <div
             className="blog-image-container-1 parent-blog-pageWrap "
             style={{
@@ -108,6 +105,9 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
             </div>
             </div>
             </Link>
+       </div>
+
+           
          
           <div className="blog-img-container-2 parent-blog-pageWrap parent-blog-pageWrap1" data-aos="fade-up"
     data-aos-offset="50"
@@ -157,6 +157,10 @@ function Blog({ posts, totalPosts, loading, postsLatest, handleNext }) {
             </div>
             <div className="latest-article-parent"></div>
           </div>
+
+
+
+
           <span className="latest-article-heading" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"

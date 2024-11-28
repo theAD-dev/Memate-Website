@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
           markers: false,
           onUpdate: (self) => {
             // Update the opacity based on the progress of the ScrollTrigger
-            stickySectionRef.current.style.opacity = self?.progress + 0.5;
+            stickySectionRef.current.style.opacity = self?.progress + 0.1;
           }
         },
 });
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
 
     const tl = gsap.timeline({
       repeat: -1,
-      repeatDelay: 5,
+      repeatDelay: 2,
       scrollTrigger: {
         trigger: buttonRef.current,
         scrub: false,
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
 
     tl.to(buttonRef.current, {
       scale: 1.1,
-      duration: 0.9,
+      duration: 0.2,
       yoyo: true,
     });
 
