@@ -12,7 +12,7 @@ import "./App.css";
 import ContactUsPage from "./pages/contact-us";
 import ScrollToTop from "./layout/ScrollToTop";
 import KnowledgeBasePage from "./pages/knowledge-base";
-import { blogList, blogLatest ,getCategories} from './api/blogAPI';
+import { blogList, blogLatest ,getCategories,fetchCategoryPost} from './api/blogAPI';
 import SupplierDatabasePage from "./pages/supplier-database";
 import TOSPage from "./pages/tos-page";
 import PricingPage from "./pages/pricing";
@@ -71,6 +71,7 @@ import WikiSinglePage from "./components/memate-wiki/wiki-single-page";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import MemateWikiSinglePage from "./pages/wiki-single-page";
 import CategoryPage from "./pages/single-page/category-page";
+import BlogTagPage from "./pages/single-page/blog-tags-page";
 const queryClient = new QueryClient();
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -87,6 +88,8 @@ try {
   const [postsLatest, setPostsLatest] = useState(savedlatestPostData || []);
   const [PostsCategories, setPostsCategories] = useState();
   const [posts, setPosts] = useState([]);
+  const [postCateId , setPostCateId] = useState()
+  const [activeCategory, setActiveCategory] = useState();
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPosts, setTotalPosts] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -107,6 +110,8 @@ try {
     if (!postsLatest?.length) fetchDataLatest();
   }, []);
 
+  // PostsCategories======================
+
   useEffect(() => {
     const fetchCateLatest = async () => {
       try {
@@ -120,23 +125,31 @@ try {
 
     if (!PostsCategories?.length) fetchCateLatest();
   }, []);
-  
+
+  const [newposts, setNewPosts] = useState();
+  console.log('newposts: ', newposts);
+  // console.log('newposts: ', newposts);
+  // useEffect(() => {
+  //   const fetchCatepost = async () => {
+  //     try {
+  //       const datacategory = await fetchCategoryPost(postCateId);
+  //       setNewPosts(datacategory);
+  //     } catch (err) {
+  //       console.log('Error during getting the latest post:', err);
+  //     }
+  //   };
+
+  //   if (!PostsCategories?.length) fetchCatepost();
+  // }, []);
 
 
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
       try {
-        const response = await blogList(currentPage, limit);
-        const { data, total } = response;
-        setTotalPosts(total);
-
-        setPosts((prevPosts) => {
-          const uniquePosts = data?.filter(
-            (newPost) => !prevPosts.some((post) => post.id === newPost.id)
-          );
-          return [...prevPosts, ...uniquePosts];
-        });
+        const response = await fetchCategoryPost(postCateId);
+        setNewPosts(response);
+   
       } catch (error) {
         setError(error);
         console.error("Error fetching blog posts:", error);
@@ -144,9 +157,46 @@ try {
         setLoading(false);
       }
     };
-
+  
     fetchPosts();
-  }, [currentPage]);
+  }, [postCateId]); 
+  
+
+
+
+  const handleTabClick = (categoryId) => {
+    setActiveCategory(categoryId);
+    setPostCateId(categoryId); 
+  };
+
+
+  
+ // PostsCategories======================
+
+ useEffect(() => {
+  const fetchPosts = async () => {
+    setLoading(true);
+    try {
+      const response = await blogList(currentPage, limit);
+      const { data, total } = response;
+      setTotalPosts(total);
+      setPosts((prevPosts) => {
+        const uniquePosts = data?.filter(
+          (newPost) => !prevPosts.some((post) => post.id === newPost.id)
+        );
+        return [...prevPosts, ...uniquePosts];
+      });
+    } catch (error) {
+      setError(error);
+      console.error("Error fetching blog posts:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchPosts();
+}, [currentPage]); 
+
 
 
   const handleNext = () => {
@@ -154,7 +204,10 @@ try {
   };
 
 
-
+  useEffect(() => {
+    setPosts([]); 
+    setCurrentPage(1); 
+  }, [postCateId]);
 
   useEffect(() => {
     const gtAnimate = gsap.utils.toArray('.gradientAnimenate');
@@ -201,10 +254,14 @@ try {
         <Route
           path="/news"
           exact
-          element={<BlogPage posts={posts} postsLatest={postsLatest} PostsCategories={PostsCategories} totalPosts={totalPosts} loading={loading} handleNext={handleNext} />} />
+          element={<BlogPage PostsCategories={PostsCategories} activeCategory={activeCategory} handleTabClick={handleTabClick} posts={posts} postsLatest={postsLatest}  totalPosts={totalPosts} loading={loading} handleNext={handleNext} />} />
         <Route
           path="/news/:slug"
           element={<SinglePage postsSingle={posts} postsLatest={postsLatest} />} />
+        <Route
+          path="/news/tags/:slug"
+          element={<BlogTagPage postsSingle={posts} postsLatest={postsLatest} />} />
+        
         <Route path="/news/category/:id" element={<CategoryPage postsSingle={posts} postsLatest={postsLatest} />} />
         <Route path="/software-update" exact element={<SoftwareUpdatePage />} />
         <Route path="/creative-agencies" exact element={<IndustryPage />} />

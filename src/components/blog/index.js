@@ -3,11 +3,12 @@ import "./style.css";
 import Images from "../../assests/blog-images";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
-import CategoriesTabbing from "./categories-tabbing";
 
 
-function Blog({ posts, totalPosts,PostsCategories, loading, postsLatest, handleNext }) {
-  console.log('postsLatest: ', postsLatest);
+
+function Blog({PostsCategories,activeCategory,handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
+  
+
   const formatDateWithOrdinal = (dateString) => {
     try {
       const date = new Date(dateString.replace(/(\d+)(st|nd|rd|th)/, '$1')); // Remove suffix for parsing
@@ -54,9 +55,44 @@ function Blog({ posts, totalPosts,PostsCategories, loading, postsLatest, handleN
             <div className="dog-img-container1 dog-img-container">
               <img className="dog-img" src={Images.blogImgDog}></img>
             </div>
-           
           </div>
-            <CategoriesTabbing PostsCategories={PostsCategories} />
+          <div className="categoriesMainWrap">
+      <div style={{ display: "flex",gap: "8px", marginBottom: "1rem" }}>
+        {PostsCategories?.map((postCat) => (
+       <button
+       key={postCat.id}
+       className={`filterBlogTabBtn ${
+         activeCategory === postCat.id ? "active" : ""
+       }`}
+       onClick={() => handleTabClick(postCat.id)}
+     >
+       {postCat.title}
+     </button>
+        ))}
+      </div>
+
+      {/* Posts under Active Category */}
+      <div className="categories">
+        {PostsCategories?.map((postCat) => (
+          <div key={postCat.id}>
+            {activeCategory === postCat.id &&
+              postCat.posts?.map((post) => (
+                <div key={post.id} style={{ marginBottom: "0.5rem" }}>
+                  {post.title}
+                </div>
+              ))}
+          </div>
+        ))}
+      </div>
+    </div>
+
+
+
+
+
+
+
+
        <div className="cateLatesWrap">
        <Link to={`/news/${postsLatest[0]?.slug}`}>
           <div
