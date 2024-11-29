@@ -11,11 +11,9 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
 const Single = ({posts, postsSingle, postsLatest }) => {
   const { slug } = useParams(); 
   const [post, setPost] = useState(null);
-  console.log('post: ', post);
   const [loading, setLoading] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNearBottom, setIsNearBottom] = useState(false);
-  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -157,11 +155,12 @@ const Single = ({posts, postsSingle, postsLatest }) => {
         <div className="blogMetstags">
           <strong>Tags</strong>
       <div className='blogloopdata'>
-      {post.meta_keyword.split(',').map((tag, index) => (
-          <span key={index} className="tag">
-            {tag.trim()}
-          </span>
-        ))}
+      {(post.meta_keyword || '').split(',').map((tag, index) => (
+   <span key={index} className="tag">
+     <Link to={`/news/tags/${slug}`}>{tag.trim()}</Link>
+        </span>
+      ))}
+
       </div>
 </div>
     <div className='blogSinglePageMightLike parent-blog-page'>
