@@ -394,8 +394,13 @@ button.filterBlogTabBtn {
 #blogGrid  .img-container-3 {
   grid-template-columns: 1fr;
 }
+
 #blogGrid .dog-img-container1 {
-  top: 0px !important;
+  top: 137px !important;
+  left: 0px!important;
+}
+#blogGrid .dog-img-container1 {
+  top: 137px !important;
   left: 0px!important;
 }
 .img-container-3-img-1 {

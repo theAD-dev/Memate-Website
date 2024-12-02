@@ -28,13 +28,18 @@
   height: 256px;
   object-fit: cover;
 }
-.postCategory {
+.postCategory a {
   color: #888E9E;
   font-size: 16px;
   font-style: normal;
   font-weight: 360;
   line-height: 140%;
   letter-spacing: -0.16px;
+  text-decoration: none;
+}
+.nodataPost {
+  text-align: center;
+  font-size: 20px;
 }
 .blogMetstags strong {
   color: var(--Gray-700, #344054);
@@ -53,6 +58,12 @@
   font-weight: 600;
   line-height: normal;
 }
+.blog-img-container-2.parent-blog-pageWrap.parent-blog-pageWrap1.aos-init.aos-animate {
+  margin-bottom: 49px;
+}
+.parent-blog-page  .latest-article-heading {
+  margin-top: 30px;
+}
 .blogMetstags .tag a {
   border-radius: 12px;
   border: 1px solid var(--Gray-300, #D0D5DD);
@@ -70,6 +81,17 @@
   display: inline-block;
   line-height: 13px;
   text-decoration: none ;
+}
+.slugTagHead h1 {
+  text-transform: capitalize;
+}
+.slugTagHead {
+  text-align: center;
+  margin: 60px 0 67px;
+}
+.slugTagHead {
+  text-align: center;
+  margin: 60px 0 67px;
 }
 .stickySocialWrap {
   position: fixed;

@@ -107,6 +107,7 @@ export const getCategoriesID = async () => {
 };
 ///fetchCategoryPost
 export const fetchCategoryPost = async (postCateId) => {
+  console.log('postCateId: ', postCateId);
   const myHeaders = new Headers();
   myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
 
@@ -129,26 +130,24 @@ export const fetchCategoryPost = async (postCateId) => {
 
 ///fetchCategoryPost
 export const slugTagsPost = async (slug) => {
-  console.log('slugcccccccccddddddddddddccccccc: ', slug);
-
-
-  const myHeaders = new Headers();
-  myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
-
-  const requestOptions = {
-    method: "GET",
-    headers: myHeaders,
-    redirect: "follow"
-  };
-
-  fetch(`https://admin.memate.au/api/news-tag/business-management-software`, requestOptions)
-    .then((response) => response.json())
-    .then((result) => console.log(result))
-    .catch((error) => console.error(error));
-
-
-
-
+  console.log('slugpppppppppppppppp------------: ', slug);
+    const myHeaders = new Headers();
+    myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
+  
+    const requestOptions = {
+      method: "GET",
+      headers: myHeaders,
+      redirect: "follow"
+    };
+  
+    try {
+      const response = await fetch(`https://admin.memate.au/api/news-tag/${slug}`, requestOptions);
+      const result = await response.json();
+      return result;
+    } catch {
+  
+  
+    }
 };
 
 

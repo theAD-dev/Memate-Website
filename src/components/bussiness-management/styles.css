@@ -180,11 +180,14 @@ span.gradientAnimenate {
 .metric-item ,.create-new-text,.create-new-text,.create-new-model{
   display: none;
 }
-.macBook-image img {
-  width: 100%;
+
+.integration-brand-container img, .macBook-image img {
+  width: 100% !important;
 }
-.integration-brand-container img {
-  width: 100%;
+.iphone-image img {
+  width: 94px !important;
+  right: 0;
+  top: -10px;
 }
 .home-page-content {
   padding: 0px 15px;

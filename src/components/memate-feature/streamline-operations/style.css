@@ -162,7 +162,7 @@ button.get-started-btn {
         line-height: 28px;
     }
     .operation-right span.gradientAnimenate {
-        font-size: 71px;
+        font-size: 71px !important;
         position: absolute;
         bottom: 159px;
         line-height: 70px;
