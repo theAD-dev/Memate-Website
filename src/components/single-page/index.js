@@ -4,6 +4,8 @@ import { Link, useParams } from 'react-router-dom';
 import Images from "../../assests/blog-images";
 import { blogSingle } from '../../api/blogAPI';
 import SubscribeForm from './subscribe';
+import ShareComponent from './ShareComponent';
+import { Helmet } from 'react-helmet';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 
@@ -111,7 +113,12 @@ const Single = ({posts, postsSingle, postsLatest }) => {
   console.log(' post.category?.id: ',  post.category?.id);
   return (
     <div>
-      
+       <Helmet>
+       <meta property="og:title" content="Post Title" />
+        <meta property="og:description" content="Post Description" />
+        <meta property="og:image" content="https://memate.au/image.jpg" />
+        <meta property="og:url" content="https://memate.au/news/post-slug" />
+      </Helmet>
       <div className="parent parentSingle">
       <div className="pageBreadcrumbs">
             <ul>
@@ -128,20 +135,13 @@ const Single = ({posts, postsSingle, postsLatest }) => {
       }`} >
   <div className="stickySocial">
     <p>Share</p>
-    <ul>
-      <li>
-        <Link className="fb socialIcon" to="/" aria-label="Share on Facebook"><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/facebook.svg' /></Link>
-      </li>
-      <li>
-        <Link className="twitter socialIcon" to="/" aria-label="Share on Twitter"><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/twitter.svg' /></Link>
-      </li>
-      <li>
-        <Link className="linkedin socialIcon" to="/" aria-label="Share on LinkedIn"><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/linkedin.svg' /></Link>
-      </li>
-      <li>
-        <Link className="link socialIcon" to="/" aria-label="Share Link"><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/link.svg' /></Link>
-      </li>
-    </ul>
+    <ShareComponent
+  url={`https://memate.au/news/${post.slug}`}
+  title={post.title}
+  image={post.featured_img_url}
+  description={post.description}
+/>
+  
   </div>
 </div>
 

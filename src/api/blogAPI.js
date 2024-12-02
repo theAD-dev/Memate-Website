@@ -1,4 +1,4 @@
-export const blogList = async (page, limit) => {
+export const blogList = async (page, limit, activeCategory) => {
   const myHeaders = new Headers();
   myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
 
@@ -10,9 +10,15 @@ export const blogList = async (page, limit) => {
 
   try {
     const response = await fetch(
-      `https://admin.memate.au/api/news?page=${page}&limit=${limit}`,
+      `https://admin.memate.au/api/news?page=${page}&limit=${limit}&category_id=${activeCategory || 0}`,
       requestOptions
     );
+    if (!response.ok) {
+      if (response.status === 404) {
+        throw new Error('Resource not found (404)');
+      }
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
     const result = await response.json();
     console.log("API response:", result);
 
@@ -39,7 +45,7 @@ export const blogSingle = async (slug) => {
 
   try {
     const response = await fetch(`https://admin.memate.au/api/news/${slug}`, requestOptions);
-    const result = await response.json(); 
+    const result = await response.json();
     console.log("API response:", result);
 
     return Array.isArray(result.data) ? result.data : [];
@@ -65,7 +71,7 @@ export const getCategories = async () => {
 
   try {
     const response = await fetch(`https://admin.memate.au/api/get-all-news-categories/`, requestOptions);
-    const result = await response.json(); 
+    const result = await response.json();
     console.log("API response:", result);
 
     return result;
@@ -89,7 +95,7 @@ export const getCategoriesID = async () => {
 
   try {
     const response = await fetch(`https://admin.memate.au/api/get-all-news-categories/`, requestOptions);
-    const result = await response.json(); 
+    const result = await response.json();
     console.log("API response:", result);
 
     return result;
@@ -109,14 +115,14 @@ export const fetchCategoryPost = async (postCateId) => {
     headers: myHeaders,
     redirect: "follow"
   };
- 
+
   try {
     const response = await fetch(`https://admin.memate.au/api/news?category_id=${postCateId}`, requestOptions);
-    const result = await response.json(); 
+    const result = await response.json();
     return result;
-  } catch  {
-   
-    
+  } catch {
+
+
   }
 };
 
@@ -128,13 +134,13 @@ export const slugTagsPost = async (slug) => {
 
   const myHeaders = new Headers();
   myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
-  
+
   const requestOptions = {
     method: "GET",
     headers: myHeaders,
     redirect: "follow"
   };
-  
+
   fetch(`https://admin.memate.au/api/news-tag/business-management-software`, requestOptions)
     .then((response) => response.json())
     .then((result) => console.log(result))
@@ -159,11 +165,11 @@ export const blogLatest = async () => {
 
   try {
     const response = await fetch(`https://admin.memate.au/api/get-latest-three-news`, requestOptions);
-    const result = await response.json(); 
+    const result = await response.json();
     return result;
-  } catch  {
-   
-    
+  } catch {
+
+
   }
 };
 

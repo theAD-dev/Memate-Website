@@ -1,18 +1,18 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const CategoriesTabbing = ({ PostsCategories }) => {
-  const [postCateId , setPostCateId] = useState()
+  const [postCateId, setPostCateId] = useState()
   console.log('postCateId: ', postCateId);
-    const [activeCategory, setActiveCategory] = useState(() => {
-      return localStorage.getItem("activeCategory")
-        ? Number(localStorage.getItem("activeCategory"))
-        : PostsCategories[0]?.id;
-    });
+  const [activeCategory, setActiveCategory] = useState(() => {
+    return localStorage.getItem("activeCategory")
+      ? Number(localStorage.getItem("activeCategory"))
+      : PostsCategories[0]?.id;
+  });
 
   const handleTabClick = (categoryId) => {
     setActiveCategory(categoryId);
     setPostCateId(categoryId);
-    
+
   };
 
   useEffect(() => {
@@ -23,18 +23,17 @@ const CategoriesTabbing = ({ PostsCategories }) => {
 
   return (
     <div className="categoriesMainWrap">
-      <div style={{ display: "flex",gap: "8px", marginBottom: "1rem" }}>
+      <div style={{ display: "flex", gap: "8px", marginBottom: "1rem" }}>
         {PostsCategories?.map((postCat) => (
-       <button
-       key={postCat.id}
-       className={`filterBlogTabBtn ${
-         activeCategory === postCat.id ? "active" : ""
-       }`}
-       onClick={() => handleTabClick(postCat.id)}
-     >
-       {postCat.title}
-       {postCat.id}
-     </button>
+          <button
+            key={postCat.id}
+            className={`filterBlogTabBtn ${activeCategory === postCat.id ? "active" : ""
+              }`}
+            onClick={() => handleTabClick(postCat.id)}
+          >
+            {postCat.title}
+            {postCat.id}
+          </button>
         ))}
       </div>
 

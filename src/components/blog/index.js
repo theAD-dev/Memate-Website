@@ -6,18 +6,18 @@ import { Helmet } from 'react-helmet';
 
 
 
-function Blog({PostsCategories,activeCategory,handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
-  
+function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
+
 
   const formatDateWithOrdinal = (dateString) => {
     try {
       const date = new Date(dateString.replace(/(\d+)(st|nd|rd|th)/, '$1')); // Remove suffix for parsing
-  
+
       // Get day, month, and year
       const day = date.getDate();
       const month = date.toLocaleString('en-US', { month: 'long' });
       const year = date.getFullYear();
-  
+
       // Add ordinal suffix to the day
       const ordinalSuffix = (n) => {
         if (n > 3 && n < 21) return 'th'; // Handles 11th–13th
@@ -28,7 +28,7 @@ function Blog({PostsCategories,activeCategory,handleTabClick, posts, totalPosts,
           default: return 'th';
         }
       };
-  
+
       return `${day}${ordinalSuffix(day)} ${month}, ${year}`;
     } catch (error) {
       console.error("Error formatting date:", error);
@@ -57,160 +57,150 @@ function Blog({PostsCategories,activeCategory,handleTabClick, posts, totalPosts,
             </div>
           </div>
           <div className="categoriesMainWrap">
-      <div style={{ display: "flex",gap: "8px", marginBottom: "1rem" }}>
-        {PostsCategories?.map((postCat) => (
-       <button
-       key={postCat.id}
-       className={`filterBlogTabBtn ${
-         activeCategory === postCat.id ? "active" : ""
-       }`}
-       onClick={() => handleTabClick(postCat.id)}
-     >
-       {postCat.title}
-     </button>
-        ))}
-      </div>
+            <div style={{ display: "flex", gap: "8px", marginBottom: "1rem" }}>
+              {PostsCategories?.map((postCat) => (
+                <button
+                  key={postCat.id}
+                  className={`filterBlogTabBtn ${activeCategory === postCat.id ? "active" : ""
+                    }`}
+                  onClick={() => handleTabClick(postCat.id)}
+                >
+                  {postCat.title}
+                </button>
+              ))}
+            </div>
 
-      {/* Posts under Active Category */}
-      <div className="categories">
-        {PostsCategories?.map((postCat) => (
-          <div key={postCat.id}>
-            {activeCategory === postCat.id &&
-              postCat.posts?.map((post) => (
-                <div key={post.id} style={{ marginBottom: "0.5rem" }}>
-                  {post.title}
+            {/* Posts under Active Category */}
+            <div className="categories">
+              {PostsCategories?.map((postCat) => (
+                <div key={postCat.id}>
+                  {activeCategory === postCat.id &&
+                    postCat.posts?.map((post) => (
+                      <div key={post.id} style={{ marginBottom: "0.5rem" }}>
+                        {post.title}
+                      </div>
+                    ))}
                 </div>
               ))}
+            </div>
           </div>
-        ))}
-      </div>
-    </div>
 
+          {
+            activeCategory === 0 && <>
+              <div className="cateLatesWrap">
+                <Link to={`/news/${postsLatest[0]?.slug}`}>
+                  <div
+                    className="blog-image-container-1 parent-blog-pageWrap "
+                    style={{
+                      backgroundImage: `url(${postsLatest[0]?.featured_img_url || Images.blogImgempty})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      position: 'relative',
+                      padding: '20px',
+                      minWidth: '1063px',
+                      height: '625px',
+                      marginTop: '-329px',
+                      borderRadius: '30px',
+                      marginBottom: '29px',
 
+                    }}
+                    data-aos="fade-up"
+                    data-aos-offset="50"
+                    data-aos-delay="50"
+                    data-aos-duration="600"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-bottom">
+                    <div className="img-container-1-div " data-aos="fade-up"
+                      data-aos-offset="50"
+                      data-aos-delay="50"
+                      data-aos-duration="1000"
+                      data-aos-mirror="true"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom">
+                      <div>
+                        <div className="blog-image-container-div">
+                          {/* <img src={blogs[0].featured_img_url} /> */}
+                          <div className="img-container-1-div-text-1">
+                            {formatDateWithOrdinal(postsLatest[0]?.publish_date)} | {postsLatest[0]?.author}
+                          </div>
+                        </div>
+                        <div className="img-container-1-div-text-2">
+                          <Link to={`/news/${postsLatest[0]?.slug}`}>{postsLatest[0]?.title}</Link>
+                        </div>
+                        <div className='postCategory'>
+                          {postsLatest[0]?.category.title}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
 
+              <div className="blog-img-container-2 parent-blog-pageWrap parent-blog-pageWrap1" data-aos="fade-up"
+                data-aos-offset="50"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-bottom">
+                <div className="blog-img-container-2-img1-div ">
+                  {postsLatest.length > 2 && (
+                    <Link to={`/news/${postsLatest[1].slug}`}><img
+                      className="img-container-2-img-1"
+                      src={postsLatest[1]?.featured_img_url || Images.blogImgempty}
+                      alt="Blog featured image"
+                    /></Link>
+                  )}
 
+                  <div className="img-heading-container ">
+                    <div className="date-A">
+                      {formatDateWithOrdinal(postsLatest[1]?.publish_date)} | {postsLatest[1]?.author}
+                    </div>
+                    <div className="date-heading-A"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
+                    <div className='postCategory'>
+                      {postsLatest[1]?.category.title}
+                    </div>
+                  </div>
+                </div>
+                <div className="blog-img-container-2-img2-div ">
+                  {postsLatest.length > 2 && (
+                    <Link to={`/news/${postsLatest[2]?.slug}`}><img
+                      className="img-container-2-img-2"
+                      src={postsLatest[2]?.featured_img_url || Images.blogImgempty}
+                      alt="Blog featured image"
+                    /></Link>
+                  )}
 
+                  <div className="img-heading-container">
+                    <div className="date-A">
+                      {formatDateWithOrdinal(postsLatest[2]?.publish_date)} | {postsLatest[2]?.author}
+                    </div>
+                    <div className="date-heading-A"><Link to={`/news/${postsLatest[2]?.slug}`}>{postsLatest[2]?.title}</Link></div>
+                    <div className='postCategory'>
+                      {postsLatest[2]?.category.title}
+                    </div>
+                  </div>
+                </div>
+                <div className="latest-article-parent"></div>
+              </div>
+            </>
+          }
 
-
-
-       <div className="cateLatesWrap">
-       <Link to={`/news/${postsLatest[0]?.slug}`}>
-          <div
-            className="blog-image-container-1 parent-blog-pageWrap "
-            style={{
-              backgroundImage: `url(${postsLatest[0]?.featured_img_url || Images.blogImgempty})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              position: 'relative',
-              padding: '20px',
-              minWidth: '1063px',
-              height: '625px',
-              marginTop: '-329px',
-              borderRadius: '30px',
-              marginBottom: '29px',
-
-            }}
-            data-aos="fade-up"
+          <span className="latest-article-heading" data-aos="fade-up"
             data-aos-offset="50"
             data-aos-delay="50"
-            data-aos-duration="600"
+            data-aos-duration="2000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom">Latest Articles</span>
+          <div className="img-container-3 parent-blog-pageWrap " data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="2500"
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom">
-            <div className="img-container-1-div " data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
-              <div>
-                <div className="blog-image-container-div">
-                  {/* <img src={blogs[0].featured_img_url} /> */}
-                  <div className="img-container-1-div-text-1">
-                  {formatDateWithOrdinal(postsLatest[0]?.publish_date)} | {postsLatest[0]?.author}
-                     </div>
-                </div>
-                <div className="img-container-1-div-text-2">
-                  <Link to={`/news/${postsLatest[0]?.slug}`}>{postsLatest[0]?.title}</Link>
-                </div>
-                <div className='postCategory'>
-                {postsLatest[0]?.category.title}
-              </div>
-              </div>
-            </div>
-            </div>
-            </Link>
-       </div>
-
-           
-         
-          <div className="blog-img-container-2 parent-blog-pageWrap parent-blog-pageWrap1" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1500"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
-            <div className="blog-img-container-2-img1-div ">
-              {postsLatest.length > 2 && (
-                <Link to={`/news/${postsLatest[1].slug}`}><img
-                  className="img-container-2-img-1"
-                  src={postsLatest[1]?.featured_img_url || Images.blogImgempty}
-                  alt="Blog featured image"
-                /></Link>
-              )}
-
-              <div className="img-heading-container ">
-                <div className="date-A"> 
-                {formatDateWithOrdinal(postsLatest[1]?.publish_date)} | {postsLatest[1]?.author}
-                </div>
-                <div className="date-heading-A"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
-                <div className='postCategory'>
-                {postsLatest[1]?.category.title}
-              </div>
-              </div>
-            </div>
-            <div className="blog-img-container-2-img2-div ">
-              {postsLatest.length > 2 && (
-                <Link to={`/news/${postsLatest[2]?.slug}`}><img
-                  className="img-container-2-img-2"
-                  src={postsLatest[2]?.featured_img_url || Images.blogImgempty}
-                  alt="Blog featured image"
-                /></Link>
-              )}
-
-              <div className="img-heading-container">
-                <div className="date-A"> 
-
-                {formatDateWithOrdinal(postsLatest[2]?.publish_date)} | {postsLatest[2]?.author}
-                </div>
-                <div className="date-heading-A"><Link to={`/news/${postsLatest[2]?.slug}`}>{postsLatest[2]?.title}</Link></div>
-                <div className='postCategory'>
-                {postsLatest[2]?.category.title}
-              </div>
-              </div>
-            </div>
-            <div className="latest-article-parent"></div>
-          </div>
-
-
-
-
-          <span className="latest-article-heading" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="2000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">Latest Articles</span>
-          <div className="img-container-3 parent-blog-pageWrap " data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="2500"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
             {posts?.map((post) => (
               <div key={post.id} className="img-container-3-div">
                 <div className="img-container-3-img1-div">
@@ -226,17 +216,17 @@ function Blog({PostsCategories,activeCategory,handleTabClick, posts, totalPosts,
                     <div className="date-heading-A"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
                   </div>
                   <div className='postCategory'>
-                {post.category.title}
-              </div>
+                    {post.category.title}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
           <div className="nextbtn-container-A">
-            {totalPosts > posts?.length && <button onClick={handleNext} className="next-page-btn-A">{ loading ? "Loading..." : "Next page" }</button>}
+            {totalPosts > posts?.length && <button onClick={handleNext} className="next-page-btn-A">{loading ? "Loading..." : "Next page"}</button>}
           </div>
         </div>
-      
+
       </div>
     </div>
 

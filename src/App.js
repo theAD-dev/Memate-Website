@@ -12,7 +12,7 @@ import "./App.css";
 import ContactUsPage from "./pages/contact-us";
 import ScrollToTop from "./layout/ScrollToTop";
 import KnowledgeBasePage from "./pages/knowledge-base";
-import { blogList, blogLatest ,getCategories,fetchCategoryPost} from './api/blogAPI';
+import { blogList, blogLatest, getCategories, fetchCategoryPost } from './api/blogAPI';
 import SupplierDatabasePage from "./pages/supplier-database";
 import TOSPage from "./pages/tos-page";
 import PricingPage from "./pages/pricing";
@@ -79,17 +79,16 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
   AOS.init();
   let savedlatestPostData = [];
-try {
-  savedlatestPostData = JSON.parse(sessionStorage.getItem('latestPostData') || "[]");
-} catch (error) {
-  console.error('Error parsing latestPostData from sessionStorage:', error);
-  savedlatestPostData = [];
-}
+  try {
+    savedlatestPostData = JSON.parse(sessionStorage.getItem('latestPostData') || "[]");
+  } catch (error) {
+    console.error('Error parsing latestPostData from sessionStorage:', error);
+    savedlatestPostData = [];
+  }
   const [postsLatest, setPostsLatest] = useState(savedlatestPostData || []);
   const [PostsCategories, setPostsCategories] = useState();
   const [posts, setPosts] = useState([]);
-  const [postCateId , setPostCateId] = useState()
-  const [activeCategory, setActiveCategory] = useState();
+  const [activeCategory, setActiveCategory] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPosts, setTotalPosts] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -127,29 +126,35 @@ try {
   }, []);
 
   const [newposts, setNewPosts] = useState();
-  console.log('newposts: ', newposts);
-  // console.log('newposts: ', newposts);
-  // useEffect(() => {
-  //   const fetchCatepost = async () => {
-  //     try {
-  //       const datacategory = await fetchCategoryPost(postCateId);
-  //       setNewPosts(datacategory);
-  //     } catch (err) {
-  //       console.log('Error during getting the latest post:', err);
-  //     }
-  //   };
 
-  //   if (!PostsCategories?.length) fetchCatepost();
-  // }, []);
 
+
+
+
+  const handleTabClick = (categoryId) => {
+    setPosts([]);
+    setActiveCategory(categoryId);
+    setCurrentPage(1);
+  };
+
+
+
+  // PostsCategories======================
 
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
       try {
-        const response = await fetchCategoryPost(postCateId);
-        setNewPosts(response);
-   
+        const response = await blogList(currentPage, limit, activeCategory);
+        const { data, total } = response;
+        if (!data) throw new Error("No data found");
+        setTotalPosts(total);
+        setPosts((prevPosts) => {
+          const uniquePosts = data?.filter(
+            (newPost) => !prevPosts.some((post) => post.id === newPost.id)
+          );
+          return [...prevPosts, ...uniquePosts];
+        });
       } catch (error) {
         setError(error);
         console.error("Error fetching blog posts:", error);
@@ -157,45 +162,9 @@ try {
         setLoading(false);
       }
     };
-  
+
     fetchPosts();
-  }, [postCateId]); 
-  
-
-
-
-  const handleTabClick = (categoryId) => {
-    setActiveCategory(categoryId);
-    setPostCateId(categoryId); 
-  };
-
-
-  
- // PostsCategories======================
-
- useEffect(() => {
-  const fetchPosts = async () => {
-    setLoading(true);
-    try {
-      const response = await blogList(currentPage, limit);
-      const { data, total } = response;
-      setTotalPosts(total);
-      setPosts((prevPosts) => {
-        const uniquePosts = data?.filter(
-          (newPost) => !prevPosts.some((post) => post.id === newPost.id)
-        );
-        return [...prevPosts, ...uniquePosts];
-      });
-    } catch (error) {
-      setError(error);
-      console.error("Error fetching blog posts:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  fetchPosts();
-}, [currentPage]); 
+  }, [currentPage, activeCategory]);
 
 
 
@@ -203,26 +172,20 @@ try {
     setCurrentPage((prevPage) => prevPage + 1);
   };
 
-
-  useEffect(() => {
-    setPosts([]); 
-    setCurrentPage(1); 
-  }, [postCateId]);
-
   useEffect(() => {
     const gtAnimate = gsap.utils.toArray('.gradientAnimenate');
     gtAnimate.forEach((element) => {
       gsap.to(element, {
-        backgroundImage:"linear-gradient(90deg, #1ab2ff 0%, #65b2c9 45%, #FFB258 65%, #FFB258 100%)", 
-        
+        backgroundImage: "linear-gradient(90deg, #1ab2ff 0%, #65b2c9 45%, #FFB258 65%, #FFB258 100%)",
+
         duration: 1,
         scrollTrigger: {
           trigger: element,
           markers: false,
           scrub: false,
           toggleActions: "play reset play reset",
-          start: "center bottom",  
-          end: "bottom top"     
+          start: "center bottom",
+          end: "bottom top"
         }
       });
     });
@@ -234,8 +197,8 @@ try {
 
   const location = useLocation();
   useEffect(() => {
-    const pathClass = location.pathname === "/" 
-      ? "home" 
+    const pathClass = location.pathname === "/"
+      ? "home"
       : location.pathname.replace(/\//g, "-").replace(/^-|-$/g, "");
     document.body.classList.add(`page-${pathClass}`);
     return () => {
@@ -248,83 +211,83 @@ try {
     <div className="App">
       <ScrollToTop />
       <QueryClientProvider client={queryClient}>
-      <Routes>
-        <Route path="/" exact element={<LandingPage posts={posts} postsLatest={postsLatest} />} />
-        <Route path="/feature-page-sales" exact element={<FeaturePage />} />
-        <Route
-          path="/news"
-          exact
-          element={<BlogPage PostsCategories={PostsCategories} activeCategory={activeCategory} handleTabClick={handleTabClick} posts={posts} postsLatest={postsLatest}  totalPosts={totalPosts} loading={loading} handleNext={handleNext} />} />
-        <Route
-          path="/news/:slug"
-          element={<SinglePage postsSingle={posts} postsLatest={postsLatest} />} />
-        <Route
-          path="/news/tags/:slug"
-          element={<BlogTagPage postsSingle={posts} postsLatest={postsLatest} />} />
-        
-        <Route path="/news/category/:id" element={<CategoryPage postsSingle={posts} postsLatest={postsLatest} />} />
-        <Route path="/software-update" exact element={<SoftwareUpdatePage />} />
-        <Route path="/creative-agencies" exact element={<IndustryPage />} />
-        <Route path="/contact-us" exact element={<ContactUsPage />} />
-        <Route path="/supplier-database" exact element={<SupplierDatabasePage />} />
-        <Route path="/knowledge-base" exact element={<KnowledgeBasePage />} />
-        <Route path="/terms-of-use" exact element={<TOSPage />} />
-        <Route path="/pricing" exact element={<PricingPage />} />
-        <Route path="/privacy" exact element={<PrivacyPage />} />
-        <Route path="/customer-stories" exact element={<CustomerStoriesPage />} />
-        <Route path="/camera-fix" exact element={<CustomerStoriesPageSingle />} />
-        <Route path="/pro-vinyl" exact element={<CustomerStoriesPageSingle />} />
-        <Route path="/elite-life" exact element={<CustomerStoriesPageSingle />} />
-        <Route path="/boat-wizard" exact element={<CustomerStoriesPageSingle />} />
-        <Route path="/sorted-media" exact element={<CustomerStoriesPageSingle />} />
-        <Route path="/data-single/:slug" exact element={<DatabasePageSingle />} />
-        <Route path="/add-your-company" exact element={<AddYourCompanyPage />} />
-        <Route path="/client-management" exact element={<ClientPage />} />
-        <Route path="/supplier-management" exact element={<SupplierManagementPage />} />
-        <Route path="/employee-management" exact element={<EmployeeManagementPage />} />
-        <Route path="/project-management" exact element={<ProjectManagementPage />} />
-        <Route path="/reports" exact element={<ReportsPage />} />
-        <Route path="/profitability-and-budgeting" exact element={<ProfitabilityAndBudgetingPage />} />
-        <Route path="/contractor" exact element={<ContractorPage />} />
-        <Route path="/internal-chat" exact element={<InternalChatPage />} />
-        <Route path="/time-sheet" exact element={<TimeSheetPage />} />
-        <Route path="/task-management" exact element={<TaskManagementPage />} />
-        <Route path="/communication" exact element={<CommunicationPage />} />
-        <Route path="/scheduling" exact element={<SchedulingPage />} />
-        <Route path="/invoicing" exact element={<InvoicingPage />} />
-        <Route path="/statistic" exact element={<StatisticPage />} />
-        <Route path="/schedule-jobs" exact element={<ScheduleJobsPage />} />
-        <Route path="/time-tracker" exact element={<TimeTrackerPage />} />
-        <Route path="/job-approval" exact element={<JobApprovalPage />} />
-        <Route path="/multi-location" exact element={<MultiLocationPage />} />
-        <Route path="/calendar" exact element={<CalendarPage />} />
-        <Route path="/calculators" exact element={<CalculatorsPage />} />
-        <Route path="/electronic-repair-specialists" exact element={<ElectronicPage />} />
-        <Route path="/photo-video-agency" exact element={<PhotoPage />} />
-        <Route path="/automotive" exact element={<AutomotivePage />} />
-        <Route path="/startups" exact element={<StartupsPage />} />
-        <Route path="/construction" exact element={<ConstructionPage />} />
-        <Route path="/features-news" exact element={<FeaturesNewsPage />} />
-        <Route path="/about" exact element={<AboutMematePage />} />
-        <Route path="/delete-request" exact element={<DeleteRequestPage />} />
-        <Route path="/memate-wiki" exact element={<MemateWikiPage />} />
-        <Route path="/wiki/:categoryId" exact element={<MemateWikiSinglePage />} />
-     
-      
-        <Route path="/security" exact element={<SecurityPage />} />
-        <Route path="/legal" exact element={<LegalPage />} />
-        <Route path="/contact-sales" exact element={<ContactSalesPage />} />
-        <Route path="/watch-demo" exact element={<WatchDemoPage />} />
-        <Route path="/features" exact element={<FeaturesPage />} />
-        <Route path="/industries" exact element={<IndustriesPage />} />
-        <Route path="/news-stories" exact element={<NewsStoriesPage />} />
-        <Route path="/sitemap" exact element={<SitemapPage />} />
-        <Route path="/resources" exact element={<ResourcesPage />} />
-        <Route path="*" exact element={<ErrorPage />} />
-        <Route path="/thank-you" exact element={<ThankYouPage />} />
-        <Route path="/tron-btton" exact element={<TronButton />} />
-        
-      </Routes>
+        <Routes>
+          <Route path="/" exact element={<LandingPage posts={posts} postsLatest={postsLatest} />} />
+          <Route path="/feature-page-sales" exact element={<FeaturePage />} />
+          <Route
+            path="/news"
+            exact
+            element={<BlogPage PostsCategories={PostsCategories} activeCategory={activeCategory} handleTabClick={handleTabClick} posts={posts} postsLatest={postsLatest} totalPosts={totalPosts} loading={loading} handleNext={handleNext} />} />
+          <Route
+            path="/news/:slug"
+            element={<SinglePage postsSingle={posts} postsLatest={postsLatest} />} />
+          <Route
+            path="/news/tags/:slug"
+            element={<BlogTagPage postsSingle={posts} postsLatest={postsLatest} />} />
+
+          <Route path="/news/category/:id" element={<CategoryPage postsSingle={posts} postsLatest={postsLatest} />} />
+          <Route path="/software-update" exact element={<SoftwareUpdatePage />} />
+          <Route path="/creative-agencies" exact element={<IndustryPage />} />
+          <Route path="/contact-us" exact element={<ContactUsPage />} />
+          <Route path="/supplier-database" exact element={<SupplierDatabasePage />} />
+          <Route path="/knowledge-base" exact element={<KnowledgeBasePage />} />
+          <Route path="/terms-of-use" exact element={<TOSPage />} />
+          <Route path="/pricing" exact element={<PricingPage />} />
+          <Route path="/privacy" exact element={<PrivacyPage />} />
+          <Route path="/customer-stories" exact element={<CustomerStoriesPage />} />
+          <Route path="/camera-fix" exact element={<CustomerStoriesPageSingle />} />
+          <Route path="/pro-vinyl" exact element={<CustomerStoriesPageSingle />} />
+          <Route path="/elite-life" exact element={<CustomerStoriesPageSingle />} />
+          <Route path="/boat-wizard" exact element={<CustomerStoriesPageSingle />} />
+          <Route path="/sorted-media" exact element={<CustomerStoriesPageSingle />} />
+          <Route path="/data-single/:slug" exact element={<DatabasePageSingle />} />
+          <Route path="/add-your-company" exact element={<AddYourCompanyPage />} />
+          <Route path="/client-management" exact element={<ClientPage />} />
+          <Route path="/supplier-management" exact element={<SupplierManagementPage />} />
+          <Route path="/employee-management" exact element={<EmployeeManagementPage />} />
+          <Route path="/project-management" exact element={<ProjectManagementPage />} />
+          <Route path="/reports" exact element={<ReportsPage />} />
+          <Route path="/profitability-and-budgeting" exact element={<ProfitabilityAndBudgetingPage />} />
+          <Route path="/contractor" exact element={<ContractorPage />} />
+          <Route path="/internal-chat" exact element={<InternalChatPage />} />
+          <Route path="/time-sheet" exact element={<TimeSheetPage />} />
+          <Route path="/task-management" exact element={<TaskManagementPage />} />
+          <Route path="/communication" exact element={<CommunicationPage />} />
+          <Route path="/scheduling" exact element={<SchedulingPage />} />
+          <Route path="/invoicing" exact element={<InvoicingPage />} />
+          <Route path="/statistic" exact element={<StatisticPage />} />
+          <Route path="/schedule-jobs" exact element={<ScheduleJobsPage />} />
+          <Route path="/time-tracker" exact element={<TimeTrackerPage />} />
+          <Route path="/job-approval" exact element={<JobApprovalPage />} />
+          <Route path="/multi-location" exact element={<MultiLocationPage />} />
+          <Route path="/calendar" exact element={<CalendarPage />} />
+          <Route path="/calculators" exact element={<CalculatorsPage />} />
+          <Route path="/electronic-repair-specialists" exact element={<ElectronicPage />} />
+          <Route path="/photo-video-agency" exact element={<PhotoPage />} />
+          <Route path="/automotive" exact element={<AutomotivePage />} />
+          <Route path="/startups" exact element={<StartupsPage />} />
+          <Route path="/construction" exact element={<ConstructionPage />} />
+          <Route path="/features-news" exact element={<FeaturesNewsPage />} />
+          <Route path="/about" exact element={<AboutMematePage />} />
+          <Route path="/delete-request" exact element={<DeleteRequestPage />} />
+          <Route path="/memate-wiki" exact element={<MemateWikiPage />} />
+          <Route path="/wiki/:categoryId" exact element={<MemateWikiSinglePage />} />
+
+
+          <Route path="/security" exact element={<SecurityPage />} />
+          <Route path="/legal" exact element={<LegalPage />} />
+          <Route path="/contact-sales" exact element={<ContactSalesPage />} />
+          <Route path="/watch-demo" exact element={<WatchDemoPage />} />
+          <Route path="/features" exact element={<FeaturesPage />} />
+          <Route path="/industries" exact element={<IndustriesPage />} />
+          <Route path="/news-stories" exact element={<NewsStoriesPage />} />
+          <Route path="/sitemap" exact element={<SitemapPage />} />
+          <Route path="/resources" exact element={<ResourcesPage />} />
+          <Route path="*" exact element={<ErrorPage />} />
+          <Route path="/thank-you" exact element={<ThankYouPage />} />
+          <Route path="/tron-btton" exact element={<TronButton />} />
+
+        </Routes>
       </QueryClientProvider>
     </div>
   );
