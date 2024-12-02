@@ -223,9 +223,9 @@ function App() {
             element={<SinglePage postsSingle={posts} postsLatest={postsLatest} />} />
           <Route
             path="/news/tags/:slug"
-            element={<BlogTagPage postsSingle={posts} postsLatest={postsLatest} />} />
+            element={<BlogTagPage PostsCategories={PostsCategories}  postsSingle={posts} postsLatest={postsLatest} />} />
 
-          <Route path="/news/category/:id" element={<CategoryPage postsSingle={posts} postsLatest={postsLatest} />} />
+          <Route path="/news/category/:id" element={<CategoryPage PostsCategories={PostsCategories} postsSingle={posts} postsLatest={postsLatest} />} />
           <Route path="/software-update" exact element={<SoftwareUpdatePage />} />
           <Route path="/creative-agencies" exact element={<IndustryPage />} />
           <Route path="/contact-us" exact element={<ContactUsPage />} />

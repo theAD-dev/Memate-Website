@@ -152,17 +152,24 @@ const Single = ({posts, postsSingle, postsLatest }) => {
         <div className="heading-2-text-A single-page-heading-text ">
           <div dangerouslySetInnerHTML={{ __html: post.description }} />
         </div>
+        {/* Tags */}
         <div className="blogMetstags">
-          <strong>Tags</strong>
-      <div className='blogloopdata'>
-      {(post.meta_keyword || '').split(',').map((tag, index) => (
-   <span key={index} className="tag">
-     <Link to={`/news/tags/${slug}`}>{tag.trim()}</Link>
+  <strong>Tags</strong>
+  <div className="blogloopdata">
+    {(post.meta_keyword || '').split(',').map((tag, index) => {
+      const slug = (post.meta_keyword_slug || '').split(',')[index]?.trim();
+      return (
+        <span key={index} className="tag">
+          <Link to={`/news/tags/${slug || tag.trim().toLowerCase().replace(/\s+/g, '-')}`}>
+            {tag.trim()}
+          </Link>
         </span>
-      ))}
-
-      </div>
+      );
+    })}
+  </div>
 </div>
+
+{/* Tags */}
     <div className='blogSinglePageMightLike parent-blog-page'>
       <h2>You Also Might Like</h2>
       <div className="img-container-3 parent-blog-pageWrap " data-aos="fade-up"
@@ -190,7 +197,7 @@ const Single = ({posts, postsSingle, postsLatest }) => {
           <Link to={`/news/${post.slug}`}>{post.title}</Link>
         </div>
         <div className='postCategory'>
-           {post.category.title}
+           <Link to={`/news/category/${post?.category_id}`}>{post.category.title}</Link>
         </div>
       </div>
     </div>

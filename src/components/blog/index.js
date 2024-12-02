@@ -7,6 +7,7 @@ import { Helmet } from 'react-helmet';
 
 
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
+  console.log('postsLatest: ', postsLatest);
 
 
   const formatDateWithOrdinal = (dateString) => {
@@ -129,7 +130,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                           <Link to={`/news/${postsLatest[0]?.slug}`}>{postsLatest[0]?.title}</Link>
                         </div>
                         <div className='postCategory'>
-                          {postsLatest[0]?.category.title}
+                          <Link to={`/news/category/${postsLatest[0]?.category.id}`}>{postsLatest[0]?.category.title}</Link>
                         </div>
                       </div>
                     </div>
@@ -159,7 +160,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     </div>
                     <div className="date-heading-A"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
                     <div className='postCategory'>
-                      {postsLatest[1]?.category.title}
+                    <Link to={`/news/category/${postsLatest[1]?.category.id}`}>{postsLatest[1]?.category.title}</Link>
                     </div>
                   </div>
                 </div>
@@ -178,7 +179,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     </div>
                     <div className="date-heading-A"><Link to={`/news/${postsLatest[2]?.slug}`}>{postsLatest[2]?.title}</Link></div>
                     <div className='postCategory'>
-                      {postsLatest[2]?.category.title}
+                    <Link to={`/news/category/${postsLatest[2]?.category.id}`}>{postsLatest[2]?.category.title}</Link>
                     </div>
                   </div>
                 </div>
@@ -216,7 +217,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     <div className="date-heading-A"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
                   </div>
                   <div className='postCategory'>
-                    {post.category.title}
+                   <Link to={`/news/category/${post.category.id}`}>{post.category.title}</Link>
                   </div>
                 </div>
               </div>
