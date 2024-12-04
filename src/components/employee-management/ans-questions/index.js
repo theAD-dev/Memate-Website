@@ -1,130 +1,156 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import "./style.css";
 import AddIcon from "@mui/icons-material/Add";
 import { Box } from "@mui/material";
 import Images from "../../../assests/images";
+
 const QuestionAnswer = () => {
-  const [selectedQuestion, setSelectedQuestion] = useState(3);
+  const [selectedQuestion, setSelectedQuestion] = useState(1);
 
   const questions = [
     {
-      question: "What features does memate offer as a Sales Management Software?",
+      question: "How does meMate handle employee time tracking?",
       key: 1,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate offers integrated time tracking with a clock-in/clock-out feature, allowing employees to log their hours via the mobile app. Timesheets are automatically generated based on approved time entries, streamlining the process for managers.",
     },
     {
-      question: "How does memate enhance efficiency with its Sales Pipeline Management Tool?",
+      question: "Can I manage shifts and time-off requests in meMate?",
       key: 2,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate allows you to allocate shifts to your team and provides functionality for employees to submit sick leave and holiday requests. All of this is managed in the all-in-one team management dashboard.",
     },
     {
-      question: "What advantages does memate’s CRM Sales Tool offer for Small Businesses?",
+      question: "Does meMate offer mobile access for employees?",
       key: 3,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Absolutely. meMate’s mobile application allows employees to clock in, clock out, submit timesheets, and view tasks and schedules. It ensures seamless access to important work tools, even on the go.",
     },
     {
-      question: "Can memate be used for Sales Tracking in various industries?",
+      question: "How does meMate help with task allocation?",
       key: 4,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "With meMate, you can allocate tasks directly from a project to individual team members using the mobile app. Employees can track their tasks, add notes, and collaborate with others through group chats within the app.",
     },
     {
-      question: "What makes memate a reliable Lead Management Solution?",
+      question: "Can I track operating costs in real time with meMate?",
       key: 5,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate allows you to track operating costs in real time based on employee rates and submitted hours. This helps you monitor labor expenses and maintain accurate financial tracking.",
     },
     {
-      question: "How  memate optimise business operations with its Sales Process Optimisation Software?",
+      question: "How does the Smart Timesheets feature work?",
       key: 6,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate’s Smart Timesheets feature eliminates the need for third-party applications. Employees can submit their time, and the system automatically generates timesheets based on approved hours from the previous week.",
     },
     {
-      question: "What is unique about memate’s Pipeline Management Software?",
+      question: "Can meMate help my team stay organized?",
       key: 7,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, the meMate Work Application is designed to help each team member stay organized. It includes a built-in to-do list and calendar, ensuring everyone is on top of their tasks and deadlines.",
     },
     {
-      question: "How can memate’s Sales Funnel for Small Business help in growth?",
+      question: " Is team communication supported in meMate?",
       key: 8,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate supports team communication through group chats. Team members can discuss projects, share updates, and add notes directly within the app, making collaboration seamless.",
     },
     {
-      question: "What features does memate include in its Sales Pipeline Software?",
+      question: "How does meMate handle employee accountability?",
       key: 9,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate makes employee accountability easy by tracking time spent on tasks and projects. It provides real-time visibility into your team’s work hours and operating costs, ensuring accurate and accountable performance tracking.",
     },
     {
-      question: "Why choose memate for Lead Management Software?",
+      question: "Can I generate reports on employee performance with meMate?",
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate provides reporting features that allow you to monitor employee performance, time logged, and task completion. This helps you evaluate productivity and make informed management decisions.",
       key: 10,
     },
   ];
 
-
   const toggleQuestion = (key) => {
-    setSelectedQuestion(selectedQuestion === key ? null : key); 
+    setSelectedQuestion(selectedQuestion === key ? null : key);
+  };
+
+  // Generate FAQ Schema dynamically
+  const generateFAQSchema = () => {
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": questions.map((ques) => ({
+        "@type": "Question",
+        "name": ques.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": ques.answer,
+        },
+      })),
+    };
+    return JSON.stringify(schema);
   };
 
   return (
     <div className="question-answer-wrapper">
-    <div className="question-answer-content">
-      <div className="question-answer-heading-wrapper">
-        <p className="question-answer-heading">We answer your questions</p>
-      </div>
-      <div className="questions-wrapper">
-        {questions.map((ques) => (
-          <div key={ques.key} className="each-ques-wrapper">
-            <div
-              className={`question-answer-ques ${
-                selectedQuestion === ques.key ? "selected" : ""
-              }`}
-              onClick={() => toggleQuestion(ques.key)}
-            >
-              <p className="question-answer-ques-info">{ques.question}</p>
-              <Box
-                className="add-icon-wrapper"
-                sx={{
-                  height: "24px",
-                  width: "24px",
-                  transform: selectedQuestion === ques.key ? "rotate(45deg)" : "rotate(0deg)",
-                  transition: "transform 0.3s ease", 
-                }}
+      {/* Inject JSON-LD Schema into the <head> */}
+      <Helmet>
+        <script type="application/ld+json">{generateFAQSchema()}</script>
+      </Helmet>
+
+      <div className="question-answer-content">
+        <div className="question-answer-heading-wrapper">
+          <p className="question-answer-heading">We answer your questions</p>
+        </div>
+        <div className="questions-wrapper">
+          {questions.map((ques) => (
+            <div key={ques.key} className="each-ques-wrapper">
+              <div
+                className={`question-answer-ques ${
+                  selectedQuestion === ques.key ? "selected" : ""
+                }`}
+                onClick={() => toggleQuestion(ques.key)}
               >
-                <div className="plus-icon-image-wrapper">
-                  {selectedQuestion === ques.key ? (
-                    <img
-                      src={Images.selectedQuestion}
-                      className="icon"
-                      alt="Selected Question"
-                      style={{ height: "24px" }} 
-                    />
-                  ) : (
-                    <AddIcon className="icon" htmlColor="#000000" />
-                  )}
-                </div>
-              </Box>
+                <p className="question-answer-ques-info">{ques.question}</p>
+                <Box
+                  className="add-icon-wrapper"
+                  sx={{
+                    height: "24px",
+                    width: "24px",
+                    transform:
+                      selectedQuestion === ques.key
+                        ? "rotate(45deg)"
+                        : "rotate(0deg)",
+                    transition: "transform 0.3s ease",
+                  }}
+                >
+                  <div className="plus-icon-image-wrapper">
+                    {selectedQuestion === ques.key ? (
+                      <img
+                        src={Images.selectedQuestion}
+                        className="icon"
+                        alt="Selected Question"
+                        style={{ height: "24px" }}
+                      />
+                    ) : (
+                      <AddIcon className="icon" htmlColor="#000000" />
+                    )}
+                  </div>
+                </Box>
+              </div>
+              <div
+                className={`question-answer-ans-info ${
+                  selectedQuestion === ques.key ? "expanded" : ""
+                }`}
+              >
+                {selectedQuestion === ques.key && <p>{ques.answer}</p>}
+              </div>
             </div>
-            <div
-              className={`question-answer-ans-info ${
-                selectedQuestion === ques.key ? "expanded" : ""
-              }`}
-            >
-              {selectedQuestion === ques.key && <p>{ques.answer}</p>}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 

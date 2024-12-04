@@ -82,8 +82,10 @@ const PricingTable = () => {
     data-aos-anchor-placement="top-bottom">
     <div className={style.pricingtable}>
      <div className={style.toggleSwitch}>
+      <span id='butMontlyTable'>Monthly
+      </span>
   
-  <label className={style.switch}>
+  {/* <label className={style.switch}>
     <span className={!isYearly ? style.activeLabel : ''}>Monthly</span>
     <input
       type="checkbox"
@@ -92,7 +94,7 @@ const PricingTable = () => {
     />
     <span className={style.slider}></span>
     <span className={isYearly ? style.activeLabel : ''}>Yearly<br></br> Save 15%</span>
-  </label>
+  </label> */}
   
 </div>
 

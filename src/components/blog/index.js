@@ -38,12 +38,44 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
   };
   return (
     < div id="blogGrid">
-      <Helmet>
-        <title>MeMate News: Product Management Product Updates & Industry Trends</title>
-        <meta property="og:title" content="MeMate News: Product Management Product Updates & Industry Trends" />
-        <meta property="og:description" content="Stay updated with the latest MeMate news and industry insights. Discover product updates, company announcements, and expert advice for your business.
-    " />
-      </Helmet>
+    <Helmet>
+    <title>{postsLatest[0]?.title || "MeMate News: Product Management Product Updates & Industry Trends"}</title>
+    <meta property="og:title" content={postsLatest[0]?.title || "MeMate News"} />
+    <meta property="og:description" content={postsLatest[0]?.description || "Stay updated with the latest MeMate news and industry insights. Discover product updates, company announcements, and expert advice for your business."} />
+    <meta property="og:image" content={postsLatest[0]?.featured_img_url || 'default-image-url'} />
+    <meta property="og:url" content={`https://yourdomain.com/news/${postsLatest[0]?.slug || ''}`} />
+
+    <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": postsLatest[0]?.title || "Title of a News Article",
+      "image": postsLatest[0]?.images || [
+        "https://example.com/photos/1x1/photo.jpg",
+        "https://example.com/photos/4x3/photo.jpg",
+        "https://example.com/photos/16x9/photo.jpg"
+      ],
+      "datePublished": postsLatest[0]?.publish_date || "2024-01-05T08:00:00+08:00",
+      "dateModified": postsLatest[0]?.last_modified || "2024-02-05T09:20:00+08:00",
+      "author": [
+        {
+          "@type": "Person",
+          "name": postsLatest[0]?.author || "Jane Doe",
+          "url": postsLatest[0]?.author_url || "https://example.com/profile/janedoe123"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "MeMate",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yourdomain.com/logo.png"
+        }
+      }
+    })}
+    </script>
+</Helmet>
+
       <div className="parent-blog-page ">
         <div className="parent-blog">
           <div className="heading-container heading-container-categories" >
@@ -57,8 +89,10 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
               <img className="dog-img" src={Images.blogImgDog}></img>
             </div>
           </div>
+
+          
           <div className="categoriesMainWrap">
-            <div style={{ display: "flex", gap: "8px", marginBottom: "1rem" }}>
+            <div className="listTabs">
               {PostsCategories?.map((postCat) => (
                 <button
                   key={postCat.id}

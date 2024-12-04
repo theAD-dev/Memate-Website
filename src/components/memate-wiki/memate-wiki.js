@@ -4,6 +4,7 @@ import { wikiBase, wikiBaseBSearch } from "../../api/wikiApi";
 import "./style.css";
 import style from './wiki.module.scss';
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const MemateWiki = () => {
   const [searchQuery, setSearchQuery] = useState(""); // State to store search input
@@ -50,6 +51,42 @@ const MemateWiki = () => {
   };
 
   return (
+    <>
+    <Helmet>
+    <title>News Memate</title>
+      <meta property="og:title" content='News' />
+      <meta property="og:description" content='description' />
+      <meta property="og:image" content='https://memate-website.s3.ap-southeast-2.amazonaws.com/news/1732171638_featured-image.jpg' />
+      <meta property="og:url" content='window.location.href' />
+      <meta property="og:type" content="article" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content='title' />
+      <meta name="twitter:description" content='description'/>
+      <meta name="twitter:image" content= 'https://memate-website.s3.ap-southeast-2.amazonaws.com/news/1732171638_featured-image.jpg'/>
+      <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [{
+                "@type": "Question",
+                "name": "How to find an apprenticeship?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "<p>We provide an official service to search through available apprenticeships. To get started, create an account here, specify the desired region, and your preferences. You will be able to search through all officially registered open apprenticeships.</p>"
+                }
+              }, {
+                "@type": "Question",
+                "name": "Whom to contact?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can contact the apprenticeship office through our official phone hotline above, or with the web-form below. We generally respond to written requests within 7-10 days."
+                }
+              }]
+            }
+          `}
+        </script>
+</Helmet>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
       <div className={style.mainHeadTitle}>
         <span>meMate <br />wiki</span>
@@ -106,6 +143,7 @@ const MemateWiki = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

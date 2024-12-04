@@ -4,7 +4,7 @@ import Images from "../../../assests/images";
 import './style.css';
 const MeMateFeatureAgile = () => {
   return (
-    <div className="agile-container-section"  data-aos="fade-up"
+    <div className="agile-container-section mainOperationRight"  data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1600"

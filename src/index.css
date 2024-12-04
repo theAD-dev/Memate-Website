@@ -51,6 +51,12 @@ body::-webkit-scrollbar-thumb ,
 .pricingCardsWrap:nth-child(2):hover #request-btn-pricing .btn-base--black .text-btn--nav{
   color: #fff;
 }
+.pricingCardsWrap:nth-child(2) .request-btn .get-started-border-box .btn-base--black {
+  border: 1px solid #fff !important;
+}
+.pricingCardsWrap:nth-child(2):hover .request-btn .get-started-border-box .btn-base--black {
+  border: 1px solid #000 !important;
+}
 .sales-heading {
   padding-bottom: 50px;
   color: transparent;
@@ -245,4 +251,22 @@ border: 0;
   position: relative;
   background: #fff;
   padding-bottom: 0px;
+}
+#butMontlyTable {
+  border-radius: 60px;
+  background: linear-gradient(to right bottom, #1ab2ff 10.15%, #ffb258 69%);
+  display: flex;
+  width: 140px;
+  padding: 14px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  margin: 0 auto 40px;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: normal;
 }

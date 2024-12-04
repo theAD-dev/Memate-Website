@@ -12,7 +12,7 @@ const PipeLineTool = () => {
     data-aos-anchor-placement="top-bottom">
       <div className="pipeline-image-wrapper">
           <img src={Images.filterPipeline} className="filter-pipelineimage"/>
-          <img src={Images.pipeLine} />
+          {/* <img src={Images.pipeLine} /> */}
       </div>
       <div className="content-wrapper">
         <p className="sale-title">Salesforce for small business</p>

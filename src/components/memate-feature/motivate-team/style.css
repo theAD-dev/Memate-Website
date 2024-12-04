@@ -12,7 +12,9 @@
     border-radius: 30px;
     background: #F7F8FA;
 }
-
+.motivate-image.motivate-imagespace {
+    padding-right: 12px;
+}
 .boost-profits {
     display: flex;
     justify-content: space-between;

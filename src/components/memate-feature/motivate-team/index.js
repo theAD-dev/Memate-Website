@@ -33,11 +33,11 @@ const MeMateFeatureMotivateTeam = () => {
               </div>
 
               <div className="operation-right">
-                <div className="motivate-image">
-                  <img className="leptop" src={Images.macBook} />
-                  <div className="mac-with-iphone">
-                    <img src={Images.macWithIphone} />
-                  </div>
+                <div className="motivate-image motivate-imagespace" >
+                  <img className="leptop" src={Images.macWithIphone} style={{width: "100%"}} />
+                  {/* <div className="mac-with-iphone">
+                    <img src={Images.macWithIphone} style={{width: "100%"}}/>
+                  </div> */}
                 </div>
               </div>
             </div>
