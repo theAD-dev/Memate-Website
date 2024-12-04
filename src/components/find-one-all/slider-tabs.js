@@ -61,26 +61,26 @@ const SliderTab = () => {
     arrows: true,
     initialSlide: 3,
     speed: 500,
-   autoPlay: false,
-    afterChange: (current) => {
-      setSelectedTab(current); // Ensure selected tab is synced with slider
-      triggerFadeIn(); // Trigger animation when slide changes
-    },
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 5,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false,
-        },
-      },
-    ],
+    autoPlay: false,
+    // afterChange: (current) => {
+    //   setSelectedTab(current); 
+    //   triggerFadeIn();
+    // },
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 5,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       centerMode: false,
+    //     },
+    //   },
+    // ],
   };
 
   return (

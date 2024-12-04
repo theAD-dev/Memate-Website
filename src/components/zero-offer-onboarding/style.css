@@ -10,9 +10,13 @@
 }
 
 .offer-opt {
-  background: linear-gradient(to right bottom, #1ab2ff -9.85%, #ffb258 95%);
+  /* background: linear-gradient(to right bottom, #1ab2ff -9.85%, #ffb258 95%); */
   border-radius: 30px;
   padding: 0px;
+  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/onboarding.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .sab-heading h2 {
@@ -41,6 +45,7 @@
   font-family: "sequel_sans_black_disp" !important;
   margin-top: 1px;
   margin-bottom: 0px;
+  letter-spacing: 2px;
 }
 
 .sab-heading p {

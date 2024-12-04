@@ -29,9 +29,8 @@
 
 .question-answer-ans-info.expanded {
   max-height: 200px;
-  padding: 10px 20px; 
+  padding: 10px 0px;
 }
-
 .add-icon-wrapper {
   transition: transform 0.3s ease;
 }

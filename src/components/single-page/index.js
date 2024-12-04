@@ -51,8 +51,6 @@ const Single = ({posts, postsSingle, postsLatest }) => {
     };
 
 
- 
-
     const fetchPost = async () => {
       const postFromArrays = findPost();
       

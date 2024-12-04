@@ -16,6 +16,10 @@
   width: 100%;
   margin-top: 110px;
 }
+.categoriesMainWrap .listTabs button {
+  display: inline-block;
+  margin: 0 4px 8px;
+}
 .heading-text-blog {
   color: #29292b;
   text-align: center;

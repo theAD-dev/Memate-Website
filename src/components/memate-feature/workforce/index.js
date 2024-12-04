@@ -4,7 +4,7 @@ import Images from "../../../assests/images";
 import './style.css';
 const MeMateWorkForce = () => {
   return (
-    <div className="workforce-container"  data-aos="fade-up"
+    <div className="workforce-container mainOperationRight mainOperationspace"  data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1700"

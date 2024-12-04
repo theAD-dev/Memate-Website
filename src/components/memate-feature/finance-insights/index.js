@@ -4,7 +4,7 @@ import FeatureCard from "../card";
 import Images from "../../../assests/images";
 const MeMateFinanceInsights = () => {
   return (
-    <div className="efficiency-section-wrapper"  data-aos="fade-up"
+    <div className="efficiency-section-wrapper mainOperationRight"  data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1400"

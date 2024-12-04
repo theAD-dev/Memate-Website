@@ -1,130 +1,156 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import "./style.css";
 import AddIcon from "@mui/icons-material/Add";
 import { Box } from "@mui/material";
 import Images from "../../../assests/images";
+
 const QuestionAnswer = () => {
-  const [selectedQuestion, setSelectedQuestion] = useState(3);
+  const [selectedQuestion, setSelectedQuestion] = useState(1);
 
   const questions = [
     {
-      question: "What features does memate offer as a Sales Management Software?",
+      question: "What types of reports does meMate provide?",
       key: 1,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate offers a variety of reports, including executive reports, business overviews, conversion reports, target reports, and profit and loss reports. These help you track performance, monitor goals, and make informed decisions.",
     },
     {
-      question: "How does memate enhance efficiency with its Sales Pipeline Management Tool?",
+      question: "Can I track real-time business performance with meMate?",
       key: 2,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate provides real-time reports that allow you to monitor key metrics like quotes, payments, receivables, invoices, and unpaid amounts. You can also compare this data with previous periods, such as last month.",
     },
     {
-      question: "What advantages does memate’s CRM Sales Tool offer for Small Businesses?",
+      question: "What is the executive reporting feature in meMate?",
       key: 3,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Our executive reports are designed based on feedback from business owners and continuous surveys. They give you a high-level overview of business performance, helping you make strategic decisions without losing functionality.",
     },
     {
-      question: "Can memate be used for Sales Tracking in various industries?",
+      question: "Can I set and track team targets in meMate?",
       key: 4,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate allows you to set monthly targets for your team and track their results in real time. These reports are essential for monitoring team performance and meeting business goals.",
     },
     {
-      question: "What makes memate a reliable Lead Management Solution?",
+      question: "How does the conversion reporting feature work?",
       key: 5,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Conversion reports track every step of the process, from receiving requests to processing quotes and converting them into projects. You can view detailed numbers at each stage to make better executive decisions.",
     },
     {
-      question: "How  memate optimise business operations with its Sales Process Optimisation Software?",
+      question: "Does meMate offer profit and loss reports?",
       key: 6,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate provides classic profit and loss reports, allowing you to analyse the financial performance of your business. These reports give a clear breakdown of profits, losses, and project costs.",
     },
     {
-      question: "What is unique about memate’s Pipeline Management Software?",
+      question: "Can I monitor departmental performance with meMate?",
       key: 7,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, each department’s performance is automatically tracked based on project cost breakdowns. This allows you to identify strong and weak products or services and make data-driven decisions.",
     },
     {
-      question: "How can memate’s Sales Funnel for Small Business help in growth?",
+      question: "How customisable are the reports in meMate?",
       key: 8,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate offers a range of pre-built reports, but if there’s something specific you need, you can reach out to us, and we’ll develop custom reporting tailored to your business requirements.",
     },
     {
-      question: "What features does memate include in its Sales Pipeline Software?",
+      question: "Can I compare current performance with previous periods?",
       key: 9,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate allows you to compare current metrics with past periods, such as last month or quarter. This helps you track growth and spot trends in your business performance.",
     },
     {
-      question: "Why choose memate for Lead Management Software?",
+      question: "Can I access reports through the mobile app?",
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate’s mobile app allows you to access real-time reports on the go, ensuring you can monitor performance and make informed decisions no matter where you are.",
       key: 10,
     },
   ];
 
-
   const toggleQuestion = (key) => {
-    setSelectedQuestion(selectedQuestion === key ? null : key); 
+    setSelectedQuestion(selectedQuestion === key ? null : key);
+  };
+
+  // Generate FAQ Schema dynamically
+  const generateFAQSchema = () => {
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": questions.map((ques) => ({
+        "@type": "Question",
+        "name": ques.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": ques.answer,
+        },
+      })),
+    };
+    return JSON.stringify(schema);
   };
 
   return (
     <div className="question-answer-wrapper">
-    <div className="question-answer-content">
-      <div className="question-answer-heading-wrapper">
-        <p className="question-answer-heading">We answer your questions</p>
-      </div>
-      <div className="questions-wrapper">
-        {questions.map((ques) => (
-          <div key={ques.key} className="each-ques-wrapper">
-            <div
-              className={`question-answer-ques ${
-                selectedQuestion === ques.key ? "selected" : ""
-              }`}
-              onClick={() => toggleQuestion(ques.key)}
-            >
-              <p className="question-answer-ques-info">{ques.question}</p>
-              <Box
-                className="add-icon-wrapper"
-                sx={{
-                  height: "24px",
-                  width: "24px",
-                  transform: selectedQuestion === ques.key ? "rotate(45deg)" : "rotate(0deg)",
-                  transition: "transform 0.3s ease", 
-                }}
+      {/* Inject JSON-LD Schema into the <head> */}
+      <Helmet>
+        <script type="application/ld+json">{generateFAQSchema()}</script>
+      </Helmet>
+
+      <div className="question-answer-content">
+        <div className="question-answer-heading-wrapper">
+          <p className="question-answer-heading">We answer your questions</p>
+        </div>
+        <div className="questions-wrapper">
+          {questions.map((ques) => (
+            <div key={ques.key} className="each-ques-wrapper">
+              <div
+                className={`question-answer-ques ${
+                  selectedQuestion === ques.key ? "selected" : ""
+                }`}
+                onClick={() => toggleQuestion(ques.key)}
               >
-                <div className="plus-icon-image-wrapper">
-                  {selectedQuestion === ques.key ? (
-                    <img
-                      src={Images.selectedQuestion}
-                      className="icon"
-                      alt="Selected Question"
-                      style={{ height: "24px" }} 
-                    />
-                  ) : (
-                    <AddIcon className="icon" htmlColor="#000000" />
-                  )}
-                </div>
-              </Box>
+                <p className="question-answer-ques-info">{ques.question}</p>
+                <Box
+                  className="add-icon-wrapper"
+                  sx={{
+                    height: "24px",
+                    width: "24px",
+                    transform:
+                      selectedQuestion === ques.key
+                        ? "rotate(45deg)"
+                        : "rotate(0deg)",
+                    transition: "transform 0.3s ease",
+                  }}
+                >
+                  <div className="plus-icon-image-wrapper">
+                    {selectedQuestion === ques.key ? (
+                      <img
+                        src={Images.selectedQuestion}
+                        className="icon"
+                        alt="Selected Question"
+                        style={{ height: "24px" }}
+                      />
+                    ) : (
+                      <AddIcon className="icon" htmlColor="#000000" />
+                    )}
+                  </div>
+                </Box>
+              </div>
+              <div
+                className={`question-answer-ans-info ${
+                  selectedQuestion === ques.key ? "expanded" : ""
+                }`}
+              >
+                {selectedQuestion === ques.key && <p>{ques.answer}</p>}
+              </div>
             </div>
-            <div
-              className={`question-answer-ans-info ${
-                selectedQuestion === ques.key ? "expanded" : ""
-              }`}
-            >
-              {selectedQuestion === ques.key && <p>{ques.answer}</p>}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 
