@@ -8,20 +8,20 @@
   background-size: contain;
   margin-top: -17px;
   max-width: 1200px;
-  padding: 95px 46px 106.5px 45px;
+  padding: 62px 46px 69.5px 45px;
   height: auto;
   position: relative;
 }
 .industry-header-wrapper::before {
-  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-png.png);
+  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/creative-agencies-img-man.png);
   background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  content: "";
-  width: 339px;
-  height: 478px;
-  right: 78px;
-  bottom: 0;
+    background-position: center;
+    position: absolute;
+    content: "";
+    width: 339px;
+    height: 583px;
+    right: 78px;
+    bottom: 0;
 }
 
 .industry-top-heading {
@@ -60,7 +60,7 @@
 }
 
 .industry-heading-button {
-  margin-top: 49.5px;
+  margin-top: 24px;
   border-radius: 60px;
   border: 1px solid #fff;
   color: #fff;

@@ -15,12 +15,10 @@ const SalesProcessOptimiation = () => {
         <p className="sales-heading-sales">Ways of  </p>
         <p className="sales-type">communication </p>
         <p className="sales-description-sales">
-        Use our mobile application to receive notes from<br></br> contractors 
-        and<br></br> employees, store photos, and keep all 
-        communication organized within the<br></br> project card.
+        Use our mobile application to receive notes from<br/> contractors and employees, store photos, and<br/> keep all communication organized within the<br/> project card.
         </p>
       </div>
-      <img src={Images.commModern}  className="sales-process-optimization-image"/>
+      <img src={Images.commModern} alt="commModern"  className="sales-process-optimization-image"/>
     </div>
   );
 };

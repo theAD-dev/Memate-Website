@@ -12,7 +12,7 @@ import "./App.css";
 import ContactUsPage from "./pages/contact-us";
 import ScrollToTop from "./layout/ScrollToTop";
 import KnowledgeBasePage from "./pages/knowledge-base";
-import { blogList, blogLatest, getCategories, fetchCategoryPost } from './api/blogAPI';
+import { blogList, blogLatest, getCategories } from './api/blogAPI';
 import SupplierDatabasePage from "./pages/supplier-database";
 import TOSPage from "./pages/tos-page";
 import PricingPage from "./pages/pricing";
@@ -67,11 +67,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import WikiSinglePage from "./components/memate-wiki/wiki-single-page";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import MemateWikiSinglePage from "./pages/wiki-single-page";
 import CategoryPage from "./pages/single-page/category-page";
 import BlogTagPage from "./pages/single-page/blog-tags-page";
+import TermsAndConditionsPage from "./pages/terms-and-conditions";
 const queryClient = new QueryClient();
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -232,6 +232,7 @@ function App() {
           <Route path="/supplier-database" exact element={<SupplierDatabasePage />} />
           <Route path="/knowledge-base" exact element={<KnowledgeBasePage />} />
           <Route path="/terms-of-use" exact element={<TOSPage />} />
+          <Route path="/terms-and-conditions" exact element={<TermsAndConditionsPage />} />
           <Route path="/pricing" exact element={<PricingPage />} />
           <Route path="/privacy" exact element={<PrivacyPage />} />
           <Route path="/customer-stories" exact element={<CustomerStoriesPage />} />

@@ -1,11 +1,12 @@
 import React from "react";
 import style from './agile.module.scss';
+import { Link } from "react-router-dom";
 const IndustryDifference = () => {
   return (
 <>
 <div className={`${style.flexboxWrap} ${style.bgContentWrap} ${style.sectionTopSpace}`}>
-<div className={style.flexImageBox}>
-  <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/notification-1.png" alt="Notification"/>
+<div className={`${style.flexImageBox} ${style.spacingLeft}`}>
+  <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/notification-img.svg" alt="Notification"/>
 </div>
 <div className={`${style.spacingRight} ${style.flexContentWrap}`}>
 <h4>Agile</h4>
@@ -13,6 +14,7 @@ const IndustryDifference = () => {
 <h2>the Difference</h2>
     <p>meMate is designed to facilitate collaboration with contractors at different levels. 
       It allows for easy file sharing and ensures clear, transparent communication and remuneration for all parties involved.</p>
+      <Link to="/construction">Contractors</Link>
 </div>
 
 </div>

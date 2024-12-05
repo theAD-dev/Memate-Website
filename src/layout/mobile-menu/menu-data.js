@@ -17,12 +17,13 @@ const MenuData = () => {
   };
 
 
-  const closeMenu = () => setMenuOpen(false);
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  // const closeMenu = () => setMenuOpen(false);
+  // const toggleMenu = () => setMenuOpen(!menuOpen);
+  
 
     const [show, setShow] = useState(false)
     const controlNavbar = () => {
-        if (window.scrollY > 250 ) {
+        if (window.scrollY > '100%' ) {
             setShow(true)
         }else{
           setShow(false)
@@ -81,8 +82,8 @@ const MenuData = () => {
       <Menu 
         isOpen={menuOpen}
         right
-        customBurgerIcon={ <img src={Images.BurgerIcon} /> }
-        customCrossIcon={ <img src={Images.burgerCloseIcon} /> }
+        customBurgerIcon={ <img src={Images.BurgerIcon} alt='BurgerIcon'/> }
+        customCrossIcon={ <img src={Images.burgerCloseIcon} alt='burgerCloseIcon'/> }
         onStateChange={handleStateChange}
         width={'359px'}
       >
@@ -95,10 +96,10 @@ const MenuData = () => {
         {tabs.map((tab, index) => (
           <li key={index}
           className={index === activeTab ? 'currentTab' : ''}
-          onClick={() => handleTabClick(index)}><span><img src={tab.imgTab} />{tab.title}</span></li>
+          onClick={() => handleTabClick(index)}><span><img src={tab.imgTab} alt='imgTab'/>{tab.title}</span></li>
         ))}
-        <li><Link to='/watch-demo' className={`watch-demo ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedSales} />Contact Sales</Link></li>
-        <li><Link to='/watch-demo' className={`watch-demo ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedWatchDemo} />Watch demo</Link></li>
+        <li><Link to='/watch-demo' className={`watch-demo ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedSales} alt='unselectedSales'/>Contact Sales</Link></li>
+        <li><Link to='/watch-demo' className={`watch-demo ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedWatchDemo} alt='unselectedWatchDemo' />Watch demo</Link></li>
          </ul>
       </div>
       </div>
@@ -125,13 +126,6 @@ const MenuData = () => {
   )}
 </div>
 
-    
-        {/* <ul>
-          <li><Link to='/watch-demo'><img src={menuImages.unselectedLegal} />Legal</Link></li>
-          <li><Link to='/watch-demo'><img src={menuImages.unselectedResources} />Resources</Link></li>
-          <li><Link to='/contact-sales'><img src={menuImages.unselectedSales} />Contact Sales</Link></li>
-          <li><Link to='/watch-demo'><img src={menuImages.unselectedWatchDemo} />Watch demo </Link></li>
-          </ul> */}
      
        </div>
        <div className='logoMobileWrap'>
@@ -139,48 +133,48 @@ const MenuData = () => {
                   <img src={Images.logo} alt="logo" />
                   <div className="header-menu-memate-feature">
                     <div className="header-menu-feature">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt='meMateCheck'/>
                       <p className="header-menu-feature-text">
                         Easy to Learn adn User
                       </p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt='meMateCheck'/>
                       <p className="header-menu-feature-texts">Remote Acess</p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt='meMateCheck'/>
                       <p className="header-menu-feature-texts">Workflow</p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt='meMateCheck' />
                       <p className="header-menu-feature-texts">
                         Single database
                       </p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt='meMateCheck'/>
                       <p className="header-menu-feature-texts">
                         Build for Australia
                       </p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt='meMateCheck'/>
                       <p className="header-menu-feature-texts">CRM & ERP</p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt='meMateCheck'/>
                       <p className="header-menu-feature-texts">Reporting</p>
                     </div>
                   </div>
                   <div className="request-a-button-wrapper">
-                   <Link to='https://dev.memate.com.au/requestdemo'  target="_blank"><img src={menuImages.RequestAdemo} /> </Link>
+                   <Link to='https://dev.memate.com.au/requestdemo'  target="_blank"><img src={menuImages.RequestAdemo} alt='RequestAdemo'/> </Link>
                   </div>
                 </div>
        </div>

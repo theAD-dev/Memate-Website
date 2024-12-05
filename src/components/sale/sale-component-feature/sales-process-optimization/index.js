@@ -15,12 +15,10 @@ const SalesProcessOptimiation = () => {
         <p className="sales-heading-sales">Sales Process</p>
         <p className="sales-type">optimisation <br></br> software</p>
         <p className="sales-description-sales">
-          Encourage your employees and subcontractors <br></br>with customised bonus
-          schemes and incentives<br></br> for each project, fostering a motivated and<br></br>
-          productive workforce.
+        With meMate, optimising your sales process is <br />simple. It handles almost everything for you— <br />sending reminders, quotes, or business proposals<br /> with just one click. This allows one manager to <br />handle many more clients efficiently.
         </p>
       </div>
-      <img src={Images.salesProtestOptimization}  className="sales-process-optimization-image"/>
+      <img src={Images.salesProtestOptimization} alt="optimization-image"  className="sales-process-optimization-image"/>
     </div>
   );
 };

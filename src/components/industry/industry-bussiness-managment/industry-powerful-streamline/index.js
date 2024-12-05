@@ -1,5 +1,6 @@
 import React from "react";
 import style from './industry.module.scss';
+import { Link } from "react-router-dom";
 const IndustryPowerfulStreamline = () => {
   return (
 <>
@@ -15,6 +16,7 @@ const IndustryPowerfulStreamline = () => {
     <p> MeMate offers powerful project management capabilities, allowing you to efficiently track and manage all 
       your creative projects. From initial concept to final delivery, our software ensures that your team stays 
       organised and productive throughout the entire creative workflow.</p>
+      <Link to="/task-management">Management</Link>
 </div>
 </div>
 </>
