@@ -11,7 +11,7 @@ const PipeLineTool = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <div className="pipeline-image-wrapper">
-          <img src={Images.filterPipeline} className="filter-pipelineimage"/>
+          <img src={Images.filterPipeline} alt="filterPipeline" className="filter-pipelineimage"/>
           {/* <img src={Images.pipeLine} /> */}
       </div>
       <div className="content-wrapper">
@@ -19,11 +19,7 @@ const PipeLineTool = () => {
         <p className="sales-heading-sales">Sales</p>
         <p className="sales-type">pipeline</p>
         <p className="sales-description-sales">
-          Discover a simpler CRM solution with our <br></br>software, designed
-          for small businesses. Enjoy <br></br>the powerful features of
-          Salesforce in an easy-to-<br></br>use, integrated platform. Streamline
-          operations,<br></br> enhance customer relationships, and grow your{" "}
-          <br></br>business effortlessly.
+        Designed with small businesses in mind, this <br/>software provides all possible scenarios for your<br/> ongoing sales activities and helps you navigate <br/>them with ease.
         </p>
       </div>
     </div>

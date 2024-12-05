@@ -10,15 +10,16 @@ const SalesManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.leadsTable} />
+      <img src={Images.leadsTable}  alt="leadsTable"/>
       <div className="content-wrapper">
         <p className="sale-title">Leads</p>
         <p className="sales-heading-sales">Sales</p>
         <p className="sales-type">management</p>
         <p className="sales-description-sales">
-          Our software automates your workflows, making your business operations
-          easier. It’s based on proven strategies and is designed for quick
-          setup, boosting efficiency from day one.
+        The Sales tab functions as a central hub for all 
+        your active sales, requests, quotes, drafts, and 
+        proposals. It’s a simplified version of a sales 
+        pipeline for any business.
         </p>
       </div>
     </div>

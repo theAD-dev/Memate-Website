@@ -173,7 +173,7 @@
   border-radius: 30px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.77) 0%, rgba(0, 0, 0, 0.00) 44.23%),
 linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 100%);
-  top: 0;
+top: 3px;
   left: 0;
   right: 0;
   display: flex;

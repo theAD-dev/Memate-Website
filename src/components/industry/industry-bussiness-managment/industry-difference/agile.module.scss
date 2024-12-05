@@ -5,9 +5,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        // padding: 30px 0 0px;
     }
     .flexImageBox{
        width: 50%;
+       &.spacingLeft{
+      
+        padding-left: 20px;
+    }
     
        img{
         width: 100%;
@@ -44,6 +49,21 @@
             font-weight: 600;
             line-height: 48px;
             margin-bottom: 40px;
+        }
+        a{
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            height: 44px;
+            padding: 10px 18px;
+            border-radius: 44px;
+            border: 1px solid #FFF;
+            text-decoration: none;
+            margin-top: 40px;
+            display: inline-block;
         }
         p{
             color: #FFF;

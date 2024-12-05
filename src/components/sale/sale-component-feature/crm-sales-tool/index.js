@@ -15,18 +15,14 @@ const CRMSalesTool = () => {
         <p className="sales-heading-sales">CRM Sales Tool</p>
         <p className="sales-type">for small business</p>
         <p className="sales-description-sales">
-          Elevate your small business with our tailored CRM <br></br>software.
-          Designed to streamline customer<br></br> relations, our tool helps you
-          manage interactions,<br></br> enhance engagement, and drive sales, all
-          within a<br></br>
-          user-friendly platform built for growth and<br></br> efficiency.
+        It works as your CRM, allowing you to track the <br />progress of your leads, add notes for the entire <br/>team, and manage follow-ups. A simple yet <br/>effective solution.
         </p>
       </div>
       <div className="crmtool-image-wrapper">
         <div className="modal-contact">
-          <img src={Images.ModalSaleContact} />
+          <img src={Images.ModalSaleContact} alt="ModalSaleContact"/>
           <div className="menu-contact">
-            <img src={Images.MenuContact} />
+            <img src={Images.MenuContact} alt="MenuContact"/>
           </div>
         </div>
       </div>

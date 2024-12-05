@@ -19,13 +19,12 @@ const SalesComponent = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       
-       <div className="sales-heading client-heading">Invoicing </div>
+       <div className="sales-heading client-heading">invoicing</div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content ">
           <span>
-          meMate allows you to convert every approved quote into an invoice, manage your company’s 
-          invoices, mark payments, and chase unpaid invoices effortlessly.
+          meMate allows you to convert every approved quote into an invoice, manage your company’s invoices, mark payments, and chase unpaid invoices effortlessly.
           </span>
         </div>
 

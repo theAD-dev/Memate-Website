@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -10,58 +11,55 @@ const ShareComponent = ({ url, title, image, description }) => {
     <div className="share-buttons">
       <ul>
         <li>
-          <FacebookShareButton url={url} quote={title} hashtag={title} >
-            <a
+          <FacebookShareButton url={url} quote={title} image={image} hashtag={title} >
+            <Link
               className="link socialIcon"
-              href="javascript:void(0);"
               aria-label="Share Link"
             >
               <img
                 src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/facebook.svg"
                 alt="facebook"
               />
-            </a>
+            </Link>
           </FacebookShareButton>
         </li>
         <li>
-          <TwitterShareButton url={url} title={title} hashtags={[title]}>
-            <a
+          <TwitterShareButton url={url} title={title} image={image} hashtags={[title]}>
+            <Link
               className="link socialIcon"
-              href="javascript:void(0);"
               aria-label="Share Link"
             >
               <img
                 src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/twitter.svg"
                 alt="twitter"
               />
-            </a>
+            </Link>
           </TwitterShareButton>
         </li>
         <li>
-          <LinkedinShareButton url={url} title={title} summary={description}>
-            <a
+          <LinkedinShareButton url={url} title={title} image={image} summary={description}>
+            <Link
               className="link socialIcon"
-              href="javascript:void(0);"
               aria-label="Share Link"
             >
               <img
                 src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/linkedin.svg"
                 alt="linkedin"
               />
-            </a>
+            </Link>
           </LinkedinShareButton>
         </li>
         <li>
-          <a
+          <Link
             className="link socialIcon"
-            href="javascript:void(0);"
-            aria-label="Share Link"
+            to={url} 
+            aria-label="Share Link" 
           >
             <img
               src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/link.svg"
               alt="link"
             />
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

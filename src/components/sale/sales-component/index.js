@@ -19,7 +19,7 @@ const SalesComponent = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       
-      <div className="sales-heading">sales</div>
+      <div className="sales-heading">sales pipeline</div>
       <div className="sales-componet-content-wrapper">
         <p>Sales funnels</p>
         <div className="sales-component-content">

@@ -359,6 +359,15 @@ button.filterBlogTabBtn {
     padding: 0 15px !important;
     width: 100% !important;
 }
+.categoriesMainWrap {
+  text-align: left;
+  float: left;
+  width: 100%;
+  margin-top: 344px;
+}
+.cateLatesWrap {
+  margin-top: 89px;
+}
 .heading-blog {
   font-size: 75px !important;
 }
@@ -390,7 +399,7 @@ button.filterBlogTabBtn {
 .img-container-1-div {
   padding: 23px !important;
   max-width: 297px !important;
-  width: 100%;
+  width: 100% !important;
 }
 #blogGrid .heading-blog-description {
   margin-top: 20px;

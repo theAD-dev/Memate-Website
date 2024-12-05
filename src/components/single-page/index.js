@@ -10,7 +10,7 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
 
 
 
-const Single = ({posts, postsSingle, postsLatest }) => {
+const Single = ({postsSingle, postsLatest }) => {
   const { slug } = useParams(); 
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -73,14 +73,12 @@ const Single = ({posts, postsSingle, postsLatest }) => {
   }, [slug, postsSingle, postsLatest]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   if (!post) {
     return <div>Post not found</div>;
   }
-
-
 
   const formatDateWithOrdinal = (dateString) => {
     try {
@@ -108,7 +106,6 @@ const Single = ({posts, postsSingle, postsLatest }) => {
     }
   };
 
-  console.log(' post.category?.id: ',  post.category?.id);
   return (
     <div>
        <Helmet>
@@ -131,17 +128,18 @@ const Single = ({posts, postsSingle, postsLatest }) => {
         <div className={`stickySocialWrap ${isScrolled ? 'scrolled' : ''} ${
         isNearBottom ? 'hide' : ''
       }`} >
-  <div className="stickySocial">
-    <p>Share</p>
-    <ShareComponent
-  url={`https://memate.au/news/${post.slug}`}
-  title={post.title}
-  image={post.featured_img_url}
-  description={post.description}
-/>
-  
-  </div>
-</div>
+
+        <div className="stickySocial">
+          <p>Share</p>
+          <ShareComponent
+        url={`https://memate.au/news/${post.slug}`}
+        title={post.title}
+        image={post.featured_img_url}
+        description={post.description}
+      />
+        
+        </div>
+      </div>
 
         <div className="img-1-container-A ">
           <img className="img-1" src={post.featured_img_url} alt={post.title}></img>
@@ -201,11 +199,9 @@ const Single = ({posts, postsSingle, postsLatest }) => {
     </div>
   </div>
 ))}
-
-          </div>
+ </div>
     </div>
     <div className='blogSubscribeWrap'>
-
      <SubscribeForm />
     </div>
       </div>
