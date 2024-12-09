@@ -11,10 +11,10 @@ const EmployeeManagementPage = () => {
   return (
     <>
       <Helmet>
-    <title>Supplier Management | MeMate Features and Pricing Insights</title>
-    <meta property="og:title" content="Supplier Management | MeMate Features and Pricing Insights" />
-      <meta property="og:description" content="Discover MeMate&#39;s Supplier Management features, designed to streamline
-supplier relations, optimise procurement, and provide transparent pricing insights.
+    <title>Employee Management Software | Streamline HR Processes with MeMate</title>
+    <meta property="og:title" content="Employee Management Software | Streamline HR Processes with MeMate" />
+      <meta property="og:description" content="Enhance your HR operations with MeMate’s Employee Management Software. Designed for small Australian 
+      businesses, our platform offers comprehensive tools for workforce management and performance tracking.
     " />
 </Helmet>
     <Layout>

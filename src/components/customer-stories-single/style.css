@@ -10,6 +10,16 @@
   line-height: 100%; /* 21px */
   letter-spacing: -0.21px;
 }
+.customerstoriesGrid h1{
+  margin-bottom: 30px;
+  color: #29292B;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 420;
+  line-height: normal;
+  letter-spacing: -1px;
+}
 .pageBreadcrumbs ul {
   display: flex;
   align-items: center;  

@@ -10,10 +10,9 @@ const SupplierManagementPage = () => {
   return (
     <>
       <Helmet>
-    <title>Supplier Management | MeMate Features and Pricing Insights</title>
-    <meta property="og:title" content="Supplier Management | MeMate Features and Pricing Insights" />
-      <meta property="og:description" content="Discover MeMate&#39;s Supplier Management features, designed to streamline
-supplier relations, optimise procurement, and provide transparent pricing insights.
+    <title>Supplier Management Software | Optimise Vendor Relationships with meMate</title>
+    <meta property="og:title" content="Supplier Management Software | Optimise Vendor Relationships with meMate" />
+      <meta property="og:description" content="Enhance your procurement process with meMate’s Supplier Management Software. Streamline supplier relationships, monitor performance, and ensure compliance for Australian businesses.
     " />
 </Helmet>
     <Layout>

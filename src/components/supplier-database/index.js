@@ -62,9 +62,10 @@ const SupplierDatabase = () => {
   return (
     <>
       <Helmet>
-        <title>Supplier Database: Connect with Quality Providers</title>
-        <meta property="og:title" content="Supplier Database: Connect with Quality Providers" />
-        <meta property="og:description" content="Explore our extensive Supplier Database! Discover reliable suppliers that meet your requirements, ensuring quality and efficiency for your projects." />
+        <title>Australian Business Directory | List Your Business on MeMate’s Supplier Platform</title>
+        <meta property="og:title" content="Australian Business Directory | List Your Business on MeMate’s Supplier Platform" />
+        <meta property="og:description" content="Join meMate’s Australian Business Directory to list your company as a supplier. 
+        Help small businesses find trusted vendors and grow your network through our supplier database." />
       </Helmet>
       <div className={`main-section ${style.mainSection}`} data-aos="fade-up"
     data-aos-offset="50"
@@ -73,7 +74,7 @@ const SupplierDatabase = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <div className="main-heading">Supplier<br></br> Database</div>
+        <div className="main-heading main-headingdatabase">supplier<br></br> database</div>
 
         <div className={style.midheading} data-aos="fade-up"
     data-aos-offset="50"
@@ -82,7 +83,7 @@ const SupplierDatabase = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-          <p>Database of Companies Presented in meMate</p>
+          <h1>Connect and Grow with meMate’s Australian Business Directory</h1>
         </div>
         <div className={style.smallheading} data-aos="fade-up"
     data-aos-offset="50"

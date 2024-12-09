@@ -6,9 +6,9 @@
 .aboutBanner{
     border-radius: 30px;
     background: linear-gradient(146deg, #2B2B2D 5.4%, #777 108.55%);
-    padding: 80px 89px;
+    padding: 50px 89px 30px;
     text-align: center;
-    h1{
+    h2{
         margin-top: 7px;
         color: #fff;
         font-family: "Inter", sans-serif !important;
@@ -21,7 +21,7 @@
         letter-spacing: -6px;
         margin-bottom: 50px;
     }
-    h2{
+    h1{
         color: #FFF;
         text-align: center;
         font-size: 38px;
@@ -29,6 +29,7 @@
         font-weight: 600;
         line-height: normal;
         letter-spacing: -1px;
+        margin-bottom: 25px;
         
     }
     p{

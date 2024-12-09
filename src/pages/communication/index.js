@@ -11,10 +11,9 @@ const CommunicationPage = () => {
   return (
     <>
       <Helmet>
-    <title>Supplier Management | MeMate Features and Pricing Insights</title>
-    <meta property="og:title" content="Supplier Management | MeMate Features and Pricing Insights" />
-      <meta property="og:description" content="Discover MeMate&#39;s Supplier Management features, designed to streamline
-supplier relations, optimise procurement, and provide transparent pricing insights.
+    <title>Team Communication Tools | Enhance Collaboration with meMate’s Messaging Platform</title>
+    <meta property="og:title" content="Team Communication Tools | Enhance Collaboration with meMate’s Messaging Platform" />
+      <meta property="og:description" content="Improve team collaboration with MeMate’s internal communication software. Designed for Australian small businesses, our platform offers seamless messaging and collaboration tools.
     " />
 </Helmet>
     <Layout>

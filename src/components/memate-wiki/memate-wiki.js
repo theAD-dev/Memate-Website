@@ -53,15 +53,15 @@ const MemateWiki = () => {
   return (
     <>
     <Helmet>
-    <title>News Memate</title>
-      <meta property="og:title" content='News' />
-      <meta property="og:description" content='description' />
+    <title>MeMate Wiki | Informative Guide for Australian Business Owners</title>
+      <meta property="og:title" content='MeMate Wiki | Informative Guide for Australian Business Owners' />
+      <meta property="og:description" content='Explore the MeMate Wiki, your go-to resource for Australian business rules, terminology, and practical tips. Simplified information tailored for small business owners.' />
       <meta property="og:image" content='https://memate-website.s3.ap-southeast-2.amazonaws.com/news/1732171638_featured-image.jpg' />
       <meta property="og:url" content='window.location.href' />
       <meta property="og:type" content="article" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content='title' />
-      <meta name="twitter:description" content='description'/>
+      <meta name="twitter:description" content='Explore the MeMate Wiki, your go-to resource for Australian business rules, terminology, and practical tips. Simplified information tailored for small business owners.'/>
       <meta name="twitter:image" content= 'https://memate-website.s3.ap-southeast-2.amazonaws.com/news/1732171638_featured-image.jpg'/>
       <script type="application/ld+json">
           {`
@@ -92,9 +92,7 @@ const MemateWiki = () => {
         <span>meMate <br />wiki</span>
         <p>
           <strong>
-            Here, we gather valuable knowledge about general business<br />
-            management practices and tools, from job scheduling to <br />
-            invoicing and quote calculations.
+          MeMate Wiki: A Practical Guide for Australian Business Owners
           </strong>
         </p>
         <div className={style.searchFilterList}>

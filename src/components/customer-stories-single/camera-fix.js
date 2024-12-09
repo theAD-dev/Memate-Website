@@ -16,10 +16,10 @@ function CameraFix() {
   return (
 <>
 <Helmet>
-    <title>Camera Fix Case Study | Optimising Business with MeMate this is good</title>
-    <meta property="og:title" content="Camera Fix Case Study | Optimising Business with MeMate this is good" />
-      <meta property="og:description" content="Explore how Camera Fix, an Australian electronics repair shop, optimised its
-business operations and project management using MeMate’s powerful tools and features.
+    <title>MeMate Wiki | Informative Guide for Australian Business Owners</title>
+    <meta property="og:title" content="MeMate Wiki | Informative Guide for Australian Business Owners" />
+      <meta property="og:description" content="Explore the MeMate Wiki, your go-to resource for Australian business rules, 
+      terminology, and practical tips. Simplified information tailored for small business owners.
     " />
 </Helmet>
 <div className="parent-blog-page customerstoriespage">
@@ -33,6 +33,7 @@ business operations and project management using MeMate’s powerful tools and f
           </div>
      
 <div className="customerstoriesGrid">
+  <h1>MeMate Wiki: A Practical Guide for Australian Business Owners</h1>
 <div className="innerGrid imageOverlyText">
  <Link ><img
     className="img-container-stories"

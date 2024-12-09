@@ -1,16 +1,9 @@
 import { Link } from "react-router-dom";
 import "./style.css";
-import { Helmet } from 'react-helmet';
 import TronButton from "../../../layout/hover-button/tourn-but";
 const SalesComponent = () => {
   return (
   <>
-  <Helmet>
-    <title>Unlock MeMate's Features for Seamless Project Management</title>
-    <meta property="og:title" content="Unlock MeMate's Features for Seamless Project Management" />
-      <meta property="og:description" content="Explore innovative features that transform your workflow. MeMate provides the tools you need to manage projects efficiently and effectively.
-    " />
-</Helmet>
     <div className="sales-component-wrapper" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -23,9 +16,9 @@ const SalesComponent = () => {
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content ">
-          <span>
-          meMate allows you to convert every approved quote into an invoice, manage your company’s invoices, mark payments, and chase unpaid invoices effortlessly.
-          </span>
+          <h1>
+          Effortless Invoicing with meMate’s Quote & Invoice Solution.
+          </h1>
         </div>
 
         <div className="sales-component-button-wrapper">

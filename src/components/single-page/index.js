@@ -13,6 +13,7 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
 const Single = ({postsSingle, postsLatest }) => {
   const { slug } = useParams(); 
   const [post, setPost] = useState(null);
+  console.log('post: ', post);
   const [loading, setLoading] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNearBottom, setIsNearBottom] = useState(false);
@@ -109,8 +110,9 @@ const Single = ({postsSingle, postsLatest }) => {
   return (
     <div>
        <Helmet>
-       <meta property="og:title" content="Post Title" />
-        <meta property="og:description" content="Post Description" />
+        <title>{post.seo_title}</title>
+       <meta property="og:title" content={post.seo_title} />
+        <meta property="og:description" content={post.meta_description} />
         <meta property="og:image" content="https://memate.au/image.jpg" />
         <meta property="og:url" content="https://memate.au/news/post-slug" />
       </Helmet>

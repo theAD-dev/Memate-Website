@@ -10,16 +10,16 @@ const PricingComponent = () => {
   return (
     <>
       <Helmet>
-    <title>Affordable Plans of Project and Business Management Software</title>
-    <meta property="og:title" content="Affordable Plans of Project and Business Management Software" />
-      <meta property="og:description" content="Simple, transparent pricing of project management software. Find a plan that suits your workflow and helps streamline your operations.
+    <title>meMate Price | Affordable Business & Project Management Software for Businesses and Startups</title>
+    <meta property="og:title" content="meMate Price | Affordable Business & Project Management Software for Businesses and Startups" />
+      <meta property="og:description" content="Discover cost-effective pricing for meMate, Australia’s best project management and business management software. Perfect for startups and small businesses, offering ERP, CRM, and workflow automation tools.
     " />
 </Helmet>
     <div className={`main-section ${style.mainsectionspace} ${style.mainSection}`}>
         <div className={style.mainheading}>Pricing</div>
         <div className={style.mainimage}><img src={pricingMainImg} alt="Pricing main image" width={767} height={767}/></div>
         <div className={style.midheading}>
-          <p>Simple, transparent pricing</p>
+          <h1>Affordable Pricing for Small Businesses & Startups</h1>
         </div>
         <div className={style.smallheading}>
           <p>Plus, we provide a 14-day free trial because we believe our software will become indispensable to your business.</p>

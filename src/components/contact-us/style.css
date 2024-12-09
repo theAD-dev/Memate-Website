@@ -51,6 +51,18 @@
     line-height: normal;
     letter-spacing: -1px;
 }
+.main-section .mid-heading h1.h1tags {
+    color: #29292B;
+    text-align: center;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: var(--ios-status-bar-status-bar-text-color, #000);
+    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: normal;
+    letter-spacing: -1px;
+}
 
 .main-section .small-heading {
     padding-top: 26px;

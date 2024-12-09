@@ -5,12 +5,6 @@ import TronButton from "../../../layout/hover-button/tourn-but";
 const SalesComponent = () => {
   return (
   <>
-  <Helmet>
-    <title>Unlock MeMate's Features for Seamless Project Management</title>
-    <meta property="og:title" content="Unlock MeMate's Features for Seamless Project Management" />
-      <meta property="og:description" content="Explore innovative features that transform your workflow. MeMate provides the tools you need to manage projects efficiently and effectively.
-    " />
-</Helmet>
     <div className="sales-component-wrapper" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -23,10 +17,9 @@ const SalesComponent = () => {
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content ">
-          <span>
-          meMate features a unique project management system designed specifically for businesses. 
-          It provides exactly what companies need to maintain and manage their projects efficiently.
-          </span>
+          <h1>
+          Optimise Your Projects with MeMate’s Advanced Management Tools
+          </h1>
         </div>
 
         <div className="sales-component-button-wrapper">

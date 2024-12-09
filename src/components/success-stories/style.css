@@ -231,6 +231,17 @@ p.owners-disp {
 .customerstoriesitem a {
   font-size: 13px;
   line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.intro-sticky {
+  height: 500px;
+}
+.apply-content {
+  margin-top: -500px;
 }
 .slider-section1 {
   padding:0 15px;
@@ -239,11 +250,17 @@ p.owners-disp {
   max-width: 320px;
 }
 .slider-item a img {
-  height: 93px;
+  height: 66px;
   object-fit: cover;
 }
+.slick-slide.slick-active.slick-center.slick-current .customerstoriesitem {
+  border-radius: 0px 0px 15px 15px;
+}
+.slider-item img {
+  border-radius: 15px 15px 0px 0px;
+}
 .slick-slide.slick-active.slick-center.slick-current img {
-  height: 134px;
+  height: 92px;
   object-fit: cover;
 }
 .customerstoriesitem {

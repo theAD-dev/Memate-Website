@@ -156,6 +156,9 @@
         padding-bottom: 0px;
         letter-spacing: 1px;
     }
+    .integation-title span:last-child {
+        padding-bottom: 9px;
+    }
     .integation-title h3 {
         font-size: 34px;
     }

@@ -13,19 +13,20 @@ function CustomerStories() {
   return (
 <>
 <Helmet>
-    <title>Success Stories: How MeMate Helps Our Customers</title>
-    <meta property="og:title" content="Success Stories: How MeMate Helps Our Customers" />
-      <meta property="og:description" content="Explore inspiring customer stories showcasing the impact of MeMate. See how our platform has enhanced productivity and project management.
+    <title>Customer Success Stories | How meMate Transforms Australian Businesses</title>
+    <meta property="og:title" content="Customer Success Stories | How meMate Transforms Australian Businesses" />
+      <meta property="og:description" content="Explore how MeMate’s business management software helps Australian businesses succeed. 
+      Read case studies and success stories showcasing CRM, workflow automation, and project management solutions
     " />
 </Helmet>
 <div className="parent-blog-page customerstoriespage">
       <div className="parent-blog">
         <div className="heading-container">
-          <h1 className="heading-blog">
+          <h2 className="heading-blog">
           customer  <br></br>stories
-          </h1>
+          </h2>
           <div className="heading-blog-description">
-            <span className="heading-text-blog">Power of meMate Put to Work</span>
+            <h1 className="heading-text-blog">Success Stories: Real Businesses, Real Results with MeMate</h1>
             
           </div>
           <div class="small-heading"> <p>How Small Businesses Use meMate in Their Everyday Activities to Increase Profitability</p></div>

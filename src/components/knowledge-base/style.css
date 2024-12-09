@@ -16,9 +16,11 @@
     line-height: 164px; /* 74.545% */
     letter-spacing: 1px;
     padding-top: 354.2px;
-    padding-bottom: 142px;
+    padding-bottom: 39px;
 }
-
+.metatags{
+    padding: 20px 0 70px;
+}
 .kb-main-section .kb-main-heading {
     background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
     -webkit-background-clip: text;

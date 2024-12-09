@@ -53,9 +53,10 @@ const SoftwareUpdate = () => {
   return (
     <>
     <Helmet>
-    <title>Discover the Latest Features in Our Software Update | Memate</title>
-    <meta property="og:title" content="Discover the Latest Features in Our Software Update | Memate" />
-      <meta property="og:description" content="Stay informed about MeMate's software updates. Explore new functionalities, improvements, and fixes that enhance your project management tools.
+    <title>Software Updates & Technology Upgrades | MeMate Business Solutions</title>
+    <meta property="og:title" content="Software Updates & Technology Upgrades | MeMate Business Solutions" />
+      <meta property="og:description" content="Stay ahead with MeMate’s latest software system updates and technology upgrades. 
+      Explore how our ongoing innovations keep Australian small businesses running efficiently.
     " />
      
 </Helmet>
@@ -65,7 +66,7 @@ const SoftwareUpdate = () => {
           <div className="Memate">Memate</div>
         </div>
         <div className="latestUpdates">
-          <h1 className="latest-update-text latest-update-head">Latest Updates</h1>
+          <h1 className="latest-update-text latest-update-head">meMate’s Latest Updades</h1>
         </div>
 
         {update.map((item, index) => (

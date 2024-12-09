@@ -11,10 +11,10 @@ const ProjectManagementPage = () => {
   return (
     <>
       <Helmet>
-    <title>Supplier Management | MeMate Features and Pricing Insights</title>
-    <meta property="og:title" content="Supplier Management | MeMate Features and Pricing Insights" />
-      <meta property="og:description" content="Discover MeMate&#39;s Supplier Management features, designed to streamline
-supplier relations, optimise procurement, and provide transparent pricing insights.
+    <title>Invoicing Software | Seamless Billing Solutions for your Businesses in Australia</title>
+    <meta property="og:title" content="Invoicing Software | Seamless Billing Solutions for your Businesses in Australia" />
+      <meta property="og:description" content="Streamline your invoicing with MeMate’s online billing software. 
+      Designed for Australian small businesses, our tools simplify quoting, invoicing, and payment tracking.
     " />
 </Helmet>
     <Layout>

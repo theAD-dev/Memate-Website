@@ -161,6 +161,14 @@ button.get-started-btn {
         font-size: 28px;
         line-height: 28px;
     }
+    .inner-text p {
+        text-align: center;
+        padding: 0 3px !important;
+    }
+    .mainOperationRight .main-operation {
+        padding-right: 0;
+        padding-left: 0;
+    }
     .operation-right span.gradientAnimenate {
         font-size: 71px !important;
         position: absolute;
@@ -202,7 +210,7 @@ button.get-started-btn {
     }
     .operation-left h2 {
         font-size: 26px;
-        line-height:32px;
+        line-height: 21px;
     }
     .operation-left {
         padding: 0;

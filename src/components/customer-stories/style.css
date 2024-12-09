@@ -10,7 +10,7 @@
   letter-spacing: 1px;
   position: relative;
 }
-.heading-text-blog {
+h1.heading-text-blog {
   color: #29292b;
   text-align: center;
   font-family: "sequel_sans_bold_disp" !important;

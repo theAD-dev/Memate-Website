@@ -11,10 +11,9 @@ const ProfitabilityAndBudgetingPage = () => {
   return (
     <>
       <Helmet>
-    <title>Supplier Management | MeMate Features and Pricing Insights</title>
-    <meta property="og:title" content="Supplier Management | MeMate Features and Pricing Insights" />
-      <meta property="og:description" content="Discover MeMate&#39;s Supplier Management features, designed to streamline
-supplier relations, optimise procurement, and provide transparent pricing insights.
+    <title>Profitability Analysis & Budgeting Software | meMate Financial Planning Tools</title>
+    <meta property="og:title" content="Profitability Analysis & Budgeting Software | meMate Financial Planning Tools" />
+      <meta property="og:description" content="Enhance your financial planning with MeMate’s profitability analysis and budgeting software. Designed for Australian businesses, our tools provide comprehensive budgeting solutions and financial insights.
     " />
 </Helmet>
     <Layout>

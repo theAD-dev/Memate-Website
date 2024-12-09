@@ -11,10 +11,9 @@ const ReportsPage = () => {
   return (
     <>
       <Helmet>
-    <title>Supplier Management | MeMate Features and Pricing Insights</title>
-    <meta property="og:title" content="Supplier Management | MeMate Features and Pricing Insights" />
-      <meta property="og:description" content="Discover MeMate&#39;s Supplier Management features, designed to streamline
-supplier relations, optimise procurement, and provide transparent pricing insights.
+    <title>Comprehensive Business Analytics & Reporting Tools | meMate</title>
+    <meta property="og:title" content="Comprehensive Business Analytics & Reporting Tools | meMate" />
+      <meta property="og:description" content="Unlock real-time business insights with MeMate’s comprehensive reporting tools. Designed for Australian businesses, our software offers financial reporting, project performance analysis, and more to drive informed decisions.
     " />
 </Helmet>
     <Layout>

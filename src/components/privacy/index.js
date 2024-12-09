@@ -11,13 +11,14 @@ const PrivacyComponent = () => {
   return (
     <>
      <Helmet>
-    <title>Learn About Our Privacy Commitment at MeMate</title>
-    <meta property="og:title" content="Learn About Our Privacy Commitment at MeMate" />
-      <meta property="og:description" content="At MeMate, we respect your privacy. Discover our commitment to data protection and how we handle your personal information responsibly." />
+    <title>Privacy Policy | MeMate Business Management Software</title>
+    <meta property="og:title" content="Privacy Policy | MeMate Business Management Software" />
+      <meta property="og:description" content="Learn how MeMate protects your data with our privacy policy. 
+      Discover our commitment to data privacy and security for Australian businesses using our CRM and management software." />
 </Helmet>
       <div className={`kb-main-section ${style.mainHeadinstyle}`}>
-      <h5>memate</h5>
-      <h2>Privacy</h2>
+      {/* <h5>memate</h5> */}
+      <h1>meMate <br/>Privacy Policy</h1>
       </div>
       <MiddleSection />
       <div>

@@ -2,6 +2,7 @@ import style from './features.module.scss';
 import './style.css'; 
 import Iconsdata from "../../assests/icons";
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -176,13 +177,18 @@ const FeaturesComponent = () => {
     
   return (
     <>
+     <Helmet>
+    <title>Features | Business Management Software and Workflow Automation Tools in Australia</title>
+    <meta property="og:title" content="Features | Business Management Software and Workflow Automation Tools in Australia" />
+      <meta property="og:description" content="Discover the comprehensive features of MeMate, Australia’s top business management software. From CRM for small businesses to project management features and workflow automation tools, we have it all.
+    " />
+</Helmet>
       <div className={style.mainMenuPages}>
         <div className={style.mainHeadTitle}>
-          <h1>Features</h1>
-          <p>
-            Here are meMate’s main features to help you quickly understand if it
-            will be suitable for your<br></br> business.
-          </p>
+          <h2>Features</h2>
+          <h1>
+          Comprehensive Features of Business Management and CRM Software
+          </h1>
         </div>
 
         {featuresData.map((featureCategory, categoryIndex) => (
