@@ -4,7 +4,11 @@
 
 
 
-
+.request-btn.request-btnApp-white .get-started-border-box .btn-base--black {
+  background: #fff;
+  margin-bottom: 9px;
+  border: 1px solid #1d1d1f;
+}
 
 .gradientAnimenate {
   background-color: #29292b;

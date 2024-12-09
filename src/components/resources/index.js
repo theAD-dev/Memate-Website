@@ -8,16 +8,16 @@ const ResourcesComponent = () => {
   return (
     <> 
      <Helmet>
-    <title>Resources | MeMate - Business &amp; Project Management Insights</title>
-    <meta property="og:title" content="Resources | MeMate - Business &amp; Project Management Insights" />
-      <meta property="og:description" content="Explore MeMate&#39;s Resources &amp; Tools, including the MeMate Manual and
-Business Support, designed to empower efficient project management and business growth.
+    <title>Resources | Business Management Guides & Tools by meMate</title>
+    <meta property="og:title" content="Resources | Business Management Guides & Tools by meMate" />
+      <meta property="og:description" content="Access MeMate’s library of resources, including business management guides, CRM tutorials, and workflow automation tips. 
+      Empower your Australian small business with expert tools and advice
     " />
 </Helmet>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
     <div className={style.mainHeadTitle}>
-      <h1>resources</h1>
-     <p>Here are meMate’s main features to help you quickly understand if it will be suitable for your<br></br> business.</p>
+      <h2>resources</h2>
+     <h1>Explore Resources for Business Management and CRM Solutions</h1>
     </div>
 
     <div className={style.mainGridWrap}>

@@ -56,8 +56,8 @@ const IndustriesComponent = () => {
     <>
       <div className={style.mainMenuPages}>
         <div className={style.mainHeadTitle}>
-          <h1>industries</h1>
-          <p>Here are meMate’s main features to help you quickly understand if it will be suitable for your<br></br> business.</p>
+          <h2>industries</h2>
+          <h1>Transform Your Industry with MeMate’s Business Management Software</h1>
         </div>
 
         {featuresData.map((featureCategory, categoryIndex) => (

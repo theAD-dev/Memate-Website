@@ -16,11 +16,10 @@ function BoatWizard() {
   return (
     <>
     <Helmet>
-    <title>Boat Wizard Case Study | Streamlining Operations with MeMate</title>
-    <meta property="og:title" content="Boat Wizard Case Study | Streamlining Operations with MeMate" />
-      <meta property="og:description" content="Learn how Boat Wizard improved business management and optimised
-operations with MeMate’s tools, enhancing efficiency and ensuring smooth project
-execution.
+    <title>Boat Wizard Success Story | MeMate’s Marine Service Management Software</title>
+    <meta property="og:title" content="Boat Wizard Success Story | MeMate’s Marine Service Management Software" />
+      <meta property="og:description" content="Discover how Boat Wizard, a leading Sydney-based boat repair service, 
+      transformed operations and boosted customer satisfaction using MeMate’s business management software.
     " />
 </Helmet>
       <div className="parent-blog-page customerstoriespage">
@@ -33,6 +32,7 @@ execution.
             <Link to="/customer-stories" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>
           <div className="customerstoriesGrid">
+            <h1>Boat Wizard Elevates Marine Services with MeMate’s Management Software</h1>
             <div className="innerGrid imageOverlyText">
               <Link ><img
                 className="img-container-stories"

@@ -10,10 +10,9 @@ const ClientPage = () => {
   return (
     <>
      <Helmet>
-    <title>Client Management | Pricing, MeMate Tool Benefits, and Insights</title>
-    <meta property="og:title" content="Client Management | Pricing, MeMate Tool Benefits, and Insights" />
-      <meta property="og:description" content="Explore MeMate’s Client Management for pricing details, tool benefits, and
-insights to streamline workflows, enhance client relations, and boost productivity.
+    <title>Client Management Software | CRM Tools for Small Businesses in Australia</title>
+    <meta property="og:title" content="Client Management Software | CRM Tools for Small Businesses in Australia" />
+      <meta property="og:description" content="Streamline managing clients and prospective clients with MeMate’s cloud-based CRM software. Designed for small businesses in Australia, our tools help organise your client database and improve relationships.
     " />
 </Helmet>
     <Layout>

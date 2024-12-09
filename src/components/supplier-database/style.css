@@ -16,7 +16,9 @@
     font-weight: 425;
     letter-spacing: 1px;
 }
-
+.main-heading.main-headingdatabase {
+  line-height: 213px;
+}
 .MuiAccordionSummary-content{
     justify-content: space-between;
     width: 100%;

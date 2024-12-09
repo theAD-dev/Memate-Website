@@ -17,14 +17,14 @@ const MenuIndustry = () => {
           >
             <div className="menu-client-management">
               {/* <img src={menuImages.creativeAgency} /> */}
-              <Link to="/creative-agencies" className={` ${location.pathname === "/creative-agencies" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon021">Creative Agencies</p></Link>
+              <Link to="/industries/business-software-for-creative-agencies" className={` ${location.pathname === "/industries/business-software-for-creative-agencies" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon021">Creative Agencies</p></Link>
             </div>
           </div>
 
           <div className="menu-management-feature">
             <div className="menu-client-management">
               {/* <img src={menuImages.electronic} /> */}
-              <Link to="/electronic-repair-specialists" className={` ${location.pathname === "/electronic-repair-specialists" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon022"  style={{ width: "100%" }}>Electronic Repair Specialists</p></Link>
+              <Link to="/industries/software-for-electronic-repair-businesses" className={` ${location.pathname === "/industries/software-for-electronic-repair-businesses" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon022"  style={{ width: "100%" }}>Electronic Repair Specialists</p></Link>
               </div>
           </div>
 
@@ -34,7 +34,7 @@ const MenuIndustry = () => {
           >
             <div className="menu-client-management">
               {/* <img src={menuImages.photoVideoAgency} /> */}
-              <Link to="/photo-video-agency" className={` ${location.pathname === "/photo-video-agency" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon023"  style={{ width: "100%" }}>Photo & Video Agency</p></Link>
+              <Link to="/industries/software-for-photo-video-agencies" className={` ${location.pathname === "/industries/software-for-photo-video-agencies" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon023"  style={{ width: "100%" }}>Photo & Video Agency</p></Link>
            </div>
           </div>
 
@@ -44,7 +44,7 @@ const MenuIndustry = () => {
           >
             <div className="menu-client-management">
               {/* <img src={menuImages.automotive} /> */}
-              <Link to="/automotive" className={` ${location.pathname === "/automotive" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon024">Automotive</p></Link>
+              <Link to="/industries/business-software-for-automotive-industry" className={` ${location.pathname === "/industries/business-software-for-automotive-industry" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon024">Automotive</p></Link>
             </div>
           </div>
           <div
@@ -52,7 +52,7 @@ const MenuIndustry = () => {
           >
             <div className="menu-client-management">
               {/* <img src={menuImages.startUps} /> */}
-              <Link to="/startups" className={` ${location.pathname === "/startups" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon025" >Startups</p></Link>
+              <Link to="/industries/business-management-software-for-startups" className={` ${location.pathname === "/industries/business-management-software-for-startups" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon025" >Startups</p></Link>
             </div>
           </div>
           <div
@@ -60,7 +60,7 @@ const MenuIndustry = () => {
            >
             <div className="menu-client-management">
               {/* <img src={menuImages.construction} /> */}
-              <Link to="/construction" className={` ${location.pathname === "/construction" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon026" >Construction</p></Link>
+              <Link to="/industries/business-software-for-construction-industry" className={` ${location.pathname === "/industries/business-software-for-construction-industry" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon026" >Construction</p></Link>
             </div>
           </div>
         </div>

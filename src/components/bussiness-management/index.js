@@ -14,10 +14,9 @@ const BussinessManagement = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
         <div className="home-platform">
-          <h2>
-            Business management cloud software. <br />
-            All-in-One Platform
-          </h2>
+          <h1>
+          Business Management Software</h1>
+          <h2>All-in-One Platform</h2>
         </div>
 
         <div className="heding-text-top marginBottomSpace">

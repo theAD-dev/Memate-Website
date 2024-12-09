@@ -24,7 +24,7 @@
     bottom: 0;
 }
 
-.industry-top-heading {
+h1.industry-top-heading {
   color: #fff;
   font-family: "sequel_sans_semi_bold_disp" !important;
   font-size: 42px;

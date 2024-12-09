@@ -89,9 +89,9 @@ const ContactUsComponent = () => {
   return (
     <div id="contactUsPage">
     <Helmet>
-    <title>MeMate: Contact Us for Support and Inquiries</title>
-    <meta property="og:title" content="MeMate: Contact Us for Support and Inquiries" />
-      <meta property="og:description" content="We're here to help! Contact us for inquiries, support, or feedback. Your questions are important, and our team is ready to assist you.
+    <title>Contact Us | meMate Business Management Software Support</title>
+    <meta property="og:title" content="Contact Us | meMate Business Management Software Support" />
+      <meta property="og:description" content="Get in touch with MeMate for support and inquiries about our business management software. We’re here to help Australian businesses thrive with CRM, ERP, and workflow automation solutions
     " />
 </Helmet>
       <div className="main-section" data-aos="fade-up"
@@ -104,7 +104,7 @@ const ContactUsComponent = () => {
         <div className="main-heading" >contact us</div>
         <div className="main-image"><img src={ContactUsMainImage} alt="contact us main image" width={545} height={545}/></div>
         <div className="mid-heading">
-          <p>Whether you'd like to chat, email or receive a callback</p>
+          <h1 className="h1tags">Contact the MeMate Team for Business<br /> Management Software Solutions in Australia</h1>
           <p>a friendly memate specialist is ready to help.</p>
         </div>
         <div className="small-heading">

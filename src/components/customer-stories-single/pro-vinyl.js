@@ -20,10 +20,10 @@ function ProVinyl() {
   return (
     <>
     <Helmet>
-    <title>Pro Vinyl Case Study | Optimising Business with MeMate</title>
-    <meta property="og:title" content="Pro Vinyl Case Study | Optimising Business with MeMate" />
-      <meta property="og:description" content="Discover how Pro Vinyl enhanced its business operations and project
-management with MeMate, streamlining workflows and driving efficiency across projects.
+    <title>Pro Vinyl Success Story | MeMate’s Automotive Business Management Software</title>
+    <meta property="og:title" content="Pro Vinyl Success Story | MeMate’s Automotive Business Management Software" />
+      <meta property="og:description" content="Discover how Pro Vinyl transformed its car wrapping services using MeMate’s business management software, 
+      leading to streamlined operations and increased revenue in the Australian automotive industry.
     " />
 </Helmet>
       <div className="parent-blog-page customerstoriespage">
@@ -36,6 +36,7 @@ management with MeMate, streamlining workflows and driving efficiency across pro
             <Link to="/customer-stories" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>
           <div className="customerstoriesGrid">
+            <h1>Pro Vinyl’s Transformation with MeMate’s Automotive Business Software</h1>
             <div className="innerGrid imageOverlyText">
               <Link ><img
                 className="img-container-stories"

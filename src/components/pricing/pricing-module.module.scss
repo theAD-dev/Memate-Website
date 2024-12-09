@@ -34,6 +34,7 @@
         background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        
     }
 
    .midheading {
@@ -48,6 +49,15 @@
         font-weight: 420;
         line-height: normal;
         letter-spacing: -1px;
+        h1{
+          color: #29292B;
+          text-align: center;
+          font-size: 42px;
+          font-style: normal;
+          font-weight: 420;
+          line-height: normal;
+          letter-spacing: -1px;
+        }
     }
     .smallheading{
         padding-top: 26px;

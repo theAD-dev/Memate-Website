@@ -22,9 +22,9 @@ const LandingPage = ({postsLatest, updates}) => {
   return (
    <>
     <Helmet>
-    <title>Memate: Efficient Project & Business Management Software</title>
-    <meta property="og:title" content="Memate: Efficient Project & Business Management Software" />
-      <meta property="og:description" content="Meta Description- Streamline your business operations with our all in one project and business management software. Track tasks, collaborate, and manage projects efficiently.
+    <title>All-in-One Business & Project Management Software | ERP & CRM Solutions</title>
+    <meta property="og:title" content="All-in-One Business & Project Management Software | ERP & CRM Solutions" />
+      <meta property="og:description" content="Streamline your business with Australia’s leading cloud-based ERP, CRM, and project management software. Perfect for small and medium-sized enterprises seeking efficiency and growth.
     " />
   </Helmet>
     <Layout>

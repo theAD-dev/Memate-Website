@@ -55,7 +55,14 @@
   color: #757B8A;
   font-size:18px;
 }
-
+.sales-component-content h1{
+  color: #757B8A;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%; 
+}
 .sales-component-content {
   display: flex;
   justify-content: center;

@@ -39,9 +39,9 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
   return (
     < div id="blogGrid">
     <Helmet>
-    <title>{postsLatest[0]?.title || "MeMate News: Product Management Product Updates & Industry Trends"}</title>
-    <meta property="og:title" content={postsLatest[0]?.title || "MeMate News"} />
-    <meta property="og:description" content={postsLatest[0]?.description || "Stay updated with the latest MeMate news and industry insights. Discover product updates, company announcements, and expert advice for your business."} />
+    <title>meMate News | Latest Business Technology News, Software and Regulation updates</title>
+    <meta property="og:title" content="meMate News | Latest Business Technology News, Software and Regulation updates" />
+    <meta property="og:description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." />
     <meta property="og:image" content={postsLatest[0]?.featured_img_url || 'default-image-url'} />
     <meta property="og:url" content={`https://yourdomain.com/news/${postsLatest[0]?.slug || ''}`} />
 
@@ -83,7 +83,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
               latest <br></br>articles
             </h1>
             <div className="heading-blog-description">
-              <span className="heading-text-blog">Crafted by Our Team</span>
+              <h1 className="heading-text-blog">Latest Small Business <br />Technology News and Software Updates</h1>
             </div>
             <div className="dog-img-container1 dog-img-container">
               <img className="dog-img" src={Images.blogImgDog}></img>

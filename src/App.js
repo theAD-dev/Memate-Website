@@ -213,7 +213,6 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <Routes>
           <Route path="/" exact element={<LandingPage posts={posts} postsLatest={postsLatest} />} />
-          <Route path="/feature-page-sales" exact element={<FeaturePage />} />
           <Route
             path="/news"
             exact
@@ -224,10 +223,9 @@ function App() {
           <Route
             path="/news/tags/:slug"
             element={<BlogTagPage PostsCategories={PostsCategories}  postsSingle={posts} postsLatest={postsLatest} />} />
-
           <Route path="/news/category/:id" element={<CategoryPage PostsCategories={PostsCategories} postsSingle={posts} postsLatest={postsLatest} />} />
           <Route path="/software-update" exact element={<SoftwareUpdatePage />} />
-          <Route path="/creative-agencies" exact element={<IndustryPage />} />
+          <Route path="/industries/business-software-for-creative-agencies" exact element={<IndustryPage />} />
           <Route path="/contact-us" exact element={<ContactUsPage />} />
           <Route path="/supplier-database" exact element={<SupplierDatabasePage />} />
           <Route path="/knowledge-base" exact element={<KnowledgeBasePage />} />
@@ -243,38 +241,37 @@ function App() {
           <Route path="/sorted-media" exact element={<CustomerStoriesPageSingle />} />
           <Route path="/data-single/:slug" exact element={<DatabasePageSingle />} />
           <Route path="/add-your-company" exact element={<AddYourCompanyPage />} />
-          <Route path="/client-management" exact element={<ClientPage />} />
-          <Route path="/supplier-management" exact element={<SupplierManagementPage />} />
-          <Route path="/employee-management" exact element={<EmployeeManagementPage />} />
-          <Route path="/project-management" exact element={<ProjectManagementPage />} />
-          <Route path="/reports" exact element={<ReportsPage />} />
-          <Route path="/profitability-and-budgeting" exact element={<ProfitabilityAndBudgetingPage />} />
-          <Route path="/contractor" exact element={<ContractorPage />} />
-          <Route path="/internal-chat" exact element={<InternalChatPage />} />
-          <Route path="/time-sheet" exact element={<TimeSheetPage />} />
-          <Route path="/task-management" exact element={<TaskManagementPage />} />
-          <Route path="/communication" exact element={<CommunicationPage />} />
-          <Route path="/scheduling" exact element={<SchedulingPage />} />
-          <Route path="/invoicing" exact element={<InvoicingPage />} />
-          <Route path="/statistic" exact element={<StatisticPage />} />
-          <Route path="/schedule-jobs" exact element={<ScheduleJobsPage />} />
-          <Route path="/time-tracker" exact element={<TimeTrackerPage />} />
-          <Route path="/job-approval" exact element={<JobApprovalPage />} />
-          <Route path="/multi-location" exact element={<MultiLocationPage />} />
-          <Route path="/calendar" exact element={<CalendarPage />} />
-          <Route path="/calculators" exact element={<CalculatorsPage />} />
-          <Route path="/electronic-repair-specialists" exact element={<ElectronicPage />} />
-          <Route path="/photo-video-agency" exact element={<PhotoPage />} />
-          <Route path="/automotive" exact element={<AutomotivePage />} />
-          <Route path="/startups" exact element={<StartupsPage />} />
-          <Route path="/construction" exact element={<ConstructionPage />} />
-          <Route path="/features-news" exact element={<FeaturesNewsPage />} />
+          <Route path="/features/client-management-software" exact element={<ClientPage />} />
+          <Route path="/features/supplier-management-software" exact element={<SupplierManagementPage />} />
+          <Route path="/features/sales-management-tools" exact element={<FeaturePage />} />
+          <Route path="/features/employee-management-tools" exact element={<EmployeeManagementPage />} />
+          <Route path="/features/project-management-software" exact element={<ProjectManagementPage />} />
+          <Route path="/features/business-reporting-tools" exact element={<ReportsPage />} />
+          <Route path="/features/profitability-and-budgeting-software" exact element={<ProfitabilityAndBudgetingPage />} />
+          <Route path="/features/contractor-management-software" exact element={<ContractorPage />} />
+          <Route path="/features/internal-communication-tools" exact element={<InternalChatPage />} />
+          <Route path="/features/time-tracking-software" exact element={<TimeSheetPage />} />
+          <Route path="/features/task-management-software" exact element={<TaskManagementPage />} />
+          <Route path="/features/team-communication-tools" exact element={<CommunicationPage />} />
+          <Route path="/features/job-scheduling-software" exact element={<SchedulingPage />} />
+          <Route path="/features/invoicing-software" exact element={<InvoicingPage />} />
+          <Route path="/features/business-statistics-tools" exact element={<StatisticPage />} />
+          <Route path="/features/job-management-software" exact element={<ScheduleJobsPage />} />
+          <Route path="/features/time-tracking-tools" exact element={<TimeTrackerPage />} />
+          <Route path="/features/job-approval-software" exact element={<JobApprovalPage />} />
+          <Route path="/features/multi-location-management" exact element={<MultiLocationPage />} />
+          <Route path="/features/calendar-timeline-management-software" exact element={<CalendarPage />} />
+          <Route path="/features/business-quote-calculator" exact element={<CalculatorsPage />} />
+          <Route path="/industries/software-for-electronic-repair-businesses" exact element={<ElectronicPage />} />
+          <Route path="/industries/software-for-photo-video-agencies" exact element={<PhotoPage />} />
+          <Route path="/industries/business-software-for-automotive-industry" exact element={<AutomotivePage />} />
+          <Route path="/industries/business-management-software-for-startups" exact element={<StartupsPage />} />
+          <Route path="/industries/business-software-for-construction-industry" exact element={<ConstructionPage />} />
+          <Route path="/features/your-business-news-management" exact element={<FeaturesNewsPage />} />
           <Route path="/about" exact element={<AboutMematePage />} />
           <Route path="/delete-request" exact element={<DeleteRequestPage />} />
           <Route path="/memate-wiki" exact element={<MemateWikiPage />} />
           <Route path="/wiki/:categoryId" exact element={<MemateWikiSinglePage />} />
-
-
           <Route path="/security" exact element={<SecurityPage />} />
           <Route path="/legal" exact element={<LegalPage />} />
           <Route path="/contact-sales" exact element={<ContactSalesPage />} />
@@ -287,7 +284,6 @@ function App() {
           <Route path="*" exact element={<ErrorPage />} />
           <Route path="/thank-you" exact element={<ThankYouPage />} />
           <Route path="/tron-btton" exact element={<TronButton />} />
-
         </Routes>
       </QueryClientProvider>
     </div>
