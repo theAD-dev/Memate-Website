@@ -369,8 +369,8 @@ img.img-container-stories {
 @media screen and (max-width: 767px) {
   .customerstoriesGrid {
     width: 100%;
-    margin: 15px auto 15px;
-  }
+    margin: 42px auto 15px;
+}
   .customerstoriesDetails {
     padding: 15px;
 }
@@ -380,6 +380,9 @@ img.img-container-stories {
 }
 .customerstoriesDetails a.readMoreBut {
   margin-top: 15px;
+}
+.customerstoriesGrid h1 {
+  font-size: 28px;
 }
 .heading-blog-description{
   margin-top: 0px;
@@ -391,6 +394,9 @@ img.img-container-stories {
   font-size: 22px;
   line-height: 30px;
   letter-spacing: 0;
+}
+h1.heading-text-blog {
+  font-size: 25px;
 }
 .customerstoriesDetails .category {
   font-size: 24px;

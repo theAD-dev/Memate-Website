@@ -108,7 +108,7 @@ const MemateWiki = () => {
           />
         </div>
       </div>
-      <div>
+      <div className={style.mainwikiMibile}>
         {initialLoading || isLoading ? (
           <p>Loading...</p>
         ) : error ? (

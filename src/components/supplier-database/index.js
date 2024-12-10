@@ -76,7 +76,7 @@ const SupplierDatabase = () => {
     data-aos-anchor-placement="top-bottom">
         <div className="main-heading main-headingdatabase">supplier<br></br> database</div>
 
-        <div className={style.midheading} data-aos="fade-up"
+        <div className={`${style.supdatabaseHead} ${style.midheading}`} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="600"

@@ -13,38 +13,38 @@ const items = [
         //heading:"Management", 
         contents: {
             Management: [
-              { content: "Client Management", link: "/client-management", img: `${menuImages.clientManagement}` },
-              { content: "Supplier Management", link: "/supplier-management", img: `${menuImages.supplierManagement}` },
-              { content: "Sales Pipeline", link: "/feature-page-sales", img: `${menuImages.salesPipeline}` },
-              { content: "Project Management", link: "/project-management", img: `${menuImages.projectManagement}` }
+              { content: "Client Management", link: "/features/client-management-software", img: `${menuImages.clientManagement}` },
+              { content: "Supplier Management", link: "/features/supplier-management-software", img: `${menuImages.supplierManagement}` },
+              { content: "Sales Pipeline", link: "/features/sales-management-tools", img: `${menuImages.salesPipeline}` },
+              { content: "Project Management", link: "/features/project-management-software", img: `${menuImages.projectManagement}` }
             ],
             Productivity: [
-              { content: "Reports", link: "/reports", img: `${menuImages.reports}` },
-              { content: "Profitability & Budgeting", link: "/profitability-and-budgeting", img: `${menuImages.profitAndBudget}` },
-              { content: "Employee Management", link: "/employee-management", img: `${menuImages.emplyManage}` },
-              { content: "Contractor", link: "/contractor", img: `${menuImages.contractor}` }
+              { content: "Reports", link: "/features/business-reporting-tools", img: `${menuImages.reports}` },
+              { content: "Profitability & Budgeting", link: "/features/profitability-and-budgeting-software", img: `${menuImages.profitAndBudget}` },
+              { content: "Employee Management", link: "/features/employee-management-tools", img: `${menuImages.emplyManage}` },
+              { content: "Contractor", link: "/features/contractor-management-software", img: `${menuImages.contractor}` }
             ],
             Functionality: [
-              { content: "Internal chat", link: "/internal-chat", img: `${menuImages.internalChat}` },
-              { content: "Timesheet", link: "/time-sheet", img: `${menuImages.timeSheet}` },
-              { content: "Features News", link: "/features-news", img: `${menuImages.news}` },
-              { content: "Task Management", link: "/task-management", img: `${menuImages.taskManagement}` }
+              { content: "Internal chat", link: "/features/internal-communication-tools", img: `${menuImages.internalChat}` },
+              { content: "Timesheet", link: "/features/time-tracking-software", img: `${menuImages.timeSheet}` },
+              { content: "Features News", link: "/features/your-business-news-management", img: `${menuImages.news}` },
+              { content: "Task Management", link: "/features/task-management-software", img: `${menuImages.taskManagement}` }
             ],
             Technology: [
-                { content: "Communication", link: "/communication", img: `${menuImages.communicationIcon}` },
-                { content: "Scheduling", link: "/scheduling", img: `${menuImages.schduling}` },
-                { content: "Invoicing", link: "/invoicing", img: `${menuImages.invoicing}` },
-                { content: "Statistic", link: "/statistic", img: `${menuImages.statistics}` }
+                { content: "Communication", link: "/features/team-communication-tools", img: `${menuImages.communicationIcon}` },
+                { content: "Scheduling", link: "/features/job-scheduling-software", img: `${menuImages.schduling}` },
+                { content: "Invoicing", link: "/features/invoicing-software", img: `${menuImages.invoicing}` },
+                { content: "Statistic", link: "/features/business-statistics-tools", img: `${menuImages.statistics}` }
               ],
               Collaboration: [
-                { content: "Schedule Jobs", link: "/schedule-jobs", img: `${menuImages.jobSchdule}` },
-                { content: "Fixed  or time tracker", link: "/time-tracker", img: `${menuImages.jobHouly}` },
-                { content: "Job approval", link: "/job-approval", img: `${menuImages.jobApproval}` },
-                { content: "Multi Location", link: "/multi-location", img: `${menuImages.MultiLocation}` }
+                { content: "Schedule Jobs", link: "/features/job-management-software", img: `${menuImages.jobSchdule}` },
+                { content: "Fixed  or time tracker", link: "/features/time-tracking-tools", img: `${menuImages.jobHouly}` },
+                { content: "Job approval", link: "/features/job-approval-software", img: `${menuImages.jobApproval}` },
+                { content: "Multi Location", link: "/features/multi-location-management", img: `${menuImages.MultiLocation}` }
               ],
               Value: [
-                { content: "Calendar", link: "/calendar", img: `${menuImages.calendar}` },
-                { content: "Calculators", link: "/calculators", img: `${menuImages.Calculators}` },
+                { content: "Calendar", link: "/features/calendar-timeline-management-software", img: `${menuImages.calendar}` },
+                { content: "Calculators", link: "/features/business-quote-calculator", img: `${menuImages.Calculators}` },
               ]
           }
     },
@@ -53,12 +53,12 @@ const items = [
         imgtitle: `${menuImages.industriesIcon}`,  
         contents: {
             Industries: [
-              { content: "Creative Agencies", link: "/creative-agencies", img: `${menuImages.creativeAgency}` },
-              { content: "Electronic Repair Specialists", link: "/electronic-repair-specialists", img: `${menuImages.electronic}` },
-              { content: "Photo & Video Agency", link: "/photo-video-agency", img: `${menuImages.photoVideoAgency}` },
-              { content: "Automotive", link: "/automotive", img: `${menuImages.automotive}` },
-              { content: "Startups", link: "/startups", img: `${menuImages.startUps}` },
-              { content: "Construction", link: "/construction", img: `${menuImages.construction}` }
+              { content: "Creative Agencies", link: "/industries/business-software-for-creative-agencies", img: `${menuImages.creativeAgency}` },
+              { content: "Electronic Repair Specialists", link: "/industries/software-for-electronic-repair-businesses", img: `${menuImages.electronic}` },
+              { content: "Photo & Video Agency", link: "/industries/software-for-photo-video-agencies", img: `${menuImages.photoVideoAgency}` },
+              { content: "Automotive", link: "/industries/business-software-for-automotive-industry", img: `${menuImages.automotive}` },
+              { content: "Startups", link: "/industries/business-management-software-for-startups", img: `${menuImages.startUps}` },
+              { content: "Construction", link: "/industries/business-software-for-construction-industry", img: `${menuImages.construction}` }
             ],
         
           }
@@ -70,7 +70,7 @@ const items = [
             News: [
               { contentNews: "Our", boldText:"News", paraText: "Industry-related news to help you in business management.", button: 'Read more', link: "/news" },
               { contentNews: "Customer", boldText:"Stories", paraText: "Read how other companies using memate", button: 'Read more', link: "/customer-stories" },
-              { contentNews: "Software", boldText:"Update", paraText: "Our Latest Software Updates, Releases, and Upcoming Development Features", button: 'Read more', link: "/feature-page-sales" },
+              { contentNews: "Software", boldText:"Update", paraText: "Our Latest Software Updates, Releases, and Upcoming Development Features", button: 'Read more', link: "/software-update" },
             ]
         } 
           

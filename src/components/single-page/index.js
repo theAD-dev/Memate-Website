@@ -125,7 +125,7 @@ const Single = ({postsSingle, postsLatest }) => {
           </div>
        
         <div className="accounting-text-A categoryLinkTitle "><Link to={`/news/category/${post.category?.id}`}>{post.category?.title}</Link></div>
-        <div className="heading-1-A">{post.title}</div>
+        <h1 className="heading-1-A">{post.title}</h1>
         <div className="heading-date-A">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
         <div className={`stickySocialWrap ${isScrolled ? 'scrolled' : ''} ${
         isNearBottom ? 'hide' : ''

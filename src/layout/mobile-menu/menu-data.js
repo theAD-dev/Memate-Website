@@ -61,7 +61,7 @@ const MenuData = () => {
         contents: {
           "Resources & tools": [
             { content: "Supplier Database", link: "/supplier-database" },
-            { content: "delete-request", link: "/supplier-management" },
+            { content: "delete-request", link: "/delete-request" },
           ],
           "MeMate Manual": [
             { content: "Knowledge Database", link: "/knowledge-base" },

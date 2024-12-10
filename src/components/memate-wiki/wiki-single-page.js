@@ -32,7 +32,8 @@ const WikiSinglePage = () => {
         <div className={` ${style.wikimainwrap}`}>
             <div className={style.wikimainhead}>
                 <h1>{categoryName}</h1>
-                <p>Here is everything you need to know about starting a new company in Australia.</p>
+                <p>Here is everything you need to know about 
+                    starting a new company in Australia.</p>
                 </div>
                     <div className={style.mainGridwtapFlex}>
                     {wikiBaseIdData && wikiBaseIdData.map((item, index) => (
