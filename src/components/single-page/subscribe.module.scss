@@ -92,3 +92,23 @@ label{
     }
 }
 }
+
+
+@media screen and (max-width: 767px) {
+
+    .Subscribebox{
+          span{
+             font-size: 25px;
+             b{
+                display: block;
+             }
+          }
+          .marginbotton{
+            margin: 0 auto;
+            width: auto;
+          
+        }
+    }
+
+
+}

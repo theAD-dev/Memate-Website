@@ -33,3 +33,19 @@
     left: 50%;
     transform: translateX(-65%);
 }
+
+
+@media screen and (max-width: 767px) {
+    h1.metatags {
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+    }
+    .kb-left-wrapper {
+        position: relative;
+        top: 0px;
+        direction: revert;
+        max-height: max-content;
+    }
+
+}

@@ -55,6 +55,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: block;
+  text-align: left;
 }
 .pageBreadcrumbs {
   text-align: left;

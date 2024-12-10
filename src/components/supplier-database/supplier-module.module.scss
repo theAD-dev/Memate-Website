@@ -447,6 +447,12 @@ h2{
 
 
 @media screen and (max-width: 767px) {
+    .supdatabaseHead{
+        h1{
+            font-size: 23px;
+            text-align: center;
+        }
+    }
     .mainSection{
         padding: 0 15px;
     }
@@ -454,6 +460,7 @@ h2{
         padding-top:0px;
         font-size:26px;
         letter-spacing: 0;
+        text-align: center;
     }
     .midheading  p{
         margin: 15px 0px;

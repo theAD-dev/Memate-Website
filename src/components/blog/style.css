@@ -372,7 +372,10 @@ button.filterBlogTabBtn {
   text-align: left;
   float: left;
   width: 100%;
-  margin-top: 344px;
+  margin-top: 440px;
+}
+.blogSinglePageMightLike .img-container-3 .img-container-3-div {
+  margin-bottom: 48px;
 }
 .cateLatesWrap {
   margin-top: 89px;
@@ -422,8 +425,18 @@ button.filterBlogTabBtn {
   left: 0px!important;
 }
 #blogGrid .dog-img-container1 {
-  top: 137px !important;
+  top: 167px !important;
   left: 0px!important;
+}
+.parent.parentSingle .pageBreadcrumbs li:last-child a {
+  width: 159px !important;
+}
+
+.blogSinglePageMightLike .img-container-3 {
+  display: block;
+}
+.heading-container-categories .dog-img-container {
+  margin-left: 0px !important;
 }
 .img-container-3-img-1 {
   margin-top: 0 !important;

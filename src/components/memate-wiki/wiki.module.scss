@@ -242,3 +242,91 @@
         }
     }
   }
+
+
+  @media screen and (max-width: 767px) {
+    .mainMenuPages{
+        .mainHeadTitle{
+            span{
+                font-size: 70px;
+            }
+            p{
+                strong{
+                    font-size: 22px;
+                }
+            }
+
+        }
+
+    }
+
+    .searchFilterList{
+        width: auto;
+        padding: 16px 3px;
+        margin: 23px 30px;
+           input{
+            width: 82%;
+            font-size: 21px;
+           }
+      }
+      .mainMenuPages{
+        .mainHeadTitle{
+            padding: 30px 0 20px;
+
+
+        }
+    }
+    .mainwikiMibile{
+        padding: 0 20px;
+        .mainGridWrap{
+            .inHead{
+                display: block;
+                margin-bottom: 20px;
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+        .mainGridwtapFlex{
+         
+            display: block !important;
+            .itemFlex{
+                margin-bottom: 20px;
+                h3{
+                    p{
+                        font-size: 20px  !important;
+                    }
+                }
+            }
+            
+        }
+        .mainGridWrap{
+            margin: 0 auto 43px;
+            width: auto;
+        }
+    }
+    .wikimainwrap{
+        .wikimainhead{
+            padding: 44px 20px 32px;
+            h1{
+                font-size: 26px;
+            }
+            p{
+                font-size: 16px;
+                padding: 20px;
+            }
+        }
+        .mainGridwtapFlex{
+            display: block;
+            .itemFlex{
+                margin-bottom: 20px;
+                h3{
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+      }
+
+  }
