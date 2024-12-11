@@ -15,10 +15,19 @@ const ResourcesComponent = () => {
     " />
 </Helmet>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
-    <div className={style.mainHeadTitle}>
-      <h2>resources</h2>
-     <h1>Explore Resources for Business Management and CRM Solutions</h1>
-    </div>
+    <div className={`titleHead ${style.mainHeadTitle}`}>
+        <h4 className='tagHeadtitle'>
+           Technology from the future, solving today’s problems.
+          </h4>
+          <h2>resources</h2>
+          <span>
+          Here are meMate’s main features to help you quickly understand if it will be suitable for your business.
+          </span>
+          <h1 className="h1tagsseo">
+          Explore Resources for Business Management and CRM Solutions
+          </h1>
+        </div>
+
 
     <div className={style.mainGridWrap}>
       <h2>Resources and Tools</h2>

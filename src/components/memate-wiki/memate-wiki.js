@@ -88,13 +88,31 @@ const MemateWiki = () => {
         </script>
 </Helmet>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
-      <div className={style.mainHeadTitle}>
-        <span>meMate <br />wiki</span>
-        <p>
-          <strong>
-          MeMate Wiki: A Practical Guide for Australian Business Owners
-          </strong>
-        </p>
+
+
+    <div className={`titleHead ${style.mainHeadTitle}`}>
+        <h4 className='tagHeadtitle'>
+           Technology from the future, solving today’s problems.
+          </h4>
+          <h2>meMate <br />wiki</h2>
+          <span>
+          Here are meMate’s main features to help you quickly understand if it will be suitable for your business.
+          </span>
+          <h1 className="h1tagsseo" style={{ marginBottom: 76 }}>
+          Here, we gather valuable knowledge about general business <br/>management practices and tools, from job scheduling to<br/> invoicing and quote calculations.
+          </h1>
+      
+
+
+
+
+
+
+
+
+     
+      
+    
         <div className={style.searchFilterList}>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
             <path d="..." fill="#98A2B3" />

@@ -11,14 +11,13 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      
+        <h1 className="h1tagsseo">Enhance Team Collaboration with meMate’s Communication Tools</h1>
        <div className="sales-heading client-heading">communication</div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content ">
-          <h1>
-          Enhance Team Collaboration with meMate’s Communication Tools
-         </h1>
+        <span>
+        meMate includes multiple communication tools that allow seamless communication both within the company and externally with contractors and customers.</span>
         </div>
 
         <div className="sales-component-button-wrapper">

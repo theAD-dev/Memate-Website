@@ -293,10 +293,10 @@ top: 3px;
     width: 100%;
     margin: 0 auto 15px;
 }
-  .gadientText h2, .imageOverlyText .customerstoriesDetails .date-heading-title a {
-    font-size: 24px;
-    line-height: 30px;
-  }
+.gadientText h2, .imageOverlyText .customerstoriesDetails .date-heading-title a {
+  font-size: 18px;
+  line-height: 22px;
+}
   .gadientText {
     margin-bottom: 15px;
     padding: 15px;

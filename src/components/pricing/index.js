@@ -19,10 +19,11 @@ const PricingComponent = () => {
         <div className={style.mainheading}>Pricing</div>
         <div className={style.mainimage}><img src={pricingMainImg} alt="Pricing main image" width={767} height={767}/></div>
         <div className={style.midheading}>
-          <h1>Affordable Pricing for Small Businesses & Startups</h1>
+          <h1>Affordable Business & Project Management Software for Businesses and Startups</h1>
         </div>
         <div className={style.smallheading}>
-          <p>Plus, we provide a 14-day free trial because we believe our software will become indispensable to your business.</p>
+          <h2>Simple, transparent pricing</h2>
+          <p>We offer a 14-day free trial because we’re confident our software will become indispensable to your business</p>
         </div>
     
       </div>

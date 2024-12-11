@@ -28,14 +28,13 @@
 }
 
 .sales-componet-content-wrapper {
-  margin-top: 77px;
+  margin-top: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding:0px 2%;
+  padding: 0px 2%;
 }
-
 .sales-componet-content-wrapper p {
   font-size: 42px;
   font-weight: 420;

@@ -11,14 +11,14 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      
+       <h1 className="h1tagsseo">Effortless Client Management with Australia’s Best CRM Software </h1>
        <div className="sales-heading client-heading">client<br></br> management </div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content">
-          <h1>
-          Effortless Client Management with Australia’s Best CRM Software
-          </h1>
+        <span>
+        meMate - Designed as a simple cloud CRM to manage your client database. It’s easy to use and easy to navigate - a CRM for small businesses in Australia.
+          </span>
         </div>
 
         <div className="sales-component-button-wrapper">
