@@ -178,6 +178,14 @@ span.gradientAnimenate {
   justify-content: center;
   align-items: center;
 }
+.smart-investment-banner {
+  line-height: 51px !important;
+
+}
+.sales-component-feature span {
+  margin-top: 2px!important;
+  line-height: 44px!important;
+}
 .iphone-image img {
   width: 50% !important;
   position: relative;

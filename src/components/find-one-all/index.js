@@ -1,5 +1,6 @@
 import "./style.css";
 import SliderTab from "./slider-tabs";
+import SliderTabMobile from "./slider-mobile";
 
 
 const FindOneApplication = () => {
@@ -18,7 +19,11 @@ const FindOneApplication = () => {
           </span>
         </div>
       </div>
-      <SliderTab />
+      <div className="desktop-slider">
+      <SliderTab /></div>
+      <div className="mobile-slider">
+      <SliderTabMobile />
+      </div>
      
     </>
   );

@@ -1,6 +1,6 @@
 // Assuming you imported `UploadIconSupplier` as a component or image URL
 import React, { useState } from 'react';
-const UploadIconSupplier = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/upload-icon-supplier.svg";
+const UploadIconSupplier = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/uploadicon.svg";
 
 const CustomUpload = () => {
   const [file, setFile] = useState(null);

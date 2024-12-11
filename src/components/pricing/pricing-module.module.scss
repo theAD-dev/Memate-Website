@@ -38,17 +38,13 @@
     }
 
    .midheading {
-    padding-top: 84px;
-        color: #29292B;
-        text-align: center;
-        -webkit-text-stroke-width: 1;
-        -webkit-text-stroke-color: var(--ios-status-bar-status-bar-text-color, #000);
-        font-family: "sequel_sans_semi_bold_disp" !important;
-        font-size: 42px;
-        font-style: normal;
-        font-weight: 420;
-        line-height: normal;
-        letter-spacing: -1px;
+    padding-top: 30px;
+    color: #29292B;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
         h1{
           color: #29292B;
           text-align: center;
@@ -70,6 +66,16 @@
     line-height: 140%; /* 25.2px */
     letter-spacing: -0.18px;
     margin-bottom: 40px;
+    h2{
+      color: #29292B;
+      text-align: center;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -1px;
+      margin: 72px 0 20px;
+    }
     }
     .mainsectionbutton{
         border-radius: 60px;
@@ -503,6 +509,20 @@ line-height: 20px; /* 111.111% */
 }
 @media screen and (max-width: 767px) {
   .mainSection{
+    .midheading {
+          h1{
+            font-size: 26px !important;
+          }
+      }
+      .smallheading{
+        h2{
+          font-size: 28px;
+          margin: 40px 0 20px;
+        }
+        }
+    }
+ 
+  .mainSection{
     padding:15px !important;
   }
   .mainheading{
@@ -545,7 +565,7 @@ line-height: 20px; /* 111.111% */
 .questionText{
   width: 100% !important;
   margin: 0px auto !important;
-  padding: 0 15px !important;
+  padding: 28px 15px !important;
 }
 .questionText h2{
   font-size: 30px !important;
@@ -564,6 +584,7 @@ line-height: 20px; /* 111.111% */
 }
   }
   @media screen and (max-width: 992px) and (min-width: 768px){
+
 .mainimage{
   top: 0 !important;
   transform: translateX(100%) !important;

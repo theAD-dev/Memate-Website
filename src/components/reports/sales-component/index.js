@@ -11,14 +11,14 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      
+       <h1 className="h1tagsseo">Gain Real-Time Insights with MeMate’s Business Reporting Tools </h1>
        <div className="sales-heading client-heading">reports  </div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content ">
-          <h1>
-          Gain Real-Time Insights with MeMate’s Business Reporting Tools
-          </h1>
+        <span>
+        meMate provides a quick and easy overview of your business activities, goals, and monthly targets. Its user-friendly interface allows you to easily compare performance and track progress. </span>
+        
         </div>
 
         <div className="sales-component-button-wrapper">

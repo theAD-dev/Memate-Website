@@ -382,7 +382,7 @@ img.img-container-stories {
   margin-top: 15px;
 }
 .customerstoriesGrid h1 {
-  font-size: 28px;
+  font-size: 28px !important;
 }
 .heading-blog-description{
   margin-top: 0px;

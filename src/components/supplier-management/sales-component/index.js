@@ -11,14 +11,13 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      
+      <h1 className="h1tagsseo">Streamline Your Procurement with Advanced Supplier Management Tools</h1>
        <div className="sales-heading client-heading">supplier<br></br> management </div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content">
-          <h1>
-          Streamline Your Procurement with Advanced Supplier Management Tools
-          </h1>
+        <span>
+        meMate - Designed as a simple cloud CRM to manage your Supplier database. It’s easy to use and easy to navigate - a CRM for small businesses in Australia. </span>
         </div>
 
         <div className="sales-component-button-wrapper">

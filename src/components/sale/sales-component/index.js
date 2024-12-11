@@ -13,10 +13,9 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      
+      <h1 className="h1tagsseo">Enhance Your Sales Process with Advanced Management Tools</h1>
       <div className="sales-heading">sales pipeline</div>
       <div className="sales-componet-content-wrapper">
-        <p>Sales funnels</p>
         <div className="sales-component-content">
           <span>
             Our software provides a sales pipeline, simple and easy to use for

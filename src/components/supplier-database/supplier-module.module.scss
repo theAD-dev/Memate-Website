@@ -30,6 +30,22 @@ h1.midheading{
         font-weight: 420;
         line-height: normal;
         letter-spacing: -1px;
+       
+    
+}
+.midheading{
+   
+    p{
+        color: #29292B;
+        text-align: center;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 420;
+        line-height: normal;
+        letter-spacing: -1px;
+        margin-top: 56px;
+    }
+       
     
 }
 
@@ -447,6 +463,61 @@ h2{
 
 
 @media screen and (max-width: 767px) {
+    .supplierAddCompany{
+        h2{
+            font-size: 27px;
+        }
+        
+        
+        .supplierAddform{
+            width: auto;
+            margin: 0 auto;
+            .flexWrapGrid{
+                display: block;
+                justify-content:space-between;
+                .marginbotton{
+                    display: block;
+                    margin-bottom: 22px;
+                    width: 100%;
+                    margin-left: 0px;
+            margin-right: 0px;
+
+                }
+            }
+        }
+        }
+
+        .databasesinglehead{
+            text-align: center;
+            padding: 0 20px;
+        .databasesLogo{
+        margin: 60px auto 10px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        }
+        .detailsGrid{
+            grid-template-columns: 100%;
+            width: 100%;
+            margin: 37px auto;
+            .itemDatalist{
+                padding: 16px 24px;
+            }
+            .detailsCol{
+             width: 100%;
+             h3{
+                font-size: 28px;
+             }
+            }
+        }
+
+
+
+
+
+
+
     .supdatabaseHead{
         h1{
             font-size: 23px;

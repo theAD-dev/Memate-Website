@@ -1,3 +1,4 @@
+import ContractorPage from "../../pages/contractor";
 
 
 const Images = {
@@ -177,6 +178,12 @@ const Images = {
   budPowerful:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/budPowerful.svg",
   budEssential:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/budEssential.svg",
   budModern:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/budModern.svg",
+  ContractorManagement:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/contractor-management.svg",
+  ContractorSche:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/contractor-sche.svg",
+  ContractorTeam:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/contractor-team.svg",
+  ContractorFuncti:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/contractor-functi.svg",
+  ContractorSystem:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/contractor-system.svg",
+  ContractorBusiness:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/contractor-business.svg",
 };
 
 export default Images;

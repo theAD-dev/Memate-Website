@@ -184,9 +184,15 @@ const FeaturesComponent = () => {
     " />
 </Helmet>
       <div className={style.mainMenuPages}>
-        <div className={style.mainHeadTitle}>
+        <div className={`titleHead ${style.mainHeadTitle}`}>
+        <h4 className='tagHeadtitle'>
+           Technology from the future, solving today’s problems.
+          </h4>
           <h2>Features</h2>
-          <h1>
+          <span>
+          Here are meMate’s main features to help you quickly understand if it will be suitable for your business.
+          </span>
+          <h1 className="h1tagsseo">
           Comprehensive Features of Business Management and CRM Software
           </h1>
         </div>

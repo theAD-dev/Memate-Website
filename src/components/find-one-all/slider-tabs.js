@@ -52,8 +52,8 @@ const SliderTab = () => {
   };
 
   const tabSliderSettings = {
-    slidesToShow: 9,
-    slidesToScroll: 1,
+    slidesToShow: 10,
+    slidesToScroll: 3,
     focusOnSelect: true,
     infinite: true,
     centerMode: true,
@@ -62,25 +62,10 @@ const SliderTab = () => {
     initialSlide: 3,
     speed: 500,
     autoPlay: false,
-    // afterChange: (current) => {
-    //   setSelectedTab(current); 
-    //   triggerFadeIn();
-    // },
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 5,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       centerMode: false,
-    //     },
-    //   },
-    // ],
+    afterChange: (current) => {
+      setSelectedTab(current); 
+      triggerFadeIn();
+    },
   };
 
   return (

@@ -16,17 +16,14 @@
             line-height: 230px; 
             
         }
-        h1{
-            color: #757B8A;
-            text-align: center;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 360;
-            line-height: 140%; 
-        }
+      
         @media screen and (max-width: 767px) {
             .mainMenuPages{
                 padding: 15px 0 !important;  
+            }
+            h2{
+                font-size: 30px !important;
+        line-height: 38px !important;
             }
             h1{
                 font-size: 66px;
@@ -151,8 +148,8 @@
         padding: 0 !important;
     }
     .mainHeadTitle h1{
-        font-size: 60px !important;
-        line-height: 70px !important;
+        font-size: 30px !important;
+        line-height: 38px !important;
     }
     .mainHeadTitle p br{
         display: none !important;

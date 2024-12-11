@@ -14,6 +14,14 @@ html {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+.h1tagsseo{
+  color: #29292B;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 .pricingHeadWrap {
   text-align: center;
 }
@@ -269,4 +277,45 @@ border: 0;
   font-style: normal;
   font-weight: 415;
   line-height: normal;
+}
+.titleHead h4.tagHeadtitle {
+  color: #29292B;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+.titleHead  span {
+  color: #757B8A;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%;
+}
+.titleHead  h1 {
+  color: #29292B;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 24px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .titleHead h4.tagHeadtitle {
+    font-size: 27px;
+}
+  .h1tagsseo {
+    font-size: 19px;
+  }
+  .sales-heading {
+    padding-bottom: 16px;
+    margin-top: 9px;
+}
 }

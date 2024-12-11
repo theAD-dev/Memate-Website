@@ -12,14 +12,13 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      
+       <h1 className="h1tagsseo">Optimise Your Projects with MeMate’s Advanced Management Tools</h1>
        <div className="sales-heading client-heading">project<br></br>management </div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content ">
-          <h1>
-          Optimise Your Projects with MeMate’s Advanced Management Tools
-          </h1>
+        <span>
+        meMate features a unique project management system designed specifically for businesses. It provides exactly what companies need to maintain and manage their projects efficiently.</span>
         </div>
 
         <div className="sales-component-button-wrapper">

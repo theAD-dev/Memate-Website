@@ -11,14 +11,13 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      
+         <h1 className="h1tagsseo">Effortless Invoicing with MeMate’s Quote & Invoice Solution.</h1>
        <div className="sales-heading client-heading">invoicing</div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content ">
-          <h1>
-          Effortless Invoicing with meMate’s Quote & Invoice Solution.
-          </h1>
+        <span>
+        meMate allows you to convert every approved quote into an invoice, manage your company’s invoices, mark payments, and chase unpaid invoices effortlessly. </span>
         </div>
 
         <div className="sales-component-button-wrapper">

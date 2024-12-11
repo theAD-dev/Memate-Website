@@ -205,7 +205,14 @@ function App() {
       document.body.classList.remove(`page-${pathClass}`);
     };
   }, [location.pathname]);
-
+  
+  useEffect(() => {
+    const currentHost = window.location.hostname;
+    if (currentHost === "memate.com.au") {
+      const newUrl = `https://memate.au${window.location.pathname}${window.location.search}`;
+      window.location.replace(newUrl); // This performs the redirect
+    }
+  }, []);
 
   return (
     <div className="App">

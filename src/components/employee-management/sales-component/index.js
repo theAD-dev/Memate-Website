@@ -11,14 +11,13 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      
+          <h1 className="h1tagsseo">Optimise Your Workforce with MeMate’s Employee Management Tools</h1>
        <div className="sales-heading client-heading">employee<br></br>management </div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content ">
-          <h1>
-          Optimise Your Workforce with MeMate’s Employee Management Tools
-          </h1>
+        <span>
+        meMate allows you to use time tracking and clock-in/clock-out functionality for your office team members, making it an all-in-one solution for managing your company’s workforce.</span>
         </div>
 
         <div className="sales-component-button-wrapper">
