@@ -13,7 +13,7 @@ const FeatureCard = (props) => {
             <div className="operation-left">
               <p className="all-text">{props.subHeading}</p>
               <h2>{props.topHeading}</h2>
-              <h1>{props.mainHeading}</h1>
+              <div className="mediumHeadText">{props.mainHeading}</div>
 
               <div className="operation-desp">
                 <p>{props.description}</p>
@@ -26,7 +26,7 @@ const FeatureCard = (props) => {
             </div>
 
             <div className="operation-right">
-              <h1 > {props.titleImage} </h1>
+              {/* <h1> {props.titleImage} </h1> */}
               <div className="boost-image">{props.maxImage}</div>
             </div>
           </div>

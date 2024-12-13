@@ -59,6 +59,7 @@ const MenuData = () => {
       },
       { title: 'Resources', 
         contents: {
+          linkResources: "/resources",
           "Resources & tools": [
             { content: "Supplier Database", link: "/supplier-database" },
             { content: "delete-request", link: "/delete-request" },
@@ -108,23 +109,40 @@ const MenuData = () => {
     <ul>
       {Object.keys(tabs[activeTab].contents).map((sectionKey) => (
         <li key={sectionKey} className={sectionKey}>
-          <strong>{sectionKey}</strong>
-          <ul>
-            {tabs[activeTab].contents[sectionKey].map((contentItem, i) => (
-              <li key={i}>
-                <Link to={contentItem.link} className={`resource${i} ${location.pathname === contentItem.link ? "navbar-item-active" : ""}`}  rel="noopener noreferrer">
-                  {contentItem.content}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {/* Render the linkResources (which is a string, not an array) */}
+          {sectionKey === "linkResources" ? (
+            <Link to={tabs[activeTab].contents.linkResources}>
+              <strong>{sectionKey}</strong>
+            </Link>
+          ) : (
+            <>
+             
+              <ul>
+                {/* Ensure that the section content is an array before calling .map() */}
+                {Array.isArray(tabs[activeTab].contents[sectionKey]) && 
+                  tabs[activeTab].contents[sectionKey].map((contentItem, i) => (
+                    <li key={i}>
+                      <Link
+                        to={contentItem.link}
+                        className={`resource${i} ${location.pathname === contentItem.link ? "navbar-item-active" : ""}`}
+                        rel="noopener noreferrer"
+                      >
+                        {contentItem.content}
+                      </Link>
+                    </li>
+                  ))
+                }
+              </ul>
+            </>
+          )}
         </li>
       ))}
     </ul>
   ) : (
-    <p>dzfsdf</p>
+    <p>No content available</p>
   )}
 </div>
+
 
      
        </div>

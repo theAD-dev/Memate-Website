@@ -309,6 +309,9 @@ color: #a90000;
     -webkit-text-fill-color: transparent;
     margin: 0px;
 }
+.bm-item-list .accordion-header a {
+  text-decoration: none;
+}
 .bm-item-list .accordion-header span {
   display: flex;
   align-items: center;

@@ -36,7 +36,9 @@
 .heding-text-top {
   padding: 0px 0px 23px 0px;
 }
-.heding-text-top h1 {
+
+
+.heding-text-top .mainHomeTitle {
   text-align: center;
   font-size: 220px;
   font-weight: 425;
@@ -46,12 +48,14 @@
   font-weight: 700;
 }
 
-h1.text {
+.mainHomeTitle {
   background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0px;
 }
+
+
 
 .big-img-mac {
   position: relative;
@@ -214,7 +218,7 @@ span.gradientAnimenate {
   .home-platform h2 br, .heding-text-top h1 br{
     display: none;
   }
-  .heding-text-top h1 {
+  .heding-text-top .mainHomeTitle {
     font-size: 32px;
     line-height: 40px;
 }
@@ -249,7 +253,7 @@ span.gradientAnimenate {
 
 }
 @media screen and (max-width: 992px) and (min-width: 768px){
-  .heding-text-top h1 {
+  .heding-text-top .mainHomeTitle {
     font-size: 68px;
     line-height: 74px;
 }

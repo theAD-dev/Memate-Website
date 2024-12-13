@@ -52,10 +52,10 @@
 }
 .operation-left {
     padding: 50px;
-    text-align: left;
+    text-align: center;
 }
 
-.operation-left h1 {
+.mediumHeadText {
     color: #29292B;
     font-size: 58px;
     font-style: normal;
@@ -226,7 +226,7 @@ button.get-started-btn {
     .max-image img, .mac-with-iphone img, .motivate-image img {
         width: 100%;
     }
-    .operation-left h1 {
+    .mediumHeadText {
         font-size: 28px;
         margin-bottom: 10px;
         letter-spacing: 0;
