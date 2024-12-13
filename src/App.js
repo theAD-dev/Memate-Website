@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import React from 'react';
+import { Routes, Route  } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import {
   BlogPage,
@@ -213,6 +214,9 @@ function App() {
       window.location.replace(newUrl); // This performs the redirect
     }
   }, []);
+
+
+
 
   return (
     <div className="App">

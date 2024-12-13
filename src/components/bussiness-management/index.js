@@ -20,9 +20,10 @@ const BussinessManagement = () => {
         </div>
 
         <div className="heding-text-top marginBottomSpace">
-          <h1 className="text">
+        <div className="mainHomeTitle">
             to run your <br /> business
-          </h1>
+          </div>
+         
         </div>
       </div>
       <div className="image-wrapper" >

@@ -12,7 +12,7 @@ const ZeroOfferOnboarding = () => {
         <div className="offer-opt">
           <div className="sab-heading">
             <h2> We offer zero fees for</h2>
-            <h1>onboarding</h1>
+            <div className="headingSimmer">onboarding</div>
             <p>
             Plus, we provide a 14-day free trial because we believe our software will become indispensable to your business.
             </p>

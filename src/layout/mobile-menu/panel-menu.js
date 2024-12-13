@@ -9,6 +9,7 @@ const RightColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/
 const items = [
     { 
         title: "Features", 
+        linkTitle: "/features",
         imgtitle: `${menuImages.featureIcon}`,  
         //heading:"Management", 
         contents: {
@@ -50,6 +51,7 @@ const items = [
     },
     { 
         title: "Industries", 
+        linkTitle: "/industries",
         imgtitle: `${menuImages.industriesIcon}`,  
         contents: {
             Industries: [
@@ -107,7 +109,7 @@ const PanelMenu = () => {
               className={`accordion-header ${activeIndex === index ? 'active' : ''}`}
               onClick={() => handleClick(index)}
             >
-                        <span><img src={item.imgtitle} alt={item.title} />{item.title}</span>    {activeIndex === index ? <img src={RightColorArrow} alt="RightColorArrow" className={activeIndex === index ? 'rotate' : ''}/> : <img src={RightBlackArrow} alt='RightBlackArrow' style={{ transform: "rotate(-90deg)" }} />}
+                        <Link to={item.linkTitle}><span><img src={item.imgtitle} alt={item.title} />{item.title}</span></Link>    {activeIndex === index ? <img src={RightColorArrow} alt="RightColorArrow" className={activeIndex === index ? 'rotate' : ''}/> : <img src={RightBlackArrow} alt='RightBlackArrow' style={{ transform: "rotate(-90deg)" }} />}
                     </div>
                     {activeIndex === index && (
                         <div className={`accordion-content ${item.title}`}>

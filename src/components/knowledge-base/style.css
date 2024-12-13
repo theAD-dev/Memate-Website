@@ -46,6 +46,7 @@
         top: 0px;
         direction: revert;
         max-height: max-content;
+        max-height: initial !important;
     }
 
 }

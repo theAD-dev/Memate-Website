@@ -26,7 +26,7 @@ const MeMateFeatureStreamline = () => {
             <div className="operation-left">
               <p className="all-text">All-in-one</p>
               <h2>Streamline</h2>
-              <h1>operations</h1>
+              <div className="mediumHeadText">operations</div>
 
               <div className="operation-desp">
                 <p>
