@@ -11,7 +11,7 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-       <h1 className="h1tagsseo">Gain Real-Time Insights with MeMate’s Business Reporting Tools </h1>
+       <h1 className="h1tagsseo">Gain Real-Time Insights with MeMate’s Business Reporting Tools</h1>
        <div className="sales-heading client-heading">reports  </div>
       <div className="sales-componet-content-wrapper client-component-para">
      

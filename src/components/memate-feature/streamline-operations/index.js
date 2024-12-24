@@ -11,7 +11,7 @@ const MeMateFeatureStreamline = () => {
     <div className="feature-section-container">
       <div className="features-section">
       <div className="memate heading-margin">
-        <h2>Memate</h2>
+        <div className="mainHeadingH2">Memate</div>
         <span className="gradientAnimenate">features</span>
       </div>
       <div className="all-in-one"  data-aos="fade-up"
@@ -25,7 +25,7 @@ const MeMateFeatureStreamline = () => {
           <div className="main-operation">
             <div className="operation-left">
               <p className="all-text">All-in-one</p>
-              <h2>Streamline</h2>
+              <div className="smallH2Heading">Streamline</div>
               <div className="mediumHeadText">operations</div>
 
               <div className="operation-desp">

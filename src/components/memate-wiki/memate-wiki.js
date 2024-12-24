@@ -55,7 +55,8 @@ const MemateWiki = () => {
     <Helmet>
     <title>MeMate Wiki | Informative Guide for Australian Business Owners</title>
       <meta property="og:title" content='MeMate Wiki | Informative Guide for Australian Business Owners' />
-      <meta property="og:description" content='Explore the MeMate Wiki, your go-to resource for Australian business rules, terminology, and practical tips. Simplified information tailored for small business owners.' />
+      <meta property="og:description" content='Explore the MeMate Wiki, your go-to resource for Australian business rules, terminology,
+       and practical tips. Simplified information tailored for small business owners.' />
       <meta property="og:image" content='https://memate-website.s3.ap-southeast-2.amazonaws.com/news/1732171638_featured-image.jpg' />
       <meta property="og:url" content='window.location.href' />
       <meta property="og:type" content="article" />
@@ -91,16 +92,19 @@ const MemateWiki = () => {
 
 
     <div className={`titleHead ${style.mainHeadTitle}`}>
-        <h4 className='tagHeadtitle'>
-           Technology from the future, solving today’s problems.
-          </h4>
+      
           <h2>meMate <br />wiki</h2>
-          <span>
-          Here are meMate’s main features to help you quickly understand if it will be suitable for your business.
-          </span>
           <h1 className="h1tagsseo" style={{ marginBottom: 76 }}>
-          Here, we gather valuable knowledge about general business <br/>management practices and tools, from job scheduling to<br/> invoicing and quote calculations.
-          </h1>
+          A Practical Guide for Australian Business Owners</h1>
+          <span>
+        
+          </span>
+          <h4>
+          Here, we gather valuable knowledge about general business<br/> management practices and tools, from job scheduling to<br/> invoicing and quote calculations.
+
+
+          </h4>
+        
       
 
 

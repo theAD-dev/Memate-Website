@@ -40,7 +40,7 @@ try {
     data-aos-anchor-placement="top-bottom">
         <div className="success-stories1">
           <div className="bottom-management">
-            <h2>News and Updates</h2>
+            <div className='SStoriesHead'>News and Updates</div>
             <p>
               Discover how meMate is transforming businesses across Australia.
             </p>
@@ -63,7 +63,9 @@ try {
                       </div>
                       <div className="textBox">
                         <span>{new Date(post?.publish_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-                        <Link to={`/news/${post?.slug}`}><h2>{post?.title}</h2></Link>
+                        <Link to={`/news/${post?.slug}`}>
+                        <div className='postH2Title'>{post?.title}</div>
+                        </Link>
                         <Link to={`/news/${post?.slug}`}>Read More</Link>
                       </div>
                     </li>

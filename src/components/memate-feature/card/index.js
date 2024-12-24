@@ -12,7 +12,7 @@ const FeatureCard = (props) => {
           <div className="main-operation">
             <div className="operation-left">
               <p className="all-text">{props.subHeading}</p>
-              <h2>{props.topHeading}</h2>
+              <div className="smallH2Heading">{props.topHeading}</div>
               <div className="mediumHeadText">{props.mainHeading}</div>
 
               <div className="operation-desp">

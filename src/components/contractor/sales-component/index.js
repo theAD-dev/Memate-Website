@@ -11,7 +11,7 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      {/* <h1 className="h1tagsseo">Optimise Financial Performance with MeMate’s Profitability and Budgeting Tools</h1> */}
+     <h1 className="h1tagsseo">Efficient Contractor Management Solutions with MeMate</h1>
        <div className="sales-heading client-heading">contractor<br /> management</div>
       <div className="sales-componet-content-wrapper client-component-para">
      

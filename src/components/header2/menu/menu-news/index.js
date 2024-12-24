@@ -35,7 +35,7 @@ const MenuNews = () => {
         </NavLink>
 
         <NavLink 
-          to="/software-update" 
+          to="/memate-software-updates" 
           className={({ isActive }) => 
             (isActive ? "menuActive" : "link") + " news first-News"
           }

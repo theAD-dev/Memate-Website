@@ -12,6 +12,7 @@ export const RequestCallBackAPI = async (formData) => {
     try {
       const response = await fetch("https://admin.memate.au/api/request-callback", requestOptions);
       const result = await response.text();
+      console.log('resultddddddddddddddd: ', result);
       if (!response.ok) {
         throw new Error(result || 'Request failed');
       }

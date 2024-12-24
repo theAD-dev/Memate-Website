@@ -11,14 +11,12 @@
   position: relative;
 }
 h1.heading-text-blog {
-  color: #29292b;
-  text-align: center;
-  font-family: "sequel_sans_bold_disp" !important;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 420;
-  line-height: normal;
-  letter-spacing: -1px;
+  color: #29292B;
+text-align: center;
+font-size: 32px;
+font-style: normal;
+font-weight: 420;
+line-height: normal;
 }
 .customerstoriespage .small-heading {
   padding-top: 26px;

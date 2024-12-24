@@ -9,7 +9,8 @@
     width: 1200px;
 }
 
-.memate h2 {
+
+.memate .mainHeadingH2 {
     color: #29292B;
     text-align: center;
     font-size: 42px;
@@ -52,7 +53,7 @@
 }
 .operation-left {
     padding: 50px;
-    text-align: center;
+    text-align: left;
 }
 
 .mediumHeadText {
@@ -67,7 +68,7 @@
     margin-bottom: 40px;
 }
 
-.operation-left h2 {
+.operation-left .smallH2Heading {
     color: #29292B;
     font-size: 38px;
     font-style: normal;
@@ -144,7 +145,7 @@ button.get-started-btn {
     white-space: nowrap;
 }
 .request-btn .get-started-border-box .btn-base--black {
-    background: #f7f8fa;
+    background: #fff;
     margin-bottom: 9px;
     border: 1px solid #1d1d1f;
 }
@@ -157,7 +158,7 @@ button.get-started-btn {
     right:56px;
 }
 @media screen and (max-width: 767px) {
-    .memate h2 {
+    .memate .mainHeadingH2 {
         font-size: 28px;
         line-height: 28px;
     }
@@ -208,7 +209,7 @@ button.get-started-btn {
         font-size: 16px;
         line-height: 26px;
     }
-    .operation-left h2 {
+    .operation-left .smallH2Heading {
         font-size: 26px;
         line-height: 21px;
     }

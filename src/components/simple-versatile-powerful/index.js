@@ -6,7 +6,7 @@ const SimpleVersatilePowerful = () => {
   return (
     <div className="simple-box">
       <div className="section-heading">
-        <h2>Simple. Versatile. Powerful.</h2>
+        <div className="simpleH2Heading">Simple. Versatile. Powerful.</div>
       </div>
       <div className="powerful-client-wrapper" data-aos="fade-up"
     data-aos-offset="50"

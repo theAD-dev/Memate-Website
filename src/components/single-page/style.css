@@ -23,6 +23,7 @@
 .blogMetstags {
   margin: 56px 0;
   display: flex;
+  width: 100%;
 }
 .blogSinglePageMightLike .parent-blog-pageWrap img {
   height: 256px;

@@ -87,7 +87,7 @@
   margin-top: 100px;
 }
 
-.bottom-management h2 {
+.bottom-management .SStoriesHead {
   color: #29292b;
   text-align: center;
   font-size: 42px;
@@ -212,7 +212,7 @@ p.owners-disp {
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 @media screen and (max-width: 767px) {
-  .bottom-management h2 {
+  .bottom-management .SStoriesHead {
     font-size:26px;
     line-height:32px;
 }
