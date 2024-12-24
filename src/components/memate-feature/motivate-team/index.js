@@ -18,7 +18,7 @@ const MeMateFeatureMotivateTeam = () => {
             <div className="boost-profits">
               <div className="operation-left">
                 <p className="all-text">Powerful</p>
-                <h2>Motivate</h2>
+                <div className="smallH2Heading">Motivate</div>
                 <div className="mediumHeadText">your team</div>
 
                 <div className="operation-desp">

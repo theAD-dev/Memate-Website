@@ -2,7 +2,7 @@
     margin-top: 110px;
 }
 
-.section-heading h2 {
+.section-heading .simpleH2Heading {
     color: #242122;
     text-align: center;
     font-size: 42px;
@@ -32,7 +32,7 @@
     .simple-box {
         margin-top: 15px;
     }
-       .section-heading h2 {
+       .section-heading .simpleH2Heading {
         font-size:26px;
 
     }

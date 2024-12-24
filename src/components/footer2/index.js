@@ -155,7 +155,7 @@ const Footer = () => {
               <div className="page-links" style={{width: "109px"}}>
               <Link to="/contact-us">Contact Us</Link>
               <Link to="/delete-request">Delete Request</Link>
-                <Link to="/software-update"><p>Software Update </p></Link>
+                <Link to="/memate-software-updates"><p>Software Update </p></Link>
               </div>
             </div>
 

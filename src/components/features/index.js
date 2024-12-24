@@ -180,20 +180,19 @@ const FeaturesComponent = () => {
      <Helmet>
     <title>Features | Business Management Software and Workflow Automation Tools in Australia</title>
     <meta property="og:title" content="Features | Business Management Software and Workflow Automation Tools in Australia" />
-      <meta property="og:description" content="Discover the comprehensive features of MeMate, Australia’s top business management software. From CRM for small businesses to project management features and workflow automation tools, we have it all.
-    " />
+      <meta property="og:description" content="Discover the comprehensive features of MeMate, Australia’s top business management software. From CRM for small businesses to project management features and workflow automation tools, we have it all." />
 </Helmet>
       <div className={style.mainMenuPages}>
         <div className={`titleHead ${style.mainHeadTitle}`}>
-        <h4 className='tagHeadtitle'>
+        <h4 className='tagHeadtitle '>
            Technology from the future, solving today’s problems.
           </h4>
           <h2>Features</h2>
           <span>
-          Here are meMate’s main features to help you quickly understand if it will be suitable for your business.
+          Here are meMate’s main features to help you quickly understand if it will be suitable for your<br/> business.
           </span>
           <h1 className="h1tagsseo">
-          Comprehensive Features of Business Management and CRM Software
+          Comprehensive Features of Business Management and CRM <br/>Software
           </h1>
         </div>
 

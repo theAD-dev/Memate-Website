@@ -105,7 +105,7 @@
   font-weight: 360;
   line-height: 140%;
 }
-.NewsflexWrap .textBox h2, .NewsflexWrap .textBox a {
+.NewsflexWrap .textBox .postH2Title, .NewsflexWrap .textBox a {
   color: #29292B;
   font-size: 21px;
   font-style: normal;
@@ -154,7 +154,7 @@
     margin-bottom: 15px;
     margin-top: 0;
 }
-.NewsflexWrap .textBox h2, .NewsflexWrap .textBox a, .bottom-management p {
+.NewsflexWrap .textBox .postH2Title, .NewsflexWrap .textBox a, .bottom-management p {
   font-size: 17px;
 }
 .NewsflexWrap {

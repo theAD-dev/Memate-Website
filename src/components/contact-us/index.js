@@ -91,8 +91,7 @@ const ContactUsComponent = () => {
     <Helmet>
     <title>Contact Us | meMate Business Management Software Support</title>
     <meta property="og:title" content="Contact Us | meMate Business Management Software Support" />
-      <meta property="og:description" content="Get in touch with MeMate for support and inquiries about our business management software. We’re here to help Australian businesses thrive with CRM, ERP, and workflow automation solutions
-    " />
+      <meta property="og:description" content="Get in touch with MeMate for support and inquiries about our business management software. We’re here to help Australian businesses thrive with CRM, ERP, and workflow automation solutions" />
 </Helmet>
       <div className="main-section" data-aos="fade-up"
     data-aos-offset="50"
@@ -104,8 +103,8 @@ const ContactUsComponent = () => {
         <div className="main-heading" >contact us</div>
         <div className="main-image"><img src={ContactUsMainImage} alt="contact us main image" width={545} height={545}/></div>
         <div className="mid-heading">
-          <h1 className="h1tags">Contact the MeMate Team for Business<br /> Management Software Solutions in Australia</h1>
-          <p>a friendly memate specialist is ready to help.</p>
+          <h1 className="h1tags">Contact the MeMate Team for Business Management <br/>Software Solutions in Australia</h1>
+          {/* <p>a friendly memate specialist is ready to help.</p> */}
         </div>
         <div className="small-heading">
           <p>Made for Small to Medium Businesses for Simplicity and Order</p>

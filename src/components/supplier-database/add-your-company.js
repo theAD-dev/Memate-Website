@@ -57,7 +57,7 @@ function AddYourCompany() {
     try {
       const result = await RequestCallBackAPI(data);
       console.log('Form submitted successfully:', result);
-      console.log(data);
+      // console.log(data);
       setVisible(false);
       setVisibleEmail(false);
       formReset();
@@ -68,16 +68,16 @@ function AddYourCompany() {
   };
 
   const handleCaptchaChange = (value) => {
-    console.log('Captcha value:', value);
     setCaptchaValue(value);
   };
 
   return (
     <>
       <Helmet>
-        <title>MeMate: </title>
-        <meta property="og:title" content="MeMate: Contact Us for Support and Inquiries" />
-        <meta property="og:description" content="We're here to help! Contact us for inquiries, support, or feedback. Your questions are important, and our team is ready to assist you." />
+        <title>Add Your Company | List Your Business in MeMate’s Supplier Directory</title>
+        <meta property="og:title" content="Add Your Company | List Your Business in MeMate’s Supplier Directory" />
+        <meta property="og:description" content="Register your company in MeMate’s supplier directory to connect with businesses looking for trusted suppliers. 
+        Join the leading Australian business directory today." />
       </Helmet>
       <div className="parent-blog-page customerstoriespage">
 
@@ -97,7 +97,7 @@ function AddYourCompany() {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-            <h2>Add Your Company to the Database</h2>
+            <h1>List Your Company and Connect with MeMate Users</h1>
             <div className={style.supplierAddform}>
               <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
 

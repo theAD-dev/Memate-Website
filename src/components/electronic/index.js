@@ -1,12 +1,28 @@
-import ComingSoon from '../../layout/coming-soon';
-// import style from './electronic.module.scss';
+import React from 'react'
+import './style.css';
+import ElectronicHeader from './electronic-header';
+import ElectronicBussinessManagement from './electronic-bussiness-managment';
+import ElectronicCrousel from './electronic-crousel';
+import ElectronicMoreSpecific from './electronic-more-specific';
+import ReadMore from './electronic-read-more';
+import ElectronicQuesitonAndAns from './electronic-question-ans';
 
-const ElectronicComponent = () => {
+
+const ElectronicPageContent = () => {
   return (
     <>
-      <ComingSoon />
+    <div className='industry-page-wrapper'>
+      <div className='industry-page-parent'>
+        <ElectronicHeader/>
+        <ElectronicBussinessManagement/>
+        <ElectronicCrousel/>
+        <ElectronicMoreSpecific/>
+        <ReadMore/>
+        <ElectronicQuesitonAndAns/>
+      </div>
+    </div>
     </>
-  );
-};
+  )
+}
 
-export default ElectronicComponent;
+export default ElectronicPageContent

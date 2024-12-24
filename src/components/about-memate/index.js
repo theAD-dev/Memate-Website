@@ -12,8 +12,7 @@ const AboutMemateComponent = () => {
     <Helmet>
     <title>About meMate | Best Business & Project Management Software in Australia</title>
     <meta property="og:title" content="About meMate | Best Business & Project Management Software in Australia" />
-      <meta property="og:description" content="meMate transforms small businesses in Australia with the best project management software, workflow automation, and comprehensive business management solutions.
-    " />
+      <meta property="og:description" content="meMate transforms small businesses in Australia with the best project management software, workflow automation, and comprehensive business management solutions." />
 </Helmet>
     <div id="aboutPage">
     
@@ -24,7 +23,7 @@ const AboutMemateComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <h1>meMate<br /> Australia’s Leading Business Management Software</h1>
+      <h1>meMate: Australia’s Leading Business Management Software</h1>
      <h2>companies</h2>
      <p>MeMate is a user-friendly, all-in-one business management software. It gives you real-time insights into your company’s performance, helps speed up operations, reduces mistakes, and keeps all your business records in one place.</p>
      <p>With MeMate, managing your business becomes simpler and more effective, preparing you for the future.</p>

@@ -20,7 +20,7 @@ const SuccessStories = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-          <h2>Success Stories</h2>
+          <div className="SStoriesHead">Success Stories</div>
           <p>
             Here are a few stories from Australian companies using Memate
             <br />

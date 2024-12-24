@@ -235,7 +235,7 @@ function App() {
             path="/news/tags/:slug"
             element={<BlogTagPage PostsCategories={PostsCategories}  postsSingle={posts} postsLatest={postsLatest} />} />
           <Route path="/news/category/:id" element={<CategoryPage PostsCategories={PostsCategories} postsSingle={posts} postsLatest={postsLatest} />} />
-          <Route path="/software-update" exact element={<SoftwareUpdatePage />} />
+          <Route path="/memate-software-updates" exact element={<SoftwareUpdatePage />} />
           <Route path="/industries/business-software-for-creative-agencies" exact element={<IndustryPage />} />
           <Route path="/contact-us" exact element={<ContactUsPage />} />
           <Route path="/supplier-database" exact element={<SupplierDatabasePage />} />

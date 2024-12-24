@@ -13,8 +13,7 @@ const EmployeeManagementPage = () => {
       <Helmet>
     <title>Employee Management Software | Streamline HR Processes with MeMate</title>
     <meta property="og:title" content="Employee Management Software | Streamline HR Processes with MeMate" />
-      <meta property="og:description" content="Enhance your HR operations with MeMate’s Employee Management Software. Designed for small Australian 
-      businesses, our platform offers comprehensive tools for workforce management and performance tracking.
+      <meta property="og:description" content="Enhance your HR operations with MeMate’s Employee Management Software. Designed for small Australian businesses, our platform offers comprehensive tools for workforce management and performance tracking.
     " />
 </Helmet>
     <Layout>

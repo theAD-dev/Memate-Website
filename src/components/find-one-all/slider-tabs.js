@@ -36,7 +36,6 @@ const SliderTab = () => {
 
   
   const [selectedTab, setSelectedTab] = useState(3);
-
   const [fadeClass, setFadeClass] = useState("fade-in");
 
   const handleTabClick = (index) => {
@@ -45,9 +44,9 @@ const SliderTab = () => {
   };
 
   const triggerFadeIn = () => {
-    setFadeClass(""); // Remove fade-in class temporarily
+    setFadeClass(""); 
     setTimeout(() => {
-      setFadeClass("fade-in"); // Reapply fade-in class for the transition
+      setFadeClass("fade-in"); 
     }, 50);
   };
 
@@ -70,10 +69,7 @@ const SliderTab = () => {
 
   return (
     <div className="slider-container sliderTabWrapper sliderTabWrapperApp" >
-      
-
-      {/* Tab List Slider */}
-      <Slider {...tabSliderSettings} className="tab-slider" data-aos="fade-up"
+      <Slider {...tabSliderSettings}  className="tab-slider" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1300"
@@ -90,10 +86,8 @@ const SliderTab = () => {
             <p>
             <img
                 src={index === selectedTab ? tab.iconIamgeActive : tab.iconIamge}
-                alt={`${tab.label} icon`}
-              />
+                alt={`${tab.label} icon`}/>
                <span> {tab.label}</span>
-          
                 </p>
             </div>
           </div>
@@ -115,7 +109,6 @@ const SliderTab = () => {
              <div className="how-to-use">
         <p>{tabs[selectedTab].head}</p>
       </div>
-
       <div className="businesses-mode">
         <span>
         {tabs[selectedTab].para}

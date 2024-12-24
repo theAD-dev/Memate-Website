@@ -13,8 +13,7 @@ const FeaturePage = () => {
      <Helmet>
     <title>Sales Management Software | Boost Your Sales with meMate’s CRM Tools</title>
     <meta property="og:title" content="Sales Management Software | Boost Your Sales with meMate’s CRM Tools" />
-      <meta property="og:description" content="Elevate your sales process with MeMate’s Sales Management Software. Track leads, manage your sales pipeline, and automate tasks to drive growth for Australian businesses
-    " />
+      <meta property="og:description" content="Elevate your sales process with MeMate’s Sales Management Software. Track leads, manage your sales pipeline, and automate tasks to drive growth for Australian businesses" />
     </Helmet>
     <Layout> 
       <SalesComponent />
