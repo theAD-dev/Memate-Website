@@ -1,5 +1,8 @@
 
+.mainwikiMibile{
+    padding: 0 0px 1px;
 
+}
 .linkstyleDisable{
     color: var(--Gray-500, #667085);
     font-size: 14px;
@@ -124,13 +127,13 @@
                 h3{
                     p{
                         color: #29292B;
-                        font-size: 25px;
+                        font-size: 20px;
                         font-style: normal;
-                        font-weight: 420;
+                        font-weight: 400;
                         line-height: 150%;
                     }
                 }
-                p{
+                h3{
                     color: #888E9E;
                     font-size: 16px;
                     font-style: normal;
@@ -138,7 +141,7 @@
                     line-height: 140%; 
                     max-height: 100px;
                     overflow-y: auto;
-                    padding-right: 1px;
+                    padding-right: 8px;
                     &::-webkit-scrollbar 
                   
                     {
@@ -239,7 +242,7 @@
             cursor: pointer;
             position: relative;
             h3{
-                p{
+                p,span{
                     color: #29292B;
                     font-size: 25px;
                     font-style: normal;

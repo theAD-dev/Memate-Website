@@ -2,13 +2,13 @@
 import React, { useState } from 'react';
 const UploadIconSupplier = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/uploadicon.svg";
 
-const CustomUpload = () => {
-  const [file, setFile] = useState(null);
+const CustomUpload = ({ upload_file, setUploadFile }) => {
+  
   const [preview, setPreview] = useState(null);
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
-    setFile(selectedFile);
+    setUploadFile(selectedFile);
 
     if (selectedFile && selectedFile.type.startsWith("image/")) {
       const reader = new FileReader();
@@ -22,12 +22,12 @@ const CustomUpload = () => {
   };
 
   const handleUploadClick = () => {
-    if (!file) {
+    if (!upload_file) {
       alert("Please select a file to upload!");
       return;
     }
 
-    alert(`File "${file.name}" uploaded successfully!`);
+    alert(`File "${upload_file.name}" uploaded successfully!`);
   };
 
   return (

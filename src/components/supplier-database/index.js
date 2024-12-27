@@ -55,6 +55,7 @@ const SupplierDatabase = () => {
 
   // Pagination handler
   const handleNext = () => {
+    console.log('Load more suppliers');
     if (supplier.length < totalSupplier) {
       setCurrentPage((prevPage) => prevPage + 1);
     }
