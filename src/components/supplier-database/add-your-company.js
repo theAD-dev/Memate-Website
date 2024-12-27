@@ -8,12 +8,10 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useNavigate } from 'react-router-dom';
-import { RequestCallBackAPI } from '../../api/contactAPI';
+// import { AddYourCompanyApi } from '../../api/supplierApi';
 import CustomUpload from "./custom-upload";
 
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
-
-
 
 // Define your validation schema
 const schema = yup.object().shape({
@@ -22,6 +20,7 @@ const schema = yup.object().shape({
 });
 
 function AddYourCompany() {
+  const [upload_file, setUploadFile] = useState(null);
   const [visible, setVisible] = useState(false);
   const [visibleEmail, setVisibleEmail] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
@@ -33,6 +32,7 @@ function AddYourCompany() {
 
   const formReset = () => {
      reset({
+      upload_file:"",
       legal_name: "",
       email: "",
       abn: "",
@@ -43,30 +43,59 @@ function AddYourCompany() {
      })
   }
  
-
   useEffect(()=> {
     formReset();
   }, [])
 
   const onSubmit = async (data) => {
-    // if (!captchaValue) {
-    //   setError('Please complete the CAPTCHA.');
-    //   return;
-    // }
-
+    if (data.website && !/^https?:\/\//i.test(data.website)) {
+      data.website = `https://${data.website}`;
+    }
+    if (!captchaValue) {
+      setError('Please complete the CAPTCHA.');
+      return;
+    }
+    // Proceed with the fetch request
     try {
-      const result = await RequestCallBackAPI(data);
-      console.log('Form submitted successfully:', result);
-      // console.log(data);
-      setVisible(false);
-      setVisibleEmail(false);
-      formReset();
-      navigate('/thank-you');
+      const formData = new FormData();
+      formData.append("upload_file", upload_file);
+      formData.append("legal_name", data.legal_name);
+      formData.append("abn", data.abn || "");
+      formData.append("email", data.email);
+      formData.append("business_location", data.blocation || "");
+      formData.append("state", data.state || "");
+      formData.append("website", data.website || "");
+      formData.append("industry", data.industry || "");
+      formData.append("supplied_services", data.services || "");
+  
+      const myHeaders = new Headers();
+      myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
+  
+      const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: formData,
+        redirect: "follow"
+      };
+  
+      const response = await fetch("https://admin.memate.au/api/supplier", requestOptions);
+  
+      if (response.ok) {
+        const result = await response.text();
+        console.log("Form submitted successfully:", result);
+        setVisible(false);
+        setVisibleEmail(false);
+        formReset();
+        navigate('/thank-you');
+      } else {
+        const errorData = await response.json();
+        console.error("Submission failed:", errorData);
+      }
     } catch (error) {
-      console.log('error: ', error);
+      console.error("Error submitting the form:", error);
     }
   };
-
+  
   const handleCaptchaChange = (value) => {
     setCaptchaValue(value);
   };
@@ -80,7 +109,6 @@ function AddYourCompany() {
         Join the leading Australian business directory today." />
       </Helmet>
       <div className="parent-blog-page customerstoriespage">
-
         <div className="parent-blog">
           <div className="pageBreadcrumbs">
             <ul className={style.linkstyleDisable}>
@@ -88,8 +116,6 @@ function AddYourCompany() {
             </ul>
             <Link to='/supplier-database' className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>
-
-
           <div className={style.supplierAddCompany} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -100,9 +126,8 @@ function AddYourCompany() {
             <h1>List Your Company and Connect with MeMate Users</h1>
             <div className={style.supplierAddform}>
               <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
-
                 <div className={style.flexWrapGrid}>
-         <CustomUpload />
+                 <CustomUpload upload_file={upload_file} setUploadFile={setUploadFile}/>
                   </div>
                 <div className={style.flexWrapGrid}>
                   <div className={style.marginbotton}>
@@ -124,16 +149,13 @@ function AddYourCompany() {
                     {errors.abn && <p className="error-message">{errors.abn.message}</p>}
                   </div>
                 </div>
-
-
                 <div className={style.flexWrapGrid}>
                   <div className={style.marginbotton}>
                     <label htmlFor="email">Email</label>
                     <Controller
                       name="email"
                       control={control}
-                      render={({ field }) => <input placeholder="company@email.com" id="email" {...field} />}
-                    />
+                      render={({ field }) => <input placeholder="company@email.com" id="email" {...field} />}/>
 
                     {errors.email && <p className="error-message">{errors.email.message}</p>}
                   </div>
@@ -176,8 +198,7 @@ function AddYourCompany() {
                     <Controller
                       name="industry"
                       control={control}
-                      render={({ field }) => <input placeholder="Enter industry" id="industry" {...field} />}
-                    />
+                      render={({ field }) => <input placeholder="Enter industry" id="industry" {...field} />}/>
 
                     {errors.industry && <p className="error-message">{errors.industry.message}</p>}
                   </div>
@@ -198,16 +219,13 @@ function AddYourCompany() {
                   />
                   {error && <p style={{ color: 'red' }}>{error}</p>}
                 </div>
-
                 <button className={style.darkbuttonStyle} onClick={handleSubmit(onSubmit)}>Send</button>
               </form>
             </div>
           </div>
         </div>
       </div>
-
     </>
-
   );
 }
 export default AddYourCompany;

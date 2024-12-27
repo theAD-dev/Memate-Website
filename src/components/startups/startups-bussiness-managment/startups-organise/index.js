@@ -6,8 +6,8 @@ const StartupsOrganise = () => {
 <>
 <div className={`${style.flexboxWrap} ${style.bgContentWrap}`}>
 <div className={style.flexImageBox}>
-  <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/accurate-quoting.svg" alt="accurate-quoting"/>
-  <img className={style.last} src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/accurate-quoting01.svg" alt="accurate-quoting01"/>
+  <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/startups-organise.svg" alt="startups-organise"/>
+
 </div>
 <div className={`${style.flexContentWrap} ${style.spacingRight}`}>
 <h4>Fast</h4>

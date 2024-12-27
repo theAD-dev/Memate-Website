@@ -14,9 +14,11 @@ const googlemap = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets
 const GlobIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/glob-icon.svg";
 
 
-const DataBase = ({ supplier = [], search, loading, totalSupplier, handleNext, searchTerm, setSearchTerm, activeLetter, setActiveLetter }) => {
+const DataBase = ({ supplier = [], search, loading, totalSupplier, onNext, searchTerm, setSearchTerm, activeLetter, setActiveLetter }) => {
+  console.log('totalSupplier: ', totalSupplier);
   const [expandedPanel, setExpandedPanel] = useState(false);
 
+  
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
   const handleAccordionChange = (panel) => (event, isExpanded) => {
@@ -133,7 +135,7 @@ const DataBase = ({ supplier = [], search, loading, totalSupplier, handleNext, s
       </ul>
 
       {totalSupplier > supplier?.length && (
-        <button onClick={handleNext} className={style.loadmoreSupplyersbut}>
+        <button onClick={onNext} className={style.loadmoreSupplyersbut}>
           {loading ? 'Loading...' : 'Load More'}
         </button>
       )}

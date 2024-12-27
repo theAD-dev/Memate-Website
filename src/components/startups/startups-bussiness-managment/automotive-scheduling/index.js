@@ -6,17 +6,16 @@ const AutomotiveScheduling = () => {
 <>
 <div className={`${style.flexboxWrap} ${style.bgContentWrap} ${style.sectionTopSpace}`}>
 <div className={style.flexImageBox}>
-<img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/automative-robust.svg" alt="automative-robust" />
+<img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/seamless-inovice.svg" alt="seamless-inovice" />
 
 </div>
 <div className={`${style.spacingRight} ${style.flexContentWrap}`}>
-<h4>Robust</h4>
-<h3>Project Scheduling </h3>
-<h2>and Management</h2>
-    <p>Schedule projects with full details and book appointments to reduce no-shows. 
-      The unique project management dashboard provides 
-      a clear view of all active work, ensuring efficient oversight.</p>
-      <Link to="/features/project-management-software">Project Management</Link>
+<h4>Simplified</h4>
+<h3>Seamless Quote-to-Project</h3>
+<h2>Conversion</h2>
+    <p>Let customers accept quotes with a click, instantly turning them into projects. From there, you can schedule tasks, notify customers, 
+      collaborate with employees or contractors, add expenses, and much more—all within meMate.</p>
+      <Link to="/features/invoicing-software">Invoicing</Link>
 </div>
 
 </div>

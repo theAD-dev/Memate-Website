@@ -1,12 +1,12 @@
 import React from 'react'
 import './style.css'
 import StartupsOrganise from './startups-organise'
-import AutomotiveIntuitive from './automotive-Intuitive'
-import AutomotiveScheduling from './automotive-scheduling'
-import AutomotiveContractor from './automotive-contractor'
-import AutomotiveProfitability from './automotive-profitability'
-import AutomotiveDatabase from './automotive-database'
-import AutomativeWorkshop from './automative-workshop'
+import StartupsIntuitive from './startups-intuitive'
+import StartupsSeamless from './automotive-scheduling'
+import StartupsCustom from './startups-custom'
+import StartupsMobileApp from './startups-mobileapp'
+import StartupsEffective from './startups-effective'
+import StartupsEssential from './startups-essential'
 const StartupsBussinessManagement = () => {
   return (
     <div className='industry-bussiness-management-wrapper' data-aos="fade-up"
@@ -28,12 +28,12 @@ const StartupsBussinessManagement = () => {
   
       <div className='industry-bussiness-category-wrapper'>
             <StartupsOrganise />
-            <AutomotiveIntuitive/>
-            <AutomotiveScheduling/>
-            <AutomotiveContractor/>
-            <AutomotiveProfitability />
-            <AutomotiveDatabase/>
-            <AutomativeWorkshop/>
+            <StartupsIntuitive/>
+            <StartupsSeamless/>
+            <StartupsCustom/>
+            <StartupsMobileApp />
+            <StartupsEffective/>
+            <StartupsEssential/>
       </div>
     </div>
   )

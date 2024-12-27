@@ -4,73 +4,73 @@ import AddIcon from "@mui/icons-material/Add";
 import { Box } from "@mui/material";
 import Images from "../../../assests/images";
 const StartupsQuesitonAndAns = () => {
-  const [selectedQuestion, setSelectedQuestion] = useState(3);
+  const [selectedQuestion, setSelectedQuestion] = useState(0);
 
   const questions = [
     {
-      question: "Is MeMate specifically designed for creative agencies?",
+      question: "Why is meMate a good choice for startups?",
       key: 0,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate is ideal for startups because it provides an all-in-one solution for managing projects, invoicing, job scheduling, budgeting, and profitability tracking. It simplifies operations, allowing startups to focus on growth without the need for multiple software tools.",
     },
     {
-      question: "How can MeMate benefit my creative agency?",
+      question: "Can meMate help with budgeting for a new business?",
       key: 1,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate helps startups set and manage budgets from the initial quotation stage. You can track every expense in real time, monitor profitability, and ensure your business stays on track financially.",
     },
     {
       question:
-        "Can MeMate handle the unique requirements of marketing and advertising agencies?",
+        " How does meMate handle invoicing for startups?",
       key: 2,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate allows you to convert quotes into invoices, manage unpaid invoices, and send reminders with just a few clicks. It also integrates with accounting software like MYOB and Xero, ensuring your financials stay organized.",
     },
     {
       question:
-        "How does MeMate simplify project management for creative agencies?",
+        " Can meMate scale with my startup as it grows?",
       key: 3,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Absolutely. meMate is designed to grow with your business. Whether you’re managing a small team or expanding operations, the system is flexible enough to handle increasing demands, including multi-location and multi-department management.",
     },
     {
       question:
-        "Can MeMate assist in financial management for creative agencies?",
+        "How does meMate help startups manage teams and projects?",
       key: 4,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate offers job scheduling, time tracking, and task assignment features. You can manage shifts, assign jobs to contractors, and track your team’s progress—all from one platform.",
     },
     {
-      question: "How does MeMate help with client communication?",
+      question: "Is meMate easy to use for startups with limited technical expertise?",
       key: 5,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate is user-friendly and designed to be intuitive, even for startups with limited technical expertise. Its clean interface and simple navigation help you manage your business without the need for a dedicated operations manager.",
     },
     {
       question:
-        "Is MeMate suitable for both small and large creative agencies?",
+        "Does meMate offer reporting tools for startups?",
       key: 6,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate provides a variety of reports, including business overviews, profitability tracking, and conversion reports. These tools help startups monitor performance, track financials, and make data-driven decisions.",
     },
     {
-      question: "Does MeMate offer creative workflow solutions?",
+      question: "How does meMate help improve cash flow for startups?",
       key: 7,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate automates invoicing, allows online payments, and provides follow-up templates for unpaid invoices. This ensures timely payments, which improves cash flow—a critical factor for startups.",
     },
     {
       question:
-        "Is MeMate compatible with other tools or software commonly used by creative agencies?",
+        "Can I manage contractors and freelancers with meMate?",
       key: 8,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate allows you to assign tasks, track time, and communicate with contractors and freelancers directly through the platform. It also helps process their invoices, making it easy to manage external teams.",
     },
     {
-      question: "How can I learn more about MeMate and its features?",
+      question: "Is meMate affordable for startups?",
       key: 9,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate is designed to be cost-effective, offering a comprehensive business management solution without the need for multiple expensive tools. It helps startups manage their business efficiently while keeping costs under contro",
     },
   ];
 
