@@ -11,18 +11,18 @@ const CRMSalesTool = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <div className="content-wrapper">
-        <p className="sale-title">Versatile </p>
-        <p className="sales-heading-sales">job  </p>
-        <p className="sales-type">scheduling</p>
+        <p className="sale-title">Proactive </p>
+        <p className="sales-heading-sales">Shift Management  </p>
+        <p className="sales-type">app for employees</p>
         <p className="sales-description-sales">
-        Through the application, you can communicate<br></br> with your 
-        contractors to assign jobs, track their<br></br> performance, 
-        schedule work, and process their<br></br> invoices seamlessly.
+        meMate offers employee rostering with complete <br/>control. Employees can 
+        use the meMate<br/> application to easily view all their assigned shifts<br/> and 
+        track their work time efficiently.
         </p>
       </div>
       <div className="">
         <div className="modal-contact">
-          <img src={Images.jobVersatile} />
+          <img src={Images.jobProactive} />
           
         </div>
       </div>

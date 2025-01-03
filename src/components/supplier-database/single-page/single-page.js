@@ -8,7 +8,6 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
 
 
 function DataSingle({slug,supplierData}) {
-  console.log('supplierData: ', supplierData);
 
   return (
 <>

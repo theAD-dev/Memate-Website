@@ -10,15 +10,15 @@ const AgilePipeLineManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.jobEssential} />
+      <img src={Images.jobIphone06} />
       <div className="content-wrapper">
-        <p className="sale-title">Essential</p>
-        <p className="sales-heading-sales">Dashboard</p>
-        <p className="sales-type">View</p>
+        <p className="sale-title">Modern</p>
+        <p className="sales-heading-sales">Utilise meMate</p>
+        <p className="sales-type">Utilise meMate</p>
         <p className="sales-description-sales">
-        View each team member’s availability, annual and<br></br> sick leaves, 
-        along with their assigned jobs and<br></br> shifts—all in one 
-        screen for easy management.
+        With the meMate mobile application, your team of<br/> employees and contractors can view, approve,<br/> and 
+        perform shifts and jobs assigned to them.<br/> This ensures clear communication and 
+        smooth <br/>task execution directly from their mobile devices.
         </p>
       </div>
     </div>

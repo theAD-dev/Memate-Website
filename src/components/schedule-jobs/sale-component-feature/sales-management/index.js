@@ -10,15 +10,15 @@ const SalesManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.jobUserFriendly} />
+      <img src={Images.jobPlanning} />
       <div className="content-wrapper">
-        <p className="sale-title">User-friendly</p>
-        <p className="sales-heading-sales">Shift </p>
-        <p className="sales-type">scheduling </p>
+        <p className="sale-title">Convenient</p>
+        <p className="sales-heading-sales">Shift Scheduling and</p>
+        <p className="sales-type">Planning</p>
         <p className="sales-description-sales">
-        meMate allows you to schedule shifts for both part-time and full-time employees. 
-        It also acts as a time tracker, 
-        automatically generating timesheets based on logged hours.
+        With meMate, you can schedule jobs seamlessly from one mobile device to your dashboard. 
+        The meMate Work application is designed to collaborate effectively with all your contractors and employees. Schedule shifts and jobs, 
+        while using the application as a clock-in/clock-out time tracker to generate accurate timesheets.
        </p>
       </div>
     </div>

@@ -1,0 +1,36 @@
+
+.kb-section-wiki-description, h2,p,span{
+    color: #3F3F3F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 150%; 
+}
+.kb-section-wiki-heading {
+    color: #29292B;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: normal;
+    margin-top: 38px;
+}
+.kb-section-wiki-description b {
+    color: #29292B;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: normal;
+    margin-bottom: 9px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.kb-right-section p div br {
+    display: none;
+}
+.kb-right-section p div {
+    margin-bottom: 8px;
+}
+.loaderBarCircle{
+    display: flex;
+    justify-content: center;
+}

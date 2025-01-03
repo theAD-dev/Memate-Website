@@ -1,18 +1,11 @@
+import SalesComponent from "./sales-component";
+import SalesComponentFeature from "./sale-component-feature";
+import SmartInvestment from "./smart-investment";
+import QuestionAnswer from "./ans-questions";
 
-
-import ComingSoon from '../../layout/coming-soon';
-// import style from './time-tracker.module.scss';
-
-const TimeTrackerComponent = () => {
-
-
-  return (
-    <>
-     <ComingSoon />
-    
-    
-    </>
-  );
+export {
+  SalesComponent,
+  SalesComponentFeature,
+  SmartInvestment,
+  QuestionAnswer,
 };
-
-export default TimeTrackerComponent;

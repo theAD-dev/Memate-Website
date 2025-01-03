@@ -11,10 +11,10 @@ const CommunicationPage = () => {
   return (
     <>
      <Helmet>
-    <title>Job Scheduling Software | Efficient Job Management Tools for Australian Businesses</title>
-    <meta property="og:title" content="Job Scheduling Software | Efficient Job Management Tools for Australian Businesses" />
-      <meta property="og:description" content="Schedule and manage jobs seamlessly with MeMate’s job scheduling software. 
-      Designed for Australian small businesses, our tools simplify task allocation and improve efficiency
+    <title>Shift Scheduling Software | Streamline Employee Rostering with MeMate</title>
+    <meta property="og:title" content="Shift Scheduling Software | Streamline Employee Rostering with MeMate" />
+      <meta property="og:description" content="Manage shifts effortlessly with MeMate’s Shift Scheduling Software. Simplify employee rostering,
+       work schedule management, and real-time shift updates to boost workforce productivity.
     " />
 </Helmet>
     <Layout>
