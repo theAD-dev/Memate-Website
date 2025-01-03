@@ -10,7 +10,6 @@ import TronButton from '../../layout/hover-button/tourn-but';
 
 const SupplierDatabase = () => {
   const [supplier, setSupplier] = useState([]);
-
   const [currentPage, setCurrentPage] = useState(1);
   const [totalSupplier, setTotalSupplier] = useState(0);
   const [searchTerm, debouncedValue, setSearchTerm] = useDebounce('', 600);
@@ -23,7 +22,6 @@ const SupplierDatabase = () => {
     setCurrentPage(1);
   }, [debouncedValue, debouncedLetterValue]);
 
-  // Fetch supplier data with pagination
   useEffect(() => {
     const fetchSupplier = async () => {
       setLoading(true);
@@ -55,7 +53,6 @@ const SupplierDatabase = () => {
 
   // Pagination handler
   const handleNext = () => {
-    console.log('Load more suppliers');
     if (supplier.length < totalSupplier) {
       setCurrentPage((prevPage) => prevPage + 1);
     }

@@ -318,4 +318,7 @@ border: 0;
     padding-bottom: 16px;
     margin-top: 9px;
 }
+.jobs-heading {
+  line-height: 38px !important;
+}
 }

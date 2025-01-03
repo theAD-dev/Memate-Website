@@ -11,16 +11,17 @@ const SuitableTender = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <div className="content-wrapper">
-        <p className="sale-title">Agile</p>
-        <p className="sales-heading-sales">Tool  </p>
-        <p className="sales-type">for your business</p>
+        <p className="sale-title">Strategic</p>
+        <p className="sales-heading-sales">Shift and   </p>
+        <p className="sales-type">job overview</p>
         <p className="sales-description-sales">
-        This is unprecedented functionality, available <br></br>exclusively in meMate, providing complete <br></br>
-        transparency, control, and motivation for your<br></br> entire business team.
+        View all shifts and plan jobs for your team in one<br/> screen. 
+        Easily assess workloads and optimise<br/> shifts and contractor assignments 
+        to ensure <br/>efficiency and balance across your projects.
         </p>
       </div>
       <div className="suitable-table-image-wrapper">
-      <img src={Images.jobAgile} />
+      <img src={Images.jobOverview} />
      
       </div>
     </div>

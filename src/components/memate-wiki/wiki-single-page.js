@@ -3,12 +3,15 @@ import { Link, useParams,useLocation  } from "react-router-dom";
 import style from './wiki.module.scss';
 import { useQuery } from "@tanstack/react-query";
 import { wikiBaseId } from "../../api/wikiApi"; 
+import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 
 const WikiSinglePage = () => {
     const { categoryId } = useParams();
+     const navigate = useNavigate();
     const location = useLocation();
     const { name: categoryName } = location.state || {};
     const idData = `${categoryId}/${categoryName}`;
@@ -18,8 +21,18 @@ const WikiSinglePage = () => {
         enabled: !!idData, 
     });
     
+    const handleDetailsClick = (categoryId, categoryName) => {
+        navigate(`/wiki-details/${categoryId}`, { state: { name: categoryName } });
+      };
 
     return (
+        <>
+        <Helmet>
+    <title>MeMate Wiki | Business Management Practices, Tools, and Information</title>
+      <meta property="og:title" content='MeMate Wiki | Business Management Practices, Tools, and Information' />
+      <meta property="og:description" content='Discover business management insights on MeMate Wiki, covering job scheduling, 
+      invoicing, quote calculations, and essential tools for success.' />  
+</Helmet>
         <div className="parent-blog">
              <div className="pageBreadcrumbs">
         <ul className={style.linkstyleDisable}>
@@ -39,13 +52,15 @@ const WikiSinglePage = () => {
                     {wikiBaseIdData && wikiBaseIdData.map((item, index) => (
                     <div key={index} className={`itemFlex ${style.itemFlex}`}>
                             <div className={style.itemText}>
-                            <h3 dangerouslySetInnerHTML={{ __html: item.description }}></h3>
+                            {/* <h3 dangerouslySetInnerHTML={{ __html: item.description }}></h3> */}
+                            <h3 onClick={() => handleDetailsClick(item.id, item.title)}>{item.title}</h3>
                          </div>
                      </div>
                     ))}
                   </div>
             </div>
         </div>
+        </>
     );
 };
 

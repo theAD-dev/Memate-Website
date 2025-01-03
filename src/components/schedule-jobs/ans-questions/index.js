@@ -10,63 +10,63 @@ const QuestionAnswer = () => {
 
   const questions = [
     {
-      question: "What is meMate’s job scheduling feature, and why do I need it?",
+      question: "What is job scheduling software, and how does meMate help?",
       key: 1,
       answer:
-        "meMate’s job scheduling feature allows businesses to organize, assign, and track tasks or shifts for employees and contractors. It simplifies the process of managing schedules, improves communication, and ensures that all jobs are completed on time.",
+        "Job scheduling software automates the assignment and management of tasks or shifts for employees and contractors. With meMate, you can schedule jobs and shifts effortlessly, monitor progress in real time, and streamline workflows for your team.",
     },
     {
-      question: "How does meMate help manage shifts for employees?",
+      question: "How does meMate’s shift scheduling benefit businesses?",
       key: 2,
       answer:
-        "With meMate, you can easily schedule shifts for part-time and full-time employees, track their availability, and handle time-off requests. The system helps avoid scheduling conflicts and ensures every shift is covered.",
+        "meMate simplifies the scheduling process by allowing you to plan shifts, allocate tasks, and view everything in one screen. This ensures smooth operations, reduces scheduling conflicts, and improves team productivity.",
     },
     {
-      question: "Can I manage contractors with meMate’s job scheduling?",
+      question: "Can meMate handle scheduling for both employees and contractors?",
       key: 3,
       answer:
-        "Yes, meMate enables you to assign jobs to contractors, track their performance, and process their invoices—all within the platform. It provides a seamless way to manage contractors alongside your internal team.",
+        "Yes, meMate is designed to manage assignments for both employees and contractors. It allows you to assign shifts or jobs, track progress, and communicate with all team members in one platform.",
     },
     {
-      question: "How does meMate track time for employees and contractors?",
+      question: "Can I create reusable shift templates in meMate?",
       key: 4,
       answer:
-        "meMate automatically tracks time for employees and contractors through its built-in time tracking feature. It generates timesheets based on logged hours, making approvals and payroll processing easy.",
+        "Absolutely. meMate lets you create and save shift and job templates for recurring tasks, making weekly scheduling quick and efficient.",
     },
     {
-      question: "Is meMate suitable for businesses with multiple locations?",
+      question: "How does the meMate mobile app enhance job scheduling?",
       key: 5,
       answer:
-        "Absolutely. meMate supports multi-location management, allowing you to schedule jobs, track shifts, and manage employees across multiple locations from one unified platform.",
+        "The meMate mobile app allows your team to view, accept, and manage their shifts or tasks on the go. It also includes features like clock-in/clock-out and group communication, ensuring real-time updates and seamless collaboration.",
     },
     {
-      question: "Can I communicate with my team through meMate’s job scheduling feature?",
+      question: "Can meMate track time and attendance for employees and contractors?",
       key: 6,
       answer:
-        "Yes, meMate includes communication tools that allow you to update employees and contractors, assign jobs, and share shift details through the platform or mobile app, ensuring everyone stays on the same page.",
+        "Yes, meMate includes time-tracking features. Employees and contractors can log their hours using the app, and timesheets are automatically generated for approval and payroll integration.",
     },
     {
-      question: "Does meMate integrate with payroll systems?",
+      question: "How does meMate handle last-minute changes or shift swaps?",
       key: 7,
       answer:
-        "Yes, meMate integrates time tracking with payroll, automatically converting logged hours into timesheets for easy approval and processing. This ensures accuracy in payments and reduces manual work.",
+        "meMate allows employees to request shift swaps or changes through the app, and managers can approve these updates instantly. This keeps the schedule flexible and adaptable to real-time needs.",
     },
     {
-      question: "Can meMate handle shift changes and time-off requests?",
+      question: "Can meMate help monitor employee and contractor workloads?",
       key: 8,
       answer:
-        "Yes, meMate allows employees to request time off or swap shifts, with approval options for managers. The system keeps track of all scheduling changes, so nothing gets lost in the process.",
+        "Yes, meMate provides a clear overview of all assigned tasks and shifts, helping you assess workloads and optimise resource allocation to prevent overburdening your team.",
     },
     {
-      question: " How does meMate improve transparency and accountability?",
+      question: "Does meMate integrate with other business systems?",
       key: 9,
       answer:
-        "meMate provides a clear overview of each team member’s availability, shifts, and assigned jobs. You can track their progress and performance, ensuring transparency and accountability at all times.",
+        "Yes, meMate integrates with payroll, project management, and other business tools, ensuring a seamless flow of information across different departments.",
     },
     {
-      question: " Is meMate accessible via mobile devices?",
+      question: "Why should I choose meMate for job and shift scheduling?",
       answer:
-        "Yes, meMate offers a mobile app that allows managers to schedule shifts, assign tasks, and communicate with team members on the go. Employees and contractors can also view their schedules and log their time from their mobile devices.",
+        "meMate offers an all-in-one solution for job and shift scheduling, combining features like time tracking, real-time monitoring, mobile app access, and detailed reporting. It simplifies workforce management, making it an excellent choice for businesses of any size.",
       key: 10,
     },
   ];

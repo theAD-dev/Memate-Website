@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import style from './supplier-module.module.scss';
 import "./style.css";
 import { Link } from "react-router-dom";
@@ -9,16 +9,13 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const FilterIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/search-filter.svg";
-const LogoFilter = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo-filter.svg";
+// const LogoFilter = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo-filter.svg";
 const googlemap = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/googlemap.svg";
 const GlobIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/glob-icon.svg";
 
 
 const DataBase = ({ supplier = [], search, loading, totalSupplier, onNext, searchTerm, setSearchTerm, activeLetter, setActiveLetter }) => {
-  console.log('totalSupplier: ', totalSupplier);
   const [expandedPanel, setExpandedPanel] = useState(false);
-
-  
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
   const handleAccordionChange = (panel) => (event, isExpanded) => {

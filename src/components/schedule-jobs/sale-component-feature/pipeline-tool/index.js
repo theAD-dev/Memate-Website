@@ -11,17 +11,16 @@ const PipeLineTool = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <div className="pipeline-image-wrapper">
-          <img src={Images.jobPowerful} className="filter-pipelineimage"/>
+          <img src={Images.jobContractors} className="filter-pipelineimage"/>
          
       </div>
       <div className="content-wrapper">
-        <p className="sale-title">Powerful</p>
-        <p className="sales-heading-sales">tool for</p>
-        <p className="sales-type">your team </p>
+        <p className="sale-title">Comprehensive</p>
+        <p className="sales-heading-sales">Contractors</p>
+        <p className="sales-type">job scheduling</p>
         <p className="sales-description-sales">
-        Manage every team member from one screen—<br></br>whether you need to 
-        schedule shifts for <br></br>employees or assign jobs to contractors, 
-        meMate<br></br> makes it simple and efficient.
+        Schedule jobs for contractors and view all<br/> assignments in a single 
+        calendar. Track the time<br/> spent on each job, monitor job statuses, and<br/> review notes for seamless contractor management.
         </p>
       </div>
     </div>

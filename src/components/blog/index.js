@@ -7,7 +7,9 @@ import { Helmet } from 'react-helmet';
 
 
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
-  console.log('postsLatest: ', postsLatest);
+  console.log('totalPosts: ', totalPosts);
+  console.log('posts: ', posts);
+  
 
 
   const formatDateWithOrdinal = (dateString) => {
@@ -236,7 +238,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom">
-            {posts?.map((post) => (
+           {posts?.slice(3).map((post) => (
               <div key={post.id} className="img-container-3-div">
                 <div className="img-container-3-img1-div">
                   <Link to={`/news/${post.slug}`}>
