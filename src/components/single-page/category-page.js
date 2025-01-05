@@ -13,6 +13,7 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
 const CategoryComponents = () => {
     const { id } = useParams();
     const [post, setPost] = useState(null);
+    console.log('setPost: ', setPost);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isNearBottom, setIsNearBottom] = useState(false);
     const [postTagsslug, setPostTagsslug] = useState(null);

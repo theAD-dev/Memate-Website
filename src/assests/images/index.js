@@ -1,5 +1,3 @@
-import ContractorPage from "../../pages/contractor";
-
 
 const Images = {
   landingHero: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-banner.png",

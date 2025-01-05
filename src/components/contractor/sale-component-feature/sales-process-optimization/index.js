@@ -19,7 +19,7 @@ const SalesProcessOptimiation = () => {
         fixed rate, and monitor <br/>performance with ease.
         </p>
       </div>
-      <img src={Images.ContractorFuncti}  className="sales-process-optimization-image"/>
+      <img src={Images.ContractorFuncti} alt="ContractorFuncti"  className="sales-process-optimization-image"/>
     </div>
   );
 };

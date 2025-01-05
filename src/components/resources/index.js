@@ -3,6 +3,7 @@
 import "./style.css";
  import style from './resources.module.scss';
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const ResourcesComponent = () => {
   return (
@@ -34,12 +35,12 @@ const ResourcesComponent = () => {
       <div className={style.mainGridwtapFlex}>
       <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
        <div className={style.itemText}>
-          <h3>Supplier Database</h3>
+       <Link to="/supplier-database"><h3>Supplier Database</h3></Link>
        </div>
        </div>{/* Item Box */}
       <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
        <div className={style.itemText}>
-          <h3>Delete Request</h3>
+       <Link to="/delete-request"><h3>Delete Request</h3></Link>
        </div>
        </div>{/* Item Box */}
        </div>
@@ -49,12 +50,12 @@ const ResourcesComponent = () => {
       <div className={style.mainGridwtapFlex}>
       <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
        <div className={style.itemText}>
-          <h3>Knowledge Database</h3>
+       <Link to="/knowledge-base"> <h3>Knowledge Database</h3></Link>
        </div>
        </div>{/* Item Box */}
       <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
        <div className={style.itemText}>
-          <h3>meMate Brand</h3>
+       <Link to="/memate-brand"><h3>meMate Brand</h3></Link>
        </div>
        </div>{/* Item Box */}
        </div>
@@ -64,7 +65,7 @@ const ResourcesComponent = () => {
       <div className={style.mainGridwtapFlex}>
       <div className={`itemFlex ${style.itemFlex}`}>{/* Item Box */}
        <div className={style.itemText}>
-          <h3>Memate Wiki</h3>
+       <Link to="/memate-wiki"> <h3>Memate Wiki</h3></Link>
        </div>
        </div>{/* Item Box */}
        </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Images from "../../../../assests/images";
 const SalesManagement = () => {
   return (
     <div className="sales-management-wrapper-data" data-aos="fade-up"

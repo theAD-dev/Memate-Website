@@ -83,15 +83,15 @@ const Footer = () => {
             <div className="links">
               <p className="link-heading">Features</p>
               <div className="page-links" style={{width:"141px"}}>
-              <Link to="/client-management">Client Management</Link>
-              <Link to="/supplier-management">Supplier Management</Link>
-              <Link to="/feature-page-sales">Sales Pipeline</Link>
-              <Link to="/project-management">Project Management</Link>
-              <Link to="/communication">Communication</Link>
-              <Link to="/schedule-jobs">Schedule Jobs</Link>
-              <Link to="/invoicing">Invoicing</Link>
-              <Link to="/statistic">Statistic</Link>
-              <Link to="/reports">Reports</Link>
+              <Link to="/features/client-management-software">Client Management</Link>
+              <Link to="/features/supplier-management-software">Supplier Management</Link>
+              <Link to="/features/sales-management-tools">Sales Pipeline</Link>
+              <Link to="/features/project-management-software">Project Management</Link>
+              <Link to="/features/team-communication-tools">Communication</Link>
+              <Link to="/features/job-scheduling-software">Schedule Jobs</Link>
+              <Link to="/features/invoicing-software">Invoicing</Link>
+              <Link to="/features/business-statistics-tools">Statistic</Link>
+              <Link to="/features/business-reporting-tools">Reports</Link>
               </div>
             </div>
 
@@ -110,12 +110,12 @@ const Footer = () => {
             <div className="links">
               <p className="link-heading">Industries</p>
               <div className="page-links" style={{width: "181px"}}>
-              <Link to="/creative-agencies">Creative Agencies</Link>
-              <Link to="/electronic-repair-specialists">Electronic Repair Specialists</Link>
-              <Link to="/photo-video-agency">Photo & Video Agency</Link>
-              <Link to="/automotive">Automotive</Link>
-              <Link to="/startups">Startups</Link>
-              <Link to="/construction">Construction</Link>
+              <Link to="/industries/business-software-for-creative-agencies">Creative Agencies</Link>
+              <Link to="/industries/software-for-electronic-repair-businesses">Electronic Repair Specialists</Link>
+              <Link to="/industries/software-for-photo-video-agencies">Photo & Video Agency</Link>
+              <Link to="/industries/business-software-for-automotive-industry">Automotive</Link>
+              <Link to="/industries/business-management-software-for-startups">Startups</Link>
+              <Link to="/industries/business-software-for-construction-industry">Construction</Link>
               </div>
             </div>
 
@@ -142,7 +142,7 @@ const Footer = () => {
             <div className="links">
               <p className="link-heading">Legal</p>
               <div className="page-links" style={{width: "142px"}}>
-                <a>Terms And Conditions</a>
+                <Link to="/terms-and-conditions">Terms And Conditions</Link>
                 <Link to="/privacy">Privacy Policy</Link>
                 <Link to="/terms-of-use">Website Terms of Use</Link>
                 <Link to="/security">Security</Link>
@@ -155,7 +155,7 @@ const Footer = () => {
               <div className="page-links" style={{width: "109px"}}>
               <Link to="/contact-us">Contact Us</Link>
               <Link to="/delete-request">Delete Request</Link>
-                <Link to="/memate-software-updates"><p>Software Update </p></Link>
+                <Link to="/memate-software-updates">Software Update </Link>
               </div>
             </div>
 

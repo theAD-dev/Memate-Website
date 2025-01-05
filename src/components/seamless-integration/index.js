@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Images from "../../assests/images";
 const IntegrationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/integration.svg"
 
 const SeamlessInegration = () => {
@@ -18,7 +17,7 @@ const SeamlessInegration = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <img src={IntegrationImage} alt="IntegrationImage" />
+        <img src={IntegrationImage} alt="Integration" />
       </div>
      
       <div className="integration-disp" data-aos="fade-up"

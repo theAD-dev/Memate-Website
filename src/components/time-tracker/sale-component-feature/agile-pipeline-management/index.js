@@ -1,5 +1,4 @@
 import React from "react";
-import Images from "../../../../assests/images";
 import "./style.css";
 const AgilePipeLineManagement = () => {
   return (

@@ -36,7 +36,7 @@ function SortedMedia() {
               <Link ><img
                 className="img-container-stories"
                 src={SortedMedia01}
-                alt="Blog featured image"
+                alt="Blog featured "
               /></Link>
               <div className="customerstoriesDetails">
                 <div>
@@ -55,7 +55,7 @@ function SortedMedia() {
               <Link ><img
                 className="img-container-stories"
                 src={SortedMedia02}
-                alt="Blog featured image"
+                alt="Blog featured "
               /></Link>
 
             </div>
@@ -78,7 +78,7 @@ function SortedMedia() {
               <Link ><img
                 className="img-container-stories"
                 src={SortedMedia03}
-                alt="Blog featured image"
+                alt="Blog featured "
               /></Link>
 
             </div>
@@ -95,7 +95,7 @@ function SortedMedia() {
               <Link ><img
                 className="img-container-stories"
                 src={SortedMedia04}
-                alt="Blog featured image"
+                alt="Blog featured "
               /></Link>
 
             </div>
@@ -108,7 +108,7 @@ function SortedMedia() {
               <Link ><img
                 className="img-container-stories"
                 src={SortedMedia05}
-                alt="Blog featured image"
+                alt="Blog featured "
               /></Link>
             </div>
             <div className="wrapperText">

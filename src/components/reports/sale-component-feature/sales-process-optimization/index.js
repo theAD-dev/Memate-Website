@@ -20,7 +20,7 @@ const SalesProcessOptimiation = () => {
         make informed<br></br> executive decisions.
         </p>
       </div>
-      <img src={Images.reportDetailed}  className="sales-process-optimization-image"/>
+      <img src={Images.reportDetailed} alt="reportDetailed"  className="sales-process-optimization-image"/>
     </div>
   );
 };

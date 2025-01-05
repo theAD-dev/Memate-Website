@@ -17,17 +17,17 @@ const SimpleVersatilePowerful = () => {
     data-aos-anchor-placement="top-bottom">
         <div className="powerful-client">
           <PostCard
-            userImage={<img src={Images.owners} />}
+            userImage={<img src={Images.owners} alt="owners" />}
             storiesDisp="Built for regular business owners"
           />
 
           <PostCard
-            userImage={<img src={Images.industries} />}
+            userImage={<img src={Images.industries} alt="industries" />}
             storiesDisp="Suitable for 90% of all industries"
           />
 
           <PostCard
-            userImage={<img src={Images.business} />}
+            userImage={<img src={Images.business} alt="business" />}
             storiesDisp="Redefining the way business operates"
           />
         </div>

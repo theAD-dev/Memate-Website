@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import Images from "../../assests/images";
 import { Link } from "react-router-dom";
-import TronButton from "../../layout/hover-button/tourn-but";
+
 
 const ZeroOfferOnboarding = () => {
 
@@ -33,7 +33,7 @@ const ZeroOfferOnboarding = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom">
-            <img src={Images.zeroScreenShot} />
+            <img src={Images.zeroScreenShot} alt="zeroScreenShot" />
           </div>
         </div>
       </div>

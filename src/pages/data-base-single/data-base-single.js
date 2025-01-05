@@ -8,11 +8,8 @@ import { singlePostSupplier } from '../../api/supplierApi';
 const DatabasePageSingle = () => {
   const { slug = slug.slug } = useParams();
   const [supplierData, setSupplierData] = useState(null);
-
-
   const [loadingsingle, setLoadingSinge] = useState(true);
   const [error, setError] = useState(null);
-
 
   useEffect(() => {
     const fetchSupplierData = async () => {
@@ -34,7 +31,6 @@ const DatabasePageSingle = () => {
 
   return (
     <>
-
       <Layout>
         <DataSingle slug={slug} supplierData={supplierData} />
       </Layout>

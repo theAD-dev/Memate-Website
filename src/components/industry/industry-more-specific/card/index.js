@@ -7,7 +7,7 @@ const MoreSpecificCard = (props) => {
       className="more-specific-card"
     >
         <div className="more-specific-card-logo" style={{background:props.background}}>
-            <img src={props.card_image}/>
+            <img src={props.card_image} alt="card_image"/>
         </div>
 
         <p className="more-specific-card-heading">{props.heading}</p>

@@ -20,7 +20,7 @@ const SalesProcessOptimiation = () => {
         for recurring <br/>tasks, ensuring quick and efficient job<br/> management.
         </p>
       </div>
-      <img src={Images.jobEffective01}  className="sales-process-optimization-image"/>
+      <img src={Images.jobEffective01} alt="jobEffective01"  className="sales-process-optimization-image"/>
     </div>
   );
 };

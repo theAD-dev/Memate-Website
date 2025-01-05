@@ -2,9 +2,7 @@ import React from "react";
 import "./style.css";
 import Images from "../../../../assests/images";
 
-
 const CRMSalesTool = () => {
-
   return (
     <div className="crmtool-manager-wrapper" data-aos="fade-up"
     data-aos-offset="50"
@@ -25,8 +23,7 @@ const CRMSalesTool = () => {
       </div>
       <div className="">
         <div className="modal-contact ">
-          <img src={Images.HelpfullSupplier} />
-          
+          <img src={Images.HelpfullSupplier} alt="HelpfullSupplier"/>
         </div>
       </div>
     </div>

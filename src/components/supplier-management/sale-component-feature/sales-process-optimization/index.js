@@ -21,7 +21,7 @@ const SalesProcessOptimiation = () => {
         access and select the suppliers you need,<br></br> streamlining your workflow and saving time.
         </p>
       </div>
-      <img src={Images.Insightful}  className="section2 sales-process-optimization-image"/>
+      <img src={Images.Insightful} alt="Insightful"  className="section2 sales-process-optimization-image"/>
     </div>
   );
 };

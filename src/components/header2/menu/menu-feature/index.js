@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import menuImages from "../../../../assests/menu-images";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 const MenuFeature = () => {

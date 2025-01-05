@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Images from "../../../../assests/images";
 const PipeLineTool = () => {
   return (
     <div className="pipeline-tool-wrapper marginSpaceBottom marginSpaceTop" data-aos="fade-up"

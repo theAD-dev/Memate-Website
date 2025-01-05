@@ -11,8 +11,7 @@ const PipeLineTool = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <div className="pipeline-image-wrapper">
-          <img src={Images.commDynamic} className="filter-pipelineimage"/>
-         
+          <img src={Images.commDynamic} alt="commDynamic" className="filter-pipelineimage"/>
       </div>
       <div className="content-wrapper">
         <p className="sale-title">Dynamic</p>
