@@ -12,7 +12,7 @@ const SalesManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img className="section1" src={Images.ClientTable} />
+      <img className="section1" src={Images.ClientTable} alt="ClientTable" />
       <div className="content-wrapper ">
         <p className="sale-title">Intelligent </p>
         <p className="sales-heading-sales">Clients</p>

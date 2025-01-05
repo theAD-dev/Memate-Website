@@ -1,6 +1,5 @@
 import "./styles.css";
 import { useState, useEffect } from "react";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { updateList } from "../../api/software-update";
 import { Helmet } from "react-helmet";
 

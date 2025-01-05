@@ -74,6 +74,8 @@ import CategoryPage from "./pages/single-page/category-page";
 import BlogTagPage from "./pages/single-page/blog-tags-page";
 import TermsAndConditionsPage from "./pages/terms-and-conditions";
 import MemateWikiDetailsPage from './pages/wiki-single-details';
+import MemteBrandPage from './pages/memate-brand';
+import MemateFaqsPage from './pages/memate-faqs';
 const queryClient = new QueryClient();
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -282,6 +284,7 @@ function App() {
           <Route path="/features/your-business-news-management" exact element={<FeaturesNewsPage />} />
           <Route path="/about" exact element={<AboutMematePage />} />
           <Route path="/delete-request" exact element={<DeleteRequestPage />} />
+          <Route path="/memate-brand" exact element={<MemteBrandPage />} />
           <Route path="/memate-wiki" exact element={<MemateWikiPage />} />
           <Route path="/wiki-details/:categoryId" exact element={<MemateWikiDetailsPage />} />
           <Route path="/wiki/:categoryId" exact element={<MemateWikiSinglePage />} />
@@ -297,6 +300,8 @@ function App() {
           <Route path="*" exact element={<ErrorPage />} />
           <Route path="/thank-you" exact element={<ThankYouPage />} />
           <Route path="/tron-btton" exact element={<TronButton />} />
+          <Route path="/memate-faqs" exact element={<MemateFaqsPage />} />
+          
         </Routes>
       </QueryClientProvider>
     </div>

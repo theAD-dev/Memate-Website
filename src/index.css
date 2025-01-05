@@ -306,6 +306,13 @@ border: 0;
 }
 
 
+.sales-management-wrapper-data {
+  align-items: center;
+  gap: 102px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 @media screen and (max-width: 767px) {
   .titleHead h4.tagHeadtitle {

@@ -20,7 +20,7 @@ const SalesProcessOptimiation = () => {
         truly unique system that calculates the exact<br></br> operational profit for each project.
         </p>
       </div>
-      <img src={Images.budPowerful}  className="sales-process-optimization-image"/>
+      <img src={Images.budPowerful} alt="budPowerful" className="sales-process-optimization-image"/>
     </div>
   );
 };

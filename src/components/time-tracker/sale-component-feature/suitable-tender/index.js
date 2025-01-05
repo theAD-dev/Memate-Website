@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Images from "../../../../assests/images";
 const SuitableTender = () => {
   return (
     <div className="suitable-tender-wrapper marginSpaceTop" data-aos="fade-up"

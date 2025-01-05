@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Images from "../../../../assests/images";
 const SalesProcessOptimiation = () => {
   return (
     <div className="sales-process-optimization-wrapper " data-aos="fade-up"

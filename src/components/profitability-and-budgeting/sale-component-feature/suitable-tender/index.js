@@ -22,7 +22,7 @@ const SuitableTender = () => {
         </p>
       </div>
       <div className="suitable-table-image-wrapper">
-      <img src={Images.budModern} />
+      <img src={Images.budModern} alt="budModern" />
      
       </div>
     </div>

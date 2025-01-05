@@ -13,7 +13,7 @@ const PipeLineTool = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <div className="pipeline-image-wrapper ">
-          <img src={Images.ContactSupplier} className="filter-pipelineimage"/>
+          <img src={Images.ContactSupplier} alt="ContactSupplier" className="filter-pipelineimage"/>
          
       </div>
       <div className="content-wrapper ">

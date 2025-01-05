@@ -98,7 +98,27 @@
                 font-style: normal;
                 font-weight: 360;
                 line-height: 140%; 
-               }             }
+               }     
+               a{
+                text-decoration: none;
+                color: #29292B;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 365;
+                line-height: 140%;
+                position: relative;
+                z-index: 9; 
+            h3{
+                color: #29292B;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 365;
+                line-height: 140%; 
+            }
+        }
+            
+            
+            }
         }
         .mainGridwtapFlex{
             column-gap: 15px;

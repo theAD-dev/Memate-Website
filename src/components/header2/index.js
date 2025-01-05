@@ -3,23 +3,23 @@ import menuImages from "../../assests/menu-images";
 import Images from "../../assests/images";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardControlKeyIcon from "@mui/icons-material/KeyboardControlKey";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+// import KeyboardControlKeyIcon from "@mui/icons-material/KeyboardControlKey";
+// import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { MenuAbout, MenuFeature, MenuIndustry, MenuLegal, MenuNews, MenuRessources } from "./menu";
 import "./style.css";
-import style from './header-menu.module.scss';
+// import style from './header-menu.module.scss';
 import { useLocation } from "react-router-dom"; 
 import MenuData from "../../layout/mobile-menu/menu-data";
 
-import GradientBorderButton from "../../layout/hover-button";
+// import GradientBorderButton from "../../layout/hover-button";
 import TronButton from "../../layout/hover-button/tourn-but";
 
 const DownBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
-const DownWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-white-arrow.svg"
+// const DownWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-white-arrow.svg"
 const DownColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-color-arrow.svg"
 const RightColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-color-arrow.svg"
-const RightWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-white-arrow.svg"
+// const RightWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-white-arrow.svg"
 const RightBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg"
 
 const Header = () => {
@@ -160,7 +160,7 @@ const Header = () => {
                           <img
                             src={
                                 menu.unselectedIcon
-                            }
+                            } alt={menu.unselectedIcon}
                           />
                           <p
                             style={{
@@ -197,48 +197,48 @@ const Header = () => {
                   <img src={Images.logo} alt="logo" />
                   <div className="header-menu-memate-feature">
                     <div className="header-menu-feature">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck}  alt="meMateCheck"/>
                       <p className="header-menu-feature-text">
                         Easy to Learn adn User
                       </p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt="meMateCheck" />
                       <p className="header-menu-feature-texts">Remote Acess</p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt="meMateCheck"/>
                       <p className="header-menu-feature-texts">Workflow</p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt="meMateCheck"/>
                       <p className="header-menu-feature-texts">
                         Single database
                       </p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt="meMateCheck" />
                       <p className="header-menu-feature-texts">
                         Build for Australia
                       </p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt="meMateCheck"/>
                       <p className="header-menu-feature-texts">CRM & ERP</p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} />
+                      <img src={menuImages.meMateCheck} alt="meMateCheck"/>
                       <p className="header-menu-feature-texts">Reporting</p>
                     </div>
                   </div>
                   <div className="request-a-button-wrapper">
-                   <Link to='https://dev.memate.com.au/requestdemo'  target="_blank"><img src={menuImages.RequestAdemo} /> </Link>
+                   <Link to='https://dev.memate.com.au/requestdemo'  target="_blank"><img src={menuImages.RequestAdemo} alt="RequestAdemo"/> </Link>
                   </div>
                 </div>
               </div>
@@ -257,6 +257,7 @@ const Header = () => {
                           ? menuImages.selectedLegal
                           : menuImages.unselectedLegal
                       }
+                      alt="menuImages.selectedLegal"
                     />
                     <p
                       className={
@@ -281,6 +282,7 @@ const Header = () => {
                           ? menuImages.selectedResources
                           : menuImages.unselectedResources
                       }
+                      alt="unselectedResources"
                     />
                     <p
                       className={
@@ -295,12 +297,12 @@ const Header = () => {
                 </div>
                 <div className="header-menu-footer-left-content">
                   <div className="header-footer-legal">
-                    <img src={menuImages.unselectedSales} />
+                    <img src={menuImages.unselectedSales} alt="unselectedSales"/>
                     <Link to='/contact-sales'> <p className="header-footer-legal-text">Contact Sales</p> </Link>
                   </div>
                   <div className="header-footer-legal">
                     <img
-                      src={menuImages.unselectedWatchDemo}
+                      src={menuImages.unselectedWatchDemo} alt="unselectedWatchDemo"
                       style={{ marginTop: "-2px" }}
                     />
                     <Link to='/watch-demo'> <p className="header-footer-legal-text">Watch demo</p> </Link>
