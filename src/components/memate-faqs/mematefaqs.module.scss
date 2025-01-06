@@ -30,6 +30,11 @@
         border: 0;
        }
   }
+  @media screen and (max-width: 767px) {
+    h4{
+        font-size: 27px;
+    }
+}
 }
 
 .linkstyleDisable{
@@ -43,8 +48,16 @@
 
 .mainMenuPages{
     .mainHeadTitle{
+        h1{
+            color: #29292B;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 420;
+            line-height: normal;
+        }
         text-align: center;
-        padding: 30px 0 120px;
+        padding: 30px 0 83px;
         h2{
            
             background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
@@ -69,8 +82,10 @@
         line-height: 38px !important;
             }
             h1{
-                font-size: 66px;
-                line-height: 72px;   
+                font-size: 19px !important;
+        line-height: 38px !important;
+        white-space: normal;
+        display: inline-block;
             }
         }
     }
@@ -194,6 +209,7 @@
         font-size: 30px !important;
         line-height: 38px !important;
     }
+    
     .mainHeadTitle p br{
         display: none !important;
     }

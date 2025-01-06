@@ -30,7 +30,8 @@ const BussinessManagement = () => {
            {/* <img src={Images.landingHero} /> */}
         <div className="macBook-image">
           <div className="big-img-mac">
-          <img src={Images.landingHero} style={{ width: "898.34px" }} alt="Landing Hero" />
+          <div className="big-img-macMain">
+          <img src={Images.landingHero}  alt="Landing Hero" /></div>
             <div className="iphone-image">
               <img src={Images.landingHeroiPhone} alt="landingHeroiPhone" data-aos="aos-fade"
     data-aos-offset="50"

@@ -17,6 +17,9 @@
   max-width: 741px;
   margin: auto;
 }
+.big-img-macMain {
+  width: 993px;
+}
 .home-platform h2 {
   color: #29292b;
   text-align: center;
@@ -68,7 +71,7 @@
 .create-new-text {
   position: absolute;
   bottom: 80px;
-  left: 84px;
+  left: 18px;
 }
 .iphone-image img{
   width: 215px;
@@ -93,7 +96,7 @@
 .metric-item {
   position: absolute;
   bottom: 22px;
-  left: 24px;
+  left: -45px;
 }
 .macBook-image {
   width: 1060px;
@@ -199,6 +202,9 @@ span.gradientAnimenate {
   position: absolute;
   right: 0;
   bottom: -20px;
+}
+.big-img-macMain {
+  width: auto;
 }
 .metric-item ,.create-new-text,.create-new-text,.create-new-model{
   display: none;

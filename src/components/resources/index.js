@@ -22,7 +22,7 @@ const ResourcesComponent = () => {
           </h4>
           <h2>resources</h2>
           <span>
-          Here are meMate’s main features to help you quickly understand if it will be suitable for your business.
+          Here are meMate’s main features to help you quickly understand if it will be suitable for your <br/>business.
           </span>
           <h1 className="h1tagsseo">
           Explore Resources for Business Management and CRM Solutions
