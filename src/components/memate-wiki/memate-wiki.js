@@ -52,8 +52,16 @@ const MemateWiki = () => {
   const handleViewAllClick = (categoryId, categoryName) => {
     navigate(`/wiki/${categoryId}`, { state: { name: categoryName } });
   };
-  const handleDetailsClick = (categoryId, categoryName) => {
-    navigate(`/wiki-details/${categoryId}`, { state: { name: categoryName } });
+  const handleDetailsClick = (categoryId, titleSlug, categoryName) => {
+
+  
+    navigate(`/wiki-details/${titleSlug}`, {
+      state: {
+        id: categoryId, 
+        slug: titleSlug, 
+        name: categoryName, 
+      },
+    });
   };
 
   return (
@@ -119,7 +127,14 @@ const MemateWiki = () => {
                     <div key={subcategory.id} className={`itemFlex ${subcategory.id} ${style.itemFlex}`}>
                       <div className={style.itemText}>
                         {/* <h3 dangerouslySetInnerHTML={{ __html: subcategory.description }}></h3> */}
-                        <h3 onClick={() => handleDetailsClick(subcategory.id, subcategory.title)}>{subcategory.title}</h3>
+                        <h3
+        onClick={() => {
+          console.log("subcategory object:", subcategory);
+          handleDetailsClick(subcategory.id, subcategory.slug, subcategory.name);
+        }}
+      >
+        {subcategory.title}
+      </h3>
                       </div>
                     </div>
                   ))}

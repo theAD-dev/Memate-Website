@@ -13,6 +13,16 @@
     font-weight: 420;
     line-height: normal;
     margin-top: 38px;
+    margin-bottom: 14px;
+}
+.kb-right-section p b {
+    margin: 7px 0 0px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+}
+.kb-right-section p  {
+    margin: 0px 0 16px;
 }
 .kb-section-wiki-description b {
     color: #29292B;

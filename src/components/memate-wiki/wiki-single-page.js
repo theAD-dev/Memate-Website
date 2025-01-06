@@ -13,7 +13,7 @@ const WikiSinglePage = () => {
     const { categoryId } = useParams();
      const navigate = useNavigate();
     const location = useLocation();
-    const { name: categoryName } = location.state || {};
+    const { name: categoryName, } = location.state || {};
     const idData = `${categoryId}/${categoryName}`;
     const { data: wikiBaseIdData } = useQuery({
         queryKey: ['wikiBaseId', idData],
@@ -21,9 +21,10 @@ const WikiSinglePage = () => {
         enabled: !!idData, 
     });
     
-    const handleDetailsClick = (categoryId, categoryName) => {
-        navigate(`/wiki-details/${categoryId}`, { state: { name: categoryName } });
-      };
+    const handleDetailsClick = (categoryId, categoryName, slug) => {
+        navigate(`/wiki-details/${categoryId}`, { state: { name: categoryName, slugName: slug } });
+    };
+    
 
     return (
         <>
@@ -53,7 +54,8 @@ const WikiSinglePage = () => {
                     <div key={index} className={`itemFlex ${style.itemFlex}`}>
                             <div className={style.itemText}>
                             {/* <h3 dangerouslySetInnerHTML={{ __html: item.description }}></h3> */}
-                            <h3 onClick={() => handleDetailsClick(item.id, item.title)}>{item.title}</h3>
+                            <h3 onClick={() => handleDetailsClick(item.id, categoryName, item.slug)}>{item.title}</h3>
+
                          </div>
                      </div>
                     ))}

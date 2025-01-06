@@ -286,7 +286,7 @@ function App() {
           <Route path="/delete-request" exact element={<DeleteRequestPage />} />
           <Route path="/memate-brand" exact element={<MemteBrandPage />} />
           <Route path="/memate-wiki" exact element={<MemateWikiPage />} />
-          <Route path="/wiki-details/:categoryId" exact element={<MemateWikiDetailsPage />} />
+          <Route path="/wiki-details/:titleSlug?" exact element={<MemateWikiDetailsPage />} />
           <Route path="/wiki/:categoryId" exact element={<MemateWikiSinglePage />} />
           <Route path="/security" exact element={<SecurityPage />} />
           <Route path="/legal" exact element={<LegalPage />} />

@@ -314,6 +314,65 @@ border: 0;
   grid-template-columns: 1fr 1fr;
 }
 
+
+
+  @media screen and (max-width: 2700px) and (min-width: 2200px) {
+  .navbar-container {
+    width: 1920px;
+}
+.big-img-macMain {
+  width: 1920px;
+}
+.macBook-image {
+  width: 1920px;
+}
+.iphone-image img {
+  width: 429px;
+}
+.iphone-image {
+  bottom: 59px;
+}
+.metric-item img, .create-new-text img {
+  width: 567px;
+}
+.create-new-text {
+  position: absolute;
+  bottom: 105px;
+  left: 0px;
+}
+.metric-item {
+  position: absolute;
+  bottom: 31px;
+  left: -131px;
+}
+.slider-container.sliderTabWrapper {
+  width: 1920px;
+  margin: 25px auto 0;
+}
+.common-box {
+  width: 1920px;
+  height: auto;
+}
+.overcome-pro {
+  min-height: 548.063px;
+}
+.onboarding-section-content,.features-section ,.efficiency-section{
+  width: 1920px;
+  max-width: 1920px;
+}
+.operation-desp p {
+  max-width: 831px;
+}
+.operation-right {
+  width: 1121px;
+}
+}
+
+
+
+
+
+
 @media screen and (max-width: 767px) {
   .titleHead h4.tagHeadtitle {
     font-size: 27px;

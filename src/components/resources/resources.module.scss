@@ -37,24 +37,23 @@
             color: #29292B;
             font-size: 32px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 420;
             line-height: normal;
             margin-bottom: 24px;
         }
         .mainGridwtapFlex{
             .itemFlex{
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
+               
                 border-radius: 30px;
                 background: #F7F8FA;
                 width: 383px;
-                padding: var(--spacing-3xl, 24px);
+                padding: 19px 24px;
                 justify-content: center;
                 align-items: flex-start;
                 gap: var(--spacing-md, 16px);
                 cursor: pointer;
                 position: relative;
+               
                 
                 &::before {
                     content: '';

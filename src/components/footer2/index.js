@@ -156,6 +156,7 @@ const Footer = () => {
               <Link to="/contact-us">Contact Us</Link>
               <Link to="/delete-request">Delete Request</Link>
                 <Link to="/memate-software-updates">Software Update </Link>
+                <Link to="/memate-faqs">Memate FAQs</Link>
               </div>
             </div>
 

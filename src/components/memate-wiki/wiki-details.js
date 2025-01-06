@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation,useNavigate  } from "react-router-dom";
 import style from './wiki.module.scss';
 import { useQuery } from "@tanstack/react-query";
 import { wikiBaseDtails } from "../../api/wikiApi";
@@ -9,27 +9,37 @@ import { Helmet } from "react-helmet";
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 const WikiDetails = () => {
-    const { categoryId } = useParams();
+    // const { categoryId } = useParams();
+
+    const navigate = useNavigate();
     const location = useLocation();
-    const { name: categoryName } = location.state || {};
-    const idData = `${categoryId}`;
-
-    const { data: wikiBaseIdData = [] } = useQuery({
-        queryKey: ['wikiBaseDtails', idData],
-        queryFn: () => wikiBaseDtails(idData),
-        enabled: !!idData,
-    });
-
+    console.log("location.state:", location.state);
     
+    const { id: categoryId, slug: titleSlug } = location.state || {};
+
+  
+ 
+    
+    
+    const { data: wikiBaseIdData = [] } = useQuery({
+        queryKey: ['wikiBaseDtails', categoryId],
+        queryFn: () => wikiBaseDtails(categoryId),
+        enabled: !!categoryId,
+    });
+   
       const [activeItem, setActiveItem] = useState(wikiBaseIdData[0]?.id);
       
 
       useEffect(() => {
-        if (wikiBaseIdData?.length > 0) {
-            const firstItemId = `${wikiBaseIdData[0]?.id}-0`;
-            setActiveItem(firstItemId);
+        if (wikiBaseIdData.length > 0) {
+            const titleSlug = wikiBaseIdData[0]?.titleSlug;
+            if (titleSlug) {
+                navigate(`/wiki-details/${titleSlug}`, { replace: true });
+            } else {
+                console.error("Slug is undefined for the first item.");
+            }
         }
-    }, [wikiBaseIdData]);
+    }, [wikiBaseIdData, categoryId, navigate]);
 
     const handleClick = (id) => {
         setActiveItem(id);
@@ -49,7 +59,7 @@ const WikiDetails = () => {
                 <ul className={style.linkstyleDisable}>
                     <li><a href='/' className={style.linkstyleDisable}>Home</a></li>/
                     <li><a href='/memate-wiki' className={style.linkstyleDisable}>meMate wiki</a></li>/
-                    <li><a>{categoryName}</a></li>
+                    <li><a>{wikiBaseIdData[0]?.title}</a></li>
                 </ul>
                 <a href="/memate-wiki" className="backButStories">
                     <img src={arrowIconBack} alt="Arrow" /> Back
@@ -58,7 +68,7 @@ const WikiDetails = () => {
 
             <div className={`${style.wikimainwrap}`}>
                 <div className={style.wikimainhead}>
-                    <h1>{categoryName}</h1>
+                    <h1>{wikiBaseIdData[0]?.title}</h1>
                     <p>Here is everything you need to know about starting a new company in Australia.</p>
                 </div>
 

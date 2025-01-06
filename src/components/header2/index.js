@@ -291,7 +291,7 @@ const Header = () => {
                           : "header-footer-legal-text"
                       }
                     >
-                      Ressources
+                      Resources
                     </p>
                   </div>
                 </div>
