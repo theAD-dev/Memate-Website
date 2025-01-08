@@ -43,9 +43,7 @@ export const wikiBaseId = async (idData ) => {
     }
   };
 
-export const wikiBaseDtails = async (idData) => {
-
-
+export const wikiBaseDtails = async (titleSlug) => {
     const myHeaders = new Headers();
     myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
   
@@ -56,10 +54,12 @@ export const wikiBaseDtails = async (idData) => {
     };
   
     try {
-      const response = await fetch(`https://admin.memate.au/api/wiki-detail/${idData}`, requestOptions);
+      const response = await fetch(`https://admin.memate.au/api/wiki-detail/${titleSlug}`, requestOptions);
       const result = await response.json(); 
   
+  
       return Array.isArray(result.data) ? result.data : [];
+      
   
     } catch (error) {
       console.error("Error fetching blog posts:", error);

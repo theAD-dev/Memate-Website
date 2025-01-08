@@ -28,6 +28,12 @@
             position: relative;
             
         }
+        @media screen and (max-width: 767px) {
+             h2{
+                font-size: 88px;
+             }
+        }
+
         h4{
             color: #29292B;
             text-align: center;
@@ -273,7 +279,7 @@
 
     .searchFilterList{
         width: auto;
-        padding: 16px 3px;
+        padding: 16px 14px;
         margin: 23px 30px;
            input{
             width: 82%;
