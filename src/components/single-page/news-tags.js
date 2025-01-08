@@ -107,8 +107,10 @@ const NewsTagsComponents = () => {
     return (
         <div>
         <Helmet>
-        <meta property="og:title" content="Post Title" />
-         <meta property="og:description" content="Post Description" />
+        <title>{post?.title}</title>
+        <meta property="og:title" content={post?.title} />
+        <meta name="description" content={post?.description} />
+         <meta property="og:description" content={post?.description} />
          <meta property="og:image" content="https://memate.au/image.jpg" />
          <meta property="og:url" content="https://memate.au/news/post-slug" />
        </Helmet>

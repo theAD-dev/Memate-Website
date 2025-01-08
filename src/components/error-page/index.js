@@ -2,10 +2,19 @@ import React from 'react'
 import style from './404Page.module.scss';
 import Images from "../../assests/images";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 const PageNotFound  = () => {
   return (
+    <>
+      <Helmet>
+    <title>404 Error - Page Not Found | Memate</title>
+    <meta name="description" content="Oops! The page you’re looking for doesn’t exist. It might have been moved, renamed, or deleted. Return to the homepage or use the navigation menu to find what you need." />
+    <meta property="og:title" content="404 Error - Page Not Found | Memate" />
+      <meta property="og:description" content="Oops! The page you’re looking for doesn’t exist. It might have been moved, renamed, or deleted. Return to the homepage or use the navigation menu to find what you need.
+    " />
+</Helmet>
     <div className={`${style.Errorpage}`}>
     <div className={`${style.imgText}`}>
         <h1>404</h1>
@@ -20,6 +29,7 @@ const PageNotFound  = () => {
       </div>
       </div>
       </div>
+      </>
   )
 }
 

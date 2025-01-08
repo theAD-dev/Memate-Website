@@ -12,6 +12,8 @@ const ProjectManagementPage = () => {
     <>
       <Helmet>
     <title>Invoicing Software | Seamless Billing Solutions for your Businesses in Australia</title>
+    <meta name="description" content="Streamline your invoicing with MeMate’s online billing software. 
+      Designed for Australian small businesses, our tools simplify quoting, invoicing, and payment tracking." />
     <meta property="og:title" content="Invoicing Software | Seamless Billing Solutions for your Businesses in Australia" />
       <meta property="og:description" content="Streamline your invoicing with MeMate’s online billing software. 
       Designed for Australian small businesses, our tools simplify quoting, invoicing, and payment tracking.

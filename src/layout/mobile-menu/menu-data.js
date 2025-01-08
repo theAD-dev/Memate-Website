@@ -201,14 +201,8 @@ const MenuData = () => {
  <div className='mobile-logo'>
 <Link to='/'><img src={Images.logo} alt="logo" /></Link>
  </div>
- <div className="hamburger-container">
-
-    </div>
+ <div className="hamburger-container"></div>
  </div>
-    
-     
-
-      
     </div>
   );
 };

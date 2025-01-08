@@ -12,6 +12,7 @@ const ContractorPage = () => {
     <>
       <Helmet>
     <title>Comprehensive Contractor Management Software | Streamline Your Contractor Operations with MeMate</title>
+    <meta name="description" content="Discover MeMate’s Contractor Management Software designed to streamline contractor operations, enhance compliance, and improve project efficiency for businesses of all sizes." />
     <meta property="og:title" content="Comprehensive Contractor Management Software | Streamline Your Contractor Operations with MeMate" />
       <meta property="og:description" content="Discover MeMate’s Contractor Management Software designed to streamline contractor operations, enhance compliance, and improve project efficiency for businesses of all sizes." />
 </Helmet>

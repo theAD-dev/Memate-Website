@@ -179,6 +179,7 @@ const FeaturesComponent = () => {
     <>
      <Helmet>
     <title>Features | Business Management Software and Workflow Automation Tools in Australia</title>
+    <meta name="description" content="Discover the comprehensive features of MeMate, Australia’s top business management software. From CRM for small businesses to project management features and workflow automation tools, we have it all." />
     <meta property="og:title" content="Features | Business Management Software and Workflow Automation Tools in Australia" />
       <meta property="og:description" content="Discover the comprehensive features of MeMate, Australia’s top business management software. From CRM for small businesses to project management features and workflow automation tools, we have it all." />
 </Helmet>
@@ -187,7 +188,7 @@ const FeaturesComponent = () => {
         <h4 className='tagHeadtitle '>
            Technology from the future, solving today’s problems.
           </h4>
-          <h2>Features</h2>
+          <h2>features</h2>
           <span>
           Here are meMate’s main features to help you quickly understand if it will be suitable for your<br/> business.
           </span>

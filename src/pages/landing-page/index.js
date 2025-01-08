@@ -21,12 +21,12 @@ import { Helmet } from 'react-helmet';
 const LandingPage = ({postsLatest, updates}) => {
   return (
    <>
-    <Helmet>
-    <title>All-in-One Business & Project Management Software | ERP & CRM Solutions</title>
-    <meta property="og:title" content="All-in-One Business & Project Management Software | ERP & CRM Solutions" />
-      <meta property="og:description" content="Streamline your business with Australia’s leading cloud-based ERP, CRM, and project management software. Perfect for small and medium-sized enterprises seeking efficiency and growth.
-    " />
-  </Helmet>
+  <Helmet>
+  <title>Streamlined ERP, CRM & Project Management Software | Boost Your Business</title>
+  <meta name="description" content="Simplify and grow your business with our all-in-one ERP, CRM, and project management software. Designed for small and medium enterprises to achieve efficiency and success." />
+  <meta property="og:title" content="Streamlined ERP, CRM & Project Management Software | Boost Your Business" />
+  <meta property="og:description" content="Discover powerful cloud-based ERP, CRM, and project management solutions tailored for SMEs. Achieve operational excellence and drive growth with ease." />
+</Helmet>
     <Layout>
       <BussinessManagement/>
       <FeaturedOn/>

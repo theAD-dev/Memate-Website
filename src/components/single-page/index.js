@@ -111,6 +111,7 @@ const Single = ({postsSingle, postsLatest }) => {
     <div>
        <Helmet>
         <title>{post.seo_title}</title>
+        <meta name="description" content={post.meta_description} />
        <meta property="og:title" content={post.seo_title} />
         <meta property="og:description" content={post.meta_description} />
         <meta property="og:image" content="https://memate.au/image.jpg" />

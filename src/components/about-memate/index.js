@@ -11,6 +11,7 @@ const AboutMemateComponent = () => {
     <>
     <Helmet>
     <title>About meMate | Best Business & Project Management Software in Australia</title>
+    <meta name="description" content="meMate transforms small businesses in Australia with the best project management software, workflow automation, and comprehensive business management solutions." />
     <meta property="og:title" content="About meMate | Best Business & Project Management Software in Australia" />
       <meta property="og:description" content="meMate transforms small businesses in Australia with the best project management software, workflow automation, and comprehensive business management solutions." />
 </Helmet>

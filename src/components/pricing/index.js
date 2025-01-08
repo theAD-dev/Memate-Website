@@ -11,12 +11,13 @@ const PricingComponent = () => {
     <>
       <Helmet>
     <title>meMate Price | Affordable Business & Project Management Software for Businesses and Startups</title>
+    <meta name="description" content="Discover cost-effective pricing for meMate, Australia’s best project management and business management software. Perfect for startups and small businesses, offering ERP, CRM, and workflow automation tools." />
     <meta property="og:title" content="meMate Price | Affordable Business & Project Management Software for Businesses and Startups" />
       <meta property="og:description" content="Discover cost-effective pricing for meMate, Australia’s best project management and business management software. Perfect for startups and small businesses, offering ERP, CRM, and workflow automation tools.
     " />
 </Helmet>
     <div className={`main-section ${style.mainsectionspace} ${style.mainSection}`}>
-        <div className={style.mainheading}>Pricing</div>
+        <div className={style.mainheading}>pricing</div>
         <div className={style.mainimage}><img src={pricingMainImg} alt="Pricing main image" width={767} height={767}/></div>
         <div className={style.midheading}>
           <h1>Affordable Pricing for Small Businesses & Startups</h1>

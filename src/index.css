@@ -317,15 +317,23 @@ border: 0;
 
 
   @media screen and (max-width: 2700px) and (min-width: 2200px) {
-  .navbar-container {
-    width: 1920px;
+  .navbar-container,.big-img-macMain,.macBook-image,.integration-brand-container {
+    width: 1620px;
 }
-.big-img-macMain {
-  width: 1920px;
+.slider-container.sliderTabWrapper {
+  width: 1620px;
+  margin: 25px auto 0;
 }
-.macBook-image {
-  width: 1920px;
+.common-box {
+  width: 1620px;
+  height: auto;
 }
+.onboarding-section-content,.features-section ,.efficiency-section,.main-footer{
+  width: 1620px;
+  max-width: 1620px;
+}
+
+
 .iphone-image img {
   width: 429px;
 }
@@ -345,26 +353,74 @@ border: 0;
   bottom: 31px;
   left: -131px;
 }
-.slider-container.sliderTabWrapper {
-  width: 1920px;
-  margin: 25px auto 0;
-}
-.common-box {
-  width: 1920px;
-  height: auto;
-}
 .overcome-pro {
   min-height: 548.063px;
 }
-.onboarding-section-content,.features-section ,.efficiency-section{
-  width: 1920px;
-  max-width: 1920px;
-}
+
 .operation-desp p {
   max-width: 831px;
 }
 .operation-right {
   width: 1121px;
+}
+
+.powerful-client {
+  width: 1400px;
+}
+
+
+.slider-item a img {
+  height: 294px;
+  object-fit: cover;
+}
+.slick-slide.slick-active.slick-center.slick-current img {
+  height: 370px;
+  object-fit: cover;
+}
+.NewsflexWrap .Newsitem .imgBox {
+  width: 259px;
+}
+.header-menu-wrapper {
+  position: absolute;
+  max-width: 1198px;
+  width: 100%;
+  height: auto;
+  top: 71px;
+  border-radius: 30px;
+  border: 1.444px solid #e9ebf0;
+  background: #fff;
+  z-index: 12;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.sales-feature-wrapper {
+  margin-top: 84px;
+  max-width: 1920px;
+  width: 1920px;
+}
+
+.question-answer-content {
+  width: 1620px;
+  background-color: #f7f8fa;
+  padding: 50px 60px;
+  border-radius: 30px;
+}
+.pricing-module_PricingTableWrap__q3Xw0 .pricing-module_pricingcard__phoY\+ {
+  width: 537px;
+}
+p.sales-description-sales br {
+  display: none;
+}
+p.sales-description-sales {
+  width: 900px;
+}
+.sales-feature-wrapper img {
+  width: 900px;
+}
+.NewsflexWrap {
+  width: 1400px;
 }
 }
 

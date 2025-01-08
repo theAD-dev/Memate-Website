@@ -14,6 +14,8 @@ function CustomerStories() {
 <>
 <Helmet>
     <title>Customer Success Stories | How meMate Transforms Australian Businesses</title>
+    <meta name="description" content="Explore how MeMate’s business management software helps Australian businesses succeed. Read case studies and 
+      success stories showcasing CRM, workflow automation, and project management solutions" />
     <meta property="og:title" content="Customer Success Stories | How meMate Transforms Australian Businesses" />
       <meta property="og:description" content="Explore how MeMate’s business management software helps Australian businesses succeed. Read case studies and 
       success stories showcasing CRM, workflow automation, and project management solutions

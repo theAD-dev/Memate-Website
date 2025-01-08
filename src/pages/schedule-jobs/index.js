@@ -12,6 +12,8 @@ const CommunicationPage = () => {
     <>
      <Helmet>
     <title>Shift Scheduling Software | Streamline Employee Rostering with MeMate</title>
+    <meta name="description" content="Manage shifts effortlessly with MeMate’s Shift Scheduling Software. Simplify employee rostering,
+       work schedule management, and real-time shift updates to boost workforce productivity." />
     <meta property="og:title" content="Shift Scheduling Software | Streamline Employee Rostering with MeMate" />
       <meta property="og:description" content="Manage shifts effortlessly with MeMate’s Shift Scheduling Software. Simplify employee rostering,
        work schedule management, and real-time shift updates to boost workforce productivity.

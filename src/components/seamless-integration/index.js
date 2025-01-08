@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-const IntegrationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/integration.svg"
+const IntegrationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/integration.png"
 
 const SeamlessInegration = () => {
   return (

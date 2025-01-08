@@ -11,6 +11,8 @@ const KnowledgeBaseComponent = () => {
     <>
     <Helmet>
     <title>MeMate Knowledge Base | User Manuals and How-To Guides</title>
+    <meta name="description" content="Access the MeMate Knowledge Base for tutorials, guides, and FAQs. 
+      Learn how to maximise CRM, ERP, and workflow automation tools for your Australian business" />
     <meta property="og:title" content="MeMate Knowledge Base | User Manuals and How-To Guides" />
       <meta property="og:description" content="Access the MeMate Knowledge Base for tutorials, guides, and FAQs. 
       Learn how to maximise CRM, ERP, and workflow automation tools for your Australian business" />
@@ -18,8 +20,8 @@ const KnowledgeBaseComponent = () => {
       <div className="kb-main-section">
         <div className="kb-main-heading">knowledge <br /> base</div>
         <h1 className="metatags">MeMate Knowledge Base: Your Guide to Using Business Software</h1>
-        <div className="kb-main-image">
-          <img src={KnowledgeBaseMain} alt="contact us main image" width={595} height={789} />
+        <div className="kb-main-image KnowledgeBaseMain">
+          <img src={KnowledgeBaseMain} alt="contact us main image"  />
         </div>
       </div>
       <MiddleSection />

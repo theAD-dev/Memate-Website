@@ -59,24 +59,23 @@ function DataSingle({slug,supplierData}) {
               <li><Link to={`mailto:${supplierData.email}`}>{supplierData.email}</Link></li>
               <li><Link to={supplierData.website} target="_blank">{supplierData.website}</Link></li>
             </ul>
-              </div>
-                  
+              </div>   
                 </div>
-</div>
-<div className={style.detailsCol}>
-<h3>About</h3>
+                </div>
+                <div className={style.detailsCol}>
+                <h3>About</h3>
 
-{supplierData.about ? (
-                    <>
-                     <p>{supplierData.about}</p> 
-                    </>
-                  ) : (
-                    <p>No Data</p>
-                  )} 
-</div>
-</div>
-</div>  
-<div className="darkButtonstyle">
+                {supplierData.about ? (
+                                    <>
+                                    <p>{supplierData.about}</p> 
+                                    </>
+                                  ) : (
+                                    <p>No Data</p>
+                                  )} 
+                </div>
+                </div>
+                </div>  
+                <div className="darkButtonstyle">
           <Link to=''>Request to Edit</Link>
         </div>
       </div>

@@ -13,9 +13,9 @@
     font-size: 220px;
     font-style: normal;
     font-weight: 425;
-    line-height: 164px; /* 74.545% */
+    line-height: 164px;
     letter-spacing: 1px;
-    padding-top: 354.2px;
+    padding-top: 192.2px;
     padding-bottom: 142px;
 }
 
@@ -27,14 +27,17 @@
 
 .kb-main-section .kb-main-image {
     position: absolute;
-    top: -120px;
+    top: -95px;
     left: 50%;
-    transform: translateX(-65%);
+    transform: translateX(-80%);
 }
 @media screen and (max-width: 767px) {
     .kb-main-section .kb-main-heading {
         font-size:32px;
         line-height: 40px;
+    }
+    .KnowledgeBaseMain img {
+        width: 347.37px;
     }
     .kb-main-heading br {
         display: none;
@@ -61,6 +64,6 @@
         padding-bottom: 50px;
     }
     .kb-main-section .kb-main-image {
-        transform: translateX(-50%);
+        transform: translateX(-74%);
     }
 }

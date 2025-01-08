@@ -36,7 +36,7 @@ const DataBase = ({ supplier = [], search, loading, totalSupplier, onNext, searc
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
         <div className={style.searchIcon}>
-          <img src={FilterIcon} alt='filter Icon' />
+          <img src={FilterIcon} alt='filter Icon' /> 
           <input
             type="text"
             value={searchTerm}

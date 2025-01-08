@@ -61,6 +61,8 @@ const SupplierDatabase = () => {
     <>
       <Helmet>
         <title>Australian Business Directory | List Your Business on MeMate’s Supplier Platform</title>
+        <meta name="description" content="Join meMate’s Australian Business Directory to list your company as a supplier. 
+        Help small businesses find trusted vendors and grow your network through our supplier database. " />
         <meta property="og:title" content="Australian Business Directory | List Your Business on MeMate’s Supplier Platform" />
         <meta property="og:description" content="Join meMate’s Australian Business Directory to list your company as a supplier. 
         Help small businesses find trusted vendors and grow your network through our supplier database." />

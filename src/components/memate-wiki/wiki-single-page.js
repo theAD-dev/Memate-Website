@@ -29,7 +29,9 @@ const WikiSinglePage = () => {
     return (
         <>
         <Helmet>
-    <title>MeMate Wiki | Business Management Practices, Tools, and Information</title>
+      <title>MeMate Wiki | Business Management Practices, Tools, and Information</title>
+      <meta name="description" content="Discover business management insights on MeMate Wiki, covering job scheduling, 
+      invoicing, quote calculations, and essential tools for success." />
       <meta property="og:title" content='MeMate Wiki | Business Management Practices, Tools, and Information' />
       <meta property="og:description" content='Discover business management insights on MeMate Wiki, covering job scheduling, 
       invoicing, quote calculations, and essential tools for success.' />  

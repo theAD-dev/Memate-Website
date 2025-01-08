@@ -17,6 +17,8 @@ function EliteLife() {
     <>
      <Helmet>
     <title>Elite Life’s Success with MeMate | Membership Club Management Software</title>
+    <meta name="description" content="Discover how Elite Life, an exclusive Australian membership club, 
+      enhanced operations and member engagement using MeMate’s business management software" />
     <meta property="og:title" content="Elite Life’s Success with MeMate | Membership Club Management Software" />
       <meta property="og:description" content="Discover how Elite Life, an exclusive Australian membership club, 
       enhanced operations and member engagement using MeMate’s business management software

@@ -10,9 +10,11 @@ const ThankYouComponents  = () => {
    <>
     <Helmet>
     <title>Thank You | Your Request Has Been Successfully Submitted</title>
+    <meta name="description" content="Thank you for submitting your request to MeMate. Our team has 
+    received your inquiry and will get back to you shortly to assist with your needs." />
     <meta property="og:title" content="Thank You | Your Request Has Been Successfully Submitted" />
     <meta property="og:description" content="Thank you for submitting your request to MeMate. Our team has 
-    received your inquiry and will get back to you shortly to assist with your needs.." />
+    received your inquiry and will get back to you shortly to assist with your needs." />
   </Helmet>
     <div className={`${style.Errorpage}`}>
     <div className={`${style.imgText}`}>
