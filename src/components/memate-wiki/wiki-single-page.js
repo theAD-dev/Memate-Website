@@ -13,19 +13,19 @@ const WikiSinglePage = () => {
     const { categoryId } = useParams();
      const navigate = useNavigate();
     const location = useLocation();
-    const { name: categoryName, } = location.state || {};
+    const { categoryName } = location.state || {};
     const idData = `${categoryId}/${categoryName}`;
     const { data: wikiBaseIdData } = useQuery({
         queryKey: ['wikiBaseId', idData],
         queryFn: () => wikiBaseId(idData), 
         enabled: !!idData, 
     });
-    
-    const handleDetailsClick = (categoryId, categoryName, slug) => {
-        navigate(`/wiki-details/${categoryId}`, { state: { name: categoryName, slugName: slug } });
+ 
+    console.log('wikiBaseIdData: ', wikiBaseIdData);
+    const handleDetailsClick = (categoryId, categoryName, titleSlug) => {
+        navigate(`/memate-wiki/${titleSlug}`, { state: { name: categoryName, slugName: titleSlug } });
     };
     
-
     return (
         <>
         <Helmet>

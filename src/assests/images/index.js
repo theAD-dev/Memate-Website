@@ -1,6 +1,7 @@
 
 const Images = {
   landingHero: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-banner.png",
+  landingHero1x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/landingHero1x.png",
   landingHeromodel: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-modal.png",
   landingHerotask: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-create-new-task.png",
   landingHeroitem: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-metric-item.png",

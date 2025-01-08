@@ -40,15 +40,15 @@ const SliderTabMobile = () => {
   const [fadeClass, setFadeClass] = useState("fade-in");
 
   const handleTabClick = (index) => {
-    setSelectedTab(index);
-    triggerFadeIn();
+    // setSelectedTab(index);
+    // triggerFadeIn();
   };
 
   const triggerFadeIn = () => {
-    setFadeClass(""); // Remove fade-in class temporarily
-    setTimeout(() => {
-      setFadeClass("fade-in"); // Reapply fade-in class for the transition
-    }, 50);
+    // setFadeClass(""); // Remove fade-in class temporarily
+    // setTimeout(() => {
+    //   setFadeClass("fade-in"); // Reapply fade-in class for the transition
+    // }, 50);
   };
 
   const tabSliderSettings = {

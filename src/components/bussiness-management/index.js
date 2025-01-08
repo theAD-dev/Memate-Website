@@ -1,11 +1,12 @@
 import React from "react";
 import Images from "../../assests/images";
+import style from './business.module.scss';
 import "./styles.css";
 import { Link } from "react-router-dom";
 import TronButton from "../../layout/hover-button/tourn-but";
 const BussinessManagement = () => {
   return (
-    <div className="home-page-content" >
+    <div className={style.homePageContent} >
       <div className="home-page-section" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -13,25 +14,29 @@ const BussinessManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <div className="home-platform">
+        <div className={style.homePlatform}>
           <h1>
           Business Management Software</h1>
           <h2>All-in-One Platform</h2>
         </div>
-
-        <div className="heding-text-top marginBottomSpace">
-        <div className="mainHomeTitle">
+         <div className="gradientHeading gradiientColor">
             to run your <br /> business
           </div>
-         
-        </div>
       </div>
-      <div className="image-wrapper" >
+      <div className={style.imageWrapper} >
            {/* <img src={Images.landingHero} /> */}
-        <div className="macBook-image">
-          <div className="big-img-mac">
-          <div className="big-img-macMain">
-          <img src={Images.landingHero}  alt="Landing Hero" /></div>
+        <div className={style.macBookImage}>
+          <div className={style.bigimgmac}>
+          <div className={style.bigimgmacMain}>
+          <img src={Images.landingHero}  alt="Landing Hero" />
+          {/* <picture>
+            <source srcSet={Images.landingHero} media="(min-width: 2000px)" />
+            <source srcSet={Images.landingHero1x} media="(min-width: 1921px)" />
+            <img src={Images.landingHero1x} alt="Landing Hero" />
+          </picture> */}
+
+
+          </div>
             <div className="iphone-image">
               <img src={Images.landingHeroiPhone} alt="landingHeroiPhone" data-aos="aos-fade"
     data-aos-offset="50"

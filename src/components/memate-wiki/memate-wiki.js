@@ -10,9 +10,7 @@ const FilterIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/asset
 
 const MemateWiki = () => {
   const [searchQuery, setSearchQuery] = useState(""); 
-  console.log('searchQuery: ', searchQuery);
   const [filteredData, setFilteredData] = useState([]);
-  console.log('filteredData: ', filteredData);
   const [isLoading, setIsLoading] = useState(false); 
   const [error, setError] = useState(null); 
   const navigate = useNavigate();
@@ -50,13 +48,16 @@ const MemateWiki = () => {
     return () => clearTimeout(debounceTimer);
   }, [searchQuery, wikiData]);
 
-  const handleViewAllClick = (categoryId, categoryName) => {
-    navigate(`/wiki/${categoryId}`, { state: { name: categoryName } });
+  const handleViewAllClick = (categoryId,titleSlug, categoryName) => {
+
+    
+    navigate(`/wiki/${categoryId}`, { state: { categoryName ,titleSlug} });
   };
   const handleDetailsClick = (categoryId, titleSlug, categoryName) => {
+  
 
   
-    navigate(`/wiki-details/${titleSlug}`, {
+    navigate(`/memate-wiki/${titleSlug}`, {
       state: {
         id: categoryId, 
         slug: titleSlug, 
@@ -116,11 +117,14 @@ const MemateWiki = () => {
               <div className={style.inHead}>
                 <h2>{item?.name || "Unknown Category"}</h2>
                 <button 
-                  className={style.viewAllLink} 
-                  onClick={() => handleViewAllClick(item.id, item.name)}
-                >
-                  View All
-                </button>
+  className={style.viewAllLink} 
+  onClick={() => {
+    console.log('Button clicked for categoryName:', item.name);
+    handleViewAllClick(item.id, item.slug, item.name);
+  }}
+>
+  View All
+</button>
               </div>
               {item.subdata && item.subdata.length > 0 && (
                 <div className={style.mainGridwtapFlex}>
@@ -130,7 +134,6 @@ const MemateWiki = () => {
                         {/* <h3 dangerouslySetInnerHTML={{ __html: subcategory.description }}></h3> */}
                         <h3
         onClick={() => {
-          console.log("subcategory object:", subcategory);
           handleDetailsClick(subcategory.id, subcategory.slug, subcategory.name);
         }}
       >

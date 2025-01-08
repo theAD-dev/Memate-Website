@@ -39,15 +39,15 @@ const SliderTab = () => {
   const [fadeClass, setFadeClass] = useState("fade-in");
 
   const handleTabClick = (index) => {
-    setSelectedTab(index);
-    triggerFadeIn();
+    // setSelectedTab(index);
+    // triggerFadeIn();
   };
 
   const triggerFadeIn = () => {
-    setFadeClass(""); 
-    setTimeout(() => {
-      setFadeClass("fade-in"); 
-    }, 50);
+    // setFadeClass(""); 
+    // setTimeout(() => {
+    //   setFadeClass("fade-in"); 
+    // }, 50);
   };
 
   const tabSliderSettings = {
