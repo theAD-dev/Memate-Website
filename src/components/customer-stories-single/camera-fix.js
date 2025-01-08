@@ -17,6 +17,9 @@ function CameraFix() {
 <>
 <Helmet>
     <title>Camera Fix Success Story | Software for Camera Repair Businesses</title>
+    <meta name="description" content="Learn how Camera Fix, a leading Sydney camera repair shop, 
+      improved job tracking, workflow automation, and customer 
+      satisfaction with MeMate’s business management software." />
     <meta property="og:title" content="Camera Fix Success Story | Software for Camera Repair Businesses" />
       <meta property="og:description" content="Learn how Camera Fix, a leading Sydney camera repair shop, 
       improved job tracking, workflow automation, and customer 

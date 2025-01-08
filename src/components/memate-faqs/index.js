@@ -14,6 +14,7 @@ const MemateFaqsComponent = () => {
     <>
    <Helmet>
     <title>meMate FAQs</title>
+    <meta name="description" content="meMate FAQs description" />
     <meta property="og:title" content="meMate FAQs" />
       <meta property="og:description" content="meMate FAQs
     " />

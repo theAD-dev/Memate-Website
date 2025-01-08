@@ -7,11 +7,6 @@ import { Helmet } from 'react-helmet';
 
 
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
-  console.log('totalPosts: ', totalPosts);
-  console.log('posts: ', posts);
-  
-
-
   const formatDateWithOrdinal = (dateString) => {
     try {
       const date = new Date(dateString.replace(/(\d+)(st|nd|rd|th)/, '$1')); // Remove suffix for parsing
@@ -42,6 +37,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
     < div id="blogGrid">
     <Helmet>
     <title>meMate News | Latest Business Technology News, Software and Regulation updates</title>
+    <meta name="description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." />
     <meta property="og:title" content="meMate News | Latest Business Technology News, Software and Regulation updates" />
     <meta property="og:description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." />
     <meta property="og:image" content={postsLatest[0]?.featured_img_url || 'default-image-url'} />

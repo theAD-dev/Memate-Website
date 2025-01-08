@@ -7,6 +7,8 @@ const IndustriesPage = () => {
     <>
       <Helmet>
     <title>Industries Benefiting from MeMate | ERP and Business Management Software in Australia</title>
+    <meta name="description" content="Discover how MeMate’s business management software, ERP solutions, 
+      and CRM for Australian businesses help industries streamline operations, run businesses efficiently, and stay in control." />
     <meta property="og:title" content="Industries Benefiting from MeMate | ERP and Business Management Software in Australia" />
       <meta property="og:description" content="Discover how MeMate’s business management software, ERP solutions, 
       and CRM for Australian businesses help industries streamline operations, run businesses efficiently, and stay in control.

@@ -647,6 +647,7 @@ const TOS = () => {
     <>
       <Helmet>
         <title>Terms of Use: Guidelines for Using MeMate</title>
+        <meta name="description" content="Check the terms of use for MeMate services. Understand your rights and responsibilities when using our platform for a seamless experience." />
         <meta
           property="og:title"
           content="Terms of Use: Guidelines for Using MeMate"

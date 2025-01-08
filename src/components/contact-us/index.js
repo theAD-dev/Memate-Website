@@ -90,6 +90,7 @@ const ContactUsComponent = () => {
     <div id="contactUsPage">
     <Helmet>
     <title>Contact Us | meMate Business Management Software Support</title>
+    <meta name="description" content="Get in touch with MeMate for support and inquiries about our business management software. We’re here to help Australian businesses thrive with CRM, ERP, and workflow automation solutions" />
     <meta property="og:title" content="Contact Us | meMate Business Management Software Support" />
       <meta property="og:description" content="Get in touch with MeMate for support and inquiries about our business management software. We’re here to help Australian businesses thrive with CRM, ERP, and workflow automation solutions" />
 </Helmet>

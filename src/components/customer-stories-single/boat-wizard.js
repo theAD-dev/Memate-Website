@@ -17,6 +17,8 @@ function BoatWizard() {
     <>
     <Helmet>
     <title>Boat Wizard Success Story | MeMate’s Marine Service Management Software</title>
+    <meta name="description" content="Discover how Boat Wizard, a leading Sydney-based boat repair service, 
+      transformed operations and boosted customer satisfaction using MeMate’s business management software." />
     <meta property="og:title" content="Boat Wizard Success Story | MeMate’s Marine Service Management Software" />
       <meta property="og:description" content="Discover how Boat Wizard, a leading Sydney-based boat repair service, 
       transformed operations and boosted customer satisfaction using MeMate’s business management software.

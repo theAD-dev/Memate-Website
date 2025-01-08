@@ -12,6 +12,8 @@ const JobApprovalPage = () => {
     <>
      <Helmet>
     <title>Job Approval Software for Contractor Management | Streamline Job Submissions and Claims with MeMate</title>
+    <meta name="description" content="Enhance your contractor management with MeMate’s Job Approval Software. Efficiently control job submissions, 
+      monitor claims, and ensure compliance to boost operational efficiency" />
     <meta property="og:title" content="Job Approval Software for Contractor Management | Streamline Job Submissions and Claims with MeMate" />
       <meta property="og:description" content="Enhance your contractor management with MeMate’s Job Approval Software. Efficiently control job submissions, 
       monitor claims, and ensure compliance to boost operational efficiency.

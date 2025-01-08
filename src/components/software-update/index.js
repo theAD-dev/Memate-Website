@@ -51,6 +51,8 @@ const SoftwareUpdate = () => {
     <>
       <Helmet>
         <title>Software Updates & Technology Upgrades | MeMate Business Solutions</title>
+        <meta name="description" content="Stay ahead with MeMate’s latest software system updates and technology upgrades. Explore how our 
+          ongoing innovations keep Australian small businesses running efficiently." />
         <meta
           property="og:title"
           content="Software Updates & Technology Upgrades | MeMate Business Solutions"

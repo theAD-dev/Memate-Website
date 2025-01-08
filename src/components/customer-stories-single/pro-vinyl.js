@@ -21,6 +21,8 @@ function ProVinyl() {
     <>
     <Helmet>
     <title>Pro Vinyl Success Story | MeMate’s Automotive Business Management Software</title>
+    <meta name="description" content="Discover how Pro Vinyl transformed its car wrapping services using MeMate’s business management software, 
+      leading to streamlined operations and increased revenue in the Australian automotive industry." />
     <meta property="og:title" content="Pro Vinyl Success Story | MeMate’s Automotive Business Management Software" />
       <meta property="og:description" content="Discover how Pro Vinyl transformed its car wrapping services using MeMate’s business management software, 
       leading to streamlined operations and increased revenue in the Australian automotive industry.

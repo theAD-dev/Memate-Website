@@ -12,6 +12,7 @@ const ReportsPage = () => {
     <>
       <Helmet>
     <title>Comprehensive Business Analytics & Reporting Tools | meMate</title>
+    <meta name="description" content="Unlock real-time business insights with MeMate’s comprehensive reporting tools. Designed for Australian businesses, our software offers financial reporting, project performance analysis, and more to drive informed decisions." />
     <meta property="og:title" content="Comprehensive Business Analytics & Reporting Tools | meMate" />
       <meta property="og:description" content="Unlock real-time business insights with MeMate’s comprehensive reporting tools. Designed for Australian businesses, our software offers financial reporting, project performance analysis, and more to drive informed decisions.
     " />

@@ -6,6 +6,7 @@ import style from './wiki.module.scss';
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { Oval } from 'react-loader-spinner';
+const FilterIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/search-filter.svg";
 
 const MemateWiki = () => {
   const [searchQuery, setSearchQuery] = useState(""); 
@@ -68,6 +69,8 @@ const MemateWiki = () => {
     <>
     <Helmet>
     <title>MeMate Wiki | Business Management Practices, Tools, and Information</title>
+    <meta name="description" content="Discover business management insights on MeMate Wiki, covering job scheduling, 
+      invoicing, quote calculations, and essential tools for success." />
       <meta property="og:title" content='MeMate Wiki | Business Management Practices, Tools, and Information' />
       <meta property="og:description" content='Discover business management insights on MeMate Wiki, covering job scheduling, 
       invoicing, quote calculations, and essential tools for success.' />  
@@ -84,9 +87,7 @@ const MemateWiki = () => {
           </h4>
       
         <div className={style.searchFilterList}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
-            <path d="..." fill="#98A2B3" />
-          </svg>
+        <img src={FilterIcon} alt='filter Icon' />
           <input
             type="text"
             placeholder="Search..."

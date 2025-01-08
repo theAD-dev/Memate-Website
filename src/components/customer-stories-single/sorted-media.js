@@ -16,6 +16,8 @@ function SortedMedia() {
     <>
     <Helmet>
     <title>Sorted Media’s Success with MeMate | Photography Business Management Software</title>
+    <meta name="description" content="Discover how Sorted Media, a leading Sydney-based photography-on-demand service, 
+      transformed operations and boosted client satisfaction using MeMate’s business management software" />
     <meta property="og:title" content="Sorted Media’s Success with MeMate | Photography Business Management Software" />
       <meta property="og:description" content="Discover how Sorted Media, a leading Sydney-based photography-on-demand service, 
       transformed operations and boosted client satisfaction using MeMate’s business management software

@@ -36,7 +36,7 @@
 }
 .pageBreadcrumbs ul li {
   list-style: none;
-  padding: 0 17px;
+  padding: 0 7px;
   color: var(--Gray-500, #667085);
   font-size: 14px;
   font-style: normal;
@@ -48,7 +48,7 @@
   display: inline-block;
   margin-top: 14px;
   text-decoration: none;
-  margin-left: 16px;
+  margin-left: 4px;
   color: #29292B;
   text-align: center;
   font-size: 18px;

@@ -7,6 +7,7 @@ const MemateFaqsPage = () => {
     <>
       <Helmet>
     <title>Your Ultimate Guide to Simplifying Business Management</title>
+    <meta name="description" content="Discover answers to the most commonly asked questions about managing your business efficiently. " />
     <meta property="og:title" content="Your Ultimate Guide to Simplifying Business Management" />
       <meta property="og:description" content="Discover answers to the most commonly asked questions about managing your business efficiently. 
     " />

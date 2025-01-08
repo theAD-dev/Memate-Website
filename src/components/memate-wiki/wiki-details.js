@@ -13,14 +13,8 @@ const WikiDetails = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
-    console.log("location.state:", location.state);
-    
     const { id: categoryId, slug: titleSlug } = location.state || {};
 
-  
- 
-    
-    
     const { data: wikiBaseIdData = [] } = useQuery({
         queryKey: ['wikiBaseDtails', categoryId],
         queryFn: () => wikiBaseDtails(categoryId),
@@ -28,7 +22,8 @@ const WikiDetails = () => {
     });
    
       const [activeItem, setActiveItem] = useState(wikiBaseIdData[0]?.id);
-      
+ 
+      console.log('wikiBaseIdData: ', wikiBaseIdData);
 
       useEffect(() => {
         if (wikiBaseIdData.length > 0) {
@@ -51,6 +46,7 @@ const WikiDetails = () => {
         <>
         <Helmet>
         <title>{wikiBaseIdData[0]?.seo_title}</title>
+        <meta name="description" content={wikiBaseIdData[0]?.metadescription} />
         <meta property="og:title" content={wikiBaseIdData[0]?.seo_title} />
         <meta property="og:description" content={wikiBaseIdData[0]?.metadescription} />
       </Helmet>
@@ -69,7 +65,7 @@ const WikiDetails = () => {
             <div className={`${style.wikimainwrap}`}>
                 <div className={style.wikimainhead}>
                     <h1>{wikiBaseIdData[0]?.title}</h1>
-                    <p>Here is everything you need to know about starting a new company in Australia.</p>
+                    <p>{wikiBaseIdData[0]?.short_description}</p>
                 </div>
 
                 <div className="kb-wrapper">

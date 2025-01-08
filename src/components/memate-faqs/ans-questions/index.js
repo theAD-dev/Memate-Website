@@ -5,6 +5,7 @@ import AddIcon from "@mui/icons-material/Add";
 import { Box } from "@mui/material";
 import Images from "../../../assests/images";
 import style from "../mematefaqs.module.scss";
+const FilterIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/search-filter.svg";
 
 const QuestionAnswer = () => {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
@@ -226,15 +227,7 @@ const QuestionAnswer = () => {
           Discover answers to the most commonly asked questions about managing your business efficiently.
         </h4>
         <div className={style.searchFilterList}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="33"
-            viewBox="0 0 32 33"
-            fill="none"
-          >
-            <path d="..." fill="#98A2B3" />
-          </svg>
+        <img src={FilterIcon} alt='filter Icon' /> 
           <input
             type="text"
             placeholder="Search..."
@@ -250,7 +243,7 @@ const QuestionAnswer = () => {
           <script type="application/ld+json">{generateFAQSchema()}</script>
         </Helmet>
 
-        <div className="question-answer-content">
+        <div className="question-answer-content question-answer-content-faqs">
           <div className="question-answer-heading-wrapper">
             <p className="question-answer-heading">We answer your questions</p>
           </div>

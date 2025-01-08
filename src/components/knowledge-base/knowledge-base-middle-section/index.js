@@ -6,10 +6,12 @@ import _ from "lodash";
 
 const MiddleSection = () => {
   const [knowledge, setKnowledge] = useState([]);
+  console.log('knowledge: ', knowledge);
   const [activeItem, setActiveItem] = useState(null);
   const [searchTerm, setSearchTerm] = useState(""); 
   console.log('searchTerm: ', searchTerm);
   const [filteredKnowledge, setFilteredKnowledge] = useState([]); 
+
 
   useEffect(() => {
     const fetchPosts = async () => {
