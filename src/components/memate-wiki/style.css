@@ -15,6 +15,10 @@
     margin-top: 38px;
     margin-bottom: 14px;
 }
+.kb-right-section div:first-child .kb-section-wiki-heading {
+    padding-top: 0;
+    margin-top: 0;
+}
 .kb-right-section p b {
     margin: 7px 0 0px;
     display: inline-block;

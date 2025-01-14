@@ -34,6 +34,7 @@ const ContactUsComponent = () => {
     resolver: yupResolver(schema)
   });
 
+
   const onSubmit = (data) => {
     const result =  fetch (RequestCallBackAPI(data));
     console.log('Form submitted successfully:', result);
@@ -46,11 +47,8 @@ const ContactUsComponent = () => {
       return;
     }
   };
-
-
   
   const handleCaptchaChange = (value) => {
-    console.log('Captcha value:', value);
     setCaptchaValue(value);
   };
 

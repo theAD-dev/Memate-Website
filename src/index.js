@@ -4,7 +4,6 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import "./prime.css";
-import style from './global.scss';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 

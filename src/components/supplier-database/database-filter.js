@@ -83,15 +83,17 @@ const DataBase = ({ supplier = [], search, loading, totalSupplier, onNext, searc
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom">
-              <Accordion className={style.alphabetlist}
-                expanded={expandedPanel === index}
-                onChange={handleAccordionChange(index)}
-              >
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls={`panel${index}-content`} className={style.itemDatawrap}
-                  id={`panel${index}-header`}
-                >
+              <Accordion
+  className={`${style.alphabetlist} ${expandedPanel === index ? style.activeAccordion : ''}`}
+  expanded={expandedPanel === index}
+  onChange={handleAccordionChange(index)}
+>
+<AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls={`panel${index}-content`}
+    id={`panel${index}-header`}
+    className={`${style.itemDatawrap} ${expandedPanel === index ? style.activeSummary : ''}`}
+  >
                   <Typography className={style.itemDatalist}>
                     <div className={style.left}>
                       {item.upload_file && <img src={`${item.upload_url}`} alt={`${item.label} logo`} />}

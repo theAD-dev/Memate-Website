@@ -131,17 +131,11 @@ function App() {
 
   const [newposts, setNewPosts] = useState();
 
-
-
-
-
   const handleTabClick = (categoryId) => {
     setPosts([]);
     setActiveCategory(categoryId);
     setCurrentPage(1);
   };
-
-
 
   // PostsCategories======================
 
@@ -170,8 +164,6 @@ function App() {
     fetchPosts();
   }, [currentPage, activeCategory]);
 
-
-
   const handleNext = () => {
     setCurrentPage((prevPage) => prevPage + 1);
   };
@@ -196,9 +188,6 @@ function App() {
 
   }, []);
 
-
-
-
   const location = useLocation();
   useEffect(() => {
     const pathClass = location.pathname === "/"
@@ -217,9 +206,6 @@ function App() {
       window.location.replace(newUrl); // This performs the redirect
     }
   }, []);
-
-
-
 
   return (
     <div className="App">
@@ -301,7 +287,6 @@ function App() {
           <Route path="/thank-you" exact element={<ThankYouPage />} />
           <Route path="/tron-btton" exact element={<TronButton />} />
           <Route path="/memate-faqs" exact element={<MemateFaqsPage />} />
-          
         </Routes>
       </QueryClientProvider>
     </div>

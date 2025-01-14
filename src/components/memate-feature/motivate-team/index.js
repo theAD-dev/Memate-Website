@@ -20,18 +20,16 @@ const MeMateFeatureMotivateTeam = () => {
                 <p className="all-text">Powerful</p>
                 <div className="smallH2Heading">Motivate</div>
                 <div className="mediumHeadText">your team</div>
-
                 <div className="operation-desp">
                   <p>
                   Motivate your team by showing real-time results and potential rewards for achieving targets. Encourage your employees and contractors to perform at their best.
                   </p>
                 </div>
                 <div className="request-btn request-btn-bg">
-        <Link to='/features' className="nav-btn--get-started get-started-border-box navbar-link"><TronButton text="See All Features " /></Link>
-      </div>
+               <Link to='/features' className="nav-btn--get-started get-started-border-box navbar-link"><TronButton text="See All Features " /></Link>
+               </div>
                 {/* <button className="get-started-btn">See All Features </button> */}
               </div>
-
               <div className="operation-right">
                 <div className="motivate-image motivate-imagespace" >
                   <img className="leptop" src={Images.macWithIphone} style={{width: "100%"}} />

@@ -14,7 +14,6 @@ const MemateWiki = () => {
   const [isLoading, setIsLoading] = useState(false); 
   const [error, setError] = useState(null); 
   const navigate = useNavigate();
-
   const { data: wikiData = [], isLoading: initialLoading } = useQuery({
     queryKey: ['wikiBase'],
     queryFn: wikiBase,
@@ -49,13 +48,9 @@ const MemateWiki = () => {
   }, [searchQuery, wikiData]);
 
   const handleViewAllClick = (categoryId,titleSlug, categoryName) => {
-
-    
     navigate(`/wiki/${categoryId}`, { state: { categoryName ,titleSlug} });
   };
   const handleDetailsClick = (categoryId, titleSlug, categoryName) => {
-  
-
   
     navigate(`/memate-wiki/${titleSlug}`, {
       state: {
@@ -69,13 +64,13 @@ const MemateWiki = () => {
   return (
     <>
     <Helmet>
-    <title>MeMate Wiki | Business Management Practices, Tools, and Information</title>
-    <meta name="description" content="Discover business management insights on MeMate Wiki, covering job scheduling, 
+      <title>MeMate Wiki | Business Management Practices, Tools, and Information</title>
+      <meta name="description" content="Discover business management insights on MeMate Wiki, covering job scheduling, 
       invoicing, quote calculations, and essential tools for success." />
       <meta property="og:title" content='MeMate Wiki | Business Management Practices, Tools, and Information' />
       <meta property="og:description" content='Discover business management insights on MeMate Wiki, covering job scheduling, 
       invoicing, quote calculations, and essential tools for success.' />  
-</Helmet>
+     </Helmet>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
     <div className={`titleHead ${style.mainHeadTitle}`}>
           <h2>meMate <br />wiki</h2>
@@ -86,7 +81,6 @@ const MemateWiki = () => {
           <h4>
           Here, we gather valuable knowledge about general business<br/> management practices and tools, from job scheduling to<br/> invoicing and quote calculations.
           </h4>
-      
         <div className={style.searchFilterList}>
         <img src={FilterIcon} alt='filter Icon' />
           <input
@@ -94,13 +88,13 @@ const MemateWiki = () => {
             placeholder="Search..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className={style.searchInput}
-          />
+            className={style.searchInput}/>
         </div>
       </div>
       <div className={style.mainwikiMibile}>
         {initialLoading || isLoading ? (
-          <p className='loaderBarCircle'><Oval
+          <p className='loaderBarCircle'>
+          <Oval
           visible={true}
           height="40"
           width="40"
@@ -117,28 +111,24 @@ const MemateWiki = () => {
               <div className={style.inHead}>
                 <h2>{item?.name || "Unknown Category"}</h2>
                 <button 
-  className={style.viewAllLink} 
-  onClick={() => {
-    console.log('Button clicked for categoryName:', item.name);
-    handleViewAllClick(item.id, item.slug, item.name);
-  }}
->
-  View All
-</button>
+                className={style.viewAllLink} 
+                onClick={() => {
+                  handleViewAllClick(item.id, item.slug, item.name);
+                }}>
+                View All
+              </button>
               </div>
               {item.subdata && item.subdata.length > 0 && (
                 <div className={style.mainGridwtapFlex}>
                   {item.subdata.map((subcategory) => (
                     <div key={subcategory.id} className={`itemFlex ${subcategory.id} ${style.itemFlex}`}>
                       <div className={style.itemText}>
-                        {/* <h3 dangerouslySetInnerHTML={{ __html: subcategory.description }}></h3> */}
                         <h3
-        onClick={() => {
-          handleDetailsClick(subcategory.id, subcategory.slug, subcategory.name);
-        }}
-      >
-        {subcategory.title}
-      </h3>
+                        onClick={() => {
+                          handleDetailsClick(subcategory.id, subcategory.slug, subcategory.name);
+                        }}>
+                        {subcategory.title}
+                      </h3>
                       </div>
                     </div>
                   ))}

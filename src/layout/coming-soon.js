@@ -1,6 +1,6 @@
 import React from 'react'
-import style from './coming-soon-module.css';
 import Images from "../assests/images";
+import style from './coming-soon-module.css';
 
 const ComingSoon = () => {
   return (

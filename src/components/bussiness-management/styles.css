@@ -57,12 +57,11 @@
   -webkit-text-fill-color: transparent;
   margin: 0px;
 }
-
-
-
 .big-img-mac {
   position: relative;
+  margin-top: 16px;
 }
+
 .iphone-image {
   position: absolute;
   right: 69px;
