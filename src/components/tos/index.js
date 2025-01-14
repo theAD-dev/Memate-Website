@@ -2,6 +2,7 @@ import "./style.css";
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link, animateScroll as scroll } from "react-scroll";
+console.log('scroll: ', scroll);
 
 const knowledgeData = [
   {

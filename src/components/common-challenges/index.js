@@ -7,21 +7,21 @@ const CommonChallenges = () => {
     <div className="common-box-wrapper">
       <div className="common-box">
         <div className="challenges-text" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="900"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+          data-aos-offset="50"
+          data-aos-delay="50"
+          data-aos-duration="900"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-bottom">
           <h3>Streamline Your Business and Enjoy Full Control:</h3>
         </div>
         <div className="control-main-sec" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+          data-aos-offset="50"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-bottom">
           <div className="me-meta-card">
             <div className="max-cont-width">
               <div className="met-points" >
@@ -37,35 +37,27 @@ const CommonChallenges = () => {
               <div className="internal-control ">
                 <div className="internal-control-content">
                   <div className="control-text">
-                 
                     <p>A System Designed for <strong>Complete Control Over Business</strong> Activities</p>
                   </div>
-
                   <div className="icons">
                     <div className="user-prof">
                       <img src={Images.profileUser} alt="profileUser" />
                     </div>
-
                     <div className="user-prof">
                       <img src={Images.exportTag} alt="exportTag" />
                     </div>
-
                     <div className="user-prof">
                       <img src={Images.note} alt="note" />
                     </div>
-
                     <div className="user-prof">
                       <img src={Images.suppliers} alt="suppliers"/>
                     </div>
-
                     <div className="user-prof">
                       <img src={Images.graph} alt="graph"/>
                     </div>
-
                     <div className="user-prof">
                       <img src={Images.iconWork} alt="iconWork" />
                     </div>
-
                     <div className="user-prof">
                       <img src={Images.calender} alt="calender"/>
                     </div>
@@ -78,7 +70,6 @@ const CommonChallenges = () => {
                     <div className="user-prof">
                       <img src={Images.iconDashb} alt="iconDashb"/>
                     </div>
-
                     <div className="user-prof">
                       <img src={Images.iconPople} alt="iconPople"/>
                     </div>
@@ -89,7 +80,6 @@ const CommonChallenges = () => {
                 </div>
               </div>
             </div>
-
             <div className="predict-side">
               <div className="activities-text">
                 <p>
@@ -97,7 +87,6 @@ const CommonChallenges = () => {
                   business activities.
                 </p>
               </div>
-
               <div className="business-profile">
                 <img className="image-business" src={Images.busprofile} alt="busprofile" />
                 <img className="mask-business" src={Images.mask} alt="mask" />
@@ -106,27 +95,25 @@ const CommonChallenges = () => {
             </div>
           </div>
           <div className="project-profitability project-profitability-space" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1030"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+          data-aos-offset="50"
+          data-aos-delay="50"
+          data-aos-duration="1030"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-bottom">
             <div className="inner-text">
               <div className="inner-text-container">
               <p><strong>Track Every Expense</strong> and Time Allocated to Your Projects</p>
               </div>
-             
             </div>
           </div>
-
           <div className="real-time" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1040"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="1040"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom">
             <div className="gain-time ">
               <p>
                 Gain <span>real-time visibility</span> into all areas of your
@@ -142,7 +129,6 @@ const CommonChallenges = () => {
                 processes 
               </p>
               </div>
-              
             </div>
           </div>
         </div>

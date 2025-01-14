@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import {
   FacebookShareButton,
@@ -8,6 +9,14 @@ import {
 
 const ShareComponent = ({ url, title, image, description }) => {
   return (
+    <>
+     <Helmet>
+        {/* <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="website" /> */}
+      </Helmet>
     <div className="share-buttons">
       <ul>
         <li>
@@ -25,6 +34,7 @@ const ShareComponent = ({ url, title, image, description }) => {
         </li>
         <li>
           <TwitterShareButton url={url} title={title} image={image} hashtags={[title]}>
+         
             <Link
               className="link socialIcon"
               aria-label="Share Link"
@@ -63,6 +73,7 @@ const ShareComponent = ({ url, title, image, description }) => {
         </li>
       </ul>
     </div>
+    </>
   );
 };
 

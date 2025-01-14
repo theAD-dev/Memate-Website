@@ -37,7 +37,6 @@ const MeMateFeatureStreamline = () => {
             <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton text="Request a Demo" /></Link>
           </div>
             </div>
-
             <div className="operation-right">
               <span className="gradientAnimenate"> memate </span>
               <div className="max-image">

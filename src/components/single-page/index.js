@@ -9,11 +9,9 @@ import { Helmet } from 'react-helmet';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 
-
 const Single = ({postsSingle, postsLatest }) => {
   const { slug } = useParams(); 
   const [post, setPost] = useState(null);
-  console.log('post: ', post);
   const [loading, setLoading] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNearBottom, setIsNearBottom] = useState(false);
@@ -111,11 +109,17 @@ const Single = ({postsSingle, postsLatest }) => {
     <div>
        <Helmet>
         <title>{post.seo_title}</title>
-        <meta name="description" content={post.meta_description} />
-       <meta property="og:title" content={post.seo_title} />
-        <meta property="og:description" content={post.meta_description} />
-        <meta property="og:image" content="https://memate.au/image.jpg" />
-        <meta property="og:url" content="https://memate.au/news/post-slug" />
+        <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Everything You Need to Know About The Impact of Management Software on Small Businesses" />
+<meta name="twitter:description" content="Discover how management software can transform small businesses, enhancing productivity and operational efficiency." />
+<meta name="twitter:image" content="https://memate.au/path-to-your-image.jpg" />
+<meta name="twitter:image:alt" content="Impact of Management Software on Small Businesses" />
+
+<meta property="og:title" content="Everything You Need to Know About The Impact of Management Software on Small Businesses" />
+<meta property="og:description" content="Discover how management software can transform small businesses, enhancing productivity and operational efficiency." />
+<meta property="og:image" content="https://memate.au/path-to-your-image.jpg" />
+<meta property="og:url" content="https://memate.au/news/everything-you-need-to-know-about-the-impact-of-management-software-on-small-businesses" />
+
       </Helmet>
       <div className="parent parentSingle">
       <div className="pageBreadcrumbs">
@@ -135,12 +139,11 @@ const Single = ({postsSingle, postsLatest }) => {
         <div className="stickySocial">
           <p>Share</p>
           <ShareComponent
-        url={`https://memate.au/news/${post.slug}`}
-        title={post.title}
-        image={post.featured_img_url}
-        description={post.description}
-      />
-        
+            url={`https://memate.au/news/${post.slug}`}
+            title={post.title}
+            image={post.featured_img_url}
+            description={post.description}
+          />
         </div>
       </div>
 

@@ -11,21 +11,17 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
 const WikiDetails = () => {
     const { titleSlug } = useParams();
     const navigate = useNavigate();
-
     const { data: wikiBaseIdData = [], isLoading, error } = useQuery({
         queryKey: ['wikiBaseDtails', titleSlug],
         queryFn: () => wikiBaseDtails(titleSlug),
         enabled: !!titleSlug, 
     });
-
     const [activeItem, setActiveItem] = useState(null);
-
     useEffect(() => {
         if (!isLoading && !error) {
             const isValidSlug = wikiBaseIdData.some(
                 (item) => item.slug === titleSlug
             );
-    
             if (!isValidSlug) {
                 navigate('*', { replace: true });
             }
@@ -48,7 +44,6 @@ const WikiDetails = () => {
     if (isLoading) {
         return <div></div>;
     }
-
     if (error) {
         return <div>Error fetching data. Please try again later.</div>;
     }
@@ -72,29 +67,24 @@ const WikiDetails = () => {
                         <img src={arrowIconBack} alt="Arrow" /> Back
                     </a>
                 </div>
-
                 <div className={`${style.wikimainwrap}`}>
                     <div className={style.wikimainhead}>
                         <h1>{wikiBaseIdData[0]?.title}</h1>
                         <p>{wikiBaseIdData[0]?.short_description}</p>
                     </div>
-
                     <div className="kb-wrapper">
-                        {/* Left Navigation */}
                         <div className="kb-left-wrapper kb-tos-wrapper">
                             <ul className="kb-list">
                                 {wikiBaseIdData.map((item, index) => {
                                     const tempDiv = document.createElement("div");
                                     tempDiv.innerHTML = item.description || "<b>No description available</b>";
                                     const boldTexts = Array.from(tempDiv.querySelectorAll("h2")).map((b) => b.textContent);
-
                                     return (
                                         <li key={index} className="kb-list-item-wrapper">
                                             {boldTexts.map((boldText, idx) => (
                                                 <li
                                                     key={`${item.id}-${idx}`}
-                                                    className={`kb-list-item ${activeItem === `${item.id}-${idx}` ? 'kb-list-item-active' : ''}`}
-                                                >
+                                                    className={`kb-list-item ${activeItem === `${item.id}-${idx}` ? 'kb-list-item-active' : ''}`}>
                                                     <Link
                                                         activeClass="kb-list-item-active"
                                                         to={`section-${item.id}-${idx}`}
@@ -102,8 +92,7 @@ const WikiDetails = () => {
                                                         smooth={true}
                                                         offset={-70}
                                                         duration={500}
-                                                        onClick={() => handleClick(`${item.id}-${idx}`)}
-                                                    >
+                                                        onClick={() => handleClick(`${item.id}-${idx}`)}>
                                                         <span>{boldText}</span>
                                                     </Link>
                                                 </li>
@@ -122,7 +111,6 @@ const WikiDetails = () => {
                                 const sections = Array.from(tempDiv.querySelectorAll("h2")).map((boldText) => {
                                     let description = "";
                                     let currentNode = boldText.nextSibling;
-
                                     while (currentNode) {
                                         if (currentNode.nodeName === "H2") break;
                                         if (currentNode.nodeType === Node.TEXT_NODE && currentNode.textContent.trim()) {
@@ -132,18 +120,15 @@ const WikiDetails = () => {
                                         }
                                         currentNode = currentNode.nextSibling;
                                     }
-
                                     return {
                                         heading: boldText.textContent.trim(),
                                         description: description.trim() || "No description available",
                                     };
                                 });
-
                                 const uniqueSections = sections.filter(
                                     (section, index, self) =>
                                         index === self.findIndex((s) => s.heading === section.heading)
                                 );
-
                                 return (
                                     <div className="kb-right-section" key={item.id}>
                                         {uniqueSections.map((section, idx) => (

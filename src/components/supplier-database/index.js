@@ -96,7 +96,7 @@ const SupplierDatabase = () => {
         </div>
     
         <div  className="request-btn request-btn-bg">
-                <Link to="/add-your-company" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Add Your Company" /></Link>
+                <Link to="/add-your-company" className="nav-btn--get-started navbar-link"><TronButton text="Add Your Company" /></Link>
               </div>
           {/* <Link to='/add-your-company'>Add Your Company</Link> */}
      

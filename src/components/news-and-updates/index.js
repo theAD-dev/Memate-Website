@@ -32,19 +32,16 @@ try {
   return (
     <>
       <div className="slider-section1" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="4000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+      data-aos-offset="50"
+      data-aos-delay="50"
+      data-aos-duration="4000"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-bottom">
         <div className="success-stories1">
           <div className="bottom-management">
             <div className='SStoriesHead'>News and Updates</div>
-            <p>
-              Discover how meMate is transforming businesses across Australia.
-            </p>
-            {/* <button>Read More</button> */}
+            <p>Discover how meMate is transforming businesses across Australia.</p>
           </div>
           <div className="newsandUpdateNew">
             <div className="NewsflexWrap">
@@ -71,7 +68,6 @@ try {
                     </li>
                   ))}
                 </ul>
-
               </div>
               <div className="softwareWrp">
                 <div className="itemHead">
@@ -84,7 +80,6 @@ try {
                       <span>{new Date(updateitem?.publish_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                     </li>
                   ))}
-
                 </ul>
               </div>
             </div>

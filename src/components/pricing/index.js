@@ -18,7 +18,7 @@ const PricingComponent = () => {
 </Helmet>
     <div className={`main-section ${style.mainsectionspace} ${style.mainSection}`}>
         <div className={style.mainheading}>pricing</div>
-        <div className={style.mainimage}><img src={pricingMainImg} alt="Pricing main image" width={767} height={767}/></div>
+        <div className={style.mainimage}><img src={pricingMainImg} alt="Pricing main image" width={380} /></div>
         <div className={style.midheading}>
           <h1>Affordable Pricing for Small Businesses & Startups</h1>
         </div>

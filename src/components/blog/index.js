@@ -4,8 +4,6 @@ import Images from "../../assests/blog-images";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
-
-
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
   const formatDateWithOrdinal = (dateString) => {
     try {
@@ -39,39 +37,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
     <title>meMate News | Latest Business Technology News, Software and Regulation updates</title>
     <meta name="description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." />
     <meta property="og:title" content="meMate News | Latest Business Technology News, Software and Regulation updates" />
-    <meta property="og:description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." />
-    <meta property="og:image" content={postsLatest[0]?.featured_img_url || 'default-image-url'} />
-    <meta property="og:url" content={`https://yourdomain.com/news/${postsLatest[0]?.slug || ''}`} />
-
-    <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "headline": postsLatest[0]?.title || "Title of a News Article",
-      "image": postsLatest[0]?.images || [
-        "https://example.com/photos/1x1/photo.jpg",
-        "https://example.com/photos/4x3/photo.jpg",
-        "https://example.com/photos/16x9/photo.jpg"
-      ],
-      "datePublished": postsLatest[0]?.publish_date || "2024-01-05T08:00:00+08:00",
-      "dateModified": postsLatest[0]?.last_modified || "2024-02-05T09:20:00+08:00",
-      "author": [
-        {
-          "@type": "Person",
-          "name": postsLatest[0]?.author || "Jane Doe",
-          "url": postsLatest[0]?.author_url || "https://example.com/profile/janedoe123"
-        }
-      ],
-      "publisher": {
-        "@type": "Organization",
-        "name": "MeMate",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://yourdomain.com/logo.png"
-        }
-      }
-    })}
-    </script>
+    <meta property="og:description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." /> 
 </Helmet>
 
       <div className="parent-blog-page ">
@@ -87,8 +53,6 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
               <img className="dog-img" src={Images.blogImgDog}></img>
             </div>
           </div>
-
-          
           <div className="categoriesMainWrap">
             <div className="listTabs">
               {PostsCategories?.map((postCat) => (

@@ -11,24 +11,22 @@ const SeamlessInegration = () => {
         <span className="gradientAnimenate">integration</span>
       </div>
       <div className="integration-brand-container" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1800"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+        data-aos-offset="50"
+        data-aos-delay="50"
+        data-aos-duration="1800"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-bottom">
         <img src={IntegrationImage} alt="Integration" />
       </div>
-     
       <div className="integration-disp" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1900"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+        data-aos-offset="50"
+        data-aos-delay="50"
+        data-aos-duration="1900"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-bottom">
           <p>We use Stripe for payments, AWS to securely store your data, and Google Analytics to provide valuable insights.</p>
-         
       </div>
     </div>
   );
