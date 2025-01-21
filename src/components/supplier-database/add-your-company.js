@@ -37,27 +37,34 @@ function AddYourCompany() {
      reset({
       upload_file:"",
       cname: "",
-      email: "",
-      pnumber: "",
       abn: "",
-      website: "",
-      supplied_services: "",
-      blocation: "",
+      email: "",
       discription: "",
-      country: "",
       state: "",
+      website: "",
+      country: "Australia",
+      supplied_services: "",
+      pnumber: "",
       streetaddress: "",
       citysuburb: "",
-      postcode: "",
-      
+      postcode: "",  
      })
   }
+
+
+
+
 
   useEffect(()=> {
     formReset();
   }, [])
 
   const onSubmit = async (data) => {
+    console.log('data: ', data);
+    const selectedServiceLabel = data.supplied_services ? data.supplied_services.label : null;
+
+    // console.log('Selected Service Label:', selectedServiceLabel);
+
     if (data.website && !/^https?:\/\//i.test(data.website)) {
       data.website = `https://${data.website}`;
     }
@@ -70,14 +77,14 @@ function AddYourCompany() {
       const formData = new FormData();
       formData.append("upload_file", upload_file);
       formData.append("cname", data.cname);
-      formData.append("email", data.email);
-      formData.append("pnumber", data.pnumber);
       formData.append("abn", data.abn || "");
-      formData.append("website", data.website || "");
-      formData.append("supplied_services", data.services || "");
+      formData.append("email", data.email);
       formData.append("discription", data.discription || "");
-      formData.append("country", data.country || "");
       formData.append("state", data.state || "");
+      formData.append("website", data.website || "");
+      formData.append("country", "Australia");
+     formData.append("supplied_services", selectedServiceLabel || "");
+      formData.append("pnumber", data.pnumber);
       formData.append("streetaddress", data.streetaddress || "");
       formData.append("citysuburb", data.citysuburb || "");
       formData.append("postcode", data.postcode || "");
@@ -280,35 +287,35 @@ function AddYourCompany() {
                   </div>
    
                   <div className={style.marginbotton}>
-                    <label htmlFor="services">Service</label>
+                    <label htmlFor="supplied_services">Service</label>
                     <Controller
-                    name="services"
+                    name="supplied_services"
                     control={control}
                     render={({ field }) => (
                       <Select
                         {...field}
                         options={options1}
-                        styles={customStyles} // Apply custom styles
-                        placeholder="Select an industry..." // Customize placeholder
-                        isSearchable={true} // Enable input box search
+                        styles={customStyles} 
+                        placeholder="Select an industry..." 
+                        isSearchable={true} 
                         components={{
-                          IndicatorSeparator: () => null, // Remove default indicator separator
+                          IndicatorSeparator: () => null, 
                         }}
                       />
                     )}
                   />
-                    {errors.services && <p className="error-message">{errors.services.message}</p>}
+                    {errors.supplied_services && <p className="error-message">{errors.supplied_services.message}</p>}
                   </div>
                 </div>
                 <div className={style.flexWrapGrid}>
                 <div className={style.marginbotton}>
-                  <label htmlFor="description">Description</label>
+                  <label htmlFor="discription">Description</label>
                   <Controller
-                    name="description"
+                    name="discription"
                     control={control}
                     render={({ field }) => (
                       <textarea
-                        placeholder="Enter description"
+                        placeholder="Enter discription"
                         id="description"
                         {...field}
                         rows={6} 
@@ -328,7 +335,7 @@ function AddYourCompany() {
                       />
                     )}
                   />
-                  {errors.description && <p className="error-message">{errors.description.message}</p>}
+                  {errors.discription && <p className="error-message">{errors.discription.message}</p>}
                 </div>
                  
 

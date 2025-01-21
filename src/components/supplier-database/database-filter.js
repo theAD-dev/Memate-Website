@@ -15,6 +15,7 @@ const GlobIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/
 
 
 const DataBase = ({ supplier = [], search, loading, totalSupplier, onNext, searchTerm, setSearchTerm, activeLetter, setActiveLetter }) => {
+  console.log('supplier: ', supplier);
   const [expandedPanel, setExpandedPanel] = useState(false);
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
@@ -76,6 +77,7 @@ const DataBase = ({ supplier = [], search, loading, totalSupplier, onNext, searc
       <ul className={style.alphabetFilter}>
         {supplier.length > 0 ? (
           supplier.map((item, index) => (
+            
             <li key={index} data-aos="fade-up"
             data-aos-offset="50"
             data-aos-delay="50"
