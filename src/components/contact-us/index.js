@@ -11,7 +11,7 @@ import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Link, useNavigate } from 'react-router-dom';
-import { RequestCallBackAPI } from '../../api/contactAPI';
+// import { RequestCallBackAPI } from '../../api/contactAPI';
 import TronButton from "../../layout/hover-button/tourn-but";
 
 
@@ -25,31 +25,39 @@ const ContactUsComponent = () => {
   const navigate = useNavigate();
   // Define your validation schema
   const schema = yup.object().shape({
-    username: yup.string().required('Username is required'),
-    email: yup.string().email('Invalid email address').required('Email is required'),
-    phone: yup.string().required("Phone number is required").matches(/^\+\d{1,3}\d{4,14}$/, 'Invalid phone number format'),
+    name: yup.string().required("Name is required"),
+    email: yup.string().email("Invalid email address").required("Email is required"),
+    phone_number: yup.string()
+      .required("Phone number is required")
+      .matches(/^\+\d{1,3}\d{4,14}$/, "Invalid phone number format"),
   });
 
-  const { control, handleSubmit, formState: { errors } } = useForm({
-    resolver: yupResolver(schema)
+  const { control, handleSubmit, formState: { errors }, reset } = useForm({
+    resolver: yupResolver(schema),
   });
 
 
-  const onSubmit = (data) => {
-    const result =  fetch (RequestCallBackAPI(data));
-    console.log('Form submitted successfully:', result);
-    console.log(data); 
-    setVisible(false); 
-    setVisibleEmail(false); 
-    navigate('/thank-you');
-    if (!captchaValue) {
-      setError('Please complete the CAPTCHA.');
-      return;
+  const onSubmit = async (data) => {
+    // if (!captchaValue) {
+    //   setError("Please complete the CAPTCHA.");
+    //   return;
+    // }
+    try {
+      // const result = await RequestCallBackAPI(data); 
+      // console.log("Form submitted successfully:", result);
+      reset();
+      setVisible(false);
+      setVisibleEmail(false);
+      navigate("/thank-you");
+    } catch (err) {
+      console.error("Error submitting form:", err);
+      setError("Something went wrong. Please try again later.");
     }
   };
   
   const handleCaptchaChange = (value) => {
-    setCaptchaValue(value);
+    // setCaptchaValue(value);
+    // setError("");
   };
 
 
@@ -61,27 +69,11 @@ const ContactUsComponent = () => {
       </div>
   );
   const HeaderContent = (
-      <div className="flexWrapBoxc" data-aos="fade-up"
-      data-aos-offset="50"
-      data-aos-delay="50"
-      data-aos-duration="500"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-bottom">
+      <div className="flexWrapBoxc">
        <h1>Request a callback</h1>
       </div>
   );
-  const footerContentEmail = (
-      <div className="flexWrapBoxE">
-       <button className="borderbuttonStyle firstBut" onClick={() => setVisibleEmail(false)} >Cancel</button>
-       <button className="darkbuttonStyle" onClick={handleSubmit(onSubmit)}>Send</button>
-      </div>
-  );
-  const HeaderContentEmail = (
-      <div className="flexWrapBoxc">
-       <h1>Email now</h1>
-      </div>
-  );
+
 
 
   return (
@@ -189,17 +181,17 @@ const ContactUsComponent = () => {
       <Dialog visible={visible} style={{ width: '566px' }} className={style.requestsendModel} onHide={() => {if (!visible) return; setVisible(false); }} footer={footerContent} header={HeaderContent}>
       <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
           <div className={style.marginbotton}>
-            <label htmlFor="username">Name</label>
+            <label htmlFor="name">Name</label>
             <Controller
-              name="username"
+              name="name"
               control={control}
-              render={({ field }) => <input placeholder="Enter your name" id="username" {...field} />}/>
-            {errors.username && <p className="error-message">{errors.username.message}</p>}
+              render={({ field }) => <input placeholder="Enter your name" id="name" {...field} />}/>
+            {errors.name && <p className="error-message">{errors.username.name}</p>}
           </div>
           <div className={style.marginbotton}>
                         <label>Phone number</label>
                         <Controller
-                            name="phone"
+                            name="phone_number"
                             control={control}
                             render={({ field }) => (
                               <PhoneInput
@@ -212,7 +204,7 @@ const ContactUsComponent = () => {
                               />
                             )}
                           />
-                        {errors.phone && <p className="error-message">{errors.phone.message}</p>}
+                        {errors.phone_number && <p className="error-message">{errors.phone_number.message}</p>}
                     </div>
                     <div className={style.marginbotton}>
             <label htmlFor="email">Email</label>
@@ -222,50 +214,17 @@ const ContactUsComponent = () => {
               render={({ field }) => <input placeholder="company@email.com" id="email" {...field} />}/>
             {errors.email && <p className="error-message">{errors.email.message}</p>}
           </div>
-          <div className={style.marginbotton}> 
+          {/* <div className={style.marginbotton}> 
             <ReCAPTCHA
         sitekey="6LdajWoqAAAAABL-mFA9wqzKrY77pE6cxhq3PSQM"
         onChange={handleCaptchaChange}
       />
             {error && <p style={{ color: 'red' }}>{error}</p>}
-            {errors.email && <p className="error-message">{errors.email.message}</p>}
-          </div>
+
+          </div> */}
         </form>
             </Dialog>
-      <Dialog visible={visibleEmail} style={{ width: '566px' }} className={style.requestsendModel} onHide={() => {if (!visibleEmail) return; setVisibleEmail(false); }} footer={footerContentEmail} header={HeaderContentEmail}>
-      <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
-          <div className={style.marginbotton}>
-            <label htmlFor="username">Name</label>
-            <Controller
-              name="username"
-              control={control}
-              render={({ field }) => <input placeholder="Enter your name" id="username" {...field} />}/>
-            {errors.username && <p className="error-message">{errors.username.message}</p>}
-          </div>
-          <div className={style.marginbotton}>
-            <label htmlFor="email">Email</label>
-            <Controller
-              name="email"
-              control={control}
-              placeholder="company@email.com"
-              render={({ field }) => <input id="email" {...field} />}
-            />
-            {errors.email && <p className="error-message">{errors.email.message}</p>}
-          </div>
-          <div className={style.marginbotton}>
-            <label htmlFor="email">Message</label>
-           <textarea rows="5"></textarea>
-            {errors.email && <p className="error-message">{errors.email.message}</p>}
-          </div>
-          <div className={style.marginbotton}>
-            <ReCAPTCHA
-        sitekey="6LdajWoqAAAAABL-mFA9wqzKrY77pE6cxhq3PSQM"
-        onChange={handleCaptchaChange}/>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
-            {errors.email && <p className="error-message">{errors.email.message}</p>}
-          </div>
-        </form>
-            </Dialog>
+    
     </div>
   )
 }
