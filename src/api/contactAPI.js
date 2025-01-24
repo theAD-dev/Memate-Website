@@ -1,22 +1,17 @@
+import axios from "axios";
+
+const api = axios.create({
+  baseURL:"https://admin.memate.au/api",
+  headers:{
+    'X-Api-Key': "3fa85f64d51b6c8e74313f7c69aef82d",
+    'Content-Type': 'application/json'
+  }
+});
 export const RequestCallBackAPI = async (formData) => {
   
-    const myHeaders = new Headers();
-    myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
-  
-    const requestOptions = {
-      method: "POST",
-      headers: myHeaders,
-      body: JSON.stringify(formData), 
-      redirect: "follow",
-    };
-  
     try {
-      const response = await fetch("https://admin.memate.au/api/request-callback", requestOptions);
-      const result = await response.text();
-      if (!response.ok) {
-        throw new Error(result || 'Request failed');
-      }
-      return result;
+      const response = await api.post("/request-callback", JSON.stringify(formData));
+      return response.data;
     } catch (error) {
       console.error('API Error:', error);
       throw error; 
@@ -24,19 +19,16 @@ export const RequestCallBackAPI = async (formData) => {
   };
 
 
-  export const SubscribeEmail = async (data) => {
+  export const SubscribeEmail = async (formData) => {
+  
     try {
-      const response = await fetch('https://admin.memate.au/api/subscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-      return response.json();
+      const response = await api.post("/subscribe", JSON.stringify(formData));
+      return response.data;
     } catch (error) {
-      console.error('Error in SubscribeEmail:', error);
-      throw error;
+      console.error('API Error:', error);
+      throw error; 
     }
   };
-  
+
+
+
