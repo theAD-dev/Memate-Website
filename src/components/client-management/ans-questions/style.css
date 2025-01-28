@@ -82,10 +82,11 @@
 }
 @media screen and (max-width: 767px) {
   .question-answer-content {
-    width: 100%;
-    padding: 20px;
+    width: 92% !important;
+    padding: 20px !important;
 
 }
+
 .question-answer-heading {
   font-size: 26px;
   line-height: 32px;
