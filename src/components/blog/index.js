@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
+  
   const formatDateWithOrdinal = (dateString) => {
     try {
       const date = new Date(dateString.replace(/(\d+)(st|nd|rd|th)/, '$1')); // Remove suffix for parsing
