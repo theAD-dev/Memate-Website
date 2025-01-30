@@ -48,7 +48,7 @@ export const blogSingle = async (slug) => {
     const result = await response.json();
     console.log("API response:", result);
 
-    return Array.isArray(result.data) ? result.data : [];
+    return result;
 
   } catch (error) {
     console.error("Error fetching blog posts:", error);
