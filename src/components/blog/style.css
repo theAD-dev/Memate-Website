@@ -363,6 +363,18 @@ button.filterBlogTabBtn {
   font-family: "Inter", sans-serif !important;
   overflow-wrap: break-word;
 } 
+.categories{
+  max-width: 1201px;
+  width: 100%;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.nextbtn-container-A {
+  grid-column: 1/4;
+}
+
 @media screen and (max-width: 767px) {
   .parent-blog {
     padding: 0 15px !important;
@@ -418,6 +430,7 @@ button.filterBlogTabBtn {
 }
 #blogGrid  .img-container-3 {
   grid-template-columns: 1fr;
+  display: block;
 }
 
 #blogGrid .dog-img-container1 {
@@ -454,6 +467,10 @@ button.filterBlogTabBtn {
 }
 }
 @media screen and (max-width: 992px) and (min-width: 768px){
+  .categories{
+    display: block;
+  }
+
 
 .heading-blog {
   font-size: 130px;

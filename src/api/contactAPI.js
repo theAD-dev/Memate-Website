@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL:"https://admin.memate.au/api",
+  baseURL:"https://admin.memate.com.au/api",
   headers:{
     'X-Api-Key': "3fa85f64d51b6c8e74313f7c69aef82d",
     'Content-Type': 'application/json'

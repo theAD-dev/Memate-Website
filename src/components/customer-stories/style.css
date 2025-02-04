@@ -95,12 +95,11 @@ line-height: normal;
   text-decoration: none;
 }
 .blog-img-container-2 {
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
 }
-
 .img-container-2-img-1 {
   width: 100%;
   height: auto;

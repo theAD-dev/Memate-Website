@@ -10,7 +10,7 @@ export const supplierListApi = async (page, limit, search, searchKey) => {
   };
 
   try {
-    const url = new URL(`https://admin.memate.au/api/supplier-lists`);
+    const url = new URL(`https://admin.memate.com.au/api/supplier-lists`);
     url.searchParams.append("page", page);
     url.searchParams.append("limit", limit);
 
@@ -40,7 +40,7 @@ export const singlePostSupplier = async (slug) => {
   };
 
   try {
-    const response = await fetch(`https://admin.memate.au/api/single-supplier/${slug}`, requestOptions);
+    const response = await fetch(`https://admin.memate.com.au/api/single-supplier/${slug}`, requestOptions);
     const result = await response.json(); 
     console.log("API response:", result);
 
@@ -69,7 +69,7 @@ export const AddYourCompanyApi = async (formData) => {
   };
 
   try {
-    const response = await fetch("https://admin.memate.au/api/supplier", requestOptions);
+    const response = await fetch("https://admin.memate.com.au/api/supplier", requestOptions);
     const result = await response.text();
     if (!response.ok) {
       throw new Error(result || 'Request failed');
