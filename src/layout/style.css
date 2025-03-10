@@ -1,15 +1,15 @@
 .children-wrapper {
-    margin-top: 122px;
+    margin-top: 130px;
     padding-bottom: 29px;
 }
+
+.next-step {
+    margin-top: 58px !important;
+    margin-bottom: -130px !important;
+}
+
 @media screen and (max-width: 767px) {
     .children-wrapper {
         margin-top:80px;
     }
 }
-
-
-
-
-  
- 

@@ -61,6 +61,10 @@
   max-height: 420px;
   margin-bottom: 40px;
 }
+.kb-tos-wrapper.height-adjuster {
+  max-height: 197px !important;
+  margin-bottom: 40px;
+}
 .tos-list-item a {
   color: #29292b !important;
   text-decoration: none;
@@ -170,13 +174,17 @@ display: inline-block;
   flex-direction: column;
 }
 .tos-header-section-sub-heading {
-  font-size: 120px !important;
-  margin-top: -16px;
+    font-size: 120px !important;
+    margin-top: -16px;
+    background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tos-right-section:last-child{
   margin-bottom: -100px;
 }
+
 @media screen and (max-width: 767px) {
   .tos-header {
     height: auto;

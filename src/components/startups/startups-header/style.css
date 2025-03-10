@@ -102,12 +102,16 @@ p.startup-middle-heading br {
 .startup-heading-content {
   margin-top: 0;
 }
+.startup-header-wrapper br {
+  display: none;
+}
 .startup-header-wrapper::before {
   position: absolute;
   right: 0;
   bottom: 0;
   display: inline-block;
   opacity: 0;
+  display: none;
 }
 .startup-heading-button {
   margin-top: 15px;

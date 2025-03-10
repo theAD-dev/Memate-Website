@@ -82,7 +82,7 @@ const MemateWiki = () => {
           Here, we gather valuable knowledge about general business<br/> management practices and tools, from job scheduling to<br/> invoicing and quote calculations.
           </h4>
         <div className={style.searchFilterList}>
-        <img src={FilterIcon} alt='filter Icon' />
+        <img style={{height: "23px", width: "23px"}} src={FilterIcon} alt='filter Icon' />
           <input
             type="text"
             placeholder="Search..."

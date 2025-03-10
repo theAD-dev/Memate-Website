@@ -14,7 +14,7 @@
 .mainMenuPages{
     .mainHeadTitle{
         text-align: center;
-        padding: 30px 0 120px;
+        padding: 30px 0 88px;
         h2{
             font-size: 180px;
             font-weight: 425;
@@ -183,10 +183,13 @@
         justify-content: flex-start !important;
     }
 }
+element.style {
+    width: 22px;
+}
 
   .searchFilterList{
     width: 768px;
-    padding: var(--spacing-3xl, 24px) var(--spacing-4xl, 32px);
+    padding: var(--spacing-2xl, 9px) var(--spacing-2xl, 26px);
     display: flex;
     align-items: center;
     gap: var(--spacing-md, 8px);
@@ -197,12 +200,13 @@
     text-align: left;
        input{
         color: var(--Gray-400, #98A2B3);
-        font-size: 32px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 405;
         line-height: 24px; 
         width: 100%;
         border: 0;
+        margin-left: 4px;
        }
   }
 
@@ -347,3 +351,5 @@
       }
 
   }
+
+  

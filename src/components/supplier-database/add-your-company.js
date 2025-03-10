@@ -46,7 +46,7 @@ function AddYourCompany() {
       supplied_services: "",
       pnumber: "",
       streetaddress: "",
-      citysuburb: "",
+      city: "",
       postcode: "",  
      })
   }
@@ -86,8 +86,9 @@ function AddYourCompany() {
      formData.append("supplied_services", selectedServiceLabel || "");
       formData.append("pnumber", data.pnumber);
       formData.append("streetaddress", data.streetaddress || "");
-      formData.append("citysuburb", data.citysuburb || "");
+      formData.append("city", data.city || "");
       formData.append("postcode", data.postcode || "");
+      console.log(data.pnumber);
 
       
       
@@ -101,7 +102,7 @@ function AddYourCompany() {
         redirect: "follow"
       };
   
-      const response = await fetch("https://admin.memate.au/api/supplier", requestOptions);
+      const response = await fetch("https://admin.memate.com.au/api/supplier", requestOptions);
       console.log('response: ', response);
 
       if (response.ok) {
@@ -257,7 +258,7 @@ function AddYourCompany() {
                                 defaultCountry="AU" 
                                 value={field.value}
                                 className="phoneInput"
-                                placeholder="+61 2 0168 9943" 
+                                placeholder="+61" 
                                 containerClass={style.countrySelector}
                                 onChange={field.onChange}
                               />
@@ -392,12 +393,12 @@ function AddYourCompany() {
                 </div>
                 <div className={style.flexWrapGrid}>
                   <div className={style.marginbotton}>
-                    <label htmlFor="citysuburb">City / Suburb</label>
+                    <label htmlFor="city">City / Suburb</label>
                     <Controller
-                      name="citysuburb"
+                      name="city"
                       control={control}
-                      render={({ field }) => <input placeholder="Enter Country" id="citysuburb" {...field} />}/>
-                    {errors.citysuburb && <p className="error-message">{errors.citysuburb.message}</p>}
+                      render={({ field }) => <input placeholder="Enter Country" id="city" {...field} />}/>
+                    {errors.city && <p className="error-message">{errors.city.message}</p>}
                   </div>
                   <div className={style.marginbotton}>
                     <label htmlFor="postcode">Post Code</label>
@@ -411,7 +412,7 @@ function AddYourCompany() {
                 </div>
                 <div className={style.marginbotton}>
                   <ReCAPTCHA
-                    sitekey="6LdajWoqAAAAABL-mFA9wqzKrY77pE6cxhq3PSQM"
+                    sitekey="6LfAwdMqAAAAAFtI7SUPXKb1ew7C0jUYRvxDqjpS"
                     onChange={handleCaptchaChange}
                   />
                   {error && <p style={{ color: 'red' }}>{error}</p>}

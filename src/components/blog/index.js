@@ -9,14 +9,12 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
   const formatDateWithOrdinal = (dateString) => {
     try {
       const date = new Date(dateString.replace(/(\d+)(st|nd|rd|th)/, '$1'));
-      // Get day, month, and year
       const day = date.getDate();
       const month = date.toLocaleString('en-US', { month: 'long' });
       const year = date.getFullYear();
 
-      // Add ordinal suffix to the day
       const ordinalSuffix = (n) => {
-        if (n > 3 && n < 21) return 'th'; // Handles 11th–13th
+        if (n > 3 && n < 21) return 'th'; 
         switch (n % 10) {
           case 1: return 'st';
           case 2: return 'nd';
@@ -49,7 +47,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
         <div className="parent-blog">
           <div className="heading-container heading-container-categories" >
             <h1 className="heading-blog">
-              latest <br></br>articles
+             Articles
             </h1>
             <div className="heading-blog-description">
               <h1 className="heading-text-blog">Latest Small Business <br />Technology News and Software Updates</h1>
@@ -74,13 +72,19 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
 
             {/* Updated Posts under Active Category %blame @ramansaini14 for changes 
             // status: committed on vps tunnel and changes staged automatically */}
-            {filteredPosts.length != 0 ?
+            {filteredPosts.length !== 0 ?
             <>
                     {filteredPosts.length > 5 ? 
                     <>
                     <div className="categories">
                       {filteredPosts?.map((post) => (
-                        <div key={post.id} className="img-container-3-div ">
+                        <div key={post.id} className="img-container-3-div "  data-aos="fade-up"
+                        data-aos-offset="50"
+                        data-aos-delay="50"
+                        data-aos-duration="2500"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-bottom">
                           <div className="img-container-3-img1-div" style={{ marginBottom: "0.5rem" }}>
                             <Link to={`/news/${post.slug}`}>
                               <img
@@ -107,7 +111,13 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                       <>
                       <div className="categories">
                         {filteredPosts?.map((post) => (
-                          <div key={post.id} className="img-container-3-div">
+                          <div key={post.id} className="img-container-3-div"  data-aos="fade-up"
+                          data-aos-offset="50"
+                          data-aos-delay="50"
+                          data-aos-duration="2500"
+                          data-aos-mirror="true"
+                          data-aos-once="false"
+                          data-aos-anchor-placement="top-bottom">
                             <div className="img-container-3-img1-div" style={{ marginBottom: "0.5rem" }}>
                               <Link to={`/news/${post.slug}`}>
                                 <img
@@ -130,7 +140,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                       </>
                       }
                       </>
-                      : (activeCategory !=0) ? ((loading)? <div style={{display: "flex", justifyContent: 'center',  height: "300px", alignItems: 'center'}}><p>Loading...</p></div> : <div style={{ display: 'flex', justifyContent: 'center',  height: "300px", alignItems: 'center'}}><p>No Posts</p></div> ) : ""
+                      : (activeCategory !==0) ? ((loading)? <div style={{display: "flex", justifyContent: 'center',  height: "300px", alignItems: 'center'}}><p>Loading...</p></div> : <div style={{ display: 'flex', justifyContent: 'center',  height: "300px", alignItems: 'center'}}><p>No Posts</p></div> ) : ""
                        }
               
           </div>
@@ -151,7 +161,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                       height: '625px',
                       marginTop: '-329px',
                       borderRadius: '30px',
-                      marginBottom: '29px',
+                      marginBottom: '20px',
 
                     }}
                     data-aos="fade-up"
@@ -239,8 +249,8 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
             </>
           }
 
-          {/* {hide this and do not load data when tabs other then 0 is loaded} */}
-          {activeCategory == 0 ? 
+          {/* {hide this and do not load data when other tabs gets hits} */}
+          {activeCategory === 0 ? 
           <>
             <span className="latest-article-heading" data-aos="fade-up"
             data-aos-offset="50"
@@ -277,7 +287,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
               </div>
             ))}
                 <div className="nextbtn-container-A">
-                  {totalPosts > posts?.length && <button onClick={handleNext} className="next-page-btn-A">{loading ? "Loading..." : "Next page"}</button>}
+                  {totalPosts > posts?.length && <button onClick={handleNext} className="next-page-btn-A">{loading ? "Loading..." : "Load More"}</button>}
                 </div>
           </div> 
           </>: <div></div>

@@ -15,11 +15,13 @@ export const supplierListApi = async (page, limit, search, searchKey) => {
     url.searchParams.append("limit", limit);
 
     if (search) url.searchParams.append("search", search);
-    if (searchKey) url.searchParams.append("starts_with", searchKey);
+    if (searchKey) {
+      url.searchParams.append("starts_with", searchKey) 
+      console.log("SEARCH KEY :",  searchKey)};
 
     const response = await fetch(`${url}`, requestOptions);
     const result = await response.json(); 
-    console.log("API response:", result);
+    console.log("API response SUPPLIER LISTS:", result);
 
     return result;
 

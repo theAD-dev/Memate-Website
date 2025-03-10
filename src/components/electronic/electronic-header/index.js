@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import { Link } from "react-router-dom";
 const ElectronicHeader = () => {
   return (
     <div className='electronic-header-wrapper' data-aos="fade-up"
@@ -13,7 +14,7 @@ const ElectronicHeader = () => {
       operate efficiently</h1>
       <p className='electronic-middle-heading'>Electronic <br></br>Repair <br></br>Specialists</p>
       <p className='electronic-heading-content'>With MeMate, you can effortlessly communicate with clients and effortlessly submit jobs, all from a centralised and streamlined interface. Say goodbye to scattered systems and embrace the convenience of MeMate for unparalleled business management in the  electronics repair industry.</p>
-      <button className='electronic-heading-button'>Request a Demo</button>
+      <Link to="https://app.memate.com.au/requestdemo" target="_blank"><button className='electronic-heading-button'>Book a Demo</button></Link>
     </div>
   )
 }

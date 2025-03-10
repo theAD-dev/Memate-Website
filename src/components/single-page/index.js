@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./style.css";
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate, Navigate } from 'react-router-dom';
 import Images from "../../assests/blog-images";
 import { blogSingle } from '../../api/blogAPI';
 import SubscribeForm from './subscribe';
@@ -11,6 +11,7 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
 
 const Single = ({postsSingle, postsLatest }) => {
   const { slug } = useParams(); 
+  const navigate = useNavigate();
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,6 +61,9 @@ const Single = ({postsSingle, postsLatest }) => {
         try {
           const data = await blogSingle(slug); 
           setPost(data);
+          if (data.error === 'News article not found') {
+            navigate('/404'); 
+          }
         } catch (error) {
           console.error("Error fetching post:", error);
         } finally {
@@ -69,7 +73,7 @@ const Single = ({postsSingle, postsLatest }) => {
     };
 
     fetchPost();
-  }, [slug, postsSingle, postsLatest]);
+  },[slug, postsSingle, postsLatest, navigate]);
 
   if (loading) {
     return <div></div>;
@@ -124,7 +128,7 @@ const Single = ({postsSingle, postsLatest }) => {
       <div className="parent parentSingle">
       <div className="pageBreadcrumbs">
             <ul>
-              <li>Home</li>/<li> <Link className="MainPageLink" to="/news"> Latest Articles</Link></li>/<li> <Link>{post.title}</Link></li>
+              <li>Home</li><li>/</li><li><Link className="MainPageLink" to="/news">Latest Articles</Link></li><li>/</li><li><Link>{post.title}</Link></li>
             </ul>
             <Link to="/news" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>

@@ -17,7 +17,7 @@ const ZeroOfferOnboarding = () => {
             Plus, we provide a 14-day free trial because we believe our software will become indispensable to your business.
             </p>
             <div className="button-container">
-              <Link to="https://dev.memate.com.au/requestdemo"><button className="book-a-demo">Request a Demo</button></Link>
+              <Link to="https://app.memate.com.au/requestdemo"><button className="book-a-demo">Book a Demo</button></Link>
             </div>
             {/* <div id='request-btn-pricing' className="request-btn request-btn-bg">
             <Link to="https://dev.memate.com.au/onboarding" target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton  text="Request a Demo" /></Link>

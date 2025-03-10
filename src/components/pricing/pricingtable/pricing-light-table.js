@@ -22,7 +22,7 @@ const PricingLightTable = () => {
                 <h2>$99.85 <span>/monthly</span></h2>
                 <p>Essentials you need to run your company</p>
                 <div  className="request-btn request-btn-bg">
-                <Link to="https://dev.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Get started" /></Link>
+                <Link to="https://app.memate.com.au/onboarding" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Get started" /></Link>
               </div>
                 {/* <a href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a> */}
               </div>
@@ -37,7 +37,7 @@ const PricingLightTable = () => {
                 <h2><strong className="gradientAnimenate">$162.17 </strong><span>/monthly</span></h2>
                 <p>Everything in Business + Employee and Contractor Management</p>
                 <div id='request-btn-pricing' className="request-btn request-btn-bg">
-            <Link to="https://dev.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton text="Get started" /></Link>
+            <Link to="https://app.memate.com.au/onboarding" target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton text="Get started" /></Link>
           </div>
                 {/* <a className="getstartedBtnPricing"  href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a> */}
               </div>

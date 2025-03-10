@@ -119,7 +119,7 @@ const NewsTagsComponents = () => {
              <ul>
                <li>Home</li>/<li> <Link className="MainPageLink" to="/news"> Latest Articles</Link></li>/<li> <Link>{slug}</Link></li>
              </ul>
-             <Link to={`/news/${slug}`} className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
+             <Link to={`/news`} className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
            </div>
          <div className={`stickySocialWrap ${isScrolled ? 'scrolled' : ''} ${
          isNearBottom ? 'hide' : ''

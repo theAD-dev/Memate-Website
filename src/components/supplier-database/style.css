@@ -118,6 +118,9 @@ height: 52px;
     font-weight: 310;
     line-height: 20px;
   }
+  img.search_logo {
+    width: 20px;
+}
   @media screen and (max-width: 767px) {
     .main-section .main-heading {
         font-size: 32px;

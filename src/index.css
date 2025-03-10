@@ -49,7 +49,9 @@ body::-webkit-scrollbar-thumb ,
   background: linear-gradient(290deg, rgba(244,178,97,1) 0%, rgba(26,178,255,1) 100%);
   border-radius: 10px;
 }
-
+.request-btn-update .request-btn .get-started-border-box .btn-base--black {
+  background: #f7f8fa;
+}
 .page-pricing .pricingHeadWrap {
   display: none;
 }
@@ -69,9 +71,9 @@ body::-webkit-scrollbar-thumb ,
   padding-bottom: 50px;
   color: transparent;
   text-align: center;
-  font-size: 220px;
+  font-size: 159px;
+  line-height: 137px;
   font-style: normal;
-  line-height: 164px;
   margin-top: 25px;
   font-style: normal;
   font-weight: 425;
@@ -147,13 +149,16 @@ height: 44px;
 }
 .flexWrapBoxE{
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
 }
-.flexWrapBoxc{
+.flexWrapBoxc {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-left: 7px;
 }
 .p-dialog-header-close {
   margin-top: 10px;
@@ -219,8 +224,9 @@ border: 0;
 }
 
 .sticky-section-switch {
-  opacity: 0; 
-  transition: opacity 0.5s ease-in-out; 
+  /* opacity: 0;  */
+  /* visibility: hidden; */
+  /* transition: opacity 0.5s ease-in-out;  */
   position: relative;
 }
 
@@ -316,7 +322,7 @@ border: 0;
 
 
 
-  @media screen and (max-width: 5000px) and (min-width: 2200px) {
+  /* @media screen and (max-width: 5000px) and (min-width: 2200px) {
   .navbar-container,.big-img-macMain,.macBook-image,.integration-brand-container {
     width: 1620px;
 }
@@ -426,7 +432,7 @@ p.sales-description-sales {
   position: relative;
   margin-top: 18px;
 }
-} 
+}  */
 
 
 
@@ -435,7 +441,17 @@ p.sales-description-sales {
 
 @media screen and (max-width: 767px) {
   .titleHead h4.tagHeadtitle {
-    font-size: 27px;
+    font-size: 20px;
+}
+.features_mainHeadTitle__\+1xfr h1 {
+  font-size: 20px !important;
+  line-height: 24px !important;
+}
+.features_mainGridWrap__AQeWg h2 {
+  font-size: 20px !important;
+}
+#blogGrid  .heading-text-blog {
+  font-size: 20px;
 }
   .h1tagsseo {
     font-size: 19px;
@@ -447,4 +463,13 @@ p.sales-description-sales {
 .jobs-heading {
   line-height: 38px !important;
 }
+}
+@media screen and (max-width: 600px) {
+  .NewsflexWrap .Newsitem .imgBox a img {
+    height: auto;
+}
+}
+.parent.parentSingle p {
+  padding-top: 7px;
+  font-family: 'sequel_sans_roman_head' !important;
 }

@@ -8,7 +8,7 @@ import TronButton from "../../../layout/hover-button/tourn-but";
 const MeMateFeatureStreamline = () => {
 
   return (
-    <div className="feature-section-container">
+    <div className="feature-section-container request-btn-update">
       <div className="features-section">
       <div className="memate heading-margin">
         <div className="mainHeadingH2">Memate</div>
@@ -34,7 +34,7 @@ const MeMateFeatureStreamline = () => {
               </div>
               {/* <button className="get-started-btn">Request a Demo</button> */}
               <div className="request-btn request-btn-bg">
-            <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton text="Request a Demo" /></Link>
+            <Link to='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton text="Book a Demo" /></Link>
           </div>
             </div>
             <div className="operation-right">

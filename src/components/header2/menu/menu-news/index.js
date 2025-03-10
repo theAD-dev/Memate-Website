@@ -2,7 +2,11 @@ import React from 'react';
 import './style.css';
 import { NavLink } from 'react-router-dom';
 
-const MenuNews = () => {
+const MenuNews = ({ onSubItemClick }) => {
+  const handleClick = () => {
+    if (onSubItemClick) onSubItemClick();
+  };
+
   return (
     <div className='menu-new-wrapper'>
       <div className='menu-news'>
@@ -11,6 +15,7 @@ const MenuNews = () => {
           className={({ isActive }) => 
             (isActive ? "menuActive" : "link") + " news first-News" 
           }
+          onClick={handleClick}
         >
           <span>
             <span className='first-news-top-heading'>Our</span>
@@ -25,6 +30,7 @@ const MenuNews = () => {
           className={({ isActive }) => 
             (isActive ? "menuActive" : "link") + " news first-News"
           }
+          onClick={handleClick}
         >
           <span>
             <span className='first-news-top-heading'>Customer</span>
@@ -39,6 +45,7 @@ const MenuNews = () => {
           className={({ isActive }) => 
             (isActive ? "menuActive" : "link") + " news first-News"
           }
+          onClick={handleClick}
         >
           <span>
             <span className='first-news-top-heading'>Software</span>

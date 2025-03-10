@@ -6,7 +6,7 @@ import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { Dialog } from 'primereact/dialog';
-import PhoneInput from 'react-phone-number-input';
+import PhoneInput, {getCountryCallingCode} from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useNavigate } from 'react-router-dom';
@@ -16,6 +16,7 @@ const CallbackNow = () => {
     const [visible, setVisible] = useState(false);
     const [visibleEmail, setVisibleEmail] = useState(false);
     const [captchaValue, setCaptchaValue] = useState(null);
+    const [placeholder, setPlaceholder] = useState("+61");
     const [error, setError] = useState('');
     const navigate = useNavigate();
     // Define your validation schema
@@ -54,10 +55,19 @@ const CallbackNow = () => {
       setCaptchaValue(value);
       setError("");
     };
+    
+    const handleCountryChange = (country) => {
+      if (country) {
+        const countryCode = getCountryCallingCode(country);
+        setPlaceholder(`+${countryCode}`);
+      } else {
+        setPlaceholder("+61"); // Default placeholder if country is undefined
+      }
+    };
   
     const footerContent = (
         <div className="flexWrapBoxE">
-         <button className="borderbuttonStyle firstBut" onClick={() => setVisible(false)} >Cancel</button>
+         <button className="borderbuttonStyle firstBut" onClick={() => setVisible(false)}>Cancel</button>
          <button className="darkbuttonStyle" onClick={handleSubmit(onSubmit)}>Send</button>
         </div>
     );
@@ -67,8 +77,9 @@ const CallbackNow = () => {
         </div>
     );
   return (
-    <div>
-        <p onClick={() => setVisible(true)}>Call now</p>
+    <>
+      <div className="query-button ">
+        <button onClick={() => setVisible(true)}>Request</button></div>
        <Dialog visible={visible} style={{ width: '566px' }} className={style.requestsendModel} onHide={() => {if (!visible) return; setVisible(false); }} footer={footerContent} header={HeaderContent}>
       <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
           <div className={style.marginbotton}>
@@ -89,9 +100,10 @@ const CallbackNow = () => {
                                 defaultCountry="AU" 
                                 value={field.value}
                                 className="phoneInput"
-                                placeholder="+61 2 0168 9943" 
+                                placeholder={placeholder} 
                                 containerClass={style.countrySelector}
                                 onChange={field.onChange}
+                                onCountryChange={handleCountryChange}
                               />
                             )}
                           />
@@ -107,7 +119,7 @@ const CallbackNow = () => {
           </div>
            <div className={style.marginbotton}> 
             <ReCAPTCHA
-        sitekey="6LdajWoqAAAAABL-mFA9wqzKrY77pE6cxhq3PSQM"
+        sitekey="6LfAwdMqAAAAAFtI7SUPXKb1ew7C0jUYRvxDqjpS"
         onChange={handleCaptchaChange}
       />
             {error && <p style={{ color: 'red' }}>{error}</p>}
@@ -115,7 +127,7 @@ const CallbackNow = () => {
           </div> 
         </form>
             </Dialog>
-    </div>
+    </>
   )
 }
 
