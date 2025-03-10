@@ -22,8 +22,8 @@ const PrivacyComponent = () => {
       {/* <h5>memate</h5> */}
       <h1 className="h1tagsseo">meMate Privacy Policy</h1>
       <h2 className="latest-update-text latest-update-head">
-      Privacy
-            </h2>
+        Privacy
+      </h2>
       </div>
       <MiddleSection />
       <div>

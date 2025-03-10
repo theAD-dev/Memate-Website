@@ -108,8 +108,12 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box !important;
+  text-decoration: none;
 }
 
 .button,button,a{
   cursor: pointer !important
+}
+a b{
+  color: rgb(0, 202, 255);
 }

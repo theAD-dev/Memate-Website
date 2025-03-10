@@ -102,8 +102,8 @@ const Footer = () => {
                 <Link to="/customer-stories">Customer Stories</Link>
                 <Link to="/supplier-database">Supplier Database</Link>
                 <Link to="/sitemap">Sitemap</Link>
-                <Link to="https://dev.memate.com.au/requestdemo" target="_blank">Request a Demo</Link>
-                <Link to="https://dev.memate.com.au/requestdemo" target="_blank">My Account</Link>
+                <Link to="hhttps://app.memate.com.au/requestdemo" target="_blank">Request a Demo</Link>
+                <Link to="https://app.memate.com.au/onboarding" target="_blank">My Account</Link>
               </div>
             </div>
 

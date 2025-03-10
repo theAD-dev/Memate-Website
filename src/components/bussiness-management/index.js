@@ -18,8 +18,8 @@ const BussinessManagement = () => {
           Business Management Software</h1>
           <h2>All-in-One Platform</h2>
         </div>
-         <div className="gradientHeading gradiientColor">
-            to run your <br /> business
+         <div className="gradientHeading gradiientColor header-text">
+            to run your business
           </div>
       </div>
       <div className="image-wrapper" >
@@ -84,7 +84,7 @@ const BussinessManagement = () => {
         </span>
       </div>
       <div className="request-btn">
-        <Link to='https://dev.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started  navbar-link"><TronButton text="Request a Demo" /></Link>
+        <Link to='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started  navbar-link"><TronButton text="Request a Demo" /></Link>
       </div>
     </div>
   );

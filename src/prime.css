@@ -1,10 +1,10 @@
-.gradientHeading{
+.gradientHeading {
     font-family: sequel_sans_bold_disp !important;
-    font-size: 220px;
+    font-size: 194px;
     font-weight: 700;
     letter-spacing: 1px;
-    line-height: 184px;
-    text-align: center;  
+    line-height: 178px;
+    text-align: center;
 }
 .gradiientColor{
     -webkit-text-fill-color: #0000;
@@ -15,6 +15,6 @@
 @media screen and (max-width: 767px) {
     .gradientHeading {
         font-size: 32px;
-        line-height: 40px;
+        line-height: 32px;
     }
 }

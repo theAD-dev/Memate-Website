@@ -51,11 +51,9 @@ const SubscribeForm = () => {
             <button className="darkbuttonStyle" onClick={handleSubmit(onSubmit)}>Subscribe</button>
           </div>
           {errors.email && (
-    <p className="error-message">Validation Error: {errors.email.message}</p>
-  )}
- <p>{serverError}</p>
-
-
+          <p className="error-message">Validation Error: {errors.email.message}</p>
+            )}
+          <p>{serverError}</p>
           <p>
             By submitting this form, you’re consenting to receive communications from meMate via email about products offered by meMate. 
             You can unsubscribe from marketing communications at any time. Please see our Privacy 

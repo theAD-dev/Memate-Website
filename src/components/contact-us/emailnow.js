@@ -84,8 +84,9 @@ const [captchaValue, setCaptchaValue] = useState(null);
     );
 
     return (
-        <div>
-            <p onClick={() => setVisible(true)}>Email now</p>
+        <>
+            <div className="query-button query-button-color">
+            <button onClick={() => setVisible(true)}>Email now</button></div>
             <Dialog
                 visible={visible}
                 style={{ width: '566px' }}
@@ -181,13 +182,13 @@ const [captchaValue, setCaptchaValue] = useState(null);
                     </div>
                     <div className={style.marginbotton}>
             <ReCAPTCHA
-        sitekey="6LdajWoqAAAAABL-mFA9wqzKrY77pE6cxhq3PSQM"
+        sitekey="6LfAwdMqAAAAAFtI7SUPXKb1ew7C0jUYRvxDqjpS"
         onChange={handleCaptchaChange}/>
         
           </div>
                 </form>
             </Dialog>
-        </div>
+        </>
     );
 };
 

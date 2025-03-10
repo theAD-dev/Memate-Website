@@ -1,11 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
 
 .kb-section-wiki-description, h2,p,span{
-    color: #3F3F3F;
+    text-decoration: none;
     font-size: 16px;
     font-style: normal;
     font-weight: 360;
     line-height: 150%; 
 }
+a span{
+    color: #29292b;
+}
+
 .kb-section-wiki-heading {
     color: #29292B;
     font-size: 30px;
@@ -47,4 +54,25 @@
 .loaderBarCircle{
     display: flex;
     justify-content: center;
+}
+
+.kb-tos-wrapper.highlight-words {
+    max-height: 365px !important;
+    margin-bottom: 40px;
+}
+
+.kb-list-item-active:before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
+    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
+    width: 4px;
+    height: 33px;
+    left: -4px;
+    border-radius: 16px;
+}
+
+.button, button, a {
+    cursor: pointer !important;
+    color: #106B99;
 }

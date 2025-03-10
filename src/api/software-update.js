@@ -9,7 +9,7 @@ export const updateList = async () => {
     };
   
     try {
-      const response = await fetch("https://admin.memate.au/api/update", requestOptions);
+      const response = await fetch("https://admin.memate.com.au/api/update", requestOptions);
       const result = await response.json(); 
       console.log("API response:", result);
   
@@ -32,7 +32,7 @@ export const updateListLatest = async () => {
     };
   
     try {
-      const response = await fetch("https://admin.memate.au/api/get-latest-five-update", requestOptions);
+      const response = await fetch("https://admin.memate.com.au/api/get-latest-five-update", requestOptions);
       const result = await response.json(); 
       return result;
   

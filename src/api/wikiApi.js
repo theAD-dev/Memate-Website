@@ -9,7 +9,7 @@ export const wikiBase = async () => {
     };
   
     try {
-      const response = await fetch("https://admin.memate.au/api/get-wiki", requestOptions);
+      const response = await fetch("https://admin.memate.com.au/api/get-wiki", requestOptions);
       const result = await response.json(); 
   
       return result;
@@ -32,7 +32,7 @@ export const wikiBaseId = async (idData ) => {
     };
   
     try {
-      const response = await fetch(`https://admin.memate.au/api/get-wiki-by-id/${idData }`, requestOptions);
+      const response = await fetch(`https://admin.memate.com.au/api/get-wiki-by-id/${idData }`, requestOptions);
       const result = await response.json(); 
   
       return Array.isArray(result.data) ? result.data : [];
@@ -54,7 +54,7 @@ export const wikiBaseDtails = async (titleSlug) => {
     };
   
     try {
-      const response = await fetch(`https://admin.memate.au/api/wiki-detail/${titleSlug}`, requestOptions);
+      const response = await fetch(`https://admin.memate.com.au/api/wiki-detail/${titleSlug}`, requestOptions);
       const result = await response.json(); 
   
   
@@ -80,7 +80,7 @@ export const wikiBaseDtails = async (titleSlug) => {
     };
   
     try {
-      const response = await fetch(`https://admin.memate.au/api/get-wiki?search=${searchQuery}`, requestOptions);
+      const response = await fetch(`https://admin.memate.com.au/api/get-wiki?search=${searchQuery}`, requestOptions);
       const result = await response.json(); 
   
       return result;

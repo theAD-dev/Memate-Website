@@ -32,7 +32,7 @@
   margin: auto;
 }
 .image-wrapper img {
-  width: 100%;
+  width: 70%;
 }
 
 
@@ -64,20 +64,20 @@
 
 .iphone-image {
   position: absolute;
-  right: 69px;
-  bottom: 28px;
+  right: 216px;
+  bottom: 22px;
 }
 .create-new-text {
   position: absolute;
-  bottom: 80px;
-  left: 18px;
+  bottom: 60px;
+  left: 128px;
 }
-.iphone-image img{
-  width: 215px;
+.iphone-image img {
+  width: 170px;
 }
 
-.metric-item img ,.create-new-text img{
-  width: 255px;
+.metric-item img, .create-new-text img {
+  width: 227px;
 }
 .create-new-model img {
   width: 215px;
@@ -94,8 +94,8 @@
 }
 .metric-item {
   position: absolute;
-  bottom: 22px;
-  left: -45px;
+  bottom: 9px;
+  left: 74px;
 }
 .macBook-image {
   width: 1060px;
@@ -141,6 +141,8 @@
 
 .businesses-mode {
   margin-top: 26px;
+  margin-bottom: 26px;
+  height: 50.4px !important;
 }
 
 .request-btn {
@@ -169,8 +171,39 @@
   outline: none;
   font-family: "sequel_sans" !important;
 }
+.gradientHeading.header-text {
+  font-size: 42px;
+  letter-spacing: 1px;
+  line-height: 80px;
+}
+.gradiientColor{
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(90deg, #1ab2ff 10.15%, #ffb258 69%);
+  -webkit-background-clip: text;
+}
+
+.children-wrapper .main-page {
+  margin-top: 88px;
+  padding-bottom: 104px;
+}
+
+.children-wrapper {
+  margin-top: 90px !important;
+  padding-bottom: 104px;
+}
 
 @media screen and (max-width: 767px) {
+  .gradientHeading {
+      font-size: 32px;
+      line-height: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .home-platform h1 {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1px;
+  }
   .home-platform h2 {
     font-size: 20px;
     line-height: 26px;
@@ -234,9 +267,9 @@ span.gradientAnimenate {
   padding: 0;
 }
 .how-to-use p {
-  font-size: 22px;
-  line-height: 28px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 0;
 }
 .to-replace-bold-text {
   margin-bottom: 5px;
@@ -262,7 +295,11 @@ span.gradientAnimenate {
     font-size: 68px;
     line-height: 74px;
 }
-
+.home-platform h1 {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
 .heding-text-top h1 br {
   display: none;
 }

@@ -200,15 +200,15 @@ img.graph-business {
   color: #FFF;
   font-size: 40px;
   font-style: normal;
-  font-weight: 600;
   line-height: 140%;
+  letter-spacing: 2px;
 }
 .inner-text p {
   color: #fff;
   font-size: 33px;
   font-style: normal;
   font-weight: 360;
-  line-height: 128%;
+  line-height: 112%;
   margin: 0px;
   font-family: "sequel_sans" !important;
 }
@@ -241,6 +241,11 @@ img.graph-business {
   align-items: center;
   justify-content: center;
 }
+.heading-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .real-time {
   display: flex;
   align-items: center;
@@ -255,6 +260,9 @@ img.graph-business {
   padding: 25px;
   width: 39%;
   min-height: 419.063px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gain-time p {
@@ -290,8 +298,8 @@ img.graph-business {
   text-align: center;
   font-size: 48px;
   font-style: normal;
-  font-weight: 900;
-  line-height: 67.2px;
+  font-weight: 600;
+  line-height: 56.2px;
   letter-spacing: 1px;
   font-family: "sequel_sans" !important;
 }
@@ -310,15 +318,13 @@ img.graph-business {
 
 .overcome-pro p {
   color: var(--ios-status-bar-status-bar-text-color, #000);
-  font-size: 48px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 360;
-  line-height: 140%;
+  line-height: 168%;
   text-align: center;
   margin: 0px;
   font-family: "sequel_sans" !important;
 }
-
 
 @media screen and (max-width: 767px) {
   .common-box-wrapper {

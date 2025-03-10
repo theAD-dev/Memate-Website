@@ -103,7 +103,7 @@ const CommonChallenges = () => {
           data-aos-anchor-placement="top-bottom">
             <div className="inner-text">
               <div className="inner-text-container">
-              <p><strong>Track Every Expense</strong> and Time Allocated to Your Projects</p>
+              <p className="heading-flex"><strong>Track Every Expense</strong> <br/></p><p> and Time Allocated to Your Projects</p>
               </div>
             </div>
           </div>
@@ -115,18 +115,14 @@ const CommonChallenges = () => {
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom">
             <div className="gain-time ">
-              <p>
-                Gain <span>real-time visibility</span> into all areas of your
-                business.
-              </p>
               <img className="graph-number" src={Images.graphAndNum} alt="graphAndNum" />
             </div>
             <div className="overcome-pro ">
               <div className="overcome-pro-content">
               <p>
                 {" "}
-                <span>Overcome scaling challenges </span> caused by manual
-                processes 
+                <span>Overcome scaling challenges </span> <p>caused by manual
+                processes</p>
               </p>
               </div>
             </div>

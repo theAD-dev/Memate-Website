@@ -1,5 +1,5 @@
 import "./style.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { Link, animateScroll as scroll } from "react-scroll";
 console.log('scroll: ', scroll);
@@ -635,135 +635,106 @@ Thank you for choosing meMate.</p>
 const TOS = () => {
   const [knowledge, setKnowledge] = useState([]);
   const [activeItem, setActiveItem] = useState(knowledgeData[0]?.id);
+  const observerRef = useRef(null);
+  const initialized = useRef(false);
 
   useEffect(() => {
     setKnowledge(knowledgeData);
   }, []);
 
-  const handleClick = (id) => {
-    setActiveItem(id);
-  };
+  useEffect(() => {
+    if (knowledge.length === 0) return;
+
+    const handleIntersection = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id.split('-')[1];
+          setActiveItem(Number(id));
+          
+          if (initialized.current) {
+            // window.history.replaceState(null, null, `#section-${id}`);
+          }
+        }
+      });
+    };
+
+    observerRef.current = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: '-30% 0px -40% 0px',
+      threshold: 0.2
+    });
+
+    const headings = document.querySelectorAll('.kb-section-heading');
+    headings.forEach(heading => observerRef.current.observe(heading));
+
+    requestAnimationFrame(() => {
+      const firstVisible = Array.from(headings).find(heading => {
+        const rect = heading.getBoundingClientRect();
+        return rect.top <= window.innerHeight * 0.5;
+      });
+      
+      setActiveItem(firstVisible ? 
+        Number(firstVisible.id.split('-')[1]) : 
+        knowledgeData[0].id
+      );
+      initialized.current = true;
+    });
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, [knowledge]);
+
+  // const handleClick = (id) => {
+  //   setActiveItem(id);
+  // };
 
   return (
     <>
       <Helmet>
         <title>Terms of Use: Guidelines for Using MeMate</title>
         <meta name="description" content="Check the terms of use for MeMate services. Understand your rights and responsibilities when using our platform for a seamless experience." />
-        <meta
-          property="og:title"
-          content="Terms of Use: Guidelines for Using MeMate"
-        />
-        <meta
-          property="og:description"
-          content="Check the terms of use for MeMate services. Understand your rights and responsibilities when using our platform for a seamless experience."
-        />
+        <meta property="og:title" content="Terms of Use: Guidelines for Using MeMate" />
+        <meta property="og:description" content="Check the terms of use for MeMate services. Understand your rights and responsibilities when using our platform for a seamless experience." />
       </Helmet>
+      
       <div className="kb-wrapper">
         <div className="tos-header">
           <p className="tos-section-heading" id="section1">
             Memate
           </p>
-          <p
-            className="tos-header-section-sub-heading tos-section-heading"
-            id="section1"
-          >
+          <p className="tos-header-section-sub-heading tos-section-heading">
             Terms of use
           </p>
         </div>
-        <div className="kb-left-wrapper kb-tos-wrapper">
-          {knowledge?.map((item, index) => (
-            <ul className="kb-list" key={index}>
-              <li
-                className={`kb-list-item ${
-                  activeItem === item.id ? "kb-list-item-active" : ""
-                }`}
-              >
+
+        <div className="kb-left-wrapper kb-tos-wrapper height-adjuster">
+          {knowledge.map((item) => (
+            <ul className="kb-list" key={item.id}>
+              <li className={`kb-list-item ${activeItem === item.id ? 'kb-list-item-active' : ''}`}>
                 <Link
-                  activeClass="kb-list-item-active"
                   to={`section-${item.id}`}
-                  spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={-100}
                   duration={500}
-                  onClick={() => handleClick(item.id)}
+                  onSetActive={() => setActiveItem(item.id)}
                 >
                   {item.name}
                 </Link>
-
-                {item.children && (
-                  <ul className="kb-nested-list">
-                    {item.children.map((subItem, subIndex) => (
-                      <li key={subIndex} className="kb-nested-list-item">
-                        <Link
-                          activeClass="kb-nested-list-item-active"
-                          to={`subsection-${subItem.id}`}
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration={500}
-                          onClick={() => handleClick(subItem.id)} // Handle click event for nested items
-                        >
-                          {subItem.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
               </li>
             </ul>
           ))}
         </div>
 
         <div className="kb-right-wrapper termsOfUse-section">
-          {knowledge?.map((item, index) => (
-            <div className="kb-right-section" key={index}>
+          {knowledge.map((item) => (
+            <div className="kb-right-section" key={item.id}>
               <h1 className="kb-section-heading" id={`section-${item.id}`}>
                 {item.name}
               </h1>
-              <div
-                className="kb-section-description"
-                dangerouslySetInnerHTML={{
-                  __html: item.description || "No description available",
-                }}
-              />
-              <br />
-
-              {item.children && (
-                <div className="kb-children-section ">
-                  {item.children.map((child, childIndex) => (
-                    <div key={childIndex}>
-                      <h2
-                        className="kb-child-heading"
-                        id={`subsection-${child.id}`}
-                      >
-                        {child.name}
-                      </h2>
-                      <p className="kb-child-date">
-                        {new Date(child.updated_at).toLocaleDateString()}
-                      </p>
-                      <p className="kb-child-description">
-                        {child.knowledge && (
-                          <>
-                            {child.knowledge.map(
-                              (knowledgeitem, knowledgeIndex) => (
-                                <div key={knowledgeIndex}>
-                                  <span
-                                    dangerouslySetInnerHTML={{
-                                      __html:
-                                        knowledgeitem.description ||
-                                        "No description available",
-                                    }}
-                                  />
-                                </div>
-                              )
-                            )}
-                          </>
-                        )}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              )}
+              <div dangerouslySetInnerHTML={{ __html: item.description }} />
             </div>
           ))}
         </div>

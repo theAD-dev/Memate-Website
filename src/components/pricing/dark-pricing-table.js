@@ -23,7 +23,7 @@ const PricingTable = () => {
       individuals:'For individuals',
       whatsInclude:'What’s included',
       YourSavings: `Your Savings: <span>-$179.73</span>`,
-      link:'https://dev.memate.com.au/requestdemo',
+      link:'https://app.memate.com.au/onboarding',
       action: 'Get started',
       features: ["Client Management", "Supplier Management", "Sales Pipeline","Project Management","Internal Chat","Invoicing","Statistic Reports","Profitability and Budgeting","Expenses"]
     },
@@ -37,7 +37,7 @@ const PricingTable = () => {
       companypara: 'Everything in Business + Employee and Contractor Management.',
       whatsInclude:'What’s included',
       individuals:'For individuals',
-      link:'https://dev.memate.com.au/requestdemo',
+      link:'https://app.memate.com.au/onboarding',
       action: 'Get started',
       features: ["Employee Management", "Time Sheets & Tracker", "Contractor Management","Job Scheduling","Company News","Task Management","Company Calendar"]
     },

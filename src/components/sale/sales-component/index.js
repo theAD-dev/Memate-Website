@@ -26,9 +26,9 @@ const SalesComponent = () => {
 
         <div className="sales-component-button-wrapper">
         <div  className="request-btn request-btn-bg">
-                <Link to="https://dev.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
+                <Link to="https://app.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
               </div>
-        {/* <Link to='https://dev.memate.com.au/requestdemo'><button>Request a Demo</button></Link> */}
+      
         </div>
       </div>
     </div>

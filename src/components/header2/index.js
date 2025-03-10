@@ -2,25 +2,16 @@ import { useEffect, useState, useRef } from "react";
 import menuImages from "../../assests/menu-images";
 import Images from "../../assests/images";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-// import KeyboardControlKeyIcon from "@mui/icons-material/KeyboardControlKey";
-// import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import { useNavigate, useLocation } from "react-router-dom";
 import { MenuAbout, MenuFeature, MenuIndustry, MenuLegal, MenuNews, MenuRessources } from "./menu";
 import "./style.css";
-// import style from './header-menu.module.scss';
-import { useLocation } from "react-router-dom"; 
 import MenuData from "../../layout/mobile-menu/menu-data";
-
-// import GradientBorderButton from "../../layout/hover-button";
 import TronButton from "../../layout/hover-button/tourn-but";
 
 const DownBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
-// const DownWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-white-arrow.svg"
-const DownColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-color-arrow.svg"
-const RightColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-color-arrow.svg"
-// const RightWhiteArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-white-arrow.svg"
-const RightBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg"
+const DownColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-color-arrow.svg";
+const RightColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-color-arrow.svg";
+const RightBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
 
 const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -28,9 +19,9 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const menuRef = useRef(null);
-  const handleLogoClick = () => {
-    navigate("/");
-  };
+  const aboutButtonRef = useRef(null);
+
+  const handleLogoClick = () => navigate("/");
 
   const menuItemList = [
     {
@@ -59,96 +50,118 @@ const Header = () => {
     },
   ];
 
+  useEffect(() => {
+    const pathToMenuId = {
+      "/features": 1,
+      "/industries": 2,
+      "/news-stories": 3,
+      // "/news": 3,
+      "/customer-stories": 3,
+      "/memate-software-updates": 3,
+      "/about": 4,
+      // "/contact-us": 4,
+      "/legal": 5,
+      "/terms-and-conditions": 5,
+      "/privacy": 5,
+      "/terms-of-use": 5,
+      "/security": 5,
+      "/resources": 6,
+      "/supplier-database": 6,
+      "/knowledge-base": 6,
+      "/delete-request": 6,
+      "/memate-wiki": 6,
+    };
+
+    const matchedId = Object.entries(pathToMenuId).find(([path]) =>
+      location.pathname.startsWith(path)
+    )?.[1] || 1;
+
+    setSelectedMenuItem(matchedId);
+  }, [location.pathname]);
+
   const renderContent = () => {
+    const handleSubItemClick = (menuId) => setSelectedMenuItem(menuId);
+
     switch (selectedMenuItem) {
-      case 1:
-        return <MenuFeature />;
-      case 2:
-        return <MenuIndustry />;
-      case 3:
-        return <MenuNews />;
-      case 4:
-        return <MenuAbout />;
-      case 5:
-        return <MenuLegal/>;
-      case 6:
-        return <MenuRessources/>;
-      default:
-        return null;
+      case 1: return <MenuFeature onSubItemClick={() => handleSubItemClick(1)} />;
+      case 2: return <MenuIndustry onSubItemClick={() => handleSubItemClick(2)} />;
+      case 3: return <MenuNews onSubItemClick={() => handleSubItemClick(3)} />;
+      case 4: return <MenuAbout onSubItemClick={() => handleSubItemClick(4)} />;
+      //done till here
+      case 5: return <MenuLegal onSubItemClick={() => handleSubItemClick(5)} />;
+      case 6: return <MenuRessources onSubItemClick={() => handleSubItemClick(6)} />;
+      default: return null;
     }
   };
 
-  useEffect(() => {}, [showDropDown, selectedMenuItem]);
-
-
   useEffect(() => {
-    // Add click event listener to detect outside clicks
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        aboutButtonRef.current &&
+        !aboutButtonRef.current.contains(event.target)
+      ) {
         setShowDropDown(false);
       }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [menuRef]);
-
-
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [menuRef, aboutButtonRef]);
 
   return (
     <div>
- <MenuData />
+      <MenuData />
       <div className="navbar">
-        <div className="navbar-container" >
-
+        <div className="navbar-container">
           <div className="navbar-logo-wrapper" onClick={handleLogoClick}>
             <img src={Images.logo} alt="logo" />
           </div>
-          <div className="header-navbar-container">
 
+          <div className="header-navbar-container">
             <div
-              className={`navbar-item navbar-item-flex-item rightAboutArrow  ${
-                location.pathname === "/about", showDropDown ? "navbar-item-active "  : ""
-              }`}
-              onClick={() => setShowDropDown(!showDropDown)} 
+              ref={aboutButtonRef}
+              className={`navbar-item navbar-item-flex-item rightAboutArrow ${(location.pathname === "/about", showDropDown) ? "navbar-item-active" : ""
+                }`}
+              onClick={() => setShowDropDown(prev => !prev)}
             >
-                 <p>About</p>
-                {showDropDown ? <img src={DownColorArrow} alt="DownColorArrow" /> : <img src={DownBlackArrow} alt="DownBlackArrow" /> }
+              <p>About</p>
+              {showDropDown ? <img src={DownColorArrow} alt="DownColorArrow" /> : <img src={DownBlackArrow} alt="DownBlackArrow" />}
             </div>
+
             <div className={`navbar-item ${location.pathname === "/pricing" ? "navbar-item-active" : ""}`}>
-            <Link to="/pricing" className="navbar-link"><p>Pricing</p></Link>
+              <Link to="/pricing" className="navbar-link"><p>Pricing</p></Link>
             </div>
+
             <div className={`navbar-item ${location.pathname === "/news" ? "navbar-item-active" : ""}`}>
-                <Link to="/news" className="navbar-link"><p>News</p></Link>
+              <Link to="/news" className="navbar-link"><p>News</p></Link>
             </div>
-            <div className={`navbar-item ${location.pathname === "/contact-us" ? "navbar-item-active" : ""}`} style={{marginRight: "0px"}}>
-                <Link to="/contact-us" className="navbar-link"><p>Contact us</p></Link>
+
+            <div className={`navbar-item ${location.pathname === "/contact-us" ? "navbar-item-active" : ""}`} style={{ marginRight: "0px" }}>
+              <Link to="/contact-us" className="navbar-link"><p>Contact us</p></Link>
             </div>
           </div>
-          
-          <div className={`navbar-log-in`}>
-          <Link to="https://dev.memate.com.au/"  target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Log In" /></Link>
+
+          <div className="navbar-log-in">
+            <Link to="https://app.memate.com.au/" target="_blank" className="nav-btn--get-started navbar-link">
+              <TronButton text="Log In" />
+            </Link>
           </div>
 
           {showDropDown && (
-             <div ref={menuRef} className="header-menu-wrapper">
+            <div ref={menuRef} className="header-menu-wrapper">
               <div className="header-menu-header-div">
                 <div className="header-menu-header-div-menu">
-                  {menuItemList.map((menu, key) => {
+                  {menuItemList.map((menu) => {
                     return (
                       <div
                         key={menu.id}
                         style={{ cursor: "pointer" }}
-                        className={
-                          selectedMenuItem === menu.id
-                            ? "header-menu-item"
-                            : "header-menu-item-unselected"
-                        }
-               
-                        onMouseEnter={() => setSelectedMenuItem(menu.id)} 
-                        onMouseLeave={() => setSelectedMenuItem(menu.id)} 
+                        className={selectedMenuItem === menu.id ? "header-menu-item" : "header-menu-item-unselected"}
+
+                        onMouseEnter={() => setSelectedMenuItem(menu.id)}
+                      // onMouseLeave={() => setSelectedMenuItem(menu.id)} 
                       >
                         <div
                           className={
@@ -159,7 +172,7 @@ const Header = () => {
                         >
                           <img
                             src={
-                                menu.unselectedIcon
+                              menu.unselectedIcon
                             } alt={menu.unselectedIcon}
                           />
                           <p
@@ -183,7 +196,7 @@ const Header = () => {
                               : "menu-next-icon-wrapper-unselected"
                           }
                         >
-                          {selectedMenuItem === menu.id ? <img src={RightColorArrow} alt="RightColorArrow"/> : <img src={RightBlackArrow} alt="RightBlackArrow" style={{ transform: "rotate(-90deg)" }} /> }
+                          {selectedMenuItem === menu.id ? <img src={RightColorArrow} alt="RightColorArrow" /> : <img src={RightBlackArrow} alt="RightBlackArrow" style={{ transform: "rotate(-90deg)" }} />}
 
                         </div>
                       </div>
@@ -197,7 +210,7 @@ const Header = () => {
                   <img src={Images.logo} alt="logo" />
                   <div className="header-menu-memate-feature">
                     <div className="header-menu-feature">
-                      <img src={menuImages.meMateCheck}  alt="meMateCheck"/>
+                      <img src={menuImages.meMateCheck} alt="meMateCheck" />
                       <p className="header-menu-feature-text">
                         Easy to Learn adn User
                       </p>
@@ -209,12 +222,12 @@ const Header = () => {
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} alt="meMateCheck"/>
+                      <img src={menuImages.meMateCheck} alt="meMateCheck" />
                       <p className="header-menu-feature-texts">Workflow</p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} alt="meMateCheck"/>
+                      <img src={menuImages.meMateCheck} alt="meMateCheck" />
                       <p className="header-menu-feature-texts">
                         Single database
                       </p>
@@ -228,17 +241,17 @@ const Header = () => {
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} alt="meMateCheck"/>
+                      <img src={menuImages.meMateCheck} alt="meMateCheck" />
                       <p className="header-menu-feature-texts">CRM & ERP</p>
                     </div>
 
                     <div className="header-menu-features">
-                      <img src={menuImages.meMateCheck} alt="meMateCheck"/>
+                      <img src={menuImages.meMateCheck} alt="meMateCheck" />
                       <p className="header-menu-feature-texts">Reporting</p>
                     </div>
                   </div>
                   <div className="request-a-button-wrapper">
-                   <Link to='https://dev.memate.com.au/requestdemo'  target="_blank"><img src={menuImages.RequestAdemo} alt="RequestAdemo"/> </Link>
+                    <Link to='https://app.memate.com.au/requestdemo' target="_blank"><img src={menuImages.RequestAdemo} alt="RequestAdemo" /> </Link>
                   </div>
                 </div>
               </div>
@@ -297,15 +310,15 @@ const Header = () => {
                 </div>
                 <div className="header-menu-footer-left-content">
                   <div className="header-footer-legal">
-                    <img src={menuImages.unselectedSales} alt="unselectedSales"/>
-                    <Link to='/contact-sales'> <p className="header-footer-legal-text">Contact Sales</p> </Link>
+                    <img src={menuImages.unselectedSales} alt="unselectedSales" />
+                    <Link to='/contact-us'> <p className="header-footer-legal-text">Contact Sales</p> </Link>
                   </div>
                   <div className="header-footer-legal">
                     <img
                       src={menuImages.unselectedWatchDemo} alt="unselectedWatchDemo"
                       style={{ marginTop: "-2px" }}
                     />
-                    <Link to='/watch-demo'> <p className="header-footer-legal-text">Watch demo</p> </Link>
+                    <Link to='#'> <p className="header-footer-legal-text">Watch demo</p> </Link>
                   </div>
                 </div>
               </div>

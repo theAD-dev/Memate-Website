@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import { Link } from "react-router-dom";
 const StartupsHeader = () => {
   return (
     <div className='startup-header-wrapper' data-aos="fade-up"
@@ -17,7 +18,7 @@ const StartupsHeader = () => {
       <h1 className='startup-top-heading'>Management Software for </h1>
       <p className='startup-middle-heading'>Startups and<br/> New Businesses</p>
       <p className='startup-heading-content'>meMate is designed to help you kickstart your business with the right workflow from day one. It’s the ideal tool to set up your operations smoothly and efficiently as you grow.</p>
-      <button className='startup-heading-button'>Request a Demo</button>
+      <Link to="https://app.memate.com.au/requestdemo" target="_blank"><button className='startup-heading-button'>Book a Demo</button></Link>
     </div>
   )
 }

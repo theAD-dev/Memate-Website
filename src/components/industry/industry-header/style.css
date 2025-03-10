@@ -31,7 +31,7 @@ h1.industry-top-heading {
   font-style: normal;
   font-weight: 420;
   line-height: normal;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .industry-middle-heading {
@@ -43,10 +43,9 @@ h1.industry-top-heading {
   font-size: 88px;
   font-style: normal;
   font-weight: 700;
-  line-height: 72px; 
-  letter-spacing: -6px;
+  line-height: 72px;
+  letter-spacing: 0px;
 }
-
 .industry-heading-content {
   margin-top: 23px;
   max-width: 578px;
@@ -81,6 +80,12 @@ h1.industry-top-heading {
     width: 100%;
     padding: 0 15px;
 }
+.industry-heading-button {
+  padding: 14px 0px;
+}
+h1.industry-top-heading {
+  font-size: 28px;
+}
 .industry-header-wrapper {
   padding: 32px 25px 43px;
   max-width: 100%;
@@ -100,6 +105,7 @@ p.industry-middle-heading br {
 }
 .industry-heading-content {
   margin-top: 0;
+  max-width: 100%;
 }
 .industry-header-wrapper::before {
   position: absolute;

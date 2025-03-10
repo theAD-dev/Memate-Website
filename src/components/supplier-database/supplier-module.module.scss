@@ -61,17 +61,17 @@ h1.midheading{
     .searchIcon {
         display: flex;
         align-items: center;
-        padding: 0 33px;
+        padding: 0 16px;
     }
     input[type="text"]{
-        padding: var(--spacing-3xl, 24px) var(--spacing-4xl, 32px);
+        padding: var(--spacing-2xl, 10px) var(--spacing-3xl, 20px);
         bottom: 0;
         width: 94%;
         box-shadow: none;
         border: 0;
         border-radius: 31px;
         color: var(--Gray-400, #98A2B3);
-        font-size: 32px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 405;
         line-height: 24px; 
@@ -252,12 +252,14 @@ h1.midheading{
         font-weight: 320;
         line-height: 28px;
         img{
-            border-radius: 19px;
-            border: 0.75px solid #c6c8cc;
+            border-radius: 0;
+            border: 0;
             margin-right: 8px;
-            width: 28px;
-            height: 28px; 
+            width: 151px;
+            height: 46px;
+            object-fit: contain;
         }
+        
     }
     }
     }

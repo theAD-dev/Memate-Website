@@ -22,9 +22,9 @@ const NextStep = (props) => {
       </div>
       <div className="next-step-btn-container">
       <div  className="request-btn request-btn-bg">
-                <Link to="https://dev.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text={props.text} /></Link>
+                <Link to="https://app.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text={props.text} /></Link>
               </div>
-        {/* <Link to='https://dev.memate.com.au/requestdemo'><button>{props.text}</button></Link> */}
+
       </div>
     </div>
   );

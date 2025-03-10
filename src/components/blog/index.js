@@ -5,19 +5,16 @@ import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
-  
+
   const formatDateWithOrdinal = (dateString) => {
     try {
-      const date = new Date(dateString.replace(/(\d+)(st|nd|rd|th)/, '$1')); // Remove suffix for parsing
-
-      // Get day, month, and year
+      const date = new Date(dateString.replace(/(\d+)(st|nd|rd|th)/, '$1'));
       const day = date.getDate();
       const month = date.toLocaleString('en-US', { month: 'long' });
       const year = date.getFullYear();
 
-      // Add ordinal suffix to the day
       const ordinalSuffix = (n) => {
-        if (n > 3 && n < 21) return 'th'; // Handles 11th–13th
+        if (n > 3 && n < 21) return 'th'; 
         switch (n % 10) {
           case 1: return 'st';
           case 2: return 'nd';
@@ -29,29 +26,34 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
       return `${day}${ordinalSuffix(day)} ${month}, ${year}`;
     } catch (error) {
       console.error("Error formatting date:", error);
-      return dateString; // Return original string if conversion fails
+      return dateString;
     }
   };
-  return (
+  const filteredPosts = activeCategory === 0
+    ? []
+    : posts.filter(post => post.category.id === activeCategory);
+
+    console.log("FILTERED -- ", filteredPosts);
+    return (
     < div id="blogGrid">
-    <Helmet>
-    <title>meMate News | Latest Business Technology News, Software and Regulation updates</title>
-    <meta name="description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." />
-    <meta property="og:title" content="meMate News | Latest Business Technology News, Software and Regulation updates" />
-    <meta property="og:description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." /> 
-</Helmet>
+      <Helmet>
+        <title>meMate News | Latest Business Technology News, Software and Regulation updates</title>
+        <meta name="description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." />
+        <meta property="og:title" content="meMate News | Latest Business Technology News, Software and Regulation updates" />
+        <meta property="og:description" content="Discover the latest news on small business technology and software updates. Stay informed about trends in CRM, ERP, and project management for Australian businesses." />
+      </Helmet>
 
       <div className="parent-blog-page ">
         <div className="parent-blog">
           <div className="heading-container heading-container-categories" >
             <h1 className="heading-blog">
-              latest <br></br>articles
+             Articles
             </h1>
             <div className="heading-blog-description">
               <h1 className="heading-text-blog">Latest Small Business <br />Technology News and Software Updates</h1>
             </div>
             <div className="dog-img-container1 dog-img-container">
-              <img className="dog-img" src={Images.blogImgDog}></img>
+              <img className="dog-img" src={Images.blogImgDog} alt="unrendered" />
             </div>
           </div>
           <div className="categoriesMainWrap">
@@ -68,19 +70,79 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
               ))}
             </div>
 
-            {/* Posts under Active Category */}
-            <div className="categories">
-              {PostsCategories?.map((postCat) => (
-                <div key={postCat.id}>
-                  {activeCategory === postCat.id &&
-                    postCat.posts?.map((post) => (
-                      <div key={post.id} style={{ marginBottom: "0.5rem" }}>
-                        {post.title}
+            {/* Updated Posts under Active Category %blame @ramansaini14 for changes 
+            // status: committed on vps tunnel and changes staged automatically */}
+            {filteredPosts.length !== 0 ?
+            <>
+                    {filteredPosts.length > 5 ? 
+                    <>
+                    <div className="categories">
+                      {filteredPosts?.map((post) => (
+                        <div key={post.id} className="img-container-3-div "  data-aos="fade-up"
+                        data-aos-offset="50"
+                        data-aos-delay="50"
+                        data-aos-duration="2500"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-bottom">
+                          <div className="img-container-3-img1-div" style={{ marginBottom: "0.5rem" }}>
+                            <Link to={`/news/${post.slug}`}>
+                              <img
+                                className="img-container-3-img-1"
+                                src={post.featured_img_url || Images.blogImgempty}
+                                alt={post.title}
+                              />
+                            </Link>
+                            <div className="img-heading-container">
+                              <div className="date-A">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
+                              <div className="date-heading-A"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
+                            </div>
+                            <div className='postCategory'>
+                              <Link to={`/news/category/${post.category.id}`}>{post.category.title}</Link>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                      <div className="nextbtn-container-A">
+                          {totalPosts > posts?.length && <button onClick={handleNext} className="next-page-btn-A">{loading ? "Loading..." : "Next page"}</button>}
                       </div>
-                    ))}
-                </div>
-              ))}
-            </div>
+                    </div>
+                    </> :
+                      <>
+                      <div className="categories">
+                        {filteredPosts?.map((post) => (
+                          <div key={post.id} className="img-container-3-div"  data-aos="fade-up"
+                          data-aos-offset="50"
+                          data-aos-delay="50"
+                          data-aos-duration="2500"
+                          data-aos-mirror="true"
+                          data-aos-once="false"
+                          data-aos-anchor-placement="top-bottom">
+                            <div className="img-container-3-img1-div" style={{ marginBottom: "0.5rem" }}>
+                              <Link to={`/news/${post.slug}`}>
+                                <img
+                                  className="img-container-3-img-1"
+                                  src={post.featured_img_url || Images.blogImgempty}
+                                  alt={post.title}
+                                />
+                              </Link>
+                              <div className="img-heading-container">
+                                <div className="date-A">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
+                                <div className="date-heading-A"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
+                              </div>
+                              <div className='postCategory'>
+                                <Link to={`/news/category/${post.category.id}`}>{post.category.title}</Link>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      </>
+                      }
+                      </>
+                      : (activeCategory !==0) ? ((loading)? <div style={{display: "flex", justifyContent: 'center',  height: "300px", alignItems: 'center'}}><p>Loading...</p></div> : <div style={{ display: 'flex', justifyContent: 'center',  height: "300px", alignItems: 'center'}}><p>No Posts</p></div> ) : ""
+                       }
+              
           </div>
 
           {
@@ -99,7 +161,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                       height: '625px',
                       marginTop: '-329px',
                       borderRadius: '30px',
-                      marginBottom: '29px',
+                      marginBottom: '20px',
 
                     }}
                     data-aos="fade-up"
@@ -144,6 +206,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                 data-aos-anchor-placement="top-bottom">
                 <div className="blog-img-container-2-img1-div ">
                   {postsLatest.length > 2 && (
+                    // eslint-disable-next-line jsx-a11y/img-redundant-alt
                     <Link to={`/news/${postsLatest[1].slug}`}><img
                       className="img-container-2-img-1"
                       src={postsLatest[1]?.featured_img_url || Images.blogImgempty}
@@ -157,12 +220,13 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     </div>
                     <div className="date-heading-A"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
                     <div className='postCategory'>
-                    <Link to={`/news/category/${postsLatest[1]?.category.id}`}>{postsLatest[1]?.category.title}</Link>
+                      <Link to={`/news/category/${postsLatest[1]?.category.id}`}>{postsLatest[1]?.category.title}</Link>
                     </div>
                   </div>
                 </div>
                 <div className="blog-img-container-2-img2-div ">
                   {postsLatest.length > 2 && (
+                    // eslint-disable-next-line jsx-a11y/img-redundant-alt
                     <Link to={`/news/${postsLatest[2]?.slug}`}><img
                       className="img-container-2-img-2"
                       src={postsLatest[2]?.featured_img_url || Images.blogImgempty}
@@ -176,7 +240,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     </div>
                     <div className="date-heading-A"><Link to={`/news/${postsLatest[2]?.slug}`}>{postsLatest[2]?.title}</Link></div>
                     <div className='postCategory'>
-                    <Link to={`/news/category/${postsLatest[2]?.category.id}`}>{postsLatest[2]?.category.title}</Link>
+                      <Link to={`/news/category/${postsLatest[2]?.category.id}`}>{postsLatest[2]?.category.title}</Link>
                     </div>
                   </div>
                 </div>
@@ -185,13 +249,16 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
             </>
           }
 
-          <span className="latest-article-heading" data-aos="fade-up"
+          {/* {hide this and do not load data when other tabs gets hits} */}
+          {activeCategory === 0 ? 
+          <>
+            <span className="latest-article-heading" data-aos="fade-up"
             data-aos-offset="50"
             data-aos-delay="50"
             data-aos-duration="2000"
             data-aos-mirror="true"
             data-aos-once="false"
-            data-aos-anchor-placement="top-bottom">Latest Articles</span>
+            data-aos-anchor-placement="top-bottom">Articles</span>
           <div className="img-container-3 parent-blog-pageWrap " data-aos="fade-up"
             data-aos-offset="50"
             data-aos-delay="50"
@@ -199,13 +266,13 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom">
-           {posts?.slice(3).map((post) => (
+            {posts?.slice(3).map((post) => (
               <div key={post.id} className="img-container-3-div">
                 <div className="img-container-3-img1-div">
                   <Link to={`/news/${post.slug}`}>
                     <img
                       className="img-container-3-img-1"
-                      src={post.featured_img_url || Images.blogImgempty} // Use demo image if featured_img_url is null
+                      src={post.featured_img_url || Images.blogImgempty} // Used demo image if featured_img_url is null
                       alt={post.title}
                     />
                   </Link>
@@ -214,15 +281,19 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     <div className="date-heading-A"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
                   </div>
                   <div className='postCategory'>
-                   <Link to={`/news/category/${post.category.id}`}>{post.category.title}</Link>
+                    <Link to={`/news/category/${post.category.id}`}>{post.category.title}</Link>
                   </div>
                 </div>
               </div>
             ))}
-          </div>
-          <div className="nextbtn-container-A">
-            {totalPosts > posts?.length && <button onClick={handleNext} className="next-page-btn-A">{loading ? "Loading..." : "Next page"}</button>}
-          </div>
+                <div className="nextbtn-container-A">
+                  {totalPosts > posts?.length && <button onClick={handleNext} className="next-page-btn-A">{loading ? "Loading..." : "Load More"}</button>}
+                </div>
+          </div> 
+          </>: <div></div>
+          }
+          
+          {/* =============end  */}
         </div>
 
       </div>

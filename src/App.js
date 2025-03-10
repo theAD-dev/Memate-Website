@@ -97,7 +97,7 @@ function App() {
   const [totalPosts, setTotalPosts] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const limit = 9;
+  const limit = 12;
 
   useEffect(() => {
     const fetchDataLatest = async () => {
@@ -131,10 +131,15 @@ function App() {
 
   const [newposts, setNewPosts] = useState();
 
+
+  // added multiple rerendering of useEffect if page is clicked twice %blame @ramansaini14 for changes 
+  // status: committed on vps tunnel and changes staged automatically
   const handleTabClick = (categoryId) => {
-    setPosts([]);
-    setActiveCategory(categoryId);
-    setCurrentPage(1);
+    if (activeCategory !== categoryId) {
+      setActiveCategory(categoryId);
+      setPosts([]);
+      setCurrentPage(1);
+    }
   };
 
   // PostsCategories======================
@@ -199,14 +204,14 @@ function App() {
     };
   }, [location.pathname]);
   
-  useEffect(() => {
-    const currentHost = window.location.hostname;
-    if (currentHost === "memate.com.au") {
-      const newUrl = `https://memate.au${window.location.pathname}${window.location.search}`;
-      window.location.replace(newUrl); // This performs the redirect
-    }
-  }, []);
-
+  // useEffect(() => {
+  //   const currentHost = window.location.hostname;
+  //   if (currentHost === "memate.com.au") {
+  //     const newUrl = `https://memate.com.au${window.location.pathname}${window.location.search}`;
+  //     window.location.replace(newUrl); 
+  //   }
+  // }, []);
+  
   return (
     <div className="App">
       <ScrollToTop />
@@ -301,3 +306,4 @@ export default App;
 
 
 
+// upda
