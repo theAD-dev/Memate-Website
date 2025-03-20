@@ -373,7 +373,7 @@ margin-right: 14px;
 .newsWrapMobile .newsWrapbox p span {
   color: #29292b;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 18px;
   font-style: normal;
   font-weight: 420;

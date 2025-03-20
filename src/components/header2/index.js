@@ -116,7 +116,7 @@ const Header = () => {
       <div className="navbar">
         <div className="navbar-container">
           <div className="navbar-logo-wrapper" onClick={handleLogoClick}>
-            <img src={Images.logo} alt="logo" />
+            <img src={Images.logo} alt="logo" type="image/svg+xml" />
           </div>
 
           <div className="header-navbar-container">
@@ -207,7 +207,7 @@ const Header = () => {
                   {renderContent()}
                 </div>
                 <div className="header-menu-header-div-memate-component">
-                  <img src={Images.logo} alt="logo" />
+                  <img src={Images.logo} alt="logo" type="image/svg+xml" />
                   <div className="header-menu-memate-feature">
                     <div className="header-menu-feature">
                       <img src={menuImages.meMateCheck} alt="meMateCheck" />
@@ -307,6 +307,22 @@ const Header = () => {
                       Resources
                     </p>
                   </div>
+                  <div
+  className={`header-footer-legal header-footer-faqs ${location.pathname === "/faqs" ? "header-footer-legal-text-selected" : ""}`}
+  style={{ cursor: "pointer" }}
+>
+  <Link to="/faqs">
+    <img
+      src={location.pathname === "/faqs" ? menuImages.selectedLegal : menuImages.unselectedLegal}
+      alt="faqs-icon"
+    />
+    
+    <p className={location.pathname === "/faqs" ? "header-footer-legal-text-selected" : "header-footer-legal-text"}>
+    &nbsp; FAQs
+    </p>
+  </Link>
+</div>
+
                 </div>
                 <div className="header-menu-footer-left-content">
                   <div className="header-footer-legal">

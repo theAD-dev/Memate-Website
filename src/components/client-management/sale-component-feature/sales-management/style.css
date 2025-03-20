@@ -43,12 +43,12 @@
 }
 
 .sales-type {
-  font-family: "sequel_sans_semi_bold_disp" !important;
   color: #29292b;
-  font-size: 58px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 420;
   line-height: 50px;
+  font-family: 'sequel_sans_bold_disp'!important;
 }
 @media screen and (max-width: 767px) {
   .sales-heading-sales {

@@ -27,7 +27,7 @@ const CommonChallenges = () => {
               <div className="met-points" >
                 <img className="main-bg-img" src={Images.cardBg} alt="cardBg" />
                 <div className="me-meta-image">
-                  <img src={Images.metalogo} alt="metalogo" />
+                  <img src={Images.metalogo} alt="metalogo" type="image/svg+xml" />
                   <p className="card-text">
                     Establish comprehensive control within the company 24/7 from
                     any point in the world.
@@ -41,40 +41,40 @@ const CommonChallenges = () => {
                   </div>
                   <div className="icons">
                     <div className="user-prof">
-                      <img src={Images.profileUser} alt="profileUser" />
+                      <img src={Images.profileUser} alt="profileUser" type="image/svg+xml" />
                     </div>
                     <div className="user-prof">
-                      <img src={Images.exportTag} alt="exportTag" />
+                      <img src={Images.exportTag} alt="exportTag" type="image/svg+xml" />
                     </div>
                     <div className="user-prof">
-                      <img src={Images.note} alt="note" />
+                      <img src={Images.note} alt="note" type="image/svg+xml" />
                     </div>
                     <div className="user-prof">
-                      <img src={Images.suppliers} alt="suppliers"/>
+                      <img src={Images.suppliers} alt="suppliers" type="image/svg+xml" />
                     </div>
                     <div className="user-prof">
-                      <img src={Images.graph} alt="graph"/>
+                      <img src={Images.graph} alt="graph" type="image/svg+xml" />
                     </div>
                     <div className="user-prof">
-                      <img src={Images.iconWork} alt="iconWork" />
+                      <img src={Images.iconWork} alt="iconWork" type="image/svg+xml" />
                     </div>
                     <div className="user-prof">
-                      <img src={Images.calender} alt="calender"/>
+                      <img src={Images.calender} alt="calender" type="image/svg+xml" />
                     </div>
                     <div className="user-prof">
-                      <img src={Images.shopicon} alt="shopicon" />
+                      <img src={Images.shopicon} alt="shopicon" type="image/svg+xml" />
                     </div>
                     <div className="user-prof">
-                      <img src={Images.emptyWallet} alt="emptyWallet" />
+                      <img src={Images.emptyWallet} alt="emptyWallet" type="image/svg+xml" />
                     </div>
                     <div className="user-prof">
-                      <img src={Images.iconDashb} alt="iconDashb"/>
+                      <img src={Images.iconDashb} alt="iconDashb" type="image/svg+xml"/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.iconPople} alt="iconPople"/>
+                      <img src={Images.iconPople} alt="iconPople" type="image/svg+xml"/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.iconApproval} alt="iconApproval"/>
+                      <img src={Images.iconApproval} alt="iconApproval" type="image/svg+xml"/>
                     </div>
                   </div>
                 </div>
@@ -88,9 +88,9 @@ const CommonChallenges = () => {
                 </p>
               </div>
               <div className="business-profile">
-                <img className="image-business" src={Images.busprofile} alt="busprofile" />
-                <img className="mask-business" src={Images.mask} alt="mask" />
-                <img className="graph-business" src={Images.graphBuss} alt="graphBuss"/>
+                <img className="image-business" src={Images.busprofile} alt="busprofile" type="image/svg+xml"/>
+                <img className="mask-business" src={Images.mask} alt="mask" type="image/svg+xml" />
+                <img className="graph-business" src={Images.graphBuss} alt="graphBuss" type="image/svg+xml" />
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ const CommonChallenges = () => {
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom">
             <div className="gain-time ">
-              <img className="graph-number" src={Images.graphAndNum} alt="graphAndNum" />
+              <img className="graph-number" src={Images.graphAndNum} alt="graphAndNum" type="image/svg+xml" />
             </div>
             <div className="overcome-pro ">
               <div className="overcome-pro-content">

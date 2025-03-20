@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import "./style.css";
-import { Link, useParams, useNavigate, Navigate } from 'react-router-dom';
+import { Link, useParams, useNavigate, Navigate, Route } from 'react-router-dom';
 import Images from "../../assests/blog-images";
 import { blogSingle } from '../../api/blogAPI';
 import SubscribeForm from './subscribe';
 import ShareComponent from './ShareComponent';
 import { Helmet } from 'react-helmet';
+// import ErrorPage from '../../pages/error-page';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 
@@ -62,7 +63,9 @@ const Single = ({postsSingle, postsLatest }) => {
           const data = await blogSingle(slug); 
           setPost(data);
           if (data.error === 'News article not found') {
-            navigate('/404'); 
+            navigate('/404', { state: { num: 3 } });
+            console.log("working")
+            // <Route exact element={<ErrorPage num={3} />} />
           }
         } catch (error) {
           console.error("Error fetching post:", error);

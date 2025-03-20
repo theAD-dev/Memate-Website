@@ -102,7 +102,7 @@ const Footer = () => {
                 <Link to="/customer-stories">Customer Stories</Link>
                 <Link to="/supplier-database">Supplier Database</Link>
                 <Link to="/sitemap">Sitemap</Link>
-                <Link to="hhttps://app.memate.com.au/requestdemo" target="_blank">Request a Demo</Link>
+                <Link to="https://app.memate.com.au/requestdemo" target="_blank">Request a Demo</Link>
                 <Link to="https://app.memate.com.au/onboarding" target="_blank">My Account</Link>
               </div>
             </div>
@@ -130,7 +130,7 @@ const Footer = () => {
               <Link to="/">MeMate vs SalesForce</Link>
               <Link to="/">MeMate vs Airtable</Link>
               <Link to="/">MeMate vs Wrike</Link>
-              <Link to="/">MeMate vs Servicem8</Link>
+              <Link to="/memate-vs-servicem8">MeMate vs Servicem8</Link>
               <Link to="/">MeMate vs Reckon</Link>
               <Link to="/">MeMate vs Xero</Link>
               <Link to="/">MeMate vs ms Project</Link>
@@ -156,7 +156,7 @@ const Footer = () => {
               <Link to="/contact-us">Contact Us</Link>
               <Link to="/delete-request">Delete Request</Link>
                 <Link to="/memate-software-updates">Software Update </Link>
-                <Link to="/memate-faqs">Memate FAQs</Link>
+                <Link to="/faqs">FAQs</Link>
               </div>
             </div>
 

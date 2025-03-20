@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 420;
   line-height: 49.56px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   max-width: 741px;
   margin: auto;
 }
@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 420;
   line-height: 49.56px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   max-width: 741px;
   margin: auto;
 }
@@ -68,9 +68,9 @@
   bottom: 22px;
 }
 .create-new-text {
-  position: absolute;
-  bottom: 60px;
+  bottom: 51px;
   left: 128px;
+  position: absolute;
 }
 .iphone-image img {
   width: 170px;
@@ -93,9 +93,9 @@
   margin: 0 auto;
 }
 .metric-item {
-  position: absolute;
-  bottom: 9px;
+  bottom: 2px;
   left: 74px;
+  position: absolute;
 }
 .macBook-image {
   width: 1060px;
@@ -121,7 +121,7 @@
   font-style: normal;
   font-weight: 420;
   line-height: 35px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   margin: 0px;
 }
 

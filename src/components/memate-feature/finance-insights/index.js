@@ -18,7 +18,7 @@ const MeMateFinanceInsights = () => {
           mainHeading="insights"
           description="Oversee company performance by product or service type. Reward managers based on actual performance, and view transparent, easy-to-understand statistics."
           cardButton="See All Features "
-          maxImage={<img src={Images.financeImage} />}
+          maxImage={<img src={Images.financeImage} type="image/svg+xml" />}
         />
       </div>
     </div>

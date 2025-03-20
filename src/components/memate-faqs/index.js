@@ -23,7 +23,7 @@ const MemateFaqsComponent = () => {
 <div className="pageBreadcrumbs">
                 <ul className={style.linkstyleDisable}>
                     <li><a href='/' className={style.linkstyleDisable}>Home</a></li>/
-                    <li><a href='/' className={style.linkstyleDisable}>meMate PAQs</a></li>
+                    <li><a href='/' className={style.linkstyleDisable}>meMate FAQs</a></li>
                     {/* <li><a>sds</a></li> */}
                 </ul>
                 <a href="/" className="backButStories">

@@ -18,7 +18,7 @@ const MeMateFeatureAgile = () => {
           mainHeading="anywhere"
           description="At any stage, view projects, work, linked expenses, employee time, and subcontractors. Gain a clear overview of what’s happening in your company at any time."
           cardButton="See All Features "
-          maxImage={<img src={Images.popup} />}
+          maxImage={<img src={Images.popup} type="image/svg+xml"/>}
         />
       </div>
     </div>

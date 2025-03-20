@@ -17,7 +17,7 @@ const SeamlessInegration = () => {
         data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
-        <img src={IntegrationImage} alt="Integration" />
+        <img src={IntegrationImage} alt="Integration"/>
       </div>
       <div className="integration-disp" data-aos="fade-up"
         data-aos-offset="50"

@@ -7,58 +7,95 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLocation } from "react-router-dom"; 
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Layout = ({ children }) => {
   const stickySectionRef = useRef(null);
   const buttonRef = useRef(null);
   const location = useLocation(); 
   const intervalRef = useRef(null);
+  const isSitemapPage = location.pathname === '/sitemap';
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
   useEffect(() => {
-    if (stickySectionRef.current) {
-      gsap.set(stickySectionRef.current, { opacity: 0 });
-      gsap.to(stickySectionRef.current, {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: ".apply-container",
-          start: "bottom 62%",
-          end: "bottom 20%",
-          scrub: 0.5,
-          markers: false,
-          invalidateOnRefresh: true
-        }
-      });
-    }
-
-   
-    const tl = gsap.timeline({
-      repeat: -1,
-      repeatDelay: 0,
-      scrollTrigger: {
-        trigger: buttonRef.current,
-        start: "top center",
-        toggleActions: "play none none none"
+    let animationInstances = [];
+    const initTimeout = setTimeout(() => {
+      if (stickySectionRef.current) {
+        gsap.set(stickySectionRef.current, { opacity: 0 });
+        const stickyAnimation = gsap.to(stickySectionRef.current, {
+          opacity: 1,
+          scrollTrigger: {
+            trigger: ".apply-container",
+            start: "bottom 62%",
+            end: "bottom 20%",
+            scrub: 0.5,
+            markers: false,
+            invalidateOnRefresh: true
+          }
+        });
+        animationInstances.push(stickyAnimation);
       }
-    });
 
-    tl.to(buttonRef.current, {
-      scale: 1.1,
-      duration: 0.2,
-      yoyo: true
-    });
+      // Only create button animation if the button exists
+      if (buttonRef.current) {
+        const tl = gsap.timeline({
+          repeat: 0,
+          scrollTrigger: {
+            trigger: buttonRef.current,
+            start: "top center",
+            toggleActions: "play none none none",
+            once: true
+          }
+        });
+
+        tl.to(buttonRef.current, {
+          scale: 1.1,
+          duration: 0.5,
+          ease: "power2.out"
+        });
+        
+        animationInstances.push(tl);
+      }
+    }, 100);
+
+    // Modify the interval refresh to be less aggressive
+    let refreshCount = 0;
+    const MAX_REFRESHES = 5; // Limit the number of refreshes
 
     intervalRef.current = setInterval(() => {
-      if(document.readyState === 'complete') {
-        ScrollTrigger.refresh();
+      if(document.readyState === 'complete' && ScrollTrigger) {
+        try {
+          ScrollTrigger.refresh();
+          refreshCount++;
+          
+          // Stop refreshing after a certain number of times
+          if (refreshCount >= MAX_REFRESHES) {
+            clearInterval(intervalRef.current);
+          }
+        } catch (e) {
+          console.warn("ScrollTrigger refresh error:", e);
+          clearInterval(intervalRef.current);
+        }
       }
     }, 2000);
 
     return () => {
+      clearTimeout(initTimeout);
       clearInterval(intervalRef.current);
-      ScrollTrigger.getAll().forEach(instance => instance.kill());
+      
+      // Safely kill ScrollTrigger instances
+      try {
+        ScrollTrigger.getAll().forEach(instance => instance.kill());
+        // Also kill any animations we created
+        animationInstances.forEach(animation => {
+          if (animation && animation.kill) animation.kill();
+        });
+      } catch (e) {
+        console.warn("Error cleaning up GSAP animations:", e);
+      }
       
       window.scrollTo(0, 0);
     };
@@ -72,18 +109,20 @@ const Layout = ({ children }) => {
           <div className="children">{children}</div>
         </div>
       </div>
-      <div
-        ref={stickySectionRef}
-        className="sticky-section-switch"
-        style={{ opacity: 0 }}>
-        <div className="apply-content">
-          <div className="get-started-wrapper">
-            <div className="intro-sticky">
-              <NextStep text="Book a Demo" ref={buttonRef} />
+      {!isSitemapPage && (
+        <div
+          ref={stickySectionRef}
+          className="sticky-section-switch"
+          style={{ opacity: 0 }}>
+          <div className="apply-content">
+            <div className="get-started-wrapper">
+              <div className="intro-sticky">
+                <NextStep text="Book a Demo" ref={buttonRef} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
       <Footer />
     </>
   );

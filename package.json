@@ -25,6 +25,7 @@
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "react-hook-form": "^7.53.0",
+    "react-lazy-load-image-component": "^1.6.3",
     "react-loader-spinner": "^6.1.6",
     "react-phone-number-input": "^3.4.11",
     "react-router-dom": "^6.26.0",
@@ -54,13 +55,15 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "last 10 safari version",
+      "last 10 firefox version",
+      "last 10 chrome version"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      ">0.2%",
+      "last 10 chrome version",
+      "last 10 firefox version",
+      "last 10 safari version"
     ]
   },
   "devDependencies": {

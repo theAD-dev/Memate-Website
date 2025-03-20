@@ -22,7 +22,7 @@
             background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family: "sequel_sans_bold_disp" !important;
+            font-family: sequel_sans_roman_head!important;
             line-height: 0.88;
             letter-spacing: 1px;
             position: relative;
@@ -188,8 +188,8 @@ element.style {
 }
 
   .searchFilterList{
-    width: 768px;
-    padding: var(--spacing-2xl, 9px) var(--spacing-2xl, 26px);
+    width: 476px;
+    padding: var(--spacing-2xl, 18px) var(--spacing-2xl, 26px);
     display: flex;
     align-items: center;
     gap: var(--spacing-md, 8px);

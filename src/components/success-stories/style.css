@@ -94,13 +94,13 @@
   font-weight: 420;
   line-height: 49.56px;
   letter-spacing: -1px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
 }
 
 .bottom-management p {
   color: #757b8a;
   text-align: center;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 20px;
   font-weight: 360;
   line-height: 140%;
@@ -135,7 +135,7 @@
 }
 
 .card-bottom-data {
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-weight: 360;
   font-size: 20px;
   line-height: 28px;
@@ -174,7 +174,7 @@ p.owners-disp {
   font-weight: 415;
 
   margin-top: 38px;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
 }
 
 .menu-container {

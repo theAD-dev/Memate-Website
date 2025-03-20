@@ -18,7 +18,7 @@ const MeMateWorkForce = () => {
           mainHeading="your workforce"
           description="Efficiently track employee and subcontractor hours with real-time updates on their progress. Our system also streamlines timesheet and invoice submissions."
           cardButton="See All Features "
-          maxImage={<img src={Images.underStand} />}
+          maxImage={<img src={Images.underStand} type="image/svg+xml" />}
         />
       </div>
     </div>

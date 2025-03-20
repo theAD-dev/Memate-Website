@@ -28,7 +28,7 @@
 
 .question-answer-heading {
   font-size: 42px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-weight: 420;
   letter-spacing: -1px;
   line-height: 49.56px;
@@ -69,7 +69,7 @@
 .question-answer-ques-info {
   font-size: 25px;
   font-weight: 420;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   color: #29292b;
   line-height: 35px;
   width: 100%;

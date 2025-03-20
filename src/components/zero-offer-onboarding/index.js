@@ -33,7 +33,7 @@ const ZeroOfferOnboarding = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom">
-            <img src={Images.zeroScreenShot} alt="zeroScreenShot" />
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/zero-onboarding.svg" alt="zeroScreenShot" type="image/svg+xml" />
           </div>
         </div>
       </div>

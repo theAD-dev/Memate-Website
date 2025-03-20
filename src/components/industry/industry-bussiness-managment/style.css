@@ -12,7 +12,7 @@
   width: 100%;
   text-align: center;
   color: #29292b;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 42px;
   font-style: normal;
   font-weight: 420;
@@ -58,7 +58,7 @@
 
 .industry-bussiness-sub-content-description {
   color: #29292b;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 30px;
   text-align: center;
   font-style: normal;

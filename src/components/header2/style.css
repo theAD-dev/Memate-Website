@@ -16,6 +16,10 @@
   right: 0;
   margin: 0 auto;
 }
+.header-footer-faqs a {
+  display: flex;
+  align-items: center;
+}
 .navbar-log-in .btn-base--tron-hover {
   height: 44px;
 }
@@ -232,7 +236,7 @@
 .nav-bar-login div {
     color: #29292B;
     text-align: center;
-    font-family: "sequel_sans" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 18px;
     font-style: normal;
     font-weight: 415;
@@ -256,7 +260,7 @@
     color: #29292B;
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "sequel_sans_semi_bold_disp";
+    font-family: "sequel_sans_semi_bold_disp" !important;
     font-size: 16px;
     font-style: normal;
     font-weight: 420;
@@ -315,7 +319,7 @@
   
   .header-navbar-item p {
     color: #29292B;
-    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 16px;
     font-style: normal;
     font-weight: 420;
@@ -336,7 +340,7 @@
     line-height: normal;
     font-style: normal;
     color: #29292b;
-    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-family: sequel_sans_roman_head!important;
   }
   .header-navbar-item-about span {
     display: flex;
@@ -354,7 +358,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 415;
-    font-family: "sequel_sans" !important;
+    font-family: sequel_sans_roman_head!important;
     line-height: normal;
     outline: none;
     max-height: 52px;
@@ -454,7 +458,7 @@
   }
   .header-menu-item-name-selected {
     font-feature-settings: "liga" off, "clig" off;
-    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 16px;
     font-style: normal;
     font-weight: 420;
@@ -536,7 +540,7 @@
   .header-menu-item-name-unselected {
     color: #29292b;
     font-feature-settings: "liga" off, "clig" off;
-    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 16px;
     font-style: normal;
     font-weight: 420;
@@ -547,7 +551,13 @@
   
   .header-menu-icon-wrapper {
     display: flex;
-    gap: 14px;
+    /* gap: 14px; */
+  }
+  .header-menu-icon-wrapper img {
+    width: 16px;
+}
+  .header-menu-icon-wrapper p {
+    margin: 0 7px;
   }
   .header-menu-footer-div {
     padding: 23px 40px 23px 40px;
@@ -569,12 +579,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7px;
     height: 16px;
+  }
+  .header-footer-legal p {
+    margin: 0 7px;
   }
   .header-footer-legal-text {
     color: #888e9e;
-    font-family: "sequel_sans_roman_head" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 17px;
     font-style: normal;
     font-weight: 360;
@@ -587,7 +599,7 @@
 
   .header-footer-legal-text-selected {
     color: #888e9e;
-    font-family: "sequel_sans_roman_head" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 17px;
     font-style: normal;
     background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
@@ -618,7 +630,7 @@
     gap: 8.73px;
     height: 11px;
   }
-  
+ 
   .header-menu-features {
     display: flex;
     align-items: center;
@@ -629,7 +641,7 @@
     height: 11px;
   }
   .header-menu-feature-text {
-    font-family: "sequel_sans_roman_head" !important;
+    font-family: sequel_sans_roman_head!important;
     color: #888e9e;
     font-size: 16px;
     font-style: normal;
@@ -639,7 +651,7 @@
   }
   
   .header-menu-feature-texts {
-    font-family: "sequel_sans_roman_head" !important;
+    font-family: sequel_sans_roman_head!important;
     color: #888e9e;
     font-size: 16px;
     font-style: normal;
@@ -648,7 +660,9 @@
     width: 164px;
     letter-spacing: -0.16px;
   }
-  
+  .header-menu-features .header-menu-feature-texts{
+   margin-left: 7px;
+  }
   .request-a-button-wrapper {
     cursor: pointer;
     margin-top: 40px;

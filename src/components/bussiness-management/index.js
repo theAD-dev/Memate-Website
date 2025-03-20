@@ -31,11 +31,11 @@ const BussinessManagement = () => {
           <picture>
             <source srcSet={Images.landingHero} media="(min-width: 2000px)" />
             <source srcSet={Images.landingHero1x} media="(min-width: 1921px)" />
-            <img src={Images.landingHero1x} alt="Landing Hero" />
+            <img src={Images.landingHero1x} alt="Landing Hero" type="image/svg+xml"/>
           </picture>
           </div>
             <div className="iphone-image">
-              <img src={Images.landingHeroiPhone} alt="landingHeroiPhone" data-aos="aos-fade"
+              <img src={Images.landingHeroiPhone} alt="landingHeroiPhone" type="image/svg+xml" data-aos="aos-fade"
               data-aos-offset="50"
               data-aos-delay="50"
               data-aos-duration="200"
@@ -44,7 +44,7 @@ const BussinessManagement = () => {
               data-aos-anchor-placement="aos-fade"/>
             </div>
             <div className="create-new-text">
-              <img src={Images.landingHerotask} alt="landingHerotask" data-aos="fade-up"
+              <img src={Images.landingHerotask} alt="landingHerotask" type="image/svg+xml" data-aos="fade-up"
               data-aos-offset="50"
               data-aos-delay="50"
               data-aos-duration="300"
@@ -53,7 +53,7 @@ const BussinessManagement = () => {
               data-aos-anchor-placement="aos-fade" />
             </div>
             <div className="create-new-model">
-              <img src={Images.landingHeromodel} alt="landingHeromodel" data-aos="fade-up"
+              <img src={Images.landingHeromodel} alt="landingHeromodel" type="image/svg+xml" data-aos="fade-up"
               data-aos-offset="50"
               data-aos-delay="50"
               data-aos-duration="500"
@@ -63,7 +63,7 @@ const BussinessManagement = () => {
             </div>
 
             <div className="metric-item">
-              <img src={Images.landingHeroitem} alt="landingHeroitem" data-aos="fade-up"
+              <img src={Images.landingHeroitem} alt="landingHeroitem" type="image/svg+xml" data-aos="fade-up"
               data-aos-offset="50"
               data-aos-delay="50"
               data-aos-duration="700"

@@ -17,7 +17,7 @@
   color: #29292b;
   text-align: center;
   width: 327px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 28px;
   font-style: normal;
   font-weight: 420;
@@ -28,7 +28,7 @@
 .more-specific-card-description {
   color: #757b8a;
   text-align: center;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 18px;
   font-style: normal;
   font-weight: 360;

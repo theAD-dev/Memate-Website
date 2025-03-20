@@ -19,7 +19,7 @@ const MemateFeatureBoastEfficiency = () => {
                 mainHeading="& efficiency"
                 description="See the real-time costs and time spent on each product or service, and adjust pricing by viewing operational profits in real time."
                 cardButton="See All Features"
-                maxImage={(<img src={Images.boostImage} />)}
+                maxImage={(<img src={Images.boostImage} type="image/svg+xml" />)}
             />
         </div>
     </div>

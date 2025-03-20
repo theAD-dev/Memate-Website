@@ -24,7 +24,7 @@
   font-weight: 420;
   line-height: normal;
   letter-spacing: -1px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
 }
 .gradient-text-animate {
   background-image: linear-gradient(
@@ -72,7 +72,7 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 420;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   line-height: 140%;
 }
 

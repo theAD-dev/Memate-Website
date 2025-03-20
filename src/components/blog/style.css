@@ -166,13 +166,13 @@ h1.heading-blog-description {
   color: #29292b;
   font-weight: 420;
   margin-top: 14px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   text-decoration: none;
 }
 .latest-article-heading {
   color: #29292b;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 42px;
   font-style: normal;
   margin-top: 140px;

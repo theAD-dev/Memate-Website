@@ -5,7 +5,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
-const PageNotFound = () => {
+const PageNotFound = ({redirects}) => {
+  console.log("redirects ========> " + redirects);
   const navigate = useNavigate();
   return (
     <>
@@ -25,7 +26,7 @@ const PageNotFound = () => {
           <h2>We can’t find this page</h2>
           <p>The page you are looking for doesn't exist or has been moved.</p>
           <div className={`${style.button}`}>
-          <Link to="#" onClick={() => navigate(-3)}><img src={arrowIconBack} alt="Arrow" /> <span style={{color: 'black'}}>Back</span></Link>
+          <Link to="#" onClick={() => navigate(-redirects)}><img src={arrowIconBack} alt="Arrow" /> <span style={{color: 'black'}}>Back</span></Link>
           <Link to="/" >Home</Link>
           </div>
         </div>

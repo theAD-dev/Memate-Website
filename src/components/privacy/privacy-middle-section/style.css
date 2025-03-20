@@ -12,7 +12,7 @@
 }
 
 .kb-list-item-active {
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 18px;
   font-style: normal;
   font-weight: 425;
@@ -24,7 +24,7 @@
 }
 .kb-list-item {
   color: #29292b;
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 18px;
   font-style: normal;
   font-weight: 425;
@@ -46,7 +46,7 @@
 
 .kb-nested-list-item {
   color: #757b8a;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 17px;
   -webkit-text-fill-color: #757b8a;
   font-style: normal;
@@ -64,7 +64,7 @@
 
 .kb-section-heading {
   color: #29292b;
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 42px;
   font-style: normal;
   margin-bottom: 12px;
@@ -79,7 +79,7 @@
 
 .kb-section-description {
   color: #3f3f3f;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 16px;
   font-style: normal;
   font-weight: 360;
@@ -88,7 +88,7 @@
 
 .kb-section-sub-heading {
   color: #29292b;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 31px;
   margin-bottom: 8px;
   font-style: normal;
@@ -142,7 +142,7 @@ li.kb-list-item.kb-list-item-active:before {
    margin-bottom: 40px;
 }
 .latest-update-text {
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-weight: 425;
   font-size: 120px;
   color: #000000;
@@ -161,7 +161,7 @@ li.kb-list-item.kb-list-item-active:before {
 
 .kb-section-date {
   color: #757b8a;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 18px;
   font-style: normal;
   font-weight: 360;

@@ -7,6 +7,27 @@
     margin-top: 58px !important;
     margin-bottom: -130px !important;
 }
+.sticky-section-switch {
+    transform: translate3d(0,0,0);
+  }
+
+  .children-wrapper {
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  
+  .sticky-section-switch {
+    position: -webkit-sticky; /* Safari fallback */
+    position: sticky;
+    top: 0;
+  }
+
+  .apply-container {
+    position: relative;
+    overflow: visible;
+    min-height: 100vh;
+  }
+  
 
 @media screen and (max-width: 767px) {
     .children-wrapper {

@@ -8,26 +8,26 @@ const Footer = () => {
       <div className="main-footer">
         <div className="socail-media-sec">
           <div className="footer-logo">
-            <img src={Images.logo} alt="logo" />
+            <img src={Images.logo} alt="logo" type="image/svg+xml" />
           </div>
           <p className="management-footer">Business Management Software</p>
           <div className="connect">
             <h3>Connect</h3>
             <div className="media-links">
-              <img src={Images.facebookIcon} />
-              <img src={Images.instagramIcon} />
-              <img src={Images.linkdinIcon} />
+              <img src={Images.facebookIcon} type="image/svg+xml" />
+              <img src={Images.instagramIcon} type="image/svg+xml" />
+              <img src={Images.linkdinIcon} type="image/svg+xml" />
             </div>
           </div>
           <div className="download">
             <h3>Download</h3>
             <div className="store">
-              <img src={Images.appStore} />
-              <img src={Images.googleStore} />
+              <img src={Images.appStore} type="image/svg+xml" />
+              <img src={Images.googleStore} type="image/svg+xml" />
             </div>
             <div className="store">
-              <img src={Images.macAppStore} />
-              <img src={Images.microSoftSore} />
+              <img src={Images.macAppStore} type="image/svg+xml" />
+              <img src={Images.microSoftSore} type="image/svg+xml" />
             </div>
           </div>
 

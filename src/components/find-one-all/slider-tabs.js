@@ -122,7 +122,9 @@ const SliderTab = () => {
             <p>
             <img
                 src={index === selectedTab ? tab.iconIamgeActive : tab.iconIamge}
-                alt={`${tab.label} icon`}/>
+                alt={`${tab.label} icon`}
+                type="image/svg+xml"
+                />
                <span> {tab.label}</span>
                 </p>
             </div>
@@ -144,6 +146,7 @@ const SliderTab = () => {
           src={tabs[selectedTab].image}
           alt={tabs[selectedTab].label}
           className={`large-image ${fadeClass}`}
+          type="image/svg+xml"
         />
              <div className="how-to-use">
         <p>{tabs[selectedTab].head}</p>

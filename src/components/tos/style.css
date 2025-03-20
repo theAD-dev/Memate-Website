@@ -37,7 +37,7 @@
   line-height: 150%;
 }
 .tos-list-item-active {
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 18px;
   font-style: normal;
   font-weight: 425;
@@ -49,7 +49,7 @@
 }
 .tos-list-item {
   color: #29292b;
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 18px;
   font-style: normal;
   font-weight: 425;
@@ -78,7 +78,7 @@
 
 .tos-nested-list-item {
   color: #757b8a;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 17px;
   -webkit-text-fill-color: #757b8a;
   font-style: normal;
@@ -98,7 +98,7 @@
 
 .tos-section-heading {
   color: #29292b;
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 42px;
   font-style: normal;
   margin-bottom: 12px;
@@ -116,7 +116,7 @@ line-height: 150%;
 }
 .tos-section-description {
   color: #3f3f3f;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 16px;
   font-style: normal;
   font-weight: 360;
@@ -124,7 +124,7 @@ line-height: 150%;
 }
 /* p {
   color: #3f3f3f;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 16px;
   font-style: normal;
   font-weight: 360;
@@ -141,7 +141,7 @@ display: inline-block;
 }
 .kb-right-section h3 {
   color: #29292b;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 31px;
   margin-bottom: 8px;
   font-style: normal;

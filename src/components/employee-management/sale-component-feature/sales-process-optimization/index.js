@@ -19,7 +19,7 @@ const SalesProcessOptimiation = () => {
         meMate provides real-time visibility of your<br></br> operating costs, ensuring accurate<br></br> financial tracking.
         </p>
       </div>
-      <img src={Images.PowerfulEmployee}  className="sales-process-optimization-image"/>
+      <img src={Images.PowerfulEmployee}  className="sales-process-optimization-image" type="image/svg+xml" />
     </div>
   );
 };

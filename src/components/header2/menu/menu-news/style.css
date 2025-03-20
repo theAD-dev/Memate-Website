@@ -23,7 +23,7 @@
 .first-news-top-heading {
   color: #29292b;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 20px;
   font-style: normal;
   font-weight: 420;
@@ -43,7 +43,7 @@
 .first-news-sub-heading {
   color: #29292b;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 26px;
   font-style: normal;
   font-weight: 420;
@@ -51,7 +51,7 @@
 }
 .first-news-description {
   color: #29292b;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 12px;
   font-style: normal;
   font-weight: 360;
@@ -72,7 +72,7 @@
   color: #29292b;
 
   text-align: center;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 16px;
   font-style: normal;
   font-weight: 415;
@@ -90,7 +90,7 @@
     background: transparent;
     color: #29292b;
     text-align: center;
-    font-family: "sequel_sans" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 16px;
     font-style: normal;
     font-weight: 415;

@@ -111,6 +111,7 @@ const StartupsQuesitonAndAns = () => {
                       className="icon"
                       alt="Selected Question"
                       style={{ height: "24px" }} 
+                      type="image/svg+xml"
                     />
                   ) : (
                     <AddIcon className="icon" htmlColor="#000000" />

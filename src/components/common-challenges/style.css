@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: 420;
   line-height: normal;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   margin-bottom: 72px;
 }
 .project-profitability-space {
@@ -65,7 +65,7 @@ p.card-text {
   font-style: normal;
   font-weight: 420;
   line-height: 42px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
 }
 
 .internal-control {
@@ -83,7 +83,7 @@ p.card-text {
   font-weight: 600;
   line-height: 140%;
   margin: 0px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
 }
 .internal-control-content {
   height: 100%;

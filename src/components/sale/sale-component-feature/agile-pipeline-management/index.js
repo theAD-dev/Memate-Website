@@ -10,7 +10,7 @@ const AgilePipeLineManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.pipeLineManagement} alt="pipeLineManagement"/>
+      <img src={Images.pipeLineManagement} alt="pipeLineManagement" type="image/svg+xml" />
       <div className="content-wrapper">
         <p className="sale-title">Agile</p>
         <p className="sales-heading-sales">Pipeline</p>

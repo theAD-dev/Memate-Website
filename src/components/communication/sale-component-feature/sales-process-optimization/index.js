@@ -18,7 +18,7 @@ const SalesProcessOptimiation = () => {
         Use our mobile application to receive notes from<br/> contractors and employees, store photos, and<br/> keep all communication organized within the<br/> project card.
         </p>
       </div>
-      <img src={Images.commModern} alt="commModern"  className="sales-process-optimization-image"/>
+      <img src={Images.commModern} alt="commModern"  className="sales-process-optimization-image" type="image/svg+xml" />
     </div>
   );
 };

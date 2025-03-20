@@ -22,7 +22,7 @@ const SalesProcessOptimiation = () => {
         just<br></br> a few clicks. That’s what we call smart and simple <br></br>software for client database management.
         </p>
       </div>
-      <img src={Images.ClientHistory}  className="section2 sales-process-optimization-image"/>
+      <img src={Images.ClientHistory}  className="section2 sales-process-optimization-image" type="image/svg+xml"/>
     </div>
   );
 };

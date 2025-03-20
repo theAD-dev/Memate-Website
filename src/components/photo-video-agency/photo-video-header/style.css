@@ -26,7 +26,7 @@
 
 h1.photo-video-top-heading {
   color: #fff;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 42px;
   font-style: normal;
   font-weight: 420;
@@ -52,7 +52,7 @@ h1.photo-video-top-heading {
   max-width: 578px;
   width: 100%;
   color: #fff;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 18px;
   font-style: normal;
   font-weight: 360;

@@ -13,10 +13,10 @@ const FeaturedOn = () => {
       <div className="featured-text">
         <p>Featured on:</p>
         <div className="brand-names">
-          <img src={Images.skyNews} />
-          <img src={Images.theAustralian} />
-          <img src={Images.abc} />
-          <img src={Images.theGuardian} />
+          <img src={Images.skyNews} type="image/svg+xml"/>
+          <img src={Images.theAustralian} type="image/svg+xml" />
+          <img src={Images.abc} type="image/svg+xml" />
+          <img src={Images.theGuardian} type="image/svg+xml" />
         </div>
       </div>
     </div>

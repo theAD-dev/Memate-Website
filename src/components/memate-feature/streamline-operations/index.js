@@ -40,7 +40,7 @@ const MeMateFeatureStreamline = () => {
             <div className="operation-right">
               <span className="gradientAnimenate"> memate </span>
               <div className="max-image">
-                <img src={Images.maxImage} />
+                <img src={Images.maxImage} type="image/svg+xml" />
               </div>
             </div>
           </div>
