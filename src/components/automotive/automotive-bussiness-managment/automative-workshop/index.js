@@ -15,7 +15,7 @@ const AutomativeWorkshop = () => {
     <p>Manage quotes, invoices, jobs, purchase orders, and more with full control over your workshop. 
       Every action is recorded in an interconnected system that ensures transparency and cannot be altered. 
       A clean, proven solution for streamlined performance.</p>
-      <Link to="/features/invoicing-software">Invoicing </Link>
+      <Link to="/features/invoicing-software">Invoicing </Link> 
 </div>
 
 </div>
