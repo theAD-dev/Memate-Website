@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./style.css";
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import TronButton from "../../../layout/hover-button/tourn-but";
 const SalesComponent = () => {
   return (

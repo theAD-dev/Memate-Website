@@ -30,6 +30,16 @@
     .brand-names {
         gap: 15px;
         margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .brand-names svg:first-child{
+        /* gap: 50px;
+        margin-top: 15px; */
+        width: 160px;
     }
 }
 @media screen and (max-width: 992px) and (min-width: 768px){
@@ -40,4 +50,5 @@
     .featured-section {
         margin: 30px 0 0;
     }
+
 }

@@ -5,8 +5,9 @@
   justify-content: center;
   align-items: center;
 }
+/* changed */
 .jobs-heading {
-  line-height: 188px !important;
+  line-height: 188px;
 }
 .sales-heading {
   padding-bottom: 10px;

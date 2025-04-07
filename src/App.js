@@ -99,6 +99,7 @@ function App() {
   const [totalPosts, setTotalPosts] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  console.log('ERROR ===> ', error)
   const limit = 12;
 
   useEffect(() => {
@@ -113,7 +114,7 @@ function App() {
     };
 
     if (!postsLatest?.length) fetchDataLatest();
-  }, []);
+  }, [postsLatest?.length]);
 
   // PostsCategories======================
 
@@ -129,9 +130,9 @@ function App() {
     };
 
     if (!PostsCategories?.length) fetchCateLatest();
-  }, []);
+  }, [PostsCategories?.length]);
 
-  const [newposts, setNewPosts] = useState();
+  // const [newposts, setNewPosts] = useState();
 
 
   // added multiple rerendering of useEffect if page is clicked twice %blame @ramansaini14 for changes 
@@ -293,7 +294,7 @@ function App() {
           <Route path="/sitemap" exact element={<SitemapPage />} />
           <Route path="/resources" exact element={<ResourcesPage />} />
           <Route path="*" exact element={<ErrorPage num={1} />} />
-          <Route path="/404" exact element={<ErrorPage num={3} />} />
+          <Route path="/404" exact element={<ErrorPage num={2} />} />
           <Route path="/thank-you" exact element={<ThankYouPage />} />
           <Route path="/tron-btton" exact element={<TronButton />} />
           <Route path="/faqs" exact element={<MemateFaqsPage />} />

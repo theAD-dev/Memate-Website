@@ -83,7 +83,7 @@ const SupplierDatabase = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-          <h1>Connect and Grow with meMate’s Australian Business Directory</h1>
+          <h1 className='supplierText'>Connect and Grow with meMate’s Australian Business Directory</h1>
         </div>
         <div className={style.smallheading} data-aos="fade-up"
     data-aos-offset="50"

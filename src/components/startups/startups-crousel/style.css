@@ -12,16 +12,17 @@
   display: flex;
   flex-direction: column;
 }
-
+/* changed */
 .industry-crousel-heading {
   color: #101828;
   text-align: center;
   font-family: "sequel_sans_medium_head" !important;
-  font-size: 34px;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 44px;
-  letter-spacing: -0.72px;
+  letter-spacing: -1px;
+  white-space: nowrap;
 }
 
 .industry-crousel-body-content {
@@ -48,10 +49,10 @@
 
 .industry-circle-logo span {
   color: #fff;
-  font-family: sequel_sans_roman_head!important;
-  font-size: 27.077px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 27.08px;
   font-style: normal;
-  font-weight: 425;
+  font-weight: 100;
   line-height: normal;
 }
 
@@ -59,17 +60,17 @@
   margin-top: 16px;
   color: #101828;
   text-align: center;
-  font-family: "sequel_sans_heavy_body" !important;
+  font-family: "sequel_sans_semi_bold_head" !important;
   font-size: 18px;
   font-style: normal;
-  font-weight: 370;
+  font-weight: 100;
   line-height: 28px;
 }
 
 .industry-crousel-1-sub-heading {
   color: #475467;
   text-align: center;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans_medium_head' !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 365;

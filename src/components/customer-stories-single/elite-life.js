@@ -50,7 +50,7 @@ function EliteLife() {
               </div>
             </div>
             <div className="gadientText">
-              <h2>Elite Life is a prestigious private membership club based in Sydney, Australia, specialising in asset management for a select group of clients. </h2>
+              <h2 className="centeredText">Elite Life is a prestigious private membership club based in Sydney, Australia, specialising in asset management for a select group of clients. </h2>
             </div>
             <div className="wrapperText">
               <p>Our focus is on helping members acquire, manage, and sell their tangible assets, including real estate, vehicles, and boats. To streamline our operations, we turned to meMate, a business management software that has proven to be an invaluable tool in our day-to-day activities.</p>

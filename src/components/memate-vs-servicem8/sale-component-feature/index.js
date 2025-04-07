@@ -58,8 +58,8 @@ const SalesComponentFeature = () => {
       <ul>
         <li className={style.List01}>
           <div className={style.box}>
-          <h4>Switching</h4>
-          <h2>is easy</h2>
+          <h4 className='fontSSMD FS28'>Switching</h4>
+          <h2 className='fontSBD FS48'>is easy</h2>
           <p>Our team is here to help you transition smoothly by migrating your existing data to meMate. If you’re considering the switch, let us know, and we’ll support you every step of the way.</p>
           </div>
         </li>
@@ -75,8 +75,8 @@ const SalesComponentFeature = () => {
         </li>
         <li className={style.List04}>
         <div className={style.box}>
-          <h4>Switching</h4>
-          <h2>is easy</h2>
+          <h4 className='fontSBD FS48'>Service M8</h4>
+          <h2 className='fontSSMD FS28'>Alternative</h2>
           <p>Our team is here to help you transition smoothly by migrating your existing data to meMate. If you’re considering the switch, let us know, and we’ll support you every step of the way.</p>
           </div>
         </li>

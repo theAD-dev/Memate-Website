@@ -56,14 +56,15 @@ const Layout = ({ children }) => {
           duration: 0.5,
           ease: "power2.out"
         });
+        // console.log(tl);
         
         animationInstances.push(tl);
       }
     }, 100);
 
-    // Modify the interval refresh to be less aggressive
+   
     let refreshCount = 0;
-    const MAX_REFRESHES = 5; // Limit the number of refreshes
+    const MAX_REFRESHES = 1;
 
     intervalRef.current = setInterval(() => {
       if(document.readyState === 'complete' && ScrollTrigger) {
@@ -71,7 +72,6 @@ const Layout = ({ children }) => {
           ScrollTrigger.refresh();
           refreshCount++;
           
-          // Stop refreshing after a certain number of times
           if (refreshCount >= MAX_REFRESHES) {
             clearInterval(intervalRef.current);
           }
@@ -80,7 +80,7 @@ const Layout = ({ children }) => {
           clearInterval(intervalRef.current);
         }
       }
-    }, 2000);
+    }, 5000);
 
     return () => {
       clearTimeout(initTimeout);

@@ -13,7 +13,7 @@
   /* background: linear-gradient(to right bottom, #1ab2ff -9.85%, #ffb258 95%); */
   border-radius: 30px;
   padding: 0px;
-  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/onboarding.png);
+  background: url('https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/onboarding.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -24,10 +24,10 @@
   text-align: center;
   font-size: 42px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: normal;
-  letter-spacing: -1px;
-  font-family: sequel_sans_roman_head!important;
+  letter-spacing: 0px;
+  font-family: 'sequel_sans_semi_bold_disp'!important;
   margin-bottom: 0px;
 }
 
@@ -40,23 +40,23 @@
   text-align: center;
   font-size: 120px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 110px;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans_black_disp' !important;
   margin-top: 1px;
   margin-bottom: 0px;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
-
+/* changed */
 .sab-heading p {
   color: #fff;
   text-align: center;
   font-size: 18px;
   font-style: normal;
-  font-weight: 360;
-  line-height: 25.2px;
-  font-family: sequel_sans_roman_head!important;
-  max-width: 471px;
+  font-weight: 300;
+  line-height: 140%;
+  font-family: 'sequel_sans_roman_head' !important;
+  max-width: 475px;
   margin: auto !important;
   padding-top: 35px !important;
 }
@@ -74,10 +74,10 @@ button.book-a-demo {
   font-size: 18px;
   height: 53px;
   font-style: normal;
-  font-weight: 415;
+  font-weight: 100;
   line-height: normal;
   margin-top: 30px;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans'!important;
 }
 
 .button-container {
@@ -91,8 +91,9 @@ button.book-a-demo {
 .offer-screen-shot {
   padding: 0;
   margin: 0;
+  position: relative;
+  bottom: -3px;
 }
-
 .offer-screen-shot img {
   display: block;
   width: 100%;

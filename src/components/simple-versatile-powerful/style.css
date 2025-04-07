@@ -1,15 +1,16 @@
 .simple-box {
     margin-top: 110px;
 }
-
+/* changed */
 .section-heading .simpleH2Heading {
     color: #242122;
     text-align: center;
     font-size: 42px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: normal;
-    font-family: sequel_sans_roman_head!important;
+    letter-spacing: -1px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
     margin: 0px;
 }
 

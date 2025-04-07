@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
-import Images from "../../assests/images";
+// import Images from "../../assests/images";
 import { Link } from "react-router-dom";
+// import ZeroScreenShot from "../../svg/ZeroScreenShot";
 
 
 const ZeroOfferOnboarding = () => {
@@ -33,7 +34,15 @@ const ZeroOfferOnboarding = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom">
-            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/zero-onboarding.svg" alt="zeroScreenShot" type="image/svg+xml" />
+            {/* <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/zero-onboarding.svg" alt="zeroScreenShot" type="image/svg+xml" /> */}
+            <img
+                srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/onboarding3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/onboarding2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/onboarding1x.png'} 1800w`}
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/onboarding3x.png'} 
+                alt="zeroScreenShot"
+/>
+            {/* <ZeroScreenShot/> */}
+
           </div>
         </div>
       </div>

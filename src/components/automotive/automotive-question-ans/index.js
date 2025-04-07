@@ -4,73 +4,73 @@ import AddIcon from "@mui/icons-material/Add";
 import { Box } from "@mui/material";
 import Images from "../../../assests/images";
 const AutomotiveQuesitonAndAns = () => {
-  const [selectedQuestion, setSelectedQuestion] = useState(3);
+  const [selectedQuestion, setSelectedQuestion] = useState();
 
   const questions = [
     {
-      question: "Is MeMate specifically designed for creative agencies?",
+      question: "How can meMate help my car wrapping or detailing business?",
       key: 0,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate streamlines operations by managing quotes, projects, employee tasks, and client communication, all in one easy-to-use platform.",
     },
     {
-      question: "How can MeMate benefit my creative agency?",
+      question: "Can I track profitability for each vehicle project?",
       key: 1,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate allows you to allocate material expenses and track time spent by employees and contractors, giving you clear insight into the profitability of each project.",
     },
     {
       question:
-        "Can MeMate handle the unique requirements of marketing and advertising agencies?",
+        "Does meMate help reduce customer no-shows?",
       key: 2,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Absolutely. By scheduling projects with full details and booking appointments directly in the system, you can minimize customer no-shows and keep your calendar organized.",
     },
     {
       question:
-        "How does MeMate simplify project management for creative agencies?",
+        "How does meMate handle quotes and invoicing?",
       key: 3,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate makes quoting and invoicing fast and simple. You can create accurate quotes in seconds using preset services and products, and manage invoices through the same platform.",
     },
     {
       question:
-        "Can MeMate assist in financial management for creative agencies?",
+        "Can I manage contractors through meMate?",
       key: 4,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, you can assign tasks to contractors, track their work, and approve it upon completion. The system also allows for easy weekly invoicing from contractors.",
     },
     {
-      question: "How does MeMate help with client communication?",
+      question: "Does meMate help track client and supplier interactions?",
       key: 5,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate maintains a comprehensive database of all client and supplier interactions, helping you track your entire history and manage relationships effectively.",
     },
     {
       question:
-        "Is MeMate suitable for both small and large creative agencies?",
+        "How can I motivate my team with meMate?",
       key: 6,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate allows you to set target results and track performance, enabling you to reward your best-performing employees and keep your team motivated.",
     },
     {
-      question: "Does MeMate offer creative workflow solutions?",
+      question: "Is every action recorded in the system?",
       key: 7,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate records every action related to quotes, jobs, invoices, and purchase orders. The system is designed to ensure transparency and prevent any alterations to recorded data.",
     },
     {
       question:
-        "Is MeMate compatible with other tools or software commonly used by creative agencies?",
+        "Can I manage multiple locations with meMate?",
       key: 8,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes, meMate supports multi-location management, allowing you to control and track operations across multiple workshops from a single system.",
     },
     {
-      question: "How can I learn more about MeMate and its features?",
+      question: "Is meMate easy to set up for my car wrapping or detailing shop?",
       key: 9,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "meMate is designed for simplicity, with an intuitive setup process. You can start managing your business quickly, with our support team available to assist if needed.",
     },
   ];
 

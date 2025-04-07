@@ -27,7 +27,10 @@
     overflow: visible;
     min-height: 100vh;
   }
-  
+  .commingSoonLogo{
+    width: 385px;
+  }
+
 
 @media screen and (max-width: 767px) {
     .children-wrapper {

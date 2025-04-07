@@ -1,7 +1,7 @@
 
 
 import ComingSoon from '../../layout/coming-soon';
-// import style from './construction.module.scss';
+import style from './construction.module.scss';
 
 const ConstructionComponent = () => {
 

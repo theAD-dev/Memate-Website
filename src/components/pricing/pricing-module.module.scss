@@ -48,9 +48,10 @@
           text-align: center;
           font-size: 42px;
           font-style: normal;
-          font-weight: 420;
+          font-weight: 100;
           line-height: normal;
           letter-spacing: -1px;
+          font-family: 'sequel_sans_semi_bold_disp' !important;
         }
     }
     .smallheading{
@@ -69,10 +70,11 @@
       text-align: center;
       font-size: 42px;
       font-style: normal;
-      font-weight: 600;
+      font-weight: 100;
       line-height: normal;
       letter-spacing: -1px;
       margin: 72px 0 20px;
+      font-family: 'sequel_sans_semi_bold_disp' !important;
     }
     }
     .mainsectionbutton{
@@ -129,6 +131,10 @@ box-shadow: 0px 1.936px 51.61px 0px rgba(20, 20, 43, 0.08);
       background: linear-gradient(to right bottom, #1ab2ff 10.15%, #ffb258 69%);
       p,ul,li,span,h4,h3,h5{
         color: #fff !important;
+        
+      }
+      span{
+        font-family: 'sequel_sans_roman_head' !important;
       }
       svg{
         fill: #fff !important;
@@ -145,16 +151,17 @@ box-shadow: 0px 1.936px 51.61px 0px rgba(20, 20, 43, 0.08);
         }
       }
     }
-   
+  //  changed
     .companypara{
       text-align: left;
-      font-size: 15px;
+      font-size: 16px;
       font-style: normal;
-      font-weight: 360;
+      font-weight: 100;
       line-height: 150%;
-      font-style: italic;
+      // font-style: italic;
       color: #888E9E;
       min-height: 48px;
+      font-family: 'sequel_sans_light_obl_head' !important;
     }
     .YourSavings {
       color: #888E9E;
@@ -278,21 +285,21 @@ span {
     text-align: left;
     span{
       color: #888E9E;
-font-feature-settings: 'liga' off, 'clig' off;
+      font-feature-settings: 'liga' off, 'clig' off;
 
-font-size: 16px;
-font-style: normal;
-font-weight: 420;
-line-height: 16px; /* 100% */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 100;
+      line-height: 16px; /* 100% */
     }
     h5{
       color: #29292B;
-font-feature-settings: 'liga' off, 'clig' off;
-
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: 150%; /* 36px */
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: 'sequel_sans_semi_bold_disp' !important;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 100;
+      line-height: 150%; /* 36px */
     }
 }
   }
@@ -314,11 +321,12 @@ line-height: 150%; /* 36px */
       align-items: center;
       padding: 8px 0;
       color: var(--Gray-700, #344054);
-font-feature-settings: 'liga' off, 'clig' off;
-font-size: 18px;
-font-style: normal;
-font-weight: 360;
-line-height: 20px; /* 111.111% */
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: 'sequel_sans_roman_head' !important;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 100;
+      line-height: 20px; /* 111.111% */
       .checkcircleicon {
         margin-right: 7px;
     }
@@ -326,11 +334,12 @@ line-height: 20px; /* 111.111% */
    h4 {
      color: #29292B;
      font-feature-settings: 'liga' off, 'clig' off;
+     font-family: 'sequel_sans_semi_bold_disp' !important;
      margin-bottom: 11px;
      font-size: 17.42px;
      font-style: normal;
-     font-weight: 600;
-     line-height: 19.355px;
+     font-weight: 100;
+     line-height: 19.4px;
     
  }
  }
@@ -339,9 +348,10 @@ line-height: 20px; /* 111.111% */
   .price {
     color: #29292B;
     font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
     font-size: 56px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 100;
     line-height: 63.873px;
     margin: 24px 0;
     text-align: left;
@@ -480,8 +490,9 @@ line-height: 20px; /* 111.111% */
 
 
 .questionText{
-  width: 750px;
+  width: 960px;
   margin: 50px auto;
+  
   h2{
     color: #29292B;
     text-align: center;
@@ -489,10 +500,11 @@ line-height: 20px; /* 111.111% */
     text-edge: cap;
     font-size: 42px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 100;
     line-height: normal;
-    letter-spacing: -1px;
+    // letter-spacing: -1px;
     margin-bottom: 15px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
   }
   p{
     color: #3F3F3F;
@@ -501,8 +513,9 @@ line-height: 20px; /* 111.111% */
     text-edge: cap;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 150%; /* 30px */
+    font-family: 'sequel_sans_roman_head' !important;
   }
 }
 @media screen and (max-width: 767px) {

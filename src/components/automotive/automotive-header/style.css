@@ -8,11 +8,11 @@
   background-size: contain;
   margin-top: -17px;
   max-width: 1200px;
-  padding: 62px 46px 69.5px 45px;
+  padding: 62px 46px 60px 45px;
   height: auto;
   position: relative;
 }
-.automotive-header-wrapper::before {
+/* .automotive-header-wrapper::before {
   background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/automative-bg.svg);
   background-repeat: no-repeat;
     background-position: center;
@@ -20,43 +20,50 @@
     content: "";
     width: 454px;
     height: 454px;
-    right: 78px;
+    right: 50px;
     margin-top: 30px;
    
-}
+} */
+ .autoMotive{
+  position: absolute;
+  width: 454px;
+  height: 454px;
+  right: 50px;
+  margin-top: 30px;
+ }
 
 h1.automotive-top-heading {
   color: #fff;
-  font-family: sequel_sans_roman_head!important;
-  font-size: 42px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .automotive-middle-heading {
-  margin-top: 7px;
+  margin-top: 16px;
   color: #fff;
-  font-family: "Inter", sans-serif !important;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: Inter;
+  font-family: "sequel_sans_black_disp", sans-serif !important;
+  /* font-feature-settings: "liga" off, "clig" off; */
+  /* font-family: Inter; */
   font-size: 88px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 72px; 
-  letter-spacing: -6px;
+  font-weight: 100;
+  line-height: 72px;
+  letter-spacing: 0px;
 }
 
 .automotive-heading-content {
-  margin-top: 23px;
+  margin-top: 32px;
   max-width: 578px;
   width: 100%;
   color: #fff;
   font-family: "sequel_sans_roman_head" !important;
   font-size: 18px;
   font-style: normal;
-  font-weight: 360;
+  font-weight: 100;
   line-height: 140%;
 }
 
@@ -70,23 +77,24 @@ h1.automotive-top-heading {
   -webkit-text-stroke-width: 0.2907530963420868;
   -webkit-text-stroke-color: #fff;
   font-family: "sequel_sans";
-  padding: 20px 0px;
+  padding: 13px 0px;
   font-size: 18px;
   font-style: normal;
-  font-weight: 415;
+  font-weight: 100;
   line-height: normal;
   width: 170px;
 }
+
 @media screen and (max-width: 767px) {
   .automotive-page-parent {
     width: 100%;
     padding: 0 15px;
 }
 .automotive-header-wrapper {
-  padding: 32px 25px 43px;
+  padding: 35px 22px 60px 25px;
   max-width: 100%;
   margin-top: 0;
-  text-align: center;
+  text-align: left;
 }
 .automotive-middle-heading {
   font-size: 20px;
@@ -114,5 +122,14 @@ p.automotive-middle-heading br {
 }
 .automotive-bussiness-management-heading {
   font-size: 28px;
+}
+.autoMotive {
+  position: absolute;
+  width: 430px;
+  height: 583px;
+  right: 15px;
+  bottom: 9px;
+  height: auto;
+  width: 132px;
 }
 }

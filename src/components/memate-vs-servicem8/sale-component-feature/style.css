@@ -9,22 +9,24 @@
 .difference-module_gridService8L__LssnP .request-btn {
   justify-content: flex-start;
 }
+
+/* changed */
 .sales-component-feature h2 {
   color: #29292b;
   text-align: center;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
   margin: 0px;
-  font-family: 'sequel_sans_roman_head'!important;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
-
+/* changed */
 .sales-component-feature span {
   margin-top: 25px;
   font-size: 118px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 100px;
   padding-right: 10px;
   font-family: 'sequel_sans_bold_disp'!important;
@@ -32,6 +34,18 @@
 .sales-feature-wrapper{
   margin-top: 84px;
   max-width: 1200px;
+}
+.fontSBD{
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.fontSSMD{
+  font-family: 'sequel_sans' !important;
+}
+.FS28{
+  font-size: 28px !important;
+}
+.FS48{
+  font-size: 48px !important;
 }
 @media screen and (max-width: 767px) {
   .suitable-tender-wrapper {

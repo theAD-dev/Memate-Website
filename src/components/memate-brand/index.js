@@ -1,7 +1,7 @@
 
 
 import ComingSoon from '../../layout/coming-soon';
-// import style from './delete.module.scss';
+import style from './delete.module.scss';
 
 const DeleteRequestComponent = () => {
 

@@ -88,3 +88,10 @@
   outline: none;
   font-family: sequel_sans_roman_head!important;
 }
+
+.LineHeightAndFont{
+  font-size: 156px !important;
+  line-height: 146px !important;
+  color: red !important;
+  padding-bottom: 20px !important;
+}

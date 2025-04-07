@@ -149,7 +149,7 @@ const knowledgeData = [
       </li>
       <li>
         <div class="in">
-      <h6>Down to Business</h6>
+      <h6>“Down to Business”</h6>
       <p>“MeMate: Down to Business” encapsulates our core message of simplifying and streamlining business operations, making it easier for companies to focus on what they do best.</p>
       </div>
       </li>
@@ -227,7 +227,7 @@ const MiddleSection = () => {
       threshold: 0.2
     });
 
-    const headings = document.querySelectorAll('.kb-section-heading');
+    const headings = document.querySelectorAll('.kb-section-heading2');
     headings.forEach(heading => observerRef.current.observe(heading));
 
     requestAnimationFrame(() => {
@@ -264,7 +264,7 @@ const MiddleSection = () => {
       <meta property="og:description" content="" />
   </Helmet>
      <div className="kb-wrapper memate-brand-wrap">
-        <div className="kb-left-wrapper1 kb-tos-wrapper1">
+        <div className="kb-left-wrapper1 kb-tos-wrapper1 heightProvier">
           {knowledge.map((item) => (
             <ul className="kb-list" key={item.id}>
               <li className={`kb-list-item1 ${activeItem === item.id ? 'kb-list-item-active1' : ''}`}>
@@ -274,6 +274,7 @@ const MiddleSection = () => {
                   offset={-100}
                   duration={500}
                   onSetActive={() => setActiveItem(item.id)}
+                  className="ssSBDisFont fontSize16"
                 >
                   {item.name}
                 </Link>
@@ -285,7 +286,7 @@ const MiddleSection = () => {
         <div className="kb-right-wrapper memate-brand-right">
           {knowledge.map((item) => (
             <div className="kb-right-section" key={item.id}>
-              <h1 className="kb-section-heading" id={`section-${item.id}`}>
+              <h1 className="ssSBDisFont fontSize42 kb-section-heading2" id={`section-${item.id}`}>
                 {item.name}
               </h1>
               <div dangerouslySetInnerHTML={{ __html: item.description }} />

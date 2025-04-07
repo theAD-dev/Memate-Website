@@ -96,6 +96,10 @@
 .industry-bussiness-category-wrapper{
     margin-top: 55px;
 }
+.photo-agency-wb{
+    max-width: 1030px !important;
+    padding-bottom: 20px !important;
+}
 @media screen and (max-width: 767px) {
   .industry-bussiness-management-heading {
     font-size: 28px;

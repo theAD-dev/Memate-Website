@@ -8,7 +8,8 @@ import {
 } from "react-share";
 
 const ShareComponent = ({ url, title, image, description }) => {
-  const desc = description;
+  // const desc = description;
+  console.log("DESC ===> ", description)
   return (
     <>
       <Helmet>

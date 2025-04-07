@@ -14,7 +14,7 @@ const AgilePipeLineManagement = () => {
       <div className="content-wrapper">
         <p className="sale-title">Modern</p>
         <p className="sales-heading-sales">Utilise meMate</p>
-        <p className="sales-type">Utilise meMate</p>
+        <p className="sales-type">mobile application</p>
         <p className="sales-description-sales">
         With the meMate mobile application, your team of<br/> employees and contractors can view, approve,<br/> and 
         perform shifts and jobs assigned to them.<br/> This ensures clear communication and 

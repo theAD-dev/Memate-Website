@@ -53,7 +53,7 @@ function CameraFix() {
             </div>
           </div>
 <div className="gadientText">
-  <h2>Business management software for Electronics Repair Shop in Australia.</h2>
+  <h2 className="centeredText">Business management software for Electronics Repair Shop in Australia.</h2>
 </div>
 <div className="wrapperText">
   <h3>Software that helps Australian repair shops operate efficiently</h3>
@@ -151,7 +151,7 @@ function CameraFix() {
            
           </div>
           <div className="gadientText">
-  <h2>“Switching to meMate has been a game-changer for us. We’re able to provide the next level of service to our clients, and the software has made our operations much smoother. It’s an essential tool for our business.” — Alex , Owner of Camera Fix</h2>
+  <h2 className="gameChangerText">“Switching to meMate has been a game-changer for us. We’re able to provide the next level of service to our clients, and the software has made our operations much smoother. It’s an essential tool for our business.” — Alex , Owner of Camera Fix</h2>
 </div>
 <div className="wrapperTextcenter">
         <h3>With meMate, Camera Fix is well-equipped to continue delivering exceptional service while expanding its reach and growing its business.</h3>

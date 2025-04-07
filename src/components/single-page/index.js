@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./style.css";
-import { Link, useParams, useNavigate, Navigate, Route } from 'react-router-dom';
+import { Link, useParams, useNavigate} from 'react-router-dom';
 import Images from "../../assests/blog-images";
 import { blogSingle } from '../../api/blogAPI';
 import SubscribeForm from './subscribe';
@@ -131,14 +131,14 @@ const Single = ({postsSingle, postsLatest }) => {
       <div className="parent parentSingle">
       <div className="pageBreadcrumbs">
             <ul>
-              <li>Home</li><li>/</li><li><Link className="MainPageLink" to="/news">Latest Articles</Link></li><li>/</li><li><Link>{post.title}</Link></li>
+              <li><Link className="MainHomeLink" to="/">Home</Link></li><li>/</li><li><Link className="MainPageLink" to="/news">Latest Articles</Link></li><li>/</li><li><Link>{post.title}</Link></li>
             </ul>
             <Link to="/news" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>
        
         <div className="accounting-text-A categoryLinkTitle "><Link to={`/news/category/${post.category?.id}`}>{post.category?.title}</Link></div>
-        <h1 className="heading-1-A">{post.title}</h1>
-        <div className="heading-date-A">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
+        <h1 className="singlePageheading">{post.title}</h1>
+        <div className="singlePageDate">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
         <div className={`stickySocialWrap ${isScrolled ? 'scrolled' : ''} ${
         isNearBottom ? 'hide' : ''
       }`} >

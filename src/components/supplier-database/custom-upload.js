@@ -47,8 +47,8 @@ const CustomUpload = ({ upload_file, setUploadFile }) => {
       />
 
       <button onClick={handleUploadClick} className="upload-button">
-        <p><strong>Click to upload logo</strong> or drag and drop</p>
-        <p>SVG, PNG, JPG or GIF (max. 800x400px)</p>
+        <p className='dragAndDropText'><strong>Click to upload logo</strong> or drag and drop</p>
+        <p className='dragAndDropText'>SVG, PNG, JPG or GIF (max. 800x400px)</p>
       </button>
     </div>
   );

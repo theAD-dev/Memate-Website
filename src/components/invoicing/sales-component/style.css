@@ -86,3 +86,6 @@
   outline: none;
   font-family: sequel_sans_roman_head!important;
 }
+.paddingOnly{
+  padding-bottom: 30px !important;
+}

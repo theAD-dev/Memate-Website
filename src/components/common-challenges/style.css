@@ -19,10 +19,11 @@
   text-align: center;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
-  font-family: sequel_sans_roman_head!important;
-  margin-bottom: 72px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  margin-bottom: 60px;
+  margin-top: 15px;
 }
 .project-profitability-space {
   margin: 72px 0 !important;
@@ -58,14 +59,14 @@ img.main-bg-img {
 
 p.card-text {
   position: absolute;
-  bottom: 25px;
+  bottom: 45px;
   color: #fff;
   text-align: center;
   font-size: 35px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: 42px;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans_roman_head' !important;
 }
 
 .internal-control {
@@ -94,18 +95,19 @@ p.card-text {
   color: #000;
   font-size: 32px;
   font-style: normal;
-  font-weight: 360;
-  line-height: 110%;
+  font-weight: 100;
+  line-height: 140%;
   margin: 0px;
   text-align: center;
-  font-family: "sequel_sans" !important;
+  /* font-family: "sequel_sans" !important; */
 }
 .control-text p strong {
   color: #29292B;
   font-size: 32px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 140%;
+  font-family: 'sequel_sans_bold_body' !important;
 }
 .icons {
   display: grid;
@@ -145,19 +147,21 @@ p.card-text {
   color: var(--ios-status-bar-status-bar-text-color, #000);
   font-size: 32px;
   font-style: normal;
-  font-weight: 480;
+  font-weight: 400;
   line-height: 140%;
   max-width: 465px;
   margin: auto;
   text-align: center;
 }
-.activities-text p span {
+.activities-text p strong {
+  color: #000;
   color: var(--ios-status-bar-status-bar-text-color, #000);
   text-align: center;
   font-size: 32px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 140%;
+  font-family: 'sequel_sans_heavy_body' !important;
 }
 
 .business-profile {
@@ -179,6 +183,7 @@ img.image-business {
   z-index: 1;
   left: 110px;
   position: relative;
+  bottom: -4px;
 }
 
 img.mask-business {
@@ -196,21 +201,24 @@ img.graph-business {
 .project-profitability {
   margin-top: 11px;
 }
-.inner-text p strong {
+.inner-text p span {
   color: #FFF;
   font-size: 40px;
   font-style: normal;
   line-height: 140%;
   letter-spacing: 2px;
+  font-family: 'sequel_sans_black_head' !important;
+  letter-spacing: 0px;
+  font-weight: 300;
 }
 .inner-text p {
   color: #fff;
-  font-size: 33px;
+  font-size: 40px;
   font-style: normal;
-  font-weight: 360;
-  line-height: 112%;
+  font-weight: 300;
+  line-height: 140%;
   margin: 0px;
-  font-family: "sequel_sans" !important;
+  font-family: "sequel_sans_roman_head" !important;
 }
 .inner-text {
   background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/content-block.png");
@@ -237,7 +245,7 @@ img.graph-business {
   height: inherit;
   width: inherit;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -298,10 +306,10 @@ img.graph-business {
   text-align: center;
   font-size: 48px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 56.2px;
-  letter-spacing: 1px;
-  font-family: "sequel_sans" !important;
+  letter-spacing: 0px;
+  font-family: 'sequel_sans_roman_head' !important;
 }
 
 .overcome-pro {
@@ -318,17 +326,45 @@ img.graph-business {
 
 .overcome-pro p {
   color: var(--ios-status-bar-status-bar-text-color, #000);
-  font-size: 24px;
+  font-size: 48px;
   font-style: normal;
-  line-height: 168%;
+  line-height: 140%;
   text-align: center;
   margin: 0px;
-  font-family: "sequel_sans" !important;
+  font-family: 'sequel_sans_heavy_body' !important;
+  font-weight: 100;
+  letter-spacing: 0px;
 }
 
+p.memateMetaLogo svg {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 120px;
+}
+p.mask-business {
+  position: absolute;
+  top: 130px;
+  z-index: 0;
+}
+p.image-business {
+  position: absolute;
+  z-index: 1;
+  left: 60px;
+}
+p.graph-business {
+  position: absolute;
+  right: 0px;
+  top: 135px;
+}
 @media screen and (max-width: 767px) {
   .common-box-wrapper {
     margin-top: 30px;
+}
+.spanTextMQ{
+  font-size: 22px !important;
 }
 .common-box {
   width: 100%;
@@ -401,6 +437,18 @@ p.card-text {
 }
 .activities-text p span, .activities-text p {
   font-size: 22px;
+}
+.activities-text p span, .activities-text p .strongText {
+  font-size: 22px;
+}
+p.memateMetaLogo svg {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 85px;
+  max-width: 55%;
 }
 }
 @media screen and (max-width: 992px) and (min-width: 768px){

@@ -21,10 +21,10 @@
   text-align: center;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
-  letter-spacing: -1px;
-  font-family: sequel_sans_roman_head!important;
+  letter-spacing: 0px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .gradient-text-animate {
   background-image: linear-gradient(
@@ -127,7 +127,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 100px;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   font-family: "Inter", sans-serif !important;
 }
 
@@ -225,7 +225,7 @@ ul.tab-list li p {
 }
 .large-image-container .businesses-mode {
   width: 679px; 
-  margin: 7px auto 28px;
+  margin: 7px auto 0px;
 }
 .large-image-container .how-to-use {
   margin-top: 15px;
@@ -348,6 +348,10 @@ ul.tab-list li p {
 .large-image {
   -webkit-animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.boxCenterMode p span {
+  display: block;
 }
 
 @-webkit-keyframes fade-in-fwd {

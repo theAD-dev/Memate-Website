@@ -16,9 +16,10 @@
   text-align: center;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
+  font-family: 'sequel_sans_semi_bold_disp';
 }
 .pageBreadcrumbs ul {
   display: flex;
@@ -26,6 +27,15 @@
   justify-content: flex-start;
 }
 .MainPageLink {
+  color: #667085;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 310;
+  line-height: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.MainHomeLink {
   color: #667085;
   font-size: 14px;
   font-style: normal;
@@ -196,15 +206,18 @@ top: 3px;
 .imageOverlyText .customerstoriesDetails .category {
   color: #FFF;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 50px;
+  font-family: 'sequel_sans_roman_disp' !important;
+  font-size: 32px;
 }
 .imageOverlyText .customerstoriesDetails .date-heading-title a {
   color: #FFF;
   font-size: 48px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 58px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .imageOverlyText .customerstoriesDetails .readMoreBut {
   display: none;
@@ -213,20 +226,63 @@ top: 3px;
 .gadientText h2 {
   background: linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #29292B;
-  font-size: 35px;
+  font-size: 38px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 48px;
   letter-spacing: 0.2px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.gadientText2 h2 {
+  background: linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #29292B;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.gadientText3 h2 {
+  background: linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #29292B;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.gameChangerText{
+  font-size: 32px !important;
+  text-align: center;
 }
 .gadientText {
   border-radius: 30px;
   background: #F7F8FA;
   margin-bottom: 48px;
-  padding: 55px 150px;
- 
+  padding: 55px 113px;
+}
+.gadientText2 {
+  border-radius: 30px;
+  background: #F7F8FA;
+  margin-bottom: 48px;
+  padding: 55px 113px;
+}
+.gadientText3 {
+  border-radius: 30px;
+  background: #F7F8FA;
+  margin-bottom: 48px;
+  padding: 55px 100px;
 }
 
 .wrapperText {
@@ -237,17 +293,19 @@ top: 3px;
   color: #29292B;
   font-size: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 32px; 
   letter-spacing: 0.2px;
   margin-bottom: 10px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .wrapperText p {
   color: #3F3F3F;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 150%; 
+  font-family: 'sequel_sans_roman_head' !important;
 }
 .innerGridwrapper img.img-container-stories {
   border-radius: 30px;
@@ -271,11 +329,12 @@ top: 3px;
   color: #29292B;
   font-size: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 32px; 
   letter-spacing: 0.2px;
   margin-bottom: 10px;
   text-align: center;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 
 }
 .wrapperTextcenter {
@@ -284,6 +343,12 @@ top: 3px;
 }
 .ccStories .bottom-management {
   margin-top: 0;
+}
+.centeredText{
+  text-align: center;
+}
+.proVynclText{
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .pageBreadcrumbs {

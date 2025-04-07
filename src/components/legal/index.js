@@ -1,7 +1,7 @@
 
 
 import ComingSoon from '../../layout/coming-soon';
-// import style from './legal.module.scss';
+import style from './legal.module.scss';
 
 const LegalComponent = () => {
 

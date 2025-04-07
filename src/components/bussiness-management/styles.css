@@ -11,28 +11,30 @@
   text-align: center;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: 49.56px;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans_semi_bold_disp'!important;
   max-width: 741px;
   margin: auto;
 }
 .big-img-macMain {
   width: 993px;
+  margin: auto;
 }
 .home-platform h2 {
   color: #29292b;
   text-align: center;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: 49.56px;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans_semi_bold_disp'!important;
   max-width: 741px;
   margin: auto;
 }
 .image-wrapper img {
   width: 70%;
+  /* margin: auto; */
 }
 
 
@@ -54,6 +56,7 @@
 .mainHomeTitle {
   background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0px;
 }
@@ -64,8 +67,8 @@
 
 .iphone-image {
   position: absolute;
-  right: 216px;
-  bottom: 22px;
+  right: 195px;
+  bottom: 21px;
 }
 .create-new-text {
   bottom: 51px;
@@ -78,6 +81,8 @@
 
 .metric-item img, .create-new-text img {
   width: 227px;
+  position: relative;
+    left: 30px;
 }
 .create-new-model img {
   width: 215px;
@@ -121,7 +126,7 @@
   font-style: normal;
   font-weight: 420;
   line-height: 35px;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
   margin: 0px;
 }
 
@@ -134,7 +139,7 @@
   text-align: center;
   font-size: 18px;
   font-style: normal;
-  font-weight: 360;
+  /* font-weight: 360; */
   line-height:25.2px;
   font-family: "sequel_sans_roman_head" !important;
 }
@@ -146,7 +151,7 @@
 }
 
 .request-btn {
-  margin-top: 30px;
+  margin-top: 10px !important;
   cursor: pointer;
   position: relative;
 }
@@ -157,6 +162,7 @@
 .request-btn .btn-base--black .text-btn--nav {
   color: #fff;
   white-space: nowrap;
+  font-family: 'sequel_sans' !important;
 }
 
 
@@ -165,7 +171,7 @@
   text-align: center;
   font-size: 18px;
   font-style: normal;
-  font-weight: 415;
+  font-weight: 100;
   line-height: 21.24px;
   cursor: pointer;
   outline: none;
@@ -175,11 +181,13 @@
   font-size: 42px;
   letter-spacing: 1px;
   line-height: 80px;
+  font-weight: 100;
 }
 .gradiientColor{
   -webkit-text-fill-color: #0000;
   background: linear-gradient(90deg, #1ab2ff 10.15%, #ffb258 69%);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .children-wrapper .main-page {
@@ -191,6 +199,17 @@
   margin-top: 90px !important;
   padding-bottom: 104px;
 }
+
+.pricing-module_PricingTableWrap__UZyUk .pricing-module_pricingcard__Cwzn5 .pricing-module_tophead__IFJ3d .pricing-module_right__8xxut h5 {
+  color: #29292B;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 150%;
+}
+
 
 @media screen and (max-width: 767px) {
   .gradientHeading {
@@ -273,6 +292,7 @@ span.gradientAnimenate {
 }
 .to-replace-bold-text {
   margin-bottom: 5px;
+  line-height: 0px;
 }
 .sliderTabWrapper .slick-slide {
   margin: 20px 15px !important;

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 import Images from "../../../assests/images";
 
 const QuestionAnswer = () => {
-  const [selectedQuestion, setSelectedQuestion] = useState(1);
+  const [selectedQuestion, setSelectedQuestion] = useState();
 
   const questions = [
     {

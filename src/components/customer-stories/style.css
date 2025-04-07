@@ -1,22 +1,54 @@
 .heading-blog {
   font-size: 180px;
-  font-weight: 425;
+  font-weight: 100;
   text-align: center;
   background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "sequel_sans_bold_disp" !important;
   line-height: 0.88;
   letter-spacing: 1px;
   position: relative;
 }
+.heading-blog2 {
+  font-size: 220px;
+  font-weight: 100;
+  text-align: center;
+  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "sequel_sans_bold_disp" !important;
+  line-height: 164px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.ssRH18{
+  font-family: 'sequel_sans_roman_head' !important;
+  font-size: 18px;
+}
+/* changed */
 h1.heading-text-blog {
-  color: #29292B;
+color: #29292B;
 text-align: center;
 font-size: 32px;
 font-style: normal;
-font-weight: 420;
+font-weight: 100;
 line-height: normal;
+
+}
+h1.heading-text-blog2 {
+color: #29292B;
+text-align: center;
+font-size: 32px;
+font-style: normal;
+font-weight: 100;
+line-height: normal;
+font-family: 'sequel_sans_semi_bold_disp' !important;
+white-space: nowrap;
+
 }
 .customerstoriespage .small-heading {
   padding-top: 26px;
@@ -25,7 +57,7 @@ line-height: normal;
   font-family: "sequel_sans_roman_head" !important;
   font-size: 18px;
   font-style: normal;
-  font-weight: 360;
+  font-weight: 100;
   line-height: 140%;
   letter-spacing: -0.18px;
 }
@@ -96,7 +128,7 @@ line-height: normal;
   font-family: 'sequel_sans_roman_head'!important;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: 43px;
   margin-top: 28px;
   text-decoration: none;
@@ -318,8 +350,9 @@ img.img-container-stories {
   color: var(--ios-status-bar-status-bar-text-color, #000);
   font-size: 32px;
   font-style: normal;
-  font-weight: 405;
+  font-weight: 100;
   line-height: 43px;
+  font-family: 'sequel_sansbook_disp';
 }
 .customerstoriesDetails .date-heading-title {
   color: var(--ios-status-bar-status-bar-text-color, #000);
@@ -344,6 +377,8 @@ img.img-container-stories {
   text-decoration: none;
   color: #000;
   margin-top: 40px;
+  font-family: 'sequel_sans' ;
+  font-size:14px; 
 }
 .customerstoriesDetails a.readMoreBut::before {
     content: '';
@@ -365,10 +400,11 @@ img.img-container-stories {
 .customerstoriesDetails .date-heading-title a {
   font-size: 42px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 43px;
   color: #000;
   text-decoration: none;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 @media screen and (max-width: 767px) {
   .customerstoriesGrid {
@@ -408,6 +444,9 @@ h1.heading-text-blog {
 }
 .customerstoriesGrid .innerGrid {
   margin-bottom: 20px;
+}
+.backButStories {
+  font-size: 15px !important;
 }
 
 }

@@ -30,15 +30,16 @@
   font-style: normal;
   font-weight: 360;
   line-height: 140%;
-  letter-spacing: -0.16px;
+  letter-spacing: 0px;
 }
 .customerstoriesitem a {
   color: var(--ios-status-bar-status-bar-text-color, #000);
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 150%;
   text-decoration: none;
+  font-family: 'sequel_sans_medium_head' !important;
 }
 .success-stories1 .slick-track {
   display: flex;
@@ -91,18 +92,18 @@
   color: #29292b;
   text-align: center;
   font-size: 42px;
-  font-weight: 420;
+  font-weight: 100;
   line-height: 49.56px;
   letter-spacing: -1px;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
-
+/* changed */
 .bottom-management p {
-  color: #757b8a;
+  color: #888E9E;
   text-align: center;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans_roman_head' !important;
   font-size: 20px;
-  font-weight: 360;
+  font-weight: 100;
   line-height: 140%;
   max-width: 663px;
   margin-top: 10px;

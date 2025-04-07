@@ -32,10 +32,13 @@
   line-height: normal;
   padding-left: 10px;
 }
+/* changed */
 .kb-list-item a {
   color: #29292b !important;
   text-decoration: none;
   font-size: 15px;
+  font-family: 'sequel_sans_bold_disp' !important;
+
 }
 .kb-nested-list {
   list-style: none;
@@ -209,6 +212,32 @@ li.kb-list-item.kb-list-item-active:before {
 
 .kb-searchbar-wrapper input:focus {
   outline: none;
+}
+.kb-section-heading2{
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+.sqsRHFont{
+  font-family: 'sequel_sans_roman_head' !important;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3F3F3F;
+  font-weight: 100;
+}
+.sqsSBHFont{
+  font-family: 'sequel_sans_semi_bold_head' !important;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3F3F3F;
+  font-weight: 100;
+}
+.spacingClass{
+  margin-bottom: 16px;
+}
+.listMargin{
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .kb-wrapper {

@@ -1,6 +1,6 @@
 .menu-feature-wrapper {
-  padding-top: 3px;
-  padding-left: 44px;
+  padding-top: 5px;
+  padding-left: 35px;
 }
 
 .menu-feature-wrapper-upper {
@@ -15,7 +15,8 @@
 .menu-feature-wrapper-lower {
   margin-top: 39px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 13px;
 }
 .menu-client-management a {
   text-decoration: none;
@@ -32,21 +33,21 @@
   cursor: pointer;
   color: #29292b;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: sequel_sans_roman_head!important;
-  font-size: 15px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
   text-transform: uppercase;
 }
 
 .menu-management-features {
-  margin-top: 19px;
+  margin-top: 13px;
   height: 22px;
 }
 
 .menu-management-feature {
-    margin-top: 13px;
+    margin-top: 11px;
   }
 
 .menu-client-management {
@@ -59,12 +60,12 @@
 
 .clinet-management-text {
   color: #888e9e;
-  font-family: sequel_sans_roman_head!important;
+  font-family: 'sequel_sans_roman_head' !important;
   font-size: 16px;
   font-style: normal;
-  font-weight: 360;
+  font-weight: 100;
   line-height: 140%;
-  letter-spacing: -0.16px;
+  letter-spacing: 0px;
   width: 180px;
-  margin-left: 35px;
+  /* margin-left: 35px; */
 }

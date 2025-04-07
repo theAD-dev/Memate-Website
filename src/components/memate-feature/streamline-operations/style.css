@@ -15,11 +15,11 @@
     text-align: center;
     font-size: 42px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: normal;
     letter-spacing: -1px;
     margin: 0px;
-    font-family: sequel_sans_roman_head!important;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 
 .memate span {
@@ -27,10 +27,10 @@
     text-align: center;
     font-size: 118px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 100;
     line-height: 110px;
     letter-spacing: 0px;
-    font-family: "Inter", sans-serif !important;
+    font-family: "sequel_sans_bold_disp", sans-serif !important;
 }
 
 
@@ -54,27 +54,30 @@
 .operation-left {
     padding: 50px;
     text-align: left;
+    width: 50%;
 }
-
+.operation-right {
+    width: 50%;
+}
 .mediumHeadText {
     color: #29292B;
-    font-size: 58px;
+    font-size: 56px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: normal;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     font-family: 'sequel_sans_semi_bold_disp' !important;
     margin: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .operation-left .smallH2Heading {
     color: #29292B;
-    font-size: 38px;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 415;
+    font-weight: 100;
     line-height: normal;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     font-family: 'sequel_sans' !important;
     margin: 0px;
     line-height: 25px;
@@ -82,24 +85,25 @@
 
 p.all-text {
     color: #242122;
-    font-size: 21px;
+    font-size: 22px;
     font-style: normal;
-    font-weight: 410;
+    font-weight: 100;
     line-height: 100%;
-    letter-spacing: -0.21px;
+    letter-spacing: 0px;
     font-family: 'sequel_sans_roman_disp' !important;
-    margin-bottom: 11px;
+    margin-bottom: 16px;
+    margin-top: 15px;
 }
 
 .operation-desp p {
     color: #888E9E;
     font-size: 20px;
     font-style: normal;
-    font-weight: 360;
-    line-height: 28px;
+    font-weight: 100;
+    line-height: 140%;
     max-width: 450px;
     text-align: left;
-    margin-bottom: 48px;
+    margin-bottom: 46px;
     font-family: "sequel_sans_roman_head" !important;
 }
 
@@ -115,7 +119,7 @@ button.get-started-btn {
     -webkit-text-stroke-color: var(--Gray-900, #101828);
     font-size: 18px;
     font-style: normal;
-    font-weight: 415;
+    font-weight: 100;
     line-height: normal;
     font-family: 'sequel_sans' !important;
     display: flex;
@@ -134,10 +138,10 @@ button.get-started-btn {
     text-align: center;
     font-size: 158.83px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 100;
     line-height: 1.1;
-    letter-spacing: -1px;
-    font-family: "Inter", sans-serif !important;
+    letter-spacing: 0px;
+    font-family: "sequel_sans_bold_disp", sans-serif !important;
 }
 
 .request-btn .get-started-border-box .btn-base--black .text-btn--nav {
@@ -156,6 +160,9 @@ button.get-started-btn {
     position: absolute;
     top: 36px;
     right:56px;
+}
+.max-image img {
+    width: 490px;
 }
 @media screen and (max-width: 767px) {
     .memate .mainHeadingH2 {
@@ -216,6 +223,10 @@ button.get-started-btn {
     .operation-left {
         padding: 0px;
         text-align: center;
+        width: 100%;
+    }
+    .operation-right {
+        width: 100%;
     }
     .main-operation, .boost-profits {
         display: block;
@@ -354,3 +365,13 @@ button.get-started-btn {
         letter-spacing: 0px;
     }
 }
+
+/* p.memateMetaLogo svg {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 85px;
+    max-width: 55%;
+} */

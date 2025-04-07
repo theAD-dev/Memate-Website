@@ -1,11 +1,25 @@
 
 const Images = {
   landingHero: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-banner.png",
+  landingHero1xSize: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Macbook+Pro+mockup1x.png",
+  landingHero2xSize: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Macbook+Pro+mockup2x.png",
+  landingHero3xSize: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Macbook+Pro+mockup3x.png",
   landingHero1x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/landingHero1x.png",
   landingHeromodel: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-modal.png",
   landingHerotask: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-create-new-task.png",
+  landingHerotask1x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Create+New+Task1x.png",
+  landingHerotask2x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Create+New+Task2x.png",
+  landingHerotask3x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Create+New+Task3x.png",
+
   landingHeroitem: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-metric-item.png",
+  landingHeroitem1x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Metric+item1x.png",
+  landingHeroitem2x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Metric+item2x.png",
+  landingHeroitem3x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Metric+item.png",
+
   landingHeroiPhone: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/iphone-image.png",
+  landingHeroiPhone1x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/iPhone+mockup1x.png",
+  landingHeroiPhone2x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/iPhone+mockup2x.png",
+  landingHeroiPhone3x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/iPhone+mockup3x.png",
   logo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
   BurgerIcon: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/burger-menu-svgrepo-com.svg",
   burgerCloseIcon: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/burger-close-icon-w.svg",

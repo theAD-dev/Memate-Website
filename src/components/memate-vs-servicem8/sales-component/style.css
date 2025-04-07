@@ -45,14 +45,15 @@
   -webkit-font-smoothing: antialiased; 
   -moz-osx-font-smoothing: grayscale; 
 }
-
+/* changeds */
 .sales-componet-content-wrapper span {
   text-align: center;
-  font-family: sequel_sans_roman_head!important;
-  font-weight: 360;
+  font-family: 'sequel_sans_roman_head' !important;
+  font-weight: 100;
   line-height: 25.2px;
   color: #757B8A;
   font-size:18px;
+  
 }
 .sales-component-content h1{
   color: #757B8A;
@@ -99,10 +100,11 @@
   text-align: center;
   font-size: 18px;
   font-style: normal;
-  font-weight: 360;
+  font-weight: 100;
   line-height: 140%;
   width: 40%;
   margin: 8px auto;
+  font-family: 'sequel_sans_roman_head' !important;
 }
 @media screen and (max-width: 767px) {
   .compaireHeadPara p {
@@ -122,8 +124,9 @@
   color: #29292B;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 @media screen and (max-width: 767px) {
   .compaireHeadPara h2 {

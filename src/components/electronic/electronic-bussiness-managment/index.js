@@ -17,7 +17,7 @@ const ElectronicBussinessManagement = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <p className="industry-bussiness-management-heading">Business Management</p>
-      <span className='industry-bussinees-content gradientAnimenate'>software for repair shops</span>
+      <span className='industry-bussinees-content industry-bussinees-content-wd gradientAnimenate'>software for repair shops</span>
       {/* <div className='industry-bussiness-sub-content'>
         <p className='industry-bussiness-sub-content-heading'>Why MeMate works exceptionally well for creative agencies</p>
         <p className='industry-bussiness-sub-content-description'>Are you looking for the perfect project management <br></br>software for your creative agency?</p>

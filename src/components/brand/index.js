@@ -26,7 +26,7 @@ const BrandComponent = () => {
       <div className={`kb-main-section ${style.mainHeadinstyle}`}>
       {/* <h5>memate</h5> */}
       {/* <h1 className="h1tagsseo">meMate Brand </h1> */}
-      <h2 className="latest-update-text latest-update-head memate-brand">
+      <h2 className="latest-update-text latest-update-head memate-brand headerPadding">
       brand <br></br>overview
       </h2>
       </div>

@@ -3,12 +3,11 @@ import style from './pricing-module.module.scss';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { Link } from 'react-router-dom';
 import TronButton from '../../layout/hover-button/tourn-but';
+import CheckIcon from '../../svg/CheckIcon';
+import CheckBlackIcon from '../../svg/CheckBlackIcon';
 const pricingboll = 'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingboll.png';
 
-
-
 const PricingTable = () => {
-
   // State to toggle between monthly and yearly prices
   const [isYearly, setIsYearly] = useState(false);
 
@@ -47,14 +46,12 @@ const PricingTable = () => {
       whatsInclude:'Complete Package',
       companypara: 'Everything in Business + Employee and Contractor Management.',
       companyparaSecond: 'Everything in Business + Employee and Contractor Management.',
-      
       individuals:'For',
       monthlyPrice: `Contact us`,
       yearlyPrice: `Contact us`,
       companypara: 'Unlimited Customisation to Your Needs',
       bottomText:'Let’s talk',
       link:'/contact-us',
-      
       action: 'Contact Us',
       features: ["Custom Integrations", "Unique Workflows", "Custom Calculators","Advanced Reporting","Custom Features Especially for Your Industry"]
     }
@@ -62,90 +59,82 @@ const PricingTable = () => {
 
   return (
     <>
-    <div className='pricingHeadWrap'>
-    <p className="smart-investment-heading">Smart investment</p>
-    <span className="smart-investment-banner gradientAnimenate" >pricing</span>
-    <div className="smart-investment-description">
-        <span className="smart-investment-section-description">
-          Plus, we provide a 14-day free trial because we believe our<br></br>
-          software will become indispensable to your business.
-        </span>
+      <div className='pricingHeadWrap'>
+        <p className="smart-investment-heading">Smart investment</p>
+        <span className="smart-investment-banner gradientAnimenate">pricing</span>
+        <div className="smart-investment-description">
+          <span className="smart-investment-section-description">
+            Plus, we provide a 14-day free trial because we believe our<br></br>
+            software will become indispensable to your business.
+          </span>
+        </div>
       </div>
-    </div>
       
-    <div className={style.PricingTableWrap} data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="5500"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
-    <div className={style.pricingtable}>
-     <div className={style.toggleSwitch}>
-      <span id='butMontlyTable'>Monthly
-      </span>
-  
-  {/* <label className={style.switch}>
-    <span className={!isYearly ? style.activeLabel : ''}>Monthly</span>
-    <input
-      type="checkbox"
-      checked={isYearly}
-      onChange={() => setIsYearly(!isYearly)}
-    />
-    <span className={style.slider}></span>
-    <span className={isYearly ? style.activeLabel : ''}>Yearly<br></br> Save 15%</span>
-  </label> */}
-  
-</div>
-
-
-      <div className={` ${style.pricingcards}`}>
-        {plans.map((plan, index) => (
-          <div key={index} className={`pricingCardsWrap ${style.pricingcard}`}>
-            <div className={style.tophead}>
-            <div className={style.head}>
-            <div className={style.left1}>
-            <div className={style.left}>
-         {plan.image && <img src={plan.image} alt={plan.name} />}
-         </div>
-         {/* <p>{plan.bottomText}</p> */}
-         </div>
-         <div className={style.right}>
-         {/* <span>{plan.individuals}</span> */}
-         <h5>{plan.name}</h5>
-         </div>
-         {/* <div className={style.popular}>
-         <span>{plan.popular}</span>
-         </div> */}
-         </div>
-         
-         <h2>{plan.bigHead}</h2>
-         
-         </div>
-         <p className={style.companypara}>{plan.companypara}</p>
-         <h5 className={style.YourSavings}
-               dangerouslySetInnerHTML={{ __html: isYearly ? plan.YourSavings : "" }} />
-        
-            <p className={style.price}
-               dangerouslySetInnerHTML={{ __html: isYearly ? plan.yearlyPrice : plan.monthlyPrice }} />
-           
-         
-            
-            <ul>
-              <h4>{plan.whatsInclude}</h4>
-              {plan.features.map((feature, i) => (
-                <li key={i}><div className={style.checkcircleicon}><CheckCircleIcon htmlColor="#29292B" sx={{width:"25.162px"}}/></div>{feature}</li>
-              ))}
-            </ul>
-            <div id='request-btn-pricing' className="request-btn request-btn-bg">
-            <Link to={plan.link} target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton text={plan.action} /></Link>
+      <div className={style.PricingTableWrap} data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-delay="50"
+        data-aos-duration="5500"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-bottom">
+        <div className={style.pricingtable}>
+          <div className={style.toggleSwitch}>
+            <span id='butMontlyTable'>Monthly</span>
           </div>
-            {/* <Link to={plan.link} target='_blank'><button>{plan.action}</button></Link> */}
+
+          <div className={` ${style.pricingcards}`}>
+            {plans.map((plan, index) => (
+              <div key={index} className={`pricingCardsWrap ${style.pricingcard}`}>
+                <div className={style.tophead}>
+                  <div className={style.head}>
+                    <div className={style.left1}>
+                      <div className={style.left}>
+                        {plan.image && <img src={plan.image} alt={plan.name} />}
+                      </div>
+                    </div>
+                    <div className={style.right}>
+                      <h5>{plan.name}</h5>
+                    </div>
+                  </div>
+
+                  <h2>{plan.bigHead}</h2>
+                </div>
+                <p className={style.companypara}>{plan.companypara}</p>
+                <h5 className={style.YourSavings}
+                  dangerouslySetInnerHTML={{ __html: isYearly ? plan.YourSavings : "" }} />
+                
+                <p className={style.price}
+                  dangerouslySetInnerHTML={{ __html: isYearly ? plan.yearlyPrice : plan.monthlyPrice }} />
+                
+                <ul>
+                  <h4>{plan.whatsInclude}</h4>
+                  {plan.features.map((feature, i) => (
+                    <li key={i}>
+                      {index === 1 ? (
+                        <div className={style.checkcircleicon}>
+                         
+                         <CheckIcon/>
+                        </div>
+                      ) : (
+                        <div className={style.checkcircleicon}>
+                          {/* Default icon */}
+                          <CheckBlackIcon/>
+                        </div>
+                      )}
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <div id='request-btn-pricing' className="request-btn request-btn-bg">
+                  <Link to={plan.link} target="_blank" className="nav-btn--get-started get-started-border-box navbar-link">
+                    <TronButton text={plan.action} />
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
-    </div>
     </>
   );
 };

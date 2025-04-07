@@ -10,6 +10,14 @@ const ElectronicHeader = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
+      <img
+            className="electronicImage"
+            srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ElectronicRepair3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ElectronicRepair2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ElectronicRepair1x.png'} 1800w`}
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ElectronicRepair3x.png'}
+            alt="contact us main image"
+            // width={400} height={400}
+          />
       <h1 className='electronic-top-heading'>Software that helps Australian repair shops<br/>
       operate efficiently</h1>
       <p className='electronic-middle-heading'>Electronic <br></br>Repair <br></br>Specialists</p>

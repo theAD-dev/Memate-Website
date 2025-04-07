@@ -12,7 +12,7 @@
   height: auto;
   position: relative;
 }
-.photo-video-header-wrapper::before {
+/* .photo-video-header-wrapper::before {
   background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/photo-video-agencies.png);
   background-repeat: no-repeat;
     background-position: center;
@@ -22,40 +22,97 @@
     height: 583px;
     right: 78px;
     bottom: 0;
-}
+} */
+ .PhotoAndVideo{
+  position: absolute;
+  width: 510px;
+  height: 583px;
+  right: 78px;
+  bottom: 0;
+ }
 
-h1.photo-video-top-heading {
+/* ------- */
+/* h1.industry-top-heading {
   color: #fff;
-  font-family: sequel_sans_roman_head!important;
-  font-size: 42px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
-.photo-video-middle-heading {
-  margin-top: 7px;
+.industry-middle-heading {
+  margin-top: 16px;
   color: #fff;
-  font-family: "Inter", sans-serif !important;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: Inter;
+  font-family: "sequel_sans_black_disp", sans-serif !important;
   font-size: 88px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 72px; 
-  letter-spacing: -6px;
+  font-weight: 100;
+  line-height: 72px;
+  letter-spacing: 0px;
 }
-
-.photo-video-heading-content {
-  margin-top: 23px;
+.industry-heading-content {
+  margin-top: 32px;
   max-width: 578px;
   width: 100%;
   color: #fff;
-  font-family: sequel_sans_roman_head!important;
+  font-family: "sequel_sans_roman_head" !important;
   font-size: 18px;
   font-style: normal;
-  font-weight: 360;
+  font-weight: 100;
+  line-height: 140%;
+}
+
+.industry-heading-button {
+  margin-top: 24px;
+  border-radius: 60px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  -webkit-text-stroke-width: 0.2907530963420868;
+  -webkit-text-stroke-color: #fff;
+  font-family: "sequel_sans";
+  padding: 13px 0px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  width: 170px;
+} */
+/* -------- */
+
+h1.photo-video-top-heading {
+  color: #fff;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.photo-video-middle-heading {
+  margin-top: 16px;
+  color: #fff;
+  font-family: "sequel_sans_heavy_disp", sans-serif !important;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.photo-video-heading-content {
+  margin-top: 32px;
+  max-width: 578px;
+  width: 100%;
+  color: #fff;
+  font-family: "sequel_sans_roman_head" !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
   line-height: 140%;
 }
 
@@ -69,10 +126,10 @@ h1.photo-video-top-heading {
   -webkit-text-stroke-width: 0.2907530963420868;
   -webkit-text-stroke-color: #fff;
   font-family: "sequel_sans";
-  padding: 20px 0px;
+  padding: 13px 0px;
   font-size: 18px;
   font-style: normal;
-  font-weight: 415;
+  font-weight: 100;
   line-height: normal;
   width: 170px;
 }
@@ -82,10 +139,10 @@ h1.photo-video-top-heading {
     padding: 0 15px;
 }
 .photo-video-header-wrapper {
-  padding: 32px 25px 43px;
+  padding: 32px 33px 43px 18px;
   max-width: 100%;
   margin-top: 0;
-  text-align: center;
+  text-align: left;
 }
 .photo-video-middle-heading {
   font-size: 20px;
@@ -114,4 +171,14 @@ p.photo-video-middle-heading br {
 .photo-video-bussiness-management-heading {
   font-size: 28px;
 }
+.PhotoAndVideo{
+  position: absolute;
+  width: 430px;
+  height: 583px;
+  right: 11px;
+  bottom: 0;
+  height: auto;
+  width: 132px;
+}
+
 }

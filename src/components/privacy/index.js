@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';  
+// import { useState, useEffect } from 'react';  
 import "./style.css";
 import MiddleSection from "./privacy-middle-section";
 import style from './privacy-module.module.scss';
 import { Helmet } from 'react-helmet';
-const KnowledgeBaseMain = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/knowledgeBaseMain.png";
+// const KnowledgeBaseMain = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/knowledgeBaseMain.png";
 
 const PrivacyComponent = () => {
 
@@ -20,8 +20,8 @@ const PrivacyComponent = () => {
 </Helmet>
       <div className={`kb-main-section ${style.mainHeadinstyle}`}>
       {/* <h5>memate</h5> */}
-      <h1 className="h1tagsseo">meMate Privacy Policy</h1>
-      <h2 className="latest-update-text latest-update-head">
+      <h1 className="h1tagsseo2">memate</h1>
+      <h2 className="privacyHeading latest-update-head">
         Privacy
       </h2>
       </div>

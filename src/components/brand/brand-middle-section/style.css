@@ -27,7 +27,7 @@
   font-family: "sequel_sans_bold_disp" !important;
   font-size: 18px;
   font-style: normal;
-  font-weight: 425;
+  font-weight: 100;
   margin-bottom: 20px;
   line-height: normal;
   padding-left: 10px;
@@ -155,17 +155,19 @@ li.kb-list-item.kb-list-item-active:before {
 }
 .latest-update-text {
   font-family: "sequel_sans_bold_disp" !important;
-  font-weight: 425;
-  font-size: 120px;
+  font-weight: 100;
+  font-size: 220px;
   color: #000000;
   text-align: center;
   letter-spacing: 1px;
-  line-height: 145px;
+  line-height: 164px;
   font-style: normal;
+  padding-bottom: 46px;
 }
 .privacy-module_mainHeadinstyle__9Lq53 {
   margin-bottom: 71px;
 }
+
 
 /* .kb-right-section:last-child {
   margin-bottom: -30px;
@@ -215,12 +217,58 @@ li.kb-list-item.kb-list-item-active:before {
   font-family: "sequel_sans_light_disp" !important;
   font-size: 28px;
   font-style: normal;
-  font-weight: 405;
+  font-weight: 100;
   line-height: 24px; /* 75% */
 }
 
 .kb-searchbar-wrapper input:focus {
   outline: none;
+}
+.ssSBDisFont{
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.fontSize16{
+  font-size: 16px !important;
+}
+.fontSize42{
+  font-size: 42px !important;
+}
+h1#section-2 {
+  font-size: 38px !important;
+  font-family: 'sequel_sans' !important;
+}
+h1#section-3 {
+  font-size: 38px !important;
+  font-family: 'sequel_sans' !important;
+}
+h1#section-4 {
+  font-size: 38px !important;
+  font-family: 'sequel_sans' !important;
+  margin-bottom: 24px;
+}
+h1#section-5 {
+  font-size: 32px !important;
+  font-family: 'sequel_sans' !important;
+  margin-bottom: 8px;
+  line-height: 150%;
+}
+h1#section-6 {
+  font-size: 38px !important;
+  font-family: 'sequel_sans' !important;
+  line-height: 150%;
+}
+h1#section-7 {
+  font-size: 38px !important;
+  font-family: 'sequel_sans' !important;
+  line-height: 150%;
+}
+h1#section-8 {
+  font-size: 38px !important;
+  font-family: 'sequel_sans' !important;
+  line-height: 150%;
+}
+.kb-left-wrapper1.kb-tos-wrapper1 {
+  max-height: 77vh !important;
 }
 @media screen and (max-width: 767px) {
   .kb-main-section.privacy-module_mainHeadinstyle__KLI6V .latest-update-text {

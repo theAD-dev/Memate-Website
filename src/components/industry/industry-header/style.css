@@ -12,8 +12,8 @@
   height: auto;
   position: relative;
 }
-.industry-header-wrapper::before {
-  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/creative-agencies-img-man.png);
+/* .industry-header-wrapper::before {
+  background: url('https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/creative-agencies-img-man.png');
   background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -22,39 +22,46 @@
     height: 583px;
     right: 78px;
     bottom: 0;
-}
+} */
+ .motivationImage{
+  position: absolute;
+  width: 430px;
+  height: 583px;
+  right: 78px;
+  bottom: 0;
+ }
 
 h1.industry-top-heading {
   color: #fff;
-  font-family: sequel_sans_roman_head!important;
-  font-size: 42px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
   letter-spacing: 0px;
 }
 
 .industry-middle-heading {
-  margin-top: 7px;
+  margin-top: 16px;
   color: #fff;
-  font-family: "Inter", sans-serif !important;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: Inter;
+  font-family: "sequel_sans_black_disp", sans-serif !important;
+  /* font-feature-settings: "liga" off, "clig" off; */
+  /* font-family: Inter; */
   font-size: 88px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 72px;
   letter-spacing: 0px;
 }
 .industry-heading-content {
-  margin-top: 23px;
+  margin-top: 32px;
   max-width: 578px;
   width: 100%;
   color: #fff;
   font-family: "sequel_sans_roman_head" !important;
   font-size: 18px;
   font-style: normal;
-  font-weight: 360;
+  font-weight: 100;
   line-height: 140%;
 }
 
@@ -68,10 +75,10 @@ h1.industry-top-heading {
   -webkit-text-stroke-width: 0.2907530963420868;
   -webkit-text-stroke-color: #fff;
   font-family: "sequel_sans";
-  padding: 20px 0px;
+  padding: 13px 0px;
   font-size: 18px;
   font-style: normal;
-  font-weight: 415;
+  font-weight: 100;
   line-height: normal;
   width: 170px;
 }
@@ -87,10 +94,11 @@ h1.industry-top-heading {
   font-size: 28px;
 }
 .industry-header-wrapper {
-  padding: 32px 25px 43px;
+  padding: 32px 33px 43px 18px;
   max-width: 100%;
   margin-top: 0;
-  text-align: center;
+  /* text-align: center; */
+  text-align: left;
 }
 .industry-middle-heading {
   font-size: 20px;
@@ -119,5 +127,47 @@ p.industry-middle-heading br {
 }
 .industry-bussiness-management-heading {
   font-size: 28px;
+}
+.industry-bussiness-sub-content-description {
+  color: #29292b;
+  font-family: 'sequel_sans_roman_head' !important;
+  font-size: 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 110%;
+  letter-spacing: 0px;
+  /* white-space: nowrap; */
+}
+.motivationImage {
+  position: absolute;
+  width: 430px;
+  height: 583px;
+  right: -2px;
+  bottom: 0;
+  height: auto;
+  width: 133px;
+}
+.industry-bussiness-sub-content-description {
+  color: #29292b;
+  font-family: 'sequel_sans_roman_head' !important;
+  font-size: 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 110%;
+  letter-spacing: 0px;
+  white-space: wrap !important;
+}
+.industry-crousel-heading {
+  color: #101828;
+  text-align: center;
+  font-family: "sequel_sans_medium_head" !important;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 44px;
+  letter-spacing: -1px;
+  white-space: wrap !important;
 }
 }

@@ -14,13 +14,15 @@ html {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+/* changed */
 .h1tagsseo{
   color: #29292B;
   text-align: center;
   font-size: 32px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: normal;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .pricingHeadWrap {
   text-align: center;
@@ -67,6 +69,7 @@ body::-webkit-scrollbar-thumb ,
 .pricingCardsWrap:nth-child(2):hover .request-btn .get-started-border-box .btn-base--black {
   border: 1px solid #000 !important;
 }
+/* changed */
 .sales-heading {
   padding-bottom: 50px;
   color: transparent;
@@ -76,12 +79,13 @@ body::-webkit-scrollbar-thumb ,
   font-style: normal;
   margin-top: 25px;
   font-style: normal;
-  font-weight: 425;
-  letter-spacing: -1px;
+  font-weight: 100;
+  letter-spacing: 1px;
   padding-right: 0px;
   font-family: "sequel_sans_bold_disp" !important;
   background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 body::-webkit-scrollbar-thumb:hover ,
@@ -98,14 +102,16 @@ code {
   box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
 }
 .p-dialog .p-dialog-header {
-  padding: 30px 40px 30px;
+  padding: 20px 40px 20px;
   border-bottom: 1px solid #EAECF0;
 }
 .p-dialog .p-dialog-content {
-  padding: 24px 40px;
+  padding: 0px 40px;
+  color: #29292B;
 }
+/* changed */
 .smart-investment-wrapper {
-  padding-top: 0;
+  padding-top: 60px;
 }
 .p-dialog-footer {
   padding: 16px 40px 16px;
@@ -266,6 +272,7 @@ border: 0;
   background: #fff;
   padding-bottom: 0px;
 }
+/* changed */
 #butMontlyTable {
   border-radius: 60px;
   background: linear-gradient(to right bottom, #1ab2ff 10.15%, #ffb258 69%);
@@ -281,34 +288,39 @@ border: 0;
   text-align: center;
   font-size: 18px;
   font-style: normal;
-  font-weight: 415;
+  font-weight: 100;
   line-height: normal;
+  font-family: 'sequel_sans' !important;
 }
+/* changed */
 .titleHead h4.tagHeadtitle {
   color: #29292B;
   text-align: center;
   font-size: 42px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: normal;
   letter-spacing: -1px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .titleHead  span {
   color: #757B8A;
   text-align: center;
   font-size: 18px;
   font-style: normal;
-  font-weight: 360;
+  font-weight: 100;
   line-height: 140%;
+  font-family: 'sequel_sans_roman_head' !important;
 }
 .titleHead  h1 {
   color: #29292B;
   text-align: center;
   font-size: 32px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: normal;
   margin-top: 24px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 
 
@@ -434,10 +446,24 @@ p.sales-description-sales {
 }
 }  */
 
+.fontSize42-2{
+  font-size: 42px !important;
+}
+.fontAndText{
+  font-family: 'sequel_sans_roman_head' !important;
+  font-size: 18px;
+  margin-top: 20px;
+}
 
-
-
-
+.ssMDFont{
+  font-family: 'sequel_sans' !important;
+  font-weight: 100;
+}
+.ssMDFontBlack{
+  color: #FFFFFF;
+  font-family: 'sequel_sans' !important;
+  font-weight: 100;
+}
 
 @media screen and (max-width: 767px) {
   .titleHead h4.tagHeadtitle {
@@ -462,6 +488,12 @@ p.sales-description-sales {
 }
 .jobs-heading {
   line-height: 38px !important;
+}
+.intro-sticky {
+  margin-bottom: 50px;
+}
+.apply-content {
+  margin-top: -700px;
 }
 }
 @media screen and (max-width: 600px) {

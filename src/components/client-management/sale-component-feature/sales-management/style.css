@@ -20,23 +20,23 @@
   margin-top: -2px;
   color: #242122;
   font-style: normal;
-  font-weight: 410;
+  font-weight: 100;
 }
 
 .sales-heading-sales {
   margin-top: 4px;
   font-size: 40px !important;
-  font-weight: 415;
+  font-weight: 100;
   font-style: normal;
   line-height: normal;
-  font-family: "sequel_sans_heavy_body" !important;
+  font-family: "sequel_sans" !important;
   color: #29292b;
 }
-
+/* changed */
 .sales-description-sales {
   margin-top: 40px;
   font-size: 20px;
-  font-weight: 360px;
+  font-weight: 100;
   font-family: "sequel_sans_roman_head" !important;
   color: #888e9e;
   line-height: 28px;
@@ -46,9 +46,9 @@
   color: #29292b;
   font-size: 56px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: 50px;
-  font-family: 'sequel_sans_bold_disp'!important;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 @media screen and (max-width: 767px) {
   .sales-heading-sales {

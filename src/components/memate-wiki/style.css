@@ -1,13 +1,14 @@
 html {
     scroll-behavior: smooth;
 }
-
+/* changed */
 .kb-section-wiki-description, h2,p,span{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 360;
+    font-weight: 100;
     line-height: 150%; 
+    font-family: 'sequel_sans_roman_disp' !important;
 }
 a span{
     color: #29292b;

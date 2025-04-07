@@ -11,6 +11,7 @@
 .ComingSonnBg h1{
     background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 50px;
     color: transparent;
@@ -20,7 +21,7 @@
     line-height: 164px;
     margin-top: 25px;
     font-style: normal;
-    font-weight: 425;
+    font-weight: 100;
     letter-spacing: -1px;
     padding-right: 0px;
     font-family: 'sequel_sans_bold_disp' !important;
@@ -31,10 +32,12 @@
         text-align: center;
         font-size: 20px;
         font-style: normal;
-        font-weight: 405;
+        font-weight: 100;
         line-height: 130%;
         width: 751px;
         margin: 32px auto 32px;
+        font-family: 'sequel_sansbook_disp' !important;
+
     }
 
     @media screen and (max-width:767px){

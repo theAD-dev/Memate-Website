@@ -14,7 +14,14 @@ const StartupsHeader = () => {
       <br/>
       <br/>
       <br/>
-      <br/>
+      <img
+            className="starTups"
+            srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/startupsAndNewBusinesses1x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/startupsAndNewBusinesses2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/startupsAndNewBusinesses1x.png'} 1800w`}
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/startupsAndNewBusinesses3x.png'}
+            // alt="contact us main image"
+            // width={400} height={400}
+          />
       <h1 className='startup-top-heading'>Management Software for </h1>
       <p className='startup-middle-heading'>Startups and<br/> New Businesses</p>
       <p className='startup-heading-content'>meMate is designed to help you kickstart your business with the right workflow from day one. It’s the ideal tool to set up your operations smoothly and efficiently as you grow.</p>

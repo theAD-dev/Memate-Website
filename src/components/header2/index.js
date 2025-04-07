@@ -7,6 +7,18 @@ import { MenuAbout, MenuFeature, MenuIndustry, MenuLegal, MenuNews, MenuRessourc
 import "./style.css";
 import MenuData from "../../layout/mobile-menu/menu-data";
 import TronButton from "../../layout/hover-button/tourn-but";
+import MemateLogoHeaderAbout from "../../svg/MemateLogoHeaderAbout";
+import FeatureMain from "../../svg/FeatureMain";
+import Industrymain from "../../svg/Industrymain";
+import AboutMain from "../../svg/AboutMain";
+import NewsAndStoriesmain from "../../svg/NewsAndStoriesmain";
+import LegalActiveSVG from "../../svg/LegalActiveSVG";
+import LegalInactiveSVG from "../../svg/LegalInactiveSVG";
+import ResourcesInactiveSVG from "../../svg/ResourcesInactiveSVG";
+import ResourcesActiveSVG from "../../svg/ResourcesActiveSVG";
+import FAQSVG from "../../svg/FAQSVG";
+import ContactSalesSVG from "../../svg/ContactSalesSVG";
+import WatchDemoSVG from "../../svg/WatchDemoSVG";
 
 const DownBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
 const DownColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-color-arrow.svg";
@@ -28,25 +40,29 @@ const Header = () => {
       id: 1,
       label: <Link to="/features">Features</Link>,
       selectedIcon: menuImages.featureImage,
-      unselectedIcon: menuImages.featureImageUnselected,
+      // unselectedIcon: menuImages.featureImageUnselected,
+      unselectedIcon: (<FeatureMain/>),
     },
     {
       id: 2,
       label: <Link to="/industries">Industries</Link>,
       selectedIcon: menuImages.industrySelected,
-      unselectedIcon: menuImages.industryUnSelected,
+      // unselectedIcon: menuImages.industryUnSelected,
+      unselectedIcon: <Industrymain/>,
     },
     {
       id: 3,
       label: <Link to="/news-stories">News & Stories</Link>,
       selectedIcon: menuImages.newStorySelected,
-      unselectedIcon: menuImages.newStoryUnSelected,
+      // unselectedIcon: menuImages.newStoryUnSelected,
+      unselectedIcon: <NewsAndStoriesmain/>,
     },
     {
       id: 4,
       label: <Link to="/about">About</Link>,
       selectedIcon: menuImages.aboutSelected,
-      unselectedIcon: menuImages.aboutUnselected,
+      // unselectedIcon: menuImages.aboutUnselected,
+      unselectedIcon: <AboutMain/>,
     },
   ];
 
@@ -170,11 +186,10 @@ const Header = () => {
                               : "header-menu-icon-wrapper"
                           }
                         >
-                          <img
-                            src={
-                              menu.unselectedIcon
-                            } alt={menu.unselectedIcon}
-                          />
+                          {/* <p */}
+                              {menu.unselectedIcon}
+                              {/* alt={menu.unselectedIcon} */}
+                          {/* // /> */}
                           <p
                             style={{
                               marginLeft: `${menu.id === 3 ? "6px" : ""}`,
@@ -207,7 +222,10 @@ const Header = () => {
                   {renderContent()}
                 </div>
                 <div className="header-menu-header-div-memate-component">
-                  <img src={Images.logo} alt="logo" type="image/svg+xml" />
+                  {/* <img src={Images.logo} alt="logo" type="image/svg+xml" /> */}
+                  {/* <picture > */}
+                          <MemateLogoHeaderAbout alt="logo" type="image/svg+xml"/>
+                  {/* </picture> */}
                   <div className="header-menu-memate-feature">
                     <div className="header-menu-feature">
                       <img src={menuImages.meMateCheck} alt="meMateCheck" />
@@ -264,14 +282,12 @@ const Header = () => {
                       setSelectedMenuItem(5);
                     }}
                   >
-                    <img
-                      src={
-                        selectedMenuItem === 5
-                          ? menuImages.selectedLegal
-                          : menuImages.unselectedLegal
+                    
+                      {  selectedMenuItem === 5
+                          ? <LegalActiveSVG/>
+                          : <LegalInactiveSVG/>
                       }
-                      alt="menuImages.selectedLegal"
-                    />
+                      
                     <p
                       className={
                         selectedMenuItem === 5
@@ -289,14 +305,12 @@ const Header = () => {
                       setSelectedMenuItem(6);
                     }}
                   >
-                    <img
-                      src={
-                        selectedMenuItem === 6
-                          ? menuImages.selectedResources
-                          : menuImages.unselectedResources
+
+                      {  selectedMenuItem === 6
+                          ? <ResourcesActiveSVG/>
+                          : <ResourcesInactiveSVG/>
                       }
-                      alt="unselectedResources"
-                    />
+
                     <p
                       className={
                         selectedMenuItem === 6
@@ -312,10 +326,11 @@ const Header = () => {
   style={{ cursor: "pointer" }}
 >
   <Link to="/faqs">
-    <img
+    {/* <img
       src={location.pathname === "/faqs" ? menuImages.selectedLegal : menuImages.unselectedLegal}
       alt="faqs-icon"
-    />
+    /> */}
+    <FAQSVG/>
     
     <p className={location.pathname === "/faqs" ? "header-footer-legal-text-selected" : "header-footer-legal-text"}>
     &nbsp; FAQs
@@ -326,14 +341,16 @@ const Header = () => {
                 </div>
                 <div className="header-menu-footer-left-content">
                   <div className="header-footer-legal">
-                    <img src={menuImages.unselectedSales} alt="unselectedSales" />
+                    {/* <img src={menuImages.unselectedSales} alt="unselectedSales" /> */}
+                    <ContactSalesSVG/>
                     <Link to='/contact-us'> <p className="header-footer-legal-text">Contact Sales</p> </Link>
                   </div>
                   <div className="header-footer-legal">
-                    <img
+                    {/* <img
                       src={menuImages.unselectedWatchDemo} alt="unselectedWatchDemo"
                       style={{ marginTop: "-2px" }}
-                    />
+                    /> */}
+                    <WatchDemoSVG/>
                     <Link to='#'> <p className="header-footer-legal-text">Watch demo</p> </Link>
                   </div>
                 </div>

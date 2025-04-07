@@ -1,7 +1,7 @@
 
 
 import ComingSoon from '../../layout/coming-soon';
-// import style from './csales.module.scss';
+import style from './csales.module.scss';
 
 const ContactSalesComponent = () => {
 

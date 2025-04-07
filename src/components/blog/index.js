@@ -53,7 +53,14 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
               <h1 className="heading-text-blog">Latest Small Business <br />Technology News and Software Updates</h1>
             </div>
             <div className="dog-img-container1 dog-img-container">
-              <img className="dog-img" src={Images.blogImgDog} alt="unrendered" />
+              {/* <img className="dog-img" src={Images.blogImgDog} alt="unrendered" /> */}
+              <img
+              className="dog-img"
+            srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage1x.png'} 1800w`}
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage3x.png'}
+            // alt="Pricing main image"
+          />
             </div>
           </div>
           <div className="categoriesMainWrap">
@@ -95,7 +102,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                             </Link>
                             <div className="img-heading-container">
                               <div className="date-A">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
-                              <div className="date-heading-A"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
+                              <div className="date-heading-main"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
                             </div>
                             <div className='postCategory'>
                               <Link to={`/news/category/${post.category.id}`}>{post.category.title}</Link>
@@ -128,7 +135,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                               </Link>
                               <div className="img-heading-container">
                                 <div className="date-A">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
-                                <div className="date-heading-A"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
+                                <div className="date-heading-main"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
                               </div>
                               <div className='postCategory'>
                                 <Link to={`/news/category/${post.category.id}`}>{post.category.title}</Link>
@@ -185,8 +192,8 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                             {formatDateWithOrdinal(postsLatest[0]?.publish_date)} | {postsLatest[0]?.author}
                           </div>
                         </div>
-                        <div className="img-container-1-div-text-2">
-                          <Link to={`/news/${postsLatest[0]?.slug}`}>{postsLatest[0]?.title}</Link>
+                        <div className="img-container-1-div-text-2 ">
+                          <Link className="fontfamilyChanger" id='fontfamilyChanger' to={`/news/${postsLatest[0]?.slug}`}>{postsLatest[0]?.title}</Link>
                         </div>
                         <div className='postCategory'>
                           <Link to={`/news/category/${postsLatest[0]?.category.id}`}>{postsLatest[0]?.category.title}</Link>
@@ -218,7 +225,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     <div className="date-A">
                       {formatDateWithOrdinal(postsLatest[1]?.publish_date)} | {postsLatest[1]?.author}
                     </div>
-                    <div className="date-heading-A"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
+                    <div className="date-heading-main"><Link to={`/news/${postsLatest[1]?.slug}`}>{postsLatest[1]?.title}</Link></div>
                     <div className='postCategory'>
                       <Link to={`/news/category/${postsLatest[1]?.category.id}`}>{postsLatest[1]?.category.title}</Link>
                     </div>
@@ -238,7 +245,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     <div className="date-A">
                       {formatDateWithOrdinal(postsLatest[2]?.publish_date)} | {postsLatest[2]?.author}
                     </div>
-                    <div className="date-heading-A"><Link to={`/news/${postsLatest[2]?.slug}`}>{postsLatest[2]?.title}</Link></div>
+                    <div className="date-heading-main"><Link to={`/news/${postsLatest[2]?.slug}`}>{postsLatest[2]?.title}</Link></div>
                     <div className='postCategory'>
                       <Link to={`/news/category/${postsLatest[2]?.category.id}`}>{postsLatest[2]?.category.title}</Link>
                     </div>
@@ -252,7 +259,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
           {/* {hide this and do not load data when other tabs gets hits} */}
           {activeCategory === 0 ? 
           <>
-            <span className="latest-article-heading" data-aos="fade-up"
+            <span className="articlesHeading" data-aos="fade-up"
             data-aos-offset="50"
             data-aos-delay="50"
             data-aos-duration="2000"
@@ -278,7 +285,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                   </Link>
                   <div className="img-heading-container">
                     <div className="date-A">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
-                    <div className="date-heading-A"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
+                    <div className="date-heading-main"><Link to={`/news/${post.slug}`}>{post.title}</Link></div>
                   </div>
                   <div className='postCategory'>
                     <Link to={`/news/category/${post.category.id}`}>{post.category.title}</Link>

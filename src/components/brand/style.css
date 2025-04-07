@@ -12,7 +12,7 @@
     font-family: "sequel_sans_bold_disp";
     font-size: 220px;
     font-style: normal;
-    font-weight: 425;
+    font-weight: 100;
     line-height: 164px;
     letter-spacing: 1px;
     padding-top: 192.2px;
@@ -31,6 +31,9 @@
     left: 50%;
     transform: translateX(-80%);
 }
+.headerPadding{
+    padding-bottom: 10px;
+  }
 
 
 @media screen and (max-width: 767px) {
@@ -78,17 +81,17 @@
         font-size: 42px;
         font-style: normal;
         margin-bottom: 12px;
-        font-weight: 420;
+        font-weight: 100;
         line-height: normal;
     
 }
 .memate-brand-right h1#section-2 {
     color: #29292b;
-    font-family: "sequel_sans_light_disp" !important;
+    font-family: "sequel_sans_light_disp" ;
     font-size: 29px;
     font-style: normal;
     margin-bottom: 12px;
-    font-weight: 600;
+    font-weight: 100;
     line-height: normal;
     margin-top: -53px;
     padding: 0;
@@ -97,9 +100,10 @@
     color: #888E9E;
     font-size: 20px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 140%; 
-    letter-spacing: -0.2px;
+    /* letter-spacing: -1px; */
+    font-family: 'sequel_sans_roman_head' !important;
 }
 .memate-brand-right .logBrand {
     margin: 94px 0;
@@ -135,8 +139,9 @@
     color: #29292B;
     font-size: 32px;
     font-style: normal;
-    font-weight: 415;
+    font-weight: 100;
     line-height: normal;
+    font-family: 'sequel_sans' !important;
 }
 .logBrandHori ul {
     display: flex;
@@ -146,10 +151,11 @@
     color: #29292B;
     font-size: 32px;
     font-style: normal;
-    font-weight: 415;
+    font-weight: 100;
     line-height: normal;
     margin-bottom: 27px;
     display: inline-block;
+    font-family: 'sequel_sans' !important;
 }
 .logBrandHori ul li {
     padding: 126px 25px;
@@ -175,9 +181,10 @@
     color: #29292B;
     font-size: 32px;
     font-style: normal;
-    font-weight: 415;
+    font-weight: 100;
     line-height: normal;
     margin-bottom: 20px;
+    font-family: 'sequel_sans' !important;
 }
 .memate-brand-right .doesandDont .listing li {
     justify-content: flex-start;
@@ -185,8 +192,9 @@
     color: #29292B;
     font-size: 14px;
     font-style: normal;
-    font-weight: 360;
+    font-weight: 100;
     line-height: 140%;
+    font-family: 'sequel_sans_roman_head' !important;
 }
 .fonts-sec {
     padding: 26px 0;
@@ -198,8 +206,9 @@
     color: #29292B;
     font-size: 24px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: normal;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .memate-brand-right .brandSec {
     margin: 54px 0;
@@ -221,16 +230,18 @@
     text-align: left;
     font-size: 32px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: 48px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .memate-brand-right .brandSec li .in p {
     color: #29292B;
     font-size: 18px;
     font-style: normal;
-    font-weight: 360;
+    font-weight: 100;
     line-height: 150%; 
-    letter-spacing: -0.18px;
+    letter-spacing:-1px; 
+    font-family: 'sequel_sans_roman_head' !important;
 }
 .memate-brand-right .brandSec li:hover .in p,.memate-brand-right .brandSec li:hover .in h6 {
     color: #fff;
@@ -270,7 +281,7 @@
     color: #29292B;
     font-size: 20px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: 150%;
 }
 .kb-left-wrapper1.kb-tos-wrapper1 .kb-list-item-active1 {

@@ -10,7 +10,7 @@ import CallbackNow from "./callbacknow";
 import EmailNow from "./emailnow";
 
 
-const ContactUsMainImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/max.n.max_An_Office_Girl.png"
+// const ContactUsMainImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/max.n.max_An_Office_Girl.png"
 const ContactUsComponent = () => {
 
 
@@ -31,13 +31,23 @@ const ContactUsComponent = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
         <div className="main-heading" >contact us</div>
-        <div className="main-image"><img src={ContactUsMainImage} alt="contact us main image" width={400} height={400}/></div>
+        <div className="main-image">
+          {/* <img src={ContactUsMainImage} alt="contact us main image" width={400} height={400}/> */}
+          <img
+              // className="dog-img"
+            srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ContactUs3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ContactUs2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ContactUs1x.png'} 1800w`}
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ContactUs3x.png'}
+            alt="contact us main image"
+            width={400} height={400}
+          />
+          </div>
         <div className="mid-heading">
           <h1 className="h1tags">Contact the MeMate Team for Business Management <br/>Software Solutions in Australia</h1>
           {/* <p>a friendly memate specialist is ready to help.</p> */}
         </div>
         <div className="small-heading">
-          <p>Made for Small to Medium Businesses for Simplicity and Order</p>
+          <p className="contactParagraph">Made for Small to Medium Businesses for Simplicity and Order</p>
         </div>
         <div className="request-btn">
         <Link to='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started  navbar-link"><TronButton text="Book a Demo" /></Link>
@@ -54,11 +64,11 @@ const ContactUsComponent = () => {
           <div className='query-card query-1 '>
             <div className='query-main '>
               <div className='query-main-heading'>
-                <p>Contact</p>
-                <p>by phone</p>
+                <p className="contactText">Contact</p>
+                <p className="contactText">by phone</p>
               </div>
               <div className='query-small-heading'>
-                <p>Request a callback.</p>
+                <p className="ContactSubText">Request a callback.</p>
               </div>
             </div>
            
@@ -70,12 +80,12 @@ const ContactUsComponent = () => {
           <div className='query-card query-2 '>
             <div className='query-main'>
               <div className='query-main-heading'>
-                <p>Chat with</p>
-                <p>our experts</p>
+                <p className="contactText">Chat with</p>
+                <p className="contactText">our experts</p>
               </div>
               <div className='query-small-heading'>
-                <p>Chat to us live anytime between:</p>
-                <p>8am-6pm (AEST), Monday to Friday</p>
+                <p className="ContactSubText">Chat to us live anytime between:</p>
+                <p className="ContactSubText">8am-6pm (AEST), Monday to Friday</p>
               </div>
             </div>
             <div className='query-button'>
@@ -87,11 +97,11 @@ const ContactUsComponent = () => {
           <div className='query-card query-3 '>
             <div className='query-main'>
               <div className='query-main-heading query-color'>
-                <p>Email</p>
-                <p>our experts</p>
+                <p className="contactText">Email</p>
+                <p className="contactText">our experts</p>
               </div>
               <div className='query-small-heading query-color'>
-                <p>Message us anytime.</p>
+                <p className="ContactSubText">Message us anytime.</p>
                 
               </div>
             </div>
@@ -102,8 +112,8 @@ const ContactUsComponent = () => {
           </div>
         </div>
         <div className="small-heading">
-          <p>Please send any media or PR enquiries directly to pr@memate.com.au.</p>
-          <p>If we have let you down in any way, we want to hear it at complaints@memate.com.au</p>
+          <p className="ContactSubText">Please send any media or PR enquiries directly to pr@memate.com.au.</p>
+          <p className="ContactSubText">If we have let you down in any way, we want to hear it at complaints@memate.com.au</p>
         </div>
       </div>
     </div>

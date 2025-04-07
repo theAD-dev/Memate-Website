@@ -11,7 +11,7 @@ const AutomativeWorkshop = () => {
 <div className={`${style.spacingRight} ${style.flexContentWrap}`}>
 <h4>Essential</h4>
 <h3>Complete </h3>
-<h2>Workshop Control</h2>
+<h2>Workshop <br></br>Control</h2>
     <p>Manage quotes, invoices, jobs, purchase orders, and more with full control over your workshop. 
       Every action is recorded in an interconnected system that ensures transparency and cannot be altered. 
       A clean, proven solution for streamlined performance.</p>

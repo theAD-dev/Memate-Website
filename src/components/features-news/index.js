@@ -1,7 +1,7 @@
 
 
 import ComingSoon from '../../layout/coming-soon';
-// import style from './features.module.scss';
+import style from './features.module.scss';
 
 const FeaturesNewsComponent = () => {
 

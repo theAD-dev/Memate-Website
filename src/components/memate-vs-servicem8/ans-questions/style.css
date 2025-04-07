@@ -28,8 +28,8 @@
 
 .question-answer-heading {
   font-size: 42px;
-  font-family: sequel_sans_roman_head!important;
-  font-weight: 420;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-weight: 100;
   letter-spacing: -1px;
   line-height: 49.56px;
   color: #29292b;
@@ -62,22 +62,23 @@
   font-family: sequel_sans_roman_head!important;
   font-size: 20px;
   font-style: normal;
-  font-weight: 410;
+  font-weight: 100;
   line-height: 150%; /* 30px */
 }
 
 .question-answer-ques-info {
-  font-size: 25px;
-  font-weight: 420;
-  font-family: sequel_sans_roman_head!important;
+  font-size: 24px;
+  font-weight: 100;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
   color: #29292b;
-  line-height: 35px;
+  line-height: 140%;
   width: 100%;
 }
 
 .selected .question-answer-ques-info {
   background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 767px) {

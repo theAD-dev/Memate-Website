@@ -4,7 +4,7 @@ import AddIcon from "@mui/icons-material/Add";
 import { Box } from "@mui/material";
 import Images from "../../../assests/images";
 const StartupsQuesitonAndAns = () => {
-  const [selectedQuestion, setSelectedQuestion] = useState(0);
+  const [selectedQuestion, setSelectedQuestion] = useState();
 
   const questions = [
     {
