@@ -3,6 +3,8 @@ import "./style.css";
 import Images from "../../../assests/images";
 import { Link } from "react-router-dom";
 import TronButton from "../../../layout/hover-button/tourn-but";
+import WhiteButtonWithoutGradient from "../../../layout/hover-button/WhiteButtonWithoutGradient";
+import WhiteNormalButton from "../../../layout/hover-button/WhiteNormalButton";
 // import MaxImage from "../../../svg/MaxImage";
 
 const MeMateFeatureStreamline = () => {
@@ -46,7 +48,7 @@ const MeMateFeatureStreamline = () => {
                     target="_blank"
                     className="nav-btn--get-started get-started-border-box  navbar-link"
                   >
-                    <TronButton text="Book a Demo" />
+                    <WhiteNormalButton text="Book a Demo" />
                   </Link>
                 </div>
               </div>

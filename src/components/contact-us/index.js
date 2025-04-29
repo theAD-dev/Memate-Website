@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import TronButton from "../../layout/hover-button/tourn-but";
 import CallbackNow from "./callbacknow";
 import EmailNow from "./emailnow";
+import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
 
 
 // const ContactUsMainImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/max.n.max_An_Office_Girl.png"
@@ -49,8 +50,8 @@ const ContactUsComponent = () => {
         <div className="small-heading">
           <p className="contactParagraph">Made for Small to Medium Businesses for Simplicity and Order</p>
         </div>
-        <div className="request-btn">
-        <Link to='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started  navbar-link"><TronButton text="Book a Demo" /></Link>
+        <div className="request-btn marginTop">
+        <Link to='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started  navbar-link"><TronRequestADemo text="Book a Demo" /></Link>
       </div>
       </div>
       <div className='query-section' data-aos="fade-up"

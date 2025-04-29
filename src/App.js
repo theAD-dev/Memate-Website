@@ -241,7 +241,7 @@ function App() {
           <Route path="/terms-and-conditions" exact element={<TermsAndConditionsPage />} />
           <Route path="/pricing" exact element={<PricingPage />} />
           <Route path="/privacy" exact element={<PrivacyPage />} />
-          <Route path="/brand-information" exact element={<BrandPage />} />
+          <Route path="/brand" exact element={<BrandPage />} />
           <Route path="/customer-stories" exact element={<CustomerStoriesPage />} />
           <Route path="/camera-fix" exact element={<CustomerStoriesPageSingle />} />
           <Route path="/pro-vinyl" exact element={<CustomerStoriesPageSingle />} />

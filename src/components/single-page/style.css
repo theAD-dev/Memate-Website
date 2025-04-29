@@ -328,7 +328,7 @@ padding: 0;
 [dir="ltr"] a span {
   font-family: 'sequel_sans_roman_head' !important;
   line-height: 150%;
-  color: rgb(16, 107, 153) !important;
+  color: #29292b !important;
   text-decoration: none !important;
   font-size: 16px !important;
 }

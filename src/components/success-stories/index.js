@@ -3,7 +3,9 @@ import "./style.css";
 
 import SliderStories from "./center-mode";
 import { Link } from "react-router-dom";
-import TronButton from "../../layout/hover-button/tourn-but";
+// import TronButton from "../../layout/hover-button/tourn-but";
+// import WhiteButton from "../../layout/hover-button/WhiteButton";
+import WhiteButtonWithoutGradient from "../../layout/hover-button/WhiteButtonWithoutGradient";
 
 const SuccessStories = () => {
   return (
@@ -26,7 +28,8 @@ const SuccessStories = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom">
-        <Link to='/customer-stories' className="nav-btn--get-started get-started-border-box navbar-link"><TronButton text="All Stories" /></Link>
+        <Link to='/customer-stories' className="nav-btn--get-started get-started-border-box navbar-link"><WhiteButtonWithoutGradient text="All Stories" /></Link>
+        {/* 171 */}
       </div>
           {/* <Link to="/customer-stories"><button>All Stories</button></Link> */}
         </div>

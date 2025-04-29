@@ -176,7 +176,7 @@ const Header = () => {
                     <div className="header-menu-feature">
                       <img src={menuImages.meMateCheck} />
                       <p className="header-menu-feature-text">
-                        Easy to Learn adn User
+                      Easy to Learn and Use
                       </p>
                     </div>
 

@@ -32,6 +32,7 @@ import SchedulingActive from "../../svg/SchedulingActive";
 import Employees from "../../svg/Employees";
 // import EmployeesImage from "../../svg/EmployeesImage";
 import EmployeesActive from "../../svg/EmployeesActive";
+import WhiteButton from '../../layout/hover-button/WhiteButton';
 
 const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Sales-image.svg";
 const CalculationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/calculation-image.svg";
@@ -228,7 +229,7 @@ const SliderTab = () => {
       </div>
       </div>
       <div className="request-btn request-btnApp" style={{marginTop: "0"}}>
-        <Link to={tabs[selectedTab].link} className="nav-btn--get-started get-started-border-box navbar-link"><TronButton text="Find more" /></Link>
+        <Link to={tabs[selectedTab].link} className="nav-btn--get-started get-started-border-box navbar-link"><WhiteButton text="Find more" /></Link>
       </div> 
     </div>
   );

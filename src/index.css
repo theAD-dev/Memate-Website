@@ -60,14 +60,17 @@ body::-webkit-scrollbar-thumb ,
 .pricingCardsWrap:nth-child(2):hover #request-btn-pricing .btn-base--black {
   background: #1d1d1f;
 }
-.pricingCardsWrap:nth-child(2):hover #request-btn-pricing .btn-base--black .text-btn--nav{
+/* .pricingCardsWrap:nth-child(2):hover #request-btn-pricing .btn-base--black .text-btn--nav{
   color: #fff;
-}
+} */
 .pricingCardsWrap:nth-child(2) .request-btn .get-started-border-box .btn-base--black {
   border: 1px solid #fff !important;
 }
 .pricingCardsWrap:nth-child(2):hover .request-btn .get-started-border-box .btn-base--black {
   border: 1px solid #000 !important;
+}
+.pricingCardsWrap:nth-child(2):hover .request-btn .get-started-border-box .btn-base--black .text-btn--nav {
+  color: #000 !important;
 }
 /* changed */
 .sales-heading {
@@ -501,7 +504,7 @@ p.sales-description-sales {
     height: auto;
 }
 }
-.parent.parentSingle p {
+/* .parent.parentSingle p {
   padding-top: 7px;
   font-family: 'sequel_sans_roman_head' !important;
-}
+} */

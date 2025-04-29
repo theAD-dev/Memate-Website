@@ -85,7 +85,7 @@
         line-height: normal;
     
 }
-.memate-brand-right h1#section-2 {
+.memate-brand-right h1{
     color: #29292b;
     font-family: "sequel_sans_light_disp" ;
     font-size: 29px;
@@ -93,16 +93,17 @@
     margin-bottom: 12px;
     font-weight: 100;
     line-height: normal;
-    margin-top: -53px;
+    /* margin-top: -53px; */
     padding: 0;
 }
+
 .memate-brand-right p{
     color: #888E9E;
     font-size: 20px;
     font-style: normal;
     font-weight: 100;
     line-height: 140%; 
-    /* letter-spacing: -1px; */
+    letter-spacing: -0.2px;
     font-family: 'sequel_sans_roman_head' !important;
 }
 .memate-brand-right .logBrand {
@@ -114,9 +115,9 @@
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content:center ;
-    flex: 50%;
-    padding: 37px;
+    justify-content: center;
+    flex: 50% 1;
+    padding: 23px 0;
 }
 .memate-brand-right li.brandLogo02 {
     background: #000;
@@ -158,14 +159,22 @@
     font-family: 'sequel_sans' !important;
 }
 .logBrandHori ul li {
-    padding: 126px 25px;
+    /* padding: 126px 25px; */
     flex: 25% 1;
     background: #000;
+    display: block;
 }
 .logBrandHori ul li.brandLogo01 {
-    padding: 126px 25px;
-    flex: 25% 1;
+    /* padding: 126px 25px; */
+    display: flex;
     background: #fff;
+    gap: 4%;
+    width: 107%;
+}
+.containerBoxM{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .memate-brand-right .doesandDont {
     margin: 94px 0 0;
@@ -175,6 +184,11 @@
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
+    gap: 20px;
+    width: 95%;
+}
+.memate-brand-right .doesandDontt {
+    margin: 31px 0 0 !important;
 }
 
 .memate-brand-right .doesandDont h4 {
@@ -185,6 +199,9 @@
     line-height: normal;
     margin-bottom: 20px;
     font-family: 'sequel_sans' !important;
+}
+h2#section-9-child-96,h2#section-9-child-97 {
+    margin: 53px 0 0;
 }
 .memate-brand-right .doesandDont .listing li {
     justify-content: flex-start;
@@ -240,7 +257,7 @@
     font-style: normal;
     font-weight: 100;
     line-height: 150%; 
-    letter-spacing:-1px; 
+    letter-spacing: -0.5px;
     font-family: 'sequel_sans_roman_head' !important;
 }
 .memate-brand-right .brandSec li:hover .in p,.memate-brand-right .brandSec li:hover .in h6 {
@@ -260,7 +277,7 @@
     border: 1.444px solid #E9EBF0;
     background: #FFF;
     display: flex;
-    padding: 24px;
+    padding: 23px;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
@@ -271,11 +288,14 @@
 }
 .kb-left-wrapper1.kb-tos-wrapper1 li.kb-list-item1 {
     display: flex;
-    padding: 16px 24px;
+    padding: 14px 12px;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
     border-radius: 12px;
+}
+h2.latest-update-text.latest-brandMain.latest-update-head.memate-brand.headerPadding {
+    line-height: 175px;
 }
 .kb-left-wrapper1.kb-tos-wrapper1 li.kb-list-item1 a {
     color: #29292B;
@@ -292,6 +312,13 @@
         padding: 62px 46px 69.5px 45px;
     
 }
+/* .kb-left-wrapper1.kb-tos-wrapper1 .kb-list-item-active1 .wrapBoxBrandFlex .list {
+    width: 100%;
+    background: linear-gradient(339deg, rgb(255, 178, 88) 22%, rgb(26, 178, 255) 89%) 50% center / contain no-repeat;
+    background-position: 50% center;
+    border-radius: 30px;
+    padding: 24px 20px 24px 20px;
+} */
 body.brand-information .sticky-section-switch {
     display: none;
 }
@@ -302,6 +329,13 @@ body.brand-information .sticky-section-switch {
     }
     .kb-left-wrapper1 {
         position: initial;
+    }
+    .logBrandHori ul li.brandLogo01 {
+        display: block;
+        width: 100%;
+    }
+    #brandLogoNewSecion {
+        display: block;
     }
     .brand-module_mainHeadinstyle__LxenE .latest-update-text {
         line-height: 54px;

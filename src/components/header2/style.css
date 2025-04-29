@@ -24,7 +24,7 @@
   height: 44px;
 }
 .navbar-log-in .btn-base--black {
-  height: 40px;
+  height: 41.1px;
 }
 /* .header-menu-header-div-menu-component a:hover ,.navbar .navbar-item  a:hover p ,.navbar .navbar-item  p:hover{
   background: radial-gradient(1940.26% 124.88% at 0% 15.21%, #1AB2FF 0%, #FFB258 100%);
@@ -502,7 +502,7 @@
 }
 
   .menu-news a:hover {
-    background: radial-gradient(at left top, #1AB2FF 0%, #FFB258 100%) !important;
+    background: linear-gradient(to bottom right, #1AB2FF 0%, #FFB258 100%) !important;
     background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent !;

@@ -5,7 +5,9 @@
     flex-direction: column;
     align-items: center;
 }
-
+.marginTop{
+    margin-top: 20px !important;
+}
 .main-section .main-heading {
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;

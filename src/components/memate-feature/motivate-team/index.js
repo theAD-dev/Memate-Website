@@ -3,6 +3,7 @@ import Images from "../../../assests/images";
 import "./style.css";
 import { Link } from "react-router-dom";
 import TronButton from "../../../layout/hover-button/tourn-but";
+import WhiteNormalButton from "../../../layout/hover-button/WhiteNormalButton";
 // import PowerfulMotivateImage from "../../../svg/PowerfulMotivateImage";
 const MeMateFeatureMotivateTeam = () => {
   return (
@@ -36,7 +37,7 @@ const MeMateFeatureMotivateTeam = () => {
                     to="/features"
                     className="nav-btn--get-started get-started-border-box navbar-link"
                   >
-                    <TronButton text="See All Features " />
+                    <WhiteNormalButton text="See All Features " />
                   </Link>
                 </div>
                 {/* <button className="get-started-btn">See All Features </button> */}

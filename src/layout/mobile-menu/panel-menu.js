@@ -72,7 +72,7 @@ const items = [
             News: [
               { contentNews: "Our", boldText:"News", paraText: "Industry-related news to help you in business management.", button: 'Read more', link: "/news" },
               { contentNews: "Customer", boldText:"Stories", paraText: "Read how other companies using memate", button: 'Read more', link: "/customer-stories" },
-              { contentNews: "Software", boldText:"Update", paraText: "Our Latest Software Updates, Releases, and Upcoming Development Features", button: 'Read more', link: "/software-update" },
+              { contentNews: "Software", boldText:"Update", paraText: "Our Latest Software Updates, Releases, and Upcoming Development Features", button: 'Read more', link: "/memate-software-updates" },
             ]
         } 
           

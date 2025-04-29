@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 import TronButton from "../../../layout/hover-button/tourn-but";
+import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
 const SalesComponent = () => {
   return (
   <>
@@ -29,7 +30,7 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
+        <Link to='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo text="Request a Demo" /></Link>
       </div>
 
         </div>

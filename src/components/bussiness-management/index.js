@@ -2,7 +2,7 @@ import React from "react";
 import Images from "../../assests/images";
 import "./styles.css";
 import { Link } from "react-router-dom";
-import TronButton from "../../layout/hover-button/tourn-but";
+import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
 const BussinessManagement = () => {
   return (
     <div className="home-page-content">
@@ -35,6 +35,7 @@ const BussinessManagement = () => {
             <source srcSet={Images.landingHero1x} media="(min-width: 1921px)" />
             <img src={Images.landingHero1x} alt="Landing Hero"/>
           </picture> */}
+          <link rel="preload" fetchpriority="high" as="image" href={`${Images.landingHero3xSize}`} type="image/webp"></link>
               <img
                 srcSet={`${Images.landingHero3xSize} 600w, ${Images.landingHero2xSize} 1200w, ${Images.landingHero1xSize} 1800w`}
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -55,6 +56,7 @@ const BussinessManagement = () => {
                 data-aos-anchor-placement="aos-fade"
               /> */}
               {/* iphone image  */}
+              <link rel="preload" fetchpriority="high" as="image" href={`${Images.landingHeroiPhone3x}`} type="image/webp"></link>
               <img
                 srcSet={`${Images.landingHeroiPhone3x} 600w, ${Images.landingHeroiPhone2x} 1200w, ${Images.landingHeroiPhone1x} 1800w`}
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -71,6 +73,7 @@ const BussinessManagement = () => {
             </div>
             <div className="create-new-text">
               {/* backBox  */}
+              <link rel="preload" fetchpriority="high" as="image" href={`${Images.landingHerotask3x}`} type="image/webp"></link>
               <img
               srcSet={`${Images.landingHerotask3x} 600w, ${Images.landingHerotask2x} 1200w, ${Images.landingHerotask1x} 1800w`}
               sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -133,7 +136,7 @@ const BussinessManagement = () => {
           target="_blank"
           className="nav-btn--get-started  navbar-link"
         >
-          <TronButton text="Request a Demo" />
+          <TronRequestADemo text="Request a Demo" />
         </Link>
       </div>
     </div>

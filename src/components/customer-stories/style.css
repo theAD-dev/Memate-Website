@@ -430,6 +430,14 @@ img.img-container-stories {
 .customerstoriespage .small-heading {
   padding-top: 0;
 }
+h2.heading-blog2,h2.latest-update-text.latest-update-head {
+  font-size: 40px !important;
+  line-height: 48px !important;
+}
+h1.heading-text-blog2 {
+  font-size: 20px;
+  white-space: normal;
+}
 .heading-text-blog {
   font-size: 22px;
   line-height: 30px;

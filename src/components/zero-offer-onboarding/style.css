@@ -13,7 +13,11 @@
   /* background: linear-gradient(to right bottom, #1ab2ff -9.85%, #ffb258 95%); */
   border-radius: 30px;
   padding: 0px;
-  background: url('https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/onboarding.png');
+  /* background: url('https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/onboarding.png'); */
+  background-image: image-set(
+    url('https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Rectangle+458+(1).png') 1x,
+    url('https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/onboarding.png') 2x
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -149,7 +153,7 @@ button.book-a-demo {
 }
 @media screen and (max-width: 1180px) and (min-width: 1024px){
   .onboarding-section {
-    margin-top: 0px;
+    /* margin-top: 0px; */
     padding: 0 15px;
   }
 }

@@ -1,13 +1,30 @@
-import React from 'react'
-import Layout from '../../layout';
-import MultiLocationComponent from '../../components/multi-location';
+import Layout from "../../layout";
+import {
+  QuestionAnswer,
+  SalesComponent,
+  SalesComponentFeature,
+  SmartInvestment
+} from "../../components/multi-location";
+import { Helmet } from "react-helmet";
 
-const MultiLocationPage = () => {
+const JobApprovalPage = () => {
   return (
+    <>
+     <Helmet>
+    <title>Home</title>
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+      <meta property="og:description" content=".
+    " />
+</Helmet>
     <Layout>
-        <MultiLocationComponent/>
+      <SalesComponent />
+      <SalesComponentFeature />
+      <SmartInvestment />
+      <QuestionAnswer />
     </Layout>
-  )
-}
+    </>
+  );
+};
 
-export default MultiLocationPage;
+export default JobApprovalPage;

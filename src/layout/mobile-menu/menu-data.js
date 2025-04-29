@@ -72,7 +72,7 @@ const MenuData = () => {
             { content: "Memate Wiki", link: "/memate-wiki" },
           ],
           "Brand Information": [
-            { content: "Brand Information", link: "/brand-information" },
+            { content: "Brand", link: "/brand" },
           ],
          
         },
@@ -157,7 +157,7 @@ const MenuData = () => {
                     <div className="header-menu-feature">
                       <img src={menuImages.meMateCheck} alt='meMateCheck'/>
                       <p className="header-menu-feature-text">
-                        Easy to Learn adn User
+                        Easy to Learn and Use
                       </p>
                     </div>
 

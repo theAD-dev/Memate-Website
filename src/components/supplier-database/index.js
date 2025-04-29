@@ -6,7 +6,9 @@ import { Helmet } from 'react-helmet';
 import { supplierListApi } from '../../api/supplierApi';
 import { Link } from 'react-router-dom';
 import { useDebounce } from 'primereact/hooks';
-import TronButton from '../../layout/hover-button/tourn-but';
+// import TronButton from '../../layout/hover-button/tourn-but';
+import TronRequestADemo from '../../layout/hover-button/TronRequestADemo';
+import TronAddSupplier from '../../layout/hover-button/TronAddSupplier';
 
 const SupplierDatabase = () => {
   const [supplier, setSupplier] = useState([]);
@@ -96,7 +98,7 @@ const SupplierDatabase = () => {
         </div>
     
         <div  className="request-btn request-btn-bg">
-                <Link to="/add-your-company" className="nav-btn--get-started navbar-link"><TronButton text="Add Your Company" /></Link>
+                <Link to="/add-your-company" className="nav-btn--get-started navbar-link"><TronAddSupplier text="Add Your Company" /></Link>
               </div>
           {/* <Link to='/add-your-company'>Add Your Company</Link> */}
      

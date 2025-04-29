@@ -3,6 +3,7 @@ import "./style.css";
 import Images from "../../assests/blog-images";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
+import TronButton from "../../layout/hover-button/tourn-but";
 
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
 

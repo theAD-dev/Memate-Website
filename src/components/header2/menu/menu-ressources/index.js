@@ -22,7 +22,7 @@ const MenuRessources = () => {
           </div>
           <div className="menu-management-feature">
             <div className="menu-client-management">
-            <Link to="/brand-information" className={` ${location.pathname === "/brand-information" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Brand Information</p></Link>
+            <Link to="/brand" className={` ${location.pathname === "/brand" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Brand</p></Link>
             </div>
           </div>
           {/* <div className="menu-management-feature">

@@ -71,7 +71,7 @@ try {
               </div>
               <div className="softwareWrp">
                 <div className="itemHead">
-                  <span>Updates</span> <Link to='/memate-software-updates'>All Updates</Link>
+                  <span>Updates</span> <Link className='allUpdates' to='/memate-software-updates'>All Updates</Link>
                 </div>
                 <ul>
                   {update?.map((updateitem) => (

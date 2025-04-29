@@ -25,7 +25,7 @@ const ComingSoon = () => {
         >
           coming <br></br>soon
         </h1>
-        <p
+        {/* <p
           data-aos="fade-up"
           data-aos-offset="50"
           data-aos-delay="50"
@@ -36,7 +36,7 @@ const ComingSoon = () => {
         >
           We couldn’t wait to launch our updated website, so a few sections are
           still under construction. Stay tuned—new content is on its way!
-        </p>
+        </p> */}
         {/* <img
           src={Images.comingsoonPic}
           alt={Images.comingsoonPic}

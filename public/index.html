@@ -13,18 +13,49 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
 
     <link rel="manifest" href="manifest.json" />
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PX86X4XP');</script>
+  <!-- End Google Tag Manager -->
+
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PSYRLH2WMM"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTVNNDD15Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-PSYRLH2WMM');
+  gtag('config', 'G-GTVNNDD15Z');
 </script>
-<meta name="google-site-verification" content="3764BYtOctF95xrpMTx_bh-WEmpR6T3SbR178tcFnyQ" />
+<script>
+  let btnDownload = document.querySelector('button');
+let img = document.querySelector('img');
+
+
+// Must use FileSaver.js 2.0.2 because 2.0.3 has issues.
+btnDownload.addEventListener('click', () => {
+    let imagePath = img.getAttribute('src');
+    let fileName = getFileName(imagePath);
+    saveAs(imagePath, fileName);
+});
+
+function getFileName(str) {
+    return str.substring(str.lastIndexOf('/') + 1)
+}
+</script>
+
+<!-- <meta name="google-site-verification" content="3764BYtOctF95xrpMTx_bh-WEmpR6T3SbR178tcFnyQ" /> -->
+<meta name="google-site-verification" content="-21MMiNg4HsiFdG-kiteNfjPiSWjpEzqgep8REsCJus" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX86X4XP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

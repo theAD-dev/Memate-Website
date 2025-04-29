@@ -22,11 +22,11 @@ const BrandComponent = () => {
     <meta property="og:title" content="Brand Policy | MeMate Business Management Software" />
       <meta property="og:description" content="Learn how MeMate protects your data with our Brand policy. 
       Discover our commitment to data Brand and security for Australian businesses using our CRM and management software." />
-</Helmet>
+    </Helmet>
       <div className={`kb-main-section ${style.mainHeadinstyle}`}>
       {/* <h5>memate</h5> */}
       {/* <h1 className="h1tagsseo">meMate Brand </h1> */}
-      <h2 className="latest-update-text latest-update-head memate-brand headerPadding">
+      <h2 className="latest-update-text latest-brandMain latest-update-head memate-brand headerPadding">
       brand <br></br>overview
       </h2>
       </div>

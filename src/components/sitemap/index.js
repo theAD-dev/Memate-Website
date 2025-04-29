@@ -110,7 +110,7 @@ const SitemapComponent = () => {
           <h4>RESOURCES & TOOLS</h4>
             <Link to="/supplier-database">Supplier Database</Link>
             <Link to="/knowledge-base">Knowledge Base</Link>
-            <Link to="/brand-information">Brand Information</Link>
+            <Link to="/brand">Brand</Link>
         </div>
         <div className={style.sitemapGridItem}>
           <h4>MEMATE WIKI</h4>
