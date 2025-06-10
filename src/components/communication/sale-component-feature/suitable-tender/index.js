@@ -20,7 +20,7 @@ const SuitableTender = () => {
         </p>
       </div>
       <div className="suitable-table-image-wrapper">
-      <img src={Images.commSeamless} alt="commSeamless" />
+      <img src={Images.commSeamless} alt="commSeamless" type="image/svg+xml" />
      
       </div>
     </div>

@@ -10,7 +10,7 @@ const SalesManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.jobPlanning} alt="jobPlanning" />
+      <img src={Images.jobPlanning} alt="jobPlanning" type="image/svg+xml" />
       <div className="content-wrapper">
         <p className="sale-title">Convenient</p>
         <p className="sales-heading-sales">Shift Scheduling and</p>

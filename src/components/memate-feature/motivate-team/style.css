@@ -27,7 +27,9 @@
     padding: 50px;
     text-align: left;
 }
-
+.motivateImageSetter img{
+    width: 100%;
+}
 .operation-left h2 {
     color: #29292B;
     font-size: 38px;
@@ -93,6 +95,7 @@ button.get-started-btn {
 .operation-right h1 {
     background: linear-gradient(to right, #1AB2FF 33.15%, #FFB258 62%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0px;
     text-align: center;

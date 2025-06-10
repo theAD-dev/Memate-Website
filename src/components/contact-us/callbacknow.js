@@ -73,7 +73,7 @@ const CallbackNow = () => {
     );
     const HeaderContent = (
         <div className="flexWrapBoxc">
-         <h1>Request a callback</h1>
+         <h1 className="requestCallback">Request a callback</h1>
         </div>
     );
   return (
@@ -99,11 +99,12 @@ const CallbackNow = () => {
                               <PhoneInput
                                 defaultCountry="AU" 
                                 value={field.value}
-                                className="phoneInput"
+                                className="phoneInput input2"
                                 placeholder={placeholder} 
                                 containerClass={style.countrySelector}
                                 onChange={field.onChange}
                                 onCountryChange={handleCountryChange}
+                                style={{ color: '#1D2939' }}
                               />
                             )}
                           />
@@ -114,7 +115,16 @@ const CallbackNow = () => {
             <Controller
               name="email"
               control={control}
-              render={({ field }) => <input placeholder="company@email.com" id="email" {...field} />}/>
+              render={({ field }) => <input placeholder="company@email.com" id="email" {...field} 
+              rules={
+                {
+                  pattern: {
+                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                    message: 'Invalid email format'
+                  }
+                }
+              }
+              />}/>
             {errors.email && <p className="error-message">{errors.email.message}</p>}
           </div>
            <div className={style.marginbotton}> 

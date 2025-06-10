@@ -19,7 +19,7 @@ const SalesProcessOptimiation = () => {
         customers when an <br></br>invoice is due. This helps reduce the volume of <br></br>unpaid invoices and ensures timely payments.
         </p>
       </div>
-      <img src={Images.invoAgile}  className="sales-process-optimization-image"/>
+      <img src={Images.invoAgile}  className="sales-process-optimization-image" type="image/svg+xml" />
     </div>
   );
 };

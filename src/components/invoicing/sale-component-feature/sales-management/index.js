@@ -10,7 +10,7 @@ const SalesManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.invoStrategic} />
+      <img src={Images.invoStrategic} type="image/svg+xml" />
       <div className="content-wrapper">
         <p className="sale-title">Strategic</p>
         <p className="sales-heading-sales">Invoicing  </p>

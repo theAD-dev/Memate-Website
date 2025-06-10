@@ -37,7 +37,7 @@ const AboutMemateComponent = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
          <h3>Discover</h3>
-         <span className='gradientAnimenate'>our story</span>
+         <span className='gradientAnimenate weightAndFamily'>our story</span>
       </div>
       <div className={`${style.gridflexWrap}`} data-aos="fade-up"
     data-aos-offset="50"

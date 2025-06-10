@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import TronButton from "../../../layout/hover-button/tourn-but";
+import WhiteNormalButton from "../../../layout/hover-button/WhiteNormalButton";
 
 const FeatureCard = (props) => {
  
@@ -20,13 +21,14 @@ const FeatureCard = (props) => {
               </div>
               <div className="request-btn request-btn-bg" 
    >
-        <Link to='/features' className="nav-btn--get-started get-started-border-box navbar-link"><TronButton text={props.cardButton} /></Link>
+        <Link to='/features' className="nav-btn--get-started get-started-border-box navbar-link"><WhiteNormalButton text={props.cardButton} /></Link>
       </div>
               {/* <Link to="https://dev.memate.com.au/onboarding"><button className="get-started-btn">{props.cardButton}</button></Link> */}
             </div>
 
             <div className="operation-right">
               {/* <h1> {props.titleImage} </h1> */}
+              {/* <div className="boost-image">{props.maxImage}</div> */}
               <div className="boost-image">{props.maxImage}</div>
             </div>
           </div>

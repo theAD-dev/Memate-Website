@@ -12,7 +12,7 @@ const HamburgerMenu = () => {
   return (
  <div className='mobilemenu-wrapper'>
  <div className='mobile-logo'>
-<Link to='/'><img src={Images.logo} alt="logo" /></Link>
+<Link to='/'><img src={Images.logo} alt="logo" type="image/svg+xml" /></Link>
  </div>
  <div className="hamburger-container">
       <div 

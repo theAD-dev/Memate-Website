@@ -25,9 +25,9 @@
     margin-bottom: 64px;
 }
 
-.main-footer .section1 .heading-section {
+/* .main-footer .section1 .heading-section { */
     /* height: 105px; */
-}
+/* } */
 
 .section1 .footer-heading {
     position: relative;
@@ -35,9 +35,9 @@
     font-family: "sequel_sans_heavy_disp" !important;
     font-size: 40px;
     font-style: normal;
-    font-weight: 430;
+    font-weight: 100;
     /* line-height: 140%; 56px */
-    letter-spacing: -0.4px;
+    letter-spacing: -1px;
     margin-bottom: 32px;
 }
 
@@ -106,7 +106,7 @@
     font-family: "sequel_sans_roman_head" !important;
     font-size: 12px;
     font-style: normal;
-    font-weight: 360;
+    font-weight: 100;
     line-height: 140%; /* 16.8px */
 }
 
@@ -133,12 +133,14 @@
 
 .footer-links .links .link-heading {
     color: #29292B;
-    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
     font-size: 16px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
+    letter-spacing: 0px;
     /* line-height: 140%; 22.4px */
     text-align: left;
+    line-height: 140%;
 }
 
 .links .page-links {
@@ -154,7 +156,7 @@
     font-family: "sequel_sans_roman_head" !important;
     font-size: 14px;
     font-style: normal;
-    font-weight: 360;
+    font-weight: 100;
     text-decoration: none;
 }
 
@@ -174,9 +176,10 @@
     font-family: "sequel_sans_roman_head" !important;
     font-size: 16px;
     font-style: normal;
-    font-weight: 360;
-    /* line-height: 140%; 22.4px */
-    letter-spacing: -0.16px;
+    font-weight: 100;
+    line-height: 140%; 
+    /* 22.4px */
+    letter-spacing: -1px;
 }
 @media screen and (max-width: 767px) {
     .main-footer, .section2 .footer-links {

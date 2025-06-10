@@ -2,6 +2,7 @@ import React from "react";
 import FeatureCard from "../card";
 import Images from "../../../assests/images";
 import './style.css';
+// import Understand from "../../../svg/Understand";
 const MeMateWorkForce = () => {
   return (
     <div className="workforce-container mainOperationRight mainOperationspace"  data-aos="fade-up"
@@ -18,7 +19,15 @@ const MeMateWorkForce = () => {
           mainHeading="your workforce"
           description="Efficiently track employee and subcontractor hours with real-time updates on their progress. Our system also streamlines timesheet and invoice submissions."
           cardButton="See All Features "
-          maxImage={<img src={Images.underStand} />}
+          // maxImage={<img src={Images.underStand} type="image/svg+xml" />}
+          maxImage={
+            <img
+              srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/in-depth3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/in-depth2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/in-depth1x.png'} 1800w`}
+              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+              src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/in-depth3x.png'}
+            />
+          }
+          // maxImage={<Understand/>}
         />
       </div>
     </div>

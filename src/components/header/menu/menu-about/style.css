@@ -43,7 +43,7 @@
 .about-top-heading {
   color: #fff;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 20px;
   font-style: normal;
   font-weight: 420;
@@ -52,7 +52,7 @@
 .about-top-heading-third {
     color: #29292B;
     font-feature-settings: "liga" off, "clig" off;
-    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 20px;
     font-style: normal;
     font-weight: 420;
@@ -61,7 +61,7 @@
 .about-sub-heading {
   color: #fff;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 26px;
   font-style: normal;
   font-weight: 420;
@@ -70,7 +70,7 @@
 .about-sub-heading-third {
     color: #29292B;;
     font-feature-settings: "liga" off, "clig" off;
-    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 26px;
     font-style: normal;
     font-weight: 420;

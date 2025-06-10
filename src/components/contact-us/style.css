@@ -5,7 +5,9 @@
     flex-direction: column;
     align-items: center;
 }
-
+.marginTop{
+    margin-top: 20px !important;
+}
 .main-section .main-heading {
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
@@ -44,10 +46,10 @@
     text-align: center;
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: var(--ios-status-bar-status-bar-text-color, #000);
-    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-family: sequel_sans_roman_head!important;
     font-size: 42px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: normal;
     letter-spacing: -1px;
 }
@@ -57,12 +59,12 @@
     text-align: center;
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: var(--ios-status-bar-status-bar-text-color, #000);
-    font-family: "sequel_sans_semi_bold_disp" !important;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
     font-size: 42px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: normal;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
 }
 
 .main-section .small-heading {
@@ -146,9 +148,9 @@
     font-family: "sequel_sans_roman_head" !important;
     font-size: 18px;
     font-style: normal;
-    font-weight: 360;
+    font-weight: 100;
     line-height: 140%; /* 25.2px */
-    letter-spacing: -0.18px;
+    letter-spacing: -1px;
 }
 
 .query-cards .query-card .query-main {
@@ -163,7 +165,7 @@
     font-family: "sequel_sans_semi_bold_disp";
     font-size: 48px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: 48px; /* 100% */
 }
 
@@ -172,9 +174,9 @@
     font-family: "sequel_sans_roman_head";
     font-size: 18px;
     font-style: normal;
-    font-weight: 360;
+    font-weight: 100;
     line-height: 140%; /* 25.2px */
-    letter-spacing: -0.18px;
+    letter-spacing: -1px;
 }
 
 .query-cards .query-card .query-button {
@@ -200,7 +202,7 @@
     font-family: "sequel_sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 415;
+    font-weight: 100;
     line-height: normal;
     background: transparent;
 }
@@ -228,7 +230,21 @@
     flex-direction: column;
     align-items: center;
 }
+.contactParagraph{
+    font-family: 'sequel_sans_roman_head' !important;
+    letter-spacing: -1px;
+}
+.contactText{
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.ContactSubText{
+    font-family: 'sequel_sans_roman_head' !important;
 
+}
+.requestCallback{
+    font-size: 32px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+}
 @media screen and (max-width: 767px) {
     #contactUsPage .main-image img {
         width: 100%;

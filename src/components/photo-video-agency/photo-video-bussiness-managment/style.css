@@ -12,7 +12,7 @@
   width: 100%;
   text-align: center;
   color: #29292b;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 42px;
   font-style: normal;
   font-weight: 420;
@@ -26,7 +26,7 @@
   width: 100%;
   max-width: 900px;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: 'sequel_sans_semi_bold_disp';
+  font-family: sequel_sans_roman_head!important;
   font-size: 118px;
   font-style: normal;
   font-weight: 700;
@@ -49,7 +49,7 @@
 .industry-bussiness-sub-content-heading {
   color: #888e9e;
   text-align: center;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 20px;
   font-style: normal;
   font-weight: 360;
@@ -58,7 +58,7 @@
 
 .industry-bussiness-sub-content-description {
   color: #29292b;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 30px;
   text-align: center;
   font-style: normal;
@@ -81,7 +81,7 @@
 .industry-bussinees-content-2-description {
   color: #888e9e;
   text-align: center;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 20px;
   font-style: normal;
   font-weight: 360;
@@ -95,6 +95,10 @@
 
 .industry-bussiness-category-wrapper{
     margin-top: 55px;
+}
+.photo-agency-wb{
+    max-width: 1030px !important;
+    padding-bottom: 20px !important;
 }
 @media screen and (max-width: 767px) {
   .industry-bussiness-management-heading {

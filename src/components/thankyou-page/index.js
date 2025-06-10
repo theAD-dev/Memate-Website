@@ -4,6 +4,7 @@ import Images from "../../assests/images";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
+// import './thankyou.css'
 
 const ThankYouComponents  = () => {
   return (
@@ -22,11 +23,11 @@ const ThankYouComponents  = () => {
         <img className={style.images} src={Images.koalaTransparent} alt={Images.koalaTransparent} />
       </div>
     <div className={`${style.TextHead}`}>
-        <h1 className='h1tagsseo'>Thank You for Reaching Out to MeMate!</h1>
-        <p>Your support means the world to us. We’re excited to continue this journey together!</p>
+        <h1 className='h1tagsseo fontSize42-2'>Thank You for Reaching Out to MeMate!</h1>
+        <p className='fontAndText'>Your support means the world to us. We’re excited to continue this journey together!</p>
         <div className={`${style.button}`}>
-        <Link to="/contact-us" ><img src={arrowIconBack} alt="Arrow" /> <span>Back</span></Link>
-        <Link to="/" >Home</Link>
+        <Link to="/contact-us" ><img src={arrowIconBack} alt="Arrow" /> <span className='ssMDFont'>Back</span></Link>
+        <Link to="/" > <span className='ssMDFontBlack'>Home</span></Link>
       </div>
       </div>
       </div> 

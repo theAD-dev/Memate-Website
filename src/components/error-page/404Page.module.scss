@@ -6,14 +6,14 @@
         h1{
             text-align: center;
             font-size: 404px;
-
             line-height: 410px;
             letter-spacing: 1px;
-            font-family: "sequel_sans_bold_disp" !important;
-            font-weight: 700;
+            font-family: 'sequel_sans_bold_disp' !important;
+            font-weight: 100;
             background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .images{
             position: absolute;
@@ -30,17 +30,20 @@
             color: #29292B;
             font-size: 42px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 100;
             line-height: normal;
             letter-spacing: -1px;
+            font-family: 'sequel_sans_semi_bold_disp' !important;
         }
         p{
             color: #757B8A;
             text-align: center;
             font-size: 18px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 100;
             line-height: 140%; 
+            font-family: 'sequel_sans_roman_head' !important;
+            margin-top: 15px;
         }
         .button{
             display: flex;
@@ -48,6 +51,35 @@
             align-items: center;
             margin-top: 35px;
             margin-bottom: 65px;
+            button{
+                border-radius: 60px;
+                border: 1px solid #29292B;
+                width: 168px;
+                height: 52px;
+                display: flex;
+                padding: 3.5px 1px;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                color: #29292B;
+                text-align: center;
+                font-size: 18px;
+                font-family: sequel_sans_roman_head!important;
+                font-style: normal;
+                font-weight: 415;
+                line-height: normal;
+                text-decoration: none;
+                margin-left: 10px;
+                background: #fff;
+                &:last-child{
+                    border-radius: 117px;
+                    background: #29292B;
+                    color: #fff;
+                }
+                img{
+                    margin-right: 10px;
+                }
+            }
             a{
                 border-radius: 60px;
                 border: 1px solid #29292B;
@@ -66,11 +98,10 @@
                 line-height: normal;
                 text-decoration: none;
                 margin-left: 10px;
-                &:last-child{
-                    border-radius: 117px;
+                border-radius: 117px;
                     background: #29292B;
                     color: #fff;
-                }
+               
                 img{
                     margin-right: 10px;
                 }

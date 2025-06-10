@@ -9,7 +9,7 @@
 }
 
 .smart-investment-heading {
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: 'sequel_sans_roman_head'!important;
   font-size: 42px;
   font-weight: 420;
   letter-spacing: -1px;
@@ -29,7 +29,7 @@
   line-height: 1.1;
   letter-spacing: -1px;
   padding-right: 0px;
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: 'sequel_sans_bold_disp'!important;
 }
 
 .smart-investment-description {
@@ -41,7 +41,7 @@
 }
 .smart-investment-section-description {
   font-size: 20px;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   line-height: 28px;
   font-weight: 360;
   color: #888e9e;
@@ -74,7 +74,7 @@
   color: #ffffff;
   font-weight: 415;
   border: none;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   line-height: 21.42px;
   cursor: pointer;
 }
@@ -97,7 +97,7 @@
   border-radius: 60px;
 }
 .yearly-plan {
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   line-height: 21.42px;
   font-weight: 415;
   color: #000000;
@@ -105,7 +105,7 @@
 }
 
 .save-discount {
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   line-height: 21.42px;
   font-weight: 415;
   color: #888e9e;

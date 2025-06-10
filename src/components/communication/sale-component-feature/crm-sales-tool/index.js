@@ -23,7 +23,7 @@ const CRMSalesTool = () => {
       </div>
       <div className="">
         <div className="modal-contact">
-          <img src={Images.commComprehensive} alt="commComprehensive" />
+          <img src={Images.commComprehensive} alt="commComprehensive" type="image/svg+xml" />
           
         </div>
       </div>

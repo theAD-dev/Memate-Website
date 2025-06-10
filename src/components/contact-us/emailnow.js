@@ -78,7 +78,7 @@ const [captchaValue, setCaptchaValue] = useState(null);
     );
 
     const HeaderContent = (
-        <div className="flexWrapBoxc">
+        <div className="flexWrapBoxc requestCallback">
             <h1>Email now</h1>
         </div>
     );

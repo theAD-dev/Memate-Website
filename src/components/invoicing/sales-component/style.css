@@ -18,7 +18,7 @@
   line-height: 169px;
   letter-spacing: -1px;
   padding-right: 0px;
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -39,7 +39,7 @@
 .sales-componet-content-wrapper p {
   font-size: 42px;
   font-weight: 420;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   color: #29292b;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -49,7 +49,7 @@
 
 .sales-componet-content-wrapper span {
   text-align: center;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-weight: 360;
   line-height: 25.2px;
   color: #757B8A;
@@ -84,5 +84,8 @@
   padding: 16px 24px 16px;
   /* width: 168px; */
   outline: none;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
+}
+.paddingOnly{
+  padding-bottom: 30px !important;
 }

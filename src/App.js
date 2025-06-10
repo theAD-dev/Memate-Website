@@ -76,6 +76,8 @@ import TermsAndConditionsPage from "./pages/terms-and-conditions";
 import MemateWikiDetailsPage from './pages/wiki-single-details';
 import MemteBrandPage from './pages/memate-brand';
 import MemateFaqsPage from './pages/memate-faqs';
+import BrandPage from './pages/brand';
+import Services8Page from './pages/memate-vs-servicem8';
 const queryClient = new QueryClient();
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -97,6 +99,7 @@ function App() {
   const [totalPosts, setTotalPosts] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  console.log('ERROR ===> ', error)
   const limit = 12;
 
   useEffect(() => {
@@ -111,7 +114,7 @@ function App() {
     };
 
     if (!postsLatest?.length) fetchDataLatest();
-  }, []);
+  }, [postsLatest?.length]);
 
   // PostsCategories======================
 
@@ -127,9 +130,9 @@ function App() {
     };
 
     if (!PostsCategories?.length) fetchCateLatest();
-  }, []);
+  }, [PostsCategories?.length]);
 
-  const [newposts, setNewPosts] = useState();
+  // const [newposts, setNewPosts] = useState();
 
 
   // added multiple rerendering of useEffect if page is clicked twice %blame @ramansaini14 for changes 
@@ -238,6 +241,7 @@ function App() {
           <Route path="/terms-and-conditions" exact element={<TermsAndConditionsPage />} />
           <Route path="/pricing" exact element={<PricingPage />} />
           <Route path="/privacy" exact element={<PrivacyPage />} />
+          <Route path="/brand" exact element={<BrandPage />} />
           <Route path="/customer-stories" exact element={<CustomerStoriesPage />} />
           <Route path="/camera-fix" exact element={<CustomerStoriesPageSingle />} />
           <Route path="/pro-vinyl" exact element={<CustomerStoriesPageSingle />} />
@@ -247,6 +251,7 @@ function App() {
           <Route path="/data-single/:slug" exact element={<DatabasePageSingle />} />
           <Route path="/add-your-company" exact element={<AddYourCompanyPage />} />
           <Route path="/features/client-management-software" exact element={<ClientPage />} />
+          <Route path="/memate-vs-servicem8" exact element={<Services8Page />} />
           <Route path="/features/supplier-management-software" exact element={<SupplierManagementPage />} />
           <Route path="/features/sales-management-tools" exact element={<FeaturePage />} />
           <Route path="/features/employee-management-tools" exact element={<EmployeeManagementPage />} />
@@ -288,10 +293,11 @@ function App() {
           <Route path="/news-stories" exact element={<NewsStoriesPage />} />
           <Route path="/sitemap" exact element={<SitemapPage />} />
           <Route path="/resources" exact element={<ResourcesPage />} />
-          <Route path="*" exact element={<ErrorPage />} />
+          <Route path="*" exact element={<ErrorPage num={1} />} />
+          <Route path="/404" exact element={<ErrorPage num={2} />} />
           <Route path="/thank-you" exact element={<ThankYouPage />} />
           <Route path="/tron-btton" exact element={<TronButton />} />
-          <Route path="/memate-faqs" exact element={<MemateFaqsPage />} />
+          <Route path="/faqs" exact element={<MemateFaqsPage />} />
         </Routes>
       </QueryClientProvider>
     </div>

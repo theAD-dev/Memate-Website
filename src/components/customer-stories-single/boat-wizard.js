@@ -49,8 +49,8 @@ function BoatWizard() {
                 </div>
               </div>
             </div>
-            <div className="gadientText">
-              <h2>Boat Wizard is a marine mechanics company based in Sydney, Australia, specialising in servicing, repairing, upgrading, and maintaining boats and yachts. </h2>
+            <div className="gadientText3">
+              <h2 className="centeredText">Boat Wizard is a marine mechanics company based in Sydney, Australia, specialising in servicing, repairing, upgrading, and maintaining boats and yachts. </h2>
             </div>
            
 

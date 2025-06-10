@@ -31,30 +31,35 @@
             color: #FFF;
             font-size: 24px;
             font-style: normal;
-            font-weight: 410;
+            font-weight: 100;
             line-height: 100%; 
+            font-family: 'sequel_sans_roman_disp' !important;
         }
         h3{
             color: #FFF;
             font-size: 40px;
             font-style: normal;
-            font-weight: 415;
+            font-weight: 100;
             line-height: normal;
+            font-family: 'sequel_sans' !important;
         }
         h2{
             color: #FFF;
             font-size: 56px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 100;
             line-height: 48px;
             margin-bottom: 40px;
+            margin-top: 12px;
+            font-family: 'sequel_sans_semi_bold_disp' !important;
+            white-space: nowrap;
         }
         a{
             color: #FFF;
             text-align: center;
             font-size: 16px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 100;
             line-height: 24px;
             height: 44px;
             padding: 10px 18px;
@@ -68,7 +73,7 @@
             color: #FFF;
             font-size: 18px;
             font-style: normal;
-            font-weight: 300;
+            font-weight: 100;
             line-height: 140%;
         }
     }
@@ -140,7 +145,7 @@
                 border-radius: 44px;
                 border: 1px solid #FFF;
                 text-decoration: none;
-                margin-top: 40px;
+                margin-top: 30px;
                 display: inline-block;
             }
             p{

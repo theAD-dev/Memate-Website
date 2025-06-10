@@ -20,9 +20,9 @@ const CRMSalesTool = () => {
       </div>
       <div className="crmtool-image-wrapper">
         <div className="modal-contact">
-          <img src={Images.ModalSaleContact} alt="ModalSaleContact"/>
+          <img src={Images.ModalSaleContact} alt="ModalSaleContact" type="image/svg+xml" />
           <div className="menu-contact">
-            <img src={Images.MenuContact} alt="MenuContact"/>
+            <img src={Images.MenuContact} alt="MenuContact" type="image/svg+xml" />
           </div>
         </div>
       </div>

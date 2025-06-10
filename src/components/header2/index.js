@@ -3,15 +3,39 @@ import menuImages from "../../assests/menu-images";
 import Images from "../../assests/images";
 import { Link } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
-import { MenuAbout, MenuFeature, MenuIndustry, MenuLegal, MenuNews, MenuRessources } from "./menu";
+import {
+  MenuAbout,
+  MenuFeature,
+  MenuIndustry,
+  MenuLegal,
+  MenuNews,
+  MenuRessources,
+} from "./menu";
 import "./style.css";
 import MenuData from "../../layout/mobile-menu/menu-data";
 import TronButton from "../../layout/hover-button/tourn-but";
+import MemateLogoHeaderAbout from "../../svg/MemateLogoHeaderAbout";
+import FeatureMain from "../../svg/FeatureMain";
+import Industrymain from "../../svg/Industrymain";
+import AboutMain from "../../svg/AboutMain";
+import NewsAndStoriesmain from "../../svg/NewsAndStoriesmain";
+import LegalActiveSVG from "../../svg/LegalActiveSVG";
+import LegalInactiveSVG from "../../svg/LegalInactiveSVG";
+import ResourcesInactiveSVG from "../../svg/ResourcesInactiveSVG";
+import ResourcesActiveSVG from "../../svg/ResourcesActiveSVG";
+import FAQSVG from "../../svg/FAQSVG";
+import ContactSalesSVG from "../../svg/ContactSalesSVG";
+import WatchDemoSVG from "../../svg/WatchDemoSVG";
+import HeaderButtonWithGradient from "../../layout/hover-button/HeaderButtonWithGradient";
 
-const DownBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
-const DownColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-color-arrow.svg";
-const RightColorArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-color-arrow.svg";
-const RightBlackArrow = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
+const DownBlackArrow =
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
+const DownColorArrow =
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-color-arrow.svg";
+const RightColorArrow =
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/right-color-arrow.svg";
+const RightBlackArrow =
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
 
 const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -28,25 +52,29 @@ const Header = () => {
       id: 1,
       label: <Link to="/features">Features</Link>,
       selectedIcon: menuImages.featureImage,
-      unselectedIcon: menuImages.featureImageUnselected,
+      // unselectedIcon: menuImages.featureImageUnselected,
+      unselectedIcon: <FeatureMain />,
     },
     {
       id: 2,
       label: <Link to="/industries">Industries</Link>,
       selectedIcon: menuImages.industrySelected,
-      unselectedIcon: menuImages.industryUnSelected,
+      // unselectedIcon: menuImages.industryUnSelected,
+      unselectedIcon: <Industrymain />,
     },
     {
       id: 3,
       label: <Link to="/news-stories">News & Stories</Link>,
       selectedIcon: menuImages.newStorySelected,
-      unselectedIcon: menuImages.newStoryUnSelected,
+      // unselectedIcon: menuImages.newStoryUnSelected,
+      unselectedIcon: <NewsAndStoriesmain />,
     },
     {
       id: 4,
       label: <Link to="/about">About</Link>,
       selectedIcon: menuImages.aboutSelected,
-      unselectedIcon: menuImages.aboutUnselected,
+      // unselectedIcon: menuImages.aboutUnselected,
+      unselectedIcon: <AboutMain />,
     },
   ];
 
@@ -72,9 +100,10 @@ const Header = () => {
       "/memate-wiki": 6,
     };
 
-    const matchedId = Object.entries(pathToMenuId).find(([path]) =>
-      location.pathname.startsWith(path)
-    )?.[1] || 1;
+    const matchedId =
+      Object.entries(pathToMenuId).find(([path]) =>
+        location.pathname.startsWith(path)
+      )?.[1] || 1;
 
     setSelectedMenuItem(matchedId);
   }, [location.pathname]);
@@ -83,14 +112,21 @@ const Header = () => {
     const handleSubItemClick = (menuId) => setSelectedMenuItem(menuId);
 
     switch (selectedMenuItem) {
-      case 1: return <MenuFeature onSubItemClick={() => handleSubItemClick(1)} />;
-      case 2: return <MenuIndustry onSubItemClick={() => handleSubItemClick(2)} />;
-      case 3: return <MenuNews onSubItemClick={() => handleSubItemClick(3)} />;
-      case 4: return <MenuAbout onSubItemClick={() => handleSubItemClick(4)} />;
+      case 1:
+        return <MenuFeature onSubItemClick={() => handleSubItemClick(1)} />;
+      case 2:
+        return <MenuIndustry onSubItemClick={() => handleSubItemClick(2)} />;
+      case 3:
+        return <MenuNews onSubItemClick={() => handleSubItemClick(3)} />;
+      case 4:
+        return <MenuAbout onSubItemClick={() => handleSubItemClick(4)} />;
       //done till here
-      case 5: return <MenuLegal onSubItemClick={() => handleSubItemClick(5)} />;
-      case 6: return <MenuRessources onSubItemClick={() => handleSubItemClick(6)} />;
-      default: return null;
+      case 5:
+        return <MenuLegal onSubItemClick={() => handleSubItemClick(5)} />;
+      case 6:
+        return <MenuRessources onSubItemClick={() => handleSubItemClick(6)} />;
+      default:
+        return null;
     }
   };
 
@@ -116,35 +152,65 @@ const Header = () => {
       <div className="navbar">
         <div className="navbar-container">
           <div className="navbar-logo-wrapper" onClick={handleLogoClick}>
-            <img src={Images.logo} alt="logo" />
+            <img src={Images.logo} alt="logo" type="image/svg+xml" />
           </div>
 
           <div className="header-navbar-container">
             <div
               ref={aboutButtonRef}
-              className={`navbar-item navbar-item-flex-item rightAboutArrow ${(location.pathname === "/about", showDropDown) ? "navbar-item-active" : ""
-                }`}
-              onClick={() => setShowDropDown(prev => !prev)}
+              className={`navbar-item navbar-item-flex-item rightAboutArrow ${
+                (location.pathname === "/about", showDropDown)
+                  ? "navbar-item-active"
+                  : ""
+              }`}
+              onClick={() => setShowDropDown((prev) => !prev)}
             >
               <p>About</p>
-              {showDropDown ? <img src={DownColorArrow} alt="DownColorArrow" /> : <img src={DownBlackArrow} alt="DownBlackArrow" />}
+              {showDropDown ? (
+                <img src={DownColorArrow} alt="DownColorArrow" />
+              ) : (
+                <img src={DownBlackArrow} alt="DownBlackArrow" />
+              )}
             </div>
 
-            <div className={`navbar-item ${location.pathname === "/pricing" ? "navbar-item-active" : ""}`}>
-              <Link to="/pricing" className="navbar-link"><p>Pricing</p></Link>
+            <div
+              className={`navbar-item ${
+                location.pathname === "/pricing" ? "navbar-item-active" : ""
+              }`}
+            >
+              <Link to="/pricing" className="navbar-link">
+                <p>Pricing</p>
+              </Link>
             </div>
 
-            <div className={`navbar-item ${location.pathname === "/news" ? "navbar-item-active" : ""}`}>
-              <Link to="/news" className="navbar-link"><p>News</p></Link>
+            <div
+              className={`navbar-item ${
+                location.pathname === "/news" ? "navbar-item-active" : ""
+              }`}
+            >
+              <Link to="/news" className="navbar-link">
+                <p>News</p>
+              </Link>
             </div>
 
-            <div className={`navbar-item ${location.pathname === "/contact-us" ? "navbar-item-active" : ""}`} style={{ marginRight: "0px" }}>
-              <Link to="/contact-us" className="navbar-link"><p>Contact us</p></Link>
+            <div
+              className={`navbar-item ${
+                location.pathname === "/contact-us" ? "navbar-item-active" : ""
+              }`}
+              style={{ marginRight: "0px" }}
+            >
+              <Link to="/contact-us" className="navbar-link">
+                <p>Contact us</p>
+              </Link>
             </div>
           </div>
 
           <div className="navbar-log-in">
-            <Link to="https://app.memate.com.au/" target="_blank" className="nav-btn--get-started navbar-link">
+            <Link
+              to="https://app.memate.com.au/"
+              target="_blank"
+              className="nav-btn--get-started navbar-link"
+            >
               <TronButton text="Log In" />
             </Link>
           </div>
@@ -158,10 +224,13 @@ const Header = () => {
                       <div
                         key={menu.id}
                         style={{ cursor: "pointer" }}
-                        className={selectedMenuItem === menu.id ? "header-menu-item" : "header-menu-item-unselected"}
-
+                        className={
+                          selectedMenuItem === menu.id
+                            ? "header-menu-item"
+                            : "header-menu-item-unselected"
+                        }
                         onMouseEnter={() => setSelectedMenuItem(menu.id)}
-                      // onMouseLeave={() => setSelectedMenuItem(menu.id)} 
+                        // onMouseLeave={() => setSelectedMenuItem(menu.id)}
                       >
                         <div
                           className={
@@ -170,11 +239,10 @@ const Header = () => {
                               : "header-menu-icon-wrapper"
                           }
                         >
-                          <img
-                            src={
-                              menu.unselectedIcon
-                            } alt={menu.unselectedIcon}
-                          />
+                          {/* <p */}
+                          {menu.unselectedIcon}
+                          {/* alt={menu.unselectedIcon} */}
+                          {/* // /> */}
                           <p
                             style={{
                               marginLeft: `${menu.id === 3 ? "6px" : ""}`,
@@ -196,8 +264,15 @@ const Header = () => {
                               : "menu-next-icon-wrapper-unselected"
                           }
                         >
-                          {selectedMenuItem === menu.id ? <img src={RightColorArrow} alt="RightColorArrow" /> : <img src={RightBlackArrow} alt="RightBlackArrow" style={{ transform: "rotate(-90deg)" }} />}
-
+                          {selectedMenuItem === menu.id ? (
+                            <img src={RightColorArrow} alt="RightColorArrow" />
+                          ) : (
+                            <img
+                              src={RightBlackArrow}
+                              alt="RightBlackArrow"
+                              style={{ transform: "rotate(-90deg)" }}
+                            />
+                          )}
                         </div>
                       </div>
                     );
@@ -207,12 +282,15 @@ const Header = () => {
                   {renderContent()}
                 </div>
                 <div className="header-menu-header-div-memate-component">
-                  <img src={Images.logo} alt="logo" />
+                  {/* <img src={Images.logo} alt="logo" type="image/svg+xml" /> */}
+                  {/* <picture > */}
+                  <MemateLogoHeaderAbout alt="logo" type="image/svg+xml" />
+                  {/* </picture> */}
                   <div className="header-menu-memate-feature">
                     <div className="header-menu-feature">
                       <img src={menuImages.meMateCheck} alt="meMateCheck" />
                       <p className="header-menu-feature-text">
-                        Easy to Learn adn User
+                        Easy to Learn and Use
                       </p>
                     </div>
 
@@ -251,7 +329,16 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="request-a-button-wrapper">
-                    <Link to='https://app.memate.com.au/requestdemo' target="_blank"><img src={menuImages.RequestAdemo} alt="RequestAdemo" /> </Link>
+                    {/* <Link to='https://app.memate.com.au/requestdemo' target="_blank"><img src={menuImages.RequestAdemo} alt="RequestAdemo" /> </Link> */}
+                    <Link
+                      to="https://app.memate.com.au/requestdemo"
+                      target="_blank"
+                    >
+                      <HeaderButtonWithGradient
+                        text="Request a Demo"
+                        borderVal="black"
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -264,14 +351,12 @@ const Header = () => {
                       setSelectedMenuItem(5);
                     }}
                   >
-                    <img
-                      src={
-                        selectedMenuItem === 5
-                          ? menuImages.selectedLegal
-                          : menuImages.unselectedLegal
-                      }
-                      alt="menuImages.selectedLegal"
-                    />
+                    {selectedMenuItem === 5 ? (
+                      <LegalActiveSVG />
+                    ) : (
+                      <LegalInactiveSVG />
+                    )}
+
                     <p
                       className={
                         selectedMenuItem === 5
@@ -289,14 +374,12 @@ const Header = () => {
                       setSelectedMenuItem(6);
                     }}
                   >
-                    <img
-                      src={
-                        selectedMenuItem === 6
-                          ? menuImages.selectedResources
-                          : menuImages.unselectedResources
-                      }
-                      alt="unselectedResources"
-                    />
+                    {selectedMenuItem === 6 ? (
+                      <ResourcesActiveSVG />
+                    ) : (
+                      <ResourcesInactiveSVG />
+                    )}
+
                     <p
                       className={
                         selectedMenuItem === 6
@@ -307,18 +390,56 @@ const Header = () => {
                       Resources
                     </p>
                   </div>
+                  <div
+                    className={`header-footer-legal header-footer-faqs ${
+                      location.pathname === "/faqs"
+                        ? "header-footer-legal-text-selected"
+                        : ""
+                    }`}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <Link to="/faqs">
+                      {/* <img
+      src={location.pathname === "/faqs" ? menuImages.selectedLegal : menuImages.unselectedLegal}
+      alt="faqs-icon"
+    /> */}
+                      <FAQSVG />
+
+                      <p
+                        className={
+                          location.pathname === "/faqs"
+                            ? "header-footer-legal-text-selected"
+                            : "header-footer-legal-text"
+                        }
+                      >
+                        &nbsp; FAQs
+                      </p>
+                    </Link>
+                  </div>
                 </div>
                 <div className="header-menu-footer-left-content">
                   <div className="header-footer-legal">
-                    <img src={menuImages.unselectedSales} alt="unselectedSales" />
-                    <Link to='/contact-us'> <p className="header-footer-legal-text">Contact Sales</p> </Link>
+                    {/* <img src={menuImages.unselectedSales} alt="unselectedSales" /> */}
+                    <ContactSalesSVG />
+                    <Link to="/contact-us">
+                      {" "}
+                      <p className="header-footer-legal-text">
+                        Contact Sales
+                      </p>{" "}
+                    </Link>
                   </div>
                   <div className="header-footer-legal">
-                    <img
+                    {/* <img
                       src={menuImages.unselectedWatchDemo} alt="unselectedWatchDemo"
                       style={{ marginTop: "-2px" }}
-                    />
-                    <Link to='#'> <p className="header-footer-legal-text">Watch demo</p> </Link>
+                    /> */}
+                    <WatchDemoSVG />
+                    <Link to="#">
+                      {" "}
+                      <p className="header-footer-legal-text">
+                        Watch demo
+                      </p>{" "}
+                    </Link>
                   </div>
                 </div>
               </div>

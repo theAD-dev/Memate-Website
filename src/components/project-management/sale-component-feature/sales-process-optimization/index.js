@@ -19,7 +19,7 @@ const SalesProcessOptimiation = () => {
         time logged by employees are<br></br> automatically reflected in real-time.
         </p>
       </div>
-      <img src={Images.proComprehensive} alt="proComprehensive"  className="sales-process-optimization-image"/>
+      <img src={Images.proComprehensive} alt="proComprehensive"  className="sales-process-optimization-image" type="image/svg+xml" />
     </div>
   );
 };

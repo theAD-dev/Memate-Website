@@ -7,12 +7,12 @@
             background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family: "sequel_sans_bold_disp" !important;
+            font-family: 'sequel_sans_bold_disp' !important;
             margin: 0px;
             text-align: center;
             font-size: 220px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 100;
             line-height: 230px; 
             
         }
@@ -38,9 +38,10 @@
             color: #29292B;
             font-size: 32px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 100;
             line-height: normal;
             margin-bottom: 24px;
+            font-family: 'sequel_sans_semi_bold_disp' !important;
         }
         .mainGridwtapFlex{
             .itemFlex{
@@ -97,18 +98,20 @@
                     color: #29292B;
                     font-size: 20px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 100;
                     line-height: 140%; 
+                    font-family: 'sequel_sans_medium_head' !important;
                 }
                 p{
                     color: #888E9E;
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 360;
+                    font-weight: 100;
                     line-height: 140%; 
                     max-height: 100px;
                     overflow-y: auto;
                     padding-right: 1px;
+                    font-family: 'sequel_sans_roman_head' !important;
                     &::-webkit-scrollbar 
                   
                     {

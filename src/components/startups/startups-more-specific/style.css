@@ -9,10 +9,10 @@
   color: #29292b;
   margin-top: 65px;
   text-align: center;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
   letter-spacing: -1px;
 }
@@ -23,12 +23,12 @@
   width: 100%;
   margin-top: 30px;
   text-align: center;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: 'sequel_sans_roman_head' !important;
   font-size: 20px;
   font-style: normal;
-  font-weight: 360;
+  font-weight: 100;
   line-height: 140%;
-  letter-spacing: -0.2px;
+  /* letter-spacing: -0.2px; */
 }
 
 .more-specific-wrapper {

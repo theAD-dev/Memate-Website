@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 import TronButton from "../../../layout/hover-button/tourn-but";
+import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
 const SalesComponent = () => {
   return (
   <>
@@ -12,7 +13,7 @@ const SalesComponent = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
          <h1 className="h1tagsseo">Effortless Invoicing with MeMate’s Quote & Invoice Solution.</h1>
-       <div className="sales-heading client-heading">invoicing</div>
+       <div className="sales-heading client-heading paddingOnly">invoicing</div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="sales-component-content ">
@@ -22,7 +23,7 @@ const SalesComponent = () => {
 
         <div className="sales-component-button-wrapper">
         <div  className="request-btn request-btn-bg">
-                <Link to="https://app.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Request a Demo" /></Link>
+                <Link to="https://app.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo text="Request a Demo" /></Link>
               </div>
         </div>
       </div>

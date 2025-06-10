@@ -8,11 +8,11 @@
   text-align: center;
   font-size: 42px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
   letter-spacing: -1px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
-  margin: 0px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  margin: 0px 0px 20px 0px;
 }
 
 .next-step button {
@@ -28,7 +28,7 @@
   height: 52px;
   border: navajowhite;
   outline: none;
-  font-family: "sequel_sans" !important;
+  font-family: 'sequel_sans_roman_head'!important;
 }
 
 .next-title .nextStepHeading {
@@ -39,12 +39,12 @@
   color: transparent;
   cursor: pointer;
   text-align: center;
-  font-size: 180px;
+  font-size: 292px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 2px;
-  font-family: "sequel_sans_bold_disp" !important;
+  font-weight: 100;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-family: 'sequel_sans_bold_disp' !important;
   overflow-wrap: break-word;
 }
 
@@ -80,28 +80,30 @@
   align-items: center;
   gap: 16px;
   align-self: stretch;
+  margin-bottom: 15px;
 }
 
 .next-step-data {
   color: #29292b;
   text-align: center;
-  font-family: "sequel_sans_semi_bold_disp" !important;
-  font-size: 42px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 40px;
   font-style: normal;
-  font-weight: 420;
+  font-weight: 100;
   line-height: normal;
   letter-spacing: -1px;
 }
 
 .next-step-data-description {
-  color: #757b8a;
+  color: #757B8A;
   text-align: center;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: 'sequel_sans_roman_head' !important;
   font-size: 18px;
   font-style: normal;
-  font-weight: 360;
-  line-height: 25.2px;
+  font-weight: 100;
+  line-height: 140%;
   max-width: 750px;
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 767px) {
   .next-step {
@@ -112,15 +114,21 @@
 .next-step h3, .next-step-data {
   font-size: 26px;
   letter-spacing: 0;
+  line-height: 35px;
+  margin: 10px 0px;
 }
 .next-title .nextStepHeading {
   margin-top: 0px;
   font-size: 50px;
   letter-spacing: 0px;
+  margin: 10px 0px;
 }
 .next-step-page-description {
   margin-top:0px;
   gap: 15px;
+}
+.next-step h3 {
+  margin: 0px 0px 0px 0px;
 }
 }
 @media screen and (max-width: 992px) and (min-width: 768px){

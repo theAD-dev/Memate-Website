@@ -9,27 +9,29 @@
     padding: 50px 89px 30px;
     text-align: center;
     h2{
-        margin-top: 7px;
+        // margin-top: 7px;
         color: #fff;
-        font-family: "Inter", sans-serif !important;
+        // font-family: "Inter", sans-serif !important;
+        font-family: 'sequel_sans_black_disp' !important;
         font-feature-settings: "liga" off, "clig" off;
         font-family: Inter;
         font-size: 170px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 100;
         line-height: 110px;
-        letter-spacing: -6px;
-        margin-bottom: 50px;
+        // letter-spacing: -6px;
+        margin-bottom: 63px;
     }
     h1{
         color: #FFF;
         text-align: center;
         font-size: 38px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 100;
         line-height: normal;
         letter-spacing: -1px;
         margin-bottom: 25px;
+        font-family: 'sequel_sans_semi_bold_disp' !important;
         
     }
     p{
@@ -37,10 +39,11 @@
         text-align: center;
         font-size: 18px;
         font-style: normal;
-        font-weight: 360;
+        font-weight: 100;
         line-height: 140%; 
-        width: 60%;
+        width: 65%;
         margin: 0 auto 30px;
+        font-family: 'sequel_sans_roman_head' !important;
     }
 }
 
@@ -51,20 +54,23 @@
         color: #29292B;
         font-size: 24px;
         font-style: normal;
-        font-weight: 405;
+        font-weight: 100;
         line-height: normal;
+        font-family: 'sequel_sansbook_disp' !important;
+        margin-top: 16px;
     }
    h3 {
         width: 100%;
         text-align: center;
         color: #29292b;
-        font-family: "sequel_sans_semi_bold_disp" !important;
+        font-family: 'sequel_sans_semi_bold_disp' !important;
         font-size: 42px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 100;
         line-height: normal;
         letter-spacing: -1px;
     }
+    // changed not
     span{
         margin-top: 5px;
         text-align: center;
@@ -74,7 +80,7 @@
         font-family: 'sequel_sans_semi_bold_disp';
         font-size: 118px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 100;
         line-height: 141px;
         margin: 0 auto;
     }
@@ -98,24 +104,27 @@
             color: #FFF;
             font-size: 58px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 100;
             line-height: normal;
+            font-family: 'sequel_sans_semi_bold_disp' !important;
             span{
                 display: block;
                 font-size: 38px;
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 100;
                 line-height: 25px;
+                font-family: 'sequel_sans' !important;
             }
         }
         p{
             color: #FFF;
             font-size: 18px;
             font-style: normal;
-            font-weight: 360;
+            font-weight: 100;
             line-height: 140%; 
             margin-bottom: 15px;
             margin-top: 15px;
+            font-family: 'sequel_sans_roman_head' !important;
         }
     }
         .gradientGrid{
@@ -161,25 +170,29 @@
             color: #29292B;
             font-size: 58px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 100;
             line-height: normal;
             letter-spacing: -1px;
+            font-family: 'sequel_sans_semi_bold_disp' !important;
             span{
                 display: block;
                 font-size: 38px;
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 100;
                 line-height: 25px;
+                font-family: 'sequel_sans';
+                letter-spacing: -1px;
             }
         }
         p{
             color: #888E9E;
             font-size: 18px;
             font-style: normal;
-            font-weight: 360;
+            font-weight: 100;
             line-height: 140%;
             margin-bottom: 15px;
             margin-top: 15px;
+            font-family: 'sequel_sans_roman_head' !important;
         }
     }
 }
@@ -204,22 +217,25 @@
             color: #29292B;
             font-size: 21px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 100;
             line-height: 33px; 
+            font-family: 'sequel_sans_semi_bold_disp' !important;
         }
         p{
             color: #888E9E;
             font-size: 16px;
             font-style: normal;
-            font-weight: 360;
+            font-weight: 100;
             line-height: 140%; 
-            letter-spacing: -0.16px;
+            letter-spacing: -0.5px;
+            font-stretch: condensed;
+            font-family: 'sequel_sans_roman_head' !important;
         }
     }
 }
 
 .centerHeadSpace{
-    margin-bottom: 30px;
+    margin-bottom: 56px;
 }
 .centerHeadMiddlePara{
     width: 550px;
@@ -229,9 +245,10 @@
         color: #3F3F3F;
         font-size: 16px;
         font-style: normal;
-        font-weight: 360;
+        font-weight: 100;
         line-height: 150%;
         margin-top: 0;
+        font-family: 'sequel_sans_roman_head' !important;
     }
 }
 @media screen and (max-width: 767px) {

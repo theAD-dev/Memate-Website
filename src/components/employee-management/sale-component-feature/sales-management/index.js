@@ -10,7 +10,7 @@ const SalesManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.economicalMobile} />
+      <img src={Images.economicalMobile} type="image/svg+xml" />
       <div className="content-wrapper">
         <p className="sale-title">Economical </p>
         <p className="sales-heading-sales">Clock-In</p>

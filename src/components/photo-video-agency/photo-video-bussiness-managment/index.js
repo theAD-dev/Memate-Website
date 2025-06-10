@@ -16,8 +16,16 @@ const PhotoBussinessManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
+      {/* <img
+            className="PhotoAndVideo"
+            srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ElectronicRepair3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ElectronicRepair2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ElectronicRepair1x.png'} 1800w`}
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/ElectronicRepair3x.png'}
+            alt="contact us main image"
+            // width={400} height={400}
+          /> */}
       <p className="industry-bussiness-management-heading">Business Management </p>
-      <span className='industry-bussinees-content gradientAnimenate'>software for photographers & videographers </span>
+      <span className='industry-bussinees-content photo-agency-wb gradientAnimenate'>software for photographers & videographers </span>
       {/* <div className='industry-bussiness-sub-content'>
         <p className='industry-bussiness-sub-content-heading'>Why MeMate works exceptionally well for creative agencies</p>
         <p className='industry-bussiness-sub-content-description'>Are you looking for the perfect project management <br></br>software for your creative agency?</p>

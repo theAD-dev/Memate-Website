@@ -77,7 +77,7 @@ const Header = () => {
       <div className="header">
         <div className="header-flex-cont">
           <div className="header-logo-wrapper" onClick={handleLogoClick}>
-            <img src={Images.logo} alt="logo" />
+            <img src={Images.logo} alt="logo" type="image/svg+xml" />
           </div>
           <div className="header-navbar-container">
             <div
@@ -171,12 +171,12 @@ const Header = () => {
                   {renderContent()}
                 </div>
                 <div className="header-menu-header-div-memate-component">
-                  <img src={Images.logo} alt="logo" />
+                  <img src={Images.logo} alt="logo" type="image/svg+xml" />
                   <div className="header-menu-memate-feature">
                     <div className="header-menu-feature">
                       <img src={menuImages.meMateCheck} />
                       <p className="header-menu-feature-text">
-                        Easy to Learn adn User
+                      Easy to Learn and Use
                       </p>
                     </div>
 

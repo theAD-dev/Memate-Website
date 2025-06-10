@@ -3,10 +3,22 @@ import style from './404Page.module.scss';
 import Images from "../../assests/images";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from 'react-helmet';
+import { Button } from 'react-scroll';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
-const PageNotFound = () => {
+const PageNotFound = ({redirects}) => {
+  console.log("redirects ========> " + redirects);
   const navigate = useNavigate();
+  console.log("WHL ====> ", window.history.length)
+  const handleClickBack = () => {
+    if (window.history.length > 2) {
+      console.log("working");
+      navigate(-redirects); 
+    } else {
+      console.log("else working");
+      navigate("/");
+    }
+  }
   return (
     <>
       <Helmet>
@@ -25,7 +37,7 @@ const PageNotFound = () => {
           <h2>We can’t find this page</h2>
           <p>The page you are looking for doesn't exist or has been moved.</p>
           <div className={`${style.button}`}>
-          <Link to="#" onClick={() => navigate(-3)}><img src={arrowIconBack} alt="Arrow" /> <span style={{color: 'black'}}>Back</span></Link>
+          <Button onClick={handleClickBack}><img src={arrowIconBack} alt="Arrow" /> <span style={{color: 'black'}}>Back</span></Button>
           <Link to="/" >Home</Link>
           </div>
         </div>
@@ -34,4 +46,4 @@ const PageNotFound = () => {
   )
 }
 
-export default PageNotFound 
+export default PageNotFound

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 import Images from "../../../assests/images";
 
 const QuestionAnswer = () => {
-  const [selectedQuestion, setSelectedQuestion] = useState(1);
+  const [selectedQuestion, setSelectedQuestion] = useState();
 
   const questions = [
     {
@@ -132,6 +132,7 @@ const QuestionAnswer = () => {
                         className="icon"
                         alt="Selected Question"
                         style={{ height: "24px" }}
+                        type="image/svg+xml"
                       />
                     ) : (
                       <AddIcon className="icon" htmlColor="#000000" />

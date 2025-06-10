@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '../../layout';
 import PageNotFound from '../../components/error-page';
-const ErrorPage = () => {
+const ErrorPage = ({num}) => {
+  console.log("Num ========> " + num);
   return (
     <Layout>
-        <PageNotFound />
+        <PageNotFound redirects={num}/>
     </Layout>
   )
 }

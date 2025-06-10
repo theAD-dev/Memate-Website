@@ -21,7 +21,7 @@
   line-height: 1.1;
   letter-spacing: -1px;
   padding-right: 0px;
-  font-family: "sequel_sans_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
 }
 
 .sales-componet-content-wrapper {
@@ -36,7 +36,7 @@
 .sales-componet-content-wrapper p {
   font-size: 42px;
   font-weight: 420;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   color: #29292b;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -46,7 +46,7 @@
 
 .sales-componet-content-wrapper span {
   text-align: center;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-weight: 360;
   line-height: 25.2px;
   color: #757B8A;
@@ -79,7 +79,7 @@
   padding: 16px 24px 16px;
   /* width: 168px; */
   outline: none;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
 }
 @media screen and (max-width: 767px) {
   .sales-componet-content-wrapper {

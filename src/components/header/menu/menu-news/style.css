@@ -21,7 +21,7 @@
 .first-news-top-heading {
   color: #29292b;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 20px;
   font-style: normal;
   font-weight: 420;
@@ -41,7 +41,7 @@
 .first-news-sub-heading {
   color: #29292b;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 26px;
   font-style: normal;
   font-weight: 420;

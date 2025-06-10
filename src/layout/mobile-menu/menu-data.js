@@ -51,7 +51,8 @@ const MenuData = () => {
           { content: "Privacy", link: "/privacy" },
           { content: "Website terms of Use", link: "/terms-of-use" },
           { content: "Security", link: "/security"},
-          { content: "Legal", link: "/legal"}
+          { content: "Legal", link: "/legal"},
+          { content: "FAQs", link: "/faqs"}
         ],
       },
         imgTab: `${menuImages.unselectedLegal}` 
@@ -70,6 +71,9 @@ const MenuData = () => {
           "Business Support": [
             { content: "Memate Wiki", link: "/memate-wiki" },
           ],
+          "Brand Information": [
+            { content: "Brand", link: "/brand" },
+          ],
          
         },
         imgTab: `${menuImages.unselectedResources}` },
@@ -83,8 +87,8 @@ const MenuData = () => {
       <Menu 
         isOpen={menuOpen}
         right
-        customBurgerIcon={ <img src={Images.BurgerIcon} alt='BurgerIcon'/> }
-        customCrossIcon={ <img src={Images.burgerCloseIcon} alt='burgerCloseIcon'/> }
+        customBurgerIcon={ <img src={Images.BurgerIcon} alt='BurgerIcon' type="image/svg+xml" /> }
+        customCrossIcon={ <img src={Images.burgerCloseIcon} alt='burgerCloseIcon' type="image/svg+xml" /> }
         onStateChange={handleStateChange}
         width={'359px'}
       >
@@ -148,12 +152,12 @@ const MenuData = () => {
        </div>
        <div className='logoMobileWrap'>
        <div className="header-menu-header-div-memate-component">
-                  <img src={Images.logo} alt="logo" />
+                  <img src={Images.logo} alt="logo" type="image/svg+xml" />
                   <div className="header-menu-memate-feature">
                     <div className="header-menu-feature">
                       <img src={menuImages.meMateCheck} alt='meMateCheck'/>
                       <p className="header-menu-feature-text">
-                        Easy to Learn adn User
+                        Easy to Learn and Use
                       </p>
                     </div>
 
@@ -199,7 +203,7 @@ const MenuData = () => {
       </Menu>
       <div className='mobilemenu-wrapper'>
  <div className='mobile-logo'>
-<Link to='/'><img src={Images.logo} alt="logo" /></Link>
+<Link to='/'><img src={Images.logo} alt="logo" type="image/svg+xml" /></Link>
  </div>
  <div className="hamburger-container"></div>
  </div>

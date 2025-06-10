@@ -25,15 +25,15 @@ function CustomerStories() {
       <div className="parent-blog">
         <div className="heading-container">
         <div className="heading-blog-description">
-            <h1 className="heading-text-blog">Success Stories: Real Businesses, Real Results with MeMate</h1>
+            <h1 className="heading-text-blog2">Success Stories: Real Businesses, Real Results with MeMate</h1>
           </div>
-          <h2 className="heading-blog">
+          <h2 className="heading-blog2">
           customer  <br></br>stories
           </h2>
           <div className="heading-blog-description">
-            <h1 className="heading-text-blog">Power of meMate Put to Work</h1>
+            <h1 className="heading-text-blog2">Power of meMate Put to Work</h1>
           </div>
-          <div class="small-heading"> <p>How Small Businesses Use meMate in Their Everyday Activities to Increase Profitability</p></div>
+          <div class="small-heading"> <p className="ssRH18">How Small Businesses Use meMate in Their Everyday Activities to Increase Profitability</p></div>
        
         </div>
 <div className="customerstoriesGrid">

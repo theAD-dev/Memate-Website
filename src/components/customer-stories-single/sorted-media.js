@@ -49,7 +49,7 @@ function SortedMedia() {
               </div>
             </div>
             <div className="gadientText">
-              <h2>We are Sorted Media, a company based in Sydney, operating across all states of Australia. </h2>
+              <h2 className="centeredText">We are Sorted Media, a company based in Sydney, operating across all states of Australia. </h2>
             </div>
            
 

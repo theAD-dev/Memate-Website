@@ -7,7 +7,7 @@ const PlanThree = () => {
     <div className="invest-plan-one">
       <div className="plan-one-benefite">
         <div className="invest-plan-one-header">
-          <img src={Images.investmentIcon} />
+          <img src={Images.investmentIcon} type="image/svg+xml" />
           <div className="invest-plan-one-heading">
             <p className="invest-plan-one-heading-top">For</p>
             <p className="invest-plan-one-heading-bottom">Entreprise</p>

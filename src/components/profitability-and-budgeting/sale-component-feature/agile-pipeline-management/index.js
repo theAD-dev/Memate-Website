@@ -3,14 +3,14 @@ import Images from "../../../../assests/images";
 import "./style.css";
 const AgilePipeLineManagement = () => {
   return (
-    <div className="aglie-pipeline-management-wrapper marginSpaceTop" data-aos="fade-up"
+    <div className="aglie-pipeline-management-wrapper marginSpaceTop sales-management-wrapper-data" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="3000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.budEssential} alt="budEssential" />
+      <img src={Images.budEssential} alt="budEssential" type="image/svg+xml" />
       <div className="content-wrapper">
         <p className="sale-title">Essential</p>
         <p className="sales-heading-sales">Data  </p>

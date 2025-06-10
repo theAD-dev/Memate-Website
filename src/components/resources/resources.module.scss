@@ -2,18 +2,20 @@
     .mainHeadTitle{
         text-align: center;
         padding: 30px 0 120px;
+        font-family: 'sequel_sans_roman_head' !important;
         h2{
            
             background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family: "sequel_sans_bold_disp" !important;
             margin: 0px;
             text-align: center;
             font-size: 220px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 100;
             line-height: 230px; 
+            font-family: 'sequel_sans_bold_disp' !important;
             
         }
         @media screen and (max-width: 767px) {
@@ -37,9 +39,10 @@
             color: #29292B;
             font-size: 32px;
             font-style: normal;
-            font-weight: 420;
+            font-weight: 100;
             line-height: normal;
             margin-bottom: 24px;
+            font-family: 'sequel_sans_semi_bold_disp' !important;
         }
         .mainGridwtapFlex{
             .itemFlex{
@@ -111,8 +114,9 @@
                 color: #29292B;
                 font-size: 20px;
                 font-style: normal;
-                font-weight: 365;
+                font-weight: 100;
                 line-height: 140%; 
+                font-family: 'sequel_sans_medium_head' !important;
             }
         }
             

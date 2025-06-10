@@ -1,4 +1,22 @@
 import Images from "../../assests/images";
+import ApprovalIcon from "../../svg/ApprovalIcon";
+import Calender from "../../svg/Calender";
+import DashBoardIcon from "../../svg/DashBoardIcon";
+import Empty from "../../svg/Empty";
+import ExportTag from "../../svg/ExportTag";
+import Graph from "../../svg/Graph";
+import GraphAndNum from "../../svg/GraphAndNum";
+import GraphIcon from "../../svg/GraphIcon";
+import IconPople from "../../svg/IconPople";
+import Man from "../../svg/Man";
+// import Man from "../../svg/Man";
+import Mask from "../../svg/Mask";
+import MetaLogo from "../../svg/MetaLogo";
+import Note from "../../svg/Note";
+import ProfileIcon from "../../svg/ProfileIcon";
+import ShopIcon from "../../svg/ShopIcon";
+import Supplier from "../../svg/Supplier";
+import WorkIcon from "../../svg/WorkIcon";
 import "./style.css";
 
 
@@ -25,9 +43,13 @@ const CommonChallenges = () => {
           <div className="me-meta-card">
             <div className="max-cont-width">
               <div className="met-points" >
+                <p className="memateMetaLogo">
+                <MetaLogo/>
+                </p>
                 <img className="main-bg-img" src={Images.cardBg} alt="cardBg" />
+                {/*  */}
                 <div className="me-meta-image">
-                  <img src={Images.metalogo} alt="metalogo" />
+                  {/* <img src={Images.metalogo} alt="metalogo" type="image/svg+xml" /> */}
                   <p className="card-text">
                     Establish comprehensive control within the company 24/7 from
                     any point in the world.
@@ -41,40 +63,52 @@ const CommonChallenges = () => {
                   </div>
                   <div className="icons">
                     <div className="user-prof">
-                      <img src={Images.profileUser} alt="profileUser" />
+                      {/* <img src={Images.profileUser} alt="profileUser" type="image/svg+xml" /> */}
+                      <ProfileIcon/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.exportTag} alt="exportTag" />
+                      {/* <img src={Images.exportTag} alt="exportTag" type="image/svg+xml" /> */}
+                      <ExportTag/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.note} alt="note" />
+                      {/* <img src={Images.note} alt="note" type="image/svg+xml" /> */}
+                      <Note/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.suppliers} alt="suppliers"/>
+                      {/* <img src={Images.suppliers} alt="suppliers" type="image/svg+xml" /> */}
+                      <Supplier/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.graph} alt="graph"/>
+                      {/* <img src={Images.graph} alt="graph" type="image/svg+xml" /> */}
+                      <GraphIcon/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.iconWork} alt="iconWork" />
+                      {/* <img src={Images.iconWork} alt="iconWork" type="image/svg+xml" /> */}
+                      <WorkIcon/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.calender} alt="calender"/>
+                      {/* <img src={Images.calender} alt="calender" type="image/svg+xml" /> */}
+                      <Calender/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.shopicon} alt="shopicon" />
+                      {/* <img src={Images.shopicon} alt="shopicon" type="image/svg+xml" /> */}
+                      <ShopIcon/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.emptyWallet} alt="emptyWallet" />
+                      {/* <img src={Images.emptyWallet} alt="emptyWallet" type="image/svg+xml" /> */}
+                      <Empty/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.iconDashb} alt="iconDashb"/>
+                      {/* <img src={Images.iconDashb} alt="iconDashb" type="image/svg+xml"/> */}
+                      <DashBoardIcon/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.iconPople} alt="iconPople"/>
+                      {/* <img src={Images.iconPople} alt="iconPople" type="image/svg+xml"/> */}
+                      <IconPople/>
                     </div>
                     <div className="user-prof">
-                      <img src={Images.iconApproval} alt="iconApproval"/>
+                      {/* <img src={Images.iconApproval} alt="iconApproval" type="image/svg+xml"/> */}
+                      <ApprovalIcon/>
                     </div>
                   </div>
                 </div>
@@ -83,14 +117,19 @@ const CommonChallenges = () => {
             <div className="predict-side">
               <div className="activities-text">
                 <p>
-                see <span> and predict unprofitable </span>{" "}
+                See <strong className="strongText"> and predict unprofitable </strong>{" "}
                   business activities.
                 </p>
               </div>
               <div className="business-profile">
-                <img className="image-business" src={Images.busprofile} alt="busprofile" />
-                <img className="mask-business" src={Images.mask} alt="mask" />
-                <img className="graph-business" src={Images.graphBuss} alt="graphBuss"/>
+                <img className="image-business" src={Images.busprofile} alt="busprofile"/>
+                {/* <p className="image-business"><Man/></p> */}
+                <img className="mask-business" src={Images.mask} alt="mask" type="image/svg+xml" />
+                {/* <p className="mask-business"><Mask/></p> */}
+                <img className="graph-business" src={Images.graphBuss} alt="graphBuss" type="image/svg+xml" />
+                {/* <p className="graph-business"><Graph/></p> */}
+
+                
               </div>
             </div>
           </div>
@@ -103,7 +142,7 @@ const CommonChallenges = () => {
           data-aos-anchor-placement="top-bottom">
             <div className="inner-text">
               <div className="inner-text-container">
-              <p className="heading-flex"><strong>Track Every Expense</strong> <br/></p><p> and Time Allocated to Your Projects</p>
+              <p className="heading-flex"><span className="spanTextMQ">Track Every Expense</span> <br/></p><p>&nbsp;and Time Allocated to Your Projects</p>
               </div>
             </div>
           </div>
@@ -115,14 +154,17 @@ const CommonChallenges = () => {
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom">
             <div className="gain-time ">
-              <img className="graph-number" src={Images.graphAndNum} alt="graphAndNum" />
+              <img className="graph-number" src={Images.graphAndNum} alt="graphAndNum" type="image/svg+xml" />
+              {/* <p className="graph-number"> */}
+              {/* <GraphAndNum/> */}
+              {/* </p> */}
             </div>
             <div className="overcome-pro ">
               <div className="overcome-pro-content">
-              <p>
-                {" "}
-                <span>Overcome scaling challenges </span> <p>caused by manual
-                processes</p>
+              <p className="overcomePara">
+                {/* {" "} */}
+                Overcome scaling challenges <span className="paraText">caused by manual
+                processes</span>
               </p>
               </div>
             </div>

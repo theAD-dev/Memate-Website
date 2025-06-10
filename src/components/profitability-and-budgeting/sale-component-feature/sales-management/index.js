@@ -10,7 +10,7 @@ const SalesManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.budEfficient} />
+      <img src={Images.budEfficient} type="image/svg+xml" />
       <div className="content-wrapper">
         <p className="sale-title">Efficient</p>
         <p className="sales-heading-sales">Quotation  </p>

@@ -2,7 +2,7 @@
   max-width: 1240px;
     margin: 0 auto;
     padding: 0px;
-    font-family: "sequel_sans_roman_head" !important;
+    font-family: sequel_sans_roman_head!important;
   }
   table.pricingtableWrapper th, table.pricingtableWrapper td {
     max-width: 304px !important;
@@ -92,22 +92,24 @@
               font-feature-settings: 'liga' off, 'clig' off;
               font-size: 24px;
               font-style: normal;
-              font-weight: 420;
+              font-weight: 100;
               line-height: 150%;
               text-align: left;
               margin-top: 12px;
+              font-family: 'sequel_sans_semi_bold_disp' !important;
             }
   
             h2 {
               margin-bottom: 10px;
-    color: #29292B;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-size: 47px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 63.873px;
-    text-align: left;
-    white-space: nowrap;
+              color: #29292B;
+              font-feature-settings: 'liga' off, 'clig' off;
+              font-size: 47px;
+              font-style: normal;
+              font-weight: 100;
+              line-height: 63.873px;
+              text-align: left;
+              white-space: nowrap;
+              font-family: 'sequel_sans_semi_bold_disp' !important;
   
               span {
                 color: #888E9E;
@@ -127,8 +129,10 @@
               line-height: 24px; 
               text-align: left;
               font-weight: 100;
-              font-style: italic;
+              // font-style: italic;
               min-height: 48px;
+              font-family: 'sequel_sans_light_obl_head' !important;
+
             }
           
             // a {
@@ -205,14 +209,14 @@
   
           &:first-child {
             text-align: left;
-    padding-left: 20px !important;
-    font-weight: 500;
-    white-space: nowrap;
-    color: var(--Gray-900, #101828);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 310;
-    line-height: 20px;
+            padding-left: 20px !important;
+            white-space: nowrap;
+            color: var(--Gray-900, #101828);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 100;
+            line-height: 20px;
+            font-family: 'sequel_sans_roman_body' !important;
           }
   
           &:not(:first-child) {

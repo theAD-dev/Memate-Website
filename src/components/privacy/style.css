@@ -31,6 +31,16 @@
     left: 50%;
     transform: translateX(-80%);
 }
+.h1tagsseo2{
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    letter-spacing: -1px;
+    font-size: 42px;
+}
+.privacyHeading{
+    font-family: 'sequel_sans_bold_disp' !important;
+    font-size: 120px;
+    padding-bottom: 15px;
+}
 @media screen and (max-width: 767px) {
     .kb-main-section .kb-main-heading {
         font-size:32px;

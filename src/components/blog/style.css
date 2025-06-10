@@ -1,3 +1,4 @@
+
 .heading-blog {
   font-size: 180px;
   font-weight: 425;
@@ -164,15 +165,24 @@ h1.heading-blog-description {
   font-size: 21px;
   line-height: 33px;
   color: #29292b;
-  font-weight: 420;
+  font-weight: 100;
   margin-top: 14px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
+  text-decoration: none;
+}
+.date-heading-main a {
+  font-size: 21px;
+  line-height: 33px;
+  color: #29292b;
+  font-weight: 100;
+  margin-top: 14px;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
   text-decoration: none;
 }
 .latest-article-heading {
   color: #29292b;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 42px;
   font-style: normal;
   margin-top: 140px;
@@ -387,6 +397,17 @@ button.filterBlogTabBtn {
   margin-top: 11px;
   margin-bottom: 7px;
 }
+.img-container-1-div-text-2 a {
+  color: red;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 43px;
+  margin-top: 28px;
+  text-decoration: none;
+}
 @media screen and (max-width: 768px) {
   .parent-blog {
     padding: 0 15px !important;
@@ -502,7 +523,7 @@ button.filterBlogTabBtn {
 }
 
 .img-container-1-div-text-2 a{
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 .blog-image-container-div .img-container-1-div-text-1 {
@@ -518,7 +539,7 @@ button.filterBlogTabBtn {
   line-height: 140%;
   letter-spacing: -0.16px;
   text-decoration: none;
-  margin-left: 4px;
+  /* margin-left: 4px; */
 }
 .img-container-1-div.aos-init.aos-animate {
   position: absolute;
@@ -550,4 +571,13 @@ button.filterBlogTabBtn {
   line-height: 43px;
   margin-top: 14px !important; 
   text-decoration: none;
+}
+.articlesHeading{
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  margin-right: auto;
+  font-size: 42px;
+  letter-spacing: -1px;
+}
+.cateLatesWrap #fontfamilyChanger {
+  font-family: 'sequel_sans_semi_bold_disp' !important;
 }

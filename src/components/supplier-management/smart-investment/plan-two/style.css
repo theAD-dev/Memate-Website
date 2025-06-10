@@ -30,12 +30,12 @@
   font-weight: 600;
   color: #ffffff;
   line-height: 16px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
 }
 
 .invest-plan-two-heading-top {
   font-size: 24px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   color: #ffffff;
   font-weight: 600;
   line-height: 36px;
@@ -44,7 +44,7 @@
 .invest-plan-two-overview-content {
   font-size: 20px;
   line-height: 33px;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-weight: 400;
   max-width: 298.39px;
 }
@@ -52,13 +52,13 @@
 .plan-money-two {
   font-size: 56px;
   font-weight: 600;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   color: #ffffff;
 }
 
 .money-period-two {
   font-size: 18px;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   color: #ffffff;
   font-weight: 360;
   line-height: 21.29px;
@@ -67,7 +67,7 @@
 
 .invest-plan-features-heading-two {
   font-size: 17.42px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   color: #ffffff;
   font-weight: 600;
   line-height: 19.36px;
@@ -76,7 +76,7 @@
 .inest-plan-data-name-two {
   font-size: 18px;
   color: #ffffff;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   font-weight: 400;
 }
 
@@ -87,7 +87,7 @@
   background-color: #ffffff;
   border-radius: 60px;
   font-size: 18px;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   color: #29292b;
   font-weight: 600;
   line-height: 21.24px;

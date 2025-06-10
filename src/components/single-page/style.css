@@ -3,7 +3,7 @@
 }
 .accounting-text-A {
   color: #29292b;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 21px;
   font-style: normal;
   font-weight: 420;
@@ -33,7 +33,7 @@
   color: #888E9E;
   font-size: 16px;
   font-style: normal;
-  font-weight: 360;
+  font-weight: 100;
   line-height: 140%;
   letter-spacing: -0.16px;
   text-decoration: none;
@@ -152,10 +152,10 @@ padding: 0;
 }
 .categoryLinkTitle a{
   color: #29292b;
-    font-family: "sequel_sans" !important;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
     font-size: 21px;
     font-style: normal;
-    font-weight: 420;
+    font-weight: 100;
     line-height: 100%;
     letter-spacing: -0.21px;
     text-decoration: none;
@@ -168,8 +168,10 @@ padding: 0;
   color: #29292B;
   font-size: 6vmin;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: normal;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+
 }
 .parent.parentSingle .pageBreadcrumbs li:first-child {
   padding-left: 0;
@@ -181,6 +183,7 @@ padding: 0;
   width: 400px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 .parent.parentSingle .pageBreadcrumbs .backButStories {
@@ -189,7 +192,7 @@ padding: 0;
 .heading-1-A {
   color: #1d2939;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 55px;
   font-style: normal;
   margin-top: 16px;
@@ -204,7 +207,7 @@ padding: 0;
 .heading-date-A {
   color: #888e9e;
   margin-top: 12px;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 16px;
   font-style: normal;
   font-weight: 360;
@@ -222,7 +225,7 @@ padding: 0;
 .single-page-heading {
   margin-top: 60px;
   color: #29292b;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   align-self: stretch;
   font-size: 36px;
   font-style: normal;
@@ -233,7 +236,7 @@ padding: 0;
 
 .single-page-heading-text {
   color: #3f3f3f;
-  font-family: "sequel_sans_roman_head" !important;
+  font-family: sequel_sans_roman_head!important;
   margin-top: 16px;
   font-size: 16px;
   font-style: normal;
@@ -244,7 +247,7 @@ padding: 0;
 .sub-heading {
   margin-top: 60px;
   color: #29292b;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 24px;
   font-style: normal;
   font-weight: 420;
@@ -267,7 +270,7 @@ padding: 0;
 .comment-name-A {
   color: #29292b;
   text-align: center;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 24px;
   font-style: normal;
   font-weight: 420;
@@ -279,7 +282,7 @@ padding: 0;
 .comment-text-A {
   color: #29292b;
   text-align: center;
-  font-family: "sequel_sans" !important;
+  font-family: sequel_sans_roman_head!important;
   font-size: 22px;
   font-style: normal;
   font-weight: 410;
@@ -291,7 +294,64 @@ padding: 0;
 .heading-6-text-2-A {
   margin-top: 24px;
 }
-
+.singlePageheading{
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  color: #1d2939;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 55px;
+  font-style: normal;
+  margin-top: 16px;
+  font-weight: 100;
+  line-height: 62px;
+  letter-spacing: -1px;
+  max-width: 800px;
+}
+.singlePageDate{
+  color: #888e9e;
+  margin-top: 12px;
+  font-family: "sequel_sans_roman_head" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%;
+  letter-spacing: -1px;
+}
+[dir="ltr"] h2 span{
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-weight: 100;
+}
+[dir="ltr"] p span {
+  font-family: 'sequel_sans_roman_head' !important;
+  line-height: 150%;
+  font-weight: 100;
+}
+[dir="ltr"] a span {
+  font-family: 'sequel_sans_roman_head' !important;
+  line-height: 150%;
+  color: #29292b !important;
+  text-decoration: none !important;
+  font-size: 16px !important;
+}
+[dir="ltr"] span a {
+  font-family: 'sequel_sans_roman_head' !important;
+  line-height: 150%;
+  color: '#106B99' !important;
+  text-decoration: none !important;
+}
+[dir="ltr"] ol li p{
+  font-family: 'sequel_sans_roman_head' !important;
+  line-height: 150%;
+  color: '#106B99' !important;
+  text-decoration: none !important;
+}
+[lang="EN-US"] {
+  font-family: 'sequel_sans_roman_head' !important;
+  line-height: 150%;
+  font-size: 16px !important;
+}
+/* .heading-2-text-A .single-page-heading-text span{
+  
+} */
 
 @media screen and (max-width: 767px) {
   .parent {
@@ -312,7 +372,7 @@ padding: 0;
   margin-bottom: 15px !important;
 }
 .pageBreadcrumbs ul, .pageBreadcrumbs ul li {
-  display: inline-block !important;
+  display: flex !important;
 }
 .pageBreadcrumbs ul li {
   padding: 0 10px;
@@ -394,6 +454,10 @@ padding: 0;
   padding-bottom: 20px;
   border-left: 0px solid #e9ebf0;
   height: 449px;
+}
+.singlePageheading {
+  font-size: 35px;
+  line-height: 51px;
 }
 }
 @media screen and (max-width: 992px) and (min-width: 768px){

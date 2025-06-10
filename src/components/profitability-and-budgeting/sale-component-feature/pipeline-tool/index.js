@@ -3,7 +3,7 @@ import "./style.css";
 import Images from "../../../../assests/images";
 const PipeLineTool = () => {
   return (
-    <div className="pipeline-tool-wrapper marginSpaceBottom marginSpaceTop" data-aos="fade-up"
+    <div className="pipeline-tool-wrapper marginSpaceBottom marginSpaceTop sales-management-wrapper-data" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="2000"
@@ -11,10 +11,10 @@ const PipeLineTool = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <div className="pipeline-image-wrapper">
-          <img src={Images.budVersatile} alt="budVersatile" className="filter-pipelineimage"/>
+          <img src={Images.budVersatile} alt="budVersatile" className="filter-pipelineimage" type="image/svg+xml" />
          
       </div>
-      <div className="content-wrapper">
+      <div className="content-wrapper ">
         <p className="sale-title">Versatile</p>
         <p className="sales-heading-sales">budget</p>
         <p className="sales-type">control</p>

@@ -6,7 +6,9 @@ import { Helmet } from 'react-helmet';
 import { supplierListApi } from '../../api/supplierApi';
 import { Link } from 'react-router-dom';
 import { useDebounce } from 'primereact/hooks';
-import TronButton from '../../layout/hover-button/tourn-but';
+// import TronButton from '../../layout/hover-button/tourn-but';
+import TronRequestADemo from '../../layout/hover-button/TronRequestADemo';
+import TronAddSupplier from '../../layout/hover-button/TronAddSupplier';
 
 const SupplierDatabase = () => {
   const [supplier, setSupplier] = useState([]);
@@ -83,7 +85,7 @@ const SupplierDatabase = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-          <h1>Connect and Grow with meMate’s Australian Business Directory</h1>
+          <h1 className='supplierText'>Connect and Grow with meMate’s Australian Business Directory</h1>
         </div>
         <div className={style.smallheading} data-aos="fade-up"
     data-aos-offset="50"
@@ -96,7 +98,7 @@ const SupplierDatabase = () => {
         </div>
     
         <div  className="request-btn request-btn-bg">
-                <Link to="/add-your-company" className="nav-btn--get-started navbar-link"><TronButton text="Add Your Company" /></Link>
+                <Link to="/add-your-company" className="nav-btn--get-started navbar-link"><TronAddSupplier text="Add Your Company" /></Link>
               </div>
           {/* <Link to='/add-your-company'>Add Your Company</Link> */}
      
