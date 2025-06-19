@@ -11,17 +11,18 @@ const JobApprovalPage = () => {
   return (
     <>
      <Helmet>
-    <title>Home</title>
-    <meta name="description" content="" />
-    <meta property="og:title" content="" />
-      <meta property="og:description" content=".
-    " />
+    <title>Multi-Location Management Software | MeMate</title>
+    <meta name="description" content="One platform to manage all your business locations, staff and jobs. MeMate keeps your operations connected across sites." />
+    <meta property="og:title" content="Multi-Location Management Software | MeMate" />
+      <meta property="og:description" content="One platform to manage all your business locations, staff and jobs. MeMate keeps your operations connected across sites." />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

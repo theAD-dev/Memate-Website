@@ -11,17 +11,19 @@ const ReportsPage = () => {
   return (
     <>
       <Helmet>
-    <title>Comprehensive Business Analytics & Reporting Tools | meMate</title>
-    <meta name="description" content="Unlock real-time business insights with MeMate’s comprehensive reporting tools. Designed for Australian businesses, our software offers financial reporting, project performance analysis, and more to drive informed decisions." />
-    <meta property="og:title" content="Comprehensive Business Analytics & Reporting Tools | meMate" />
-      <meta property="og:description" content="Unlock real-time business insights with MeMate’s comprehensive reporting tools. Designed for Australian businesses, our software offers financial reporting, project performance analysis, and more to drive informed decisions.
+    <title>Track Your Business Performance | Reporting Tools by MeMate</title>
+    <meta name="description" content="Get real-time business insights, track performance, and stay on top of finances. MeMate’s reporting software is built for Aussie small and medium businesses." />
+    <meta property="og:title" content="Track Your Business Performance | Reporting Tools by MeMate" />
+      <meta property="og:description" content="Get real-time business insights, track performance, and stay on top of finances. MeMate’s reporting software is built for Aussie small and medium businesses.
     " />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

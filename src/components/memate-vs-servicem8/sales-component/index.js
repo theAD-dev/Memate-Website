@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "./style.css";
-import TronButton from "../../../layout/hover-button/tourn-but";
+import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
 const SalesComponent = () => {
   return (
   <>
-    <div className="sales-component-wrapper" data-aos="fade-up"
+    <div className="sales-component-wrapper sales-component-wrapperm8" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="500"
@@ -16,7 +16,14 @@ const SalesComponent = () => {
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="compaire-service01">
-        <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Mockup.png" width="100%" alt="Mockup" />
+        <img
+            srcSet={`${'https://res.cloudinary.com/dn0jqjad3/image/upload/v1746535254/servicem8-3x_avrxqe.png'} 1800w, ${'https://res.cloudinary.com/dn0jqjad3/image/upload/v1746535254/servicem8-2x_jpqla6.png'} 1200w, ${'https://res.cloudinary.com/dn0jqjad3/image/upload/v1746535254/servicem8-1x_g4d12q.png'} 600w`}
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            src={'https://res.cloudinary.com/dn0jqjad3/image/upload/v1746535254/servicem8-3x_avrxqe.png'}
+            alt="Pricing main image"
+
+          />
+        {/* <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Mockup.png" width="100%" alt="Mockup" /> */}
         </div>
 
         <div className="compaireHeadPara">
@@ -29,7 +36,7 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link to='/' target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="Get started" /></Link>
+        <Link to='/' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo  text="Get started" /></Link>
       </div>
 
         </div>

@@ -2,10 +2,11 @@
 import DataSingle from "../../components/supplier-database/single-page/single-page";
 import Layout from "../../layout";
 import React, { useState, useEffect } from "react";
-import { useParams } from 'react-router-dom';
+import { redirect, useNavigate, useParams } from 'react-router-dom';
 import { singlePostSupplier } from '../../api/supplierApi';
 
 const DatabasePageSingle = () => {
+  const navigation = useNavigate();
   const { slug = slug.slug } = useParams();
   const [supplierData, setSupplierData] = useState(null);
   const [loadingsingle, setLoadingSinge] = useState(true);
@@ -15,7 +16,12 @@ const DatabasePageSingle = () => {
     const fetchSupplierData = async () => {
       try {
         const data = await singlePostSupplier(slug);
+        console.log('error FROM API', data.error);
         setSupplierData(data);
+        if(data.error == 'No data at this moment') {
+           navigation('/404')
+          
+        }
       } catch (err) {
         setError("Failed to fetch supplier data.");
       } finally {
@@ -26,7 +32,7 @@ const DatabasePageSingle = () => {
     fetchSupplierData();
   }, [slug]);
 
-  if (loadingsingle) return <p>Loading...</p>;
+  if (loadingsingle) return <p></p>;
   if (error) return <p>{error}</p>;
 
   return (

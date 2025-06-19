@@ -20,12 +20,10 @@ function ProVinyl() {
   return (
     <>
     <Helmet>
-    <title>Pro Vinyl Success Story | MeMate’s Automotive Business Management Software</title>
-    <meta name="description" content="Discover how Pro Vinyl transformed its car wrapping services using MeMate’s business management software, 
-      leading to streamlined operations and increased revenue in the Australian automotive industry." />
-    <meta property="og:title" content="Pro Vinyl Success Story | MeMate’s Automotive Business Management Software" />
-      <meta property="og:description" content="Discover how Pro Vinyl transformed its car wrapping services using MeMate’s business management software, 
-      leading to streamlined operations and increased revenue in the Australian automotive industry.
+    <title>Pro Vinyl Case Study | Car Wrap Business Software Success</title>
+    <meta name="description" content="Discover how Pro Vinyl streamlined their automotive wrapping operations using MeMate's business management software. Real-world success story for car wrap businesses." />
+    <meta property="og:title" content="Pro Vinyl Case Study | Car Wrap Business Software Success" />
+      <meta property="og:description" content="Discover how Pro Vinyl streamlined their automotive wrapping operations using MeMate's business management software. Real-world success story for car wrap businesses.
     " />
 </Helmet>
       <div className="parent-blog-page customerstoriespage">
@@ -38,7 +36,7 @@ function ProVinyl() {
             <Link to="/customer-stories" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>
           <div className="customerstoriesGrid">
-            <h1>Pro Vinyl’s Transformation with MeMate’s Automotive Business Software</h1>
+            <h1>How Pro Vinyl Enhanced Their Automotive Wrap Business with MeMate</h1>
             <div className="innerGrid imageOverlyText">
               <Link ><img
                 className="img-container-stories"
@@ -163,7 +161,7 @@ function ProVinyl() {
               /></Link>
 
             </div>
-            <div className="gadientText2">
+            <div className="gadientText2 gadientText2M">
               <h2 className="proVynclText">Conclusion: A Powerful Tool for Business Growth</h2>
             </div>
             <div className="wrapperTextcenter">

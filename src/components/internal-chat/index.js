@@ -9,8 +9,6 @@ const InternalChatComponent = () => {
   return (
     <>
      <ComingSoon />
-    
-    
     </>
   );
 };

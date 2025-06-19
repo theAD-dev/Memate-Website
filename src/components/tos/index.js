@@ -2,7 +2,8 @@ import "./style.css";
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { Link, animateScroll as scroll } from "react-scroll";
-console.log("scroll: ", scroll);
+import StickyBox from "react-sticky-box";
+
 
 const knowledgeData = [
   {
@@ -458,6 +459,9 @@ Thank you for choosing meMate.</p>
 ];
 
 const TOS = () => {
+
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
+
   const [knowledge, setKnowledge] = useState([]);
   const [activeItem, setActiveItem] = useState(knowledgeData[0]?.id);
   const observerRef = useRef(null);
@@ -489,7 +493,7 @@ const TOS = () => {
       threshold: 0.2,
     });
 
-    const headings = document.querySelectorAll(".kb-section-heading");
+    const headings = document.querySelectorAll(".kb-section-headingF");
     headings.forEach((heading) => observerRef.current.observe(heading));
 
     requestAnimationFrame(() => {
@@ -520,35 +524,45 @@ const TOS = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Use: Guidelines for Using MeMate</title>
+        <title>Terms of Use | MeMate Business Software Australia</title>
         <meta
           name="description"
-          content="Check the terms of use for MeMate services. Understand your rights and responsibilities when using our platform for a seamless experience."
+          content="View the terms of use for MeMate — Australia’s business management software platform. Review your rights, responsibilities and platform access terms."
         />
         <meta
           property="og:title"
-          content="Terms of Use: Guidelines for Using MeMate"
+          content="Terms of Use | MeMate Business Software Australia"
         />
         <meta
           property="og:description"
-          content="Check the terms of use for MeMate services. Understand your rights and responsibilities when using our platform for a seamless experience."
+          content="View the terms of use for MeMate — Australia’s business management software platform. Review your rights, responsibilities and platform access terms."
         />
       </Helmet>
-
-      <div className="kb-wrapper">
-        <div className="tos-header">
-          <p className="tos-section-heading" id="section1">
-            memate
-          </p>
-          <p className="privacyHeading latest-update-head">Terms of use</p>
+   <div className="conditionWrrapperF">
+                <div className="pageBreadcrumbs">
+                     <ul>
+                       <li>Home</li>/<li> <Link className="MainPageLink" to="/terms-and-conditions"> Terms of use</Link></li>
+                     </ul>
+                     <Link href="https://memate.com.au/" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
+                   </div>
+           <div className="tmsheadF">
+            <p className="tos-section-headingF" id="section1">
+              memate
+            </p>
+           <h1 className="blackH1Tag">Terms of Use</h1>
+        </div>
         </div>
 
-        <div className="kb-left-wrapper kb-tos-wrapper height-adjuster">
+
+
+      <div className="kb-wrapper">
+        <div className="kb-left-wrapperm kb-left-wrappermain kb-tos-wrapperF">
+          <StickyBox offsetTop={100} offsetBottom={0}>
           {knowledge.map((item) => (
-            <ul className="kb-list" key={item.id}>
+            <ul className="kb-listF" key={item.id}>
               <li
-                className={`kb-list-item ${
-                  activeItem === item.id ? "kb-list-item-active" : ""
+                className={`kb-list-itemF ${
+                  activeItem === item.id ? "kb-list-item-activeF" : ""
                 }`}
               >
                 <Link
@@ -558,19 +572,20 @@ const TOS = () => {
                   duration={500}
                   onSetActive={() => setActiveItem(item.id)}
                 >
-                  {item.name}
+                 <span> {item.name}</span>
                 </Link>
               </li>
             </ul>
           ))}
+          </StickyBox>
         </div>
 
-        <div className="kb-right-wrapper termsOfUse-section">
+        <div className="kb-right-wrapperM">
           {knowledge.map((item) => (
-            <div className="kb-right-section" key={item.id}>
-              <h1 className="kb-section-heading" id={`section-${item.id}`}>
+            <div className="kb-right-sectionF" key={item.id}>
+              <h2 className="kb-section-headingF" id={`section-${item.id}`}>
                 {item.name}
-              </h1>
+              </h2>
               <div dangerouslySetInnerHTML={{ __html: item.description }} />
             </div>
           ))}

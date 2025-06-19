@@ -4,17 +4,22 @@
 }
 
 .next-step h3 {
-  color: #29292b;
-  text-align: center;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: normal;
-  letter-spacing: -1px;
-  font-family: 'sequel_sans_semi_bold_disp' !important;
-  margin: 0px 0px 20px 0px;
+    color: #29292b;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: -1px;
+   font-family: 'sequel_sans' !important;
+    margin: 0px 0px 20px 0px;
 }
-
+.intro-sticky {
+    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/nextstep-shadow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .next-step button {
   border-radius: 60px;
   background: #29292b;
@@ -39,7 +44,7 @@
   color: transparent;
   cursor: pointer;
   text-align: center;
-  font-size: 292px;
+ font-size: 144px;
   font-style: normal;
   font-weight: 100;
   line-height: 100%;
@@ -74,36 +79,37 @@
 }
 
 .next-step-page-description {
-  margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  align-self: stretch;
-  margin-bottom: 15px;
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    margin-bottom: 15px;
 }
 
 .next-step-data {
-  color: #29292b;
+  color: #29292B;
   text-align: center;
-  font-family: 'sequel_sans_semi_bold_disp' !important;
-  font-size: 40px;
+  font-size: 48px;
   font-style: normal;
-  font-weight: 100;
-  line-height: normal;
-  letter-spacing: -1px;
+  font-weight: 415;
+  line-height: 60px; 
+  letter-spacing: -1.44px;
+ font-family: 'sequel_sans' !important;
 }
 
 .next-step-data-description {
   color: #757B8A;
   text-align: center;
-  font-family: 'sequel_sans_roman_head' !important;
-  font-size: 18px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 100;
-  line-height: 140%;
-  max-width: 750px;
-  margin-bottom: 0px;
+  font-weight: 360;
+  line-height: 32px; 
+  letter-spacing: -0.72px;
+  font-family: 'sequel_sans_roman_head' !important;
+  max-width: 700px;
+  margin-bottom: 14px;
 }
 @media screen and (max-width: 767px) {
   .next-step {
@@ -129,6 +135,10 @@
 }
 .next-step h3 {
   margin: 0px 0px 0px 0px;
+}
+.next-step-data-description {
+    font-size: 20px;
+    line-height: 26px;
 }
 }
 @media screen and (max-width: 992px) and (min-width: 768px){

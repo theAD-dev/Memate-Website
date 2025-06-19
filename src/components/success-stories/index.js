@@ -10,7 +10,7 @@ import WhiteButtonWithoutGradient from "../../layout/hover-button/WhiteButtonWit
 const SuccessStories = () => {
   return (
    <>
-    <div className="slider-section1" >
+    <div className="slider-section1 slider-section1FF" >
       <div className="success-stories1">
         <div className="bottom-management" data-aos="fade-up"
         data-aos-offset="50"
@@ -19,7 +19,7 @@ const SuccessStories = () => {
         data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
-          <div className="SStoriesHead">Success Stories</div>
+          <div className="SStoriesHead sequel_sans">Success Stories</div>
           <p>Here are a few stories from Australian companies using Memate<br /> and how it has worked for them.</p>
           <div className="request-btn request-btn-center" data-aos="fade-up"
           data-aos-offset="50"
@@ -28,7 +28,7 @@ const SuccessStories = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom">
-        <Link to='/customer-stories' className="nav-btn--get-started get-started-border-box navbar-link"><WhiteButtonWithoutGradient text="All Stories" /></Link>
+        <Link to='/customer-stories' className="nav-btn--get-started get-started-border-box navbar-link"><WhiteButtonWithoutGradient text="Real Examples" /></Link>
         {/* 171 */}
       </div>
           {/* <Link to="/customer-stories"><button>All Stories</button></Link> */}

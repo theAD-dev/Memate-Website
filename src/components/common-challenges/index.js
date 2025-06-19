@@ -23,7 +23,7 @@ import "./style.css";
 const CommonChallenges = () => {
   return (
     <div className="common-box-wrapper">
-      <div className="common-box">
+      <div className="common-box1">
         <div className="challenges-text" data-aos="fade-up"
           data-aos-offset="50"
           data-aos-delay="50"
@@ -31,9 +31,49 @@ const CommonChallenges = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom">
-          <h3>Streamline Your Business and Enjoy Full Control:</h3>
+          <h3>Streamline Your Business <br/>and Enjoy Full Control</h3>
+          <p>Track, analyze, and manage all your business activities in one clear, organized place.</p>
         </div>
-        <div className="control-main-sec" data-aos="fade-up"
+        <div className="streamlineimggrid" data-aos="fade-up"
+          data-aos-offset="50"  >
+            <div className="gridboxstreamline item1"> 
+             <img
+                srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img1-3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img1-2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img1-1x.png'} 1800w`}
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img1-1x.png'} 
+                alt="Landing Hero"
+              />
+              <h4>A system designed for complete <br/> control over business activities</h4>
+            </div>
+            <div className="gridboxstreamline item2"> 
+             <img
+                srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img2-3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img2-2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img2-1x.png'} 1800w`}
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img2-1x.png'} 
+                alt="Landing Hero"
+              />
+               <h4>Track Every Expense and Time <br/> Allocated to Your Projects</h4>
+            </div>
+            <div className="gridboxstreamline item3"> 
+             <img
+                srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img3-3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img3-2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img3-1x.png'} 1800w`}
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img3-1x.png'} 
+                alt="Landing Hero"
+              />
+              <h4>See and predict unprofitable <br/> business activities.</h4>
+            </div>
+            <div className="gridboxstreamline item4"> 
+             <img
+                srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img4-3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img4-2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img4-1x.png'} 1800w`}
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streamline-img4-1x.png'} 
+                alt="Landing Hero"
+              />
+                <h4>Overcome scaling challenges <br/> caused by manual processes </h4>
+            </div>
+          </div>
+        {/* <div className="control-main-sec" data-aos="fade-up"
           data-aos-offset="50"
           data-aos-delay="50"
           data-aos-duration="1000"
@@ -47,9 +87,7 @@ const CommonChallenges = () => {
                 <MetaLogo/>
                 </p>
                 <img className="main-bg-img" src={Images.cardBg} alt="cardBg" />
-                {/*  */}
                 <div className="me-meta-image">
-                  {/* <img src={Images.metalogo} alt="metalogo" type="image/svg+xml" /> */}
                   <p className="card-text">
                     Establish comprehensive control within the company 24/7 from
                     any point in the world.
@@ -63,51 +101,39 @@ const CommonChallenges = () => {
                   </div>
                   <div className="icons">
                     <div className="user-prof">
-                      {/* <img src={Images.profileUser} alt="profileUser" type="image/svg+xml" /> */}
                       <ProfileIcon/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.exportTag} alt="exportTag" type="image/svg+xml" /> */}
                       <ExportTag/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.note} alt="note" type="image/svg+xml" /> */}
                       <Note/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.suppliers} alt="suppliers" type="image/svg+xml" /> */}
                       <Supplier/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.graph} alt="graph" type="image/svg+xml" /> */}
                       <GraphIcon/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.iconWork} alt="iconWork" type="image/svg+xml" /> */}
                       <WorkIcon/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.calender} alt="calender" type="image/svg+xml" /> */}
                       <Calender/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.shopicon} alt="shopicon" type="image/svg+xml" /> */}
                       <ShopIcon/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.emptyWallet} alt="emptyWallet" type="image/svg+xml" /> */}
                       <Empty/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.iconDashb} alt="iconDashb" type="image/svg+xml"/> */}
                       <DashBoardIcon/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.iconPople} alt="iconPople" type="image/svg+xml"/> */}
                       <IconPople/>
                     </div>
                     <div className="user-prof">
-                      {/* <img src={Images.iconApproval} alt="iconApproval" type="image/svg+xml"/> */}
                       <ApprovalIcon/>
                     </div>
                   </div>
@@ -123,13 +149,8 @@ const CommonChallenges = () => {
               </div>
               <div className="business-profile">
                 <img className="image-business" src={Images.busprofile} alt="busprofile"/>
-                {/* <p className="image-business"><Man/></p> */}
                 <img className="mask-business" src={Images.mask} alt="mask" type="image/svg+xml" />
-                {/* <p className="mask-business"><Mask/></p> */}
                 <img className="graph-business" src={Images.graphBuss} alt="graphBuss" type="image/svg+xml" />
-                {/* <p className="graph-business"><Graph/></p> */}
-
-                
               </div>
             </div>
           </div>
@@ -155,21 +176,17 @@ const CommonChallenges = () => {
             data-aos-anchor-placement="top-bottom">
             <div className="gain-time ">
               <img className="graph-number" src={Images.graphAndNum} alt="graphAndNum" type="image/svg+xml" />
-              {/* <p className="graph-number"> */}
-              {/* <GraphAndNum/> */}
-              {/* </p> */}
             </div>
             <div className="overcome-pro ">
               <div className="overcome-pro-content">
               <p className="overcomePara">
-                {/* {" "} */}
                 Overcome scaling challenges <span className="paraText">caused by manual
                 processes</span>
               </p>
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

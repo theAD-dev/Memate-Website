@@ -9,7 +9,10 @@
 .difference-module_gridService8L__LssnP .request-btn {
   justify-content: flex-start;
 }
-
+.request-btn.request-btn-leftq {
+  display: flex;
+  justify-content: flex-start;
+}
 /* changed */
 .sales-component-feature h2 {
   color: #29292b;
@@ -89,20 +92,23 @@
   margin-top: 3px;
 }
 .tooltipCompaire .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 10px;
+    white-space: normal;
+    line-height: 13px;
+    padding: 7px;
 }
-
 .tooltipCompaire .tooltiptext::after {
   content: "";
   position: absolute;

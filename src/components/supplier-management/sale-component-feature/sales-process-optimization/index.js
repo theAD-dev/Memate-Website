@@ -5,23 +5,24 @@ import Images from "../../../../assests/images";
 const SalesProcessOptimiation = () => {
 
   return (
-    <div className="sales-process-optimization-wrapper " data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="2500"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <div className="content-wrapper ">
-        <p className="sale-title">Insightful</p>
-        <p className="sales-heading-sales">Help</p>
-        <p className="sales-type">your managers </p>
-        <p className="sales-description-sales">
-        Quickly find your preferred suppliers with just a <br></br>few clicks. This feature allows management to <br></br>easily 
-        access and select the suppliers you need,<br></br> streamlining your workflow and saving time.
+      <div className="content-wrapperF ">
+        <p className="sale-titleF">Insightful</p>
+        <p className="sales-heading-salesF">Help</p>
+        <p className="sales-typeF">your managers </p>
+        <p className="sales-description-salesF">
+        Quickly find your preferred suppliers with just a few clicks.<br/> This feature allows management to easily 
+        access and<br/> select the suppliers you need, streamlining your workflow<br/> and saving time.
         </p>
       </div>
-      <img src={Images.Insightful} alt="Insightful"  className="section2 sales-process-optimization-image" type="image/svg+xml" />
+       <div className="sales-imageF">
+      <img src={Images.Insightful} alt="Insightful"  className="section2 sales-process-optimization-image" type="image/svg+xml" /></div>
     </div>
   );
 };

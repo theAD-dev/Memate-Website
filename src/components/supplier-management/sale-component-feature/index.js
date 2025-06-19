@@ -15,11 +15,11 @@ const SalesComponentFeature = () => {
        
       </div>
       <div className="sales-feature-wrapper">
-         <SalesManagement/>
-          <CRMSalesTool/>
-          <PipeLineTool/>
-          <SalesProcessOptimiation/>
-          <AgilePipeLineManagement/>
+           <SalesManagement/>
+           <CRMSalesTool/>
+           <PipeLineTool/>
+           <SalesProcessOptimiation/>
+           <AgilePipeLineManagement/>
            <SuitableTender/> 
         </div>
     </div>

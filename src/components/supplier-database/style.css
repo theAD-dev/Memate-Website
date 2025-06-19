@@ -18,7 +18,7 @@
     /* margin-bottom: 110px; */
 }
 .main-heading.main-headingdatabase {
-  line-height: 213px;
+  line-height: 200px;
 }
 .MuiAccordionSummary-content{
     justify-content: space-between;
@@ -104,8 +104,18 @@ height: 52px;
     margin-bottom: 10px;
   }
   
-
-  
+.requestEditBut .text-btn--nav2 {
+    padding: 0 19px;
+}
+  .uploadEditWrap .upload-containerWrapper img{
+     width: 132px !important;
+    height: 41px !important;
+    margin-bottom: 10px;
+    object-fit: contain;
+    }
+  .phoneInput.phoneInputFU.PhoneInput {
+    margin-top: 0;
+}
 .pageBreadcrumbs ul {
     display: flex;
     align-items: center;
@@ -128,15 +138,38 @@ height: 52px;
   font-family: 'sequel_sans_semi_bold_disp' !important;
   margin-top: 30px;
 }
+.supdatabaseHeadFS {
+    width: 869px;
+    margin: 110px auto 0;
+    color: #29292B;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    font-family: 'sequel_sans' !important;
+}
 .dragAndDropText{
   font-size: 14px;
   font-family: 'sequel_sans_medium_body' !important;
 }
   @media screen and (max-width: 767px) {
+    .supdatabaseHeadFS {
+      width: 100%;
+      margin: 9px auto 7px;
+      font-size: 48px;
+      line-height: 30px;
+      letter-spacing: 0;
+    }
+
     .main-section .main-heading {
         font-size: 32px;
         line-height: 40px;
     }
+    .main-section .main-image {
+    width: 44%;
+}
     .main-section .main-heading br {
         display: none;
     }

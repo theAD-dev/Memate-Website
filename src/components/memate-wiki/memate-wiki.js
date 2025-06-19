@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { wikiBase, wikiBaseBSearch } from "../../api/wikiApi"; 
 import "./style.css";
 import style from './wiki.module.scss';
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { Oval } from 'react-loader-spinner';
 const FilterIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/search-filter.svg";
@@ -13,13 +13,12 @@ const MemateWiki = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [isLoading, setIsLoading] = useState(false); 
   const [error, setError] = useState(null); 
-  const navigate = useNavigate();
+
   const { data: wikiData = [], isLoading: initialLoading } = useQuery({
     queryKey: ['wikiBase'],
     queryFn: wikiBase,
     enabled: true,
   });
-
   const fetchFilteredData = async () => {
     if (searchQuery.trim() !== "") {
       setIsLoading(true);
@@ -42,40 +41,25 @@ const MemateWiki = () => {
   useEffect(() => {
     const debounceTimer = setTimeout(() => {
       fetchFilteredData();
-    }, 300); // 300ms debounce
+    }, 300); 
 
     return () => clearTimeout(debounceTimer);
   }, [searchQuery, wikiData]);
 
-  const handleViewAllClick = (categoryId,titleSlug, categoryName) => {
-    navigate(`/wiki/${categoryId}`, { state: { categoryName ,titleSlug} });
-  };
-  const handleDetailsClick = (categoryId, titleSlug, categoryName) => {
-  
-    navigate(`/memate-wiki/${titleSlug}`, {
-      state: {
-        id: categoryId, 
-        slug: titleSlug, 
-        name: categoryName, 
-      },
-    });
-  };
 
   return (
     <>
     <Helmet>
-      <title>MeMate Wiki | Business Management Practices, Tools, and Information</title>
-      <meta name="description" content="Discover business management insights on MeMate Wiki, covering job scheduling, 
-      invoicing, quote calculations, and essential tools for success." />
-      <meta property="og:title" content='MeMate Wiki | Business Management Practices, Tools, and Information' />
-      <meta property="og:description" content='Discover business management insights on MeMate Wiki, covering job scheduling, 
-      invoicing, quote calculations, and essential tools for success.' />  
+      <title>MeMate Wiki | Business Tips & Insights for Aussie SMEs</title>
+      <meta name="description" content="Practical business advice, growth tips and industry insights for Australian businesses. The MeMate Wiki helps you build, run and grow smarter." />
+      <meta property="og:title" content='MeMate Wiki | Business Tips & Insights for Aussie SMEs' />
+      <meta property="og:description" content='Practical business advice, growth tips and industry insights for Australian businesses. The MeMate Wiki helps you build, run and grow smarter.' />  
      </Helmet>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
     <div className={`titleHead ${style.mainHeadTitle}`}>
           <h2>meMate <br />wiki</h2>
-          <h1 className="h1tagsseo" style={{ marginBottom: 76 }}>
-          A Practical Guide for Australian Business Owners</h1>
+          <h1 className="h1tagsseow">
+          Business Tips & Insights for Aussie SMEs</h1>
           <span>
           </span>
           <h4>
@@ -107,34 +91,52 @@ const MemateWiki = () => {
           <p className={style.errorMessage}>{error}</p>
         ) : (
           (filteredData || []).map((item, index) => (
+            
             <div key={index} className={style.mainGridWrap}>
               <div className={style.inHead}>
                 <h2>{item?.name || "Unknown Category"}</h2>
-                <button 
-                className={style.viewAllLink} 
-                onClick={() => {
-                  handleViewAllClick(item.id, item.slug, item.name);
-                }}>
+              <Link 
+                to={{
+                  pathname: `/memate-wiki/${item.slug}`,
+                  state: { 
+                    categoryName: item.name,
+                    categoryId: item.id,
+                    titleSlug: item.slug,
+                    cameta_title: item.meta_title,
+                    cameta_description: item.meta_description,
+                    cah1: item.h1,
+                    cah2: item.h2,
+                  }
+                }}
+                className={style.viewAllLink}>
                 View All
-              </button>
+              </Link>
+
               </div>
-              {item.subdata && item.subdata.length > 0 && (
-                <div className={style.mainGridwtapFlex}>
-                  {item.subdata.map((subcategory) => (
-                    <div key={subcategory.id} className={`itemFlex ${subcategory.id} ${style.itemFlex}`}>
-                      <div className={style.itemText}>
-                        <h3
-                        onClick={() => {
-                          handleDetailsClick(subcategory.id, subcategory.slug, subcategory.name);
-                        }}>
-                        {subcategory.title}
-                      </h3>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
+             {item.subdata && item.subdata.length > 0 && (
+  <div className={style.mainGridwtapFlex}>
+    {item.subdata.map((subcategory) => (
+      <div className={`itemFlex ${subcategory.id} ${style.itemFlex}`}>
+      <Link
+        key={subcategory.id}
+        to={{
+          pathname: `/memate-wiki/${item.slug}/${subcategory.slug}`,
+          state: { 
+            id: subcategory.id, 
+            slug: subcategory.slug, 
+            Slug: item.slug,
+            name: subcategory.name, 
+          }
+              }}>
+              <div className={style.itemText}>
+                {subcategory.title}
+              </div>
+            </Link>
             </div>
+          ))}
+        </div>
+      )}
+        </div>
           ))
         )}
       </div>

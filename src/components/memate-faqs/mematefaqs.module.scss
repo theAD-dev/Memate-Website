@@ -1,4 +1,5 @@
-.faquSearchFilter{
+.faquSearchFilterF{
+    position: relative;
     h4{
         color: #29292B;
         text-align: center;
@@ -8,36 +9,90 @@
         line-height: normal;
         font-family: 'sequel_sans_semi_bold_disp' !important;
     }
-
-
-.searchFilterList{
-        width: 509px;
-        padding: var(--spacing-3xl, 14px) var(--spacing-4xl, 18px);
+.searchFilterListF{
         display: flex;
+        width: 768px;
+        padding: 23px 32px;
+        align-items: center;
         align-items: center;
         gap: var(--spacing-md, 8px);
-        margin: 60px auto 0px;
         border-radius: 60px;
         border: 1px solid var(--Border, #D0D5DD);
         background: var(--Base-White, #FFF);
         text-align: left;
+        position: absolute;
+        bottom: -14px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
        input{
-        color: #98A2B3;
-        font-size: 26px;
+        // color: #98A2B3;
+        font-size: 32px;
         font-style: normal;
+        font-family: 'sequel_sansbook_head' !important;
         font-weight: 100;
         line-height: 24px; 
         width: 100%;
         border: 0;
-        // font-family: 'sequel_sansbook_disp' !important;
+        @media screen and (max-width: 767px) {
+        font-size: 19px;
+        }
        }
        @media screen and (max-width: 767px) {
         width: 100%;
+        padding: 9px 19px;
        }
   }
   @media screen and (max-width: 767px) {
     h4{
         font-size: 27px;
+    }
+}
+}
+
+.faqmaintitle{
+        width: 1200px;
+        text-align: center;
+        margin-top: 132px;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-top: 60px;
+        }
+        h4{
+                color: #29292B;
+                text-align: center;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 415;
+                line-height: 60px;
+                letter-spacing: -1.44px;
+                font-family: "sequel_sans" !important;
+                margin-top: 13px;
+                margin-bottom: 105px;
+                 @media screen and (max-width: 767px) {
+                    font-size: 21px;
+                    line-height: 30px;
+                    letter-spacing: 0;
+                    margin-top: 4px;
+                    margin-bottom: 29px;
+                 }
+            }
+}
+
+.faqmainquestionhead{
+    h4{
+    color: #29292B;
+    text-align: center;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 80px;
+    letter-spacing: -2.16px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    @media screen and (max-width: 767px) {
+    font-size: 33px;
+    line-height: 40px;
+    letter-spacing: 0;
     }
 }
 }
@@ -51,8 +106,27 @@
     text-decoration: none;
 }
 
-.mainMenuPages{
-    .mainHeadTitle{
+.mainMenuPagesF{
+    .mainHeadTitleF{
+        .faqman{
+           position: absolute;
+            top: -33px;
+            left: 0;
+            right: 16px;
+             @media screen and (max-width: 767px) {
+                 top: 100px;
+             }
+            img{
+                width: 367.492px;
+                height: 551.238px;
+                flex-shrink: 0;
+                aspect-ratio: 367.49/551.24;
+                @media screen and (max-width: 767px) {
+                    width: 54%;
+                    height: 100%;
+                }
+            }
+        }
         h1{
             color: #29292B;
             text-align: center;
@@ -70,13 +144,15 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family: 'sequel_sans_bold_disp' !important;
+           font-family: 'sequel_sans_semi_bold_disp' !important;
             margin: 0px;
             text-align: center;
             font-size: 220px;
             font-style: normal;
             font-weight: 100;
             line-height: 230px; 
+            text-align: center;
+            letter-spacing: -6.16px;
             
         }
       
@@ -85,8 +161,8 @@
                 padding: 15px 0 !important;  
             }
             h2{
-                font-size: 30px !important;
-        line-height: 38px !important;
+                font-size: 120px !important;
+        line-height: 127px !important;
             }
             h1{
                 font-size: 19px !important;

@@ -11,19 +11,19 @@ const CommunicationPage = () => {
   return (
     <>
      <Helmet>
-    <title>Shift Scheduling Software | Streamline Employee Rostering with MeMate</title>
-    <meta name="description" content="Manage shifts effortlessly with MeMate’s Shift Scheduling Software. Simplify employee rostering,
-       work schedule management, and real-time shift updates to boost workforce productivity." />
-    <meta property="og:title" content="Shift Scheduling Software | Streamline Employee Rostering with MeMate" />
-      <meta property="og:description" content="Manage shifts effortlessly with MeMate’s Shift Scheduling Software. Simplify employee rostering,
-       work schedule management, and real-time shift updates to boost workforce productivity.
+    <title>Schedule, Assign & Track Jobs | Job Management with MeMate</title>
+    <meta name="description" content="Assign, schedule and track jobs with ease. MeMate’s job management software helps Aussie businesses stay on top of every task, team and deadline." />
+    <meta property="og:title" content="Schedule, Assign & Track Jobs | Job Management with MeMate" />
+      <meta property="og:description" content="Assign, schedule and track jobs with ease. MeMate’s job management software helps Aussie businesses stay on top of every task, team and deadline.
     " />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

@@ -4,18 +4,18 @@ import Images from "../../assests/images";
 import "./style.css";
 const SimpleVersatilePowerful = () => {
   return (
-    <div className="simple-box">
+    <div className="simple-box ">
       <div className="section-heading">
-        <div className="simpleH2Heading">Simple. Versatile. Powerful.</div>
+        <div className="simpleH2Heading sequel_sans">Simple. Versatile. Powerful.</div>
       </div>
-      <div className="powerful-client-wrapper" data-aos="fade-up"
+      <div className="powerful-client-wrapper " data-aos="fade-up"
         data-aos-offset="50"
         data-aos-delay="50"
         data-aos-duration="2500"
         data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
-        <div className="powerful-client">
+        <div className="powerful-client shadowRightline4 shadowLeftline4">
           <PostCard
             userImage={<img src={Images.owners} alt="owners" type="image/svg+xml" />}
             storiesDisp="Built for regular business owners"

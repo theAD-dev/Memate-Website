@@ -21,16 +21,21 @@
     position: sticky;
     top: 0;
   }
-
-  .apply-container {
+.apply-container {
     position: relative;
     overflow: visible;
-    min-height: 100vh;
-  }
+    /* min-height: 100vh; */
+    background: #ffffff;
+    z-index: 1;
+}
   .commingSoonLogo{
     width: 385px;
   }
-
+  
+.children-wrapper-main{
+  background: #fff;
+  padding-bottom: 0 !important;
+}
 
 @media screen and (max-width: 767px) {
     .children-wrapper {

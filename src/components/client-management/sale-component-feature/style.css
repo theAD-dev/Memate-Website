@@ -1,36 +1,33 @@
-.sales-component-feature-wrapper {
+.sales-component-feature-wrapperF {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 70px;
   flex-direction: column;
 }
 
-.sales-component-feature h2 {
-  color: #29292b;
+.sales-component-featureF h2 {
+ color: #29292B;
   text-align: center;
-  font-size: 42px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 420;
-  line-height: normal;
-  margin: 0px;
-  font-family: "sequel_sans" !important;
+  font-weight: 370;
+  line-height: 32px;
+  letter-spacing: -0.72px;
+  font-family: 'sequel_sans_semi_bold_head' !important;
+}
+.sales-component-featureF span {
+    padding-right: 10px;
+    text-align: center;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 80px;
+    letter-spacing: -2.16px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 
-.sales-component-feature span {
-  margin-top: 25px;
-  font-size: 118px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100px;
-  padding-right: 10px;
-  font-family: "sequel_sans_bold_disp" !important;
-}
-.sales-feature-wrapper{
-  margin-top: 84px;
-  max-width: 1200px;
-}
 @media screen and (max-width: 767px) {
   .suitable-tender-wrapper {
     margin-top: 20px !important;

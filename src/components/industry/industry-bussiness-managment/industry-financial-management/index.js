@@ -11,7 +11,7 @@ const FinanicalManagement = () => {
 <h2>Financial Management</h2>
     <p>Budgeting is made easy in meMate. Based on your quote, you can track the initial project budget at 
       all times and control ongoing expenses and time spent on the project, ensuring you stay on target.</p>
-      <Link to="/statistic">Statistics</Link>
+      <Link to="/features/business-statistics-tools">Statistics</Link>
       
 </div>
 <div className={style.flexImageBox}>

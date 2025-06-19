@@ -4,11 +4,11 @@ import AutomotiveHeader from './automotive-header';
 import AutomotiveBussinessManagement from './automotive-bussiness-managment';
 import AutomotiveCrousel from './automotive-crousel';
 import AutomotiveMoreSpecific from './automotive-more-specific';
-import ReadMore from './automotive-read-more';
 import AutomotiveQuesitonAndAns from './automotive-question-ans';
+import ReadMoreData from './automotive-read-more';
 
 
-const AutomotivePageContent = () => {
+const AutomotivePageContent = ({postsLatestMainIndustry}) => {
   return (
     <>
     <div className='industry-page-wrapper'>
@@ -17,7 +17,7 @@ const AutomotivePageContent = () => {
         <AutomotiveBussinessManagement/>
         <AutomotiveCrousel/>
         <AutomotiveMoreSpecific/>
-        <ReadMore/>
+        <ReadMoreData postsLatestReadMore={postsLatestMainIndustry}/>
         <AutomotiveQuesitonAndAns/>
       </div>
     </div>

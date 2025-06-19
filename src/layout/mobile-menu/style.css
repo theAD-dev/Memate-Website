@@ -17,7 +17,9 @@
   right: 0;
   z-index: 9;
 }
-
+.bm-item-list .bm-item {
+    padding: 0 0.5em;
+}
 .hamburger span {
   display: block;
   width: 100%;
@@ -35,11 +37,15 @@
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
-
-
-
-
-
+.privacymobileNav a {
+    display: block;
+    color: #29292B;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    padding: 9px 0;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+}
 
 .bm-menu li a {
   position: relative;
@@ -319,8 +325,8 @@ color: #a90000;
   color: #29292B;
 font-size: 16px;
 font-style: normal;
-font-weight: 600;
 line-height: normal;
+ font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .bm-item-list .accordion-header span img {
 margin-right: 14px;
@@ -340,10 +346,10 @@ margin-right: 14px;
 
 }
 .listMobileTab {
-  border-top: 1px dashed #E9EBF0;
-  border-bottom: 1px dashed #E9EBF0;
-  padding: 19px 0 12px;
-  margin: 19px 0;
+    border-top: 1px dashed #E9EBF0;
+    border-bottom: 1px dashed #E9EBF0;
+    padding: 19px 8px 12px;
+    margin: 19px 0;
 }
 .listMobileWrap ul li span,.listMobileWrap ul li a {
   display: flex;
@@ -355,6 +361,22 @@ margin-right: 14px;
   font-weight: 360;
   line-height: 140%; 
   text-decoration: none;
+  font-family: 'sequel_sans_roman_head' !important;
+}
+.listMobileWrap ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #888E9E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 140%; 
+  text-decoration: none;
+  font-family: 'sequel_sans_roman_head' !important;
+}
+img.bm-cross.burgerCloseIcon {
+    width: 16px !important;
 }
 .accordion-content .News ul li {
   border-radius: 30px;
@@ -364,22 +386,23 @@ margin-right: 14px;
   width: 149px;
 }
 .newsWrapMobile .newsWrapbox p {
-  color: #29292B;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 420;
-  line-height: 15px;
+    color: #29292B;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 15px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .newsWrapMobile .newsWrapbox p span {
-  color: #29292b;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: sequel_sans_roman_head!important;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 420;
-  line-height: 19px;
-  padding: 0;
-  display: block;
+    color: #29292b;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 19px;
+    padding: 0;
+    display: block;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    text-align: left;
 }
 .accordion-content.About {
   padding-left: 0;
@@ -429,19 +452,19 @@ margin-right: 14px;
   display: inline-block !important;
   width: 100%;
 }
-.listMobileWrap ul li span img ,.listMobileWrap ul li a img {
- margin-right: 8px;
+.listMobileWrap ul li span img ,.listMobileWrap ul li a img,.listMobileWrap ul li img{
+ margin-right: 8px !important;
 }
 .bm-item-list .accordion-content ul li strong {
   color: #29292B;
   font-size: 12px;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
   margin-top: 12px;
   display: block;
   margin-bottom: 4px;
+   font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .listMobileWrap .tab-content ul li {
   display: block;
@@ -452,6 +475,19 @@ margin-right: 14px;
 .accordion-content .News strong {
   display: none !important;
 }
+li.linkspaceMobile span a {
+    margin: 0;
+    padding: 0;
+}
+li.linkspaceMobile span a img {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    opacity: 1;
+}
+li.linkspaceMobile span a::before {
+   display: none;
+}
 .listMobileWrap .tab-content ul li ul li,.listMobileWrap .tab-content ul li ul li a {
   display: block;
   color: #888E9E;
@@ -461,8 +497,8 @@ margin-right: 14px;
   line-height: 140%;
 }
 .listMobileWrap ul li {
-  display: inline-block;
-  margin: 0 10px 8px 0;
+    display: inline-block;
+    margin: 0 6px 8px 4px;
 }
 .listMobileWrap .tab-content ul li strong {
   color: #29292B;
@@ -506,24 +542,16 @@ margin-right: 14px;
   display: flex;
   align-items: center;
   height: 40px;
+    font-family: 'sequel_sans_roman_head' !important;
   
 }
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width:767px){
   .bm-burger-button {
     display: block;
   }
+
   .burger-menu-wrapper.active{
     height: 4rem;
     width: 100%;

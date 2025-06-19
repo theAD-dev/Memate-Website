@@ -37,49 +37,9 @@ const MenuData = () => {
         }
     }, [])
 
-    const [activeTab, setActiveTab] = useState(0);
-
-    const handleTabClick = (index) => {
-      setActiveTab(index);
-    };
   
-    const tabs = [
-      { title: 'Legal', 
-        contents: {
-          Legal: [
-          { content: "Terms & Conditions", link: "/terms-and-conditions"},
-          { content: "Privacy", link: "/privacy" },
-          { content: "Website terms of Use", link: "/terms-of-use" },
-          { content: "Security", link: "/security"},
-          { content: "Legal", link: "/legal"},
-          { content: "FAQs", link: "/faqs"}
-        ],
-      },
-        imgTab: `${menuImages.unselectedLegal}` 
-     
-      },
-      { title: 'Resources', 
-        contents: {
-          linkResources: "/resources",
-          "Resources & tools": [
-            { content: "Supplier Database", link: "/supplier-database" },
-            { content: "delete-request", link: "/delete-request" },
-          ],
-          "MeMate Manual": [
-            { content: "Knowledge Database", link: "/knowledge-base" },
-          ],
-          "Business Support": [
-            { content: "Memate Wiki", link: "/memate-wiki" },
-          ],
-          "Brand Information": [
-            { content: "Brand", link: "/brand" },
-          ],
-         
-        },
-        imgTab: `${menuImages.unselectedResources}` },
-    
-   
-    ];
+  
+  
   
     const location = useLocation();
   return (
@@ -88,67 +48,17 @@ const MenuData = () => {
         isOpen={menuOpen}
         right
         customBurgerIcon={ <img src={Images.BurgerIcon} alt='BurgerIcon' type="image/svg+xml" /> }
-        customCrossIcon={ <img src={Images.burgerCloseIcon} alt='burgerCloseIcon' type="image/svg+xml" /> }
+        customCrossIcon={ <img src={Images.burgerCloseIcon} className='burgerCloseIcon' alt='burgerCloseIcon' type="image/svg+xml" /> }
         onStateChange={handleStateChange}
         width={'359px'}
       >
         <PanelMenu />
-       <div className='listMobileWrap'>
-       <div className='listMobileTab'>
-    
-      <div className="tab-buttons">
-      <ul>
-        {tabs.map((tab, index) => (
-          <li key={index}
-          className={index === activeTab ? 'currentTab' : ''}
-          onClick={() => handleTabClick(index)}><span><img src={tab.imgTab} alt='imgTab'/>{tab.title}</span></li>
-        ))}
-        <li><Link to='/watch-demo' className={`watch-demo ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedSales} alt='unselectedSales'/>Contact Sales</Link></li>
-        <li><Link to='/watch-demo' className={`watch-demo ${location.pathname === "/watch-demo" ? "navbar-item-active" : ""}`}><img src={menuImages.unselectedWatchDemo} alt='unselectedWatchDemo' />Watch demo</Link></li>
-         </ul>
-      </div>
-      </div>
-      <div className="tab-content resourceMobileIcon">
-  {tabs[activeTab].contents ? (
-    <ul>
-      {Object.keys(tabs[activeTab].contents).map((sectionKey) => (
-        <li key={sectionKey} className={sectionKey}>
-          {/* Render the linkResources (which is a string, not an array) */}
-          {sectionKey === "linkResources" ? (
-            <Link to={tabs[activeTab].contents.linkResources}>
-              <strong>{sectionKey}</strong>
-            </Link>
-          ) : (
-            <>
-             
-              <ul>
-                {/* Ensure that the section content is an array before calling .map() */}
-                {Array.isArray(tabs[activeTab].contents[sectionKey]) && 
-                  tabs[activeTab].contents[sectionKey].map((contentItem, i) => (
-                    <li key={i}>
-                      <Link
-                        to={contentItem.link}
-                        className={`resource${i} ${location.pathname === contentItem.link ? "navbar-item-active" : ""}`}
-                        rel="noopener noreferrer"
-                      >
-                        {contentItem.content}
-                      </Link>
-                    </li>
-                  ))
-                }
-              </ul>
-            </>
-          )}
-        </li>
-      ))}
-    </ul>
-  ) : (
-    <p>No content available</p>
-  )}
-</div>
-
-
-     
+         <div className='listMobileWrap'>
+         <div className="privacymobileNav">
+           <Link to='/pricing'>Pricing</Link>
+            <Link to='/news'>News</Link>
+           <Link to='/contact-us'>Contact us</Link>
+          </div>
        </div>
        <div className='logoMobileWrap'>
        <div className="header-menu-header-div-memate-component">

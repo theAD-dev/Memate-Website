@@ -4,7 +4,9 @@ import PrivacyComponent from '../../components/privacy';
 const PrivacyPage = () => {
   return (
     <Layout>
+      <div className="bgshadowwrapper">
         <PrivacyComponent/>
+        </div>
     </Layout>
   )
 }

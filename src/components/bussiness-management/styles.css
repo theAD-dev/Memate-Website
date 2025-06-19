@@ -1,40 +1,62 @@
 .home-page-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 55px;
+}
+/* .home-container-wrapper {
+    background: url(https://res.cloudinary.com/dn0jqjad3/image/upload/v1747310672/banner-bg_baxrae.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+        background-position: top;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+} */
+ .home-container-wrapper {
+    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/banner-bg_baxrae.jpg);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .marginBottomSpace {
   margin-bottom: 21px;
 }
+.home-platform {
+    margin-top: 33px;
+}
 .home-platform h1 {
-  color: #29292b;
-  text-align: center;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 49.56px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+ font-family: 'sequel_sans' !important;
   max-width: 741px;
   margin: auto;
+  color: #29292B;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -1.44px;
 }
 .big-img-macMain {
   width: 993px;
   margin: auto;
 }
 .home-platform h2 {
-  color: #29292b;
-  text-align: center;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 49.56px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
+ font-family: 'sequel_sans' !important;
   max-width: 741px;
   margin: auto;
+  color: #29292B;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; 
+  letter-spacing: -1.44px;
 }
 .image-wrapper img {
-  width: 70%;
-  /* margin: auto; */
+    width: 100%;
+    transform: scale(1);
 }
 
 .heding-text-top {
@@ -64,19 +86,24 @@
 }
 
 .iphone-image {
-  position: absolute;
-  right: 195px;
-  bottom: 21px;
+    position: absolute;
+    right: 0px;
+    bottom: 31px;
 }
 .create-new-text {
-  bottom: 51px;
-  left: 128px;
-  position: absolute;
+    bottom: 69px;
+    left: 0px;
+    position: absolute;
 }
 .iphone-image img {
-  width: 170px;
+    width: 211px;
 }
-
+.dflexbannerbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
 .metric-item img,
 .create-new-text img {
   width: 227px;
@@ -97,9 +124,9 @@
   margin: 0 auto;
 }
 .metric-item {
-  bottom: 2px;
-  left: 74px;
-  position: absolute;
+    bottom: 19px;
+    left: -66px;
+    position: absolute;
 }
 .macBook-image {
   width: 1060px;
@@ -107,46 +134,68 @@
   text-align: center;
 }
 .image-wrapper {
-  width: 100%;
-  max-width: 1200px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 .to-replace-bold-text {
-  margin-top: 10px;
+  margin-top: 0px;
   text-align: center;
 }
 .how-to-use p {
-  color: #29292b;
-  text-align: center;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 420;
-  line-height: 35px;
-  font-family: "sequel_sans_semi_bold_disp" !important;
-  margin: 0px;
+    color: #29292B;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 40px;
+    font-family: 'sequel_sans' !important;
+    margin: 0px;
+    color: #29292B;
 }
-
 .how-to-use {
-  margin-top: 48px;
+    margin-top: 38px;
 }
-
 .businesses-mode span {
-  color: #757b8a;
+  color: #757B8A;
   text-align: center;
-  font-size: 18px;
+  font-family: "Sequel Sans";
+  font-size: 24px;
   font-style: normal;
-  /* font-weight: 360; */
-  line-height: 25.2px;
+  font-weight: 100;
+  line-height: 32px; 
+  letter-spacing: -0.72px;
   font-family: "sequel_sans_roman_head" !important;
 }
-
+.dflexbannerbtn .btn-base--black2 {
+    z-index: 10;
+    background-color: white;
+    color: #fff;
+    border-radius: 2rem;
+    flex: none;
+    align-items: stretch;
+    width: 100%;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 24px;
+    display: block;
+    position: static;
+    inset: auto 0%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
 .businesses-mode {
-  margin-top: 26px;
-  margin-bottom: 26px;
-  height: 50.4px !important;
+    margin-top: 11px;
+    /* height: 50.4px !important; */
+    margin-bottom: 30px;
 }
 
 .request-btn {
@@ -176,14 +225,17 @@
   font-family: "sequel_sans" !important;
 }
 .gradientHeading.header-text {
-  font-size: 42px;
-  letter-spacing: 1px;
-  line-height: 80px;
-  font-weight: 100;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2.16px;
+    font-weight: 420;
+    padding-bottom: 26px;
+    width: 614px;
+    margin: 0 auto;
 }
 .gradiientColor {
   -webkit-text-fill-color: #0000;
-  background: linear-gradient(90deg, #1ab2ff 10.15%, #ffb258 69%);
+  background: linear-gradient(90deg, rgb(26, 178, 255) 0%, rgb(101, 178, 201) 45%, rgb(255, 178, 88) 65%, rgb(255, 178, 88) 100%);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -212,13 +264,38 @@
   line-height: 150%;
 }
 
+
+
 @media screen and (max-width: 767px) {
-  .gradientHeading {
+  .shadowLeftline::before {
+  width: 100% !important;
+    left: 0px !important;
+    top: 132px;
+    z-index: -1;
+}
+.shadowLeftline::before {
+    top: 0px !important;
+}
+.shadowRightline::after {
+    width: 100% !important;
+    right: 0px !important;
+    top: 0 !important;
+}
+.shadowLeftline2::before {
+    width: 100% !important;
+}
+    .gradientHeading {
     font-size: 32px;
     line-height: 32px;
   }
+  .gradientHeading.header-text {
+    width: 100%;
 }
-@media screen and (max-width: 767px) {
+  .macBook-image {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
   .home-platform h1 {
     font-size: 20px;
     line-height: 26px;
@@ -244,16 +321,12 @@
     margin-top: 2px !important;
     line-height: 44px !important;
   }
-  .iphone-image img {
-    width: 50% !important;
-    position: relative;
-    right: -54px;
-  }
-  .iphone-image {
+.iphone-image {
     position: absolute;
     right: 0;
     bottom: -20px;
-  }
+    width: 23%;
+}
   .big-img-macMain {
     width: auto;
   }
@@ -263,16 +336,14 @@
   .create-new-model {
     display: none;
   }
-
+.businesses-mode span {
+    font-size: 20px;
+}
   .integration-brand-container img,
   .macBook-image img {
     width: 100% !important;
   }
-  .iphone-image img {
-    width: 94px !important;
-    right: 0;
-    top: -10px;
-  }
+
   .home-page-content {
     padding: 0px 15px;
   }
@@ -302,10 +373,11 @@
   .sliderTabWrapper .slick-slide {
     margin: 20px 15px !important;
   }
-  .businesses-mode {
+ .businesses-mode {
     margin-top: 0px;
     text-align: center;
-  }
+    margin-bottom: 0;
+}
   .image-wrapper svg {
     height: auto;
     margin-top: 30px;
@@ -313,6 +385,14 @@
   .how-to-use {
     margin-top: 25px;
   }
+}
+@media screen and (max-width: 767px) {
+.dflexbannerbtn {
+    display: block;
+}
+.dflexbannerbtn.dflexbannerbtnp {
+    display: flex;
+}
 }
 /* For iPad Air 5th Gen (Portrait & Landscape) */
 @media screen and (min-width: 820px) and (max-width: 1640px),
@@ -354,9 +434,7 @@
   .main-operation {
     width: 98%;
   }
-  .integration-brand-container {
-    width: 100% !important;
-  }
+
   .allUpdates {
     margin-right: 70px !important;
   }

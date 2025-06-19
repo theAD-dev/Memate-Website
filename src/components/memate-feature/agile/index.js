@@ -17,6 +17,7 @@ const MeMateFeatureAgile = () => {
           subHeading="Agile"
           topHeading="Total control"
           mainHeading="anywhere"
+          className="shadowRightline2 shadowLeftline2"
           description="At any stage, view projects, work, linked expenses, employee time, and subcontractors. Gain a clear overview of what’s happening in your company at any time."
           cardButton="See All Features "
           // maxImage={<img src={Images.popup} type="image/svg+xml"/>}

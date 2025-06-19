@@ -1,3 +1,85 @@
+.salesfeaturesWrapper {
+    padding: 62.5px 0;
+}
+h1.h1tagsseo.h1tagsseof {
+    color: #29292B;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px;
+    font-family: 'sequel_sans' !important;
+}
+.sales-headingF {
+    padding-bottom: 10px;
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 12px;
+    font-style: normal;
+    letter-spacing: -1px;
+    padding-right: 0px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124px;
+    letter-spacing: -2.16px;
+    padding-bottom: 27px;
+}
+.sales-component-contentF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  max-width: 750px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  white-space: normal;
+}
+.sales-component-contentF span {
+  text-align: center;
+  font-family: 'sequel_sans_roman_head' !important;
+  color: #757B8A;
+  font-size:18px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+}
+@media screen and (max-width: 767px) {
+.sales-headingF {
+    font-size: 53px;
+    line-height: 46px;
+    letter-spacing: 0;
+    padding-bottom: 12px;
+}
+h1.h1tagsseo.h1tagsseof {
+    font-size: 24px !important;
+    line-height: 32px !important;
+}
+.sales-component-contentF {
+    margin-top: 5px;
+}
+.sales-component-feature-wrapperF {
+    margin-top: 26px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .sales-component-wrapper {
   width: 100%;
   display: flex;
@@ -46,14 +128,7 @@
   -moz-osx-font-smoothing: grayscale; 
 }
 
-.sales-componet-content-wrapper span {
-  text-align: center;
-  font-family: "sequel_sans_roman_head" !important;
-  font-weight: 360;
-  line-height: 25.2px;
-  color: #757B8A;
-  font-size:18px;
-}
+
 .sales-component-content h1{
   color: #757B8A;
   text-align: center;
@@ -62,16 +137,7 @@
   font-weight: 360;
   line-height: 140%; 
 }
-.sales-component-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  max-width: 750px;
-  word-wrap: break-word; 
-  overflow-wrap: break-word; 
-  white-space: normal;
-}
+
 .client-component-para{
   margin: 0 !important;
 }
@@ -92,7 +158,12 @@
   outline: none;
   font-family: "sequel_sans" !important;
 }
+
+
+
+
 @media screen and (max-width: 767px) {
+
   .sales-heading {
     font-size: 30px !important;
     line-height: 38px!important;

@@ -3,8 +3,8 @@ import MiddleSection from "./brand-middle-section";
 import style from './brand-module.module.scss';
 import { Helmet } from 'react-helmet';
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom"; 
-
+import { Link, useLocation } from "react-router-dom"; 
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 const BrandComponent = () => {
 
@@ -16,19 +16,22 @@ const BrandComponent = () => {
   return (
     <>
      <Helmet>
-    <title>Brand | MeMate Business Management Software</title>
-    <meta name="description" content="Learn how MeMate protects your data with our Brand policy. 
-    Discover our commitment to data Brand and security for Australian businesses using our CRM and management software." />
-    <meta property="og:title" content="Brand Policy | MeMate Business Management Software" />
-      <meta property="og:description" content="Learn how MeMate protects your data with our Brand policy. 
-      Discover our commitment to data Brand and security for Australian businesses using our CRM and management software." />
+    <title>MeMate Brand Assets | Logos, Guidelines & Media Kit</title>
+    <meta name="description" content="Download official MeMate logos, colours, and branding guidelines. Access our media kit for press, partners, or promotional use. Simple, approved, and up to date." />
+    <meta property="og:title" content="MeMate Brand Assets | Logos, Guidelines & Media Kit" />
+      <meta property="og:description" content="Download official MeMate logos, colours, and branding guidelines. Access our media kit for press, partners, or promotional use. Simple, approved, and up to date." />
     </Helmet>
+    {/* <div className="pageBreadcrumbs">
+            <ul className={style.linkstyleDisable}>
+              <li><Link to='/' className={style.linkstyleDisable}>Home</Link></li>/<li><Link to='/supplier-database' className={style.linkstyleDisable}>Supplier database</Link></li>/<li> <Link>Brand</Link></li>
+            </ul>
+            <Link to='/supplier-database' className="backButStories"><img src={arrowIconBack} alt="Arrow"/> Back</Link>
+            </div>  */}
       <div className={`kb-main-section ${style.mainHeadinstyle}`}>
-      {/* <h5>memate</h5> */}
-      {/* <h1 className="h1tagsseo">meMate Brand </h1> */}
       <h2 className="latest-update-text latest-brandMain latest-update-head memate-brand headerPadding">
       brand <br></br>overview
       </h2>
+      <h1 className="heading-text-blog">MeMate Brand Assets & Media Kit</h1>
       </div>
       <MiddleSection />
       <div>

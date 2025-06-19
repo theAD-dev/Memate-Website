@@ -4,11 +4,11 @@ import StartupsHeader from './startups-header';
 import StartupsBussinessManagement from './startups-bussiness-managment';
 import StartupsCrousel from './startups-crousel';
 import StartupsMoreSpecific from './startups-more-specific';
-import ReadMore from './startups-read-more';
 import StartupsQuesitonAndAns from './startups-question-ans';
+import ReadMoreData from './startups-read-more';
 
 
-const StartupsPageContent = () => {
+const StartupsPageContent = ({postsLatestMainIndustry}) => {
   return (
     <>
     <div className='industry-page-wrapper'>
@@ -17,7 +17,7 @@ const StartupsPageContent = () => {
         <StartupsBussinessManagement/>
         <StartupsCrousel/>
         <StartupsMoreSpecific/>
-        <ReadMore/>
+        <ReadMoreData postsLatestReadMore={postsLatestMainIndustry}/>
         <StartupsQuesitonAndAns/>
       </div>
     </div>

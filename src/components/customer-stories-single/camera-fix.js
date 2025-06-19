@@ -16,14 +16,10 @@ function CameraFix() {
   return (
 <>
 <Helmet>
-    <title>Camera Fix Success Story | Software for Camera Repair Businesses</title>
-    <meta name="description" content="Learn how Camera Fix, a leading Sydney camera repair shop, 
-      improved job tracking, workflow automation, and customer 
-      satisfaction with MeMate’s business management software." />
-    <meta property="og:title" content="Camera Fix Success Story | Software for Camera Repair Businesses" />
-      <meta property="og:description" content="Learn how Camera Fix, a leading Sydney camera repair shop, 
-      improved job tracking, workflow automation, and customer 
-      satisfaction with MeMate’s business management software.
+    <title>Camera Repair Software in Action | MeMate Case Study</title>
+    <meta name="description" content="See how Camera Fix streamlined repairs, quoting, and team coordination using MeMate — real software results for electronics repair business owners." />
+    <meta property="og:title" content="Camera Repair Software in Action | MeMate Case Study" />
+      <meta property="og:description" content="See how Camera Fix streamlined repairs, quoting, and team coordination using MeMate — real software results for electronics repair business owners.
     " />
 </Helmet>
 <div className="parent-blog-page customerstoriespage">
@@ -37,7 +33,7 @@ function CameraFix() {
           </div>
      
 <div className="customerstoriesGrid">
-  <h1>Success Story: Streamlining Camera Repairs with MeMate Software</h1>
+  <h1>How Camera Fix Runs Their Repair Business with MeMate</h1>
 <div className="innerGrid imageOverlyText">
  <Link ><img
     className="img-container-stories"

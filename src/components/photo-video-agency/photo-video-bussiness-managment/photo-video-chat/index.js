@@ -18,7 +18,7 @@ const PhotoStrategicChat = () => {
 <h2>Task management </h2>
     <p>Communicate with your entire team working on the project all in one place. With meMate, you have team 
       chat and project chat capabilities to ensure your creative team stays up to date and informed at all times.</p>
-      <Link to="/features/team-communication-tools">Communication</Link>
+      <Link to="/features/task-management-software">Communication</Link>
 </div>
 
 </div>

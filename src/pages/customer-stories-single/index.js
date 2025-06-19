@@ -12,12 +12,13 @@ const CustomerStoriesPageSingle = () => {
   const location = useLocation();
   return (
     <Layout>
-    {location.pathname === "/camera-fix" && <CameraFix />}
-    {location.pathname === "/pro-vinyl" && <ProVinyl />}
-    {location.pathname === "/elite-life" && <EliteLife />}
-    {location.pathname === "/boat-wizard" && <BoatWizard />}
-    {location.pathname === "/sorted-media" && <SortedMedia />}
-   
+      <div className="bgshadowwrapper">
+    {location.pathname === "/customer-stories/camera-fix" && <CameraFix />}
+    {location.pathname === "/customer-stories/pro-vinyl" && <ProVinyl />}
+    {location.pathname === "/customer-stories/elite-life" && <EliteLife />}
+    {location.pathname === "/customer-stories/boat-wizard" && <BoatWizard />}
+    {location.pathname === "/customer-stories/sorted-media" && <SortedMedia />}
+   </div>
     
     </Layout>
   );

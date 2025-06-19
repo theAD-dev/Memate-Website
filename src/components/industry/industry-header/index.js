@@ -22,7 +22,7 @@ const IndustryHeader = () => {
       </div>
       <div></div>
       
-      <h1 className='industry-top-heading'>Empowering Creative Agencies with <br></br>Business Management Software</h1>
+      <h1 className='industry-top-heading'>Agency Management Software for Creative Agencies</h1>
       <p className='industry-middle-heading'>marketing & <br></br>creative <br></br>agencies</p>
       <p className='industry-heading-content'>MeMate – Comprehensive Business Management Software for Creative Agencies. Allows you to combine the best features of project management, accounting, quoting, and invoicing. Communicate with clients and submit jobs from a single, centralised platform.</p>
       <Link to="https://app.memate.com.au/requestdemo" target="_blank"><button className='industry-heading-button'>Book a Demo</button></Link>

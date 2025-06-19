@@ -1,10 +1,60 @@
-.sales-management-wrapper-data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 151px;
-  width: 100%;
+.sales-management-wrapper-dataF {
+    display: flex;
+    align-items: center;
+    gap: 100px;
 }
+.sales-management-wrapper-dataF .sales-imageF {
+    width: 50%;
+}
+.sales-management-wrapper-dataF .content-wrapperF {
+    width: 50%;
+}
+.sales-feature-wrapperF {
+    margin-top: 70px;
+    width: 1200px;
+    padding: 0 32px;
+}
+.sale-titleF {
+    color: #242122;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+    font-family: 'sequel_sans_roman_head' !important;
+}
+.sales-heading-salesF {
+    color: #29292B;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px;
+    font-family: 'sequel_sans' !important;
+}
+.sales-typeF {
+    color: #29292B;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    font-family: 'sequel_sans' !important;
+}
+.sales-description-salesF {
+    color: #888E9E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    font-family: 'sequel_sans_roman_head' !important;
+    margin-top: 37px;
+}
+.sales-imageF img {
+    width: 100%;
+}
+
+
 
 .content-wrapper {
   align-items: left;
@@ -51,6 +101,63 @@
   font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 @media screen and (max-width: 767px) {
+  .sales-management-wrapper-dataF {
+    display: block;
+}
+
+
+.sales-management-wrapper-dataF .sales-imageF,.sales-management-wrapper-dataF .content-wrapperF {
+    width: 100% !important;
+}
+.sale-titleF {
+    font-size: 16px;
+    line-height: 22px;
+}
+.smart-investment-headingF {
+    font-size: 31px;
+    line-height: 31px;
+    letter-spacing: 0;
+}
+.smart-investment-bannerF {
+    letter-spacing: 0;
+        line-height: 59px;
+}
+.sales-heading-salesF {
+    font-size: 22px;
+    line-height: 24px;
+}
+.sales-typeF {
+    font-size: 32px;
+    line-height: 39px;
+}
+.sales-feature-wrapperF {
+    margin-top: 0;
+    width: 100%;
+    padding: 0 32px;
+}
+.sales-management-wrapper-dataF .content-wrapperF {
+    padding-top: 40px;
+}
+.sales-component-contentF span ,.sales-description-salesF{
+    font-size: 16px;
+}
+.pricingHeadWrap {
+    text-align: center;
+    padding-top: 30px;
+}
+.smart-investment-descriptionF span {
+    font-size: 18px;
+    line-height: 26px;
+}
+.sales-component-featureF span {
+    margin-top: -19px;
+}
+.smart-investment-descriptionF {
+    margin-top: 0;
+}
+.sales-description-salesF br,.smart-investment-descriptionF span br {
+    display: none;
+}
   .sales-heading-sales {
       font-size: 26px !important;
   }

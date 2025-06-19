@@ -8,7 +8,7 @@ const Reporting = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <rect y={0.5} width={32.5} height={32.5} rx={10} fill="#757B8A" />
+    <rect y={0.5} width={32.5} height={32.5} rx={10} fill="#999ba2" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

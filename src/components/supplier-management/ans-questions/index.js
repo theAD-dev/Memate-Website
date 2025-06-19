@@ -74,24 +74,23 @@ const QuestionAnswer = () => {
   const toggleQuestion = (key) => {
     setSelectedQuestion(selectedQuestion === key ? null : key);
   };
-
-  // Generate FAQ Schema dynamically
-  const generateFAQSchema = () => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": questions.map((ques) => ({
-        "@type": "Question",
-        "name": ques.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": ques.answer,
-        },
-      })),
-    };
-    return JSON.stringify(schema);
+ 
+const generateFAQSchema = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": questions.map((ques) => ({
+      "@type": "Question",
+      "name": ques.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": ques.answer,
+      },
+    })),
   };
-
+  return JSON.stringify(schema);
+};
+ 
   return (
     <div className="question-answer-wrapper">
       {/* Inject JSON-LD Schema into the <head> */}
@@ -100,7 +99,7 @@ const QuestionAnswer = () => {
       </Helmet>
 
       <div className="question-answer-content">
-        <div className="question-answer-heading-wrapper">
+        <div className="question-answer-heading-wrapperF">
           <p className="question-answer-heading">We answer your questions</p>
         </div>
         <div className="questions-wrapper">
@@ -112,7 +111,7 @@ const QuestionAnswer = () => {
                 }`}
                 onClick={() => toggleQuestion(ques.key)}
               >
-                <p className="question-answer-ques-info">{ques.question}</p>
+                <p className="question-answer-ques-infoF">{ques.question}</p>
                 <Box
                   className="add-icon-wrapper"
                   sx={{
@@ -141,7 +140,7 @@ const QuestionAnswer = () => {
                 </Box>
               </div>
               <div
-                className={`question-answer-ans-info ${
+                className={`question-answer-ans-infoF ${
                   selectedQuestion === ques.key ? "expanded" : ""
                 }`}
               >

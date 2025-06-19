@@ -7,6 +7,9 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import WebsiteUrlIcon from "../../svg/WebsiteUrlIcon";
+import EmailIcon from "../../svg/EmailIcon";
+import AddressIcon from "../../svg/AddressIcon";
 
 const FilterIcon =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/search-filter.svg";
@@ -27,7 +30,6 @@ const DataBase = ({
   activeLetter,
   setActiveLetter,
 }) => {
-  console.log("supplier: ", supplier);
   const [expandedPanel, setExpandedPanel] = useState(false);
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
@@ -131,11 +133,11 @@ const DataBase = ({
                           alt={`${item.label} logo`}
                         />
                       )}
-                      {item.cname}
+                     <b> {item.cname}</b>
                     </div>
                     <div className={style.right}>
                       {item.abn && (
-                        <div className={style.roundBx}>ABN: {item.abn}</div>
+                       <div className={`${style.roundBx} ${style.roundBx12}`}>ABN: {item.abn}</div>
                       )}
                       <div className={style.roundimg}>
                         {" "}
@@ -156,14 +158,14 @@ const DataBase = ({
                 </AccordionSummary>
                 <AccordionDetails className={style.accInnercontent}>
                   <div className={style.accInnerhead}>
-                    <p>{item.industry}</p>
-                    <ul>
-                      {item.supplied_services
-                        ?.split(",")
-                        .map((service, idx) => (
-                          <li key={idx}>{service.trim()}</li>
-                        ))}
-                    </ul>
+                 <p><>{item.main_industry?.title}</></p>
+                  <ul>
+                  {item.supplier_services_data?.map((service, idx) => (
+                    <li key={idx}>
+                      {service.title}
+                    </li>
+                  ))}
+                </ul>
                   </div>
                   <div className={style.accInneradd}>
                     <ul>
@@ -172,22 +174,21 @@ const DataBase = ({
                           to={`http://maps.google.com/?q=${item.business_location}`}
                           target="_blank"
                         >
-                          {item.business_location}
+                          <AddressIcon />{item.business_location}
                         </Link>
                       </li>
                       <li>
-                        <Link to={`mailto:${item.email}`}>{item.email}</Link>
+                        <Link to={`mailto:${item.email}`}><EmailIcon /> {item.email}</Link>
                       </li>
                       <li>
                         <Link to={item.website} target="_blank">
-                          {item.website}
+                        <WebsiteUrlIcon /> {item.website}
                         </Link>
                       </li>
                     </ul>
-                    <Link
-                      to={`/data-single/${item.slug}`}
-                      className={style.detailsSupplyersbut}
-                    >
+                   <Link
+                     to={`/supplier-database/${item?.slug || 'no-slug'}-${item?.city ? item.city.toLowerCase() : 'unknown'}`}
+                      className={style.detailsSupplyersbut}>
                       View Details
                     </Link>
                   </div>

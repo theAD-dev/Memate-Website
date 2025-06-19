@@ -3,19 +3,20 @@ import Images from "../../../../assests/images";
 import "./style.css";
 const AgilePipeLineManagement = () => {
   return (
-    <div className="aglie-pipeline-management-wrapper marginSpaceTop sales-management-wrapper-data" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="3000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.budEssential} alt="budEssential" type="image/svg+xml" />
-      <div className="content-wrapper">
-        <p className="sale-title">Essential</p>
-        <p className="sales-heading-sales">Data  </p>
-        <p className="sales-type">at every step</p>
-        <p className="sales-description-sales">
+      <div className="sales-imageF">
+      <img src={Images.budEssential} alt="budEssential" type="image/svg+xml" /></div>
+      <div className="content-wrapperF">
+        <p className="sale-titleF">Essential</p>
+        <p className="sales-heading-salesF">Data  </p>
+        <p className="sales-typeF">at every step</p>
+        <p className="sales-description-salesF">
         meMate displays only the essential data to help <br></br>you navigate through the 
         numbers with ease, <br></br>without needing a full-time operations person.<br></br> 
         Our system is designed to simplify without <br></br>compromising on depth and detail.

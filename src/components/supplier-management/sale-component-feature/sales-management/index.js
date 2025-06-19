@@ -5,22 +5,23 @@ import Images from "../../../../assests/images";
 const SalesManagement = () => {
   
   return (
-    <div className="sales-management-wrapper-data" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.SupplierTable} className=""  alt="SupplierTable" type="image/svg+xml" />
-      <div className="content-wrapper ">
-        <p className="sale-title">Organised </p>
-        <p className="sales-heading-sales">Supplier</p>
-        <p className="sales-type">database</p>
-        <p className="sales-description-sales">
-        Keep your supplier information organised and <br></br>accessible with our database feature. 
-        Easily <br></br>manage details, track orders, and improve<br></br> communication with your 
-        suppliers, all in one<br></br> place. This tool helps you streamline your supply<br></br> chain operations.
+        <div className="sales-imageF">
+      <img src={Images.SupplierTable} className=""  alt="SupplierTable" type="image/svg+xml" /></div>
+      <div className="content-wrapperF ">
+        <p className="sale-titleF">Organised </p>
+        <p className="sales-heading-salesF">Supplier</p>
+        <p className="sales-typeF">database</p>
+        <p className="sales-description-salesF">
+        Keep your supplier information organised and accessible<br/> with our database feature. 
+        Easily manage details, track <br/>orders, and improve communication with your 
+        suppliers, all <br/>in one place. This tool helps you streamline your supply<br/> chain operations.
         </p>
       </div>
     </div>

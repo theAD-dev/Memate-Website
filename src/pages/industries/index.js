@@ -6,16 +6,16 @@ const IndustriesPage = () => {
   return (
     <>
       <Helmet>
-    <title>Industries Benefiting from MeMate | ERP and Business Management Software in Australia</title>
-    <meta name="description" content="Discover how MeMate’s business management software, ERP solutions, 
-      and CRM for Australian businesses help industries streamline operations, run businesses efficiently, and stay in control." />
-    <meta property="og:title" content="Industries Benefiting from MeMate | ERP and Business Management Software in Australia" />
-      <meta property="og:description" content="Discover how MeMate’s business management software, ERP solutions, 
-      and CRM for Australian businesses help industries streamline operations, run businesses efficiently, and stay in control.
+    <title>Built for Every Industry | MeMate Business Tools by Sector</title>
+    <meta name="description" content="From tradies to agencies, MeMate supports industries across Australia with all-in-one business management software — tailored to how you work." />
+    <meta property="og:title" content="Built for Every Industry | MeMate Business Tools by Sector" />
+      <meta property="og:description" content="From tradies to agencies, MeMate supports industries across Australia with all-in-one business management software — tailored to how you work.
     " />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
         <IndustriesComponent/>
+        </div>
     </Layout>
     </>
   )

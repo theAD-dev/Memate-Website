@@ -18,7 +18,7 @@ const ElectronicHeader = () => {
             alt="contact us main image"
             // width={400} height={400}
           />
-      <h1 className='electronic-top-heading'>Software that helps Australian repair shops<br/>
+      <h1 className='electronic-top-heading'>Repair Shop Management Software for Electronics Businesses<br/>
       operate efficiently</h1>
       <p className='electronic-middle-heading'>Electronic <br></br>Repair <br></br>Specialists</p>
       <p className='electronic-heading-content'>With MeMate, you can effortlessly communicate with clients and effortlessly submit jobs, all from a centralised and streamlined interface. Say goodbye to scattered systems and embrace the convenience of MeMate for unparalleled business management in the  electronics repair industry.</p>

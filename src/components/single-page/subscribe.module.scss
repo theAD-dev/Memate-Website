@@ -18,29 +18,39 @@ span{
     line-height: 120%;
     margin-bottom: 40px;
     display: inline-block;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
     b{
     background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
     }
 }
 label{
     color: var(--Gray-600, #475467);
     font-size: 14px;
     font-style: normal;
-    font-weight: 315;
+    font-weight: 100;
     line-height: 22px; 
     letter-spacing: 0.14px;
     margin-bottom: 5px;
     display: inline-block;
+    font-family: "sequel_sans_medium_body";
 }
 .formWrapmain{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width: 767px) {
+         display: block;
+        }
         button{
             margin-left: 24px;
+             @media screen and (max-width: 767px) {
+          margin-left: 0px;
+          margin-top: 10px;
+        }
         }
     .formWrap{
         border-radius: 4px;
@@ -55,12 +65,13 @@ label{
         input{
             border: 0;
             color: var(--Gray-400, #98A2B3);
-            font-size: 16px;
+            font-size: 14px;
             font-style: normal;
-            font-weight: 310;
-            line-height: 24px; 
+            font-weight: 100;
+            line-height: 22px; 
             letter-spacing: -0.08px;
             width: 100%;
+            font-family: "sequel_sans_roman_body";
         }
     }
 }
@@ -68,13 +79,14 @@ label{
     margin: 0 auto;
     width: 526px;
     p{
-        margin-top: 24px;
-        color: var(--Gray-400, #98A2B3);
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 310;
-        line-height: 130%; 
-        letter-spacing: -0.06px;
+      margin-top: 24px;
+    color: var(--Gray-400, #98A2B3);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 310;
+    line-height: 130%;
+    letter-spacing: -0.06px;
+    font-family: "sequel_sans_roman_body";
         u{
             color: var(--Gray-400, #98A2B3);
             font-size: 12px;
@@ -88,6 +100,7 @@ label{
             text-decoration-thickness: auto;
             text-underline-offset: auto;
             text-underline-position: from-font;
+             font-family: "sequel_sans_roman_body";
         }
     }
 }

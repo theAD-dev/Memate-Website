@@ -6,9 +6,10 @@ import ElectronicCrousel from './electronic-crousel';
 import ElectronicMoreSpecific from './electronic-more-specific';
 import ReadMore from './electronic-read-more';
 import ElectronicQuesitonAndAns from './electronic-question-ans';
+import ReadMoreData from './electronic-read-more';
 
 
-const ElectronicPageContent = () => {
+const ElectronicPageContent = ({postsLatestMainIndustry}) => {
   return (
     <>
     <div className='industry-page-wrapper'>
@@ -17,7 +18,7 @@ const ElectronicPageContent = () => {
         <ElectronicBussinessManagement/>
         <ElectronicCrousel/>
         <ElectronicMoreSpecific/>
-        <ReadMore/>
+        <ReadMoreData postsLatestReadMore={postsLatestMainIndustry}/>
         <ElectronicQuesitonAndAns/>
       </div>
     </div>

@@ -55,20 +55,16 @@ const IndustriesComponent = () => {
   return (
     <>
       <div className={style.mainMenuPages}>
-        <div className={`titleHead ${style.mainHeadTitle}`}>
-        <h4 className='tagHeadtitle'>
-        <p className='techText'>Technology from the future, solving today’s problems.</p>
-           
-          </h4>
+     <div className={`sales-component-wrapper salesfeaturesWrapper ${style.mainHeadTitle}`}>
+         <h1 className="h1tagsseo h1tagsseof fontWeight">Built for How You Work — Across Any Industry</h1>
           <h2>industries</h2>
           <span>
-          Here are meMate’s main features to help you quickly understand if it will be suitable for your business.
+          Here are meMate’s main features to help you quickly understand if it will be suitable for your<br/> business.
           </span>
-          <h1 className="h1tagsseo">
-          <p className='techText'>Transform Your Industry with MeMate’s Business Management Software</p>
-          
-          </h1>
+           <h4 className={style.h4Heading}>Transform Your Industry with MeMate’s Business Management Software</h4>
         </div>
+       
+
 
         {featuresData.map((featureCategory, categoryIndex) => (
           <div key={categoryIndex} className={style.mainGridWrap}>

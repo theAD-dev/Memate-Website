@@ -3,22 +3,21 @@ import "./style.css";
 import Images from "../../../../assests/images";
 const PipeLineTool = () => {
   return (
-    <div className="pipeline-tool-wrapper marginSpaceBottom marginSpaceTop sales-management-wrapper-data" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="2000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <div className="pipeline-image-wrapper">
-          <img src={Images.budVersatile} alt="budVersatile" className="filter-pipelineimage" type="image/svg+xml" />
-         
+      <div className="sales-imageF">
+          <img src={Images.budVersatile} alt="budVersatile" className="filter-pipelineimage" type="image/svg+xml" /> 
       </div>
-      <div className="content-wrapper ">
-        <p className="sale-title">Versatile</p>
-        <p className="sales-heading-sales">budget</p>
-        <p className="sales-type">control</p>
-        <p className="sales-description-sales">
+      <div className="content-wrapperF">
+        <p className="sale-titleF">Versatile</p>
+        <p className="sales-heading-salesF">budget</p>
+        <p className="sales-typeF">control</p>
+        <p className="sales-description-salesF">
         View your overall budget as well as the budget for each position in meMate. 
         Use this data to create jobs for your contractors and 
         schedule time shifts for your team, ensuring efficient resource allocation.

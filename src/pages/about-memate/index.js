@@ -4,7 +4,9 @@ import AboutMemateComponent from '../../components/about-memate';
 const AboutMematePage = () => {
   return (
     <Layout>
+      <div className="bgshadowwrapper">
         <AboutMemateComponent/>
+        </div>
     </Layout>
   )
 }

@@ -48,7 +48,7 @@ const TronButton = (props) => {
         ></div>
       </div>
       <div className="btn-base--black">
-        <div className="text-btn--nav">{props.text}</div>
+        <div className="text-btn--nav sequel_sans">{props.text}</div>
       </div>
   </>
   );

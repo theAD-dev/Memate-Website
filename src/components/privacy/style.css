@@ -5,7 +5,16 @@
     flex-direction: column;
     align-items: center;
 }
-
+.pageBreadcrumbs ul li:first-child a {
+    list-style: none;
+    color: #667085;
+    color: var(--Gray-500, #667085);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 310;
+    line-height: 20px;
+    white-space: nowrap;
+}
 .kb-main-section .kb-main-heading {
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
@@ -46,6 +55,9 @@
         font-size:32px;
         line-height: 40px;
     }
+    .privacyHeading {
+    font-size: 60px;
+}
     .KnowledgeBaseMain img {
         width: 347.37px;
     }

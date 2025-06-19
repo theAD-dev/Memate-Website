@@ -2,7 +2,8 @@ import "./styles.css";
 import { useState, useEffect } from "react";
 import { updateList } from "../../api/software-update";
 import { Helmet } from "react-helmet";
-
+import { Link } from "react-router-dom";
+const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 const SoftwareUpdate = () => {
   const [update, setUpdate] = useState([]);
   const [totalUpdate, setTotalUpdate] = useState(0);
@@ -50,34 +51,38 @@ const SoftwareUpdate = () => {
   return (
     <>
       <Helmet>
-        <title>Software Updates & Technology Upgrades | MeMate Business Solutions</title>
-        <meta name="description" content="Stay ahead with MeMate’s latest software system updates and technology upgrades. Explore how our 
-          ongoing innovations keep Australian small businesses running efficiently." />
+        <title>MeMate Software Updates | Latest Features & Improvements</title>
+        <meta name="description" content="See the latest MeMate software updates — new features, improvements, and fixes designed to help Aussie businesses run better every day." />
         <meta
           property="og:title"
-          content="Software Updates & Technology Upgrades | MeMate Business Solutions"
+          content="MeMate Software Updates | Latest Features & Improvements"
         />
         <meta
           property="og:description"
-          content="Stay ahead with MeMate’s latest software system updates and technology upgrades. Explore how our 
-          ongoing innovations keep Australian small businesses running efficiently."
+          content="See the latest MeMate software updates — new features, improvements, and fixes designed to help Aussie businesses run better every day."
         />
       </Helmet>
       <div className="">
-        <div className="parent">
-          <div className="brandName">
-          <h1 className="h1tagsseo">meMate’s Latest Updades</h1>
-          </div>
-          <div className="latestUpdates">
-            <h2 className="latest-update-text latest-update-head">
+        <div className="pageBreadcrumbssu">
+                             <ul>
+                               <li>Home</li>/<li> <Link className="MainPageLink active" to="/memate-software-updates">Latest Updates</Link></li>
+                             </ul>
+                             <Link href="https://memate.com.au/" className="backButStoriesSU"><img src={arrowIconBack} alt="Arrow" />Back</Link>
+                           </div>
+      <div className="brandNameSU">
+           <h4>meMate’s</h4>
+          <div className="latestUpdatesSU">
+            <h2>
             Latest Updates
             </h2>
+             <h1 className="h1tagsseo">MeMate Software Updates</h1>
+          </div> 
           </div>
-
+        <div className="parentSU">
           {update.map((item, index) => (
-            <div key={index} className="content1 uldateListWrap">
+            <div key={index} className="content1SU uldateListWrap">
               <div
-                className="date"
+                className="dateSU"
                 data-aos="fade-up"
                 data-aos-offset="50"
                 data-aos-delay="50"
@@ -94,7 +99,7 @@ const SoftwareUpdate = () => {
               </div>
 
               <div
-                className="contextText"
+                className="contextTextSU"
                 data-aos="fade-up"
                 data-aos-offset="50"
                 data-aos-delay="50"
@@ -103,8 +108,8 @@ const SoftwareUpdate = () => {
                 data-aos-once="false"
                 data-aos-anchor-placement="top-bottom"
               >
-                <div className="contentText1">{item.title}</div>
-                <div className="contentText2">
+                <div className="contentText1SU">{item.title}</div>
+                <div className="contentText2SU">
                   <div dangerouslySetInnerHTML={{ __html: item.description }} />
                 </div>
               </div>
@@ -123,7 +128,7 @@ const SoftwareUpdate = () => {
               data-aos-anchor-placement="top-bottom"
             >
               <button
-                className="btn"
+                className="btnSU"
                 onClick={handleLoadMore}
                 disabled={isLoading}
               >

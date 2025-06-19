@@ -5,24 +5,24 @@ import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
 const SalesComponent = () => {
   return (
   <>
-    <div className="sales-component-wrapper" data-aos="fade-up"
+    <div className="sales-component-wrapper salesfeaturesWrapper" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="500"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <h1 className="h1tagsseo">Optimise Financial Performance with MeMate’s Profitability and Budgeting Tools</h1>
-       <div className="sales-heading client-heading">profitability &<br></br> budgeting  </div>
-      <div className="sales-componet-content-wrapper client-component-para">
+      <h1 className="h1tagsseo h1tagsseof fontWeight">Budgeting & Profitability Software for Growing Businesses</h1>
+       <div className="sales-headingF">profitability &<br></br> budgeting  </div>
+      <div className="sales-componet-content-wrapperF client-component-para">
      
-        <div className="sales-component-content ">
+        <div className="sales-component-contentF ">
         <span>
         meMate is uniquely designed to let you set your budgeting right from the initial quotation stage, allowing you to project profitability for each project. You can then monitor every transaction related to the project and track profitability in real time.</span>
         </div>
 
         <div className="sales-component-button-wrapper">
-        <div  className="request-btn request-btn-bg">
+        <div  className="request-btn request-btn-center">
                 <Link to="https://app.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo text="Request a Demo" /></Link>
               </div>
         </div>

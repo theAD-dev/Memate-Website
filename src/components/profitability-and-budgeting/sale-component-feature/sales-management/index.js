@@ -3,19 +3,20 @@ import "./style.css";
 import Images from "../../../../assests/images";
 const SalesManagement = () => {
   return (
-    <div className="sales-management-wrapper-data" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.budEfficient} type="image/svg+xml" />
-      <div className="content-wrapper">
-        <p className="sale-title">Efficient</p>
-        <p className="sales-heading-sales">Quotation  </p>
-        <p className="sales-type">system   </p>
-        <p className="sales-description-sales">
+      <div className="sales-imageF">
+      <img src={Images.budEfficient} type="image/svg+xml" /></div>
+      <div className="content-wrapperF">
+        <p className="sale-titleF">Efficient</p>
+        <p className="sales-heading-salesF">Quotation  </p>
+        <p className="sales-typeF">system   </p>
+        <p className="sales-description-salesF">
         In meMate, we developed the quotation system to <br></br>set a budget for each position, 
         calculating every<br></br> margin or markup. This allows your business to <br></br>
         turn those figures into operational profit, providing <br></br>clear financial insight from the start.

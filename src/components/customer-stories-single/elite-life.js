@@ -16,12 +16,10 @@ function EliteLife() {
   return (
     <>
      <Helmet>
-    <title>Elite Life’s Success with MeMate | Membership Club Management Software</title>
-    <meta name="description" content="Discover how Elite Life, an exclusive Australian membership club, 
-      enhanced operations and member engagement using MeMate’s business management software" />
-    <meta property="og:title" content="Elite Life’s Success with MeMate | Membership Club Management Software" />
-      <meta property="og:description" content="Discover how Elite Life, an exclusive Australian membership club, 
-      enhanced operations and member engagement using MeMate’s business management software
+    <title>Elite Life Case Study | Software for Private Asset Management Clubs</title>
+    <meta name="description" content="See how Elite Life, an exclusive asset management club, uses MeMate to manage private clients, streamline internal operations, and deliver high-touch service." />
+    <meta property="og:title" content="Elite Life Case Study | Software for Private Asset Management Clubs" />
+      <meta property="og:description" content="See how Elite Life, an exclusive asset management club, uses MeMate to manage private clients, streamline internal operations, and deliver high-touch service.
     " />
 </Helmet>
       <div className="parent-blog-page customerstoriespage">
@@ -34,7 +32,7 @@ function EliteLife() {
             <Link to="/customer-stories" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>
           <div className="customerstoriesGrid">
-            <h1>Elite Life Elevates Member Engagement with MeMate’s Management Software</h1>
+            <h1>How Elite Life Runs Its Private Asset Club with MeMate</h1>
             <div className="innerGrid imageOverlyText">
               <Link ><img
                 className="img-container-stories"

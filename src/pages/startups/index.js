@@ -3,18 +3,18 @@ import Layout from '../../layout'
 import StartupsPageContent from '../../components/startups'
 import { Helmet } from 'react-helmet'
 
-const StartupsPage = () => {
+const StartupsPage = ({postsLatest}) => {
   return (
     <>
       <Helmet>
-    <title>Business Management Software for Creative Agencies | Streamline Projects & Workflow</title>
-    <meta name="description" content="MeMate helps creative agencies manage projects, automate workflows, and build client relationships. Explore software designed to run creative businesses efficiently in Australia." />
-    <meta property="og:title" content="Business Management Software for Creative Agencies | Streamline Projects & Workflow" />
-      <meta property="og:description" content="MeMate helps creative agencies manage projects, automate workflows, and build client relationships. Explore software designed to run creative businesses efficiently in Australia.
+    <title>Startup Business Management Software | MeMate Australia</title>
+    <meta name="description" content="Run your startup smarter with MeMate — CRM, project tools, quotes, invoicing & team management in one Aussie-built platform. Less busy-work, more growth." />
+    <meta property="og:title" content="Startup Business Management Software | MeMate Australia" />
+      <meta property="og:description" content="Run your startup smarter with MeMate — CRM, project tools, quotes, invoicing & team management in one Aussie-built platform. Less busy-work, more growth.
     " />
 </Helmet>
     <Layout>
-      <StartupsPageContent/>
+      <StartupsPageContent postsLatestMainIndustry={postsLatest}/>
     </Layout>
     </>
   )

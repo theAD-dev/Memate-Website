@@ -18,7 +18,7 @@ const PhotoHeader = () => {
             // alt="contact us main image"
             // width={400} height={400}
           />
-      <h1 className='photo-video-top-heading'>Project management software for </h1>
+      <h1 className='photo-video-top-heading'>Software for Photo & Video Agencies</h1>
       <p className='photo-video-middle-heading'>Photo & Video <br></br>Agency</p>
       <p className='photo-video-heading-content'>meMate is designed to suit creative agencies that produce content. It is ideal for companies that need to manage employees and contractors to produce photo and video content, keep track of all variables and people, and ensure the project stays within budget. meMate – project management software for creative agencies.</p>
       <Link to="https://app.memate.com.au/requestdemo" target="_blank"><button className='photo-video-heading-button'>Book a Demo</button></Link>

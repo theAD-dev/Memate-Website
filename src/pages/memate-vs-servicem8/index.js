@@ -18,10 +18,12 @@ const Services8Page = () => {
       Designed for small businesses in Australia, our tools help organise your client database and improve relationships." />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

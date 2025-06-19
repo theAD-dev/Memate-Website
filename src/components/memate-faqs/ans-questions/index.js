@@ -222,42 +222,47 @@ const QuestionAnswer = () => {
 
   return (
     <>
-      <div className={style.faquSearchFilter}>
-        <h4>
-          Discover answers to the most commonly asked questions about managing your business efficiently.
-        </h4>
-        <div className={style.searchFilterList}>
+      <div className={style.faquSearchFilterF}>
+        <div className={style.searchFilterListF}>
         <img src={FilterIcon} alt='filter Icon' /> 
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="Search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className={style.searchInput}
           />
         </div>
       </div>
+      <div className={style.faqmaintitle}>
+               <h1 className="h1tagsseo h1tagsseof fontWeight">
+                      Frequently Asked Questions About MeMate
+                    </h1>
+        <h4>
+         Discover answers to the most commonly asked questions about managing your business efficiently. 
+        </h4>
+        </div>
       <div className="question-answer-wrapper">
         {/* Inject JSON-LD Schema into the <head> */}
         <Helmet>
           <script type="application/ld+json">{generateFAQSchema()}</script>
         </Helmet>
 
-        <div className="question-answer-content question-answer-content-faqs">
-          <div className="question-answer-heading-wrapper">
-            <p className="question-answer-heading">We answer your questions</p>
+        <div className={`question-answer-content question-answer-content-faqs ${style.faqmainquestionhead}`}>
+          <div className="question-answer-heading-wrapperF">
+            <h4>We answer your questions</h4>
           </div>
-          <div className="questions-wrapper">
+          <div className="questions-wrapperFQ">
             {filteredQuestions.length > 0 ? (
               filteredQuestions.map((ques) => (
-                <div key={ques.key} className="each-ques-wrapper">
+                <div key={ques.key} className="each-ques-wrapperFQ">
                   <div
-                    className={`question-answer-ques ${
+                    className={`question-answer-quesFQ ${
                       selectedQuestion === ques.key ? "selected" : ""
                     }`}
                     onClick={() => toggleQuestion(ques.key)}
                   >
-                    <p className="question-answer-ques-info">
+                    <p className="question-answer-ques-infoFQ">
                       {ques.question}
                     </p>
                     <Box
@@ -288,7 +293,7 @@ const QuestionAnswer = () => {
                     </Box>
                   </div>
                   <div
-                    className={`question-answer-ans-info ${
+                    className={`question-answer-ans-infoFQ ${
                       selectedQuestion === ques.key ? "expanded" : ""
                     }`}
                   >

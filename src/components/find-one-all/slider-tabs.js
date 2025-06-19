@@ -32,17 +32,17 @@ import SchedulingActive from "../../svg/SchedulingActive";
 import Employees from "../../svg/Employees";
 // import EmployeesImage from "../../svg/EmployeesImage";
 import EmployeesActive from "../../svg/EmployeesActive";
-import WhiteButton from '../../layout/hover-button/WhiteButton';
+import WhiteButtonBammer from '../../layout/hover-button/WhiteButtonBammer';
 
-const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Sales-image.svg";
-const CalculationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/calculation-image.svg";
-const EmployeesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/employees-image.svg";
-const SchedulingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/sheduling-image.svg";
-const CommunicationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/communication-image.svg";
-const ReportingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/reporting-image.svg";
-const InvoicingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/invoicing-image.svg";
-const ProfitabilityImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/profitablity-image.svg";
-const ManagementImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/managment-image.svg";
+const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Sales-image-banner.svg";
+const CalculationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/calculation-image-main.svg";
+const EmployeesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/employees-image-main.svg";
+const SchedulingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/sheduling-image-main.svg";
+const CommunicationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/communication-image-main.svg";
+const ReportingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/reporting-image-main.svg";
+const InvoicingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/invoicing-image-main.svg";
+const ProfitabilityImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/profitablity-image-imag.svg";
+const ManagementImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/managment-image-main.svg";
 
 
 // SliderTab Component
@@ -132,7 +132,7 @@ const SliderTab = () => {
   ];
 
   const [selectedTab, setSelectedTab] = useState(3);
-  const sliderRef = useRef(null);
+  const sliderRef = useRef(0);
   const [fadeClass, setFadeClass] = useState("fade-in");
 
   // useEffect(() => {
@@ -229,7 +229,7 @@ const SliderTab = () => {
       </div>
       </div>
       <div className="request-btn request-btnApp" style={{marginTop: "0"}}>
-        <Link to={tabs[selectedTab].link} className="nav-btn--get-started get-started-border-box navbar-link"><WhiteButton text="Find more" /></Link>
+        <Link to={tabs[selectedTab].link} className="nav-btn--get-started get-started-border-box navbar-link"><WhiteButtonBammer text="Find more" /></Link>
       </div> 
     </div>
   );

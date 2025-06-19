@@ -6,23 +6,23 @@ const SuitableTender = () => {
  
 
   return (
-    <div className="suitable-tender-wrapper marginSpaceTop" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="3300"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <div className="content-wrapper ">
-        <p className="sale-title">Convenient</p>
-        <p className="sales-heading-sales">Supplier</p>
-        <p className="sales-type">reports</p>
-        <p className="sales-description-sales">
-        Get a clear supplier overview that highlights<br></br> where you spend the most. This feature helps you <br></br>identify key suppliers, 
-        allowing you to make <br></br>informed executive decisions based on spending <br></br>patterns.
+      <div className="content-wrapperF ">
+        <p className="sale-titleF">Convenient</p>
+        <p className="sales-heading-salesF">Supplier</p>
+        <p className="sales-typeF">reports</p>
+        <p className="sales-description-salesF">
+        Get a clear supplier overview that highlights where you <br/>spend the most. This feature helps you identify key<br/> suppliers, 
+        allowing you to make informed executive<br/> decisions based on spending patterns.
         </p>
       </div>
-      <div className="suitable-table-image-wrapper section2">
+      <div className="sales-imageF">
       <img src={Images.SupplierReport} alt="SupplierReport" type="image/svg+xml" />
      
       </div>

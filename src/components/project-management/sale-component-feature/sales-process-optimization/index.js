@@ -3,23 +3,24 @@ import "./style.css";
 import Images from "../../../../assests/images";
 const SalesProcessOptimiation = () => {
   return (
-    <div className="sales-process-optimization-wrapper " data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="2500"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <div className="content-wrapper">
-        <p className="sale-title">Comprehensive</p>
-        <p className="sales-heading-sales">Budget </p>
-        <p className="sales-type">management </p>
-        <p className="sales-description-sales">
+      <div className="content-wrapperF">
+        <p className="sale-titleF">Comprehensive</p>
+        <p className="sales-heading-salesF">Budget </p>
+        <p className="sales-typeF">management </p>
+        <p className="sales-description-salesF">
         Keep track of your budget and operational profit<br></br> with ease. All linked expenses and jobs assigned <br></br>to contractors or 
         time logged by employees are<br></br> automatically reflected in real-time.
         </p>
       </div>
-      <img src={Images.proComprehensive} alt="proComprehensive"  className="sales-process-optimization-image" type="image/svg+xml" />
+      <div className="sales-imageF">
+      <img src={Images.proComprehensive} alt="proComprehensive"  className="sales-process-optimization-image" type="image/svg+xml" /></div>
     </div>
   );
 };

@@ -11,17 +11,19 @@ const CommunicationPage = () => {
   return (
     <>
       <Helmet>
-    <title>Team Communication Tools | Enhance Collaboration with meMate’s Messaging Platform</title>
-    <meta name="description" content="Improve team collaboration with MeMate’s internal communication software. Designed for Australian small businesses, our platform offers seamless messaging and collaboration tools." />
-    <meta property="og:title" content="Team Communication Tools | Enhance Collaboration with meMate’s Messaging Platform" />
-      <meta property="og:description" content="Improve team collaboration with MeMate’s internal communication software. Designed for Australian small businesses, our platform offers seamless messaging and collaboration tools.
+    <title>Keep Your Team in Sync | MeMate Communication Tools</title>
+    <meta name="description" content="No more scattered messages. Keep team chats, tasks and updates in one place — MeMate makes internal communication easy for small businesses." />
+    <meta property="og:title" content="Keep Your Team in Sync | MeMate Communication Tools" />
+      <meta property="og:description" content="No more scattered messages. Keep team chats, tasks and updates in one place — MeMate makes internal communication easy for small businesses.
     " />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

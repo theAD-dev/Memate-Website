@@ -11,19 +11,19 @@ const TimeTrackerPage = () => {
   return (
     <>
      <Helmet>
-    <title>Time Tracking Tools for Employees and Contractors | MeMate Business Software</title>
-    <meta name="description" content="Track employee and contractor work hours effortlessly with MeMate’s Time Tracking Tools. 
-      Simplify time management, boost productivity, and optimise your workforce in real-time." />
-    <meta property="og:title" content="Time Tracking Tools for Employees and Contractors | MeMate Business Software" />
-      <meta property="og:description" content="Track employee and contractor work hours effortlessly with MeMate’s Time Tracking Tools. 
-      Simplify time management, boost productivity, and optimise your workforce in real-time.
+    <title>Time Tracking Software for Aussie Teams | MeMate</title>
+    <meta name="description" content="Track time, log hours and simplify timesheets. MeMate’s time tracking software helps Aussie businesses manage jobs and staff without the paperwork." />
+    <meta property="og:title" content="Time Tracking Software for Aussie Teams | MeMate" />
+      <meta property="og:description" content="Track time, log hours and simplify timesheets. MeMate’s time tracking software helps Aussie businesses manage jobs and staff without the paperwork.
     " />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

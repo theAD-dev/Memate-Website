@@ -12,7 +12,7 @@ const ScalableCustomizable = () => {
     <p>meMate allows agencies to manage separate locations or multiple departments with ease, thanks to a multi-location system. 
       You can keep offices or brands distinct while sharing knowledge and calculators across teams. With the built-in results and tracking system, 
       you can monitor performance, scale your operations, and streamline workflows—all with just a few clicks.</p>
-      <Link to="/profitability-and-budgeting">Profitability</Link>
+      <Link to="/features/profitability-and-budgeting-software">Profitability</Link>
       
 </div>
 <div className={style.flexImageBox}>

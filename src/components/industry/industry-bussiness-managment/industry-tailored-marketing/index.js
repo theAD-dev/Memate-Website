@@ -14,7 +14,7 @@ const TailoredMarketing = () => {
 <h2>for Marketing Agencies</h2>
     <p>Our calculation system allows you to preset packages and services, including all the different offerings your agency provides. This helps you quote your 
       customers faster than anyone else, streamlining the entire process.</p>
-      <Link to="/calculators">Calculators</Link>
+      <Link to="/features/business-quote-calculator">Calculators</Link>
 </div>
 
 </div>

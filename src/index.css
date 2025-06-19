@@ -14,6 +14,100 @@ html {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+   .react-responsive-modal-modal {
+    max-width: 1200px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    background: transparent;
+    box-shadow: none;
+    margin: 0;
+    padding: 15px;
+    position: relative;
+    overflow-y: auto;
+} 
+ .react-responsive-modal-modal video{
+    border: 9px solid #F6F8FB;
+    border-radius: 40px;
+  }
+.react-responsive-modal-closeButton {
+    position: absolute;
+       top: 36px;
+    right: 36px;
+    border: none;
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    cursor: pointer;
+    background-color: #ffffff47;
+    display: flex;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  @media screen and (max-width: 480px) {
+.react-responsive-modal-modal video {
+    border: 9px solid #F6F8FB;
+    border-radius: 20px;
+}
+
+.react-responsive-modal-closeButton {
+    top: 30px;
+    right: 30px;
+}
+  }
+
+.react-responsive-modal-closeButton svg {
+    fill: #000;
+    width: 17px;
+}
+/* New  Changes */
+
+/* .filtercolorbox {
+    position: relative;
+}
+.filtercolorbox:before {
+    position: absolute;
+    content: "";
+    border-radius: 611.024px;
+    background: rgba(43, 179, 243, 0.44);
+    filter: blur(116.69999694824219px);
+    width: 251.086px;
+    height: 611.024px;
+   left: -213px;
+    top: 40%;
+}
+.filtercolorbox::after {
+    position: absolute;
+    content: "";
+    border-radius: 631.033px;
+background: rgba(255, 178, 89, 0.56);
+filter: blur(84.8499984741211px);
+    width: 251.086px;
+    height: 611.024px;
+    right: -213px;
+    top: 10%;
+} */
+
+ .react-player__preview{
+  border-radius: 21px;
+ }
+.less-busyness_videoWrapper__Np-g2 video{
+  border-radius: 17px;
+  width: auto !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* changed */
 .h1tagsseo{
   color: #29292B;
@@ -137,6 +231,11 @@ code {
   gap: var(--spacing-md, 8px);
   width: 142.154px;
 height: 44px;
+font-family: 'sequel_sans';
+font-weight: 300;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .borderbuttonStyle{
   color: var(--Gray-700, #344054);
@@ -170,7 +269,8 @@ height: 44px;
   margin-left: 7px;
 }
 .p-dialog-header-close {
-  margin-top: 10px;
+  margin-top: 22px;
+  color: #667085;
 }
 
 input:focus-visible {
@@ -199,6 +299,7 @@ input:-internal-autofill-selected,textarea:-internal-autofill-selected {
   background: #FFF;
   width: 100%;
   padding: 0px 14px;
+  margin-top: 6px;
 }
 .phoneInput.PhoneInput input{
 border: 0;
@@ -209,8 +310,14 @@ border: 0;
   padding-right: 10px;
 }
 
-.p-dialog-footer .firstBut{
+.p-dialog-footer .firstBut {
   margin-right: 12px;
+  color: #344054;
+  font-family: 'sequel_sans';
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .error-message {
   color: #f00;
@@ -269,11 +376,23 @@ border: 0;
 .get-started-wrapper {
   height: 1600px;
 }
-.apply-container {
-  z-index: 1;
-  position: relative;
-  background: #fff;
-  padding-bottom: 0px;
+/* .apply-container {
+    z-index: 1;
+    position: relative;
+    background: url(https://res.cloudinary.com/dn0jqjad3/image/upload/v1747215005/BG_1_lcouqa.png);
+    padding-bottom: 0px;
+    background-position: top;
+    background-repeat: repeat;
+    background-size: contain;
+    top: 0;
+} */
+.bgshadowwrapper {
+    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pshadow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding-bottom: 30px;
 }
 /* changed */
 #butMontlyTable {
@@ -327,15 +446,12 @@ border: 0;
 }
 
 
-.sales-management-wrapper-data {
-  align-items: center;
-  gap: 102px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 5000px) and (min-width: 2200px) {
+    .section1 .download-section {
+      width: 504px;
+    }
+
 }
-
-
 
   /* @media screen and (max-width: 5000px) and (min-width: 2200px) {
   .navbar-container,.big-img-macMain,.macBook-image,.integration-brand-container {
@@ -468,9 +584,17 @@ p.sales-description-sales {
   font-weight: 100;
 }
 
+@media screen and (max-width: 1100px) {
+    .integration-brand-container {
+    width: 100%;
+}
+}
 @media screen and (max-width: 767px) {
   .titleHead h4.tagHeadtitle {
     font-size: 20px;
+}
+.apply-container {
+    overflow: hidden;
 }
 .features_mainHeadTitle__\+1xfr h1 {
   font-size: 20px !important;

@@ -10,7 +10,7 @@ const FeatureCard = (props) => {
     <>
       <div className="all-in-one allinonefeatueWrap" >
         <div className="strean-line">
-          <div className="main-operation">
+       <div className={`main-operation${props.className ? ` ${props.className}` : ''}`}>
             <div className="operation-left">
               <p className="all-text">{props.subHeading}</p>
               <div className="smallH2Heading">{props.topHeading}</div>

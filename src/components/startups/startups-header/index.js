@@ -22,7 +22,7 @@ const StartupsHeader = () => {
             // alt="contact us main image"
             // width={400} height={400}
           />
-      <h1 className='startup-top-heading'>Management Software for </h1>
+      <h1 className='startup-top-heading'>Business Management Software for Startups</h1>
       <p className='startup-middle-heading'>Startups and<br/> New Businesses</p>
       <p className='startup-heading-content'>meMate is designed to help you kickstart your business with the right workflow from day one. It’s the ideal tool to set up your operations smoothly and efficiently as you grow.</p>
       <Link to="https://app.memate.com.au/requestdemo" target="_blank"><button className='startup-heading-button'>Book a Demo</button></Link>

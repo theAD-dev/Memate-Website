@@ -3,19 +3,20 @@ import "./style.css";
 import Images from "../../../../assests/images";
 const SalesManagement = () => {
   return (
-    <div className="sales-management-wrapper-data" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.proUserFriendly} alt="proUserFriendly" type="image/svg+xml" />
-      <div className="content-wrapper">
-        <p className="sale-title">User-friendly </p>
-        <p className="sales-heading-sales">Project<br></br>Project Management</p>
-        <p className="sales-type"> timeline </p>
-        <p className="sales-description-sales">
+      <div className="sales-imageF">
+      <img src={Images.proUserFriendly} alt="proUserFriendly" type="image/svg+xml" /></div>
+      <div className="content-wrapperF">
+        <p className="sale-titleF">User-friendly </p>
+        <p className="sales-heading-salesF">Project<br></br>Project Management</p>
+        <p className="sales-typeF"> timeline </p>
+        <p className="sales-description-salesF">
         We provide a complete dashboard to help you<br></br> manage your ongoing projects. Easily subdivide <br></br>
         projects into tasks and 
         maintain a comprehensive<br></br> project card with all the related information in one <br></br>place.

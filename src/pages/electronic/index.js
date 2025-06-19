@@ -3,18 +3,18 @@ import Layout from '../../layout'
 import ElectronicPageContent from '../../components/electronic'
 import { Helmet } from 'react-helmet'
 
-const ElectronicPage = () => {
+const ElectronicPage = ({postsLatest}) => {
   return (
     <>
       <Helmet>
-    <title>Business Management Software for Creative Agencies | Streamline Projects & Workflow</title>
-    <meta name="description" content="MeMate helps creative agencies manage projects, automate workflows, and build client relationships. Explore software designed to run creative businesses efficiently in Australia." />
-    <meta property="og:title" content="Business Management Software for Creative Agencies | Streamline Projects & Workflow" />
-      <meta property="og:description" content="MeMate helps creative agencies manage projects, automate workflows, and build client relationships. Explore software designed to run creative businesses efficiently in Australia.
+    <title>Repair Shop Management Software for Electronics Businesses | MeMate</title>
+    <meta name="description" content="Run your electronics repair business with MeMate — quote jobs, track repairs, manage customers and stay organised with our all-in-one software." />
+    <meta property="og:title" content="Repair Shop Management Software for Electronics Businesses | MeMate" />
+      <meta property="og:description" content="Run your electronics repair business with MeMate — quote jobs, track repairs, manage customers and stay organised with our all-in-one software.
     " />
 </Helmet>
     <Layout>
-      <ElectronicPageContent/>
+      <ElectronicPageContent postsLatestMainIndustry={postsLatest}/>
     </Layout>
     </>
   )

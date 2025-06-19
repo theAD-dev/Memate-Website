@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import style from './supplier-module.module.scss';
 import { Link } from "react-router-dom";
-
 import { Helmet } from 'react-helmet';
 import { useForm, Controller } from 'react-hook-form';
 import Select from "react-select";
@@ -10,10 +9,9 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useNavigate } from 'react-router-dom';
-// import { AddYourCompanyApi } from '../../api/supplierApi';
+import { industriesListing, fetchServicesByIndustryId } from '../../api/supplierApi';
 import CustomUpload from "./custom-upload";
 import PhoneInput from 'react-phone-number-input';
-import TronAddSupplier from "../../layout/hover-button/TronAddSupplier";
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 // Define your validation schema
@@ -29,10 +27,25 @@ function AddYourCompany() {
   const [visibleEmail, setVisibleEmail] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
   const [error, setError] = useState('');
+  const [industryOptions, setIndustryOptions] = useState([]);
+  const [servicesOptions, setServicesOptions] = useState([]);
+
   const navigate = useNavigate();
-  const { control, handleSubmit, formState: { errors }, reset } = useForm({
+  const { control, handleSubmit,setValue, formState: { errors }, reset } = useForm({
     resolver: yupResolver(schema)
   });
+
+ useEffect(() => {
+    const loadIndustries = async () => {
+      const industries = await industriesListing();
+      const formatted = industries.map(ind => ({
+        value: ind.id,
+        label: ind.title
+      }));
+      setIndustryOptions(formatted);
+    };
+    loadIndustries();
+  }, []);
 
   const formReset = () => {
      reset({
@@ -44,27 +57,24 @@ function AddYourCompany() {
       state: "",
       website: "",
       country: "Australia",
-      supplied_services: "",
+      supplied_services: [],
+      industry: null,
       pnumber: "",
       streetaddress: "",
       city: "",
       postcode: "",  
+      
      })
   }
-
-
-
-
 
   useEffect(()=> {
     formReset();
   }, [])
 
-  const onSubmit = async (data) => {
-    console.log('data: ', data);
-    const selectedServiceLabel = data.supplied_services ? data.supplied_services.label : null;
 
-    // console.log('Selected Service Label:', selectedServiceLabel);
+  const onSubmit = async (data) => {
+ const supplier_industries_id = data.industry?.value || null;
+ const supplier_services_id = data.supplied_services?.map(s => s.value).join(',');
 
     if (data.website && !/^https?:\/\//i.test(data.website)) {
       data.website = `https://${data.website}`;
@@ -84,15 +94,12 @@ function AddYourCompany() {
       formData.append("state", data.state || "");
       formData.append("website", data.website || "");
       formData.append("country", "Australia");
-     formData.append("supplied_services", selectedServiceLabel || "");
       formData.append("pnumber", data.pnumber);
       formData.append("streetaddress", data.streetaddress || "");
       formData.append("city", data.city || "");
       formData.append("postcode", data.postcode || "");
-      console.log(data.pnumber);
-
-      
-      
+      formData.append("supplier_industries_id", supplier_industries_id);
+      formData.append("supplier_services_id", supplier_services_id);
       const myHeaders = new Headers();
       myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
   
@@ -163,38 +170,7 @@ function AddYourCompany() {
     }),
   };
 
-  const options1 = [
-    { value: "agriculture", label: "Agriculture" },
-    { value: "apparel", label: "Apparel" },
-    { value: "automotive", label: "Automotive" },
-    { value: "banking", label: "Banking" },
-    { value: "biotechnology", label: "Biotechnology" },
-    { value: "communications", label: "Communications" },
-    { value: "construction", label: "Construction" },
-    { value: "education", label: "Education" },
-    { value: "electronics", label: "Electronics" },
-    { value: "energy", label: "Energy" },
-    { value: "engineering", label: "Engineering" },
-    { value: "entertainment", label: "Entertainment" },
-    { value: "environmental", label: "Environmental" },
-    { value: "finance", label: "Finance" },
-    { value: "foodbeverage", label: "Food & Beverage" },
-    { value: "government", label: "Government" },
-    { value: "hospitality", label: "Hospitality" },
-    { value: "insurance", label: "Insurance" },
-    { value: "machinery", label: "Machinery" },
-    { value: "manufacturing", label: "Manufacturing" },
-    { value: "media", label: "Media" },
-    { value: "nonforprofit", label: "Non For Profit" },
-    { value: "other", label: "Other" },
-    { value: "recreation", label: "Recreation" },
-    { value: "retail", label: "Retail" },
-    { value: "shipping", label: "Shipping" },
-    { value: "software", label: "Software" },
-    { value: "technology", label: "Technology" },
-    { value: "telecommunications", label: "Telecommunications" },
-    { value: "utilities", label: "Utilities" },
-  ];
+ 
 
 
   return (
@@ -258,7 +234,7 @@ function AddYourCompany() {
                               <PhoneInput
                                 defaultCountry="AU" 
                                 value={field.value}
-                                className="phoneInput"
+                                className="phoneInput phoneInputFU"
                                 placeholder="+61" 
                                 containerClass={style.countrySelector}
                                 onChange={field.onChange}
@@ -278,46 +254,64 @@ function AddYourCompany() {
                   </div>
                 </div>
                 <div className={style.flexWrapGrid}>
-                <div className={style.marginbotton}>
-                    <label htmlFor="website">Website</label>
-                    <Controller
-                      name="website"
-                      control={control}
-                      render={({ field }) => <input placeholder="www.example.com" id="website" {...field} />}
-                    />
-                    {errors.website && <p className="error-message">{errors.website.message}</p>}
-                  </div>
-   
                   <div className={style.marginbotton}>
-                    <label htmlFor="supplied_services">Service</label>
+                    <label htmlFor="supplied_services">Industries</label>
+                   <Controller
+            name="industry"
+            control={control}
+            render={({ field }) => (
+              <Select
+                {...field}
+                options={industryOptions}
+                styles={customStyles}
+                placeholder="Select an industry..."
+                isSearchable
+                onChange={async (selected) => {
+                  field.onChange(selected);
+                  const services = await fetchServicesByIndustryId(selected.value);
+                  setServicesOptions(services);
+                  setValue("supplied_services", []); // Reset services when industry changes
+                }}
+                components={{
+                  IndicatorSeparator: () => null,
+                }}
+              />
+            )}
+          />
+                    {errors.supplied_services && <p className="error-message">{errors.supplied_services.message}</p>}
+                  </div>
+                  <div className={style.marginbotton}>
+                    <label htmlFor="supplied_services">Services(Multi Select)</label>
                     <Controller
-                    name="supplied_services"
-                    control={control}
-                    render={({ field }) => (
-                      <Select
-                        {...field}
-                        options={options1}
-                        styles={customStyles} 
-                        placeholder="Select an industry..." 
-                        isSearchable={true} 
-                        components={{
-                          IndicatorSeparator: () => null, 
-                        }}
-                      />
-                    )}
-                  />
+            name="supplied_services"
+            control={control}
+            render={({ field }) => (
+              <Select
+                {...field}
+                options={servicesOptions}
+                styles={customStyles}
+                placeholder="Select services..."
+                isMulti
+                isSearchable
+                onChange={(selected) => field.onChange(selected)}
+                components={{
+                  IndicatorSeparator: () => null,
+                }}
+              />
+            )}
+          />
                     {errors.supplied_services && <p className="error-message">{errors.supplied_services.message}</p>}
                   </div>
                 </div>
                 <div className={style.flexWrapGrid}>
                 <div className={style.marginbotton}>
-                  <label htmlFor="discription">Description</label>
+                  <label htmlFor="discription">About Company</label>
                   <Controller
                     name="discription"
                     control={control}
                     render={({ field }) => (
                       <textarea
-                        placeholder="Enter discription"
+                        placeholder="Enter about company"
                         id="description"
                         {...field}
                         rows={6} 
@@ -339,17 +333,16 @@ function AddYourCompany() {
                   />
                   {errors.discription && <p className="error-message">{errors.discription.message}</p>}
                 </div>
-                 
-
                 </div>
                 <div className={style.flexWrapGrid}>
                   <div className={style.marginbotton}>
-                    <label htmlFor="country">Country</label>
+                    <label htmlFor="website">Website</label>
                     <Controller
-                      name="country"
+                      name="website"
                       control={control}
-                      render={({ field }) => <input placeholder="Australia" disabled id="country" {...field} />}/>
-                    {errors.country && <p className="error-message">{errors.country.message}</p>}
+                      render={({ field }) => <input placeholder="www.example.com" id="website" {...field} />}
+                    />
+                    {errors.website && <p className="error-message">{errors.website.message}</p>}
                   </div>
                   <div className={style.marginbotton}>
                     <label htmlFor="state">State</label>
@@ -357,7 +350,6 @@ function AddYourCompany() {
                       name="state"
                       control={control}
                       render={({ field }) => <input placeholder="Enter State"  id="country" {...field} />}/>
-                
                     {errors.state && <p className="error-message">{errors.state.message}</p>}
                   </div>
                 </div>
@@ -398,7 +390,7 @@ function AddYourCompany() {
                     <Controller
                       name="city"
                       control={control}
-                      render={({ field }) => <input placeholder="Enter Country" id="city" {...field} />}/>
+                      render={({ field }) => <input placeholder="Enter City" id="city" {...field} />}/>
                     {errors.city && <p className="error-message">{errors.city.message}</p>}
                   </div>
                   <div className={style.marginbotton}>

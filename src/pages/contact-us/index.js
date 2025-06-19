@@ -5,7 +5,9 @@ import ContactUsComponent from '../../components/contact-us';
 const ContactUsPage = () => {
   return (
     <Layout>
+        <div className="bgshadowwrapper">
       <ContactUsComponent/>
+      </div>
     </Layout>
   )
 }

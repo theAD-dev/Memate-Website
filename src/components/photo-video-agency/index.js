@@ -4,11 +4,11 @@ import PhotoHeader from './photo-video-header';
 import PhotoBussinessManagement from './photo-video-bussiness-managment';
 import PhotoCrousel from './photo-video-crousel';
 import PhotoMoreSpecific from './photo-video-more-specific';
-import ReadMore from './photo-video-read-more';
 import PhotoQuesitonAndAns from './photo-video-question-ans';
+import ReadMoreData from './photo-video-read-more';
 
 
-const PhotoPageContent = () => {
+const PhotoPageContent = ({postsLatestMainIndustry}) => {
   return (
     <>
     <div className='industry-page-wrapper'>
@@ -17,7 +17,7 @@ const PhotoPageContent = () => {
         <PhotoBussinessManagement/>
         <PhotoCrousel/>
         <PhotoMoreSpecific/>
-        <ReadMore/>
+        <ReadMoreData postsLatestReadMore={postsLatestMainIndustry}/>
         <PhotoQuesitonAndAns/>
       </div>
     </div>

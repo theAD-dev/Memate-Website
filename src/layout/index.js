@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import Header from "../components/header2";
-import Footer from "../components/footer2";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import "./style.css";
 import NextStep from "../components/next-step";
 import { gsap } from "gsap";
@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
           duration: 0.5,
           ease: "power2.out"
         });
-        // console.log(tl);
+
         
         animationInstances.push(tl);
       }
@@ -105,7 +105,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <div className="apply-container">
-        <div className="children-wrapper">
+        <div className="children-wrapper children-wrapper-main">
           <div className="children">{children}</div>
         </div>
       </div>

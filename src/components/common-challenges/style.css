@@ -1,11 +1,14 @@
 .common-box-wrapper {
-  margin-top: 95px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    /* margin-top: 95px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/streem-shadow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
 }
-
 .common-box {
   width: 1200px;
   height: 1521px;
@@ -15,15 +18,27 @@
   width: 80%;
 }
 .challenges-text h3 {
-  color: #29292b;
-  text-align: center;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: normal;
-  font-family: 'sequel_sans_semi_bold_disp' !important;
-  margin-bottom: 60px;
-  margin-top: 15px;
+    color: #29292B;
+    text-align: center;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 80px;
+    letter-spacing: -2.16px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+.challenges-text p{
+color: #757B8A;
+text-align: center;
+font-size: 24px;
+font-style: normal;
+font-weight: 360;
+line-height: 32px; 
+letter-spacing: -0.72px;
+ font-family: 'sequel_sans_roman_head' !important;
+ margin-bottom: 50px;
 }
 .project-profitability-space {
   margin: 72px 0 !important;
@@ -133,13 +148,72 @@ p.card-text {
   height: 32px;
   width: 32px;
 }
+.streamlineimggrid {
+    width: 1200px;
+}
+.streamlineimggrid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.gridboxstreamline.item1,.gridboxstreamline.item2,.gridboxstreamline.item3,.gridboxstreamline.item4{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.gridboxstreamline.item1 h4, .gridboxstreamline.item3 h4, .gridboxstreamline.item4 h4 {
+    position: absolute;
+    bottom: 0;
+    padding: 32px;
+    color: #29292B;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+    font-family: "sequel_sans_roman_head" !important;
+}
+ .gridboxstreamline.item2 h4 {
+    position: absolute;
+    bottom: 0;
+    padding: 32px;
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+    font-family: "sequel_sans_roman_head" !important;
+}
+.gridboxstreamline.item2,.gridboxstreamline.item4{
+  padding-left: 12px;
+}
+.gridboxstreamline.item1,.gridboxstreamline.item2{
+  margin-bottom: 20px;
+}
+.gridboxstreamline.item3,.gridboxstreamline.item1{
+  padding-right: 12px;
+}
+.gridboxstreamline.item1 {
+    width: 428px;
+}
+.gridboxstreamline.item2 {
+    width: 749px;
+}
+.gridboxstreamline.item3 {
+    width: 749px;
+}
+
+.gridboxstreamline.item4 {
+    width: 428px;
+}
 
 .predict-side {
   width: 58%;
   max-width: 58%;
-  border-radius: 30px;
-  background: #f7f8fa;
-  padding-top: 46px;
+  /* border-radius: 30px; */
+  /* background: #f7f8fa; */
+  /* padding-top: 46px; */
   overflow: hidden;
 }
 
@@ -360,8 +434,32 @@ p.graph-business {
   top: 135px;
 }
 @media screen and (max-width: 767px) {
+  .gridboxstreamline.item2 h4,.gridboxstreamline.item1 h4, .gridboxstreamline.item3 h4, .gridboxstreamline.item4 h4 {
+    padding: 18px;
+    font-size: 20px;
+    line-height: 25px;
+}
+  .gridboxstreamline.item2 h4 br,.gridboxstreamline.item1 h4 br, .gridboxstreamline.item3 h4 br, .gridboxstreamline.item4 h4 br {
+   /* display: none; */
+}
   .common-box-wrapper {
     margin-top: 30px;
+}
+.challenges-text p {
+    font-size: 20px;
+}
+.gridboxstreamline.item2, .gridboxstreamline.item4 {
+    padding-left: 0;
+    padding-top: 18px;
+}
+.gridboxstreamline.item3, .gridboxstreamline.item1 {
+    padding-right: 0;
+}
+.streamlineimggrid {
+    width: 100%;
+}
+.gridboxstreamline.item1, .gridboxstreamline.item2, .gridboxstreamline.item3, .gridboxstreamline.item4 {
+    width: 100% !important;
 }
 .spanTextMQ{
   font-size: 22px !important;
@@ -371,9 +469,12 @@ p.graph-business {
   height: auto;
 }
 .challenges-text h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-  line-height: 28px;
+    font-size: 19px;
+    margin-bottom: 15px;
+    line-height: 23px;
+    letter-spacing: 0;
+    font-weight: 100;
+    font-family: 'sequel_sans' !important;
 }
 .gain-time p, .gain-time p span {
   font-size: 22px;

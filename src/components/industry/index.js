@@ -4,11 +4,12 @@ import IndustryHeader from './industry-header';
 import IndustryBussinessManagement from './industry-bussiness-managment';
 import IndustryCrousel from './industry-crousel';
 import IndustryMoreSpecific from './industry-more-specific';
-import ReadMore from './industry-read-more';
 import IndustyQuesitonAndAns from './industry-question-ans';
+import ReadMoreData from './industry-read-more';
 
 
-const IndustryPageContent = () => {
+const IndustryPageContent = ({postsLatestMainIndustry}) => {
+ 
   return (
     <>
     <div className='industry-page-wrapper'>
@@ -17,7 +18,7 @@ const IndustryPageContent = () => {
         <IndustryBussinessManagement/>
         <IndustryCrousel/>
         <IndustryMoreSpecific/>
-        <ReadMore/>
+        <ReadMoreData postsLatestReadMore={postsLatestMainIndustry}/>
         <IndustyQuesitonAndAns/>
       </div>
     </div>

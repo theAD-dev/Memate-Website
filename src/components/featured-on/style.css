@@ -1,15 +1,15 @@
 .featured-section {
-    margin: 95px 0 0;
+    margin: 0px 0 98px;
 }
-
 .featured-text p {
     color: #29292B;
     text-align: center;
-    font-size: 25px;
+    font-family: "Sequel Sans";
+    font-size: 24px;
     font-style: normal;
-    font-weight: 420;
-    line-height: 35px;
-    font-family: 'sequel_sans_semi_bold_disp' !important;
+    font-weight: 100;
+    line-height: 40px;
+   font-family: 'sequel_sans' !important;
 }
 
 .brand-names {

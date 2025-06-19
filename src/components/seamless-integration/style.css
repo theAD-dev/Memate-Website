@@ -1,5 +1,5 @@
 .integration-section {
-  margin-top: 110px;
+  margin-top: 80px;
 }
 /* changed */
 .integation-title h3 {
@@ -13,25 +13,52 @@
   margin: 0px;
   font-family: 'sequel_sans_semi_bold_disp' !important;
 }
-
-
+.integration-brand-container{
+    position: relative;
+}
+.shadowRightline3::after {
+    
+    border-radius: 516.412px;
+    background: rgba(255, 178, 89, 0.44);
+    filter: blur(84.8499984741211px);
+    width: 167.504px;
+    height: 395.608px;
+    flex-shrink: 0;
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: -45px;
+    z-index: -1;
+}
+.shadowLeftline3::before {
+    border-radius: 395.608px;
+    background: rgba(30, 178, 220, 0.33);
+    filter: blur(84.8499984741211px);
+    width: 97.296px;
+    height: 516.412px;
+    flex-shrink: 0;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
 .integation-title span {
   margin: 0px;
   text-align: center;
-  font-size: 118px;
+  font-size: 72px;
   font-style: normal;
   font-weight: 100;
-  line-height: 100px;
+  line-height: 80px;
   letter-spacing: 0px;
   font-family: "sequel_sans_bold_disp", sans-serif !important;
-  max-width: 596px;
   margin: auto;
   padding-bottom: 0px;
   display: block;
   width: 100%;
 }
 .integation-title span:last-child{
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .integration-brand {
@@ -145,12 +172,12 @@
 .integration-disp p {
     color: #29292B;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 100;
-    line-height: 140%;
-    font-family: 'sequel_sans_semi_bold_disp' !important;
-    max-width: 949px;
+    font-weight: 360;
+    line-height: 32px; 
+    letter-spacing: -0.72px;
+    max-width: 943px;
     margin: auto;
 }
 

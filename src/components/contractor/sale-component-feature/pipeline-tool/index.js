@@ -3,22 +3,21 @@ import "./style.css";
 import Images from "../../../../assests/images";
 const PipeLineTool = () => {
   return (
-    <div className="pipeline-tool-wrapper marginSpaceBottom marginSpaceTop" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="2000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <div className="pipeline-image-wrapper">
+      <div className="sales-imageF">
           <img src={Images.ContractorTeam} className="filter-pipelineimage" type="image/svg+xml"/>
-         
       </div>
-      <div className="content-wrapper">
-        <p className="sale-title">Collaborative</p>
-        <p className="sales-heading-sales">System</p>
-        <p className="sales-type">for your team </p>
-        <p className="sales-description-sales">
+      <div className="content-wrapperF">
+        <p className="sale-titleF">Collaborative</p>
+        <p className="sales-heading-salesF">System</p>
+        <p className="sales-typeF">for your team </p>
+        <p className="sales-description-salesF">
         Submit work to contractors, approve upon <br/>completion, 
         and automatically receive their<br/> invoice.
          Assign contracts like any other job or task <br/>within the project with a simple click.

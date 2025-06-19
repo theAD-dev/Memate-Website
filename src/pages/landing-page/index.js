@@ -17,18 +17,21 @@ import SuccessStories from "../../components/success-stories"
 import ZeroOfferOnboarding from "../../components/zero-offer-onboarding"
 import Layout from "../../layout"
 import { Helmet } from 'react-helmet';
+import LessBusyness from "./less-busyness";
 
 const LandingPage = ({postsLatest, updates}) => {
   return (
    <>
   <Helmet>
-  <title>Streamlined ERP, CRM & Project Management Software | Boost Your Business</title>
-  <meta name="description" content="Simplify and grow your business with our all-in-one ERP, CRM, and project management software. Designed for small and medium enterprises to achieve efficiency and success." />
-  <meta property="og:title" content="Streamlined ERP, CRM & Project Management Software | Boost Your Business" />
-  <meta property="og:description" content="Discover powerful cloud-based ERP, CRM, and project management solutions tailored for SMEs. Achieve operational excellence and drive growth with ease." />
+    
+  <title>Business Management Software, ERP system, CRM & Project Management in One</title>
+  <meta name="description" content="All-in-one business management software and ERP software for Australian SMEs, with built-in CRM and project management tools." />
+  <meta property="og:title" content="Business Management Software, ERP system, CRM & Project Management in One" />
+  <meta property="og:description" content="All-in-one business management software and ERP software for Australian SMEs, with built-in CRM and project management tools." />
 </Helmet>
     <Layout>
       <BussinessManagement/>
+      <LessBusyness />
       <FeaturedOn/>
       <FindOneApplication/>
       <CommonChallenges/>

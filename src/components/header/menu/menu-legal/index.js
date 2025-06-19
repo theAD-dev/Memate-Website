@@ -1,6 +1,8 @@
 import "./style.css";
-
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 const MenuLegal = () => {
+  const location = useLocation();
   return (
     <div className="menu-feature-wrapper">
       <div className="menu-feature-wrapper-upper">
@@ -8,33 +10,29 @@ const MenuLegal = () => {
           <p className="menu-feature-text">Legal</p>
           <div className="menu-management-features">
             <div className="menu-client-management">
-              <p className="clinet-management-text">Terms & Conditions</p>
+              <Link to="/terms" className={` ${location.pathname === "/terms" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Terms & Conditions</p></Link>
             </div>
           </div>
 
           <div className="menu-management-feature">
             <div className="menu-client-management">
-              <p className="clinet-management-text">Privacy</p>
+            <Link to="/privacy" className={` ${location.pathname === "/privacy" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Privacy</p></Link>
             </div>
           </div>
 
-          <div className="menu-management-feature">
-            <div className="menu-client-management">
-              <p className="clinet-management-text">Website terms of Use</p>
-            </div>
-          </div>
+      
 
-          <div className="menu-management-feature">
+          {/* <div className="menu-management-feature">
             <div className="menu-client-management">
-              <p className="clinet-management-text">Security</p>
+            <Link to="/security" className={` ${location.pathname === "/security" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Security</p></Link>
             </div>
-          </div>
+          </div> */}
 
-          <div className="menu-management-feature">
+          {/* <div className="menu-management-feature">
             <div className="menu-client-management">
-              <p className="clinet-management-text">Legal</p>
+              <Link to="/legal" className={` ${location.pathname === "/legal" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Legal</p></Link>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

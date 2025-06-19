@@ -11,7 +11,7 @@ const AutomotiveContractor = () => {
 <h2>Management</h2>
     <p>Manage contractors effortlessly by presetting time or amounts, assigning tasks, and approving work upon completion. Receive weekly 
       invoices from contractors through a simple, user-friendly system that works for everyone.</p>
-      <Link to="/features/supplier-management-software">Contractor Management </Link>
+      <Link to="/features/contractor-management-software">Contractor Management </Link>
       
 </div>
 <div className={style.flexImageBox}>

@@ -107,14 +107,12 @@ const ComparisonTabs = () => {
     <div className={style.tabsComparisonFlex}>
       <button
         className={`${style.tabsButton} ${selectedTab === "meMate tabsButtonActive" ? `${style.tabsButtonDark}` : `${style.tabsButtonActive}`}`}
-        onClick={() => setSelectedTab("meMate")}
-      >
+        onClick={() => setSelectedTab("meMate")}>
       <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg" alt="service8 logo" />
       </button>
       <button
         className={`${style.tabsButton} ${selectedTab === "serviceM8" ? `${style.tabsButtonDark}` :`${style.serviceM8}`}`}
-        onClick={() => setSelectedTab("serviceM8")}
-      >
+        onClick={() => setSelectedTab("serviceM8")}>
        <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/serviem8-logo.png" alt="service8" />
       </button>
     </div>
@@ -139,12 +137,11 @@ const ComparisonTabs = () => {
       <stop offset="1" stop-color="#FFB258"/>
     </radialGradient>
   </defs>
-</svg><p>{selectedTab === "meMate" ? item.meMate : item.service}</p></em></td>
-              <td><em><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M10 20C15.523 20 20 15.523 20 10C20 4.477 15.523 0 10 0C4.477 0 0 4.477 0 10C0 15.523 4.477 20 10 20Z" fill="#29292B"/>
-  <path d="M5.47656 10.6466L8.06257 13.2326L14.5276 6.76758" stroke="white" stroke-width="1.93554" stroke-linecap="round" stroke-linejoin="round"/>
-</svg><p>{selectedTab === "meMate" ? item.meMateM8 : item.serviceM8}</p></em></td>
-         
+  </svg><p>{selectedTab === "meMate" ? item.meMate : item.service}</p></em></td>
+                <td><em><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path d="M10 20C15.523 20 20 15.523 20 10C20 4.477 15.523 0 10 0C4.477 0 0 4.477 0 10C0 15.523 4.477 20 10 20Z" fill="#29292B"/>
+    <path d="M5.47656 10.6466L8.06257 13.2326L14.5276 6.76758" stroke="white" stroke-width="1.93554" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg><p>{selectedTab === "meMate" ? item.meMateM8 : item.serviceM8}</p></em></td>     
             </tr>
           ))}
         </tbody>

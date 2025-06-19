@@ -12,7 +12,7 @@ const FinanicalManagement = () => {
     <p>meMate enables you to account for all parts and link expenses directly to each active project. 
       This feature allows you to easily control the budget for every repair and get a clear view of the 
       operational profitability, ensuring efficient cost management and financial oversight.</p>
-      <Link to="/features/task-management-software">Expense</Link>
+      <Link to="/features/time-tracking-tools">Expense</Link>
       
 </div>
 <div className={style.flexImageBox}>

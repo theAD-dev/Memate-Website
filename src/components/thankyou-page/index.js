@@ -1,12 +1,15 @@
 import React from 'react'
 import style from './thankyou.module.scss';
 import Images from "../../assests/images";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 // import './thankyou.css'
 
 const ThankYouComponents  = () => {
+
+  const navigation = useNavigate()
+
   return (
    <>
     <Helmet>
@@ -26,7 +29,7 @@ const ThankYouComponents  = () => {
         <h1 className='h1tagsseo fontSize42-2'>Thank You for Reaching Out to MeMate!</h1>
         <p className='fontAndText'>Your support means the world to us. We’re excited to continue this journey together!</p>
         <div className={`${style.button}`}>
-        <Link to="/contact-us" ><img src={arrowIconBack} alt="Arrow" /> <span className='ssMDFont'>Back</span></Link>
+        <Link onClick={() => navigation(-1)} ><img src={arrowIconBack} alt="Arrow" /> <span className='ssMDFont'>Back</span></Link>
         <Link to="/" > <span className='ssMDFontBlack'>Home</span></Link>
       </div>
       </div>

@@ -11,7 +11,7 @@ const IndustryWorkFlowSolution = () => {
 <h2>Workflow Solutions</h2>
     <p>Create simple workflows and custom calculators based on different hourly rates, equipment costs, and more. Easily build complete packages with 
       customizable options, ensuring a clean workflow while avoiding undercharging or missing important service elements.</p>
-      <Link to="/calendar">Calendar</Link>
+      <Link to="/features/calendar-timeline-management-software">Calendar</Link>
       
 </div>
 <div className={style.flexImageBox}>

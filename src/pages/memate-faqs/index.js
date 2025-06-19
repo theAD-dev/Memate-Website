@@ -6,14 +6,16 @@ const MemateFaqsPage = () => {
   return (
     <>
       <Helmet>
-    <title>Your Ultimate Guide to Simplifying Business Management</title>
-    <meta name="description" content="Discover answers to the most commonly asked questions about managing your business efficiently. " />
-    <meta property="og:title" content="Your Ultimate Guide to Simplifying Business Management" />
-      <meta property="og:description" content="Discover answers to the most commonly asked questions about managing your business efficiently. 
+    <title>MeMate FAQs | Business Management Software Questions</title>
+    <meta name="description" content="Everything you want to know about MeMate — from features to onboarding. Quick answers for Aussie businesses making the switch." />
+    <meta property="og:title" content="MeMate FAQs | Business Management Software Questions" />
+      <meta property="og:description" content="Everything you want to know about MeMate — from features to onboarding. Quick answers for Aussie businesses making the switch. 
     " />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
         <MemateFaqsComponent/>
+        </div>
     </Layout>
     </>
   )

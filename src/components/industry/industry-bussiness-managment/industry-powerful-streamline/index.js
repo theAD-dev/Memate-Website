@@ -16,7 +16,7 @@ const IndustryPowerfulStreamline = () => {
     <p> MeMate offers powerful project management capabilities, allowing you to efficiently track and manage all 
       your creative projects. From initial concept to final delivery, our software ensures that your team stays 
       organised and productive throughout the entire creative workflow.</p>
-      <Link to="/task-management">Management</Link>
+      <Link to="/features/project-management-software">Management</Link>
 </div>
 </div>
 </>

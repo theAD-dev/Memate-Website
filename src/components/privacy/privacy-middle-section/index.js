@@ -2,6 +2,7 @@ import "./style.css";
 import React, { useState, useEffect, useRef } from "react"; 
 import { Helmet } from 'react-helmet';
 import { Link, animateScroll as scroll } from "react-scroll";
+import StickyBox from "react-sticky-box";
 
 const knowledgeData = [
   {
@@ -531,7 +532,7 @@ const MiddleSection = () => {
       threshold: 0.2
     });
 
-    const headings = document.querySelectorAll('.kb-section-heading2');
+    const headings = document.querySelectorAll('.kb-section-heading2F');
     headings.forEach(heading => observerRef.current.observe(heading));
 
     requestAnimationFrame(() => {
@@ -568,10 +569,11 @@ const MiddleSection = () => {
       <meta property="og:description" content="Check the terms of use for MeMate services. Understand your rights and responsibilities when using our platform for a seamless experience." />
   </Helmet>
      <div className="kb-wrapper">
-        <div className="kb-left-wrapper kb-tos-wrapper">
+        <div className="kb-left-wrapperm kb-left-wrappermain kb-tos-wrapperF">
+          <StickyBox offsetTop={100} offsetBottom={0}>
           {knowledge.map((item) => (
-            <ul className="kb-list" key={item.id}>
-              <li className={`kb-list-item ${activeItem === item.id ? 'kb-list-item-active' : ''}`}>
+            <ul className="kb-listF" key={item.id}>
+              <li className={`kb-list-itemF ${activeItem === item.id ? 'kb-list-item-activeF' : ''}`}>
                 <Link
                   to={`section-${item.id}`}
                   smooth={true}
@@ -579,19 +581,20 @@ const MiddleSection = () => {
                   duration={500}
                   onSetActive={() => setActiveItem(item.id)}
                 >
-                  {item.name}
+                  <span>{item.name}</span>
                 </Link>
               </li>
             </ul>
           ))}
+          </StickyBox>
         </div>
 
-        <div className="kb-right-wrapper">
+        <div className="kb-right-wrapperM">
           {knowledge.map((item) => (
-            <div className="kb-right-section" key={item.id}>
-              <h1 className="kb-section-heading2" id={`section-${item.id}`}>
+            <div className="kb-right-sectionF" key={item.id}>
+              <h2 className="kb-section-heading2F" id={`section-${item.id}`}>
                 {item.name}
-              </h1>
+              </h2>
               <div dangerouslySetInnerHTML={{ __html: item.description }} />
             </div>
           ))}

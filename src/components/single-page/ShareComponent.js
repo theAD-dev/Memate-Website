@@ -8,8 +8,6 @@ import {
 } from "react-share";
 
 const ShareComponent = ({ url, title, image, description }) => {
-  // const desc = description;
-  console.log("DESC ===> ", description)
   return (
     <>
       <Helmet>
@@ -62,7 +60,7 @@ const ShareComponent = ({ url, title, image, description }) => {
             </LinkedinShareButton>
           </li>
           <li>
-            <Link className="link socialIcon" to={url} aria-label="Share Link">
+            <Link className="link socialIcon" to={`mailto:?subject=${title}&body=I%20thought%20you%20might%20like%20this:${url}`} aria-label="Share Link">
               <img
                 src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/link.svg"
                 alt="link"

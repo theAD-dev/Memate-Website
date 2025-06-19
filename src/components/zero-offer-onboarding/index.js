@@ -8,17 +8,18 @@ import { Link } from "react-router-dom";
 const ZeroOfferOnboarding = () => {
 
   return (
-    <div className="onboarding-section" >
+    <div className="onboarding-section onboarding-section12" >
       <div className="onboarding-section-content">
-        <div className="offer-opt">
+        <div className="offer-opt1">
           <div className="sab-heading">
-            <div className="h2HeadingHome"> We offer zero fees for</div>
+            <div className="h2HeadingHome"> We offer <span className="shadow">zero</span> fees for</div>
             <div className="headingSimmer">onboarding</div>
             <p>
-            Plus, we provide a 14-day free trial because we believe our software will become indispensable to your business.
+           Plus, we provide a  <em className="em sequel_sans_semi_bold_head">14-day</em>  free trial because we believe our software will become indispensable to your business.
             </p>
-            <div className="button-container">
+            <div className="button-container butcontainerzero">
               <Link to="https://app.memate.com.au/requestdemo"><button className="book-a-demo">Book a Demo</button></Link>
+              <Link to="https://app.memate.com.au/onboarding"><button className="book-a-demo">Start Free Trial</button></Link>
             </div>
             {/* <div id='request-btn-pricing' className="request-btn request-btn-bg">
             <Link to="https://dev.memate.com.au/onboarding" target="_blank" className="nav-btn--get-started get-started-border-box  navbar-link"><TronButton  text="Request a Demo" /></Link>
@@ -34,13 +35,12 @@ const ZeroOfferOnboarding = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom">
+            <div className="zeroshadowLeft"></div>
             {/* <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/zero-onboarding.svg" alt="zeroScreenShot" type="image/svg+xml" /> */}
             <img
-                srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/onboarding3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/onboarding2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/onboarding1x.png'} 1800w`}
-                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/onboarding3x.png'} 
-                alt="zeroScreenShot"
+                src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Group+427318008.png"
 />
+<div className="zeroshadowRight"></div>
             {/* <ZeroScreenShot/> */}
 
           </div>

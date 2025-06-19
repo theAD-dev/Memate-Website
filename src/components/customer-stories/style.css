@@ -1,29 +1,17 @@
-.heading-blog {
-  font-size: 180px;
-  font-weight: 100;
-  text-align: center;
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "sequel_sans_bold_disp" !important;
-  line-height: 0.88;
-  letter-spacing: 1px;
-  position: relative;
-}
+
 .heading-blog2 {
-  font-size: 220px;
-  font-weight: 100;
-  text-align: center;
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "sequel_sans_bold_disp" !important;
-  line-height: 164px;
-  letter-spacing: 1px;
-  position: relative;
-  padding-bottom: 10px;
+     background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+     font-family: 'sequel_sans_semi_bold_disp' !important;
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 220px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 200px;
+    letter-spacing: -6.16px;
 }
 .ssRH18{
   font-family: 'sequel_sans_roman_head' !important;
@@ -39,15 +27,31 @@ font-weight: 100;
 line-height: normal;
 
 }
+.customerstoriesGrid {
+    width: 980px;
+    margin: 140px auto 56px;
+}
+.small-headingF {
+    color: #757B8A;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    font-family: 'sequel_sans_roman_head' !important;
+    margin-top: 8px;
+}
 h1.heading-text-blog2 {
-color: #29292B;
-text-align: center;
-font-size: 32px;
-font-style: normal;
-font-weight: 100;
-line-height: normal;
-font-family: 'sequel_sans_semi_bold_disp' !important;
-white-space: nowrap;
+   font-family: 'sequel_sans' !important;
+    white-space: nowrap;
+    color: #29292B;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
 
 }
 .customerstoriespage .small-heading {
@@ -96,14 +100,7 @@ white-space: nowrap;
   max-width: 461px;
   width: 100%;
 }
-.img-container-1-div-text-2 a {
-  width: 100%;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 49px;
-}
+
 .get-started-Btn {
   background-color: white;
   border-radius: 60px;
@@ -122,17 +119,7 @@ white-space: nowrap;
   line-height: normal;
   margin-top: auto;
 }
-.img-container-1-div-text-2,.img-container-1-div-text-2 a {
-  color: #29292b;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: 'sequel_sans_roman_head'!important;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 43px;
-  margin-top: 28px;
-  text-decoration: none;
-}
+
 .blog-img-container-2 {
   align-items: flex-start;
   display: flex;
@@ -150,30 +137,12 @@ white-space: nowrap;
   border-radius: 30px;
 }
 
-.img-container-3 {
-  max-width: 1201px;
-  width: 100%;
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
 .img-container-3-img-1 {
   width: 100%;
   height: auto;
   margin-top: 40px;
 }
-.date-A {
-  color: #888e9e;
-  font-family: "sequel_sans_roman_head" !important;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 360;
-  line-height: 140%; /* 23.8px */
-  letter-spacing: -0.17px;
-  margin-top: 18px;
-}
+
 .date-heading-A a {
   font-size: 21px;
   line-height: 33px;
@@ -194,57 +163,14 @@ white-space: nowrap;
   letter-spacing: -1px;
   line-height: normal; 
 }
-.parent-blog {
-  margin: 0 auto;
-  max-width: 1201px;
-  padding: 0px 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-.dog-img {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-  height: auto;
-  width: 100%;
-}
-.dog-img-container {
-  position: absolute;
-  top: -330px;
-  left: 114px;
-  z-index: 2;
-}
-.nextbtn-container-A {
-  text-align: center;
-  padding: 60px 0 70px 0;
-}
-.next-page-btn-A {
-  text-align: center;
-  width: 168px;
-  font-size: 18px;
-  font-family: "sequel_sans" !important;  
-  letter-spacing: normal;
-  line-height: normal;
-  height: 52px;
-  border-radius: 60px;
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #29292b;
-}
+
+
 
 .heading-container {
   position: relative;
 }
 
-.dog-img-container {
-  position: relative;
-  height: 466px;
-  max-width: 466px;
-}
+
 .heading-blog-description {
   display: flex;
   align-items: center;
@@ -328,31 +254,28 @@ white-space: nowrap;
 } 
 
 
-.customerstoriesGrid {
-  width: 980px;
-  margin: 93px auto 56px;
-}
 .customerstoriesGrid .innerGrid {
   margin-bottom: 56px;
 }
 .customerstoriesDetails {
-  border-radius: 0px 0px 30px 30px;
-  background: #F7F8FA;
-  padding: 40px 64px;
-  border-radius: 0px 0px 30px 30px;
-  margin-top: -3px;
+      border-radius: 0px 0px 30px 30px;
+    background: #F7F8FA;
+    padding: 40px 53px 24px;
+    border-radius: 0px 0px 30px 30px;
+    margin-top: 0px;
 }
 img.img-container-stories {
   border-radius: 30px 30px 0px 0px;
   width: 100%;
 }
 .customerstoriesDetails .category {
-  color: var(--ios-status-bar-status-bar-text-color, #000);
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 43px;
-  font-family: 'sequel_sansbook_disp';
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+    font-family: "sequel_sans_roman_head" !important;
 }
 .customerstoriesDetails .date-heading-title {
   color: var(--ios-status-bar-status-bar-text-color, #000);
@@ -376,7 +299,7 @@ img.img-container-stories {
   align-items: center;
   text-decoration: none;
   color: #000;
-  margin-top: 40px;
+  margin-top: 25px;
   font-family: 'sequel_sans' ;
   font-size:14px; 
 }
@@ -398,13 +321,14 @@ img.img-container-stories {
    
 }
 .customerstoriesDetails .date-heading-title a {
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 43px;
-  color: #000;
-  text-decoration: none;
-  font-family: 'sequel_sans_semi_bold_disp' !important;
+    text-decoration: none;
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    font-family: 'sequel_sans' !important;
 }
 @media screen and (max-width: 767px) {
   .customerstoriesGrid {
@@ -415,8 +339,9 @@ img.img-container-stories {
     padding: 15px;
 }
 .customerstoriesDetails .date-heading-title a, .customerstoriesDetails .date-heading-title {
-  font-size: 20px;
-  line-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
 }
 .customerstoriesDetails a.readMoreBut {
   margin-top: 15px;
@@ -431,12 +356,20 @@ img.img-container-stories {
   padding-top: 0;
 }
 h2.heading-blog2,h2.latest-update-text.latest-update-head {
-  font-size: 40px !important;
-  line-height: 48px !important;
+          font-size: 40px !important;
+        line-height: 48px !important;
+        letter-spacing: 0;
+}
+.customerstoriespage .small-headingF p {
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0;
 }
 h1.heading-text-blog2 {
-  font-size: 20px;
-  white-space: normal;
+font-size: 20px;
+        white-space: normal;
+        letter-spacing: 0;
+        line-height: 24px;
 }
 .heading-text-blog {
   font-size: 22px;

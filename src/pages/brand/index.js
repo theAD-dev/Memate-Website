@@ -9,7 +9,9 @@ const BrandPage = () => {
   });
   return (
     <Layout>
+      <div className="bgshadowwrapper">
         <BrandComponent/>
+        </div>
     </Layout>
   )
 }

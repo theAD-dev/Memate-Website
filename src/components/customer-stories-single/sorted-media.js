@@ -15,12 +15,10 @@ function SortedMedia() {
   return (
     <>
     <Helmet>
-    <title>Sorted Media’s Success with MeMate | Photography Business Management Software</title>
-    <meta name="description" content="Discover how Sorted Media, a leading Sydney-based photography-on-demand service, 
-      transformed operations and boosted client satisfaction using MeMate’s business management software" />
-    <meta property="og:title" content="Sorted Media’s Success with MeMate | Photography Business Management Software" />
-      <meta property="og:description" content="Discover how Sorted Media, a leading Sydney-based photography-on-demand service, 
-      transformed operations and boosted client satisfaction using MeMate’s business management software
+    <title>Sorted Media Case Study | Photography Business Software</title>
+    <meta name="description" content="Discover how Sorted Media manages 40+ shoots a day with MeMate’s software. Booking, scheduling, contractors — all streamlined for creative agencies." />
+    <meta property="og:title" content="Sorted Media Case Study | Photography Business Software" />
+      <meta property="og:description" content="Discover how Sorted Media manages 40+ shoots a day with MeMate’s software. Booking, scheduling, contractors — all streamlined for creative agencies.
     " />
 </Helmet>
       <div className="parent-blog-page customerstoriespage">
@@ -33,7 +31,7 @@ function SortedMedia() {
             <Link to="/customer-stories" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>
           <div className="customerstoriesGrid">
-            <h1>Sorted Media Enhances Operations with MeMate’s Photography Business Software</h1>
+            <h1>How Sorted Media Runs Their Photography & Video Agency with MeMate</h1>
             <div className="innerGrid imageOverlyText">
               <Link ><img
                 className="img-container-stories"

@@ -18,9 +18,9 @@ const MeMateFeatureMotivateTeam = () => {
       data-aos-anchor-placement="top-bottom"
     >
       <div className="efficiency-section">
-        <div className="all-in-one">
-          <div className="strean-line">
-            <div className="boost-profits">
+        <div className="all-in-one ">
+          <div className="strean-line ">
+            <div className="boost-profits shadowRightline1 shadowLeftline1">
               <div className="operation-left">
                 <p className="all-text">Powerful</p>
                 <div className="smallH2Heading">Motivate</div>

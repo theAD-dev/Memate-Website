@@ -7,15 +7,12 @@ import { Button } from 'react-scroll';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
 const PageNotFound = ({redirects}) => {
-  console.log("redirects ========> " + redirects);
   const navigate = useNavigate();
-  console.log("WHL ====> ", window.history.length)
   const handleClickBack = () => {
     if (window.history.length > 2) {
-      console.log("working");
       navigate(-redirects); 
     } else {
-      console.log("else working");
+
       navigate("/");
     }
   }

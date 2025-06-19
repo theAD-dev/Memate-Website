@@ -3,32 +3,29 @@ import style from "./pricing-module.module.scss";
 import PricingLightTable from "./pricingtable/pricing-light-table";
 import { Helmet } from "react-helmet";
 import PricingTable from "./dark-pricing-table";
+import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
+import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
+import { Link } from "react-router-dom";
 
-const pricingMainImg =
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingbg-banner.png";
-// https://res.cloudinary.com/dc6sud4gw/image/upload/v1743419983/pricingbg-banner_pn1zbp.png
-// optimised - https://res.cloudinary.com/dc6sud4gw/image/upload/v1743420789/pricingbg-banner_wxxoiv.png
-// original - https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingbg-banner.png
 
 const PricingComponent = () => {
   return (
     <>
       <Helmet>
         <title>
-          meMate Price | Affordable Business & Project Management Software for
-          Businesses and Startups
+        MeMate Pricing | Affordable Business Management Software
         </title>
         <meta
           name="description"
-          content="Discover cost-effective pricing for meMate, Australia’s best project management and business management software. Perfect for startups and small businesses, offering ERP, CRM, and workflow automation tools."
+          content="Explore MeMate’s transparent pricing plans tailored for Australian small and medium businesses. Discover affordable ERP, CRM, and project management solutions with no hidden fees."
         />
         <meta
           property="og:title"
-          content="meMate Price | Affordable Business & Project Management Software for Businesses and Startups"
+          content="MeMate Pricing | Affordable Business Management Software"
         />
         <meta
           property="og:description"
-          content="Discover cost-effective pricing for meMate, Australia’s best project management and business management software. Perfect for startups and small businesses, offering ERP, CRM, and workflow automation tools.
+          content="Explore MeMate’s transparent pricing plans tailored for Australian small and medium businesses. Discover affordable ERP, CRM, and project management solutions with no hidden fees.
     "
         />
       </Helmet>
@@ -37,7 +34,6 @@ const PricingComponent = () => {
       >
         <div className={style.mainheading}>pricing</div>
         <div className={style.mainimage}>
-          {/* <img src={pricingMainImg} alt="Pricing main image" width={380} /> */}
           <img
             srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing1x.png'} 1800w`}
             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -47,23 +43,43 @@ const PricingComponent = () => {
           />
         </div>
         <div className={style.midheading}>
-          <h1>Affordable Pricing for Small Businesses & Startups</h1>
+          <h1>Affordable All-in-One Business Solutions | Pricing</h1>
         </div>
-        <div className={style.smallheading}>
+     
+      </div>
+           <div className={style.pricingsmallSec}>
           <h2>Simple, transparent pricing</h2>
           <p>
-            We offer a 14-day free trial because we’re confident our software
+            We offer a 14-day free trial because we’re confident our software<br/>
             will become indispensable to your business
           </p>
+           <div className="dflexbannerbtn dflexbannerbtnp">
+                <div className="request-btn">
+                  <Link
+                    to="https://app.memate.com.au/requestdemo"
+                    target="_blank"
+                    className="nav-btn--get-started  navbar-link"
+                  >
+                      <TronRequestADemo text="Book a Demo" />
+                  </Link>
+                </div>
+                <div className="request-btn">
+                  <Link
+                    to="https://app.memate.com.au/onboarding"
+                    target="_blank"
+                    className="nav-btn--get-started  navbar-link"
+                  >
+                      <WhiteButtonBammer text="Start Free Trial"/>
+                  </Link>
+                </div>
+          </div>
         </div>
-      </div>
-
       <PricingTable />
       <PricingLightTable />
 
       <div className={style.questionText}>
         <h2>
-          What you get is <br></br> Affordable Pricing for Small Businesses &
+          What you get is <br/> Affordable Pricing for Small Businesses &
           Startups
         </h2>
         <p>

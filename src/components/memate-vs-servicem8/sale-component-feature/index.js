@@ -1,9 +1,9 @@
 import './style.css';
 import style from './difference-module.module.scss';
 import { Link } from 'react-router-dom';
-import TronButton from '../../../layout/hover-button/tourn-but';
+import TronRequestADemo from '../../../layout/hover-button/TronRequestADemo';
 import ComparisonTabs from './comparison-tabs';
-import FindOneApplication from '../../find-one-all';
+import CenterMode from '../../find-one-all/CenterMode';
 const SalesComponentFeature = () => {
   return (
     <div className='sales-component-feature-wrapper'>
@@ -88,8 +88,8 @@ const SalesComponentFeature = () => {
       <div className={style.gridService8L}>
       <h4>In short</h4>
       <p>If you need a quick quoting solution you can use on the go, ServiceM8 is the way to go. However, if you have a manager who processes requests, allocates tasks to contractors, replies to customers, provides quotes, and manages projects, meMate is the software for you.</p>
-      <div className="request-btn request-btn-center">
-        <Link to='/' target="_blank" className="nav-btn--get-started navbar-link"><TronButton text="See all features" /></Link>
+      <div className="request-btn request-btn-leftq">
+        <Link to='/' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo text="See all features" /></Link>
       </div>
         </div>
         <div className={style.gridService8R}>
@@ -168,7 +168,7 @@ const SalesComponentFeature = () => {
             </div>
           </div>
           <div className={style.sectionFindOneApplication}>
-             <FindOneApplication />
+             <CenterMode />
           </div>
     </div>
     </div>

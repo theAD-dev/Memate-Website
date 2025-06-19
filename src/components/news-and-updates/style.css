@@ -2,6 +2,10 @@
   width: 100%;
   overflow: hidden;
 }
+.sliderSectionShadowl{
+  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/newsshadow.png) no-repeat;
+  background-size: contain;   
+}
 
 .success-stories {
   display: flex;
@@ -162,14 +166,18 @@
     margin-bottom: 15px;
     margin-top: 0;
 }
+.bottom-managementw {
+    margin-top: 50px !important;
+}
 .NewsflexWrap .textBox .postH2Title, .NewsflexWrap .textBox a, .bottom-management p {
   font-size: 17px;
 }
 .NewsflexWrap {
-  grid-template-columns: 1fr;
-  gap: 0;
-  width: 100%;
-  text-align: center;
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 72px;
 }
 .NewsflexWrap .Newsitem .imgBox {
   width: 100%;

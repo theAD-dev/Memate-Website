@@ -5,6 +5,32 @@
     flex-direction: column;
     align-items: center;
 }
+.mid-headingc h1 {
+    color: #29292B;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    margin-top: 160px;
+    font-family: 'sequel_sans' !important;
+}
+
+.small-headingc p {
+    color: #757B8A;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+    font-family: 'sequel_sans_roman_head' !important;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 .marginTop{
     margin-top: 20px !important;
 }
@@ -161,24 +187,21 @@
 
 .query-cards .query-card .query-main .query-main-heading p {
     color: #FFF;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "sequel_sans_semi_bold_disp";
     font-size: 48px;
     font-style: normal;
     font-weight: 100;
-    line-height: 48px; /* 100% */
+    line-height: 60px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
 }
-
 .query-cards .query-card .query-main .query-small-heading p {
     color: #FFF;
-    font-family: "sequel_sans_roman_head";
     font-size: 18px;
     font-style: normal;
-    font-weight: 100;
-    line-height: 140%; /* 25.2px */
-    letter-spacing: -1px;
+    font-weight: 360;
+    line-height: 140%;
+    letter-spacing: -0.18px;
+    font-family: 'sequel_sans_roman_head' !important;
 }
-
 .query-cards .query-card .query-button {
     display: flex;
     width: 100%;
@@ -199,12 +222,12 @@
     text-align: center;
     -webkit-text-stroke-width: 0.2907530963420868;
     -webkit-text-stroke-color: #FFF;
-    font-family: "sequel_sans";
     font-size: 18px;
     font-style: normal;
     font-weight: 100;
     line-height: normal;
     background: transparent;
+    font-family: 'sequel_sans' !important;
 }
 .query-cards .query-card .query-button.query-button-color button{
     color: #29292b;
@@ -241,15 +264,40 @@
     font-family: 'sequel_sans_roman_head' !important;
 
 }
-.requestCallback{
-    font-size: 32px;
-    font-family: 'sequel_sans_semi_bold_disp' !important;
+.requestCallback, .requestCallback h1 {
+    color: #29292B;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    font-family: 'sequel_sans' !important;
 }
 @media screen and (max-width: 767px) {
     #contactUsPage .main-image img {
         width: 100%;
         height: auto;
     }
+    .small-heading p.ContactSubText {
+    font-size: 20px;
+    line-height: 28px;
+}
+    .query-section.query-sectionc {
+    margin-top: 50px;
+}
+    .mid-headingc h1 {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin-top: 57px;
+}
+.small-headingc p {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0;
+    margin-top: 9px;
+}
     #contactUsPage .main-heading {
         font-size: 60px;
         line-height: 51px;

@@ -16,7 +16,7 @@ const PhotoMasterful = () => {
     <p>Imagine managing a project that involves taking photos and videos across multiple locations with multiple 
       contractors. With meMate, it’s a breeze. You can 
       easily add tasks and assign jobs from one place with just a few clicks, streamlining your entire workflow.</p>
-      <Link to="/features/client-management-software">Management</Link>
+      <Link to="/features/project-management-software">Management</Link>
 </div>
 </div>
 </>

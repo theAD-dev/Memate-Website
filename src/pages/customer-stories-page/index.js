@@ -6,7 +6,9 @@ const CustomerStoriesPage = () => {
 
   return (
     <Layout>
+      <div className="bgshadowwrapper">
      <CustomerStories />
+     </div>
     </Layout>
   );
 };

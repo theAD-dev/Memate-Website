@@ -160,7 +160,7 @@ const QuestionAnswer = () => {
       </Helmet>
 
       <div className="question-answer-content">
-        <div className="question-answer-heading-wrapper">
+        <div className="question-answer-heading-wrapperF">
           <p className="question-answer-heading">FAQs for Comparing MeMate and ServiceM8</p>
         </div>
         <div className="questions-wrapper">
@@ -172,7 +172,7 @@ const QuestionAnswer = () => {
                 }`}
                 onClick={() => toggleQuestion(ques.key)}
               >
-                <p className="question-answer-ques-info">{ques.question}</p>
+                <p className="question-answer-ques-infoF">{ques.question}</p>
                 <Box
                   className="add-icon-wrapper"
                   sx={{
@@ -201,7 +201,7 @@ const QuestionAnswer = () => {
                 </Box>
               </div>
               <div
-                className={`question-answer-ans-info ${
+                className={`question-answer-ans-infoF ${
                   selectedQuestion === ques.key ? "expanded" : ""
                 }`}
               >

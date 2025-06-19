@@ -11,16 +11,18 @@ const ContractorPage = () => {
   return (
     <>
       <Helmet>
-    <title>Comprehensive Contractor Management Software | Streamline Your Contractor Operations with MeMate</title>
-    <meta name="description" content="Discover MeMate’s Contractor Management Software designed to streamline contractor operations, enhance compliance, and improve project efficiency for businesses of all sizes." />
-    <meta property="og:title" content="Comprehensive Contractor Management Software | Streamline Your Contractor Operations with MeMate" />
-      <meta property="og:description" content="Discover MeMate’s Contractor Management Software designed to streamline contractor operations, enhance compliance, and improve project efficiency for businesses of all sizes." />
+    <title>Contractor Management Software for Aussie Businesses | MeMate</title>
+    <meta name="description" content="Assign jobs, track progress and manage contractors all in one place. MeMate’s contractor management software is built for Aussie service businesses." />
+    <meta property="og:title" content="Contractor Management Software for Aussie Businesses | MeMate" />
+      <meta property="og:description" content="Assign jobs, track progress and manage contractors all in one place. MeMate’s contractor management software is built for Aussie service businesses." />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

@@ -6,6 +6,7 @@ import { blogSingle } from '../../api/blogAPI';
 import SubscribeForm from './subscribe';
 import ShareComponent from './ShareComponent';
 import { Helmet } from 'react-helmet';
+import NewsSchema from '../blog/news-schema';
 // import ErrorPage from '../../pages/error-page';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
@@ -64,8 +65,6 @@ const Single = ({postsSingle, postsLatest }) => {
           setPost(data);
           if (data.error === 'News article not found') {
             navigate('/404', { state: { num: 3 } });
-            console.log("working")
-            // <Route exact element={<ErrorPage num={3} />} />
           }
         } catch (error) {
           console.error("Error fetching post:", error);
@@ -112,8 +111,52 @@ const Single = ({postsSingle, postsLatest }) => {
     }
   };
 
+
+const breadcrumbList = post ? {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://memate.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "News",
+      "item": "https://memate.com.au/news/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": post.title,
+      "item": `https://memate.com.au/news/${post.slug}`
+    }
+  ]
+} : null;
+
+
+   const article = post ? {
+      type: "NewsArticle",
+      headline: post.title,
+      datePublished: new Date(post.publish_date).toISOString(),
+      dateModified: new Date(post.updated_at || post.publish_date).toISOString(),
+      author: post.author || "MeMate News",
+      publisherName: "MeMate Media",
+      publisherLogo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
+      image: post.featured_img_url || Images.blogImgempty,
+      url: `https://memate.com.au/news/${post.slug}`,
+      keywords: post.keywords || post.title?.split(" ").slice(0, 5).join(", "),
+      genre: post.category?.title || "General",
+      articleSection: post.category?.title || "General"   
+    } : null;
+
+
+
   return (
-    <div>
+    <div className='bgshadowwrapper'>
        <Helmet>
         <title>{post.seo_title}</title>
         <meta name="twitter:card" content="summary_large_image" />
@@ -128,9 +171,11 @@ const Single = ({postsSingle, postsLatest }) => {
 <meta property="og:url" content="https://memate.au/news/everything-you-need-to-know-about-the-impact-of-management-software-on-small-businesses" />
 
       </Helmet>
-      <div className="parent parentSingle">
+       {article && breadcrumbList && <NewsSchema article={article} breadcrumbList={breadcrumbList} />}
+
+      <div className="parent parentSingle ">
       <div className="pageBreadcrumbs">
-            <ul>
+            <ul className='postlist'>
               <li><Link className="MainHomeLink" to="/">Home</Link></li><li>/</li><li><Link className="MainPageLink" to="/news">Latest Articles</Link></li><li>/</li><li><Link>{post.title}</Link></li>
             </ul>
             <Link to="/news" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
@@ -155,10 +200,10 @@ const Single = ({postsSingle, postsLatest }) => {
       </div>
 
         <div className="img-1-container-A ">
-          <img className="img-1" src={post.featured_img_url} alt={post.title}></img>
+          <img className="img-1" src={post.featured_img_url || Images.blogImgempty} alt={post.title}></img>
         </div>
         <div className="heading-2-A single-page-heading"></div>
-        <div className="heading-2-text-A single-page-heading-text ">
+        <div className="heading-2-text-A single-page-heading-text parentSingleBlogMemate">
           <div dangerouslySetInnerHTML={{ __html: post.description }} />
         </div>
         {/* Tags */}
@@ -199,13 +244,13 @@ const Single = ({postsSingle, postsLatest }) => {
         />
       </Link>
       <div className="img-heading-container">
-        <div className="date-A">
+        <div className="date-A date-Ab">
         {formatDateWithOrdinal(post.publish_date)} | {post.author}
         </div>
-        <div className="date-heading-A">
+        <div className="date-heading-mainb">
           <Link to={`/news/${post.slug}`}>{post.title}</Link>
         </div>
-        <div className='postCategory'>
+        <div className='postCategory postCategoryb'>
            <Link to={`/news/category/${post?.category_id}`}>{post.category.title}</Link>
         </div>
       </div>

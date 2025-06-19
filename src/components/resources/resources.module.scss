@@ -5,18 +5,30 @@
         font-family: 'sequel_sans_roman_head' !important;
         h2{
            
-            background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 0px;
-            text-align: center;
-            font-size: 220px;
-            font-style: normal;
-            font-weight: 100;
-            line-height: 230px; 
-            font-family: 'sequel_sans_bold_disp' !important;
+          background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "sequel_sans_bold_disp" !important;
+    margin: 0px;
+    text-align: center;
+    font-size: 220px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 200px;
+       letter-spacing: -3.16px;
+           margin-top: -33px;
             
+        }
+        span{
+                color: #757B8A;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 140%;
+    font-family: "sequel_sans_roman_head" !important;
+    margin-top: 26px;
         }
         @media screen and (max-width: 767px) {
             .mainMenuPages{
@@ -36,13 +48,14 @@
         width: 1200px;
         margin: 0 auto 92px;
         h2{
-            color: #29292B;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 100;
-            line-height: normal;
-            margin-bottom: 24px;
-            font-family: 'sequel_sans_semi_bold_disp' !important;
+                margin-bottom: 24px;
+    color: #29292B;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    font-family: "sequel_sans" !important;
         }
         .mainGridwtapFlex{
             .itemFlex{
@@ -112,11 +125,12 @@
                 z-index: 9; 
             h3{
                 color: #29292B;
-                font-size: 20px;
+                font-size: 24px;
                 font-style: normal;
+                font-family: "sequel_sans_roman_head" !important;
                 font-weight: 100;
-                line-height: 140%; 
-                font-family: 'sequel_sans_medium_head' !important;
+                letter-spacing: -0.72px;
+                line-height: 32px;
             }
         }
             
@@ -138,6 +152,18 @@
             }
            
         }
+    }
+      .h4Heading{
+        letter-spacing: -1.44px;
+    font-family: "sequel_sans" !important;
+    width: 1200px;
+    margin: 24px auto 100px;
+    color: #29292B;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px;
     }
 }
 

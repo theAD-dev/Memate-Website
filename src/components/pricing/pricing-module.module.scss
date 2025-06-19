@@ -22,11 +22,10 @@
     }
     .mainheading{
         text-align: center;
-        font-feature-settings: 'liga' off, 'clig' off;
-        font-family: 'sequel_sans_bold_disp' !important;
+        font-family: 'sequel_sans_semi_bold_disp' !important;
         font-size: 220px;
         font-style: normal;
-        line-height: 276px; /* 74.545% */
+        line-height: 276px; 
         font-weight: 425;
         letter-spacing: 1px;
         background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
@@ -44,39 +43,17 @@
     font-weight: 600;
     line-height: normal;
         h1{
-          color: #29292B;
+         color: #29292B;
           text-align: center;
-          font-size: 42px;
+          font-size: 32px;
           font-style: normal;
-          font-weight: 100;
-          line-height: normal;
-          letter-spacing: -1px;
+          font-weight: 420;
+          line-height: 40px; 
           font-family: 'sequel_sans_semi_bold_disp' !important;
         }
     }
-    .smallheading{
-        padding-top: 26px;
-    color: #757B8A;
-    text-align: center;
-    font-family: sequel_sans_roman_head!important;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 360;
-    line-height: 140%; /* 25.2px */
-    letter-spacing: -0.18px;
-    margin-bottom: 40px;
-    h2{
-      color: #29292B;
-      text-align: center;
-      font-size: 42px;
-      font-style: normal;
-      font-weight: 100;
-      line-height: normal;
-      letter-spacing: -1px;
-      margin: 72px 0 20px;
-      font-family: 'sequel_sans_semi_bold_disp' !important;
-    }
-    }
+
+ 
     .mainsectionbutton{
         border-radius: 60px;
         background: #29292B;
@@ -90,13 +67,52 @@
         margin-bottom: 40px;
         color: #FFF;
         text-align: center;
-        font-family: sequel_sans_roman_head!important;
         font-size: 18px;
         font-style: normal;
         font-weight: 415;
         line-height: normal;
     }
 }
+   .pricingsmallSec{
+    padding: 72px 0 40px;
+    @media screen and (max-width: 767px) {
+      padding: 9px 0 40px;
+    }
+        h2{
+          color: #29292B;
+          text-align: center;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 420;
+          line-height: 60px;
+          letter-spacing: -1.44px;
+          font-family: 'sequel_sans_semi_bold_disp' !important;
+           @media screen and (max-width: 767px) {
+            font-size: 27px;
+            line-height: 27px;
+            letter-spacing: 0px;
+          }
+        }
+    p{
+      font-family: 'sequel_sans_roman_head' !important;
+      color: #757B8A;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 360;
+      line-height: 32px; 
+      letter-spacing: -0.72px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+            padding: 0 10px;
+            br{
+              display: none;
+            }
+          }
+    }
+    }
 
 .PricingTableWrap{
 .pricingtable {
@@ -153,15 +169,16 @@ box-shadow: 0px 1.936px 51.61px 0px rgba(20, 20, 43, 0.08);
     }
   //  changed
     .companypara{
-      text-align: left;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 100;
-      line-height: 150%;
-      // font-style: italic;
       color: #888E9E;
-      min-height: 48px;
-      font-family: 'sequel_sans_light_obl_head' !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 355;
+    line-height: 20px;
+    letter-spacing: -0.38px;
+    font-family: "sequel_sansbook_head" !important;
+    text-align: left;
+    margin-top: 10px;
+    min-height: 47px;
     }
     .YourSavings {
       color: #888E9E;
@@ -290,16 +307,16 @@ span {
       font-size: 16px;
       font-style: normal;
       font-weight: 100;
-      line-height: 16px; /* 100% */
+      line-height: 16px; 
     }
     h5{
+     font-family: 'sequel_sans_semi_bold_head' !important;
       color: #29292B;
-      font-feature-settings: 'liga' off, 'clig' off;
-      font-family: 'sequel_sans_semi_bold_disp' !important;
       font-size: 24px;
       font-style: normal;
-      font-weight: 100;
-      line-height: 150%; /* 36px */
+      font-weight: 370;
+      line-height: 32px; 
+      letter-spacing: -0.72px;
     }
 }
   }
@@ -314,55 +331,56 @@ span {
 }
   ul {
     text-align: left;
-    margin-top: 24px;
-    min-height: 581px;
+    min-height: 488px;
+    
     li {
       display: flex;
       align-items: center;
-      padding: 8px 0;
+      padding: 10px 0;
       color: var(--Gray-700, #344054);
-      font-feature-settings: 'liga' off, 'clig' off;
-      font-family: 'sequel_sans_roman_head' !important;
       font-size: 18px;
       font-style: normal;
-      font-weight: 100;
-      line-height: 20px; /* 111.111% */
+      font-weight: 360;
+      line-height: 24px; 
+      letter-spacing: -0.48px; 
+      font-family: 'sequel_sans_roman_head' !important;
       .checkcircleicon {
-        margin-right: 7px;
+        margin-right: 13px;
+        display: flex;
+        align-items: center;
     }
   }
    h4 {
-     color: #29292B;
-     font-feature-settings: 'liga' off, 'clig' off;
-     font-family: 'sequel_sans_semi_bold_disp' !important;
-     margin-bottom: 11px;
-     font-size: 17.42px;
-     font-style: normal;
-     font-weight: 100;
-     line-height: 19.4px;
+        color: #29292b;
+    display: inline-block;
+    font-family: 'sequel_sans_semi_bold_head' !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 370;
+    letter-spacing: -.48px;
+    line-height: 24px;
+    padding-bottom: 10px;
     
  }
  }
   }
   
   .price {
-    color: #29292B;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: 'sequel_sans_semi_bold_disp' !important;
+    color: #29292b;
+    font-family: "sequel_sans_semi_bold_disp" !important;
     font-size: 56px;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 420;
     line-height: 63.873px;
     margin: 24px 0;
     text-align: left;
-    white-space: nowrap;
     span {
       color: #888E9E;
-      font-feature-settings: 'liga' off, 'clig' off;
       font-size: 18px;
       font-style: normal;
-      font-weight: 600;
-      line-height: 21.291px;
+      font-weight: 100;
+      line-height: 21.291px; 
+      font-family: 'sequel_sans_roman_head' !important;
       }
   }
   
@@ -490,45 +508,52 @@ span {
 
 
 .questionText{
-  width: 960px;
+  width: 1022px;
   margin: 50px auto;
+  padding-bottom: 30px;
   
   h2{
+     margin-bottom: 15px;
     color: #29292B;
     text-align: center;
-    leading-trim: both;
-    text-edge: cap;
-    font-size: 42px;
+    font-size: 48px;
     font-style: normal;
-    font-weight: 100;
-    line-height: normal;
-    // letter-spacing: -1px;
-    margin-bottom: 15px;
-    font-family: 'sequel_sans_semi_bold_disp' !important;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    font-family: 'sequel_sans' !important;
   }
   p{
     color: #3F3F3F;
     text-align: center;
-    leading-trim: both;
-    text-edge: cap;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 100;
-    line-height: 150%; /* 30px */
+    font-weight: 360;
+    line-height: 32px; 
+    letter-spacing: -0.72px;
     font-family: 'sequel_sans_roman_head' !important;
+    width: 750px;
+    margin: 0 auto;
+    @media screen and (max-width: 767px) {
+    width: 100%;
+    }
   }
 }
 @media screen and (max-width: 767px) {
   .mainSection{
+    
     .midheading {
+      margin-top: 50px;
           h1{
-            font-size: 26px !important;
+            font-size: 20px !important;
+                line-height: 22px;
           }
       }
       .smallheading{
         h2{
           font-size: 28px;
           margin: 40px 0 20px;
+          
         }
         }
     }
@@ -537,18 +562,28 @@ span {
     padding:15px !important;
   }
   .mainheading{
-    font-size:104px !important;
-    line-height: 110px !important;
+        font-size: 68px !important;
+        line-height: 87px !important;
+        margin-top: 38px;
   }
+  
   .mainimage {
-    left: 0!important;
-    position: inherit!important;
-    transform: translateX(0)!important;
-    margin: 0 !important;
+    left: 0 !important;
+        position: absolute;
+        transform: translateX(133px) !important;
+        margin: 0 !important;
+        right: 0;
+        width: 34%;
+    img{
+      width: 100% !important;
+      height: auto !important;
+    }
 }
 
 .midheading{
   padding-top:0px !important;
+      
+    
 }
 .midheading p{
   font-size: 28px;
@@ -590,7 +625,8 @@ span {
   line-height: 22px !important;
 }
 .PricingTableWrap{
-  padding: 0 10px;
+   padding: 0;
+   overflow: hidden;
 }
 .PricingTableWrap button {
   width: 80%;

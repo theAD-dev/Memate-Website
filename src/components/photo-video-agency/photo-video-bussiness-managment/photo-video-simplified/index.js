@@ -13,7 +13,7 @@ Capabilities</h2>
     <p>Easily manage shifts for your team with meMate’s built-in shift management features. Assign, track, 
       and adjust work schedules seamlessly, ensuring that 
       everyone is where they need to be, on time, and with full visibility into availability.</p>
-      <Link to="/features/task-management-software">Management</Link>
+      <Link to="/features/team-communication-tools">Management</Link>
       
 </div>
 <div className={style.flexImageBox}>

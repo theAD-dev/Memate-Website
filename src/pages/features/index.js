@@ -4,7 +4,9 @@ import FeatureseComponent from '../../components/features';
 const FeaturesPage = () => {
   return (
     <Layout>
+      <div className="bgshadowwrapper">
         <FeatureseComponent/>
+        </div>
     </Layout>
   )
 }

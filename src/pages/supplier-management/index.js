@@ -10,16 +10,18 @@ const SupplierManagementPage = () => {
   return (
     <>
       <Helmet>
-    <title>Supplier Management Software | Optimise Vendor Relationships with meMate</title>
-    <meta name="description" content="Enhance your procurement process with meMate’s Supplier Management Software. Streamline supplier relationships, monitor performance, and ensure compliance for Australian businesses." />
-    <meta property="og:title" content="Supplier Management Software | Optimise Vendor Relationships with meMate" />
-      <meta property="og:description" content="Enhance your procurement process with meMate’s Supplier Management Software. Streamline supplier relationships, monitor performance, and ensure compliance for Australian businesses." />
+    <title>Manage Suppliers & Contractors Easily | MeMate Software</title>
+    <meta name="description" content="Track and manage suppliers, contractors, and contacts in one place. MeMate helps Aussie businesses streamline communication and control." />
+    <meta property="og:title" content="Manage Suppliers & Contractors Easily | MeMate Software" />
+      <meta property="og:description" content="Track and manage suppliers, contractors, and contacts in one place. MeMate helps Aussie businesses streamline communication and control." />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

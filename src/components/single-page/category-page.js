@@ -157,13 +157,13 @@ const postCategoryTitle = postTagsslug?.data[0].category.title
          />
        </Link>
        <div className="img-heading-container">
-         <div className="date-A">
+         <div className="date-A date-Ab">
          {formatDateWithOrdinal(post.publish_date)} | {post.author}
          </div>
-         <div className="date-heading-A">
+         <div className="date-heading-mainb">
            <Link to={`/news/${post.slug}`}>{post?.title}</Link>
          </div>
-         <div className='postCategory'>
+         <div className='postCategory postCategoryb'>
          <Link to={`/news/category/${post.category.id}`}>{post.category.title}</Link>
          </div>
        </div>

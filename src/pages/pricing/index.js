@@ -5,7 +5,9 @@ import PricingComponent from '../../components/pricing';
 const PricingPage = () => {
   return (
     <Layout>
-      <PricingComponent/>
+     <div className="bgshadowwrapper">
+        <PricingComponent/>
+      </div>
     </Layout>
   )
 }

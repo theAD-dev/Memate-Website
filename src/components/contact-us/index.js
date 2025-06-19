@@ -9,21 +9,20 @@ import TronButton from "../../layout/hover-button/tourn-but";
 import CallbackNow from "./callbacknow";
 import EmailNow from "./emailnow";
 import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
+import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
 
 
 // const ContactUsMainImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/max.n.max_An_Office_Girl.png"
 const ContactUsComponent = () => {
 
-
-
   return (
     <div id="contactUsPage">
     <Helmet>
-    <title>Contact Us | meMate Business Management Software Support</title>
-    <meta name="description" content="Get in touch with MeMate for support and inquiries about our business management software. We’re here to help Australian businesses thrive with CRM, ERP, and workflow automation solutions" />
-    <meta property="og:title" content="Contact Us | meMate Business Management Software Support" />
-      <meta property="og:description" content="Get in touch with MeMate for support and inquiries about our business management software. We’re here to help Australian businesses thrive with CRM, ERP, and workflow automation solutions" />
-</Helmet>
+    <title>Contact MeMate | Business Software Support & Demo Requests Australia</title>
+    <meta name="description" content="Contact MeMate for support, demo bookings, or sales enquiries. Speak with real people in Australia — we’re here to help your business get sorted, fast." />
+    <meta property="og:title" content="Contact MeMate | Business Software Support & Demo Requests Australia" />
+      <meta property="og:description" content="Contact MeMate for support, demo bookings, or sales enquiries. Speak with real people in Australia — we’re here to help your business get sorted, fast." />
+    </Helmet>
       <div className="main-section contact-section" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -43,18 +42,35 @@ const ContactUsComponent = () => {
             width={400} height={400}
           />
           </div>
-        <div className="mid-heading">
-          <h1 className="h1tags">Contact the MeMate Team for Business Management <br/>Software Solutions in Australia</h1>
+        <div className="mid-headingc">
+          <h1 className="h1tags">Get in Touch with MeMate – Support, Demos & Enquiries</h1>
           {/* <p>a friendly memate specialist is ready to help.</p> */}
         </div>
-        <div className="small-heading">
+        <div className="small-headingc">
           <p className="contactParagraph">Made for Small to Medium Businesses for Simplicity and Order</p>
         </div>
-        <div className="request-btn marginTop">
-        <Link to='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started  navbar-link"><TronRequestADemo text="Book a Demo" /></Link>
+          <div className="dflexbannerbtn dflexbannerbtnp">
+                <div className="request-btn">
+                  <Link
+                    to="https://app.memate.com.au/requestdemo"
+                    target="_blank"
+                    className="nav-btn--get-started  navbar-link"
+                  >
+                      <TronRequestADemo text="Book a Demo" />
+                  </Link>
+                </div>
+                <div className="request-btn">
+                  <Link
+                    to="https://app.memate.com.au/onboarding"
+                    target="_blank"
+                    className="nav-btn--get-started  navbar-link"
+                  >
+                      <WhiteButtonBammer text="Start Free Trial"/>
+                  </Link>
+                </div>
+          </div>
       </div>
-      </div>
-      <div className='query-section' data-aos="fade-up"
+      <div className='query-section query-sectionc' data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1000"
@@ -72,11 +88,7 @@ const ContactUsComponent = () => {
                 <p className="ContactSubText">Request a callback.</p>
               </div>
             </div>
-           
-              
                 <CallbackNow />
-             
-            
           </div>
           <div className='query-card query-2 '>
             <div className='query-main'>
@@ -90,9 +102,7 @@ const ContactUsComponent = () => {
               </div>
             </div>
             <div className='query-button'>
-             
                 <button>Chat now</button>
-           
             </div>
           </div>
           <div className='query-card query-3 '>
@@ -106,15 +116,13 @@ const ContactUsComponent = () => {
                 
               </div>
             </div>
-        
               <EmailNow />
-              
-            
           </div>
         </div>
         <div className="small-heading">
-          <p className="ContactSubText">Please send any media or PR enquiries directly to pr@memate.com.au.</p>
-          <p className="ContactSubText">If we have let you down in any way, we want to hear it at complaints@memate.com.au</p>
+          <p className="ContactSubText">Our goal is to provide affordable digital management solutions for  </p>
+          <p className="ContactSubText">Australian business owners — to improve efficiency, reduce unprofitability, </p>
+          <p className="ContactSubText">and make running a business easier.</p>
         </div>
       </div>
     </div>

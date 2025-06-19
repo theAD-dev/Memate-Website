@@ -7,11 +7,11 @@ import { supplierListApi } from '../../api/supplierApi';
 import { Link } from 'react-router-dom';
 import { useDebounce } from 'primereact/hooks';
 // import TronButton from '../../layout/hover-button/tourn-but';
-import TronRequestADemo from '../../layout/hover-button/TronRequestADemo';
 import TronAddSupplier from '../../layout/hover-button/TronAddSupplier';
 
 const SupplierDatabase = () => {
   const [supplier, setSupplier] = useState([]);
+  console.log('supplier: ', supplier);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalSupplier, setTotalSupplier] = useState(0);
   const [searchTerm, debouncedValue, setSearchTerm] = useDebounce('', 600);
@@ -62,12 +62,10 @@ const SupplierDatabase = () => {
   return (
     <>
       <Helmet>
-        <title>Australian Business Directory | List Your Business on MeMate’s Supplier Platform</title>
-        <meta name="description" content="Join meMate’s Australian Business Directory to list your company as a supplier. 
-        Help small businesses find trusted vendors and grow your network through our supplier database. " />
-        <meta property="og:title" content="Australian Business Directory | List Your Business on MeMate’s Supplier Platform" />
-        <meta property="og:description" content="Join meMate’s Australian Business Directory to list your company as a supplier. 
-        Help small businesses find trusted vendors and grow your network through our supplier database." />
+        <title>List Your Business in the MeMate Supplier Directory | Get Seen by Aussie SMEs</title>
+        <meta name="description" content="Submit your business to the MeMate Supplier Directory and get discovered by thousands of Aussie businesses. Free listings for trusted local vendors." />
+        <meta property="og:title" content="List Your Business in the MeMate Supplier Directory | Get Seen by Aussie SMEs" />
+        <meta property="og:description" content="Submit your business to the MeMate Supplier Directory and get discovered by thousands of Aussie businesses. Free listings for trusted local vendors." />
       </Helmet>
       <div className={`main-section ${style.mainSection}`} data-aos="fade-up"
     data-aos-offset="50"
@@ -78,14 +76,14 @@ const SupplierDatabase = () => {
     data-aos-anchor-placement="top-bottom">
         <div className="main-heading main-headingdatabase">supplier<br></br> database</div>
 
-        <div className={`${style.supdatabaseHead} ${style.midheading}`} data-aos="fade-up"
+        <div className={`${style.supdatabaseHead}  ${style.midheading}`} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="600"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-          <h1 className='supplierText'>Connect and Grow with meMate’s Australian Business Directory</h1>
+          <h1 className='supplierText supdatabaseHeadFS'>Get Your Business Listed in the MeMate Supplier Directory</h1>
         </div>
         <div className={style.smallheading} data-aos="fade-up"
     data-aos-offset="50"

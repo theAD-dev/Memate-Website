@@ -14,7 +14,7 @@ const ClientCollaboration = () => {
 <h2>Made Easy</h2>
     <p>Update clients via SMS or email directly from the project card, with the entire 
       communication history stored in one place. meMate ensures timely communication and updates are effortlessly managed.</p>
-      <Link to="/client-management">Clients</Link>
+      <Link to="/features/client-management-software">Clients</Link>
 </div>
 
 </div>

@@ -2,8 +2,32 @@
     border-radius: 30px;
     background: #F7F8FA;
 }
-
-
+.shadowRightline1::after {
+    border-radius: 395.608px;
+    background: rgba(30, 178, 220, 0.33);
+    filter: blur(84.8499984741211px);
+    width: 167.504px;
+    height: 395.608px;
+    flex-shrink: 0;
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: -45px;
+    z-index: -1;
+}
+.shadowLeftline1::before {
+    border-radius: 516.412px;
+    background: rgba(255, 178, 89, 0.44);
+    filter: blur(84.8499984741211px);
+    width: 97.296px;
+    height: 516.412px;
+    flex-shrink: 0;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
 .main-operation {
     display: flex;
     justify-content: space-between;
@@ -102,4 +126,11 @@ button.get-started-btn {
 
 .boost-image img {
     width: 100%;
+}
+@media screen and (max-width: 1024px) {
+.shadowRightline2::after ,.shadowLeftline2::before,.shadowRightline1::after,.shadowLeftline1::before{
+    width: 100%;
+}
+
+
 }

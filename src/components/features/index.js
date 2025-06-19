@@ -66,7 +66,7 @@ const FeaturesComponent = () => {
             description: 'Motivate your management with a simple, real-time target system.',
           },
         ],
-      },
+      }, 
       {
         category: 'Productivity',
         items: [
@@ -140,12 +140,12 @@ const FeaturesComponent = () => {
             link:'/features/time-tracking-software',
             description: 'Automatically receive timesheets from your staff, based on scheduled shifts and time trackers.',
           },
-          {
-            icon: Iconsdata.funNews,
-            title: 'News',
-            link:'/features/your-business-news-management',
-            description: 'Create a team with your company news feed and updates.',
-          },
+          // {
+          //   icon: Iconsdata.funNews,
+          //   title: 'News',
+          //   link:'/features/your-business-news-management',
+          //   description: 'Create a team with your company news feed and updates.',
+          // },
           {
             icon: Iconsdata.funTask,
             title: 'Task management',
@@ -184,19 +184,15 @@ const FeaturesComponent = () => {
       <meta property="og:description" content="Discover the comprehensive features of MeMate, Australia’s top business management software. From CRM for small businesses to project management features and workflow automation tools, we have it all." />
 </Helmet>
       <div className={style.mainMenuPages}>
-        <div className={`titleHead ${style.mainHeadTitle}`}>
-        <h4 className='tagHeadtitle '><p className='techText'>Technology from the future, solving today’s problems.</p>
-           
-          </h4>
+        <div className={`sales-component-wrapper salesfeaturesWrapper ${style.mainHeadTitle}`}>
+         <h1 className="h1tagsseo h1tagsseof fontWeight">Technology from the future, solving today’s problems.</h1>
           <h2>features</h2>
           <span>
           Here are meMate’s main features to help you quickly understand if it will be suitable for your<br/> business.
           </span>
-          <h1 className="h1tagsseo">
-          <p className='techText'>Comprehensive Features of Business Management and CRM <br/>Software</p>
-          
-          </h1>
         </div>
+
+        <h4 className={style.h4Heading}>No need to juggle ten different apps. MeMate gives you the full toolkit — from client management to quoting, scheduling, and getting paid — all in one spot.</h4>
 
         {featuresData.map((featureCategory, categoryIndex) => (
           <div key={categoryIndex} className={style.mainGridWrap}>

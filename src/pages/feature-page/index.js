@@ -11,17 +11,18 @@ const FeaturePage = () => {
   return (
     <>
      <Helmet>
-    <title>Sales Management Software | Boost Your Sales with meMate’s CRM Tools</title>
-    <meta name="description" content="Elevate your sales process with MeMate’s Sales Management Software. Track leads, manage your sales pipeline, and automate tasks to drive growth for Australian businesses" />
-    <meta property="og:title" content="Sales Management Software | Boost Your Sales with meMate’s CRM Tools" />
-      <meta property="og:description" content="Elevate your sales process with MeMate’s Sales Management Software. Track leads, manage your sales pipeline, and automate tasks to drive growth for Australian businesses" />
+    <title>Sales Management Software for Aussie Businesses | MeMate</title>
+    <meta name="description" content="Manage leads, quotes, and deals in one spot. MeMate’s sales management software helps Aussie businesses stay organised and close faster." />
+    <meta property="og:title" content="Sales Management Software for Aussie Businesses | MeMate" />
+      <meta property="og:description" content="Manage leads, quotes, and deals in one spot. MeMate’s sales management software helps Aussie businesses stay organised and close faster." />
     </Helmet>
     <Layout> 
+       <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
- 
+ </div>
     </Layout>
     </>
   );

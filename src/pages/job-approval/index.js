@@ -11,19 +11,19 @@ const JobApprovalPage = () => {
   return (
     <>
      <Helmet>
-    <title>Job Approval Software for Contractor Management | Streamline Job Submissions and Claims with MeMate</title>
-    <meta name="description" content="Enhance your contractor management with MeMate’s Job Approval Software. Efficiently control job submissions, 
-      monitor claims, and ensure compliance to boost operational efficiency" />
-    <meta property="og:title" content="Job Approval Software for Contractor Management | Streamline Job Submissions and Claims with MeMate" />
-      <meta property="og:description" content="Enhance your contractor management with MeMate’s Job Approval Software. Efficiently control job submissions, 
-      monitor claims, and ensure compliance to boost operational efficiency.
+    <title>Get Jobs Signed Off Faster | MeMate Job Approval Tools</title>
+    <meta name="description" content="Track job progress, get sign-offs, and keep everyone accountable. MeMate’s job approval software helps Aussie teams close the loop — no paperwork needed." />
+    <meta property="og:title" content="Get Jobs Signed Off Faster | MeMate Job Approval Tools" />
+      <meta property="og:description" content="Track job progress, get sign-offs, and keep everyone accountable. MeMate’s job approval software helps Aussie teams close the loop — no paperwork needed.
     " />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

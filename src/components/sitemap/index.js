@@ -14,12 +14,12 @@ const SitemapComponent = () => {
     <div className={style.sitemapPageList}>
      <ul>
       <li>
-        <h3>Home</h3>
-        <Link to="/">Home</Link>
+        <h3>Core Pages</h3>
         <Link to="/about">About</Link>
         <Link to="/pricing">Pricing</Link>
-        <Link to="/news">News</Link>
         <Link to="/contact-us">Contact us</Link>
+        <Link to="/faqs">Faqs</Link>
+        <Link to="/brand">Brand</Link>
       </li>
       <li>
         <h3>Features</h3>
@@ -42,8 +42,8 @@ const SitemapComponent = () => {
           <h4>FUNCTIONALITY</h4>
             <Link to="/features/internal-communication-tools">Internal chat</Link>
             <Link to="/features/time-tracking-software">Time Sheet</Link>
-            <Link to="/features/your-business-news-management">Features News</Link>
-            <Link to="/features/task-management-software#">Task Management</Link>
+            {/* <Link to="/features/your-business-news-management">Features News</Link> */}
+            <Link to="/features/task-management-software">Task Management</Link>
         </div>
         </div>
         <div className={style.sitemapGrid}>
@@ -70,7 +70,7 @@ const SitemapComponent = () => {
         
       </li>
       <li>
-        <h3>INDUSTRIES</h3>
+        <h3>Industry Pages</h3>
         <div className={style.sitemapGrid}>
         <div className={style.sitemapGridItem}>
           <h4>INDUSTRIES</h4>
@@ -84,24 +84,21 @@ const SitemapComponent = () => {
         </div>
       </li>
       <li>
-        <h3>News & Stories</h3>
-            <Link to="/news">Our News</Link>
-            <Link to="/customer-stories">Customer Stories</Link>
-            <Link to="/memate-software-updates">Software Update</Link>
+        <h3>Content Hubs</h3>
+            <Link to="/news">News</Link>
+            <Link to="/memate-wiki">Memate Wiki</Link>
+            <Link to="/resources">Resources</Link>
       </li>
-      <li>
+      {/* <li>
         <h3>About</h3>
             <Link to="/about">About Memate</Link>
             <Link to="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530" target='_blank'>Our Careers</Link>
             <Link to="/contact-us">Our Team</Link>
-      </li>
+      </li> */}
       <li>
         <h3>Legal</h3>
-            <Link to="/terms-and-conditions">Terms & Conditions</Link>
+            <Link to="/terms">Terms & Conditions</Link>
             <Link to="/privacy">Privacy</Link>
-            <Link to="/terms-of-use">Website terms of Use</Link>
-            <Link to="/security">Security</Link>
-            <Link to="/legal">Legal</Link>
       </li>
       <li>
         <h3>RESOURCES</h3>
@@ -147,7 +144,7 @@ const SitemapComponent = () => {
         </div>
         <div className={style.sitemapGridItem}>
            <Link to="#">MeMate vs Wrike</Link>
-            <Link to="#">MeMate vs Servicem8</Link>
+            <Link to="/memate-vs-servicem8">MeMate vs Servicem8</Link>
             <Link to="#">MeMate vs Reckon</Link>
             <Link to="#">MeMate vs Xero</Link>
             <Link to="#">MeMate vs ms Project</Link>

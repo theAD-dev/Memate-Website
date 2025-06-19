@@ -3,19 +3,20 @@ import Images from "../../../../assests/images";
 import "./style.css";
 const AgilePipeLineManagement = () => {
   return (
-    <div className="aglie-pipeline-management-wrapper marginSpaceTop" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="3000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.ContractorSystem} alt="ContractorSystem" type="image/svg+xml" />
-      <div className="content-wrapper">
-        <p className="sale-title">Versatile</p>
-        <p className="sales-heading-sales">new</p>
-        <p className="sales-type">System</p>
-        <p className="sales-description-sales">
+      <div className="sales-imageF">
+      <img src={Images.ContractorSystem} alt="ContractorSystem" type="image/svg+xml" /></div>
+      <div className="content-wrapperF">
+        <p className="sale-titleF">Versatile</p>
+        <p className="sales-heading-salesF">new</p>
+        <p className="sales-typeF">System</p>
+        <p className="sales-description-salesF">
         The system is designed to assist your contractors<br/> by reminding them about shifts, jobs, and <br/>payments. 
         This helps both the company and<br/> contractors work seamlessly, stay motivated, and<br/> collaborate in one space.
         </p>

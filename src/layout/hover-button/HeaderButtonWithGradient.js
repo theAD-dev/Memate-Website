@@ -4,7 +4,7 @@ import { Button } from "react-scroll";
 const HeaderButtonWithGradient = (props) => {
   return (
     <>
-      <Button
+      <div
         style={{
           // background: 'linear-gradient(90deg, #1ab2ff 0%, #ffb258 100%)',
           border: '2px solid transparent',
@@ -17,12 +17,13 @@ const HeaderButtonWithGradient = (props) => {
           borderRadius: "48px",
           cursor: "pointer",
           fontSize: "17px",
+          fontWeight: '400',
           fontFamily: 'sequel_sans'
         }}
         className="HeaderButtonHover"
       >
         {props.text}
-      </Button>
+      </div>
     </>
   );
 };

@@ -174,6 +174,7 @@ const [captchaValue, setCaptchaValue] = useState(null);
                                   boxShadow: "none", 
                                   fontFamily: "sequel_sans_roman_head",
                                    fontWeight: "100",
+                                   marginTop: '6px',
                                 }}
                               />
                             )}

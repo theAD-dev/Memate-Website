@@ -4,27 +4,25 @@ import Images from "../../../../assests/images";
 
 const CRMSalesTool = () => {
   return (
-    <div className="crmtool-manager-wrapper" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1500"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <div className="content-wrapper ">
-        <p className="sale-title">Helpful </p>
-        <p className="sales-heading-sales">Supplier </p>
-        <p className="sales-type">management </p>
-        <p className="sales-description-sales">
-        Our Supplier Management feature simplifies<br></br> handling your supplier relationships. 
-        It shows all <br></br>previous and existing orders, 
-        payment statuses, <br></br>and overall turnover, helping you navigate exact<br></br> expenses efficiently.
+      <div className="content-wrapperF ">
+        <p className="sale-titleF">Helpful </p>
+        <p className="sales-heading-salesF">Supplier </p>
+        <p className="sales-typeF">management </p>
+        <p className="sales-description-salesF">
+        Our Supplier Management feature simplifies handling your <br/>supplier relationships. 
+        It shows all previous and existing<br/> orders, 
+        payment statuses, and overall turnover, helping you <br/>navigate exact expenses efficiently.
         </p>
       </div>
-      <div className="">
-        <div className="modal-contact ">
+        <div className="sales-imageF">
           <img src={Images.HelpfullSupplier} alt="HelpfullSupplier" type="image/svg+xml" />
-        </div>
       </div>
     </div>
   );

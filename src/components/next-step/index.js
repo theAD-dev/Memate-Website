@@ -3,6 +3,7 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import TronButton from "../../layout/hover-button/tourn-but";
 import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
+import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
 
 const NextStep = (props) => {
 
@@ -22,9 +23,20 @@ const NextStep = (props) => {
         </span>
       </div>
       <div className="next-step-btn-container">
-      <div  className="request-btn request-btn-bg">
-                <Link to="https://app.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo text={props.text} /></Link>
-              </div>
+               <div className="dflexbannerbtn">
+      <div className="request-btn request-btn-bg">
+        <Link to="https://app.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo text={props.text} /></Link>
+      </div>
+      <div className="request-btn">
+        <Link
+          to="https://app.memate.com.au/onboarding"
+          target="_blank"
+          className="nav-btn--get-started  navbar-link"
+        >
+            <WhiteButtonBammer text="Start Free Trial"/>
+        </Link>
+            </div>
+      </div>
 
       </div>
     </div>

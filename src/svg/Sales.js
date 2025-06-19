@@ -8,7 +8,7 @@ const Sales = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <rect width={32} height={32} rx={10} fill="#757B8A" />
+    <rect width={32} height={32} rx={10} fill="#999ba2" />
     <mask id="path-2-inside-1_4496_272714" fill="white">
       <path
         fillRule="evenodd"

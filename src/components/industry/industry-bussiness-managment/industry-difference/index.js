@@ -14,7 +14,7 @@ const IndustryDifference = () => {
 <h2>the Difference</h2>
     <p>meMate is designed to facilitate collaboration with contractors at different levels. 
       It allows for easy file sharing and ensures clear, transparent communication and remuneration for all parties involved.</p>
-      <Link to="/construction">Contractors</Link>
+      <Link to="/features/contractor-management-software">Contractors</Link>
 </div>
 
 </div>

@@ -3,9 +3,11 @@ import Images from "../../assests/images";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
+import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
 const BussinessManagement = () => {
   return (
-    <div className="home-page-content">
+    <div className="home-page-content filtercolorbox">
+      <div className="home-container-wrapper">
       <div
         className="home-page-section"
         data-aos="fade-up"
@@ -17,13 +19,18 @@ const BussinessManagement = () => {
         data-aos-anchor-placement="top-bottom"
       >
         <div className="home-platform">
-          <h1>Business Management Software</h1>
+          <h1>Business management software.</h1>
           <h2>All-in-One Platform</h2>
         </div>
-        <div className="gradientHeading gradiientColor header-text">
+        <div className="gradientHeading gradiientColor header-text" 
+  //    style={{
+  //   backgroundImage: "linear-gradient(90deg, rgb(26, 178, 255) 0%, rgb(101, 178, 201) 45%, rgb(255, 178, 88) 65%, rgb(255, 178, 88) 100%)"
+  // }}
+        >
           to run your business
         </div>
       </div>
+      
       <div className="image-wrapper">
         {/* <img src={Images.landingHero} /> */}
         <div className="macBook-image">
@@ -121,24 +128,40 @@ const BussinessManagement = () => {
           </div>
         </div>
       </div>
+       </div>
       <div className="how-to-use">
-        <p>Easy-to-Use Business Management Software: </p>
-        <p>to Start, Run, and Succeed in Your Business</p>
+        <p>Easy-to-Use Business Management Software: to Start, Run,<br/> and Succeed in Your Business </p>
+        {/* <p>to Start, Run, and Succeed in Your Business</p> */}
       </div>
       <div className="businesses-mode fontFamilyRomanHead">
         <span>
-          Made for Small to Medium Businesses for Simplicity and Order
+         Made for Small to Medium Businesses & Business Projects, Offering Simplicity & Control
         </span>
       </div>
+     
+
+ <div className="dflexbannerbtn">
       <div className="request-btn">
         <Link
           to="https://app.memate.com.au/requestdemo"
           target="_blank"
           className="nav-btn--get-started  navbar-link"
         >
-          <TronRequestADemo text="Request a Demo" />
+            <TronRequestADemo text="Request a Demo" />
         </Link>
       </div>
+      <div className="request-btn">
+        <Link
+          to="https://app.memate.com.au/onboarding"
+          target="_blank"
+          className="nav-btn--get-started  navbar-link"
+        >
+            <WhiteButtonBammer text="Start Free Trial"/>
+        </Link>
+      </div>
+</div>
+
+
     </div>
   );
 };

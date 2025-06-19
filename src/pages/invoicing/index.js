@@ -11,19 +11,19 @@ const ProjectManagementPage = () => {
   return (
     <>
       <Helmet>
-    <title>Invoicing Software | Seamless Billing Solutions for your Businesses in Australia</title>
-    <meta name="description" content="Streamline your invoicing with MeMate’s online billing software. 
-      Designed for Australian small businesses, our tools simplify quoting, invoicing, and payment tracking." />
-    <meta property="og:title" content="Invoicing Software | Seamless Billing Solutions for your Businesses in Australia" />
-      <meta property="og:description" content="Streamline your invoicing with MeMate’s online billing software. 
-      Designed for Australian small businesses, our tools simplify quoting, invoicing, and payment tracking.
+    <title>Invoicing Software for Your Business | MeMate</title>
+    <meta name="description" content="Create and send invoices in seconds. Aussie-made invoicing software to help you run your business — simple, automated, and all-in-one." />
+    <meta property="og:title" content="Invoicing Software for Your Business | MeMate" />
+      <meta property="og:description" content="Create and send invoices in seconds. Aussie-made invoicing software to help you run your business — simple, automated, and all-in-one.
     " />
 </Helmet>
     <Layout>
+      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

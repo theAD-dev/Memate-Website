@@ -3,18 +3,18 @@ import Layout from '../../layout'
 import PhotoPageContent from '../../components/photo-video-agency'
 import { Helmet } from 'react-helmet'
 
-const PhotoPage = () => {
+const PhotoPage = ({postsLatest}) => {
   return (
     <>
       <Helmet>
-    <title>Business Management Software for Creative Agencies | Streamline Projects & Workflow</title>
-    <meta name="description" content="MeMate helps creative agencies manage projects, automate workflows, and build client relationships. Explore software designed to run creative businesses efficiently in Australia." />
-    <meta property="og:title" content="Business Management Software for Creative Agencies | Streamline Projects & Workflow" />
-      <meta property="og:description" content="MeMate helps creative agencies manage projects, automate workflows, and build client relationships. Explore software designed to run creative businesses efficiently in Australia.
+    <title>Studio Management Software for Photo & Video Teams | MeMate</title>
+    <meta name="description" content="All-in-one software for photo and video agencies. Manage shoots, quotes, schedules, clients, and invoices — no more chaos across tools." />
+    <meta property="og:title" content="Studio Management Software for Photo & Video Teams | MeMate" />
+      <meta property="og:description" content="All-in-one software for photo and video agencies. Manage shoots, quotes, schedules, clients, and invoices — no more chaos across tools.
     " />
 </Helmet>
     <Layout>
-      <PhotoPageContent/>
+      <PhotoPageContent postsLatestMainIndustry={postsLatest}/>
     </Layout>
     </>
   )

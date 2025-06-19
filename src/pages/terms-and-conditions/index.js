@@ -1,13 +1,12 @@
-import React from 'react'
-import Layout from '../../layout';
-import TermsAndConditionsComponent from '../../components/terms-and-conditions';
-
-const TermsAndConditionsPage = () => {
+import Layout from "../../layout";
+import TOS from "../../components/terms-and-conditions";
+const TOSPage = () => {
   return (
     <Layout>
-        <TermsAndConditionsComponent/>
+      <div className="bgshadowwrapper">
+      <TOS />
+      </div>
     </Layout>
-  )
-}
-
-export default TermsAndConditionsPage;
+  );
+};
+export default TOSPage;

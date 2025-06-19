@@ -17,6 +17,7 @@ const MeMateWorkForce = () => {
           subHeading="In-depth"
           topHeading="Understand"
           mainHeading="your workforce"
+          className="shadowRightline1 shadowLeftline1"
           description="Efficiently track employee and subcontractor hours with real-time updates on their progress. Our system also streamlines timesheet and invoice submissions."
           cardButton="See All Features "
           // maxImage={<img src={Images.underStand} type="image/svg+xml" />}

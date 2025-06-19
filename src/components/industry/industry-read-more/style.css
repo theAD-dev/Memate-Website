@@ -31,38 +31,7 @@
   width: 100%;
 }
 
-.read-more-card-1 {
-  width: 390px;
-  height: 315px;
-  flex-shrink: 0;
-  border-radius: 30px;
-  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/read-more-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
 
-.read-more-card-2 {
-    width: 390px;
-    height: 315px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/read-more-2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  .read-more-card-3 {
-    width: 390px;
-    height: 315px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/read-more-3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
 
 .read-more-card-1-date {
   color: #888e9e;
@@ -74,12 +43,21 @@
   line-height: 140%; /* 22.4px */
   letter-spacing: -0.16px;
 }
+.read-more-card-1m .img-container-3-img-1 {
+    border-radius: 26px;
+    margin-top: 0;
+}
+.truncate-2-lines a {
+  display: -webkit-box; 
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 
-.read-more-card-1-desc {
   color: #29292b;
   margin-top: 16px;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: sequel_sans_roman_head!important;
+  font-family: sequel_sans_roman_head !important;
   width: 390px;
   font-size: 21px;
   font-style: normal;
@@ -96,17 +74,23 @@
     margin-top: 15px;
     display: block;
 }
+  .truncate-2-lines a {
+    -webkit-line-clamp: 4;
+    width: auto;
+    margin: 0;
+}
 .read-more-card {
   margin-bottom: 27px;
 }
 .read-more-card-1-date {
-  margin-top: 0;
-  letter-spacing: 0;
+    margin-top: 15px;
+    letter-spacing: 0;
 }
 .read-more-heading {
   font-size: 26px;
   letter-spacing: 0;
 }
+
 .read-more-card-1-desc {
   margin-top: 0px;
   width: 100%;

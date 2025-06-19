@@ -13,17 +13,29 @@
             font-size: 220px;
             font-style: normal;
             font-weight: 100;
-            line-height: 230px; 
+            line-height: 200px; 
+                letter-spacing: -3.16px;
             
         }
-      
+      span{
+            color: #757B8A;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 100;
+            line-height: 140%;
+            font-family: "sequel_sans_roman_head" !important;
+            margin-top: 26px;
+      }
         @media screen and (max-width: 767px) {
             .mainMenuPages{
                 padding: 15px 0 !important;  
             }
             h2{
-                font-size: 30px !important;
-        line-height: 38px !important;
+            font-size: 45px !important;
+        line-height: 56px !important;
+        letter-spacing: 0;
+        margin-top: 17px;
             }
             h1{
                 font-size: 66px;
@@ -35,28 +47,32 @@
         width: 1200px;
         margin: 0 auto 92px;
         h2{
-            color: #29292B;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 100;
-            line-height: normal;
-            margin-bottom: 24px;
-            font-family: 'sequel_sans_semi_bold_disp' !important;
+          margin-bottom: 24px;
+    color: #29292B;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    font-family: "sequel_sans" !important;
         }
         .mainGridwtapFlex{
             .itemFlex{
-                display: flex;
+               display: flex;
                 align-items: flex-start;
                 justify-content: flex-start;
                 border-radius: 30px;
                 background: #F7F8FA;
-                width: 383px;
+                width: 100%;
+                padding: 24px;
                 padding: var(--spacing-3xl, 24px);
                 justify-content: center;
                 align-items: flex-start;
+                gap: 16px;
                 gap: var(--spacing-md, 16px);
                 cursor: pointer;
-                position: relative;  
+                position: relative;
+                min-height: 145px; 
                 
                 &::before {
                     content: '';
@@ -95,23 +111,25 @@
                    
                 }
                 h3{
-                    color: #29292B;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 100;
-                    line-height: 140%; 
-                    font-family: 'sequel_sans_medium_head' !important;
+                   color: #29292B;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-family: "sequel_sans_roman_head" !important;
+                        font-weight: 100;
+                        letter-spacing: -0.72px;
+                        line-height: 32px;
                 }
                 p{
-                    color: #888E9E;
+                  color: #888E9E;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 100;
-                    line-height: 140%; 
+                    line-height: 140%;
                     max-height: 100px;
                     overflow-y: auto;
                     padding-right: 1px;
-                    font-family: 'sequel_sans_roman_head' !important;
+                    letter-spacing: -0.38px;
+                    font-family: "sequel_sans_roman_head" !important;
                     &::-webkit-scrollbar 
                   
                     {
@@ -140,6 +158,25 @@
                 text-decoration: none;
             }
         }
+    }
+     .h4Heading{
+        letter-spacing: -1.44px;
+    font-family: "sequel_sans" !important;
+    width: 1200px;
+    margin: 24px auto 100px;
+    color: #29292B;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px;
+@media screen and (max-width: 767px) {
+        font-size: 23px;
+        line-height: 31px;
+        letter-spacing: 0;
+        width: 100%;
+        margin: 0;
+}
     }
 }
 

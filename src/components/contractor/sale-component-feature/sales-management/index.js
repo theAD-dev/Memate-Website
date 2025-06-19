@@ -3,19 +3,20 @@ import "./style.css";
 import Images from "../../../../assests/images";
 const SalesManagement = () => {
   return (
-    <div className="sales-management-wrapper-data" data-aos="fade-up"
+    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <img src={Images.ContractorManagement} type="image/svg+xml" />
-      <div className="content-wrapper">
-        <p className="sale-title">Effective</p>
-        <p className="sales-heading-sales">Contractor</p>
-        <p className="sales-type">Management </p>
-        <p className="sales-description-sales">
+       <div className="sales-imageF">
+      <img src={Images.ContractorManagement} type="image/svg+xml" /></div>
+      <div className="content-wrapperF">
+        <p className="sale-titleF">Effective</p>
+        <p className="sales-heading-salesF">Contractor</p>
+        <p className="sales-typeF">Management </p>
+        <p className="sales-description-salesF">
         Designed for companies with multiple <br />
         subcontractors working regularly, meMate’s <br />
         Contractor Management feature enables you to <br />

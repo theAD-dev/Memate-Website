@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from "./pricing-module.module.scss";
+import "./tableStyle.css";
 // import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { Link } from "react-router-dom";
 // import TronButton from "../../layout/hover-button/tourn-but";
@@ -88,19 +89,7 @@ const PricingTable = () => {
 
   return (
     <>
-      <div className="pricingHeadWrap">
-        <p className="smart-investment-heading">Smart investment</p>
-        <span className="smart-investment-banner gradientAnimenate">
-          pricing
-        </span>
-        <div className="smart-investment-description">
-          <span className="smart-investment-section-description">
-            Plus, we provide a 14-day free trial because we believe our<br></br>
-            software will become indispensable to your business.
-          </span>
-        </div>
-      </div>
-
+     
       <div
         className={style.PricingTableWrap}
         data-aos="fade-up"
@@ -112,9 +101,9 @@ const PricingTable = () => {
         data-aos-anchor-placement="top-bottom"
       >
         <div className={style.pricingtable}>
-          <div className={style.toggleSwitch}>
+          {/* <div className={style.toggleSwitch}>
             <span id="butMontlyTable">Monthly</span>
-          </div>
+          </div> */}
 
           <div className={` ${style.pricingcards}`}>
             {plans.map((plan, index) => (
@@ -124,17 +113,15 @@ const PricingTable = () => {
               >
                 <div className={style.tophead}>
                   <div className={style.head}>
-                    <div className={style.left1}>
+                    {/* <div className={style.left1}>
                       <div className={style.left}>
                         {plan.image && <img src={plan.image} alt={plan.name} />}
                       </div>
-                    </div>
+                    </div> */}
                     <div className={style.right}>
                       <h5>{plan.name}</h5>
                     </div>
                   </div>
-
-                  <h2>{plan.bigHead}</h2>
                 </div>
                 <p className={style.companypara}>{plan.companypara}</p>
                 <h5

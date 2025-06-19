@@ -101,9 +101,10 @@ h1.industry-top-heading {
   text-align: left;
 }
 .industry-middle-heading {
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: 0;
+    font-size: 24px;
+    line-height: 44px;
+    letter-spacing: 0;
+    font-family: "sequel_sans" !important;
 }
 p.industry-middle-heading br {
   display: none;

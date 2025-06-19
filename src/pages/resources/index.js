@@ -4,7 +4,9 @@ import ResourcesComponent from '../../components/resources';
 const ResourcesPage = () => {
   return (
     <Layout>
+        <div className="bgshadowwrapper">
         <ResourcesComponent/>
+        </div>
     </Layout>
   )
 }

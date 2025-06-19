@@ -11,17 +11,19 @@ const ProfitabilityAndBudgetingPage = () => {
   return (
     <>
       <Helmet>
-    <title>Profitability Analysis & Budgeting Software | meMate Financial Planning Tools</title>
-    <meta name="description" content="Enhance your financial planning with MeMate’s profitability analysis and budgeting software. Designed for Australian businesses, our tools provide comprehensive budgeting solutions and financial insights." />
-    <meta property="og:title" content="Profitability Analysis & Budgeting Software | meMate Financial Planning Tools" />
-      <meta property="og:description" content="Enhance your financial planning with MeMate’s profitability analysis and budgeting software. Designed for Australian businesses, our tools provide comprehensive budgeting solutions and financial insights.
+    <title>Budgeting & Profitability Software for Aussie Businesses | MeMate</title>
+    <meta name="description" content="See where you’re making money — and where you’re not. MeMate helps you budget smarter and track job profitability in real time." />
+    <meta property="og:title" content="Budgeting & Profitability Software for Aussie Businesses | MeMate" />
+      <meta property="og:description" content="See where you’re making money — and where you’re not. MeMate helps you budget smarter and track job profitability in real time.
     " />
 </Helmet>
     <Layout>
+        <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
       <SmartInvestment />
       <QuestionAnswer />
+      </div>
     </Layout>
     </>
   );

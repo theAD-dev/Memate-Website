@@ -26,7 +26,7 @@ const MeMateFeatureStreamline = () => {
           data-aos-anchor-placement="top-bottom"
         >
           <div className="stream-line">
-            <div className="main-operation">
+            <div className="main-operation shadowRightline shadowLeftline">
               <div className="operation-left">
                 <p className="all-text">All-in-one</p>
                 <div className="smallH2Heading">Streamline</div>

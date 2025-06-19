@@ -4,16 +4,18 @@ import style from './about.module.scss';
 import './about.style.css';
 import Images from "../../assests/images";
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import Linkdin from '../../svg/Linkdin';
 const AboutMemateComponent = () => {
 
 
   return (
     <>
     <Helmet>
-    <title>About meMate | Best Business & Project Management Software in Australia</title>
-    <meta name="description" content="meMate transforms small businesses in Australia with the best project management software, workflow automation, and comprehensive business management solutions." />
-    <meta property="og:title" content="About meMate | Best Business & Project Management Software in Australia" />
-      <meta property="og:description" content="meMate transforms small businesses in Australia with the best project management software, workflow automation, and comprehensive business management solutions." />
+    <title>About MeMate | Simplifying Business Management for Australian SMEs</title>
+    <meta name="description" content="Discover MeMate’s mission to empower Australian small and medium businesses with integrated CRM, ERP, and project management tools in one platform." />
+    <meta property="og:title" content="About MeMate | Simplifying Business Management for Australian SMEs" />
+      <meta property="og:description" content="Discover MeMate’s mission to empower Australian small and medium businesses with integrated CRM, ERP, and project management tools in one platform." />
 </Helmet>
     <div id="aboutPage">
     
@@ -24,7 +26,7 @@ const AboutMemateComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <h1>meMate: Australia’s Leading Business Management Software</h1>
+      <h1>More Business. Less Busyness.</h1>
      <h2>companies</h2>
      <p>MeMate is a user-friendly, all-in-one business management software. It gives you real-time insights into your company’s performance, helps speed up operations, reduces mistakes, and keeps all your business records in one place.</p>
      <p>With MeMate, managing your business becomes simpler and more effective, preparing you for the future.</p>
@@ -91,7 +93,7 @@ const AboutMemateComponent = () => {
       </div>
 
 
-      <div className={`${style.centerHeadPages}`} data-aos="fade-up"
+      <div className={`${style.centerHeadPages} ${style.centerHeadF}`} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="3000"
@@ -108,12 +110,17 @@ const AboutMemateComponent = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <div className={`${style.gridflexGrid}`}>
-      <div className={`${style.imageGrid}`} style={{ background: `#E9E9E9 `}}>
+      <div className={`${style.imageGrid}`} style={{ background: `url(https://res.cloudinary.com/dn0jqjad3/image/upload/v1748323734/Max_Narelik_sijznv.jpg) `}}>
        
       </div>
       <div className={style.detailBox}>
       <h4>Max Narelik</h4>
       <p>Director</p>
+       <div className={style.socialTeam}>
+        <Link to="/" target="_blank" rel="noopener noreferrer">  
+       <Linkdin />
+       </Link>
+      </div>
       </div>
       </div>
       
@@ -125,16 +132,26 @@ const AboutMemateComponent = () => {
       
     <h4>Anuj Nagpal </h4>
     <p>Head of Development Team</p>
+    <div className={style.socialTeam}>
+        <Link to="/" target="_blank" rel="noopener noreferrer">  
+       <Linkdin />
+       </Link>
+      </div>
     </div>
       </div>
       
       <div className={`${style.gridflexGrid}`}>
-      <div className={`${style.imageGrid}`} style={{ background: `#E9E9E9 `}}>
+      <div className={`${style.imageGrid}`} style={{ background: `url(https://res.cloudinary.com/dn0jqjad3/image/upload/v1748323734/Belmin_Salkica_gges7y.jpg) `}}>
        
       </div>
       <div className={style.detailBox}>
       <h4>Belmin Salkica</h4>
       <p>Head of Design</p>
+      <div className={style.socialTeam}>
+        <Link to="/" target="_blank" rel="noopener noreferrer">  
+       <Linkdin />
+       </Link>
+      </div>
       </div>
       </div>
       
@@ -145,11 +162,16 @@ const AboutMemateComponent = () => {
       <div className={style.detailBox}>
       <h4>Sergey Autonuke </h4>
       <p>Senior Developer</p>
+       <div className={style.socialTeam}>
+        <Link to="/" target="_blank" rel="noopener noreferrer">  
+       <Linkdin />
+       </Link>
+      </div>
       </div>
       </div>
 
       </div>
-
+     <div className={style.centerHeadJourney}>
       <div className={`${style.centerHeadPages} ${style.centerHeadSpace}`} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -160,7 +182,7 @@ const AboutMemateComponent = () => {
          <h3>The Journey to Creating meMate</h3>
          <p>Why We’re Doing It: The Mission Behind meMate</p>
       </div>
-      <div className={`${style.centerHeadMiddlePara}`} data-aos="fade-up"
+      <div className={`${style.centerHeadMiddlePara1}`} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="4500"
@@ -171,6 +193,7 @@ const AboutMemateComponent = () => {
       <p>That was some time ago, and while we’ve faced multiple challenges along the way, we remain committed to creating a simple, affordable system that leverages the latest technology to help Australian business owners.</p>
       <p>This is our greater goal: we believe that business owners are the ones who make Australia special—people who aren’t afraid to take responsibility, who create new services and products that help our country prosper. Our ultimate goal is to make a difference by creating a system that significantly improves and simplifies business management, reducing losses and unprofitable activities.</p>
       
+      </div>
       </div>
     </div>
     </>

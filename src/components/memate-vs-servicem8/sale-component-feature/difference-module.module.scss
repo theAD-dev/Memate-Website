@@ -137,6 +137,9 @@
 
 .sectionMoreBenifit{
     margin: 100px 0 20px;
+    @media screen and (max-width: 767px) {
+     margin: 50px 0 20px;
+    }
     h3{
         color: #29292B;
         font-size: 42px;
@@ -147,6 +150,11 @@
         margin-bottom: 40px;
         text-align: center;
         font-family: 'sequel_sans_semi_bold_disp' !important;
+        @media screen and (max-width: 767px) {
+        font-size: 30px;
+        letter-spacing: 0px;
+        margin-bottom: 28px;
+        }
     }
     .gridList{
        ul{

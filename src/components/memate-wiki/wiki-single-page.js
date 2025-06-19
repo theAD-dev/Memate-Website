@@ -1,67 +1,142 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useParams,useLocation  } from "react-router-dom";
 import style from './wiki.module.scss';
 import { useQuery } from "@tanstack/react-query";
-import { wikiBaseId } from "../../api/wikiApi"; 
-import { useNavigate } from "react-router-dom";
+import { wikiBaseId,wikiBase } from "../../api/wikiApi"; 
 import { Helmet } from "react-helmet";
+import NewsSchema from "../blog/news-schema";
 
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
-
-
-const WikiSinglePage = () => {
-    const { categoryId } = useParams();
-     const navigate = useNavigate();
+     const WikiSinglePage = () => {
     const location = useLocation();
-    const { categoryName } = location.state || {};
-    const idData = `${categoryId}/${categoryName}`;
-    const { data: wikiBaseIdData } = useQuery({
-        queryKey: ['wikiBaseId', idData],
-        queryFn: () => wikiBaseId(idData), 
-        enabled: !!idData, 
+    const { categoryId: categorySlug } = useParams();
+    const { categoryName} = location.state || {};
+
+    const { data: wikiData = [] } = useQuery({
+    queryKey: ['wikiBase'],
+    queryFn: wikiBase,
+    enabled: true,
     });
- 
-    console.log('wikiBaseIdData: ', wikiBaseIdData);
-    const handleDetailsClick = (categoryId, categoryName, titleSlug) => {
-        navigate(`/memate-wiki/${titleSlug}`, { state: { name: categoryName, slugName: titleSlug } });
-    };
-    
+
+const selectedCategory = wikiData.find(cat => cat.slug === categorySlug);
+const idData = selectedCategory ? `${selectedCategory.id}/${selectedCategory.name}` : null;
+   
+    const { data: wikiBaseIdData } = useQuery({
+    queryKey: ['wikiBaseId', idData],
+    queryFn: () => wikiBaseId(idData),
+    enabled: !!idData,
+    });
+
+
+
+
+
+
+
+
+const breadcrumbList = selectedCategory ? {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://memate.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "meMate wiki",
+      "item": "https://memate.com.au/memate-wiki"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": selectedCategory[0]?.title,
+      "item": `https://memate.com.au/news/memate-wiki/${selectedCategory?.slug}`
+    }
+  ]
+} : null;
+
+const article = selectedCategory ? {
+  type: "wikicategory",
+  headline: selectedCategory.meta_title,
+  datePublished: new Date(selectedCategory.created_at),
+  dateModified: new Date(selectedCategory.updated_at || selectedCategory.created_at),
+  author: selectedCategory.author || "admin",
+  publisherName: "meMate wiki",
+  publisherLogo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
+  // image: post.featured_img_url || Images.blogImgempty,
+  // url: `https://memate.com.au/news/${post.slug}`,
+  keywords: selectedCategory.h1,
+  genre: selectedCategory.title || "General",
+  articleSection: selectedCategory.h2 || "General"
+} : null;
+
+// if (article) {
+//   console.log("Article Schema:", article);
+//   console.log("Article Schema (string):", JSON.stringify(article));
+// }
+
+
+
+
+
+
+
+
     return (
         <>
+        {selectedCategory && (
         <Helmet>
-      <title>MeMate Wiki | Business Management Practices, Tools, and Information</title>
-      <meta name="description" content="Discover business management insights on MeMate Wiki, covering job scheduling, 
-      invoicing, quote calculations, and essential tools for success." />
-      <meta property="og:title" content='MeMate Wiki | Business Management Practices, Tools, and Information' />
-      <meta property="og:description" content='Discover business management insights on MeMate Wiki, covering job scheduling, 
-      invoicing, quote calculations, and essential tools for success.' />  
-</Helmet>
-        <div className="parent-blog">
+            <title>{selectedCategory.meta_title || "Wiki Title"}</title>
+            <meta name="description" content={selectedCategory.meta_description || "Wiki Description"} />
+            <meta property="og:title" content={selectedCategory.meta_title || "Wiki Title"} />
+            <meta property="og:description" content={selectedCategory.meta_description || "Wiki Description"} />
+        </Helmet>
+        
+        )}
+         {article && breadcrumbList && <NewsSchema article={article} breadcrumbList={breadcrumbList} />}
+        <div className="parent-blog ">
              <div className="pageBreadcrumbs">
         <ul className={style.linkstyleDisable}>
           <li><Link to='/' className={style.linkstyleDisable}>Home</Link></li>/<li><Link to='/memate-wiki' className={style.linkstyleDisable}>meMate wiki</Link>
-          </li>/<li> <Link>{categoryName}</Link></li>
-         
+          </li>/<li> <a>{selectedCategory?.name}</a></li>
+          
         </ul>
         <Link to='/memate-wiki' className="backButStories"><img src={arrowIconBack} alt="Arrow"/> Back</Link>
         </div> 
         <div className={` ${style.wikimainwrap}`}>
             <div className={style.wikimainhead}>
-                <h1>{categoryName}</h1>
-                <p>Here is everything you need to know about 
-                    starting a new company in Australia.</p>
+                {selectedCategory && (
+               <>
+                <h4>{selectedCategory.name}</h4>
+                <h1>{selectedCategory.h1}</h1>
+                <h2>{selectedCategory.h2}</h2>
+               </>
+                )}
                 </div>
-                    <div className={style.mainGridwtapFlex}>
-                    {wikiBaseIdData && wikiBaseIdData.map((item, index) => (
-                    <div key={index} className={`itemFlex ${style.itemFlex}`}>
-                            <div className={style.itemText}>
-                            {/* <h3 dangerouslySetInnerHTML={{ __html: item.description }}></h3> */}
-                            <h3 onClick={() => handleDetailsClick(item.id, categoryName, item.slug)}>{item.title}</h3>
-
-                         </div>
-                     </div>
-                    ))}
-                  </div>
+                   <div className={style.mainGridwtapFlex}> 
+                {wikiBaseIdData && wikiBaseIdData.map((item, index) => (     
+                    <Link
+                    key={item.id}
+                    to={{
+                        pathname: `/memate-wiki/${categorySlug}/${item.slug}`,
+                        state: {
+                        id: item.id,
+                        categoryName,
+                        slug: item.slug
+                        }
+                    }}
+                    className={`itemFlex ${style.itemFlex}`}
+                    >
+                    <div className={style.itemText}>
+                        <h3>{item.title}</h3>
+                    </div>
+                    </Link>
+                ))}
+                </div>
             </div>
         </div>
         </>

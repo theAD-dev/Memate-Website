@@ -11,7 +11,6 @@ export const wikiBase = async () => {
     try {
       const response = await fetch("https://admin.memate.com.au/api/get-wiki", requestOptions);
       const result = await response.json(); 
-  
       return result;
   
     } catch (error) {
@@ -21,6 +20,7 @@ export const wikiBase = async () => {
 
   };
 export const wikiBaseId = async (idData ) => {
+  
 
     const myHeaders = new Headers();
     myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
@@ -69,7 +69,6 @@ export const wikiBaseDtails = async (titleSlug) => {
 
 
   export const wikiBaseBSearch = async (searchQuery) => {
-    console.log('searchQuery: ', searchQuery);
     const myHeaders = new Headers();
     myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
   
